@@ -12,7 +12,7 @@ if [[ "$COMPILER_VERSION" == "" ]]; then
 fi
 
 if [[ "$LANG" == "" ]]; then
-    LANG="cpp"
+    LANG=cpp
 fi
 
 if [[ "$FUNCTION" == "" ]]; then
@@ -20,13 +20,7 @@ if [[ "$FUNCTION" == "" ]]; then
     exit 1
 fi
 
-if [[ "$LANG" == "c" ]]; then
-    m1=$(md5sum ./tmp/code.c)
-fi
-
-if [[ "$LANG" == "cpp" ]]; then
-    m1=$(md5sum ./tmp/code.cpp)
-fi
+m1=$(md5sum ./tmp/code.cpp)
 echo "Note: To allow for automatic diffing, this script will loop until you press CTRL+C."
 m3=$(md5sum ./tmp/compiler_flags.txt)
 if [[ ! -f ./tmp/compiler_flags.txt ]]; then
@@ -34,13 +28,8 @@ if [[ ! -f ./tmp/compiler_flags.txt ]]; then
 fi
 while :
 do
-    if [[ "$LANG" == "c" ]]; then
-        m1=$(md5sum ./tmp/code.c)
-    fi
 
-    if [[ "$LANG" == "cpp" ]]; then
-        m1=$(md5sum ./tmp/code.cpp)
-    fi
+    m2=$(md5sum ./tmp/code.cpp)
     m4=$(md5sum ./tmp/compiler_flags.txt)
     if [ "$m1" != "$m2" ] ; then
         ${COMPILER_PATH}/${COMPILER_VERSION}/MWCPPC.exe ./tmp/code.cpp ${COMPILER_FLAGS}

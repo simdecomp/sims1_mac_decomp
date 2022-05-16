@@ -75,12 +75,15 @@ def process_branches(asm_line, asm_line_index):
 
 def process_asm_line(asm_line, function):
     # only print defines and instructions
+    asm_line = asm_line.replace('SP', 'r1')
     if asm_line.startswith('Hunk') is True:
         return '.global %s\n%s:' % (function, function)
     if asm_line.startswith('.globl') is True:
         return '.global %s\n%s:' % (function, function)
     if ".align" in asm_line:
         # trim filler
+        return ";# REDACTED"
+    if asm_line.startswith('XRef'):
         return ";# REDACTED"
     return asm_line
 

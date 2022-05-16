@@ -2,7 +2,7 @@
 
 A WIP matching decompilation (aiming for logical matching decompilation of individual functions as opposed to raw matching of the entire binary... for now) of The Sims 1 (Complete Collection, PowerPC Mac OS 9 port).
 
-Very barebones, and no function is matching yet.
+Very barebones.
 See the bash and python scripts.
 
 Extract a clean ppc executable of the game from an installation of it, dated February 15, 2006, and place it in the root folder as "baserom".

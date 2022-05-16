@@ -1,0 +1,2 @@
+Unsorted decompiled source files made from the workflow described in this repo's main README.
+Some might not even be for decompilation of The Sims 1 and may just be my backups of other tests with Mac OS Classic decompilation.

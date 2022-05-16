@@ -4,5 +4,5 @@ expected/
 compilers/
 *.o
 tmp/
-asm/
+/asm/
 .vscode/settings.json

@@ -32,6 +32,8 @@ do
     m2=$(md5sum ./tmp/code.cpp)
     m4=$(md5sum ./tmp/compiler_flags.txt)
     if [ "$m1" != "$m2" ] ; then
+        COMPILER_FLAGS=$(cat ./tmp/compiler_flags.txt)
+        echo "# ${COMPILER_PATH}/${COMPILER_VERSION}/MWCPPC.exe ./tmp/code.cpp ${COMPILER_FLAGS}"
         ${COMPILER_PATH}/${COMPILER_VERSION}/MWCPPC.exe ./tmp/code.cpp ${COMPILER_FLAGS}
         ${COMPILER_PATH}/${COMPILER_VERSION}/MWLinkPPC.exe ./tmp/code.cpp.o -S -h -module ${FUNCTION} -nonames -nodata
 
@@ -49,6 +51,7 @@ do
     fi
     if [ "$m3" != "$m4" ] ; then
         COMPILER_FLAGS=$(cat ./tmp/compiler_flags.txt)
+        echo "# ${COMPILER_PATH}/${COMPILER_VERSION}/MWCPPC.exe ./tmp/code.cpp ${COMPILER_FLAGS}"
         ${COMPILER_PATH}/${COMPILER_VERSION}/MWCPPC.exe ./tmp/code.cpp ${COMPILER_FLAGS}
         ${COMPILER_PATH}/${COMPILER_VERSION}/MWLinkPPC.exe ./tmp/code.cpp.o -S -h -module ${FUNCTION} -nonames -nodata
 

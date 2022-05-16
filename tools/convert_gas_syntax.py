@@ -95,6 +95,7 @@ with open(sys.argv[1], 'r') as asm_file:
         print(".set f%i,%i" % (i, i))
     for i in range(0, 8):
         print(".set qr%i,%i" % (i, i))
+    print(".set RTOC,r2")
     print(' ')
     function = sys.argv[2].replace('.', '')
     asm_lines = asm_file.readlines()

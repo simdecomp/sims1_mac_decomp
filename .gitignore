@@ -5,3 +5,4 @@ compilers/
 *.o
 tmp/
 asm/
+.vscode/settings.json

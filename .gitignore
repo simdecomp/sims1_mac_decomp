@@ -1,0 +1,7 @@
+__pycache__/
+baserom
+expected/
+compilers/
+*.o
+tmp/
+asm/

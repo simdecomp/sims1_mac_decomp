@@ -1,4 +1,4 @@
-# sims2_mac_decomp
+# sims1_mac_decomp
 
 A WIP matching decompilation (aiming for logical matching decompilation of individual functions as opposed to raw matching of the entire binary... for now) of The Sims 1 (Complete Collection, PowerPC Mac OS 9 port).
 

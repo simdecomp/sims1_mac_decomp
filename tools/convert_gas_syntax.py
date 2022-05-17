@@ -75,7 +75,9 @@ def process_branches(asm_line, asm_line_index):
 
 def process_asm_line(asm_line, function):
     # only print defines and instructions
-    asm_line = asm_line.replace('SP', 'r1')
+    asm_line = asm_line.replace('<', '_')
+    asm_line = asm_line.replace('>', '_')
+    asm_line = asm_line.replace('$0000', '0')
     if asm_line.startswith('Hunk') is True:
         return '.global %s\n%s:' % (function, function)
     if asm_line.startswith('.globl') is True:
@@ -96,6 +98,7 @@ with open(sys.argv[1], 'r') as asm_file:
     for i in range(0, 8):
         print(".set qr%i,%i" % (i, i))
     print(".set RTOC,r2")
+    print(".set SP,r1")
     print(' ')
     function = sys.argv[2].replace('.', '')
     asm_lines = asm_file.readlines()

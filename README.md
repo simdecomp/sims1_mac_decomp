@@ -5,7 +5,7 @@ A WIP matching decompilation (aiming for logical matching decompilation of indiv
 Very barebones.
 See the bash and python scripts.
 
-Extract a clean ppc executable of the game from an installation of it, dated January 27, 2006, and place it in the root folder as "baserom".
+Extract a clean ppc executable of the game from an installation of it, dated February 15, 2006, and place it in the root folder as "baserom".
 
 At the moment, the only way to get an asm file is to load the executable in IDA and have it produce an ASM file. To decompile individual functions, you may need to reformat the outputted assembly so that binutils plays nice with it.
 

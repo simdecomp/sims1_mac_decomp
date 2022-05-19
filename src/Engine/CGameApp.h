@@ -1,10 +1,16 @@
-void UseResFile(short);
+#pragma once
+
+extern void UseResFile(short);
 
 struct CGameApp {
     unsigned int unk0;
 	unsigned char unk4[0x94];
 	short unk98;
-    unsigned char unk9C[0x344];
+    unsigned char unk9C[0x204];
+    short unk29E;
+    int unk2A0;
+    long unk2A4;
+    unsigned char unk2A8[0x9C];
 	void SetAppAsCurResFile() {
         if (unk98) {
             UseResFile(unk98);

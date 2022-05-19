@@ -2,7 +2,9 @@ __pycache__/
 baserom
 expected/
 compilers/
+.vscode/
 *.o
 tmp/
-/asm/
-.vscode/settings.json
+/asm/full/
+/src/OS/Mac/CIncludes/
+/src/OS/Mac/MacHeaders/

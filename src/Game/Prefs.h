@@ -1,3 +1,5 @@
+#pragma once
+
 struct Prefs {
     unsigned char unk0;
     unsigned char unk1;

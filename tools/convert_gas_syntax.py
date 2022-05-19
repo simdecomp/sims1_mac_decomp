@@ -78,6 +78,7 @@ def process_asm_line(asm_line, function):
     asm_line = asm_line.replace('<', '_')
     asm_line = asm_line.replace('>', '_')
     asm_line = asm_line.replace('$0000', '0')
+    asm_line = re.sub(r'@(.*)\(RTOC\)', r'data_\1(r2)',asm_line)
     if asm_line.startswith('Hunk') is True:
         return '.global %s\n%s:' % (function, function)
     if asm_line.startswith('.globl') is True:

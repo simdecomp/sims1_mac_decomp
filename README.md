@@ -11,7 +11,7 @@ At the moment, the only way to get an asm file is to load the executable in IDA 
 
 # Prerequisites:
 - WSL2, for running a linux shell that can execute the Win32 compilers; they don't run in wine unfortunately :(
-- [MWCPPC and MWLinkPPC](https://github.com/ChrisNonyminus/sims1_mac_decomp/files/8734968/compilers.zip); put the included compilers folder in the root of the repo.
+- [MWCPPC and MWLinkPPC](https://github.com/ChrisNonyminus/sims1_mac_decomp/files/8735152/compilers.zip); put the included compilers folder in the root of the repo.
 - build-essential, probably
 - Python 3.6 or higher.
 - Python dependencies: `python3 -m pip install --user colorama watchdog python-Levenshtein capstone macholib`

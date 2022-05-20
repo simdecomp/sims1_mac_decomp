@@ -1,16 +1,5 @@
-#include "Engine/CGameApp.h"
-#include "Game/Prefs.h"
-#include "Global/Global.h"
 
-struct CSimsApp : public CGameApp {
-    unsigned int unk3E4;
-    Prefs* prefs;
-    void SavePrefs();
-    bool MoveHDSkinsBuy();
-    bool InstallMusicFiles();
-    int FinishInstallation();
-    int ExecuteScriptResource(short);
-};
+#include "Game/CSimsApp.h"
 
 void CSimsApp::SavePrefs() {
     if (!prefs) {
@@ -22,8 +11,6 @@ void CSimsApp::SavePrefs() {
 }
 
 #ifdef NONMATCHING
-
-
 
 // have to define this function and add its 
 // nonmatching state to keep the string pool matching
@@ -99,4 +86,37 @@ int CSimsApp::FinishInstallation() {
     really_installed = BOOL(really_installed);
     return really_installed;
 }
+
+void CSimsApp::MapExtensionToType(char* extension, long* type) {
+    if (sub_5961E0(extension, ".iff") == 0) {
+        *type = 0x49464620; // "IFF "
+        return;
+    }
+    if (sub_5961E0(extension, ".jpg") == 0) {
+        *type = 0x4A504547; // "JPEG"
+        return;
+    }
+    if (sub_5961E0(extension, ".fam") == 0) {
+        *type = 0x46616D20; // "Fam "
+        return;
+    }
+    if (sub_5961E0(extension, ".txt") == 0) {
+        *type = 0x54455854; // "TEXT"
+        return;
+    }
+    if (sub_5961E0(extension, ".gif") == 0) {
+        *type = 0x47494666; // "GIFf"
+        return;
+    }
+    if (sub_5961E0(extension, ".bmp") == 0) {
+        *type = 0x424D5020; // "BMP "
+        return;
+    }
+    if (sub_5961E0(extension, ".html") == 0) {
+        *type = 0x54455854; // "TEXT"
+        return;
+    }
+    *type = 0x44617461; // "Data"
+}
+
 #endif

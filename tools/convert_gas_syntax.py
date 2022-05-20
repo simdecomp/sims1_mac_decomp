@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Uses regex to convert files from the old gnu assembler syntax (powerpc architecture only) to a modern one that modern binutils can assemble.
+# Uses regex to convert files from Metrowerks's assembly syntax (powerpc architecture only) to one that modern binutils can assemble.
 # 
 # USAGE: ./convert_gas_syntax.py INPUT_ASM_FILE > OUTPUT_ASM_FILE
 
@@ -78,7 +78,6 @@ def process_asm_line(asm_line, function):
     asm_line = asm_line.replace('<', '_')
     asm_line = asm_line.replace('>', '_')
     asm_line = asm_line.replace('$0000', '0')
-    asm_line = re.sub(r'@(.*)\(RTOC\)', r'data_\1(r2)',asm_line)
     if asm_line.startswith('Hunk') is True:
         return '.global %s\n%s:' % (function, function)
     if asm_line.startswith('.globl') is True:

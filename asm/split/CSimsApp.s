@@ -165,7 +165,8 @@ aSetgenerateupd:.string ".SetGenerateUpdateEvents__8CGameAppFUc"
 
 
 # CGameApp::SetGenerateMouseMovedEvents((unsigned char))
-.SetGenerateMouseMovedEvents__8CGameAppFUc:
+.global SetGenerateMouseMovedEvents__8CGameAppFUc
+SetGenerateMouseMovedEvents__8CGameAppFUc:
                                         # DATA XREF: seg001:off_5C46C8↓o
                 stb       r4, 9(r3)
                 blr
@@ -188,7 +189,8 @@ dword_8A8:      .long 0, 0              # DATA XREF: seg000:005A23E0↓o
 
 
 # CGameApp::SetMainPort((OpaqueGrafPtr *, bool))
-.SetMainPort__8CGameAppFP13OpaqueGrafPtrb:
+.global SetMainPort__8CGameAppFP13OpaqueGrafPtrb
+SetMainPort__8CGameAppFP13OpaqueGrafPtrb:
                                         # DATA XREF: seg000:005A3598↓o
                                         # seg001:off_5C46D0↓o
                 stw       r4, 0x54(r3)

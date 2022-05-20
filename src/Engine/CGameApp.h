@@ -2,20 +2,34 @@
 
 extern void UseResFile(short);
 
+struct OpaqueGrafPtr {
+
+};
+
 struct CGameApp {
     unsigned int unk0;
-	unsigned char unk4[0x94];
+    bool use_wne;
+    unsigned char padding[0x3];
+    unsigned char generate_update_events;
+    unsigned char generate_mouse_moved_events;
+    unsigned char padding2[0x2];
+    unsigned int unkC;
+    unsigned long system_task_frequency;
+	unsigned char unk14[0x40];
+    OpaqueGrafPtr* main_port;
+    bool main_port_is_window;
+    unsigned char padding3[3];
+    unsigned char unk60[0x38];
 	short unk98;
     unsigned char unk9C[0x204];
     short unk29E;
     int unk2A0;
     long unk2A4;
     unsigned char unk2A8[0x9C];
-	void SetAppAsCurResFile() {
-        if (unk98) {
-            UseResFile(unk98);
-        }
-    }
+	void SetAppAsCurResFile();
+    void SetMainPort(OpaqueGrafPtr*, bool);
+    OpaqueGrafPtr* GetMainPort();
+    bool MainPortIsWindow();
     virtual ~CGameApp() = 0;
     virtual int InitMacToolBox(unsigned char);
     virtual int CheckConfig(unsigned char);
@@ -28,10 +42,10 @@ struct CGameApp {
                                 unsigned char);
     virtual int GetMacOSEvent(void*);
     virtual int HandleMacOSEvent(void*);
-    virtual int unkvf0();
-    virtual int unkvf4();
-    virtual int unkvf8();
-    virtual int unkvfC();
+    virtual void SetUseWNE(bool val);
+    virtual void SetSystemTaskFrequency(unsigned long);
+    virtual void SetGenerateUpdateEvents(unsigned char);
+    virtual void SetGenerateMouseMovedEvents(unsigned char);
     virtual int ReadPrefs(void*, long*);
     virtual void WritePrefs(void*, long);
     virtual int SuspendApp() = 0;
@@ -43,5 +57,40 @@ struct CGameApp {
     virtual int DoQuit() = 0;
     virtual int DoAboutBox() = 0;
 };
+
+void CGameApp::SetAppAsCurResFile() {
+    if (unk98) {
+        UseResFile(unk98);
+    }
+}
+
+void CGameApp::SetUseWNE(bool val) {
+    use_wne = val;
+}
+
+void CGameApp::SetSystemTaskFrequency(unsigned long val) {
+    system_task_frequency = val;
+}
+
+void CGameApp::SetGenerateUpdateEvents(unsigned char val) {
+    generate_update_events = val;
+}
+
+void CGameApp::SetGenerateMouseMovedEvents(unsigned char val) {
+    generate_mouse_moved_events = val;
+}
+
+void CGameApp::SetMainPort(OpaqueGrafPtr* port, bool is_window) {
+    main_port = port;
+    main_port_is_window = is_window;
+}
+
+OpaqueGrafPtr* CGameApp::GetMainPort() {
+    return main_port;
+}
+
+bool CGameApp::MainPortIsWindow() {
+    return main_port_is_window;
+}
 
 extern CGameApp* g_app;

@@ -39,10 +39,10 @@ do
 
         python3 tools/convert_gas_syntax.py ./code.cpp.o.s "${FUNCTION}" > ./tmp/code_new.s
         rm ./code.cpp.o.s
-        python3 tools/convert_gas_syntax.py ./tmp/orig.s "${FUNCTION}" > ./tmp/orig_new.s
+        # python3 tools/convert_gas_syntax.py ./tmp/orig.s "${FUNCTION}" > ./tmp/orig_new.s
 
         powerpc-linux-gnu-as tmp/code_new.s -o tmp/code_new.o
-        powerpc-linux-gnu-as tmp/orig_new.s -o tmp/orig_new.o
+        powerpc-linux-gnu-as tmp/orig.s -o tmp/orig_new.o
         mkdir -p ./expected/tmp
         cp tmp/orig_new.o expected/tmp/code_new.o
 
@@ -57,10 +57,10 @@ do
 
         python3 tools/convert_gas_syntax.py ./code.cpp.o.s "${FUNCTION}" > ./tmp/code_new.s
         rm ./code.cpp.o.s
-        python3 tools/convert_gas_syntax.py ./tmp/orig.s "${FUNCTION}" > ./tmp/orig_new.s
+        #python3 tools/convert_gas_syntax.py ./tmp/orig.s "${FUNCTION}" > ./tmp/orig_new.s
 
         powerpc-linux-gnu-as tmp/code_new.s -o tmp/code_new.o
-        powerpc-linux-gnu-as tmp/orig_new.s -o tmp/orig_new.o
+        powerpc-linux-gnu-as tmp/orig.s -o tmp/orig_new.o
         mkdir -p ./expected/tmp
         cp tmp/orig_new.o expected/tmp/code_new.o
 

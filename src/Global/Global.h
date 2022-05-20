@@ -14,7 +14,8 @@ extern bool FileExists(short, long, char const *) ;
 extern bool AreWeOnX() ; // I think this is a function to check if the game is running on Darwin?
 
 extern "C" {
-    extern int remove(char const *) ;
+    extern int remove(char const *);
+    extern int sub_5961E0(char*, char*);
 }
 // engine functions
 extern short GetDirectoryID(short, int, char*, int*, void*) ;

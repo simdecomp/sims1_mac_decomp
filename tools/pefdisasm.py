@@ -11,7 +11,7 @@ import pefparser
 import sys
 
 r13_addr = None
-r2_addr = None
+r2_addr = 0x5c1460
 
 with open(sys.argv[1], 'rb') as dolfile:
     filecontent = bytearray(dolfile.read())
@@ -341,12 +341,9 @@ for i in range(0, 32):
     print(".set f%i, %i" % (i, i))
 for i in range(0, 8):
     print(".set qr%i, %i" % (i, i))
-if r13_addr != None:
-    print('# Small Data Area (read/write) Base')
-    print(".set _SDA_BASE_, 0x%08X" % r13_addr)
 if r2_addr != None:
-    print('# Small Data Area (read only) Base')
-    print(".set _SDA2_BASE_, 0x%08X" % r2_addr)
+    print('# Assumed r2 value')
+    print(".set _R2_BASE_, 0x%08X" % r2_addr)
 print('')
 
 # Converts the instruction to a string, fixing various issues with Capstone
@@ -393,11 +390,11 @@ def insn_to_text(insn, raw):
         if insn.id == PPC_INS_ADDI and insn.operands[1].reg == PPC_REG_R2:
             value = r2_addr + sign_extend_16(insn.operands[2].imm)
             if value in labels:
-                return "%s %s, %s, %s-_SDA2_BASE_" % (insn.mnemonic, insn.reg_name(insn.operands[0].reg), insn.reg_name(insn.operands[1].reg), addr_to_label(value))
+                return "%s %s, %s, %s-_R2_BASE_" % (insn.mnemonic, insn.reg_name(insn.operands[0].reg), insn.reg_name(insn.operands[1].reg), addr_to_label(value))
         if is_load_store_reg_offset(insn, PPC_REG_R2):
             value = r2_addr + sign_extend_16(insn.operands[1].mem.disp)
             if value in labels:
-                return "%s %s, %s-_SDA2_BASE_(%s)" % (insn.mnemonic, insn.reg_name(insn.operands[0].value.reg), addr_to_label(value), insn.reg_name(insn.operands[1].mem.base))
+                return "%s %s, %s-_R2_BASE_(%s)" % (insn.mnemonic, insn.reg_name(insn.operands[0].value.reg), addr_to_label(value), insn.reg_name(insn.operands[1].mem.base))
 
     # Sign-extend immediate values because Capstone is an idiot and doesn't do that automatically
     if insn.id in {PPC_INS_ADDI, PPC_INS_ADDIC, PPC_INS_SUBFIC, PPC_INS_MULLI} and (insn.operands[2].imm & 0x8000):

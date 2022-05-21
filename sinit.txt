@@ -1,22 +1,22 @@
- 0001:00002190       .__sinit__CSimsApp_cp | ✅ split into its own asm file!
- 0001:00003940       .__sinit__MacGIMEX_cp | ✅ split into its own asm file!
- 0001:00004250       .__sinit__MacMain_cpp | ✅ split into its own asm file!
- 0001:00005AF0       .__sinit__MacStringMunger_cp | ✅ split into its own asm file!
- 0001:00005D20       .__sinit__LargeInt_cpp | ✅ split into its own asm file!
- 0001:000061B0       .__sinit__RealMath_cpp | ✅ split into its own asm file!
- 0001:000092A0       .__sinit__CGameApp_cp | ✅ split into its own asm file!
- 0001:00009470       .__sinit__CDrawSprocket_cp | ✅ split into its own asm file!
- 0001:0000A2B0       .__sinit__CQuickTImePlayer_cp | ✅ split into its own asm file!
- 0001:0000BB50       .__sinit__Mac3D_cp | ✅ split into its own asm file!
- 0001:0000DB60       .__sinit__MacFiles_cp | ✅ split into its own asm file!
- 0001:0000EF00       .__sinit__MacPortUtils_cp | ✅ split into its own asm file!
- 0001:0000F210       .__sinit__MacSndUtils_cp | ✅ split into its own asm file!
- 0001:0000F5D0       .__sinit__MacTiming_cp | ✅ split into its own asm file!
- 0001:00011190       .__sinit__MacUtils_cp | ✅ split into its own asm file!
- 0001:00011700       .__sinit__MSLOverrides_cp | ✅ split into its own asm file!
- 0001:000185B0       .__sinit__Win32D3D_cp | ✅ split into its own asm file!
- 0001:0001D8A0       .__sinit__Win32DDraw_cp | ✅ split into its own asm file!
- 0001:0001E4F0       .__sinit__Win32DDraw2_cp | ✅ split into its own asm file!
+ 0001:00002190       .__sinit__CSimsApp_cp 
+ 0001:00003940       .__sinit__MacGIMEX_cp 
+ 0001:00004250       .__sinit__MacMain_cpp 
+ 0001:00005AF0       .__sinit__MacStringMunger_cp 
+ 0001:00005D20       .__sinit__LargeInt_cpp 
+ 0001:000061B0       .__sinit__RealMath_cpp 
+ 0001:000092A0       .__sinit__CGameApp_cp 
+ 0001:00009470       .__sinit__CDrawSprocket_cp 
+ 0001:0000A2B0       .__sinit__CQuickTImePlayer_cp 
+ 0001:0000BB50       .__sinit__Mac3D_cp 
+ 0001:0000DB60       .__sinit__MacFiles_cp 
+ 0001:0000EF00       .__sinit__MacPortUtils_cp 
+ 0001:0000F210       .__sinit__MacSndUtils_cp 
+ 0001:0000F5D0       .__sinit__MacTiming_cp 
+ 0001:00011190       .__sinit__MacUtils_cp 
+ 0001:00011700       .__sinit__MSLOverrides_cp 
+ 0001:000185B0       .__sinit__Win32D3D_cp 
+ 0001:0001D8A0       .__sinit__Win32DDraw_cp 
+ 0001:0001E4F0       .__sinit__Win32DDraw2_cp 
  0001:0001F900       .__sinit__Win32DDraw4_cp
  0001:00020730       .__sinit__Win32DDraw7_cp
  0001:00022F50       .__sinit__Win32DSound_cp
@@ -70,7 +70,7 @@
  0001:000943A0       .__sinit__Interaction_cpp
  0001:00094910       .__sinit__memwrap_cpp
  0001:00095AC0       .__sinit__menuwrap_cpp
- 0001:000965C0       .__sinit__Motive_cpp | ✅ split into its own asm file!
+ 0001:000965C0       .__sinit__Motive_cpp 
  0001:00096AC0       .__sinit__MotiveCurve_cpp
  0001:00097190       .__sinit__MotiveEffects_cpp
  0001:000990E0       .__sinit__mouseobject_cpp
@@ -86,7 +86,7 @@
  0001:000D5FD0       .__sinit__ObjectFolder_cpp
  0001:000D64F0       .__sinit__ObjectIterator_cpp
  0001:000E2D80       .__sinit__ObjectModule_cpp
- 0001:000F2D60       .__sinit__ObjectSim_cpp | ✅ split into its own asm file!
+ 0001:000F2D60       .__sinit__ObjectSim_cpp 
  0001:000F3550       .__sinit__ObjectStream_cpp
  0001:000F37A0       .__sinit__ObjectTypeAttributes_cpp
  0001:000F5520       .__sinit__ObjFnTable_cpp

@@ -1,0 +1,1376 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".SetRenderTarget__8Device3DFP19IDirectDrawSurface4"
+".SetRenderTarget__8Device3DFP19IDirectDrawSurface4":
+/* 003C4820 003CD6B0  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 003C4824 003CD6B4  7C 08 02 A6 */	mflr r0
+/* 003C4828 003CD6B8  83 A2 B5 80 */	lwz r29, lbl_005BC9E0-_R2_BASE_(r2)
+/* 003C482C 003CD6BC  3B 63 00 00 */	addi r27, r3, 0
+/* 003C4830 003CD6C0  3B 84 00 00 */	addi r28, r4, 0
+/* 003C4834 003CD6C4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4838 003CD6C8  94 21 FF 20 */	stwu r1, -0xe0(r1)
+/* 003C483C 003CD6CC  4B C4 AB 55 */	bl ".timeGetTime"
+/* 003C4840 003CD6D0  7C 7E 1B 78 */	mr r30, r3
+/* 003C4844 003CD6D4  80 7B 00 38 */	lwz r3, 0x38(r27)
+/* 003C4848 003CD6D8  7F 84 E3 78 */	mr r4, r28
+/* 003C484C 003CD6DC  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C4850 003CD6E0  38 A0 00 00 */	li r5, 0
+/* 003C4854 003CD6E4  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 003C4858 003CD6E8  48 1D 52 F9 */	bl func_00599B50
+/* 003C485C 003CD6EC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C4860 003CD6F0  2C 03 00 00 */	cmpwi r3, 0
+/* 003C4864 003CD6F4  90 7B 00 04 */	stw r3, 4(r27)
+/* 003C4868 003CD6F8  40 80 00 08 */	bge lbl_003C4870
+/* 003C486C 003CD6FC  48 00 00 90 */	b lbl_003C48FC
+lbl_003C4870:
+/* 003C4870 003CD700  4B C4 AB 21 */	bl ".timeGetTime"
+/* 003C4874 003CD704  3B E3 00 00 */	addi r31, r3, 0
+/* 003C4878 003CD708  7C 1E F8 50 */	subf r0, r30, r31
+/* 003C487C 003CD70C  2C 00 01 F4 */	cmpwi r0, 0x1f4
+/* 003C4880 003CD710  40 81 00 20 */	ble lbl_003C48A0
+/* 003C4884 003CD714  80 62 8C C0 */	lwz r3, lbl_005BA120-_R2_BASE_(r2)
+/* 003C4888 003CD718  7F A4 EB 78 */	mr r4, r29
+/* 003C488C 003CD71C  48 1A 2F 55 */	bl ".__ls__7CTGDumpFPCc"
+/* 003C4890 003CD720  7C 9E F8 50 */	subf r4, r30, r31
+/* 003C4894 003CD724  48 1A 2F 1D */	bl ".__ls__7CTGDumpFi"
+/* 003C4898 003CD728  38 9D 00 1F */	addi r4, r29, 0x1f
+/* 003C489C 003CD72C  48 1A 2F 45 */	bl ".__ls__7CTGDumpFPCc"
+lbl_003C48A0:
+/* 003C48A0 003CD730  80 7B 00 10 */	lwz r3, 0x10(r27)
+/* 003C48A4 003CD734  48 00 F6 7D */	bl ".RebindTextureHandles__13DDDTextureMgrFv"
+/* 003C48A8 003CD738  90 7B 00 04 */	stw r3, 4(r27)
+/* 003C48AC 003CD73C  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 003C48B0 003CD740  48 00 3A 71 */	bl ".RebindAllMaterials__14DDDMaterialMgrFv"
+/* 003C48B4 003CD744  90 7B 00 04 */	stw r3, 4(r27)
+/* 003C48B8 003CD748  38 61 00 40 */	addi r3, r1, 0x40
+/* 003C48BC 003CD74C  38 80 00 00 */	li r4, 0
+/* 003C48C0 003CD750  38 A0 00 7C */	li r5, 0x7c
+/* 003C48C4 003CD754  48 1C 96 1D */	bl func_0058DEE0
+/* 003C48C8 003CD758  38 00 00 7C */	li r0, 0x7c
+/* 003C48CC 003CD75C  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C48D0 003CD760  90 01 00 40 */	stw r0, 0x40(r1)
+/* 003C48D4 003CD764  7F 83 E3 78 */	mr r3, r28
+/* 003C48D8 003CD768  81 9C 00 00 */	lwz r12, 0(r28)
+/* 003C48DC 003CD76C  81 8C 00 60 */	lwz r12, 0x60(r12)
+/* 003C48E0 003CD770  48 1D 52 71 */	bl func_00599B50
+/* 003C48E4 003CD774  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C48E8 003CD778  80 01 00 4C */	lwz r0, 0x4c(r1)
+/* 003C48EC 003CD77C  90 1B 00 14 */	stw r0, 0x14(r27)
+/* 003C48F0 003CD780  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C48F4 003CD784  90 1B 00 18 */	stw r0, 0x18(r27)
+/* 003C48F8 003CD788  80 7B 00 04 */	lwz r3, 4(r27)
+lbl_003C48FC:
+/* 003C48FC 003CD78C  80 01 00 E8 */	lwz r0, 0xe8(r1)
+/* 003C4900 003CD790  38 21 00 E0 */	addi r1, r1, 0xe0
+/* 003C4904 003CD794  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 003C4908 003CD798  7C 08 03 A6 */	mtlr r0
+/* 003C490C 003CD79C  4E 80 00 20 */	blr 
+
+.global ".GetD3D3__8Device3DCFv"
+".GetD3D3__8Device3DCFv":
+/* 003C4960 003CD7F0  7C 08 02 A6 */	mflr r0
+/* 003C4964 003CD7F4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4968 003CD7F8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C496C 003CD7FC  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4970 003CD800  4B FE F6 A1 */	bl ".GetD3D3__10AnimDeviceCFv"
+/* 003C4974 003CD804  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C4978 003CD808  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C497C 003CD80C  7C 08 03 A6 */	mtlr r0
+/* 003C4980 003CD810  4E 80 00 20 */	blr 
+
+.global ".GetD3D__8Device3DCFv"
+".GetD3D__8Device3DCFv":
+/* 003C49B0 003CD840  7C 08 02 A6 */	mflr r0
+/* 003C49B4 003CD844  90 01 00 08 */	stw r0, 8(r1)
+/* 003C49B8 003CD848  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C49BC 003CD84C  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C49C0 003CD850  4B FE EA 51 */	bl ".GetD3D__10AnimDeviceCFv"
+/* 003C49C4 003CD854  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C49C8 003CD858  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C49CC 003CD85C  7C 08 03 A6 */	mtlr r0
+/* 003C49D0 003CD860  4E 80 00 20 */	blr 
+
+.global ".RestoreAllSurfaces__8Device3DFv"
+".RestoreAllSurfaces__8Device3DFv":
+/* 003C4A00 003CD890  7C 08 02 A6 */	mflr r0
+/* 003C4A04 003CD894  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4A08 003CD898  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C4A0C 003CD89C  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4A10 003CD8A0  4B FF 01 F1 */	bl ".RestoreAllSurfaces__10AnimDeviceFv"
+/* 003C4A14 003CD8A4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C4A18 003CD8A8  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C4A1C 003CD8AC  7C 08 03 A6 */	mtlr r0
+/* 003C4A20 003CD8B0  4E 80 00 20 */	blr 
+
+.global ".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv":
+/* 003C4A60 003CD8F0  80 03 00 04 */	lwz r0, 4(r3)
+/* 003C4A64 003CD8F4  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4A68 003CD8F8  54 00 10 3A */	slwi r0, r0, 2
+/* 003C4A6C 003CD8FC  7C 63 02 14 */	add r3, r3, r0
+/* 003C4A70 003CD900  4E 80 00 20 */	blr 
+
+.global ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D":
+/* 003C4AE0 003CD970  80 63 00 00 */	lwz r3, 0(r3)
+/* 003C4AE4 003CD974  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+".begin__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv":
+/* 003C4B60 003CD9F0  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4B64 003CD9F4  4E 80 00 20 */	blr 
+
+.global ".AddLightToAllViewports__8Device3DFP5Light"
+".AddLightToAllViewports__8Device3DFP5Light":
+/* 003C4BD0 003CDA60  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C4BD4 003CDA64  7C 08 02 A6 */	mflr r0
+/* 003C4BD8 003CDA68  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C4BDC 003CDA6C  3B C0 00 00 */	li r30, 0
+/* 003C4BE0 003CDA70  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C4BE4 003CDA74  3B A4 00 00 */	addi r29, r4, 0
+/* 003C4BE8 003CDA78  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C4BEC 003CDA7C  3B 83 00 00 */	addi r28, r3, 0
+/* 003C4BF0 003CDA80  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C4BF4 003CDA84  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4BF8 003CDA88  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C4BFC 003CDA8C  4B FF FF 65 */	bl ".begin__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C4C00 003CDA90  90 61 00 40 */	stw r3, 0x40(r1)
+/* 003C4C04 003CDA94  38 61 00 40 */	addi r3, r1, 0x40
+/* 003C4C08 003CDA98  4B FF FE D9 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C4C0C 003CDA9C  7C 7F 1B 78 */	mr r31, r3
+/* 003C4C10 003CDAA0  48 00 00 30 */	b lbl_003C4C40
+/* 003C4C14 003CDAA4  60 00 00 00 */	nop 
+lbl_003C4C18:
+/* 003C4C18 003CDAA8  80 7F 00 00 */	lwz r3, 0(r31)
+/* 003C4C1C 003CDAAC  28 03 00 00 */	cmplwi r3, 0
+/* 003C4C20 003CDAB0  41 82 00 1C */	beq lbl_003C4C3C
+/* 003C4C24 003CDAB4  7F A4 EB 78 */	mr r4, r29
+/* 003C4C28 003CDAB8  48 01 31 69 */	bl ".AddLight__10Viewport3DFP5Light"
+/* 003C4C2C 003CDABC  7C 7E 1B 79 */	or. r30, r3, r3
+/* 003C4C30 003CDAC0  41 82 00 0C */	beq lbl_003C4C3C
+/* 003C4C34 003CDAC4  48 00 00 2C */	b lbl_003C4C60
+/* 003C4C38 003CDAC8  60 00 00 00 */	nop 
+lbl_003C4C3C:
+/* 003C4C3C 003CDACC  3B FF 00 04 */	addi r31, r31, 4
+lbl_003C4C40:
+/* 003C4C40 003CDAD0  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C4C44 003CDAD4  4B FF FE 1D */	bl ".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C4C48 003CDAD8  90 61 00 44 */	stw r3, 0x44(r1)
+/* 003C4C4C 003CDADC  38 61 00 44 */	addi r3, r1, 0x44
+/* 003C4C50 003CDAE0  4B FF FE 91 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C4C54 003CDAE4  7C 1F 18 40 */	cmplw r31, r3
+/* 003C4C58 003CDAE8  40 82 FF C0 */	bne lbl_003C4C18
+/* 003C4C5C 003CDAEC  7F C3 F3 78 */	mr r3, r30
+lbl_003C4C60:
+/* 003C4C60 003CDAF0  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C4C64 003CDAF4  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C4C68 003CDAF8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C4C6C 003CDAFC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C4C70 003CDB00  7C 08 03 A6 */	mtlr r0
+/* 003C4C74 003CDB04  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C4C78 003CDB08  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C4C7C 003CDB0C  4E 80 00 20 */	blr 
+
+.global ".GarbageCollectLights__8Device3DFv"
+".GarbageCollectLights__8Device3DFv":
+/* 003C4CC0 003CDB50  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C4CC4 003CDB54  7C 08 02 A6 */	mflr r0
+/* 003C4CC8 003CDB58  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C4CCC 003CDB5C  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C4CD0 003CDB60  3B A3 00 00 */	addi r29, r3, 0
+/* 003C4CD4 003CDB64  38 7D 00 28 */	addi r3, r29, 0x28
+/* 003C4CD8 003CDB68  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4CDC 003CDB6C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C4CE0 003CDB70  48 00 03 01 */	bl ".begin__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+/* 003C4CE4 003CDB74  90 61 00 48 */	stw r3, 0x48(r1)
+/* 003C4CE8 003CDB78  38 61 00 48 */	addi r3, r1, 0x48
+/* 003C4CEC 003CDB7C  48 00 02 85 */	bl ".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C4CF0 003CDB80  7C 7E 1B 78 */	mr r30, r3
+/* 003C4CF4 003CDB84  48 00 00 A0 */	b lbl_003C4D94
+lbl_003C4CF8:
+/* 003C4CF8 003CDB88  83 FE 00 00 */	lwz r31, 0(r30)
+/* 003C4CFC 003CDB8C  28 1F 00 00 */	cmplwi r31, 0
+/* 003C4D00 003CDB90  40 82 00 28 */	bne lbl_003C4D28
+/* 003C4D04 003CDB94  93 C1 00 40 */	stw r30, 0x40(r1)
+/* 003C4D08 003CDB98  38 61 00 40 */	addi r3, r1, 0x40
+/* 003C4D0C 003CDB9C  48 00 01 F5 */	bl ".__iterator2pointer__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C4D10 003CDBA0  38 83 00 00 */	addi r4, r3, 0
+/* 003C4D14 003CDBA4  38 7D 00 28 */	addi r3, r29, 0x28
+/* 003C4D18 003CDBA8  48 00 01 69 */	bl ".erase__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FPP5Light"
+/* 003C4D1C 003CDBAC  38 60 00 01 */	li r3, 1
+/* 003C4D20 003CDBB0  48 00 00 94 */	b lbl_003C4DB4
+/* 003C4D24 003CDBB4  60 00 00 00 */	nop 
+lbl_003C4D28:
+/* 003C4D28 003CDBB8  7F E3 FB 78 */	mr r3, r31
+/* 003C4D2C 003CDBBC  81 9F 00 8C */	lwz r12, 0x8c(r31)
+/* 003C4D30 003CDBC0  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C4D34 003CDBC4  48 1D 4E 1D */	bl func_00599B50
+/* 003C4D38 003CDBC8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C4D3C 003CDBCC  7F E3 FB 78 */	mr r3, r31
+/* 003C4D40 003CDBD0  81 9F 00 8C */	lwz r12, 0x8c(r31)
+/* 003C4D44 003CDBD4  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C4D48 003CDBD8  48 1D 4E 09 */	bl func_00599B50
+/* 003C4D4C 003CDBDC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C4D50 003CDBE0  28 03 00 01 */	cmplwi r3, 1
+/* 003C4D54 003CDBE4  40 82 00 3C */	bne lbl_003C4D90
+/* 003C4D58 003CDBE8  7F E3 FB 78 */	mr r3, r31
+/* 003C4D5C 003CDBEC  81 9F 00 8C */	lwz r12, 0x8c(r31)
+/* 003C4D60 003CDBF0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C4D64 003CDBF4  48 1D 4D ED */	bl func_00599B50
+/* 003C4D68 003CDBF8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C4D6C 003CDBFC  93 C1 00 44 */	stw r30, 0x44(r1)
+/* 003C4D70 003CDC00  38 61 00 44 */	addi r3, r1, 0x44
+/* 003C4D74 003CDC04  48 00 01 8D */	bl ".__iterator2pointer__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C4D78 003CDC08  38 83 00 00 */	addi r4, r3, 0
+/* 003C4D7C 003CDC0C  38 7D 00 28 */	addi r3, r29, 0x28
+/* 003C4D80 003CDC10  48 00 01 01 */	bl ".erase__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FPP5Light"
+/* 003C4D84 003CDC14  38 60 00 01 */	li r3, 1
+/* 003C4D88 003CDC18  48 00 00 2C */	b lbl_003C4DB4
+/* 003C4D8C 003CDC1C  60 00 00 00 */	nop 
+lbl_003C4D90:
+/* 003C4D90 003CDC20  3B DE 00 04 */	addi r30, r30, 4
+lbl_003C4D94:
+/* 003C4D94 003CDC24  38 7D 00 28 */	addi r3, r29, 0x28
+/* 003C4D98 003CDC28  48 00 00 79 */	bl ".end__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+/* 003C4D9C 003CDC2C  90 61 00 4C */	stw r3, 0x4c(r1)
+/* 003C4DA0 003CDC30  38 61 00 4C */	addi r3, r1, 0x4c
+/* 003C4DA4 003CDC34  48 00 01 CD */	bl ".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C4DA8 003CDC38  7C 1E 18 40 */	cmplw r30, r3
+/* 003C4DAC 003CDC3C  40 82 FF 4C */	bne lbl_003C4CF8
+/* 003C4DB0 003CDC40  38 60 00 00 */	li r3, 0
+lbl_003C4DB4:
+/* 003C4DB4 003CDC44  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C4DB8 003CDC48  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C4DBC 003CDC4C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C4DC0 003CDC50  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C4DC4 003CDC54  7C 08 03 A6 */	mtlr r0
+/* 003C4DC8 003CDC58  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C4DCC 003CDC5C  4E 80 00 20 */	blr 
+
+.global ".end__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+".end__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv":
+/* 003C4E10 003CDCA0  80 03 00 04 */	lwz r0, 4(r3)
+/* 003C4E14 003CDCA4  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4E18 003CDCA8  54 00 10 3A */	slwi r0, r0, 2
+/* 003C4E1C 003CDCAC  7C 63 02 14 */	add r3, r3, r0
+/* 003C4E20 003CDCB0  4E 80 00 20 */	blr 
+
+.global ".erase__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FPP5Light"
+".erase__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FPP5Light":
+/* 003C4E80 003CDD10  7C 08 02 A6 */	mflr r0
+/* 003C4E84 003CDD14  90 01 00 08 */	stw r0, 8(r1)
+/* 003C4E88 003CDD18  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C4E8C 003CDD1C  4B C6 84 C5 */	bl ".erase__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUl"
+/* 003C4E90 003CDD20  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C4E94 003CDD24  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C4E98 003CDD28  7C 08 03 A6 */	mtlr r0
+/* 003C4E9C 003CDD2C  4E 80 00 20 */	blr 
+
+.global ".__iterator2pointer__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+".__iterator2pointer__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light":
+/* 003C4F00 003CDD90  80 63 00 00 */	lwz r3, 0(r3)
+/* 003C4F04 003CDD94  4E 80 00 20 */	blr 
+
+.global ".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light":
+/* 003C4F70 003CDE00  80 63 00 00 */	lwz r3, 0(r3)
+/* 003C4F74 003CDE04  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+".begin__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv":
+/* 003C4FE0 003CDE70  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C4FE4 003CDE74  4E 80 00 20 */	blr 
+
+.global ".CreateSpotLight__8Device3DFPP9SpotLighti"
+".CreateSpotLight__8Device3DFPP9SpotLighti":
+/* 003C5040 003CDED0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5044 003CDED4  7C 08 02 A6 */	mflr r0
+/* 003C5048 003CDED8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C504C 003CDEDC  3B C5 00 00 */	addi r30, r5, 0
+/* 003C5050 003CDEE0  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5054 003CDEE4  3B A4 00 00 */	addi r29, r4, 0
+/* 003C5058 003CDEE8  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C505C 003CDEEC  3B 83 00 00 */	addi r28, r3, 0
+/* 003C5060 003CDEF0  38 60 00 90 */	li r3, 0x90
+/* 003C5064 003CDEF4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5068 003CDEF8  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C506C 003CDEFC  48 1C 35 45 */	bl func_005885B0
+/* 003C5070 003CDF00  7C 7F 1B 79 */	or. r31, r3, r3
+/* 003C5074 003CDF04  41 82 00 0C */	beq lbl_003C5080
+/* 003C5078 003CDF08  7F 84 E3 78 */	mr r4, r28
+/* 003C507C 003CDF0C  48 00 18 45 */	bl ".__ct__9SpotLightFR8Device3D"
+lbl_003C5080:
+/* 003C5080 003CDF10  28 1F 00 00 */	cmplwi r31, 0
+/* 003C5084 003CDF14  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 003C5088 003CDF18  40 82 00 10 */	bne lbl_003C5098
+/* 003C508C 003CDF1C  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5090 003CDF20  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5094 003CDF24  48 00 00 D8 */	b lbl_003C516C
+lbl_003C5098:
+/* 003C5098 003CDF28  7F E3 FB 78 */	mr r3, r31
+/* 003C509C 003CDF2C  48 00 1F E5 */	bl ".Init__5LightFv"
+/* 003C50A0 003CDF30  2C 03 00 00 */	cmpwi r3, 0
+/* 003C50A4 003CDF34  41 82 00 08 */	beq lbl_003C50AC
+/* 003C50A8 003CDF38  48 00 00 C4 */	b lbl_003C516C
+lbl_003C50AC:
+/* 003C50AC 003CDF3C  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C50B0 003CDF40  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C50B4 003CDF44  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C50B8 003CDF48  48 1D 4A 99 */	bl func_00599B50
+/* 003C50BC 003CDF4C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C50C0 003CDF50  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C50C4 003CDF54  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C50C8 003CDF58  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C50CC 003CDF5C  48 1D 4A 85 */	bl func_00599B50
+/* 003C50D0 003CDF60  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C50D4 003CDF64  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C50D8 003CDF68  48 00 01 A9 */	bl ".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C50DC 003CDF6C  3B E3 00 00 */	addi r31, r3, 0
+/* 003C50E0 003CDF70  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C50E4 003CDF74  48 00 02 1D */	bl ".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C50E8 003CDF78  7C 03 F8 40 */	cmplw r3, r31
+/* 003C50EC 003CDF7C  40 82 00 50 */	bne lbl_003C513C
+/* 003C50F0 003CDF80  7F 83 E3 78 */	mr r3, r28
+/* 003C50F4 003CDF84  4B FF FB CD */	bl ".GarbageCollectLights__8Device3DFv"
+/* 003C50F8 003CDF88  2C 03 00 00 */	cmpwi r3, 0
+/* 003C50FC 003CDF8C  40 82 00 40 */	bne lbl_003C513C
+/* 003C5100 003CDF90  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5104 003CDF94  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5108 003CDF98  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C510C 003CDF9C  48 1D 4A 45 */	bl func_00599B50
+/* 003C5110 003CDFA0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5114 003CDFA4  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5118 003CDFA8  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C511C 003CDFAC  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C5120 003CDFB0  48 1D 4A 31 */	bl func_00599B50
+/* 003C5124 003CDFB4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5128 003CDFB8  38 00 00 00 */	li r0, 0
+/* 003C512C 003CDFBC  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5130 003CDFC0  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C5134 003CDFC4  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5138 003CDFC8  48 00 00 34 */	b lbl_003C516C
+lbl_003C513C:
+/* 003C513C 003CDFCC  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5140 003CDFD0  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C5144 003CDFD4  48 00 00 8D */	bl ".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light"
+/* 003C5148 003CDFD8  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 003C514C 003CDFDC  2C 1E 00 00 */	cmpwi r30, 0
+/* 003C5150 003CDFE0  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C5154 003CDFE4  41 82 00 14 */	beq lbl_003C5168
+/* 003C5158 003CDFE8  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 003C515C 003CDFEC  7F 83 E3 78 */	mr r3, r28
+/* 003C5160 003CDFF0  4B FF FA 71 */	bl ".AddLightToAllViewports__8Device3DFP5Light"
+/* 003C5164 003CDFF4  48 00 00 08 */	b lbl_003C516C
+lbl_003C5168:
+/* 003C5168 003CDFF8  38 60 00 00 */	li r3, 0
+lbl_003C516C:
+/* 003C516C 003CDFFC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5170 003CE000  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5174 003CE004  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5178 003CE008  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C517C 003CE00C  7C 08 03 A6 */	mtlr r0
+/* 003C5180 003CE010  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C5184 003CE014  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C5188 003CE018  4E 80 00 20 */	blr 
+
+.global ".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light"
+".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light":
+/* 003C51D0 003CE060  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C51D4 003CE064  7C 08 02 A6 */	mflr r0
+/* 003C51D8 003CE068  3B E4 00 00 */	addi r31, r4, 0
+/* 003C51DC 003CE06C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C51E0 003CE070  3B C3 00 00 */	addi r30, r3, 0
+/* 003C51E4 003CE074  90 01 00 08 */	stw r0, 8(r1)
+/* 003C51E8 003CE078  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C51EC 003CE07C  4B C6 6C F5 */	bl ".end__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C51F0 003CE080  38 83 00 00 */	addi r4, r3, 0
+/* 003C51F4 003CE084  38 7E 00 00 */	addi r3, r30, 0
+/* 003C51F8 003CE088  38 DF 00 00 */	addi r6, r31, 0
+/* 003C51FC 003CE08C  38 A0 00 01 */	li r5, 1
+/* 003C5200 003CE090  4B C6 82 91 */	bl ".insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
+/* 003C5204 003CE094  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C5208 003CE098  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C520C 003CE09C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5210 003CE0A0  7C 08 03 A6 */	mtlr r0
+/* 003C5214 003CE0A4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C5218 003CE0A8  4E 80 00 20 */	blr 
+
+.global ".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv":
+/* 003C5280 003CE110  7C 08 02 A6 */	mflr r0
+/* 003C5284 003CE114  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5288 003CE118  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C528C 003CE11C  4B C6 87 85 */	bl ".alloc__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>CFv"
+/* 003C5290 003CE120  4B C6 87 31 */	bl ".max_size__Q23std13allocator<Ul>CFv"
+/* 003C5294 003CE124  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C5298 003CE128  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C529C 003CE12C  7C 08 03 A6 */	mtlr r0
+/* 003C52A0 003CE130  4E 80 00 20 */	blr 
+
+.global ".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv":
+/* 003C5300 003CE190  80 63 00 04 */	lwz r3, 4(r3)
+/* 003C5304 003CE194  4E 80 00 20 */	blr 
+
+.global ".CreateParallelPointLight__8Device3DFPP18ParallelPointLighti"
+".CreateParallelPointLight__8Device3DFPP18ParallelPointLighti":
+/* 003C5360 003CE1F0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5364 003CE1F4  7C 08 02 A6 */	mflr r0
+/* 003C5368 003CE1F8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C536C 003CE1FC  3B C5 00 00 */	addi r30, r5, 0
+/* 003C5370 003CE200  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5374 003CE204  3B A4 00 00 */	addi r29, r4, 0
+/* 003C5378 003CE208  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C537C 003CE20C  3B 83 00 00 */	addi r28, r3, 0
+/* 003C5380 003CE210  38 60 00 90 */	li r3, 0x90
+/* 003C5384 003CE214  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5388 003CE218  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C538C 003CE21C  48 1C 32 25 */	bl func_005885B0
+/* 003C5390 003CE220  7C 7F 1B 79 */	or. r31, r3, r3
+/* 003C5394 003CE224  41 82 00 0C */	beq lbl_003C53A0
+/* 003C5398 003CE228  7F 84 E3 78 */	mr r4, r28
+/* 003C539C 003CE22C  48 00 16 25 */	bl ".__ct__18ParallelPointLightFR8Device3D"
+lbl_003C53A0:
+/* 003C53A0 003CE230  28 1F 00 00 */	cmplwi r31, 0
+/* 003C53A4 003CE234  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 003C53A8 003CE238  40 82 00 10 */	bne lbl_003C53B8
+/* 003C53AC 003CE23C  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C53B0 003CE240  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C53B4 003CE244  48 00 00 D8 */	b lbl_003C548C
+lbl_003C53B8:
+/* 003C53B8 003CE248  7F E3 FB 78 */	mr r3, r31
+/* 003C53BC 003CE24C  48 00 1C C5 */	bl ".Init__5LightFv"
+/* 003C53C0 003CE250  2C 03 00 00 */	cmpwi r3, 0
+/* 003C53C4 003CE254  41 82 00 08 */	beq lbl_003C53CC
+/* 003C53C8 003CE258  48 00 00 C4 */	b lbl_003C548C
+lbl_003C53CC:
+/* 003C53CC 003CE25C  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C53D0 003CE260  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C53D4 003CE264  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C53D8 003CE268  48 1D 47 79 */	bl func_00599B50
+/* 003C53DC 003CE26C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C53E0 003CE270  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C53E4 003CE274  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C53E8 003CE278  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C53EC 003CE27C  48 1D 47 65 */	bl func_00599B50
+/* 003C53F0 003CE280  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C53F4 003CE284  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C53F8 003CE288  4B FF FE 89 */	bl ".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C53FC 003CE28C  3B E3 00 00 */	addi r31, r3, 0
+/* 003C5400 003CE290  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5404 003CE294  4B FF FE FD */	bl ".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C5408 003CE298  7C 03 F8 40 */	cmplw r3, r31
+/* 003C540C 003CE29C  40 82 00 50 */	bne lbl_003C545C
+/* 003C5410 003CE2A0  7F 83 E3 78 */	mr r3, r28
+/* 003C5414 003CE2A4  4B FF F8 AD */	bl ".GarbageCollectLights__8Device3DFv"
+/* 003C5418 003CE2A8  2C 03 00 00 */	cmpwi r3, 0
+/* 003C541C 003CE2AC  40 82 00 40 */	bne lbl_003C545C
+/* 003C5420 003CE2B0  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5424 003CE2B4  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5428 003CE2B8  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C542C 003CE2BC  48 1D 47 25 */	bl func_00599B50
+/* 003C5430 003CE2C0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5434 003CE2C4  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5438 003CE2C8  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C543C 003CE2CC  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C5440 003CE2D0  48 1D 47 11 */	bl func_00599B50
+/* 003C5444 003CE2D4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5448 003CE2D8  38 00 00 00 */	li r0, 0
+/* 003C544C 003CE2DC  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5450 003CE2E0  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C5454 003CE2E4  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5458 003CE2E8  48 00 00 34 */	b lbl_003C548C
+lbl_003C545C:
+/* 003C545C 003CE2EC  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5460 003CE2F0  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C5464 003CE2F4  4B FF FD 6D */	bl ".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light"
+/* 003C5468 003CE2F8  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 003C546C 003CE2FC  2C 1E 00 00 */	cmpwi r30, 0
+/* 003C5470 003CE300  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C5474 003CE304  41 82 00 14 */	beq lbl_003C5488
+/* 003C5478 003CE308  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 003C547C 003CE30C  7F 83 E3 78 */	mr r3, r28
+/* 003C5480 003CE310  4B FF F7 51 */	bl ".AddLightToAllViewports__8Device3DFP5Light"
+/* 003C5484 003CE314  48 00 00 08 */	b lbl_003C548C
+lbl_003C5488:
+/* 003C5488 003CE318  38 60 00 00 */	li r3, 0
+lbl_003C548C:
+/* 003C548C 003CE31C  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5490 003CE320  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5494 003CE324  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5498 003CE328  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C549C 003CE32C  7C 08 03 A6 */	mtlr r0
+/* 003C54A0 003CE330  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C54A4 003CE334  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C54A8 003CE338  4E 80 00 20 */	blr 
+
+.global ".CreatePointLight__8Device3DFPP10PointLighti"
+".CreatePointLight__8Device3DFPP10PointLighti":
+/* 003C5500 003CE390  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5504 003CE394  7C 08 02 A6 */	mflr r0
+/* 003C5508 003CE398  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C550C 003CE39C  3B C5 00 00 */	addi r30, r5, 0
+/* 003C5510 003CE3A0  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5514 003CE3A4  3B A4 00 00 */	addi r29, r4, 0
+/* 003C5518 003CE3A8  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C551C 003CE3AC  3B 83 00 00 */	addi r28, r3, 0
+/* 003C5520 003CE3B0  38 60 00 90 */	li r3, 0x90
+/* 003C5524 003CE3B4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5528 003CE3B8  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C552C 003CE3BC  48 1C 30 85 */	bl func_005885B0
+/* 003C5530 003CE3C0  7C 7F 1B 79 */	or. r31, r3, r3
+/* 003C5534 003CE3C4  41 82 00 0C */	beq lbl_003C5540
+/* 003C5538 003CE3C8  7F 84 E3 78 */	mr r4, r28
+/* 003C553C 003CE3CC  48 00 15 85 */	bl ".__ct__10PointLightFR8Device3D"
+lbl_003C5540:
+/* 003C5540 003CE3D0  28 1F 00 00 */	cmplwi r31, 0
+/* 003C5544 003CE3D4  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 003C5548 003CE3D8  40 82 00 10 */	bne lbl_003C5558
+/* 003C554C 003CE3DC  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5550 003CE3E0  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5554 003CE3E4  48 00 00 D8 */	b lbl_003C562C
+lbl_003C5558:
+/* 003C5558 003CE3E8  7F E3 FB 78 */	mr r3, r31
+/* 003C555C 003CE3EC  48 00 1B 25 */	bl ".Init__5LightFv"
+/* 003C5560 003CE3F0  2C 03 00 00 */	cmpwi r3, 0
+/* 003C5564 003CE3F4  41 82 00 08 */	beq lbl_003C556C
+/* 003C5568 003CE3F8  48 00 00 C4 */	b lbl_003C562C
+lbl_003C556C:
+/* 003C556C 003CE3FC  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5570 003CE400  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5574 003CE404  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C5578 003CE408  48 1D 45 D9 */	bl func_00599B50
+/* 003C557C 003CE40C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5580 003CE410  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5584 003CE414  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5588 003CE418  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C558C 003CE41C  48 1D 45 C5 */	bl func_00599B50
+/* 003C5590 003CE420  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5594 003CE424  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5598 003CE428  4B FF FC E9 */	bl ".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C559C 003CE42C  3B E3 00 00 */	addi r31, r3, 0
+/* 003C55A0 003CE430  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C55A4 003CE434  4B FF FD 5D */	bl ".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C55A8 003CE438  7C 03 F8 40 */	cmplw r3, r31
+/* 003C55AC 003CE43C  40 82 00 50 */	bne lbl_003C55FC
+/* 003C55B0 003CE440  7F 83 E3 78 */	mr r3, r28
+/* 003C55B4 003CE444  4B FF F7 0D */	bl ".GarbageCollectLights__8Device3DFv"
+/* 003C55B8 003CE448  2C 03 00 00 */	cmpwi r3, 0
+/* 003C55BC 003CE44C  40 82 00 40 */	bne lbl_003C55FC
+/* 003C55C0 003CE450  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C55C4 003CE454  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C55C8 003CE458  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C55CC 003CE45C  48 1D 45 85 */	bl func_00599B50
+/* 003C55D0 003CE460  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C55D4 003CE464  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C55D8 003CE468  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C55DC 003CE46C  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C55E0 003CE470  48 1D 45 71 */	bl func_00599B50
+/* 003C55E4 003CE474  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C55E8 003CE478  38 00 00 00 */	li r0, 0
+/* 003C55EC 003CE47C  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C55F0 003CE480  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C55F4 003CE484  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C55F8 003CE488  48 00 00 34 */	b lbl_003C562C
+lbl_003C55FC:
+/* 003C55FC 003CE48C  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5600 003CE490  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C5604 003CE494  4B FF FB CD */	bl ".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light"
+/* 003C5608 003CE498  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 003C560C 003CE49C  2C 1E 00 00 */	cmpwi r30, 0
+/* 003C5610 003CE4A0  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C5614 003CE4A4  41 82 00 14 */	beq lbl_003C5628
+/* 003C5618 003CE4A8  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 003C561C 003CE4AC  7F 83 E3 78 */	mr r3, r28
+/* 003C5620 003CE4B0  4B FF F5 B1 */	bl ".AddLightToAllViewports__8Device3DFP5Light"
+/* 003C5624 003CE4B4  48 00 00 08 */	b lbl_003C562C
+lbl_003C5628:
+/* 003C5628 003CE4B8  38 60 00 00 */	li r3, 0
+lbl_003C562C:
+/* 003C562C 003CE4BC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5630 003CE4C0  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5634 003CE4C4  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5638 003CE4C8  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C563C 003CE4CC  7C 08 03 A6 */	mtlr r0
+/* 003C5640 003CE4D0  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C5644 003CE4D4  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C5648 003CE4D8  4E 80 00 20 */	blr 
+
+.global ".CreateDirectionalLight__8Device3DFPP16DirectionalLighti"
+".CreateDirectionalLight__8Device3DFPP16DirectionalLighti":
+/* 003C5690 003CE520  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5694 003CE524  7C 08 02 A6 */	mflr r0
+/* 003C5698 003CE528  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C569C 003CE52C  3B C5 00 00 */	addi r30, r5, 0
+/* 003C56A0 003CE530  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C56A4 003CE534  3B A4 00 00 */	addi r29, r4, 0
+/* 003C56A8 003CE538  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C56AC 003CE53C  3B 83 00 00 */	addi r28, r3, 0
+/* 003C56B0 003CE540  38 60 00 90 */	li r3, 0x90
+/* 003C56B4 003CE544  90 01 00 08 */	stw r0, 8(r1)
+/* 003C56B8 003CE548  38 00 00 00 */	li r0, 0
+/* 003C56BC 003CE54C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C56C0 003CE550  90 04 00 00 */	stw r0, 0(r4)
+/* 003C56C4 003CE554  48 1C 2E ED */	bl func_005885B0
+/* 003C56C8 003CE558  7C 7F 1B 79 */	or. r31, r3, r3
+/* 003C56CC 003CE55C  41 82 00 0C */	beq lbl_003C56D8
+/* 003C56D0 003CE560  7F 84 E3 78 */	mr r4, r28
+/* 003C56D4 003CE564  48 00 14 ED */	bl ".__ct__16DirectionalLightFR8Device3D"
+lbl_003C56D8:
+/* 003C56D8 003CE568  28 1F 00 00 */	cmplwi r31, 0
+/* 003C56DC 003CE56C  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 003C56E0 003CE570  40 82 00 10 */	bne lbl_003C56F0
+/* 003C56E4 003CE574  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C56E8 003CE578  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C56EC 003CE57C  48 00 00 D8 */	b lbl_003C57C4
+lbl_003C56F0:
+/* 003C56F0 003CE580  7F E3 FB 78 */	mr r3, r31
+/* 003C56F4 003CE584  48 00 19 8D */	bl ".Init__5LightFv"
+/* 003C56F8 003CE588  2C 03 00 00 */	cmpwi r3, 0
+/* 003C56FC 003CE58C  41 82 00 08 */	beq lbl_003C5704
+/* 003C5700 003CE590  48 00 00 C4 */	b lbl_003C57C4
+lbl_003C5704:
+/* 003C5704 003CE594  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5708 003CE598  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C570C 003CE59C  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C5710 003CE5A0  48 1D 44 41 */	bl func_00599B50
+/* 003C5714 003CE5A4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5718 003CE5A8  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C571C 003CE5AC  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5720 003CE5B0  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C5724 003CE5B4  48 1D 44 2D */	bl func_00599B50
+/* 003C5728 003CE5B8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C572C 003CE5BC  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5730 003CE5C0  4B FF FB 51 */	bl ".max_size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C5734 003CE5C4  3B E3 00 00 */	addi r31, r3, 0
+/* 003C5738 003CE5C8  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C573C 003CE5CC  4B FF FB C5 */	bl ".size__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>CFv"
+/* 003C5740 003CE5D0  7C 03 F8 40 */	cmplw r3, r31
+/* 003C5744 003CE5D4  40 82 00 50 */	bne lbl_003C5794
+/* 003C5748 003CE5D8  7F 83 E3 78 */	mr r3, r28
+/* 003C574C 003CE5DC  4B FF F5 75 */	bl ".GarbageCollectLights__8Device3DFv"
+/* 003C5750 003CE5E0  2C 03 00 00 */	cmpwi r3, 0
+/* 003C5754 003CE5E4  40 82 00 40 */	bne lbl_003C5794
+/* 003C5758 003CE5E8  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C575C 003CE5EC  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5760 003CE5F0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C5764 003CE5F4  48 1D 43 ED */	bl func_00599B50
+/* 003C5768 003CE5F8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C576C 003CE5FC  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5770 003CE600  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5774 003CE604  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C5778 003CE608  48 1D 43 D9 */	bl func_00599B50
+/* 003C577C 003CE60C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5780 003CE610  38 00 00 00 */	li r0, 0
+/* 003C5784 003CE614  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5788 003CE618  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C578C 003CE61C  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5790 003CE620  48 00 00 34 */	b lbl_003C57C4
+lbl_003C5794:
+/* 003C5794 003CE624  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5798 003CE628  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C579C 003CE62C  4B FF FA 35 */	bl ".push_back__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>FRCP5Light"
+/* 003C57A0 003CE630  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 003C57A4 003CE634  2C 1E 00 00 */	cmpwi r30, 0
+/* 003C57A8 003CE638  90 1D 00 00 */	stw r0, 0(r29)
+/* 003C57AC 003CE63C  41 82 00 14 */	beq lbl_003C57C0
+/* 003C57B0 003CE640  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 003C57B4 003CE644  7F 83 E3 78 */	mr r3, r28
+/* 003C57B8 003CE648  4B FF F4 19 */	bl ".AddLightToAllViewports__8Device3DFP5Light"
+/* 003C57BC 003CE64C  48 00 00 08 */	b lbl_003C57C4
+lbl_003C57C0:
+/* 003C57C0 003CE650  38 60 00 00 */	li r3, 0
+lbl_003C57C4:
+/* 003C57C4 003CE654  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C57C8 003CE658  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C57CC 003CE65C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C57D0 003CE660  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C57D4 003CE664  7C 08 03 A6 */	mtlr r0
+/* 003C57D8 003CE668  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C57DC 003CE66C  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C57E0 003CE670  4E 80 00 20 */	blr 
+
+.global ".GetNewTexture__8Device3DFPP10DDDTexturePCc"
+".GetNewTexture__8Device3DFPP10DDDTexturePCc":
+/* 003C5830 003CE6C0  7C 08 02 A6 */	mflr r0
+/* 003C5834 003CE6C4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5838 003CE6C8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C583C 003CE6CC  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 003C5840 003CE6D0  48 00 FA 21 */	bl ".GetNewTexture__13DDDTextureMgrFPP10DDDTexturePCc"
+/* 003C5844 003CE6D4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C5848 003CE6D8  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C584C 003CE6DC  7C 08 03 A6 */	mtlr r0
+/* 003C5850 003CE6E0  4E 80 00 20 */	blr 
+
+.global ".ReleaseMaterial__8Device3DFP11DDDMaterial"
+".ReleaseMaterial__8Device3DFP11DDDMaterial":
+/* 003C58A0 003CE730  7C 08 02 A6 */	mflr r0
+/* 003C58A4 003CE734  90 01 00 08 */	stw r0, 8(r1)
+/* 003C58A8 003CE738  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C58AC 003CE73C  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 003C58B0 003CE740  48 00 2C 11 */	bl ".ReleaseMaterial__14DDDMaterialMgrFP11DDDMaterial"
+/* 003C58B4 003CE744  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C58B8 003CE748  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C58BC 003CE74C  7C 08 03 A6 */	mtlr r0
+/* 003C58C0 003CE750  4E 80 00 20 */	blr 
+
+.global ".GetNewMaterial__8Device3DFPP11DDDMaterialPCc"
+".GetNewMaterial__8Device3DFPP11DDDMaterialPCc":
+/* 003C5900 003CE790  7C 08 02 A6 */	mflr r0
+/* 003C5904 003CE794  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5908 003CE798  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C590C 003CE79C  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 003C5910 003CE7A0  48 00 2D 01 */	bl ".GetNewMaterial__14DDDMaterialMgrFPP11DDDMaterialPCc"
+/* 003C5914 003CE7A4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C5918 003CE7A8  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C591C 003CE7AC  7C 08 03 A6 */	mtlr r0
+/* 003C5920 003CE7B0  4E 80 00 20 */	blr 
+
+.global ".Update__8Device3DFv"
+".Update__8Device3DFv":
+/* 003C5970 003CE800  7C 08 02 A6 */	mflr r0
+/* 003C5974 003CE804  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5978 003CE808  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C597C 003CE80C  80 63 00 08 */	lwz r3, 8(r3)
+/* 003C5980 003CE810  4B FF 40 A1 */	bl ".Update__10AnimDeviceFv"
+/* 003C5984 003CE814  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C5988 003CE818  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C598C 003CE81C  7C 08 03 A6 */	mtlr r0
+/* 003C5990 003CE820  4E 80 00 20 */	blr 
+
+.global ".ReleaseViewport__8Device3DFP10Viewport3D"
+".ReleaseViewport__8Device3DFP10Viewport3D":
+/* 003C59C0 003CE850  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C59C4 003CE854  7C 08 02 A6 */	mflr r0
+/* 003C59C8 003CE858  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C59CC 003CE85C  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C59D0 003CE860  3B A4 00 00 */	addi r29, r4, 0
+/* 003C59D4 003CE864  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C59D8 003CE868  3B 83 00 00 */	addi r28, r3, 0
+/* 003C59DC 003CE86C  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C59E0 003CE870  90 01 00 08 */	stw r0, 8(r1)
+/* 003C59E4 003CE874  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C59E8 003CE878  4B FF F0 79 */	bl ".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C59EC 003CE87C  90 61 00 44 */	stw r3, 0x44(r1)
+/* 003C59F0 003CE880  38 61 00 44 */	addi r3, r1, 0x44
+/* 003C59F4 003CE884  4B FF F0 ED */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C59F8 003CE888  3B E3 00 00 */	addi r31, r3, 0
+/* 003C59FC 003CE88C  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C5A00 003CE890  4B FF F1 61 */	bl ".begin__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C5A04 003CE894  90 61 00 48 */	stw r3, 0x48(r1)
+/* 003C5A08 003CE898  38 61 00 48 */	addi r3, r1, 0x48
+/* 003C5A0C 003CE89C  4B FF F0 D5 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C5A10 003CE8A0  7C 7E 1B 78 */	mr r30, r3
+/* 003C5A14 003CE8A4  48 00 00 08 */	b lbl_003C5A1C
+lbl_003C5A18:
+/* 003C5A18 003CE8A8  3B DE 00 04 */	addi r30, r30, 4
+lbl_003C5A1C:
+/* 003C5A1C 003CE8AC  7C 1E F8 40 */	cmplw r30, r31
+/* 003C5A20 003CE8B0  41 82 00 10 */	beq lbl_003C5A30
+/* 003C5A24 003CE8B4  80 1E 00 00 */	lwz r0, 0(r30)
+/* 003C5A28 003CE8B8  7C 00 E8 40 */	cmplw r0, r29
+/* 003C5A2C 003CE8BC  40 82 FF EC */	bne lbl_003C5A18
+lbl_003C5A30:
+/* 003C5A30 003CE8C0  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C5A34 003CE8C4  4B FF F0 2D */	bl ".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C5A38 003CE8C8  90 61 00 4C */	stw r3, 0x4c(r1)
+/* 003C5A3C 003CE8CC  38 61 00 4C */	addi r3, r1, 0x4c
+/* 003C5A40 003CE8D0  4B FF F0 A1 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C5A44 003CE8D4  7C 1E 18 40 */	cmplw r30, r3
+/* 003C5A48 003CE8D8  41 82 00 70 */	beq lbl_003C5AB8
+/* 003C5A4C 003CE8DC  80 9E 00 00 */	lwz r4, 0(r30)
+/* 003C5A50 003CE8E0  38 60 00 00 */	li r3, 0
+/* 003C5A54 003CE8E4  80 84 00 F0 */	lwz r4, 0xf0(r4)
+/* 003C5A58 003CE8E8  28 04 00 00 */	cmplwi r4, 0
+/* 003C5A5C 003CE8EC  41 82 00 18 */	beq lbl_003C5A74
+/* 003C5A60 003CE8F0  80 7C 00 38 */	lwz r3, 0x38(r28)
+/* 003C5A64 003CE8F4  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C5A68 003CE8F8  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 003C5A6C 003CE8FC  48 1D 40 E5 */	bl func_00599B50
+/* 003C5A70 003CE900  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_003C5A74:
+/* 003C5A74 003CE904  2C 03 00 00 */	cmpwi r3, 0
+/* 003C5A78 003CE908  41 82 00 08 */	beq lbl_003C5A80
+/* 003C5A7C 003CE90C  48 00 00 40 */	b lbl_003C5ABC
+lbl_003C5A80:
+/* 003C5A80 003CE910  80 7E 00 00 */	lwz r3, 0(r30)
+/* 003C5A84 003CE914  28 03 00 00 */	cmplwi r3, 0
+/* 003C5A88 003CE918  41 82 00 18 */	beq lbl_003C5AA0
+/* 003C5A8C 003CE91C  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C5A90 003CE920  38 80 00 01 */	li r4, 1
+/* 003C5A94 003CE924  81 8C 00 08 */	lwz r12, 8(r12)
+/* 003C5A98 003CE928  48 1D 40 B9 */	bl func_00599B50
+/* 003C5A9C 003CE92C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_003C5AA0:
+/* 003C5AA0 003CE930  93 C1 00 40 */	stw r30, 0x40(r1)
+/* 003C5AA4 003CE934  38 61 00 40 */	addi r3, r1, 0x40
+/* 003C5AA8 003CE938  48 00 01 09 */	bl ".__iterator2pointer__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C5AAC 003CE93C  38 83 00 00 */	addi r4, r3, 0
+/* 003C5AB0 003CE940  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C5AB4 003CE944  48 00 00 6D */	bl ".erase__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FPP10Viewport3D"
+lbl_003C5AB8:
+/* 003C5AB8 003CE948  38 60 00 00 */	li r3, 0
+lbl_003C5ABC:
+/* 003C5ABC 003CE94C  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5AC0 003CE950  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5AC4 003CE954  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5AC8 003CE958  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C5ACC 003CE95C  7C 08 03 A6 */	mtlr r0
+/* 003C5AD0 003CE960  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C5AD4 003CE964  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C5AD8 003CE968  4E 80 00 20 */	blr 
+
+.global ".erase__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FPP10Viewport3D"
+".erase__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FPP10Viewport3D":
+/* 003C5B20 003CE9B0  7C 08 02 A6 */	mflr r0
+/* 003C5B24 003CE9B4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5B28 003CE9B8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003C5B2C 003CE9BC  4B C6 78 25 */	bl ".erase__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUl"
+/* 003C5B30 003CE9C0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003C5B34 003CE9C4  38 21 00 40 */	addi r1, r1, 0x40
+/* 003C5B38 003CE9C8  7C 08 03 A6 */	mtlr r0
+/* 003C5B3C 003CE9CC  4E 80 00 20 */	blr 
+
+.global ".__iterator2pointer__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+".__iterator2pointer__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D":
+/* 003C5BB0 003CEA40  80 63 00 00 */	lwz r3, 0(r3)
+/* 003C5BB4 003CEA44  4E 80 00 20 */	blr 
+
+.global ".push_back__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FRCP10Viewport3D"
+".push_back__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FRCP10Viewport3D":
+/* 003C5C30 003CEAC0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5C34 003CEAC4  7C 08 02 A6 */	mflr r0
+/* 003C5C38 003CEAC8  3B E4 00 00 */	addi r31, r4, 0
+/* 003C5C3C 003CEACC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C5C40 003CEAD0  3B C3 00 00 */	addi r30, r3, 0
+/* 003C5C44 003CEAD4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5C48 003CEAD8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C5C4C 003CEADC  4B C6 62 95 */	bl ".end__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C5C50 003CEAE0  38 83 00 00 */	addi r4, r3, 0
+/* 003C5C54 003CEAE4  38 7E 00 00 */	addi r3, r30, 0
+/* 003C5C58 003CEAE8  38 DF 00 00 */	addi r6, r31, 0
+/* 003C5C5C 003CEAEC  38 A0 00 01 */	li r5, 1
+/* 003C5C60 003CEAF0  4B C6 78 31 */	bl ".insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
+/* 003C5C64 003CEAF4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C5C68 003CEAF8  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C5C6C 003CEAFC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5C70 003CEB00  7C 08 03 A6 */	mtlr r0
+/* 003C5C74 003CEB04  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C5C78 003CEB08  4E 80 00 20 */	blr 
+
+.global ".CreateViewport__8Device3DFPP10Viewport3DP7tagRECT"
+".CreateViewport__8Device3DFPP10Viewport3DP7tagRECT":
+/* 003C5CF0 003CEB80  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5CF4 003CEB84  7C 08 02 A6 */	mflr r0
+/* 003C5CF8 003CEB88  3B E5 00 00 */	addi r31, r5, 0
+/* 003C5CFC 003CEB8C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C5D00 003CEB90  3B C4 00 00 */	addi r30, r4, 0
+/* 003C5D04 003CEB94  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5D08 003CEB98  3B A3 00 00 */	addi r29, r3, 0
+/* 003C5D0C 003CEB9C  38 60 04 20 */	li r3, 0x420
+/* 003C5D10 003CEBA0  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C5D14 003CEBA4  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5D18 003CEBA8  38 00 00 00 */	li r0, 0
+/* 003C5D1C 003CEBAC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C5D20 003CEBB0  90 04 00 00 */	stw r0, 0(r4)
+/* 003C5D24 003CEBB4  48 1C 28 8D */	bl func_005885B0
+/* 003C5D28 003CEBB8  7C 7C 1B 79 */	or. r28, r3, r3
+/* 003C5D2C 003CEBBC  41 82 00 0C */	beq lbl_003C5D38
+/* 003C5D30 003CEBC0  7F A4 EB 78 */	mr r4, r29
+/* 003C5D34 003CEBC4  48 01 42 4D */	bl ".__ct__10Viewport3DFR8Device3D"
+lbl_003C5D38:
+/* 003C5D38 003CEBC8  28 1C 00 00 */	cmplwi r28, 0
+/* 003C5D3C 003CEBCC  93 81 00 40 */	stw r28, 0x40(r1)
+/* 003C5D40 003CEBD0  40 82 00 14 */	bne lbl_003C5D54
+/* 003C5D44 003CEBD4  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C5D48 003CEBD8  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C5D4C 003CEBDC  90 7D 00 04 */	stw r3, 4(r29)
+/* 003C5D50 003CEBE0  48 00 00 5C */	b lbl_003C5DAC
+lbl_003C5D54:
+/* 003C5D54 003CEBE4  38 7C 00 00 */	addi r3, r28, 0
+/* 003C5D58 003CEBE8  38 9F 00 00 */	addi r4, r31, 0
+/* 003C5D5C 003CEBEC  48 01 3D B5 */	bl ".Init__10Viewport3DFP7tagRECT"
+/* 003C5D60 003CEBF0  2C 03 00 00 */	cmpwi r3, 0
+/* 003C5D64 003CEBF4  90 7D 00 04 */	stw r3, 4(r29)
+/* 003C5D68 003CEBF8  41 82 00 2C */	beq lbl_003C5D94
+/* 003C5D6C 003CEBFC  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 003C5D70 003CEC00  28 03 00 00 */	cmplwi r3, 0
+/* 003C5D74 003CEC04  41 82 00 18 */	beq lbl_003C5D8C
+/* 003C5D78 003CEC08  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C5D7C 003CEC0C  38 80 00 01 */	li r4, 1
+/* 003C5D80 003CEC10  81 8C 00 08 */	lwz r12, 8(r12)
+/* 003C5D84 003CEC14  48 1D 3D CD */	bl func_00599B50
+/* 003C5D88 003CEC18  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_003C5D8C:
+/* 003C5D8C 003CEC1C  80 7D 00 04 */	lwz r3, 4(r29)
+/* 003C5D90 003CEC20  48 00 00 1C */	b lbl_003C5DAC
+lbl_003C5D94:
+/* 003C5D94 003CEC24  38 7D 00 1C */	addi r3, r29, 0x1c
+/* 003C5D98 003CEC28  38 81 00 40 */	addi r4, r1, 0x40
+/* 003C5D9C 003CEC2C  4B FF FE 95 */	bl ".push_back__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>FRCP10Viewport3D"
+/* 003C5DA0 003CEC30  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 003C5DA4 003CEC34  38 60 00 00 */	li r3, 0
+/* 003C5DA8 003CEC38  90 1E 00 00 */	stw r0, 0(r30)
+lbl_003C5DAC:
+/* 003C5DAC 003CEC3C  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5DB0 003CEC40  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5DB4 003CEC44  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5DB8 003CEC48  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C5DBC 003CEC4C  7C 08 03 A6 */	mtlr r0
+/* 003C5DC0 003CEC50  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C5DC4 003CEC54  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C5DC8 003CEC58  4E 80 00 20 */	blr 
+
+.global ".TearDown__8Device3DFv"
+".TearDown__8Device3DFv":
+/* 003C5E10 003CECA0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5E14 003CECA4  7C 08 02 A6 */	mflr r0
+/* 003C5E18 003CECA8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C5E1C 003CECAC  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5E20 003CECB0  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C5E24 003CECB4  3B 83 00 00 */	addi r28, r3, 0
+/* 003C5E28 003CECB8  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5E2C 003CECBC  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5E30 003CECC0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C5E34 003CECC4  4B FF EF DD */	bl ".end__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+/* 003C5E38 003CECC8  90 61 00 40 */	stw r3, 0x40(r1)
+/* 003C5E3C 003CECCC  38 61 00 40 */	addi r3, r1, 0x40
+/* 003C5E40 003CECD0  4B FF F1 31 */	bl ".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C5E44 003CECD4  3B E3 00 00 */	addi r31, r3, 0
+/* 003C5E48 003CECD8  38 7C 00 28 */	addi r3, r28, 0x28
+/* 003C5E4C 003CECDC  4B FF F1 95 */	bl ".begin__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+/* 003C5E50 003CECE0  90 61 00 44 */	stw r3, 0x44(r1)
+/* 003C5E54 003CECE4  38 61 00 44 */	addi r3, r1, 0x44
+/* 003C5E58 003CECE8  4B FF F1 19 */	bl ".__pointer2iterator__Q23std42vector<P5Light,Q23std18allocator<P5Light>>FRCPP5Light"
+/* 003C5E5C 003CECEC  7C 7D 1B 78 */	mr r29, r3
+/* 003C5E60 003CECF0  48 00 00 28 */	b lbl_003C5E88
+/* 003C5E64 003CECF4  60 00 00 00 */	nop 
+lbl_003C5E68:
+/* 003C5E68 003CECF8  80 7D 00 00 */	lwz r3, 0(r29)
+/* 003C5E6C 003CECFC  28 03 00 00 */	cmplwi r3, 0
+/* 003C5E70 003CED00  41 82 00 14 */	beq lbl_003C5E84
+/* 003C5E74 003CED04  81 83 00 8C */	lwz r12, 0x8c(r3)
+/* 003C5E78 003CED08  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 003C5E7C 003CED0C  48 1D 3C D5 */	bl func_00599B50
+/* 003C5E80 003CED10  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_003C5E84:
+/* 003C5E84 003CED14  3B BD 00 04 */	addi r29, r29, 4
+lbl_003C5E88:
+/* 003C5E88 003CED18  7C 1D F8 40 */	cmplw r29, r31
+/* 003C5E8C 003CED1C  40 82 FF DC */	bne lbl_003C5E68
+/* 003C5E90 003CED20  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C5E94 003CED24  4B FF EB CD */	bl ".end__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C5E98 003CED28  90 61 00 48 */	stw r3, 0x48(r1)
+/* 003C5E9C 003CED2C  38 61 00 48 */	addi r3, r1, 0x48
+/* 003C5EA0 003CED30  4B FF EC 41 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C5EA4 003CED34  3B E3 00 00 */	addi r31, r3, 0
+/* 003C5EA8 003CED38  38 7C 00 1C */	addi r3, r28, 0x1c
+/* 003C5EAC 003CED3C  4B FF EC B5 */	bl ".begin__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C5EB0 003CED40  90 61 00 4C */	stw r3, 0x4c(r1)
+/* 003C5EB4 003CED44  38 61 00 4C */	addi r3, r1, 0x4c
+/* 003C5EB8 003CED48  4B FF EC 29 */	bl ".__pointer2iterator__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>FRCPP10Viewport3D"
+/* 003C5EBC 003CED4C  7C 7D 1B 78 */	mr r29, r3
+/* 003C5EC0 003CED50  48 00 00 28 */	b lbl_003C5EE8
+/* 003C5EC4 003CED54  60 00 00 00 */	nop 
+lbl_003C5EC8:
+/* 003C5EC8 003CED58  83 DD 00 00 */	lwz r30, 0(r29)
+/* 003C5ECC 003CED5C  28 1E 00 00 */	cmplwi r30, 0
+/* 003C5ED0 003CED60  41 82 00 14 */	beq lbl_003C5EE4
+/* 003C5ED4 003CED64  7F C3 F3 78 */	mr r3, r30
+/* 003C5ED8 003CED68  48 00 00 B9 */	bl ".GetDevice3D__10Viewport3DFv"
+/* 003C5EDC 003CED6C  7F C4 F3 78 */	mr r4, r30
+/* 003C5EE0 003CED70  4B FF FA E1 */	bl ".ReleaseViewport__8Device3DFP10Viewport3D"
+lbl_003C5EE4:
+/* 003C5EE4 003CED74  3B BD 00 04 */	addi r29, r29, 4
+lbl_003C5EE8:
+/* 003C5EE8 003CED78  7C 1D F8 40 */	cmplw r29, r31
+/* 003C5EEC 003CED7C  40 82 FF DC */	bne lbl_003C5EC8
+/* 003C5EF0 003CED80  80 7C 00 34 */	lwz r3, 0x34(r28)
+/* 003C5EF4 003CED84  28 03 00 00 */	cmplwi r3, 0
+/* 003C5EF8 003CED88  41 82 00 1C */	beq lbl_003C5F14
+/* 003C5EFC 003CED8C  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C5F00 003CED90  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C5F04 003CED94  48 1D 3C 4D */	bl func_00599B50
+/* 003C5F08 003CED98  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5F0C 003CED9C  38 00 00 00 */	li r0, 0
+/* 003C5F10 003CEDA0  90 1C 00 34 */	stw r0, 0x34(r28)
+lbl_003C5F14:
+/* 003C5F14 003CEDA4  80 7C 00 38 */	lwz r3, 0x38(r28)
+/* 003C5F18 003CEDA8  28 03 00 00 */	cmplwi r3, 0
+/* 003C5F1C 003CEDAC  41 82 00 1C */	beq lbl_003C5F38
+/* 003C5F20 003CEDB0  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C5F24 003CEDB4  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 003C5F28 003CEDB8  48 1D 3C 29 */	bl func_00599B50
+/* 003C5F2C 003CEDBC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C5F30 003CEDC0  38 00 00 00 */	li r0, 0
+/* 003C5F34 003CEDC4  90 1C 00 38 */	stw r0, 0x38(r28)
+lbl_003C5F38:
+/* 003C5F38 003CEDC8  38 60 00 00 */	li r3, 0
+/* 003C5F3C 003CEDCC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C5F40 003CEDD0  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C5F44 003CEDD4  7C 08 03 A6 */	mtlr r0
+/* 003C5F48 003CEDD8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C5F4C 003CEDDC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C5F50 003CEDE0  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C5F54 003CEDE4  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C5F58 003CEDE8  4E 80 00 20 */	blr 
+
+.global ".GetDevice3D__10Viewport3DFv"
+".GetDevice3D__10Viewport3DFv":
+/* 003C5F90 003CEE20  80 63 00 60 */	lwz r3, 0x60(r3)
+/* 003C5F94 003CEE24  4E 80 00 20 */	blr 
+
+.global ".Init__8Device3DFR10AnimDeviceP6HWND__P19IDirectDrawSurface4iiiiP15tagPALETTEENTRY"
+".Init__8Device3DFR10AnimDeviceP6HWND__P19IDirectDrawSurface4iiiiP15tagPALETTEENTRY":
+/* 003C5FD0 003CEE60  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C5FD4 003CEE64  7C 08 02 A6 */	mflr r0
+/* 003C5FD8 003CEE68  3B E9 00 00 */	addi r31, r9, 0
+/* 003C5FDC 003CEE6C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C5FE0 003CEE70  3B C8 00 00 */	addi r30, r8, 0
+/* 003C5FE4 003CEE74  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C5FE8 003CEE78  3B A6 00 00 */	addi r29, r6, 0
+/* 003C5FEC 003CEE7C  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C5FF0 003CEE80  7C 7C 1B 78 */	mr r28, r3
+/* 003C5FF4 003CEE84  90 01 00 08 */	stw r0, 8(r1)
+/* 003C5FF8 003CEE88  38 00 00 00 */	li r0, 0
+/* 003C5FFC 003CEE8C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C6000 003CEE90  90 83 00 08 */	stw r4, 8(r3)
+/* 003C6004 003CEE94  90 03 00 04 */	stw r0, 4(r3)
+/* 003C6008 003CEE98  38 64 00 00 */	addi r3, r4, 0
+/* 003C600C 003CEE9C  4B FE DA C5 */	bl ".GetBuffDims__10AnimDeviceCFv"
+/* 003C6010 003CEEA0  80 03 00 00 */	lwz r0, 0(r3)
+/* 003C6014 003CEEA4  28 1D 00 00 */	cmplwi r29, 0
+/* 003C6018 003CEEA8  90 1C 00 14 */	stw r0, 0x14(r28)
+/* 003C601C 003CEEAC  93 DC 00 14 */	stw r30, 0x14(r28)
+/* 003C6020 003CEEB0  93 FC 00 18 */	stw r31, 0x18(r28)
+/* 003C6024 003CEEB4  40 82 00 10 */	bne lbl_003C6034
+/* 003C6028 003CEEB8  80 7C 00 08 */	lwz r3, 8(r28)
+/* 003C602C 003CEEBC  4B FE E0 25 */	bl ".GetDDBackBuffer4__10AnimDeviceCFv"
+/* 003C6030 003CEEC0  7C 7D 1B 78 */	mr r29, r3
+lbl_003C6034:
+/* 003C6034 003CEEC4  83 FC 00 08 */	lwz r31, 8(r28)
+/* 003C6038 003CEEC8  7F E3 FB 78 */	mr r3, r31
+/* 003C603C 003CEECC  4B FE DF D5 */	bl ".GetD3D3__10AnimDeviceCFv"
+/* 003C6040 003CEED0  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C6044 003CEED4  38 BD 00 00 */	addi r5, r29, 0
+/* 003C6048 003CEED8  38 9F 0C 78 */	addi r4, r31, 0xc78
+/* 003C604C 003CEEDC  38 DC 00 38 */	addi r6, r28, 0x38
+/* 003C6050 003CEEE0  81 8C 00 28 */	lwz r12, 0x28(r12)
+/* 003C6054 003CEEE4  38 E0 00 00 */	li r7, 0
+/* 003C6058 003CEEE8  48 1D 3A F9 */	bl func_00599B50
+/* 003C605C 003CEEEC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C6060 003CEEF0  2C 03 00 00 */	cmpwi r3, 0
+/* 003C6064 003CEEF4  90 7C 00 04 */	stw r3, 4(r28)
+/* 003C6068 003CEEF8  41 82 00 08 */	beq lbl_003C6070
+/* 003C606C 003CEEFC  48 00 00 BC */	b lbl_003C6128
+lbl_003C6070:
+/* 003C6070 003CEF00  80 7C 00 38 */	lwz r3, 0x38(r28)
+/* 003C6074 003CEF04  38 BC 00 34 */	addi r5, r28, 0x34
+/* 003C6078 003CEF08  80 82 89 24 */	lwz r4, lbl_005B9D84-_R2_BASE_(r2)
+/* 003C607C 003CEF0C  81 83 00 00 */	lwz r12, 0(r3)
+/* 003C6080 003CEF10  81 8C 00 08 */	lwz r12, 8(r12)
+/* 003C6084 003CEF14  48 1D 3A CD */	bl func_00599B50
+/* 003C6088 003CEF18  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003C608C 003CEF1C  90 7C 00 04 */	stw r3, 4(r28)
+/* 003C6090 003CEF20  38 60 00 10 */	li r3, 0x10
+/* 003C6094 003CEF24  48 1C 25 1D */	bl func_005885B0
+/* 003C6098 003CEF28  7C 7D 1B 79 */	or. r29, r3, r3
+/* 003C609C 003CEF2C  41 82 00 08 */	beq lbl_003C60A4
+/* 003C60A0 003CEF30  48 00 2E 71 */	bl ".__ct__14DDDMaterialMgrFv"
+lbl_003C60A4:
+/* 003C60A4 003CEF34  28 1D 00 00 */	cmplwi r29, 0
+/* 003C60A8 003CEF38  93 BC 00 0C */	stw r29, 0xc(r28)
+/* 003C60AC 003CEF3C  40 82 00 14 */	bne lbl_003C60C0
+/* 003C60B0 003CEF40  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C60B4 003CEF44  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C60B8 003CEF48  90 7C 00 04 */	stw r3, 4(r28)
+/* 003C60BC 003CEF4C  48 00 00 6C */	b lbl_003C6128
+lbl_003C60C0:
+/* 003C60C0 003CEF50  93 9D 00 00 */	stw r28, 0(r29)
+/* 003C60C4 003CEF54  38 60 00 20 */	li r3, 0x20
+/* 003C60C8 003CEF58  48 1C 24 E9 */	bl func_005885B0
+/* 003C60CC 003CEF5C  7C 7D 1B 79 */	or. r29, r3, r3
+/* 003C60D0 003CEF60  41 82 00 08 */	beq lbl_003C60D8
+/* 003C60D4 003CEF64  48 00 F4 DD */	bl ".__ct__13DDDTextureMgrFv"
+lbl_003C60D8:
+/* 003C60D8 003CEF68  28 1D 00 00 */	cmplwi r29, 0
+/* 003C60DC 003CEF6C  93 BC 00 10 */	stw r29, 0x10(r28)
+/* 003C60E0 003CEF70  40 82 00 14 */	bne lbl_003C60F4
+/* 003C60E4 003CEF74  3C 60 9B 0B */	lis r3, 0x9B0B0001@ha
+/* 003C60E8 003CEF78  38 63 00 01 */	addi r3, r3, 0x9B0B0001@l
+/* 003C60EC 003CEF7C  90 7C 00 04 */	stw r3, 4(r28)
+/* 003C60F0 003CEF80  48 00 00 38 */	b lbl_003C6128
+lbl_003C60F4:
+/* 003C60F4 003CEF84  38 7D 00 00 */	addi r3, r29, 0
+/* 003C60F8 003CEF88  38 9C 00 00 */	addi r4, r28, 0
+/* 003C60FC 003CEF8C  48 00 F2 C5 */	bl ".SetDevice__13DDDTextureMgrFP8Device3D"
+/* 003C6100 003CEF90  80 7C 00 10 */	lwz r3, 0x10(r28)
+/* 003C6104 003CEF94  48 00 E9 4D */	bl ".EnumTextureFormats__13DDDTextureMgrFv"
+/* 003C6108 003CEF98  2C 03 00 00 */	cmpwi r3, 0
+/* 003C610C 003CEF9C  90 7C 00 04 */	stw r3, 4(r28)
+/* 003C6110 003CEFA0  41 82 00 08 */	beq lbl_003C6118
+/* 003C6114 003CEFA4  48 00 00 14 */	b lbl_003C6128
+lbl_003C6118:
+/* 003C6118 003CEFA8  80 7C 00 08 */	lwz r3, 8(r28)
+/* 003C611C 003CEFAC  7F 84 E3 78 */	mr r4, r28
+/* 003C6120 003CEFB0  4B FE D2 A1 */	bl ".RegisterDevice3D__10AnimDeviceFP8Device3D"
+/* 003C6124 003CEFB4  38 60 00 00 */	li r3, 0
+lbl_003C6128:
+/* 003C6128 003CEFB8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C612C 003CEFBC  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C6130 003CEFC0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C6134 003CEFC4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C6138 003CEFC8  7C 08 03 A6 */	mtlr r0
+/* 003C613C 003CEFCC  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C6140 003CEFD0  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C6144 003CEFD4  4E 80 00 20 */	blr 
+
+.global ".Init__8Device3DFR10AnimDeviceP19IDirectDrawSurface4"
+".Init__8Device3DFR10AnimDeviceP19IDirectDrawSurface4":
+/* 003C61B0 003CF040  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 003C61B4 003CF044  7C 08 02 A6 */	mflr r0
+/* 003C61B8 003CF048  3B 44 00 00 */	addi r26, r4, 0
+/* 003C61BC 003CF04C  3B 23 00 00 */	addi r25, r3, 0
+/* 003C61C0 003CF050  3B 65 00 00 */	addi r27, r5, 0
+/* 003C61C4 003CF054  38 7A 00 00 */	addi r3, r26, 0
+/* 003C61C8 003CF058  90 01 00 08 */	stw r0, 8(r1)
+/* 003C61CC 003CF05C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 003C61D0 003CF060  4B FE D9 01 */	bl ".GetBuffDims__10AnimDeviceCFv"
+/* 003C61D4 003CF064  83 C3 00 00 */	lwz r30, 0(r3)
+/* 003C61D8 003CF068  83 E3 00 04 */	lwz r31, 4(r3)
+/* 003C61DC 003CF06C  7F 43 D3 78 */	mr r3, r26
+/* 003C61E0 003CF070  4B FE D7 71 */	bl ".IsFullScreen__10AnimDeviceCFv"
+/* 003C61E4 003CF074  3B 83 00 00 */	addi r28, r3, 0
+/* 003C61E8 003CF078  38 7A 00 00 */	addi r3, r26, 0
+/* 003C61EC 003CF07C  4B FE D8 A5 */	bl ".GetBitDepth__10AnimDeviceCFv"
+/* 003C61F0 003CF080  3B A3 00 00 */	addi r29, r3, 0
+/* 003C61F4 003CF084  38 7A 00 00 */	addi r3, r26, 0
+/* 003C61F8 003CF088  4B FE D7 19 */	bl ".GetClientWND__10AnimDeviceCFv"
+/* 003C61FC 003CF08C  38 00 00 00 */	li r0, 0
+/* 003C6200 003CF090  38 A3 00 00 */	addi r5, r3, 0
+/* 003C6204 003CF094  90 01 00 38 */	stw r0, 0x38(r1)
+/* 003C6208 003CF098  38 79 00 00 */	addi r3, r25, 0
+/* 003C620C 003CF09C  38 9A 00 00 */	addi r4, r26, 0
+/* 003C6210 003CF0A0  38 DB 00 00 */	addi r6, r27, 0
+/* 003C6214 003CF0A4  38 FC 00 00 */	addi r7, r28, 0
+/* 003C6218 003CF0A8  39 1E 00 00 */	addi r8, r30, 0
+/* 003C621C 003CF0AC  39 3F 00 00 */	addi r9, r31, 0
+/* 003C6220 003CF0B0  39 5D 00 00 */	addi r10, r29, 0
+/* 003C6224 003CF0B4  4B FF FD AD */	bl ".Init__8Device3DFR10AnimDeviceP6HWND__P19IDirectDrawSurface4iiiiP15tagPALETTEENTRY"
+/* 003C6228 003CF0B8  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003C622C 003CF0BC  38 21 00 60 */	addi r1, r1, 0x60
+/* 003C6230 003CF0C0  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 003C6234 003CF0C4  7C 08 03 A6 */	mtlr r0
+/* 003C6238 003CF0C8  4E 80 00 20 */	blr 
+
+.global ".__dt__8Device3DFv"
+".__dt__8Device3DFv":
+/* 003C6290 003CF120  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C6294 003CF124  7C 08 02 A6 */	mflr r0
+/* 003C6298 003CF128  3B E4 00 00 */	addi r31, r4, 0
+/* 003C629C 003CF12C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C62A0 003CF130  7C 7E 1B 79 */	or. r30, r3, r3
+/* 003C62A4 003CF134  90 01 00 08 */	stw r0, 8(r1)
+/* 003C62A8 003CF138  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C62AC 003CF13C  41 82 00 64 */	beq lbl_003C6310
+/* 003C62B0 003CF140  80 02 9A 0C */	lwz r0, lbl_005BAE6C-_R2_BASE_(r2)
+/* 003C62B4 003CF144  38 80 00 01 */	li r4, 1
+/* 003C62B8 003CF148  90 1E 00 00 */	stw r0, 0(r30)
+/* 003C62BC 003CF14C  80 7E 00 0C */	lwz r3, 0xc(r30)
+/* 003C62C0 003CF150  48 00 2A 51 */	bl ".__dt__14DDDMaterialMgrFv"
+/* 003C62C4 003CF154  80 7E 00 10 */	lwz r3, 0x10(r30)
+/* 003C62C8 003CF158  38 80 00 01 */	li r4, 1
+/* 003C62CC 003CF15C  48 00 F1 35 */	bl ".__dt__13DDDTextureMgrFv"
+/* 003C62D0 003CF160  7F C3 F3 78 */	mr r3, r30
+/* 003C62D4 003CF164  4B FF FB 3D */	bl ".TearDown__8Device3DFv"
+/* 003C62D8 003CF168  34 1E 00 28 */	addic. r0, r30, 0x28
+/* 003C62DC 003CF16C  41 82 00 10 */	beq lbl_003C62EC
+/* 003C62E0 003CF170  38 7E 00 28 */	addi r3, r30, 0x28
+/* 003C62E4 003CF174  38 80 00 00 */	li r4, 0
+/* 003C62E8 003CF178  4B D5 86 19 */	bl ".__dt__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+lbl_003C62EC:
+/* 003C62EC 003CF17C  34 1E 00 1C */	addic. r0, r30, 0x1c
+/* 003C62F0 003CF180  41 82 00 10 */	beq lbl_003C6300
+/* 003C62F4 003CF184  38 7E 00 1C */	addi r3, r30, 0x1c
+/* 003C62F8 003CF188  38 80 00 00 */	li r4, 0
+/* 003C62FC 003CF18C  48 00 00 55 */	bl ".__dt__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+lbl_003C6300:
+/* 003C6300 003CF190  7F E0 07 35 */	extsh. r0, r31
+/* 003C6304 003CF194  40 81 00 0C */	ble lbl_003C6310
+/* 003C6308 003CF198  7F C3 F3 78 */	mr r3, r30
+/* 003C630C 003CF19C  48 1C 23 85 */	bl func_00588690
+lbl_003C6310:
+/* 003C6310 003CF1A0  7F C3 F3 78 */	mr r3, r30
+/* 003C6314 003CF1A4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C6318 003CF1A8  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C631C 003CF1AC  7C 08 03 A6 */	mtlr r0
+/* 003C6320 003CF1B0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C6324 003CF1B4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C6328 003CF1B8  4E 80 00 20 */	blr 
+
+.global ".__dt__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+".__dt__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv":
+/* 003C6350 003CF1E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C6354 003CF1E4  7C 08 02 A6 */	mflr r0
+/* 003C6358 003CF1E8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C635C 003CF1EC  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003C6360 003CF1F0  3B A4 00 00 */	addi r29, r4, 0
+/* 003C6364 003CF1F4  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 003C6368 003CF1F8  7C 7C 1B 79 */	or. r28, r3, r3
+/* 003C636C 003CF1FC  90 01 00 08 */	stw r0, 8(r1)
+/* 003C6370 003CF200  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C6374 003CF204  41 82 00 54 */	beq lbl_003C63C8
+/* 003C6378 003CF208  41 82 00 40 */	beq lbl_003C63B8
+/* 003C637C 003CF20C  4B C6 65 35 */	bl ".data__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C6380 003CF210  80 03 00 00 */	lwz r0, 0(r3)
+/* 003C6384 003CF214  28 00 00 00 */	cmplwi r0, 0
+/* 003C6388 003CF218  41 82 00 30 */	beq lbl_003C63B8
+/* 003C638C 003CF21C  7F 83 E3 78 */	mr r3, r28
+/* 003C6390 003CF220  4B C6 64 81 */	bl ".cap__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C6394 003CF224  3B C3 00 00 */	addi r30, r3, 0
+/* 003C6398 003CF228  38 7C 00 00 */	addi r3, r28, 0
+/* 003C639C 003CF22C  4B C6 65 15 */	bl ".data__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C63A0 003CF230  3B E3 00 00 */	addi r31, r3, 0
+/* 003C63A4 003CF234  38 7C 00 00 */	addi r3, r28, 0
+/* 003C63A8 003CF238  4B C6 64 B9 */	bl ".alloc__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+/* 003C63AC 003CF23C  80 9F 00 00 */	lwz r4, 0(r31)
+/* 003C63B0 003CF240  80 BE 00 00 */	lwz r5, 0(r30)
+/* 003C63B4 003CF244  4B C6 63 FD */	bl ".deallocate__Q23std13allocator<Ul>FPUlUl"
+lbl_003C63B8:
+/* 003C63B8 003CF248  7F A0 07 35 */	extsh. r0, r29
+/* 003C63BC 003CF24C  40 81 00 0C */	ble lbl_003C63C8
+/* 003C63C0 003CF250  7F 83 E3 78 */	mr r3, r28
+/* 003C63C4 003CF254  48 1C 22 CD */	bl func_00588690
+lbl_003C63C8:
+/* 003C63C8 003CF258  7F 83 E3 78 */	mr r3, r28
+/* 003C63CC 003CF25C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C63D0 003CF260  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C63D4 003CF264  7C 08 03 A6 */	mtlr r0
+/* 003C63D8 003CF268  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C63DC 003CF26C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C63E0 003CF270  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 003C63E4 003CF274  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003C63E8 003CF278  4E 80 00 20 */	blr 
+
+.global ".__ct__8Device3DFv"
+".__ct__8Device3DFv":
+/* 003C6450 003CF2E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C6454 003CF2E4  7C 08 02 A6 */	mflr r0
+/* 003C6458 003CF2E8  3B E3 00 00 */	addi r31, r3, 0
+/* 003C645C 003CF2EC  90 01 00 08 */	stw r0, 8(r1)
+/* 003C6460 003CF2F0  38 7F 00 1C */	addi r3, r31, 0x1c
+/* 003C6464 003CF2F4  80 02 9A 0C */	lwz r0, lbl_005BAE6C-_R2_BASE_(r2)
+/* 003C6468 003CF2F8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C646C 003CF2FC  90 1F 00 00 */	stw r0, 0(r31)
+/* 003C6470 003CF300  48 00 01 E1 */	bl ".__ct__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+/* 003C6474 003CF304  38 7F 00 28 */	addi r3, r31, 0x28
+/* 003C6478 003CF308  48 00 01 39 */	bl ".__ct__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+/* 003C647C 003CF30C  38 00 00 00 */	li r0, 0
+/* 003C6480 003CF310  38 7F 00 3C */	addi r3, r31, 0x3c
+/* 003C6484 003CF314  90 1F 00 04 */	stw r0, 4(r31)
+/* 003C6488 003CF318  38 80 00 00 */	li r4, 0
+/* 003C648C 003CF31C  38 A0 00 18 */	li r5, 0x18
+/* 003C6490 003CF320  90 1F 00 08 */	stw r0, 8(r31)
+/* 003C6494 003CF324  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 003C6498 003CF328  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 003C649C 003CF32C  90 1F 00 18 */	stw r0, 0x18(r31)
+/* 003C64A0 003CF330  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 003C64A4 003CF334  90 1F 00 34 */	stw r0, 0x34(r31)
+/* 003C64A8 003CF338  90 1F 00 38 */	stw r0, 0x38(r31)
+/* 003C64AC 003CF33C  48 1C 7A 35 */	bl func_0058DEE0
+/* 003C64B0 003CF340  7F E3 FB 78 */	mr r3, r31
+/* 003C64B4 003CF344  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C64B8 003CF348  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C64BC 003CF34C  7C 08 03 A6 */	mtlr r0
+/* 003C64C0 003CF350  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C64C4 003CF354  4E 80 00 20 */	blr 
+
+.global ".__dt__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>Fv"
+".__dt__Q23std54vector<P10Viewport3D,Q23std24allocator<P10Viewport3D>>Fv":
+/* 003C64F0 003CF380  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C64F4 003CF384  7C 08 02 A6 */	mflr r0
+/* 003C64F8 003CF388  3B E4 00 00 */	addi r31, r4, 0
+/* 003C64FC 003CF38C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003C6500 003CF390  7C 7E 1B 79 */	or. r30, r3, r3
+/* 003C6504 003CF394  90 01 00 08 */	stw r0, 8(r1)
+/* 003C6508 003CF398  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C650C 003CF39C  41 82 00 20 */	beq lbl_003C652C
+/* 003C6510 003CF3A0  41 82 00 0C */	beq lbl_003C651C
+/* 003C6514 003CF3A4  38 80 00 00 */	li r4, 0
+/* 003C6518 003CF3A8  4B C6 67 29 */	bl ".__dt__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
+lbl_003C651C:
+/* 003C651C 003CF3AC  7F E0 07 35 */	extsh. r0, r31
+/* 003C6520 003CF3B0  40 81 00 0C */	ble lbl_003C652C
+/* 003C6524 003CF3B4  7F C3 F3 78 */	mr r3, r30
+/* 003C6528 003CF3B8  48 1C 21 69 */	bl func_00588690
+lbl_003C652C:
+/* 003C652C 003CF3BC  7F C3 F3 78 */	mr r3, r30
+/* 003C6530 003CF3C0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C6534 003CF3C4  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C6538 003CF3C8  7C 08 03 A6 */	mtlr r0
+/* 003C653C 003CF3CC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C6540 003CF3D0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003C6544 003CF3D4  4E 80 00 20 */	blr 
+
+.global ".__ct__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv"
+".__ct__Q23std50__vector_imp<P5Light,Q23std18allocator<P5Light>,1>Fv":
+/* 003C65B0 003CF440  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C65B4 003CF444  7C 08 02 A6 */	mflr r0
+/* 003C65B8 003CF448  3B E3 00 00 */	addi r31, r3, 0
+/* 003C65BC 003CF44C  90 01 00 08 */	stw r0, 8(r1)
+/* 003C65C0 003CF450  38 80 00 00 */	li r4, 0
+/* 003C65C4 003CF454  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C65C8 003CF458  4B C6 68 29 */	bl ".__ct__Q210Metrowerks41compressed_pair<Q23std13allocator<Ul>,Ul>FUl"
+/* 003C65CC 003CF45C  38 00 00 00 */	li r0, 0
+/* 003C65D0 003CF460  90 1F 00 04 */	stw r0, 4(r31)
+/* 003C65D4 003CF464  7F E3 FB 78 */	mr r3, r31
+/* 003C65D8 003CF468  90 1F 00 08 */	stw r0, 8(r31)
+/* 003C65DC 003CF46C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C65E0 003CF470  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C65E4 003CF474  7C 08 03 A6 */	mtlr r0
+/* 003C65E8 003CF478  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C65EC 003CF47C  4E 80 00 20 */	blr 
+
+.global ".__ct__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv"
+".__ct__Q23std62__vector_imp<P10Viewport3D,Q23std24allocator<P10Viewport3D>,1>Fv":
+/* 003C6650 003CF4E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 003C6654 003CF4E4  7C 08 02 A6 */	mflr r0
+/* 003C6658 003CF4E8  3B E3 00 00 */	addi r31, r3, 0
+/* 003C665C 003CF4EC  90 01 00 08 */	stw r0, 8(r1)
+/* 003C6660 003CF4F0  38 80 00 00 */	li r4, 0
+/* 003C6664 003CF4F4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003C6668 003CF4F8  4B C6 67 89 */	bl ".__ct__Q210Metrowerks41compressed_pair<Q23std13allocator<Ul>,Ul>FUl"
+/* 003C666C 003CF4FC  38 00 00 00 */	li r0, 0
+/* 003C6670 003CF500  90 1F 00 04 */	stw r0, 4(r31)
+/* 003C6674 003CF504  7F E3 FB 78 */	mr r3, r31
+/* 003C6678 003CF508  90 1F 00 08 */	stw r0, 8(r31)
+/* 003C667C 003CF50C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003C6680 003CF510  38 21 00 50 */	addi r1, r1, 0x50
+/* 003C6684 003CF514  7C 08 03 A6 */	mtlr r0
+/* 003C6688 003CF518  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003C668C 003CF51C  4E 80 00 20 */	blr 
+
+.global ".__sinit_:ddddevice3d_cpp"
+".__sinit_:ddddevice3d_cpp":
+/* 003C6700 003CF590  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 003C6704 003CF594  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 003C6708 003CF598  C8 44 00 00 */	lfd f2, 0(r4)
+/* 003C670C 003CF59C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 003C6710 003CF5A0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 003C6714 003CF5A4  FC 20 10 50 */	fneg f1, f2
+/* 003C6718 003CF5A8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 003C671C 003CF5AC  FC 80 28 50 */	fneg f4, f5
+/* 003C6720 003CF5B0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 003C6724 003CF5B4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 003C6728 003CF5B8  D0 82 11 50 */	stfs f4, lbl_005C25B0-_R2_BASE_(r2)
+/* 003C672C 003CF5BC  D0 A2 11 54 */	stfs f5, lbl_005C25B4-_R2_BASE_(r2)
+/* 003C6730 003CF5C0  D0 62 11 58 */	stfs f3, lbl_005C25B8-_R2_BASE_(r2)
+/* 003C6734 003CF5C4  D0 A2 11 5C */	stfs f5, lbl_005C25BC-_R2_BASE_(r2)
+/* 003C6738 003CF5C8  D8 22 11 60 */	stfd f1, lbl_005C25C0-_R2_BASE_(r2)
+/* 003C673C 003CF5CC  D8 42 11 68 */	stfd f2, lbl_005C25C8-_R2_BASE_(r2)
+/* 003C6740 003CF5D0  D8 02 11 70 */	stfd f0, lbl_005C25D0-_R2_BASE_(r2)
+/* 003C6744 003CF5D4  D8 42 11 78 */	stfd f2, lbl_005C25D8-_R2_BASE_(r2)
+/* 003C6748 003CF5D8  4E 80 00 20 */	blr 

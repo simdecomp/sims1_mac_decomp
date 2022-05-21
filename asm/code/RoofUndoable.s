@@ -1,0 +1,130 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".__dt__13cRoofUndoableFv"
+".__dt__13cRoofUndoableFv":
+/* 00182F20 0018BDB0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00182F24 0018BDB4  7C 08 02 A6 */	mflr r0
+/* 00182F28 0018BDB8  3B E4 00 00 */	addi r31, r4, 0
+/* 00182F2C 0018BDBC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00182F30 0018BDC0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 00182F34 0018BDC4  90 01 00 08 */	stw r0, 8(r1)
+/* 00182F38 0018BDC8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00182F3C 0018BDCC  41 82 00 34 */	beq lbl_00182F70
+/* 00182F40 0018BDD0  80 02 91 28 */	lwz r0, lbl_005BA588-_R2_BASE_(r2)
+/* 00182F44 0018BDD4  38 7E 00 24 */	addi r3, r30, 0x24
+/* 00182F48 0018BDD8  38 80 FF FF */	li r4, -1
+/* 00182F4C 0018BDDC  90 1E 00 00 */	stw r0, 0(r30)
+/* 00182F50 0018BDE0  48 36 8B A1 */	bl ".__dt__9cTSStringFv"
+/* 00182F54 0018BDE4  38 7E 00 00 */	addi r3, r30, 0
+/* 00182F58 0018BDE8  38 80 00 00 */	li r4, 0
+/* 00182F5C 0018BDEC  48 00 7C B5 */	bl ".__dt__8UndoableFv"
+/* 00182F60 0018BDF0  7F E0 07 35 */	extsh. r0, r31
+/* 00182F64 0018BDF4  40 81 00 0C */	ble lbl_00182F70
+/* 00182F68 0018BDF8  7F C3 F3 78 */	mr r3, r30
+/* 00182F6C 0018BDFC  48 40 57 25 */	bl func_00588690
+lbl_00182F70:
+/* 00182F70 0018BE00  7F C3 F3 78 */	mr r3, r30
+/* 00182F74 0018BE04  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00182F78 0018BE08  38 21 00 50 */	addi r1, r1, 0x50
+/* 00182F7C 0018BE0C  7C 08 03 A6 */	mtlr r0
+/* 00182F80 0018BE10  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00182F84 0018BE14  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00182F88 0018BE18  4E 80 00 20 */	blr 
+
+.global ".RedoSelf__13cRoofUndoableFv"
+".RedoSelf__13cRoofUndoableFv":
+/* 00182FC0 0018BE50  7C 08 02 A6 */	mflr r0
+/* 00182FC4 0018BE54  90 01 00 08 */	stw r0, 8(r1)
+/* 00182FC8 0018BE58  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00182FCC 0018BE5C  81 83 00 00 */	lwz r12, 0(r3)
+/* 00182FD0 0018BE60  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 00182FD4 0018BE64  48 41 6B 7D */	bl func_00599B50
+/* 00182FD8 0018BE68  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00182FDC 0018BE6C  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00182FE0 0018BE70  38 21 00 40 */	addi r1, r1, 0x40
+/* 00182FE4 0018BE74  7C 08 03 A6 */	mtlr r0
+/* 00182FE8 0018BE78  4E 80 00 20 */	blr 
+
+.global ".UndoSelf__13cRoofUndoableFv"
+".UndoSelf__13cRoofUndoableFv":
+/* 00183020 0018BEB0  DB E1 FF F8 */	stfd f31, -8(r1)
+/* 00183024 0018BEB4  7C 08 02 A6 */	mflr r0
+/* 00183028 0018BEB8  93 E1 FF EC */	stw r31, -0x14(r1)
+/* 0018302C 0018BEBC  7C 7F 1B 78 */	mr r31, r3
+/* 00183030 0018BEC0  90 01 00 08 */	stw r0, 8(r1)
+/* 00183034 0018BEC4  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 00183038 0018BEC8  48 15 0A 89 */	bl ".GetRoofPattern__10cRoofLayerFv"
+/* 0018303C 0018BECC  38 83 00 00 */	addi r4, r3, 0
+/* 00183040 0018BED0  38 61 00 40 */	addi r3, r1, 0x40
+/* 00183044 0018BED4  48 36 8D BD */	bl ".__ct__9cTSStringFPCc"
+/* 00183048 0018BED8  48 15 0B E9 */	bl ".GetPitch__10cRoofLayerFv"
+/* 0018304C 0018BEDC  FF E0 08 90 */	fmr f31, f1
+/* 00183050 0018BEE0  38 7F 00 24 */	addi r3, r31, 0x24
+/* 00183054 0018BEE4  4B EA 91 9D */	bl ".data__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+/* 00183058 0018BEE8  48 15 0A C9 */	bl ".SetRoofPattern__10cRoofLayerFPCc"
+/* 0018305C 0018BEEC  C0 3F 00 28 */	lfs f1, 0x28(r31)
+/* 00183060 0018BEF0  48 15 0C 21 */	bl ".SetPitch__10cRoofLayerFf"
+/* 00183064 0018BEF4  38 7F 00 24 */	addi r3, r31, 0x24
+/* 00183068 0018BEF8  38 81 00 40 */	addi r4, r1, 0x40
+/* 0018306C 0018BEFC  48 36 89 B5 */	bl ".__as__9cTSStringFRC9cTSString"
+/* 00183070 0018BF00  D3 FF 00 28 */	stfs f31, 0x28(r31)
+/* 00183074 0018BF04  38 61 00 40 */	addi r3, r1, 0x40
+/* 00183078 0018BF08  38 80 FF FF */	li r4, -1
+/* 0018307C 0018BF0C  48 36 8A 75 */	bl ".__dt__9cTSStringFv"
+/* 00183080 0018BF10  38 60 00 00 */	li r3, 0
+/* 00183084 0018BF14  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 00183088 0018BF18  38 21 00 70 */	addi r1, r1, 0x70
+/* 0018308C 0018BF1C  7C 08 03 A6 */	mtlr r0
+/* 00183090 0018BF20  CB E1 FF F8 */	lfd f31, -8(r1)
+/* 00183094 0018BF24  83 E1 FF EC */	lwz r31, -0x14(r1)
+/* 00183098 0018BF28  4E 80 00 20 */	blr 
+
+.global ".__ct__13cRoofUndoableFv"
+".__ct__13cRoofUndoableFv":
+/* 001830D0 0018BF60  93 E1 FF FC */	stw r31, -4(r1)
+/* 001830D4 0018BF64  7C 08 02 A6 */	mflr r0
+/* 001830D8 0018BF68  7C 7F 1B 78 */	mr r31, r3
+/* 001830DC 0018BF6C  90 01 00 08 */	stw r0, 8(r1)
+/* 001830E0 0018BF70  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 001830E4 0018BF74  48 00 7C DD */	bl ".__ct__8UndoableFv"
+/* 001830E8 0018BF78  80 02 91 28 */	lwz r0, lbl_005BA588-_R2_BASE_(r2)
+/* 001830EC 0018BF7C  38 7F 00 24 */	addi r3, r31, 0x24
+/* 001830F0 0018BF80  90 1F 00 00 */	stw r0, 0(r31)
+/* 001830F4 0018BF84  48 36 8E ED */	bl ".__ct__9cTSStringFv"
+/* 001830F8 0018BF88  48 15 09 C9 */	bl ".GetRoofPattern__10cRoofLayerFv"
+/* 001830FC 0018BF8C  38 83 00 00 */	addi r4, r3, 0
+/* 00183100 0018BF90  38 7F 00 24 */	addi r3, r31, 0x24
+/* 00183104 0018BF94  48 36 88 9D */	bl ".__as__9cTSStringFPCc"
+/* 00183108 0018BF98  48 15 0B 29 */	bl ".GetPitch__10cRoofLayerFv"
+/* 0018310C 0018BF9C  D0 3F 00 28 */	stfs f1, 0x28(r31)
+/* 00183110 0018BFA0  7F E3 FB 78 */	mr r3, r31
+/* 00183114 0018BFA4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00183118 0018BFA8  38 21 00 50 */	addi r1, r1, 0x50
+/* 0018311C 0018BFAC  7C 08 03 A6 */	mtlr r0
+/* 00183120 0018BFB0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00183124 0018BFB4  4E 80 00 20 */	blr 
+
+.global ".__sinit_:RoofUndoable_cpp"
+".__sinit_:RoofUndoable_cpp":
+/* 00183160 0018BFF0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00183164 0018BFF4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00183168 0018BFF8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 0018316C 0018BFFC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00183170 0018C000  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00183174 0018C004  FC 20 10 50 */	fneg f1, f2
+/* 00183178 0018C008  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 0018317C 0018C00C  FC 80 28 50 */	fneg f4, f5
+/* 00183180 0018C010  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00183184 0018C014  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00183188 0018C018  D0 82 DE 68 */	stfs f4, lbl_005BF2C8-_R2_BASE_(r2)
+/* 0018318C 0018C01C  D0 A2 DE 6C */	stfs f5, lbl_005BF2CC-_R2_BASE_(r2)
+/* 00183190 0018C020  D0 62 DE 70 */	stfs f3, lbl_005BF2D0-_R2_BASE_(r2)
+/* 00183194 0018C024  D0 A2 DE 74 */	stfs f5, lbl_005BF2D4-_R2_BASE_(r2)
+/* 00183198 0018C028  D8 22 DE 78 */	stfd f1, lbl_005BF2D8-_R2_BASE_(r2)
+/* 0018319C 0018C02C  D8 42 DE 80 */	stfd f2, lbl_005BF2E0-_R2_BASE_(r2)
+/* 001831A0 0018C030  D8 02 DE 88 */	stfd f0, lbl_005BF2E8-_R2_BASE_(r2)
+/* 001831A4 0018C034  D8 42 DE 90 */	stfd f2, lbl_005BF2F0-_R2_BASE_(r2)
+/* 001831A8 0018C038  4E 80 00 20 */	blr 

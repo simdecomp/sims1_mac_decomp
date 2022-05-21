@@ -1,0 +1,32 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".SetupAbortHandler__FP6HWND__"
+".SetupAbortHandler__FP6HWND__":
+/* 0015CF20 00165DB0  80 82 90 90 */	lwz r4, lbl_005BA4F0-_R2_BASE_(r2)
+/* 0015CF24 00165DB4  90 64 00 00 */	stw r3, 0(r4)
+/* 0015CF28 00165DB8  4E 80 00 20 */	blr 
+
+.global ".__sinit_:xassert_cpp"
+".__sinit_:xassert_cpp":
+/* 0015CF60 00165DF0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 0015CF64 00165DF4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 0015CF68 00165DF8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 0015CF6C 00165DFC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 0015CF70 00165E00  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 0015CF74 00165E04  FC 20 10 50 */	fneg f1, f2
+/* 0015CF78 00165E08  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 0015CF7C 00165E0C  FC 80 28 50 */	fneg f4, f5
+/* 0015CF80 00165E10  C0 64 00 00 */	lfs f3, 0(r4)
+/* 0015CF84 00165E14  C8 03 00 00 */	lfd f0, 0(r3)
+/* 0015CF88 00165E18  D0 82 DB 94 */	stfs f4, lbl_005BEFF4-_R2_BASE_(r2)
+/* 0015CF8C 00165E1C  D0 A2 DB 98 */	stfs f5, lbl_005BEFF8-_R2_BASE_(r2)
+/* 0015CF90 00165E20  D0 62 DB 9C */	stfs f3, lbl_005BEFFC-_R2_BASE_(r2)
+/* 0015CF94 00165E24  D0 A2 DB A0 */	stfs f5, lbl_005BF000-_R2_BASE_(r2)
+/* 0015CF98 00165E28  D8 22 DB A8 */	stfd f1, lbl_005BF008-_R2_BASE_(r2)
+/* 0015CF9C 00165E2C  D8 42 DB B0 */	stfd f2, lbl_005BF010-_R2_BASE_(r2)
+/* 0015CFA0 00165E30  D8 02 DB B8 */	stfd f0, lbl_005BF018-_R2_BASE_(r2)
+/* 0015CFA4 00165E34  D8 42 DB C0 */	stfd f2, lbl_005BF020-_R2_BASE_(r2)
+/* 0015CFA8 00165E38  4E 80 00 20 */	blr 

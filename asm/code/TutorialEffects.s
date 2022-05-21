@@ -1,0 +1,895 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".Tut_FlashRelButton__Fsb"
+".Tut_FlashRelButton__Fsb":
+/* 0014D4E0 00156370  93 E1 FF FC */	stw r31, -4(r1)
+/* 0014D4E4 00156374  7C 08 02 A6 */	mflr r0
+/* 0014D4E8 00156378  80 A2 88 74 */	lwz r5, lbl_005B9CD4-_R2_BASE_(r2)
+/* 0014D4EC 0015637C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0014D4F0 00156380  7C 9E 23 78 */	mr r30, r4
+/* 0014D4F4 00156384  7C 64 07 34 */	extsh r4, r3
+/* 0014D4F8 00156388  90 01 00 08 */	stw r0, 8(r1)
+/* 0014D4FC 0015638C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 0014D500 00156390  80 A5 00 00 */	lwz r5, 0(r5)
+/* 0014D504 00156394  80 65 00 24 */	lwz r3, 0x24(r5)
+/* 0014D508 00156398  4B F5 EC 59 */	bl ".FindNeighborByID__12NeighborhoodFi"
+/* 0014D50C 0015639C  28 03 00 00 */	cmplwi r3, 0
+/* 0014D510 001563A0  41 82 00 50 */	beq lbl_0014D560
+/* 0014D514 001563A4  4B F4 DC DD */	bl ".GetGUID__8NeighborFv"
+/* 0014D518 001563A8  48 0E DF B9 */	bl ".GetHandle__12PersonFinderFl"
+/* 0014D51C 001563AC  80 82 8C A4 */	lwz r4, lbl_005BA104-_R2_BASE_(r2)
+/* 0014D520 001563B0  7C 7F 1B 78 */	mr r31, r3
+/* 0014D524 001563B4  80 64 00 00 */	lwz r3, 0(r4)
+/* 0014D528 001563B8  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014D52C 001563BC  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 0014D530 001563C0  48 44 C6 21 */	bl func_00599B50
+/* 0014D534 001563C4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0014D538 001563C8  48 3C 78 39 */	bl ".GetMainWindow__12cTSWinMgrW95Fv"
+/* 0014D53C 001563CC  7F E4 FB 78 */	mr r4, r31
+/* 0014D540 001563D0  48 00 06 C1 */	bl ".FindRelButton__FP6cTSWini"
+/* 0014D544 001563D4  28 03 00 00 */	cmplwi r3, 0
+/* 0014D548 001563D8  41 82 00 18 */	beq lbl_0014D560
+/* 0014D54C 001563DC  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014D550 001563E0  7F C4 F3 78 */	mr r4, r30
+/* 0014D554 001563E4  81 8C 01 68 */	lwz r12, 0x168(r12)
+/* 0014D558 001563E8  48 44 C5 F9 */	bl func_00599B50
+/* 0014D55C 001563EC  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_0014D560:
+/* 0014D560 001563F0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 0014D564 001563F4  38 21 00 50 */	addi r1, r1, 0x50
+/* 0014D568 001563F8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0014D56C 001563FC  7C 08 03 A6 */	mtlr r0
+/* 0014D570 00156400  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 0014D574 00156404  4E 80 00 20 */	blr 
+
+.global ".Tut_FlashPersonPanelButton__Fsb"
+".Tut_FlashPersonPanelButton__Fsb":
+/* 0014D5B0 00156440  93 E1 FF FC */	stw r31, -4(r1)
+/* 0014D5B4 00156444  7C 08 02 A6 */	mflr r0
+/* 0014D5B8 00156448  80 A2 88 74 */	lwz r5, lbl_005B9CD4-_R2_BASE_(r2)
+/* 0014D5BC 0015644C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0014D5C0 00156450  7C 9E 23 78 */	mr r30, r4
+/* 0014D5C4 00156454  7C 64 07 34 */	extsh r4, r3
+/* 0014D5C8 00156458  90 01 00 08 */	stw r0, 8(r1)
+/* 0014D5CC 0015645C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 0014D5D0 00156460  80 A5 00 00 */	lwz r5, 0(r5)
+/* 0014D5D4 00156464  80 65 00 24 */	lwz r3, 0x24(r5)
+/* 0014D5D8 00156468  4B F5 EB 89 */	bl ".FindNeighborByID__12NeighborhoodFi"
+/* 0014D5DC 0015646C  28 03 00 00 */	cmplwi r3, 0
+/* 0014D5E0 00156470  41 82 00 90 */	beq lbl_0014D670
+/* 0014D5E4 00156474  4B F4 DC 0D */	bl ".GetGUID__8NeighborFv"
+/* 0014D5E8 00156478  48 0E DE E9 */	bl ".GetHandle__12PersonFinderFl"
+/* 0014D5EC 0015647C  38 03 00 00 */	addi r0, r3, 0
+/* 0014D5F0 00156480  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014D5F4 00156484  7C 1F 03 78 */	mr r31, r0
+/* 0014D5F8 00156488  38 80 00 00 */	li r4, 0
+/* 0014D5FC 0015648C  48 41 BA 05 */	bl ".__ct__11ImageHandleFP9cTSBuffer"
+/* 0014D600 00156490  38 7F 00 00 */	addi r3, r31, 0
+/* 0014D604 00156494  38 81 00 40 */	addi r4, r1, 0x40
+/* 0014D608 00156498  48 0E E9 49 */	bl ".GetPictureBuffer__12PersonFinderFiR11ImageHandle"
+/* 0014D60C 0015649C  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 0014D610 001564A0  41 82 00 54 */	beq lbl_0014D664
+/* 0014D614 001564A4  80 62 8C A4 */	lwz r3, lbl_005BA104-_R2_BASE_(r2)
+/* 0014D618 001564A8  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014D61C 001564AC  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014D620 001564B0  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 0014D624 001564B4  48 44 C5 2D */	bl func_00599B50
+/* 0014D628 001564B8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0014D62C 001564BC  48 3C 77 45 */	bl ".GetMainWindow__12cTSWinMgrW95Fv"
+/* 0014D630 001564C0  3B E3 00 00 */	addi r31, r3, 0
+/* 0014D634 001564C4  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014D638 001564C8  48 41 B8 B9 */	bl ".AsBuffer__11ImageHandleCFv"
+/* 0014D63C 001564CC  38 83 00 00 */	addi r4, r3, 0
+/* 0014D640 001564D0  38 7F 00 00 */	addi r3, r31, 0
+/* 0014D644 001564D4  48 00 11 9D */	bl ".FindButton__FP6cTSWinP9cTSBuffer"
+/* 0014D648 001564D8  28 03 00 00 */	cmplwi r3, 0
+/* 0014D64C 001564DC  41 82 00 18 */	beq lbl_0014D664
+/* 0014D650 001564E0  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014D654 001564E4  7F C4 F3 78 */	mr r4, r30
+/* 0014D658 001564E8  81 8C 01 68 */	lwz r12, 0x168(r12)
+/* 0014D65C 001564EC  48 44 C4 F5 */	bl func_00599B50
+/* 0014D660 001564F0  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_0014D664:
+/* 0014D664 001564F4  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014D668 001564F8  38 80 FF FF */	li r4, -1
+/* 0014D66C 001564FC  48 41 B9 05 */	bl ".__dt__11ImageHandleFv"
+lbl_0014D670:
+/* 0014D670 00156500  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 0014D674 00156504  38 21 00 60 */	addi r1, r1, 0x60
+/* 0014D678 00156508  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0014D67C 0015650C  7C 08 03 A6 */	mtlr r0
+/* 0014D680 00156510  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 0014D684 00156514  4E 80 00 20 */	blr 
+
+.global ".Tut_CheckForEvents__Fv"
+".Tut_CheckForEvents__Fv":
+/* 0014D6C0 00156550  BE E1 FF DC */	stmw r23, -0x24(r1)
+/* 0014D6C4 00156554  7C 08 02 A6 */	mflr r0
+/* 0014D6C8 00156558  83 22 88 74 */	lwz r25, lbl_005B9CD4-_R2_BASE_(r2)
+/* 0014D6CC 0015655C  83 A2 8C 40 */	lwz r29, lbl_005BA0A0-_R2_BASE_(r2)
+/* 0014D6D0 00156560  83 C2 8D F4 */	lwz r30, lbl_005BA254-_R2_BASE_(r2)
+/* 0014D6D4 00156564  83 E2 A8 4C */	lwz r31, lbl_005BBCAC-_R2_BASE_(r2)
+/* 0014D6D8 00156568  83 02 90 38 */	lwz r24, lbl_005BA498-_R2_BASE_(r2)
+/* 0014D6DC 0015656C  90 01 00 08 */	stw r0, 8(r1)
+/* 0014D6E0 00156570  94 21 FF 10 */	stwu r1, -0xf0(r1)
+/* 0014D6E4 00156574  80 79 00 00 */	lwz r3, 0(r25)
+/* 0014D6E8 00156578  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014D6EC 0015657C  80 63 00 14 */	lwz r3, 0x14(r3)
+/* 0014D6F0 00156580  4B F8 C8 01 */	bl ".GetTutorialObject__12ObjectModuleFv"
+/* 0014D6F4 00156584  80 98 00 00 */	lwz r4, 0(r24)
+/* 0014D6F8 00156588  3B 43 00 00 */	addi r26, r3, 0
+/* 0014D6FC 0015658C  38 A0 00 00 */	li r5, 0
+/* 0014D700 00156590  28 04 00 00 */	cmplwi r4, 0
+/* 0014D704 00156594  41 82 00 18 */	beq lbl_0014D71C
+/* 0014D708 00156598  80 64 00 D0 */	lwz r3, 0xd0(r4)
+/* 0014D70C 0015659C  28 03 00 00 */	cmplwi r3, 0
+/* 0014D710 001565A0  41 82 00 0C */	beq lbl_0014D71C
+/* 0014D714 001565A4  80 03 00 30 */	lwz r0, 0x30(r3)
+/* 0014D718 001565A8  7C 05 07 34 */	extsh r5, r0
+lbl_0014D71C:
+/* 0014D71C 001565AC  80 79 00 00 */	lwz r3, 0(r25)
+/* 0014D720 001565B0  38 80 00 0C */	li r4, 0xc
+/* 0014D724 001565B4  80 63 00 1C */	lwz r3, 0x1c(r3)
+/* 0014D728 001565B8  4B FE 26 69 */	bl ".SetGlobal__10cSimulatorFss"
+/* 0014D72C 001565BC  28 1A 00 00 */	cmplwi r26, 0
+/* 0014D730 001565C0  41 82 03 E0 */	beq lbl_0014DB10
+/* 0014D734 001565C4  80 9A 01 1C */	lwz r4, 0x11c(r26)
+/* 0014D738 001565C8  38 7A 00 00 */	addi r3, r26, 0
+/* 0014D73C 001565CC  38 DF 00 00 */	addi r6, r31, 0
+/* 0014D740 001565D0  80 84 00 0C */	lwz r4, 0xc(r4)
+/* 0014D744 001565D4  38 A0 00 00 */	li r5, 0
+/* 0014D748 001565D8  38 E0 00 00 */	li r7, 0
+/* 0014D74C 001565DC  4B F9 97 55 */	bl ".RunTree__8cXObjectFP8BehaviorsPCcPs"
+/* 0014D750 001565E0  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 0014D754 001565E4  40 82 00 10 */	bne lbl_0014D764
+/* 0014D758 001565E8  38 00 FF FF */	li r0, -1
+/* 0014D75C 001565EC  90 02 DA 60 */	stw r0, lbl_005BEEC0-_R2_BASE_(r2)
+/* 0014D760 001565F0  48 00 03 B0 */	b lbl_0014DB10
+lbl_0014D764:
+/* 0014D764 001565F4  AA FA 00 3A */	lha r23, 0x3a(r26)
+/* 0014D768 001565F8  3B 60 00 00 */	li r27, 0
+/* 0014D76C 001565FC  AB 9A 00 3C */	lha r28, 0x3c(r26)
+/* 0014D770 00156600  28 17 00 0F */	cmplwi r23, 0xf
+/* 0014D774 00156604  41 81 03 70 */	bgt lbl_0014DAE4
+/* 0014D778 00156608  80 62 A8 48 */	lwz r3, lbl_005BBCA8-_R2_BASE_(r2)
+/* 0014D77C 0015660C  56 E0 10 3A */	slwi r0, r23, 2
+/* 0014D780 00156610  7C 63 00 2E */	lwzx r3, r3, r0
+/* 0014D784 00156614  7C 69 03 A6 */	mtctr r3
+/* 0014D788 00156618  4E 80 04 20 */	bctr 
+/* 0014D78C 0015661C  80 62 88 70 */	lwz r3, lbl_005B9CD0-_R2_BASE_(r2)
+/* 0014D790 00156620  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014D794 00156624  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 0014D798 00156628  28 03 00 00 */	cmplwi r3, 0
+/* 0014D79C 0015662C  41 82 03 48 */	beq lbl_0014DAE4
+/* 0014D7A0 00156630  48 0B 63 C1 */	bl ".GetCPMode__7CPStateFv"
+/* 0014D7A4 00156634  2C 03 00 00 */	cmpwi r3, 0
+/* 0014D7A8 00156638  40 82 03 3C */	bne lbl_0014DAE4
+/* 0014D7AC 0015663C  3B 60 00 01 */	li r27, 1
+/* 0014D7B0 00156640  48 00 03 34 */	b lbl_0014DAE4
+/* 0014D7B4 00156644  80 7E 00 00 */	lwz r3, 0(r30)
+/* 0014D7B8 00156648  28 03 00 00 */	cmplwi r3, 0
+/* 0014D7BC 0015664C  41 82 00 24 */	beq lbl_0014D7E0
+/* 0014D7C0 00156650  80 63 01 50 */	lwz r3, 0x150(r3)
+/* 0014D7C4 00156654  28 03 00 00 */	cmplwi r3, 0
+/* 0014D7C8 00156658  41 82 00 18 */	beq lbl_0014D7E0
+/* 0014D7CC 0015665C  88 03 00 D8 */	lbz r0, 0xd8(r3)
+/* 0014D7D0 00156660  28 00 00 00 */	cmplwi r0, 0
+/* 0014D7D4 00156664  41 82 00 0C */	beq lbl_0014D7E0
+/* 0014D7D8 00156668  83 03 01 04 */	lwz r24, 0x104(r3)
+/* 0014D7DC 0015666C  48 00 00 08 */	b lbl_0014D7E4
+lbl_0014D7E0:
+/* 0014D7E0 00156670  3B 00 00 00 */	li r24, 0
+lbl_0014D7E4:
+/* 0014D7E4 00156674  28 18 00 00 */	cmplwi r24, 0
+/* 0014D7E8 00156678  41 82 02 FC */	beq lbl_0014DAE4
+/* 0014D7EC 0015667C  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D7F0 00156680  38 81 00 50 */	addi r4, r1, 0x50
+/* 0014D7F4 00156684  38 A0 00 00 */	li r5, 0
+/* 0014D7F8 00156688  38 C0 00 08 */	li r6, 8
+/* 0014D7FC 0015668C  4B FE BC D5 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D800 00156690  28 17 00 0F */	cmplwi r23, 0xf
+/* 0014D804 00156694  93 A1 00 4C */	stw r29, 0x4c(r1)
+/* 0014D808 00156698  41 81 01 2C */	bgt lbl_0014D934
+/* 0014D80C 0015669C  80 62 A8 44 */	lwz r3, lbl_005BBCA4-_R2_BASE_(r2)
+/* 0014D810 001566A0  56 E0 10 3A */	slwi r0, r23, 2
+/* 0014D814 001566A4  7C 63 00 2E */	lwzx r3, r3, r0
+/* 0014D818 001566A8  7C 69 03 A6 */	mtctr r3
+/* 0014D81C 001566AC  4E 80 04 20 */	bctr 
+/* 0014D820 001566B0  38 61 00 58 */	addi r3, r1, 0x58
+/* 0014D824 001566B4  38 81 00 64 */	addi r4, r1, 0x64
+/* 0014D828 001566B8  38 A0 00 00 */	li r5, 0
+/* 0014D82C 001566BC  38 C0 00 08 */	li r6, 8
+/* 0014D830 001566C0  4B FE BC A1 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D834 001566C4  93 A1 00 60 */	stw r29, 0x60(r1)
+/* 0014D838 001566C8  38 61 00 58 */	addi r3, r1, 0x58
+/* 0014D83C 001566CC  38 9F 00 11 */	addi r4, r31, 0x11
+/* 0014D840 001566D0  38 A0 FF FF */	li r5, -1
+/* 0014D844 001566D4  4B FE BB 5D */	bl ".append__12StringBufferFPCci"
+/* 0014D848 001566D8  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D84C 001566DC  38 81 00 58 */	addi r4, r1, 0x58
+/* 0014D850 001566E0  4B FE BA 31 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 0014D854 001566E4  48 00 00 E0 */	b lbl_0014D934
+/* 0014D858 001566E8  38 61 00 6C */	addi r3, r1, 0x6c
+/* 0014D85C 001566EC  38 81 00 78 */	addi r4, r1, 0x78
+/* 0014D860 001566F0  38 A0 00 00 */	li r5, 0
+/* 0014D864 001566F4  38 C0 00 08 */	li r6, 8
+/* 0014D868 001566F8  4B FE BC 69 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D86C 001566FC  93 A1 00 74 */	stw r29, 0x74(r1)
+/* 0014D870 00156700  38 61 00 6C */	addi r3, r1, 0x6c
+/* 0014D874 00156704  38 9F 00 19 */	addi r4, r31, 0x19
+/* 0014D878 00156708  38 A0 FF FF */	li r5, -1
+/* 0014D87C 0015670C  4B FE BB 25 */	bl ".append__12StringBufferFPCci"
+/* 0014D880 00156710  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D884 00156714  38 81 00 6C */	addi r4, r1, 0x6c
+/* 0014D888 00156718  4B FE B9 F9 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 0014D88C 0015671C  48 00 00 A8 */	b lbl_0014D934
+/* 0014D890 00156720  38 61 00 80 */	addi r3, r1, 0x80
+/* 0014D894 00156724  38 81 00 8C */	addi r4, r1, 0x8c
+/* 0014D898 00156728  38 A0 00 00 */	li r5, 0
+/* 0014D89C 0015672C  38 C0 00 08 */	li r6, 8
+/* 0014D8A0 00156730  4B FE BC 31 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D8A4 00156734  93 A1 00 88 */	stw r29, 0x88(r1)
+/* 0014D8A8 00156738  38 61 00 80 */	addi r3, r1, 0x80
+/* 0014D8AC 0015673C  38 9F 00 1D */	addi r4, r31, 0x1d
+/* 0014D8B0 00156740  38 A0 FF FF */	li r5, -1
+/* 0014D8B4 00156744  4B FE BA ED */	bl ".append__12StringBufferFPCci"
+/* 0014D8B8 00156748  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D8BC 0015674C  38 81 00 80 */	addi r4, r1, 0x80
+/* 0014D8C0 00156750  4B FE B9 C1 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 0014D8C4 00156754  48 00 00 70 */	b lbl_0014D934
+/* 0014D8C8 00156758  38 61 00 94 */	addi r3, r1, 0x94
+/* 0014D8CC 0015675C  38 81 00 A0 */	addi r4, r1, 0xa0
+/* 0014D8D0 00156760  38 A0 00 00 */	li r5, 0
+/* 0014D8D4 00156764  38 C0 00 08 */	li r6, 8
+/* 0014D8D8 00156768  4B FE BB F9 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D8DC 0015676C  93 A1 00 9C */	stw r29, 0x9c(r1)
+/* 0014D8E0 00156770  38 61 00 94 */	addi r3, r1, 0x94
+/* 0014D8E4 00156774  38 9F 00 21 */	addi r4, r31, 0x21
+/* 0014D8E8 00156778  38 A0 FF FF */	li r5, -1
+/* 0014D8EC 0015677C  4B FE BA B5 */	bl ".append__12StringBufferFPCci"
+/* 0014D8F0 00156780  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D8F4 00156784  38 81 00 94 */	addi r4, r1, 0x94
+/* 0014D8F8 00156788  4B FE B9 89 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 0014D8FC 0015678C  48 00 00 38 */	b lbl_0014D934
+/* 0014D900 00156790  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 0014D904 00156794  38 81 00 B4 */	addi r4, r1, 0xb4
+/* 0014D908 00156798  38 A0 00 00 */	li r5, 0
+/* 0014D90C 0015679C  38 C0 00 08 */	li r6, 8
+/* 0014D910 001567A0  4B FE BB C1 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0014D914 001567A4  93 A1 00 B0 */	stw r29, 0xb0(r1)
+/* 0014D918 001567A8  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 0014D91C 001567AC  38 9F 00 27 */	addi r4, r31, 0x27
+/* 0014D920 001567B0  38 A0 FF FF */	li r5, -1
+/* 0014D924 001567B4  4B FE BA 7D */	bl ".append__12StringBufferFPCci"
+/* 0014D928 001567B8  38 61 00 44 */	addi r3, r1, 0x44
+/* 0014D92C 001567BC  38 81 00 A8 */	addi r4, r1, 0xa8
+/* 0014D930 001567C0  4B FE B9 51 */	bl ".copy__12StringBufferFRC12StringBuffer"
+lbl_0014D934:
+/* 0014D934 001567C4  38 78 00 18 */	addi r3, r24, 0x18
+/* 0014D938 001567C8  38 81 00 44 */	addi r4, r1, 0x44
+/* 0014D93C 001567CC  4B FE B6 C5 */	bl ".compare__12StringBufferCFRC12StringBuffer"
+/* 0014D940 001567D0  2C 03 00 00 */	cmpwi r3, 0
+/* 0014D944 001567D4  40 82 01 A0 */	bne lbl_0014DAE4
+/* 0014D948 001567D8  3B 60 00 01 */	li r27, 1
+/* 0014D94C 001567DC  48 00 01 98 */	b lbl_0014DAE4
+/* 0014D950 001567E0  80 7E 00 00 */	lwz r3, 0(r30)
+/* 0014D954 001567E4  28 03 00 00 */	cmplwi r3, 0
+/* 0014D958 001567E8  41 82 00 24 */	beq lbl_0014D97C
+/* 0014D95C 001567EC  80 63 01 50 */	lwz r3, 0x150(r3)
+/* 0014D960 001567F0  28 03 00 00 */	cmplwi r3, 0
+/* 0014D964 001567F4  41 82 00 18 */	beq lbl_0014D97C
+/* 0014D968 001567F8  88 03 00 D8 */	lbz r0, 0xd8(r3)
+/* 0014D96C 001567FC  28 00 00 00 */	cmplwi r0, 0
+/* 0014D970 00156800  41 82 00 0C */	beq lbl_0014D97C
+/* 0014D974 00156804  80 03 01 04 */	lwz r0, 0x104(r3)
+/* 0014D978 00156808  48 00 00 08 */	b lbl_0014D980
+lbl_0014D97C:
+/* 0014D97C 0015680C  38 00 00 00 */	li r0, 0
+lbl_0014D980:
+/* 0014D980 00156810  28 00 00 00 */	cmplwi r0, 0
+/* 0014D984 00156814  40 82 01 60 */	bne lbl_0014DAE4
+/* 0014D988 00156818  3B 60 00 01 */	li r27, 1
+/* 0014D98C 0015681C  48 00 01 58 */	b lbl_0014DAE4
+/* 0014D990 00156820  80 78 00 00 */	lwz r3, 0(r24)
+/* 0014D994 00156824  28 03 00 00 */	cmplwi r3, 0
+/* 0014D998 00156828  41 82 01 4C */	beq lbl_0014DAE4
+/* 0014D99C 0015682C  80 63 00 D0 */	lwz r3, 0xd0(r3)
+/* 0014D9A0 00156830  28 03 00 00 */	cmplwi r3, 0
+/* 0014D9A4 00156834  41 82 01 40 */	beq lbl_0014DAE4
+/* 0014D9A8 00156838  80 03 00 30 */	lwz r0, 0x30(r3)
+/* 0014D9AC 0015683C  7C 1C 00 00 */	cmpw r28, r0
+/* 0014D9B0 00156840  40 82 01 34 */	bne lbl_0014DAE4
+/* 0014D9B4 00156844  3B 60 00 01 */	li r27, 1
+/* 0014D9B8 00156848  48 00 01 2C */	b lbl_0014DAE4
+/* 0014D9BC 0015684C  83 18 00 00 */	lwz r24, 0(r24)
+/* 0014D9C0 00156850  28 18 00 00 */	cmplwi r24, 0
+/* 0014D9C4 00156854  41 82 01 20 */	beq lbl_0014DAE4
+/* 0014D9C8 00156858  80 79 00 00 */	lwz r3, 0(r25)
+/* 0014D9CC 0015685C  7F 84 E3 78 */	mr r4, r28
+/* 0014D9D0 00156860  80 63 00 24 */	lwz r3, 0x24(r3)
+/* 0014D9D4 00156864  4B F5 E7 8D */	bl ".FindNeighborByID__12NeighborhoodFi"
+/* 0014D9D8 00156868  28 03 00 00 */	cmplwi r3, 0
+/* 0014D9DC 0015686C  41 82 01 08 */	beq lbl_0014DAE4
+/* 0014D9E0 00156870  4B F4 D8 11 */	bl ".GetGUID__8NeighborFv"
+/* 0014D9E4 00156874  48 0E DA ED */	bl ".GetHandle__12PersonFinderFl"
+/* 0014D9E8 00156878  38 03 00 00 */	addi r0, r3, 0
+/* 0014D9EC 0015687C  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014D9F0 00156880  7C 19 03 78 */	mr r25, r0
+/* 0014D9F4 00156884  48 41 B7 2D */	bl ".__ct__11ImageHandleFv"
+/* 0014D9F8 00156888  38 79 00 00 */	addi r3, r25, 0
+/* 0014D9FC 0015688C  38 81 00 40 */	addi r4, r1, 0x40
+/* 0014DA00 00156890  48 0E E5 51 */	bl ".GetPictureBuffer__12PersonFinderFiR11ImageHandle"
+/* 0014DA04 00156894  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 0014DA08 00156898  41 82 00 1C */	beq lbl_0014DA24
+/* 0014DA0C 0015689C  83 18 00 D0 */	lwz r24, 0xd0(r24)
+/* 0014DA10 001568A0  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014DA14 001568A4  48 41 B4 DD */	bl ".AsBuffer__11ImageHandleCFv"
+/* 0014DA18 001568A8  7C 03 C0 40 */	cmplw r3, r24
+/* 0014DA1C 001568AC  40 82 00 08 */	bne lbl_0014DA24
+/* 0014DA20 001568B0  3B 60 00 01 */	li r27, 1
+lbl_0014DA24:
+/* 0014DA24 001568B4  38 61 00 40 */	addi r3, r1, 0x40
+/* 0014DA28 001568B8  38 80 FF FF */	li r4, -1
+/* 0014DA2C 001568BC  48 41 B5 45 */	bl ".__dt__11ImageHandleFv"
+/* 0014DA30 001568C0  48 00 00 B4 */	b lbl_0014DAE4
+/* 0014DA34 001568C4  80 62 8C B0 */	lwz r3, lbl_005BA110-_R2_BASE_(r2)
+/* 0014DA38 001568C8  80 02 DA 60 */	lwz r0, lbl_005BEEC0-_R2_BASE_(r2)
+/* 0014DA3C 001568CC  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DA40 001568D0  2C 00 FF FF */	cmpwi r0, -1
+/* 0014DA44 001568D4  80 63 00 84 */	lwz r3, 0x84(r3)
+/* 0014DA48 001568D8  40 82 00 0C */	bne lbl_0014DA54
+/* 0014DA4C 001568DC  90 62 DA 60 */	stw r3, lbl_005BEEC0-_R2_BASE_(r2)
+/* 0014DA50 001568E0  48 00 00 94 */	b lbl_0014DAE4
+lbl_0014DA54:
+/* 0014DA54 001568E4  7C 00 18 00 */	cmpw r0, r3
+/* 0014DA58 001568E8  41 82 00 8C */	beq lbl_0014DAE4
+/* 0014DA5C 001568EC  3B 60 00 01 */	li r27, 1
+/* 0014DA60 001568F0  48 00 00 84 */	b lbl_0014DAE4
+/* 0014DA64 001568F4  80 02 DA 60 */	lwz r0, lbl_005BEEC0-_R2_BASE_(r2)
+/* 0014DA68 001568F8  80 62 90 34 */	lwz r3, lbl_005BA494-_R2_BASE_(r2)
+/* 0014DA6C 001568FC  2C 00 FF FF */	cmpwi r0, -1
+/* 0014DA70 00156900  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DA74 00156904  40 82 00 0C */	bne lbl_0014DA80
+/* 0014DA78 00156908  90 62 DA 60 */	stw r3, lbl_005BEEC0-_R2_BASE_(r2)
+/* 0014DA7C 0015690C  48 00 00 68 */	b lbl_0014DAE4
+lbl_0014DA80:
+/* 0014DA80 00156910  7C 00 18 00 */	cmpw r0, r3
+/* 0014DA84 00156914  41 82 00 60 */	beq lbl_0014DAE4
+/* 0014DA88 00156918  3B 60 00 01 */	li r27, 1
+/* 0014DA8C 0015691C  48 00 00 58 */	b lbl_0014DAE4
+/* 0014DA90 00156920  80 62 8C A4 */	lwz r3, lbl_005BA104-_R2_BASE_(r2)
+/* 0014DA94 00156924  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DA98 00156928  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014DA9C 0015692C  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 0014DAA0 00156930  48 44 C0 B1 */	bl func_00599B50
+/* 0014DAA4 00156934  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0014DAA8 00156938  48 3C 72 C9 */	bl ".GetMainWindow__12cTSWinMgrW95Fv"
+/* 0014DAAC 0015693C  7F 84 E3 78 */	mr r4, r28
+/* 0014DAB0 00156940  48 00 0C 01 */	bl ".FindButton__FP6cTSWini"
+/* 0014DAB4 00156944  28 03 00 00 */	cmplwi r3, 0
+/* 0014DAB8 00156948  41 82 00 2C */	beq lbl_0014DAE4
+/* 0014DABC 0015694C  80 83 00 D0 */	lwz r4, 0xd0(r3)
+/* 0014DAC0 00156950  28 04 00 00 */	cmplwi r4, 0
+/* 0014DAC4 00156954  41 82 00 20 */	beq lbl_0014DAE4
+/* 0014DAC8 00156958  80 04 00 30 */	lwz r0, 0x30(r4)
+/* 0014DACC 0015695C  7C 1C 00 00 */	cmpw r28, r0
+/* 0014DAD0 00156960  40 82 00 14 */	bne lbl_0014DAE4
+/* 0014DAD4 00156964  80 03 00 D8 */	lwz r0, 0xd8(r3)
+/* 0014DAD8 00156968  2C 00 00 00 */	cmpwi r0, 0
+/* 0014DADC 0015696C  41 82 00 08 */	beq lbl_0014DAE4
+/* 0014DAE0 00156970  3B 60 00 01 */	li r27, 1
+lbl_0014DAE4:
+/* 0014DAE4 00156974  57 60 06 3F */	clrlwi. r0, r27, 0x18
+/* 0014DAE8 00156978  41 82 00 28 */	beq lbl_0014DB10
+/* 0014DAEC 0015697C  80 9A 01 1C */	lwz r4, 0x11c(r26)
+/* 0014DAF0 00156980  38 7A 00 00 */	addi r3, r26, 0
+/* 0014DAF4 00156984  38 DF 00 2F */	addi r6, r31, 0x2f
+/* 0014DAF8 00156988  80 84 00 0C */	lwz r4, 0xc(r4)
+/* 0014DAFC 0015698C  38 A0 00 00 */	li r5, 0
+/* 0014DB00 00156990  38 E0 00 00 */	li r7, 0
+/* 0014DB04 00156994  4B F9 93 9D */	bl ".RunTree__8cXObjectFP8BehaviorsPCcPs"
+/* 0014DB08 00156998  38 00 FF FF */	li r0, -1
+/* 0014DB0C 0015699C  90 02 DA 60 */	stw r0, lbl_005BEEC0-_R2_BASE_(r2)
+lbl_0014DB10:
+/* 0014DB10 001569A0  80 01 00 F8 */	lwz r0, 0xf8(r1)
+/* 0014DB14 001569A4  38 21 00 F0 */	addi r1, r1, 0xf0
+/* 0014DB18 001569A8  BA E1 FF DC */	lmw r23, -0x24(r1)
+/* 0014DB1C 001569AC  7C 08 03 A6 */	mtlr r0
+/* 0014DB20 001569B0  4E 80 00 20 */	blr 
+
+.global ".Tut_FlashButtonByImageID__Fib"
+".Tut_FlashButtonByImageID__Fib":
+/* 0014DB50 001569E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 0014DB54 001569E4  7C 08 02 A6 */	mflr r0
+/* 0014DB58 001569E8  80 A2 8C A4 */	lwz r5, lbl_005BA104-_R2_BASE_(r2)
+/* 0014DB5C 001569EC  3B E4 00 00 */	addi r31, r4, 0
+/* 0014DB60 001569F0  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0014DB64 001569F4  3B C3 00 00 */	addi r30, r3, 0
+/* 0014DB68 001569F8  90 01 00 08 */	stw r0, 8(r1)
+/* 0014DB6C 001569FC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 0014DB70 00156A00  80 65 00 00 */	lwz r3, 0(r5)
+/* 0014DB74 00156A04  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014DB78 00156A08  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 0014DB7C 00156A0C  48 44 BF D5 */	bl func_00599B50
+/* 0014DB80 00156A10  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0014DB84 00156A14  48 3C 71 ED */	bl ".GetMainWindow__12cTSWinMgrW95Fv"
+/* 0014DB88 00156A18  7F C4 F3 78 */	mr r4, r30
+/* 0014DB8C 00156A1C  48 00 0B 25 */	bl ".FindButton__FP6cTSWini"
+/* 0014DB90 00156A20  28 03 00 00 */	cmplwi r3, 0
+/* 0014DB94 00156A24  41 82 00 18 */	beq lbl_0014DBAC
+/* 0014DB98 00156A28  81 83 00 00 */	lwz r12, 0(r3)
+/* 0014DB9C 00156A2C  7F E4 FB 78 */	mr r4, r31
+/* 0014DBA0 00156A30  81 8C 01 68 */	lwz r12, 0x168(r12)
+/* 0014DBA4 00156A34  48 44 BF AD */	bl func_00599B50
+/* 0014DBA8 00156A38  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_0014DBAC:
+/* 0014DBAC 00156A3C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 0014DBB0 00156A40  38 21 00 50 */	addi r1, r1, 0x50
+/* 0014DBB4 00156A44  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0014DBB8 00156A48  7C 08 03 A6 */	mtlr r0
+/* 0014DBBC 00156A4C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 0014DBC0 00156A50  4E 80 00 20 */	blr 
+
+.global ".FindRelButton__FP6cTSWini"
+".FindRelButton__FP6cTSWini":
+/* 0014DC00 00156A90  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 0014DC04 00156A94  7C 08 02 A6 */	mflr r0
+/* 0014DC08 00156A98  28 03 00 00 */	cmplwi r3, 0
+/* 0014DC0C 00156A9C  83 C2 90 2C */	lwz r30, lbl_005BA48C-_R2_BASE_(r2)
+/* 0014DC10 00156AA0  83 E2 90 30 */	lwz r31, lbl_005BA490-_R2_BASE_(r2)
+/* 0014DC14 00156AA4  7C 9D 23 78 */	mr r29, r4
+/* 0014DC18 00156AA8  90 01 00 08 */	stw r0, 8(r1)
+/* 0014DC1C 00156AAC  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 0014DC20 00156AB0  40 82 00 0C */	bne lbl_0014DC2C
+/* 0014DC24 00156AB4  38 60 00 00 */	li r3, 0
+/* 0014DC28 00156AB8  48 00 02 80 */	b lbl_0014DEA8
+lbl_0014DC2C:
+/* 0014DC2C 00156ABC  80 03 00 40 */	lwz r0, 0x40(r3)
+/* 0014DC30 00156AC0  3B 83 00 3C */	addi r28, r3, 0x3c
+/* 0014DC34 00156AC4  90 01 00 48 */	stw r0, 0x48(r1)
+/* 0014DC38 00156AC8  90 01 00 50 */	stw r0, 0x50(r1)
+/* 0014DC3C 00156ACC  90 01 00 44 */	stw r0, 0x44(r1)
+/* 0014DC40 00156AD0  90 01 00 40 */	stw r0, 0x40(r1)
+/* 0014DC44 00156AD4  48 00 02 4C */	b lbl_0014DE90
+lbl_0014DC48:
+/* 0014DC48 00156AD8  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014DC4C 00156ADC  38 BF 00 00 */	addi r5, r31, 0
+/* 0014DC50 00156AE0  38 DE 00 00 */	addi r6, r30, 0
+/* 0014DC54 00156AE4  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014DC58 00156AE8  38 80 00 00 */	li r4, 0
+/* 0014DC5C 00156AEC  38 E0 00 00 */	li r7, 0
+/* 0014DC60 00156AF0  48 43 A7 41 */	bl func_005883A0
+/* 0014DC64 00156AF4  28 03 00 00 */	cmplwi r3, 0
+/* 0014DC68 00156AF8  41 82 00 08 */	beq lbl_0014DC70
+/* 0014DC6C 00156AFC  48 00 02 3C */	b lbl_0014DEA8
+lbl_0014DC70:
+/* 0014DC70 00156B00  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014DC74 00156B04  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014DC78 00156B08  28 03 00 00 */	cmplwi r3, 0
+/* 0014DC7C 00156B0C  40 82 00 0C */	bne lbl_0014DC88
+/* 0014DC80 00156B10  38 60 00 00 */	li r3, 0
+/* 0014DC84 00156B14  48 00 01 F4 */	b lbl_0014DE78
+lbl_0014DC88:
+/* 0014DC88 00156B18  3B 63 00 38 */	addi r27, r3, 0x38
+/* 0014DC8C 00156B1C  38 61 00 70 */	addi r3, r1, 0x70
+/* 0014DC90 00156B20  38 9B 00 00 */	addi r4, r27, 0
+/* 0014DC94 00156B24  48 00 09 BD */	bl ".begin__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv"
+/* 0014DC98 00156B28  80 81 00 70 */	lwz r4, 0x70(r1)
+/* 0014DC9C 00156B2C  38 61 00 5C */	addi r3, r1, 0x5c
+/* 0014DCA0 00156B30  48 00 08 F1 */	bl ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>"
+/* 0014DCA4 00156B34  80 01 00 5C */	lwz r0, 0x5c(r1)
+/* 0014DCA8 00156B38  90 01 00 58 */	stw r0, 0x58(r1)
+/* 0014DCAC 00156B3C  48 00 01 A0 */	b lbl_0014DE4C
+lbl_0014DCB0:
+/* 0014DCB0 00156B40  80 61 00 58 */	lwz r3, 0x58(r1)
+/* 0014DCB4 00156B44  38 BF 00 00 */	addi r5, r31, 0
+/* 0014DCB8 00156B48  38 DE 00 00 */	addi r6, r30, 0
+/* 0014DCBC 00156B4C  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014DCC0 00156B50  38 80 00 00 */	li r4, 0
+/* 0014DCC4 00156B54  38 E0 00 00 */	li r7, 0
+/* 0014DCC8 00156B58  48 43 A6 D9 */	bl func_005883A0
+/* 0014DCCC 00156B5C  28 03 00 00 */	cmplwi r3, 0
+/* 0014DCD0 00156B60  41 82 00 08 */	beq lbl_0014DCD8
+/* 0014DCD4 00156B64  48 00 01 A4 */	b lbl_0014DE78
+lbl_0014DCD8:
+/* 0014DCD8 00156B68  80 61 00 58 */	lwz r3, 0x58(r1)
+/* 0014DCDC 00156B6C  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014DCE0 00156B70  28 03 00 00 */	cmplwi r3, 0
+/* 0014DCE4 00156B74  40 82 00 0C */	bne lbl_0014DCF0
+/* 0014DCE8 00156B78  38 60 00 00 */	li r3, 0
+/* 0014DCEC 00156B7C  48 00 01 48 */	b lbl_0014DE34
+lbl_0014DCF0:
+/* 0014DCF0 00156B80  3B 43 00 38 */	addi r26, r3, 0x38
+/* 0014DCF4 00156B84  38 61 00 64 */	addi r3, r1, 0x64
+/* 0014DCF8 00156B88  48 00 08 29 */	bl ".__ct__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv"
+/* 0014DCFC 00156B8C  38 9A 00 00 */	addi r4, r26, 0
+/* 0014DD00 00156B90  38 61 00 68 */	addi r3, r1, 0x68
+/* 0014DD04 00156B94  48 00 07 AD */	bl ".begin__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+/* 0014DD08 00156B98  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 0014DD0C 00156B9C  90 01 00 64 */	stw r0, 0x64(r1)
+/* 0014DD10 00156BA0  48 00 01 00 */	b lbl_0014DE10
+lbl_0014DD14:
+/* 0014DD14 00156BA4  38 61 00 64 */	addi r3, r1, 0x64
+/* 0014DD18 00156BA8  48 00 07 29 */	bl ".__ml__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>CFv"
+/* 0014DD1C 00156BAC  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DD20 00156BB0  38 BF 00 00 */	addi r5, r31, 0
+/* 0014DD24 00156BB4  38 DE 00 00 */	addi r6, r30, 0
+/* 0014DD28 00156BB8  38 80 00 00 */	li r4, 0
+/* 0014DD2C 00156BBC  38 E0 00 00 */	li r7, 0
+/* 0014DD30 00156BC0  48 43 A6 71 */	bl func_005883A0
+/* 0014DD34 00156BC4  28 03 00 00 */	cmplwi r3, 0
+/* 0014DD38 00156BC8  41 82 00 08 */	beq lbl_0014DD40
+/* 0014DD3C 00156BCC  48 00 00 F8 */	b lbl_0014DE34
+lbl_0014DD40:
+/* 0014DD40 00156BD0  80 61 00 64 */	lwz r3, 0x64(r1)
+/* 0014DD44 00156BD4  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014DD48 00156BD8  28 03 00 00 */	cmplwi r3, 0
+/* 0014DD4C 00156BDC  40 82 00 0C */	bne lbl_0014DD58
+/* 0014DD50 00156BE0  38 60 00 00 */	li r3, 0
+/* 0014DD54 00156BE4  48 00 00 A8 */	b lbl_0014DDFC
+lbl_0014DD58:
+/* 0014DD58 00156BE8  48 00 06 A9 */	bl ".GetChildList__6cTSWinFv"
+/* 0014DD5C 00156BEC  3B 23 00 00 */	addi r25, r3, 0
+/* 0014DD60 00156BF0  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DD64 00156BF4  48 00 06 2D */	bl ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv"
+/* 0014DD68 00156BF8  38 99 00 00 */	addi r4, r25, 0
+/* 0014DD6C 00156BFC  38 61 00 78 */	addi r3, r1, 0x78
+/* 0014DD70 00156C00  48 00 07 41 */	bl ".begin__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+/* 0014DD74 00156C04  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DD78 00156C08  38 81 00 78 */	addi r4, r1, 0x78
+/* 0014DD7C 00156C0C  48 00 05 55 */	bl ".__as__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>"
+/* 0014DD80 00156C10  48 00 00 58 */	b lbl_0014DDD8
+lbl_0014DD84:
+/* 0014DD84 00156C14  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DD88 00156C18  48 00 04 D9 */	bl ".__ml__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>CFv"
+/* 0014DD8C 00156C1C  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DD90 00156C20  38 BF 00 00 */	addi r5, r31, 0
+/* 0014DD94 00156C24  38 DE 00 00 */	addi r6, r30, 0
+/* 0014DD98 00156C28  38 80 00 00 */	li r4, 0
+/* 0014DD9C 00156C2C  38 E0 00 00 */	li r7, 0
+/* 0014DDA0 00156C30  48 43 A6 01 */	bl func_005883A0
+/* 0014DDA4 00156C34  28 03 00 00 */	cmplwi r3, 0
+/* 0014DDA8 00156C38  41 82 00 08 */	beq lbl_0014DDB0
+/* 0014DDAC 00156C3C  48 00 00 50 */	b lbl_0014DDFC
+lbl_0014DDB0:
+/* 0014DDB0 00156C40  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DDB4 00156C44  48 00 04 AD */	bl ".__ml__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>CFv"
+/* 0014DDB8 00156C48  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DDBC 00156C4C  7F A4 EB 78 */	mr r4, r29
+/* 0014DDC0 00156C50  4B FF FE 41 */	bl ".FindRelButton__FP6cTSWini"
+/* 0014DDC4 00156C54  28 03 00 00 */	cmplwi r3, 0
+/* 0014DDC8 00156C58  41 82 00 08 */	beq lbl_0014DDD0
+/* 0014DDCC 00156C5C  48 00 00 30 */	b lbl_0014DDFC
+lbl_0014DDD0:
+/* 0014DDD0 00156C60  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DDD4 00156C64  48 00 04 0D */	bl ".__pp__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv"
+lbl_0014DDD8:
+/* 0014DDD8 00156C68  38 99 00 00 */	addi r4, r25, 0
+/* 0014DDDC 00156C6C  38 61 00 7C */	addi r3, r1, 0x7c
+/* 0014DDE0 00156C70  48 00 03 91 */	bl ".end__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+/* 0014DDE4 00156C74  38 61 00 74 */	addi r3, r1, 0x74
+/* 0014DDE8 00156C78  38 81 00 7C */	addi r4, r1, 0x7c
+/* 0014DDEC 00156C7C  48 00 02 B5 */	bl ".__eq__3stdFRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>RCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>"
+/* 0014DDF0 00156C80  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 0014DDF4 00156C84  41 82 FF 90 */	beq lbl_0014DD84
+/* 0014DDF8 00156C88  38 60 00 00 */	li r3, 0
+lbl_0014DDFC:
+/* 0014DDFC 00156C8C  28 03 00 00 */	cmplwi r3, 0
+/* 0014DE00 00156C90  41 82 00 08 */	beq lbl_0014DE08
+/* 0014DE04 00156C94  48 00 00 30 */	b lbl_0014DE34
+lbl_0014DE08:
+/* 0014DE08 00156C98  38 61 00 64 */	addi r3, r1, 0x64
+/* 0014DE0C 00156C9C  48 00 02 15 */	bl ".__pp__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv"
+lbl_0014DE10:
+/* 0014DE10 00156CA0  38 9A 00 00 */	addi r4, r26, 0
+/* 0014DE14 00156CA4  38 61 00 6C */	addi r3, r1, 0x6c
+/* 0014DE18 00156CA8  48 00 03 59 */	bl ".end__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+/* 0014DE1C 00156CAC  38 61 00 64 */	addi r3, r1, 0x64
+/* 0014DE20 00156CB0  38 81 00 6C */	addi r4, r1, 0x6c
+/* 0014DE24 00156CB4  48 00 01 2D */	bl ".__eq__3stdFRCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>RCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>"
+/* 0014DE28 00156CB8  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 0014DE2C 00156CBC  41 82 FE E8 */	beq lbl_0014DD14
+/* 0014DE30 00156CC0  38 60 00 00 */	li r3, 0
+lbl_0014DE34:
+/* 0014DE34 00156CC4  28 03 00 00 */	cmplwi r3, 0
+/* 0014DE38 00156CC8  41 82 00 08 */	beq lbl_0014DE40
+/* 0014DE3C 00156CCC  48 00 00 3C */	b lbl_0014DE78
+lbl_0014DE40:
+/* 0014DE40 00156CD0  80 61 00 58 */	lwz r3, 0x58(r1)
+/* 0014DE44 00156CD4  80 03 00 04 */	lwz r0, 4(r3)
+/* 0014DE48 00156CD8  90 01 00 58 */	stw r0, 0x58(r1)
+lbl_0014DE4C:
+/* 0014DE4C 00156CDC  38 9B 00 00 */	addi r4, r27, 0
+/* 0014DE50 00156CE0  38 61 00 80 */	addi r3, r1, 0x80
+/* 0014DE54 00156CE4  48 00 00 9D */	bl ".end__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv"
+/* 0014DE58 00156CE8  80 81 00 80 */	lwz r4, 0x80(r1)
+/* 0014DE5C 00156CEC  38 61 00 60 */	addi r3, r1, 0x60
+/* 0014DE60 00156CF0  48 00 07 31 */	bl ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>"
+/* 0014DE64 00156CF4  80 61 00 58 */	lwz r3, 0x58(r1)
+/* 0014DE68 00156CF8  80 01 00 60 */	lwz r0, 0x60(r1)
+/* 0014DE6C 00156CFC  7C 03 00 40 */	cmplw r3, r0
+/* 0014DE70 00156D00  40 82 FE 40 */	bne lbl_0014DCB0
+/* 0014DE74 00156D04  38 60 00 00 */	li r3, 0
+lbl_0014DE78:
+/* 0014DE78 00156D08  28 03 00 00 */	cmplwi r3, 0
+/* 0014DE7C 00156D0C  41 82 00 08 */	beq lbl_0014DE84
+/* 0014DE80 00156D10  48 00 00 28 */	b lbl_0014DEA8
+lbl_0014DE84:
+/* 0014DE84 00156D14  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014DE88 00156D18  80 03 00 04 */	lwz r0, 4(r3)
+/* 0014DE8C 00156D1C  90 01 00 40 */	stw r0, 0x40(r1)
+lbl_0014DE90:
+/* 0014DE90 00156D20  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 0014DE94 00156D24  93 81 00 4C */	stw r28, 0x4c(r1)
+/* 0014DE98 00156D28  7C 00 E0 40 */	cmplw r0, r28
+/* 0014DE9C 00156D2C  93 81 00 54 */	stw r28, 0x54(r1)
+/* 0014DEA0 00156D30  40 82 FD A8 */	bne lbl_0014DC48
+/* 0014DEA4 00156D34  38 60 00 00 */	li r3, 0
+lbl_0014DEA8:
+/* 0014DEA8 00156D38  80 01 00 B8 */	lwz r0, 0xb8(r1)
+/* 0014DEAC 00156D3C  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 0014DEB0 00156D40  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 0014DEB4 00156D44  7C 08 03 A6 */	mtlr r0
+/* 0014DEB8 00156D48  4E 80 00 20 */	blr 
+
+.global ".end__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv"
+".end__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv":
+/* 0014DEF0 00156D80  38 04 00 04 */	addi r0, r4, 4
+/* 0014DEF4 00156D84  90 03 00 00 */	stw r0, 0(r3)
+/* 0014DEF8 00156D88  4E 80 00 20 */	blr 
+
+.global ".__eq__3stdFRCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>RCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>"
+".__eq__3stdFRCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>RCQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>":
+/* 0014DF50 00156DE0  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014DF54 00156DE4  80 04 00 00 */	lwz r0, 0(r4)
+/* 0014DF58 00156DE8  7C 03 00 50 */	subf r0, r3, r0
+/* 0014DF5C 00156DEC  7C 00 00 34 */	cntlzw r0, r0
+/* 0014DF60 00156DF0  54 03 D9 7E */	srwi r3, r0, 5
+/* 0014DF64 00156DF4  4E 80 00 20 */	blr 
+
+.global ".__pp__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv"
+".__pp__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv":
+/* 0014E020 00156EB0  80 83 00 00 */	lwz r4, 0(r3)
+/* 0014E024 00156EB4  80 04 00 04 */	lwz r0, 4(r4)
+/* 0014E028 00156EB8  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E02C 00156EBC  4E 80 00 20 */	blr 
+
+.global ".__eq__3stdFRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>RCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>"
+".__eq__3stdFRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>RCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>":
+/* 0014E0A0 00156F30  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014E0A4 00156F34  80 04 00 00 */	lwz r0, 0(r4)
+/* 0014E0A8 00156F38  7C 03 00 50 */	subf r0, r3, r0
+/* 0014E0AC 00156F3C  7C 00 00 34 */	cntlzw r0, r0
+/* 0014E0B0 00156F40  54 03 D9 7E */	srwi r3, r0, 5
+/* 0014E0B4 00156F44  4E 80 00 20 */	blr 
+
+.global ".end__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+".end__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv":
+/* 0014E170 00157000  38 04 00 04 */	addi r0, r4, 4
+/* 0014E174 00157004  90 01 FF F0 */	stw r0, -0x10(r1)
+/* 0014E178 00157008  90 01 FF F4 */	stw r0, -0xc(r1)
+/* 0014E17C 0015700C  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E180 00157010  4E 80 00 20 */	blr 
+
+.global ".__pp__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv"
+".__pp__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv":
+/* 0014E1E0 00157070  80 83 00 00 */	lwz r4, 0(r3)
+/* 0014E1E4 00157074  80 04 00 04 */	lwz r0, 4(r4)
+/* 0014E1E8 00157078  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E1EC 0015707C  4E 80 00 20 */	blr 
+
+.global ".__ml__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>CFv"
+".__ml__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>CFv":
+/* 0014E260 001570F0  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014E264 001570F4  38 63 00 08 */	addi r3, r3, 8
+/* 0014E268 001570F8  4E 80 00 20 */	blr 
+
+.global ".__as__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>"
+".__as__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FRCQ33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>":
+/* 0014E2D0 00157160  80 04 00 00 */	lwz r0, 0(r4)
+/* 0014E2D4 00157164  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E2D8 00157168  4E 80 00 20 */	blr 
+
+.global ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv"
+".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>Fv":
+/* 0014E390 00157220  4E 80 00 20 */	blr 
+
+.global ".GetChildList__6cTSWinFv"
+".GetChildList__6cTSWinFv":
+/* 0014E400 00157290  38 63 00 38 */	addi r3, r3, 0x38
+/* 0014E404 00157294  4E 80 00 20 */	blr 
+
+.global ".__ml__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>CFv"
+".__ml__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>CFv":
+/* 0014E440 001572D0  80 63 00 00 */	lwz r3, 0(r3)
+/* 0014E444 001572D4  38 63 00 08 */	addi r3, r3, 8
+/* 0014E448 001572D8  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv"
+".begin__Q23std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>CFv":
+/* 0014E4B0 00157340  80 04 00 08 */	lwz r0, 8(r4)
+/* 0014E4B4 00157344  90 01 FF F0 */	stw r0, -0x10(r1)
+/* 0014E4B8 00157348  90 01 FF F4 */	stw r0, -0xc(r1)
+/* 0014E4BC 0015734C  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E4C0 00157350  4E 80 00 20 */	blr 
+
+.global ".__ct__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv"
+".__ct__Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>Fv":
+/* 0014E520 001573B0  4E 80 00 20 */	blr 
+
+.global ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>"
+".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<1>FQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<1>":
+/* 0014E590 00157420  90 81 00 1C */	stw r4, 0x1c(r1)
+/* 0014E594 00157424  90 83 00 00 */	stw r4, 0(r3)
+/* 0014E598 00157428  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv"
+".begin__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>CFv":
+/* 0014E650 001574E0  80 04 00 08 */	lwz r0, 8(r4)
+/* 0014E654 001574E4  90 03 00 00 */	stw r0, 0(r3)
+/* 0014E658 001574E8  4E 80 00 20 */	blr 
+
+.global ".FindButton__FP6cTSWini"
+".FindButton__FP6cTSWini":
+/* 0014E6B0 00157540  93 E1 FF FC */	stw r31, -4(r1)
+/* 0014E6B4 00157544  7C 08 02 A6 */	mflr r0
+/* 0014E6B8 00157548  28 03 00 00 */	cmplwi r3, 0
+/* 0014E6BC 0015754C  83 E2 90 2C */	lwz r31, lbl_005BA48C-_R2_BASE_(r2)
+/* 0014E6C0 00157550  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0014E6C4 00157554  83 C2 90 28 */	lwz r30, lbl_005BA488-_R2_BASE_(r2)
+/* 0014E6C8 00157558  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 0014E6CC 0015755C  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 0014E6D0 00157560  7C 9C 23 78 */	mr r28, r4
+/* 0014E6D4 00157564  90 01 00 08 */	stw r0, 8(r1)
+/* 0014E6D8 00157568  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 0014E6DC 0015756C  40 82 00 0C */	bne lbl_0014E6E8
+/* 0014E6E0 00157570  38 60 00 00 */	li r3, 0
+/* 0014E6E4 00157574  48 00 00 A4 */	b lbl_0014E788
+lbl_0014E6E8:
+/* 0014E6E8 00157578  80 03 00 40 */	lwz r0, 0x40(r3)
+/* 0014E6EC 0015757C  3B A3 00 3C */	addi r29, r3, 0x3c
+/* 0014E6F0 00157580  90 01 00 48 */	stw r0, 0x48(r1)
+/* 0014E6F4 00157584  90 01 00 50 */	stw r0, 0x50(r1)
+/* 0014E6F8 00157588  90 01 00 44 */	stw r0, 0x44(r1)
+/* 0014E6FC 0015758C  90 01 00 40 */	stw r0, 0x40(r1)
+/* 0014E700 00157590  48 00 00 70 */	b lbl_0014E770
+lbl_0014E704:
+/* 0014E704 00157594  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E708 00157598  38 BE 00 00 */	addi r5, r30, 0
+/* 0014E70C 0015759C  38 DF 00 00 */	addi r6, r31, 0
+/* 0014E710 001575A0  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014E714 001575A4  38 80 00 00 */	li r4, 0
+/* 0014E718 001575A8  38 E0 00 00 */	li r7, 0
+/* 0014E71C 001575AC  48 43 9C 85 */	bl func_005883A0
+/* 0014E720 001575B0  28 03 00 00 */	cmplwi r3, 0
+/* 0014E724 001575B4  41 82 00 20 */	beq lbl_0014E744
+/* 0014E728 001575B8  80 83 00 D0 */	lwz r4, 0xd0(r3)
+/* 0014E72C 001575BC  28 04 00 00 */	cmplwi r4, 0
+/* 0014E730 001575C0  41 82 00 14 */	beq lbl_0014E744
+/* 0014E734 001575C4  80 04 00 30 */	lwz r0, 0x30(r4)
+/* 0014E738 001575C8  7C 1C 00 00 */	cmpw r28, r0
+/* 0014E73C 001575CC  40 82 00 08 */	bne lbl_0014E744
+/* 0014E740 001575D0  48 00 00 48 */	b lbl_0014E788
+lbl_0014E744:
+/* 0014E744 001575D4  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E748 001575D8  7F 84 E3 78 */	mr r4, r28
+/* 0014E74C 001575DC  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014E750 001575E0  4B FF FF 61 */	bl ".FindButton__FP6cTSWini"
+/* 0014E754 001575E4  28 03 00 00 */	cmplwi r3, 0
+/* 0014E758 001575E8  41 82 00 0C */	beq lbl_0014E764
+/* 0014E75C 001575EC  48 00 00 2C */	b lbl_0014E788
+/* 0014E760 001575F0  60 00 00 00 */	nop 
+lbl_0014E764:
+/* 0014E764 001575F4  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E768 001575F8  80 03 00 04 */	lwz r0, 4(r3)
+/* 0014E76C 001575FC  90 01 00 40 */	stw r0, 0x40(r1)
+lbl_0014E770:
+/* 0014E770 00157600  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 0014E774 00157604  93 A1 00 4C */	stw r29, 0x4c(r1)
+/* 0014E778 00157608  7C 00 E8 40 */	cmplw r0, r29
+/* 0014E77C 0015760C  93 A1 00 54 */	stw r29, 0x54(r1)
+/* 0014E780 00157610  40 82 FF 84 */	bne lbl_0014E704
+/* 0014E784 00157614  38 60 00 00 */	li r3, 0
+lbl_0014E788:
+/* 0014E788 00157618  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 0014E78C 0015761C  38 21 00 70 */	addi r1, r1, 0x70
+/* 0014E790 00157620  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0014E794 00157624  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 0014E798 00157628  7C 08 03 A6 */	mtlr r0
+/* 0014E79C 0015762C  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 0014E7A0 00157630  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 0014E7A4 00157634  4E 80 00 20 */	blr 
+
+.global ".FindButton__FP6cTSWinP9cTSBuffer"
+".FindButton__FP6cTSWinP9cTSBuffer":
+/* 0014E7E0 00157670  93 E1 FF FC */	stw r31, -4(r1)
+/* 0014E7E4 00157674  7C 08 02 A6 */	mflr r0
+/* 0014E7E8 00157678  28 03 00 00 */	cmplwi r3, 0
+/* 0014E7EC 0015767C  83 E2 90 2C */	lwz r31, lbl_005BA48C-_R2_BASE_(r2)
+/* 0014E7F0 00157680  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0014E7F4 00157684  83 C2 90 28 */	lwz r30, lbl_005BA488-_R2_BASE_(r2)
+/* 0014E7F8 00157688  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 0014E7FC 0015768C  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 0014E800 00157690  7C 9C 23 78 */	mr r28, r4
+/* 0014E804 00157694  90 01 00 08 */	stw r0, 8(r1)
+/* 0014E808 00157698  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 0014E80C 0015769C  40 82 00 0C */	bne lbl_0014E818
+/* 0014E810 001576A0  38 60 00 00 */	li r3, 0
+/* 0014E814 001576A4  48 00 00 9C */	b lbl_0014E8B0
+lbl_0014E818:
+/* 0014E818 001576A8  80 03 00 40 */	lwz r0, 0x40(r3)
+/* 0014E81C 001576AC  3B A3 00 3C */	addi r29, r3, 0x3c
+/* 0014E820 001576B0  90 01 00 48 */	stw r0, 0x48(r1)
+/* 0014E824 001576B4  90 01 00 50 */	stw r0, 0x50(r1)
+/* 0014E828 001576B8  90 01 00 44 */	stw r0, 0x44(r1)
+/* 0014E82C 001576BC  90 01 00 40 */	stw r0, 0x40(r1)
+/* 0014E830 001576C0  48 00 00 68 */	b lbl_0014E898
+lbl_0014E834:
+/* 0014E834 001576C4  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E838 001576C8  38 BE 00 00 */	addi r5, r30, 0
+/* 0014E83C 001576CC  38 DF 00 00 */	addi r6, r31, 0
+/* 0014E840 001576D0  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014E844 001576D4  38 80 00 00 */	li r4, 0
+/* 0014E848 001576D8  38 E0 00 00 */	li r7, 0
+/* 0014E84C 001576DC  48 43 9B 55 */	bl func_005883A0
+/* 0014E850 001576E0  28 03 00 00 */	cmplwi r3, 0
+/* 0014E854 001576E4  41 82 00 18 */	beq lbl_0014E86C
+/* 0014E858 001576E8  80 03 00 D0 */	lwz r0, 0xd0(r3)
+/* 0014E85C 001576EC  7C 00 E0 40 */	cmplw r0, r28
+/* 0014E860 001576F0  40 82 00 0C */	bne lbl_0014E86C
+/* 0014E864 001576F4  48 00 00 4C */	b lbl_0014E8B0
+/* 0014E868 001576F8  60 00 00 00 */	nop 
+lbl_0014E86C:
+/* 0014E86C 001576FC  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E870 00157700  7F 84 E3 78 */	mr r4, r28
+/* 0014E874 00157704  80 63 00 08 */	lwz r3, 8(r3)
+/* 0014E878 00157708  4B FF FF 69 */	bl ".FindButton__FP6cTSWinP9cTSBuffer"
+/* 0014E87C 0015770C  28 03 00 00 */	cmplwi r3, 0
+/* 0014E880 00157710  41 82 00 0C */	beq lbl_0014E88C
+/* 0014E884 00157714  48 00 00 2C */	b lbl_0014E8B0
+/* 0014E888 00157718  60 00 00 00 */	nop 
+lbl_0014E88C:
+/* 0014E88C 0015771C  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 0014E890 00157720  80 03 00 04 */	lwz r0, 4(r3)
+/* 0014E894 00157724  90 01 00 40 */	stw r0, 0x40(r1)
+lbl_0014E898:
+/* 0014E898 00157728  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 0014E89C 0015772C  93 A1 00 4C */	stw r29, 0x4c(r1)
+/* 0014E8A0 00157730  7C 00 E8 40 */	cmplw r0, r29
+/* 0014E8A4 00157734  93 A1 00 54 */	stw r29, 0x54(r1)
+/* 0014E8A8 00157738  40 82 FF 8C */	bne lbl_0014E834
+/* 0014E8AC 0015773C  38 60 00 00 */	li r3, 0
+lbl_0014E8B0:
+/* 0014E8B0 00157740  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 0014E8B4 00157744  38 21 00 70 */	addi r1, r1, 0x70
+/* 0014E8B8 00157748  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0014E8BC 0015774C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 0014E8C0 00157750  7C 08 03 A6 */	mtlr r0
+/* 0014E8C4 00157754  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 0014E8C8 00157758  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 0014E8CC 0015775C  4E 80 00 20 */	blr 
+
+.global ".__sinit_:TutorialEffects_cpp"
+".__sinit_:TutorialEffects_cpp":
+/* 0014E910 001577A0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 0014E914 001577A4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 0014E918 001577A8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 0014E91C 001577AC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 0014E920 001577B0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 0014E924 001577B4  FC 20 10 50 */	fneg f1, f2
+/* 0014E928 001577B8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 0014E92C 001577BC  FC 80 28 50 */	fneg f4, f5
+/* 0014E930 001577C0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 0014E934 001577C4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 0014E938 001577C8  D0 82 DA 64 */	stfs f4, lbl_005BEEC4-_R2_BASE_(r2)
+/* 0014E93C 001577CC  D0 A2 DA 68 */	stfs f5, lbl_005BEEC8-_R2_BASE_(r2)
+/* 0014E940 001577D0  D0 62 DA 6C */	stfs f3, lbl_005BEECC-_R2_BASE_(r2)
+/* 0014E944 001577D4  D0 A2 DA 70 */	stfs f5, lbl_005BEED0-_R2_BASE_(r2)
+/* 0014E948 001577D8  D8 22 DA 78 */	stfd f1, lbl_005BEED8-_R2_BASE_(r2)
+/* 0014E94C 001577DC  D8 42 DA 80 */	stfd f2, lbl_005BEEE0-_R2_BASE_(r2)
+/* 0014E950 001577E0  D8 02 DA 88 */	stfd f0, lbl_005BEEE8-_R2_BASE_(r2)
+/* 0014E954 001577E4  D8 42 DA 90 */	stfd f2, lbl_005BEEF0-_R2_BASE_(r2)
+/* 0014E958 001577E8  4E 80 00 20 */	blr 

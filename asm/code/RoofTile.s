@@ -1,0 +1,26 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".__sinit_:RoofTile_cpp"
+".__sinit_:RoofTile_cpp":
+/* 002D8420 002E12B0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 002D8424 002E12B4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 002D8428 002E12B8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 002D842C 002E12BC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 002D8430 002E12C0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 002D8434 002E12C4  FC 20 10 50 */	fneg f1, f2
+/* 002D8438 002E12C8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 002D843C 002E12CC  FC 80 28 50 */	fneg f4, f5
+/* 002D8440 002E12D0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 002D8444 002E12D4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 002D8448 002E12D8  D0 82 07 78 */	stfs f4, lbl_005C1BD8-_R2_BASE_(r2)
+/* 002D844C 002E12DC  D0 A2 07 7C */	stfs f5, lbl_005C1BDC-_R2_BASE_(r2)
+/* 002D8450 002E12E0  D0 62 07 80 */	stfs f3, lbl_005C1BE0-_R2_BASE_(r2)
+/* 002D8454 002E12E4  D0 A2 07 84 */	stfs f5, lbl_005C1BE4-_R2_BASE_(r2)
+/* 002D8458 002E12E8  D8 22 07 88 */	stfd f1, lbl_005C1BE8-_R2_BASE_(r2)
+/* 002D845C 002E12EC  D8 42 07 90 */	stfd f2, lbl_005C1BF0-_R2_BASE_(r2)
+/* 002D8460 002E12F0  D8 02 07 98 */	stfd f0, lbl_005C1BF8-_R2_BASE_(r2)
+/* 002D8464 002E12F4  D8 42 07 A0 */	stfd f2, lbl_005C1C00-_R2_BASE_(r2)
+/* 002D8468 002E12F8  4E 80 00 20 */	blr 

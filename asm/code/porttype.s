@@ -1,0 +1,83 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".EmptyRect_Sims__FPC4Rect"
+".EmptyRect_Sims__FPC4Rect":
+/* 00114920 0011D7B0  A8 83 00 00 */	lha r4, 0(r3)
+/* 00114924 0011D7B4  A8 03 00 04 */	lha r0, 4(r3)
+/* 00114928 0011D7B8  7C 04 00 00 */	cmpw r4, r0
+/* 0011492C 0011D7BC  40 80 00 14 */	bge lbl_00114940
+/* 00114930 0011D7C0  A8 83 00 02 */	lha r4, 2(r3)
+/* 00114934 0011D7C4  A8 03 00 06 */	lha r0, 6(r3)
+/* 00114938 0011D7C8  7C 04 00 00 */	cmpw r4, r0
+/* 0011493C 0011D7CC  41 80 00 0C */	blt lbl_00114948
+lbl_00114940:
+/* 00114940 0011D7D0  38 60 00 01 */	li r3, 1
+/* 00114944 0011D7D4  4E 80 00 20 */	blr 
+lbl_00114948:
+/* 00114948 0011D7D8  38 60 00 00 */	li r3, 0
+/* 0011494C 0011D7DC  4E 80 00 20 */	blr 
+
+.global ".SetRect_Sims__FP4Rectssss"
+".SetRect_Sims__FP4Rectssss":
+/* 00114980 0011D810  B0 83 00 02 */	sth r4, 2(r3)
+/* 00114984 0011D814  B0 A3 00 00 */	sth r5, 0(r3)
+/* 00114988 0011D818  B0 C3 00 06 */	sth r6, 6(r3)
+/* 0011498C 0011D81C  B0 E3 00 04 */	sth r7, 4(r3)
+/* 00114990 0011D820  4E 80 00 20 */	blr 
+
+.global ".OffsetRect_Sims__FP4Rectss"
+".OffsetRect_Sims__FP4Rectss":
+/* 001149C0 0011D850  A8 03 00 00 */	lha r0, 0(r3)
+/* 001149C4 0011D854  7C 00 2A 14 */	add r0, r0, r5
+/* 001149C8 0011D858  B0 03 00 00 */	sth r0, 0(r3)
+/* 001149CC 0011D85C  A8 03 00 04 */	lha r0, 4(r3)
+/* 001149D0 0011D860  7C 00 2A 14 */	add r0, r0, r5
+/* 001149D4 0011D864  B0 03 00 04 */	sth r0, 4(r3)
+/* 001149D8 0011D868  A8 03 00 02 */	lha r0, 2(r3)
+/* 001149DC 0011D86C  7C 00 22 14 */	add r0, r0, r4
+/* 001149E0 0011D870  B0 03 00 02 */	sth r0, 2(r3)
+/* 001149E4 0011D874  A8 03 00 06 */	lha r0, 6(r3)
+/* 001149E8 0011D878  7C 00 22 14 */	add r0, r0, r4
+/* 001149EC 0011D87C  B0 03 00 06 */	sth r0, 6(r3)
+/* 001149F0 0011D880  4E 80 00 20 */	blr 
+
+.global ".TickCount_Sims__Fv"
+".TickCount_Sims__Fv":
+/* 00114A30 0011D8C0  7C 08 02 A6 */	mflr r0
+/* 00114A34 0011D8C4  90 01 00 08 */	stw r0, 8(r1)
+/* 00114A38 0011D8C8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00114A3C 0011D8CC  4B EF A9 C5 */	bl ".GetTickCount"
+/* 00114A40 0011D8D0  1C 03 00 3C */	mulli r0, r3, 0x3c
+/* 00114A44 0011D8D4  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 00114A48 0011D8D8  38 63 4D D3 */	addi r3, r3, 0x10624DD3@l
+/* 00114A4C 0011D8DC  7C 03 00 16 */	mulhwu r0, r3, r0
+/* 00114A50 0011D8E0  54 03 D1 BE */	srwi r3, r0, 6
+/* 00114A54 0011D8E4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00114A58 0011D8E8  38 21 00 40 */	addi r1, r1, 0x40
+/* 00114A5C 0011D8EC  7C 08 03 A6 */	mtlr r0
+/* 00114A60 0011D8F0  4E 80 00 20 */	blr 
+
+.global ".__sinit_:porttype_cpp"
+".__sinit_:porttype_cpp":
+/* 00114A90 0011D920  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00114A94 0011D924  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00114A98 0011D928  C8 44 00 00 */	lfd f2, 0(r4)
+/* 00114A9C 0011D92C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00114AA0 0011D930  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00114AA4 0011D934  FC 20 10 50 */	fneg f1, f2
+/* 00114AA8 0011D938  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00114AAC 0011D93C  FC 80 28 50 */	fneg f4, f5
+/* 00114AB0 0011D940  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00114AB4 0011D944  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00114AB8 0011D948  D0 82 D4 50 */	stfs f4, lbl_005BE8B0-_R2_BASE_(r2)
+/* 00114ABC 0011D94C  D0 A2 D4 54 */	stfs f5, lbl_005BE8B4-_R2_BASE_(r2)
+/* 00114AC0 0011D950  D0 62 D4 58 */	stfs f3, lbl_005BE8B8-_R2_BASE_(r2)
+/* 00114AC4 0011D954  D0 A2 D4 5C */	stfs f5, lbl_005BE8BC-_R2_BASE_(r2)
+/* 00114AC8 0011D958  D8 22 D4 60 */	stfd f1, lbl_005BE8C0-_R2_BASE_(r2)
+/* 00114ACC 0011D95C  D8 42 D4 68 */	stfd f2, lbl_005BE8C8-_R2_BASE_(r2)
+/* 00114AD0 0011D960  D8 02 D4 70 */	stfd f0, lbl_005BE8D0-_R2_BASE_(r2)
+/* 00114AD4 0011D964  D8 42 D4 78 */	stfd f2, lbl_005BE8D8-_R2_BASE_(r2)
+/* 00114AD8 0011D968  4E 80 00 20 */	blr 

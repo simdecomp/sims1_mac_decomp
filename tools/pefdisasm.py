@@ -4,7 +4,10 @@
 # Usage: pefdisasm.py PEF_FILE > assembly_file.s
 #
 
+from audioop import add
 from ctypes import alignment
+import os
+import re
 from capstone import *
 from capstone.ppc import *
 import pefparser
@@ -40,19 +43,31 @@ textSizes = []
 dataOffsets = []
 dataAddresses = []
 dataSizes = []
-
 pef_info = pefparser.parse_pef(filecontent)
 
 textCount = 0
 dataCount = 0
 entryPoint = 0
+currentFileName = "asm/macros.inc"
+fname = currentFileName
+os.makedirs(os.path.dirname(fname), exist_ok = True)
+curfile = open(fname, 'x')
+currentFile = open(currentFileName, 'w')
+
+def change_current_file():
+    global currentFile
+    global currentFileName
+    fname = currentFileName
+    os.makedirs(os.path.dirname(fname), exist_ok = True)
+    currentFile = open(currentFileName, 'x')
+    currentFile.write('.include macros.inc\n\n')
+    print("Switched filename to %s" % currentFileName)
 
 default_address = 0
 for i in range(pef_info.container_header.sectionCount):
     sections = pef_info.section_headers
     if (sections[i].sectionKind == 4):
         loaderOffset = sections[i].containerOffset
-        print("# Loader at 0x%08X" % loaderOffset)
         mainSection = read_u32(loaderOffset)
         entryPoint = read_u32(loaderOffset + 4) + sections[mainSection].containerOffset
         pass
@@ -70,15 +85,15 @@ for i in range(pef_info.container_header.sectionCount):
         dataCount += 1
     pass
 
-print('/*')
-print('Code sections:')
+currentFile.write('/*\n')
+currentFile.write('Code sections:\n')
 for i in range(0, textCount):
-    print('\t.text%i:\t0x%08X\t0x%08X\t0x%08X' % (i, textOffsets[i], textAddresses[i], textAddresses[i] + textSizes[i]))
-print('Data sections:')
+    currentFile.write('\t.text%i:\t0x%08X\t0x%08X\t0x%08X\n' % (i, textOffsets[i], textAddresses[i], textAddresses[i] + textSizes[i]))
+currentFile.write('Data sections:\n')
 for i in range(0, dataCount):
-    print('\t.data%i:\t0x%08X\t0x%08X\t0x%08X' % (i, dataOffsets[i], dataAddresses[i], dataAddresses[i] + dataSizes[i]))
-print('Entry Point: 0x%08X' % entryPoint)
-print('*/')
+    currentFile.write('\t.data%i:\t0x%08X\t0x%08X\t0x%08X\n' % (i, dataOffsets[i], dataAddresses[i], dataAddresses[i] + dataSizes[i]))
+currentFile.write('Entry Point: 0x%08X\n' % entryPoint)
+currentFile.write('*/\n')
 
 
 
@@ -87,6 +102,12 @@ labelNames = {}
 
 hasDebugInfo = set()
 debugInfoSizes = {}
+
+isSinit = set()
+sinitNamesDict = {}
+sinitNames = []
+
+
 
 # Add entry point
 labels.add(entryPoint)
@@ -162,8 +183,13 @@ blacklistedInsns = {
     PPC_INS_MFESR, PPC_INS_MFDEAR, PPC_INS_MTESR, PPC_INS_MTDEAR, PPC_INS_MFICCR, PPC_INS_MFASR
 }
 
+current_sinit = 0
+
 # Calls callback for every instruction in the specified code section
-def disasm_iter(offset, address, size, callback):
+def disasm_iter(offset, address, size, callback, is_writing: bool, section: str):
+    global currentFile
+    global currentFileName
+    global current_sinit
     if size == 0:
         return
     start = address
@@ -171,12 +197,32 @@ def disasm_iter(offset, address, size, callback):
     while address < end:
         code = filecontent[offset + (address-start) : offset + size]
         
+        if address == 0x7A0 and is_writing:
+            currentFileName = "asm/code/%s.s" % sinitNames[0]
+            change_current_file()
+            currentFile.write(section)
         if address in hasDebugInfo:
+            if address in isSinit and is_writing:
+                current_sinit += 1
+                if (current_sinit >= len(sinitNames)):
+                    currentFileName = "asm/code/code_%08X.s" % (address + debugInfoSizes[address])
+                else:
+                    currentFileName = 'asm/code/%s.s' % sinitNames[current_sinit]
+                change_current_file()
+                currentFile.write(section)
             address += debugInfoSizes[address]
             continue
         for insn in cs.disasm(code, address):
             address = insn.address
             if address in hasDebugInfo:
+                if address in isSinit and is_writing:
+                    current_sinit += 1
+                    if (current_sinit >= len(sinitNames)):
+                        currentFileName = "asm/code/code_%08X.s" % (address + debugInfoSizes[address])
+                    else:
+                        currentFileName = 'asm/code/%s.s' % sinitNames[current_sinit]
+                    change_current_file()
+                    currentFile.write(section)
                 address += debugInfoSizes[address]
                 break
             elif insn.id in blacklistedInsns:
@@ -186,6 +232,14 @@ def disasm_iter(offset, address, size, callback):
             address += 4
         if address < end:
             if address in hasDebugInfo:
+                if address in isSinit and is_writing:
+                    current_sinit += 1
+                    if (current_sinit >= len(sinitNames)):
+                        currentFileName = "asm/code/code_%08X.s" % (address + debugInfoSizes[address])
+                    else:
+                        currentFileName = 'asm/code/%s.s' % sinitNames[current_sinit]
+                    change_current_file()
+                    currentFile.write(section)
                 address += debugInfoSizes[address]
                 continue
             o = offset + address - start
@@ -324,6 +378,12 @@ for i in range(0, textCount):
                                     labelNames[textAddresses[i] + a + 4 - read_u32(textOffsets[i]+a + 16)] = ("\"%s\"" % s.decode('ascii'))
                                     hasDebugInfo.add(textAddresses[i] + a + 4)
                                     debugInfoSizes[textAddresses[i] + a + 4] = align_length(textAddresses[i] + a + 4, 18+name_length, 16)
+                                    m = re.match(r'\.__sinit_:(.*)_', s.decode('ascii'))
+                                    if m:
+                                        isSinit.add(textAddresses[i] + a + 4)
+                                        sinitNamesDict[textAddresses[i] + a + 4] = m.groups(1)
+                                        sinitNames.append(m.groups(1))
+                                        pass
                                     pass
                                 pass
                     pass
@@ -331,20 +391,21 @@ for i in range(0, textCount):
 
 for i in range(0, textCount):
     if textSizes[i] != 0:
-        disasm_iter(textOffsets[i], textAddresses[i], textSizes[i], get_label_callback)
+        disasm_iter(textOffsets[i], textAddresses[i], textSizes[i], get_label_callback, False, '')
+
 
 # Write macros
-print('# PowerPC Register Constants')
+currentFile.write('# PowerPC Register Constants\n')
 for i in range(0, 32):
-    print(".set r%i, %i" % (i, i))
+    currentFile.write(".set r%i, %i\n" % (i, i))
 for i in range(0, 32):
-    print(".set f%i, %i" % (i, i))
+    currentFile.write(".set f%i, %i\n" % (i, i))
 for i in range(0, 8):
-    print(".set qr%i, %i" % (i, i))
+    currentFile.write(".set qr%i, %i\n" % (i, i))
 if r2_addr != None:
-    print('# Assumed r2 value')
-    print(".set _R2_BASE_, 0x%08X" % r2_addr)
-print('')
+    currentFile.write('# Assumed r2 value\n')
+    currentFile.write(".set _R2_BASE_, 0x%08X\n" % r2_addr)
+currentFile.write('')
 
 # Converts the instruction to a string, fixing various issues with Capstone
 def insn_to_text(insn, raw):
@@ -537,8 +598,8 @@ def disassemble_callback(address, offset, insn, bytes):
     # Output label (if any)
     if address in labels:
         if address in labelNames:
-            print("\n.global %s" % addr_to_label(address))
-        print("%s:" % addr_to_label(address))
+            currentFile.write("\n.global %s\n" % addr_to_label(address))
+        currentFile.write("%s:\n" % addr_to_label(address))
     prefixComment = '/* %08X %08X  %02X %02X %02X %02X */' % (address, offset, bytes[0], bytes[1], bytes[2], bytes[3])
     asm = None
     raw = read_u32(offset)
@@ -566,14 +627,19 @@ def disassemble_callback(address, offset, insn, bytes):
             asm = disasm_ps_mem(raw, idx)
     if asm == None:
         asm = '.4byte 0x%08X  /* unknown instruction */' % raw
-    print('%s\t%s' % (prefixComment, asm))
+    currentFile.write('%s\t%s\n' % (prefixComment, asm))
+
+currentFileName = 'asm/sinit.s'
+change_current_file()
 
 for i in range(0, textCount):
     if textSizes[i] != 0:
-        print("\n.section .text%i, \"ax\"  # 0x%08X - 0x%08X" % (i, textAddresses[i], textAddresses[i] + textSizes[i]))
-        disasm_iter(textOffsets[i], textAddresses[i], 0x00599B68, disassemble_callback) # 0x00599B68 instead of textSizes[i] to temporarily work around the fact that there is data in the code section after all the code, which as you might imagine capstone doesn't like. Con: this workaround will only work with the sims 1 complete as 0x00599B68 is where its code ends.
+        section_str = ("\n.section .text%i, \"ax\"  # 0x%08X - 0x%08X\n" % (i, textAddresses[i], textAddresses[i] + textSizes[i]))
+        disasm_iter(textOffsets[i], textAddresses[i], 0x00599B68, disassemble_callback, True, section_str) # 0x00599B68 instead of textSizes[i] to temporarily work around the fact that there is data in the code section after all the code, which as you might imagine capstone doesn't like. Con: this workaround will only work with the sims 1 complete as 0x00599B68 is where its code ends.
         #this below is also a workaround that grabs the data and incbins it
-        print('')
+        currentFileName = 'asm/data/text%i.s' % i
+        change_current_file()
+        currentFile.write(section_str)
         offset = textOffsets[i] + 0x00599B68
         address = textAddresses[i] + 0x00599B68
         size = textSizes[i] - 0x00599B68
@@ -592,14 +658,14 @@ for i in range(0, textCount):
             if j < len(sectionLabels):
                 incbinSize = sectionLabels[j] - address
                 if incbinSize != 0:
-                    print("\t.incbin \"baserom\", 0x%X, 0x%X" % (offset, incbinSize))
+                    currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
                 l = addr_to_label(sectionLabels[j])
-                print(".global %s\n%s:" % (l, l))
+                currentFile.write(".global %s\n%s:\n" % (l, l))
                 j += 1
             else:
                 incbinSize = end - address
                 if incbinSize != 0:
-                    print("\t.incbin \"baserom\", 0x%X, 0x%X" % (offset, incbinSize))
+                    currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
             offset += incbinSize
             address += incbinSize
         # Remove labels to avoid duplicates in case of overlap with other sections
@@ -608,6 +674,8 @@ for i in range(0, textCount):
 
 # Disassemble data
 for i in range(0, dataCount):
+    currentFileName = 'asm/data/data%i.s' % i
+    change_current_file()
     offset = dataOffsets[i]
     address = dataAddresses[i]
     size = dataSizes[i]
@@ -615,7 +683,7 @@ for i in range(0, dataCount):
     end = start + size
     if size == 0:
         continue
-    print("\n.section .data%i, \"wa\"  # 0x%08X - 0x%08X" % (i, start, end))
+    currentFile.write("\n.section .data%i, \"wa\"  # 0x%08X - 0x%08X\n" % (i, start, end))
     # Get a sorted list of labels in this data section
     sectionLabels = []
     for l in labels:
@@ -628,14 +696,14 @@ for i in range(0, dataCount):
         if j < len(sectionLabels):
             incbinSize = sectionLabels[j] - address
             if incbinSize != 0:
-                print("\t.incbin \"baserom\", 0x%X, 0x%X" % (offset, incbinSize))
+                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
             l = addr_to_label(sectionLabels[j])
-            print(".global %s\n%s:" % (l, l))
+            currentFile.write(".global %s\n%s:\n" % (l, l))
             j += 1
         else:
             incbinSize = end - address
             if incbinSize != 0:
-                print("\t.incbin \"baserom\", 0x%X, 0x%X" % (offset, incbinSize))
+                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
         offset += incbinSize
         address += incbinSize
     # Remove labels to avoid duplicates in case of overlap with other sections

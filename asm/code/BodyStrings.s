@@ -1,0 +1,743 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".Save__11BodyStringsFP8iResFiles"
+".Save__11BodyStringsFP8iResFiles":
+/* 00347FD0 00350E60  93 E1 FF FC */	stw r31, -4(r1)
+/* 00347FD4 00350E64  7C 08 02 A6 */	mflr r0
+/* 00347FD8 00350E68  3C C0 53 54 */	lis r6, 0x53545223@ha
+/* 00347FDC 00350E6C  3B E3 00 00 */	addi r31, r3, 0
+/* 00347FE0 00350E70  90 01 00 08 */	stw r0, 8(r1)
+/* 00347FE4 00350E74  38 C6 52 23 */	addi r6, r6, 0x53545223@l
+/* 00347FE8 00350E78  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00347FEC 00350E7C  38 E0 00 00 */	li r7, 0
+/* 00347FF0 00350E80  39 00 00 00 */	li r8, 0
+/* 00347FF4 00350E84  4B DF 45 2D */	bl ".SetInfo__13StringSetBaseFP8iResFilesUlbc"
+/* 00347FF8 00350E88  7F E3 FB 78 */	mr r3, r31
+/* 00347FFC 00350E8C  4B DF 4C 45 */	bl ".SaveLocal__13StringSetBaseFv"
+/* 00348000 00350E90  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00348004 00350E94  38 21 00 50 */	addi r1, r1, 0x50
+/* 00348008 00350E98  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0034800C 00350E9C  7C 08 03 A6 */	mtlr r0
+/* 00348010 00350EA0  4E 80 00 20 */	blr 
+
+.global ".Load__11BodyStringsFP8iResFiles"
+".Load__11BodyStringsFP8iResFiles":
+/* 00348050 00350EE0  BF 41 FF E8 */	stmw r26, -0x18(r1)
+/* 00348054 00350EE4  7C 08 02 A6 */	mflr r0
+/* 00348058 00350EE8  3C C0 53 54 */	lis r6, 0x53545223@ha
+/* 0034805C 00350EEC  83 E2 B4 10 */	lwz r31, lbl_005BC870-_R2_BASE_(r2)
+/* 00348060 00350EF0  3B 43 00 00 */	addi r26, r3, 0
+/* 00348064 00350EF4  38 C6 52 23 */	addi r6, r6, 0x53545223@l
+/* 00348068 00350EF8  3B 64 00 00 */	addi r27, r4, 0
+/* 0034806C 00350EFC  3B 85 00 00 */	addi r28, r5, 0
+/* 00348070 00350F00  3B A0 00 00 */	li r29, 0
+/* 00348074 00350F04  38 E0 00 00 */	li r7, 0
+/* 00348078 00350F08  39 00 00 00 */	li r8, 0
+/* 0034807C 00350F0C  90 01 00 08 */	stw r0, 8(r1)
+/* 00348080 00350F10  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00348084 00350F14  4B DF 44 9D */	bl ".SetInfo__13StringSetBaseFP8iResFilesUlbc"
+/* 00348088 00350F18  38 7A 00 00 */	addi r3, r26, 0
+/* 0034808C 00350F1C  38 80 00 00 */	li r4, 0
+/* 00348090 00350F20  38 A0 00 01 */	li r5, 1
+/* 00348094 00350F24  4B DF 47 0D */	bl ".Load__13StringSetBaseFbb"
+/* 00348098 00350F28  7C 7E 1B 78 */	mr r30, r3
+/* 0034809C 00350F2C  48 00 00 2C */	b lbl_003480C8
+lbl_003480A0:
+/* 003480A0 00350F30  38 7A 00 00 */	addi r3, r26, 0
+/* 003480A4 00350F34  3B A0 00 01 */	li r29, 1
+/* 003480A8 00350F38  38 80 FF FF */	li r4, -1
+/* 003480AC 00350F3C  4B DF 57 D5 */	bl ".Count__13StringSetBaseCFc"
+/* 003480B0 00350F40  38 83 00 00 */	addi r4, r3, 0
+/* 003480B4 00350F44  38 7A 00 00 */	addi r3, r26, 0
+/* 003480B8 00350F48  38 84 00 01 */	addi r4, r4, 1
+/* 003480BC 00350F4C  38 BF 00 00 */	addi r5, r31, 0
+/* 003480C0 00350F50  38 C0 FF FF */	li r6, -1
+/* 003480C4 00350F54  4B DF 3C CD */	bl ".InsertString__13StringSetBaseFiPCcc"
+lbl_003480C8:
+/* 003480C8 00350F58  38 7A 00 00 */	addi r3, r26, 0
+/* 003480CC 00350F5C  38 80 FF FF */	li r4, -1
+/* 003480D0 00350F60  4B DF 57 B1 */	bl ".Count__13StringSetBaseCFc"
+/* 003480D4 00350F64  2C 03 00 23 */	cmpwi r3, 0x23
+/* 003480D8 00350F68  41 80 FF C8 */	blt lbl_003480A0
+/* 003480DC 00350F6C  57 A0 06 3F */	clrlwi. r0, r29, 0x18
+/* 003480E0 00350F70  41 82 00 14 */	beq lbl_003480F4
+/* 003480E4 00350F74  38 7A 00 00 */	addi r3, r26, 0
+/* 003480E8 00350F78  38 9B 00 00 */	addi r4, r27, 0
+/* 003480EC 00350F7C  38 BC 00 00 */	addi r5, r28, 0
+/* 003480F0 00350F80  4B DF 50 31 */	bl ".SaveLocal__13StringSetBaseFP8iResFiles"
+lbl_003480F4:
+/* 003480F4 00350F84  7F C3 F3 78 */	mr r3, r30
+/* 003480F8 00350F88  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 003480FC 00350F8C  38 21 00 60 */	addi r1, r1, 0x60
+/* 00348100 00350F90  7C 08 03 A6 */	mtlr r0
+/* 00348104 00350F94  BB 41 FF E8 */	lmw r26, -0x18(r1)
+/* 00348108 00350F98  4E 80 00 20 */	blr 
+
+.global ".Compare__11BodyStringsFP11BodyStrings"
+".Compare__11BodyStringsFP11BodyStrings":
+/* 00348140 00350FD0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00348144 00350FD4  7C 08 02 A6 */	mflr r0
+/* 00348148 00350FD8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 0034814C 00350FDC  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 00348150 00350FE0  3B A4 00 00 */	addi r29, r4, 0
+/* 00348154 00350FE4  38 80 FF FF */	li r4, -1
+/* 00348158 00350FE8  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 0034815C 00350FEC  3B 83 00 00 */	addi r28, r3, 0
+/* 00348160 00350FF0  90 01 00 08 */	stw r0, 8(r1)
+/* 00348164 00350FF4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00348168 00350FF8  4B DF 57 19 */	bl ".Count__13StringSetBaseCFc"
+/* 0034816C 00350FFC  3B E3 00 00 */	addi r31, r3, 0
+/* 00348170 00351000  38 7D 00 00 */	addi r3, r29, 0
+/* 00348174 00351004  38 80 FF FF */	li r4, -1
+/* 00348178 00351008  4B DF 57 09 */	bl ".Count__13StringSetBaseCFc"
+/* 0034817C 0035100C  7F E3 F8 50 */	subf r31, r3, r31
+/* 00348180 00351010  3B C0 00 01 */	li r30, 1
+/* 00348184 00351014  48 00 00 38 */	b lbl_003481BC
+lbl_00348188:
+/* 00348188 00351018  38 7D 00 00 */	addi r3, r29, 0
+/* 0034818C 0035101C  38 9E 00 00 */	addi r4, r30, 0
+/* 00348190 00351020  38 A0 FF FF */	li r5, -1
+/* 00348194 00351024  4B DF 3A DD */	bl ".GetString__13StringSetBaseFic"
+/* 00348198 00351028  3B E3 00 00 */	addi r31, r3, 0
+/* 0034819C 0035102C  38 7C 00 00 */	addi r3, r28, 0
+/* 003481A0 00351030  38 9E 00 00 */	addi r4, r30, 0
+/* 003481A4 00351034  38 A0 FF FF */	li r5, -1
+/* 003481A8 00351038  4B DF 3A C9 */	bl ".GetString__13StringSetBaseFic"
+/* 003481AC 0035103C  7F E4 FB 78 */	mr r4, r31
+/* 003481B0 00351040  48 24 BE 01 */	bl func_00593FB0
+/* 003481B4 00351044  3B E3 00 00 */	addi r31, r3, 0
+/* 003481B8 00351048  3B DE 00 01 */	addi r30, r30, 1
+lbl_003481BC:
+/* 003481BC 0035104C  2C 1F 00 00 */	cmpwi r31, 0
+/* 003481C0 00351050  40 82 00 18 */	bne lbl_003481D8
+/* 003481C4 00351054  38 7C 00 00 */	addi r3, r28, 0
+/* 003481C8 00351058  38 80 FF FF */	li r4, -1
+/* 003481CC 0035105C  4B DF 56 B5 */	bl ".Count__13StringSetBaseCFc"
+/* 003481D0 00351060  7C 1E 18 00 */	cmpw r30, r3
+/* 003481D4 00351064  40 81 FF B4 */	ble lbl_00348188
+lbl_003481D8:
+/* 003481D8 00351068  7F E3 FB 78 */	mr r3, r31
+/* 003481DC 0035106C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003481E0 00351070  38 21 00 50 */	addi r1, r1, 0x50
+/* 003481E4 00351074  7C 08 03 A6 */	mtlr r0
+/* 003481E8 00351078  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003481EC 0035107C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003481F0 00351080  83 A1 FF F4 */	lwz r29, -0xc(r1)
+lbl_003481F4:
+/* 003481F4 00351084  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 003481F8 00351088  4E 80 00 20 */	blr 
+
+.global ".RestoreOriginals__11BodyStringsFv"
+".RestoreOriginals__11BodyStringsFv":
+/* 00348240 003510D0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 00348244 003510D4  7C 08 02 A6 */	mflr r0
+/* 00348248 003510D8  83 A2 8C 60 */	lwz r29, lbl_005BA0C0-_R2_BASE_(r2)
+/* 0034824C 003510DC  7C 79 1B 78 */	mr r25, r3
+/* 00348250 003510E0  83 C2 B4 10 */	lwz r30, lbl_005BC870-_R2_BASE_(r2)
+/* 00348254 003510E4  38 A0 00 00 */	li r5, 0
+/* 00348258 003510E8  38 C0 01 00 */	li r6, 0x100
+/* 0034825C 003510EC  90 01 00 08 */	stw r0, 8(r1)
+/* 00348260 003510F0  94 21 FC 70 */	stwu r1, -0x390(r1)
+/* 00348264 003510F4  38 61 00 40 */	addi r3, r1, 0x40
+/* 00348268 003510F8  38 81 00 4C */	addi r4, r1, 0x4c
+/* 0034826C 003510FC  4B DF 12 65 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348270 00351100  93 A1 00 48 */	stw r29, 0x48(r1)
+/* 00348274 00351104  3B 61 01 58 */	addi r27, r1, 0x158
+/* 00348278 00351108  3B 81 02 64 */	addi r28, r1, 0x264
+lbl_0034827C:
+/* 0034827C 0035110C  3B 40 00 01 */	li r26, 1
+/* 00348280 00351110  48 00 00 CC */	b lbl_0034834C
+lbl_00348284:
+/* 00348284 00351114  38 79 00 00 */	addi r3, r25, 0
+/* 00348288 00351118  38 9A 00 00 */	addi r4, r26, 0
+/* 0034828C 0035111C  38 A0 FF FF */	li r5, -1
+/* 00348290 00351120  4B DF 39 E1 */	bl ".GetString__13StringSetBaseFic"
+/* 00348294 00351124  3B E3 00 00 */	addi r31, r3, 0
+/* 00348298 00351128  38 61 01 4C */	addi r3, r1, 0x14c
+/* 0034829C 0035112C  38 9B 00 00 */	addi r4, r27, 0
+/* 003482A0 00351130  38 A0 00 00 */	li r5, 0
+/* 003482A4 00351134  38 C0 01 00 */	li r6, 0x100
+/* 003482A8 00351138  4B DF 12 29 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 003482AC 0035113C  93 A1 01 54 */	stw r29, 0x154(r1)
+/* 003482B0 00351140  38 9F 00 00 */	addi r4, r31, 0
+/* 003482B4 00351144  38 61 01 4C */	addi r3, r1, 0x14c
+/* 003482B8 00351148  38 A0 FF FF */	li r5, -1
+/* 003482BC 0035114C  4B DF 10 E5 */	bl ".append__12StringBufferFPCci"
+/* 003482C0 00351150  38 61 00 40 */	addi r3, r1, 0x40
+/* 003482C4 00351154  38 81 01 4C */	addi r4, r1, 0x14c
+/* 003482C8 00351158  4B DF 0F B9 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 003482CC 0035115C  38 61 00 40 */	addi r3, r1, 0x40
+/* 003482D0 00351160  38 9E 00 01 */	addi r4, r30, 1
+/* 003482D4 00351164  38 A0 00 00 */	li r5, 0
+/* 003482D8 00351168  4B DF 08 29 */	bl ".find__12StringBufferCFPCci"
+/* 003482DC 0035116C  3B E3 00 00 */	addi r31, r3, 0
+/* 003482E0 00351170  2C 1F FF FF */	cmpwi r31, -1
+/* 003482E4 00351174  41 82 00 64 */	beq lbl_00348348
+/* 003482E8 00351178  38 79 00 00 */	addi r3, r25, 0
+/* 003482EC 0035117C  38 9A 00 00 */	addi r4, r26, 0
+/* 003482F0 00351180  38 A0 FF FF */	li r5, -1
+/* 003482F4 00351184  4B DF 39 7D */	bl ".GetString__13StringSetBaseFic"
+/* 003482F8 00351188  3B FF 00 01 */	addi r31, r31, 1
+/* 003482FC 0035118C  7F E3 FA 14 */	add r31, r3, r31
+/* 00348300 00351190  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348304 00351194  38 9C 00 00 */	addi r4, r28, 0
+/* 00348308 00351198  38 A0 00 00 */	li r5, 0
+/* 0034830C 0035119C  38 C0 01 00 */	li r6, 0x100
+/* 00348310 003511A0  4B DF 11 C1 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348314 003511A4  93 A1 02 60 */	stw r29, 0x260(r1)
+/* 00348318 003511A8  38 9F 00 00 */	addi r4, r31, 0
+/* 0034831C 003511AC  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348320 003511B0  38 A0 FF FF */	li r5, -1
+/* 00348324 003511B4  4B DF 10 7D */	bl ".append__12StringBufferFPCci"
+/* 00348328 003511B8  38 61 00 40 */	addi r3, r1, 0x40
+/* 0034832C 003511BC  38 81 02 58 */	addi r4, r1, 0x258
+/* 00348330 003511C0  4B DF 0F 51 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 00348334 003511C4  80 A1 00 40 */	lwz r5, 0x40(r1)
+/* 00348338 003511C8  38 79 00 00 */	addi r3, r25, 0
+/* 0034833C 003511CC  38 9A 00 00 */	addi r4, r26, 0
+/* 00348340 003511D0  38 C0 FF FF */	li r6, -1
+/* 00348344 003511D4  4B DF 3D 3D */	bl ".SetString__13StringSetBaseFiPCcc"
+lbl_00348348:
+/* 00348348 003511D8  3B 5A 00 01 */	addi r26, r26, 1
+lbl_0034834C:
+/* 0034834C 003511DC  38 79 00 00 */	addi r3, r25, 0
+/* 00348350 003511E0  38 80 FF FF */	li r4, -1
+/* 00348354 003511E4  4B DF 55 2D */	bl ".Count__13StringSetBaseCFc"
+/* 00348358 003511E8  7C 1A 18 00 */	cmpw r26, r3
+/* 0034835C 003511EC  40 81 FF 28 */	ble lbl_00348284
+/* 00348360 003511F0  80 01 03 98 */	lwz r0, 0x398(r1)
+/* 00348364 003511F4  38 21 03 90 */	addi r1, r1, 0x390
+/* 00348368 003511F8  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 0034836C 003511FC  7C 08 03 A6 */	mtlr r0
+lbl_00348370:
+/* 00348370 00351200  4E 80 00 20 */	blr 
+
+.global ".SetOriginals__11BodyStringsFP11BodyStringsRQ23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>"
+".SetOriginals__11BodyStringsFP11BodyStringsRQ23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>":
+/* 003483B0 00351240  BD A1 FF B4 */	stmw r13, -0x4c(r1)
+/* 003483B4 00351244  7C 08 02 A6 */	mflr r0
+/* 003483B8 00351248  83 22 8C 54 */	lwz r25, lbl_005BA0B4-_R2_BASE_(r2)
+/* 003483BC 0035124C  7C 7D 1B 78 */	mr r29, r3
+/* 003483C0 00351250  83 42 8B AC */	lwz r26, lbl_005BA00C-_R2_BASE_(r2)
+/* 003483C4 00351254  83 62 8C 60 */	lwz r27, lbl_005BA0C0-_R2_BASE_(r2)
+/* 003483C8 00351258  7C 9E 23 78 */	mr r30, r4
+/* 003483CC 0035125C  83 82 B4 10 */	lwz r28, lbl_005BC870-_R2_BASE_(r2)
+/* 003483D0 00351260  7C BF 2B 78 */	mr r31, r5
+/* 003483D4 00351264  82 02 B4 0C */	lwz r16, lbl_005BC86C-_R2_BASE_(r2)
+/* 003483D8 00351268  90 01 00 08 */	stw r0, 8(r1)
+/* 003483DC 0035126C  94 21 FA 70 */	stwu r1, -0x590(r1)
+/* 003483E0 00351270  3A 21 02 20 */	addi r17, r1, 0x220
+/* 003483E4 00351274  3A 41 03 2C */	addi r18, r1, 0x32c
+/* 003483E8 00351278  3A 61 04 38 */	addi r19, r1, 0x438
+/* 003483EC 0035127C  3A 81 00 58 */	addi r20, r1, 0x58
+/* 003483F0 00351280  3A A1 00 A4 */	addi r21, r1, 0xa4
+/* 003483F4 00351284  3A C1 00 F0 */	addi r22, r1, 0xf0
+/* 003483F8 00351288  3A E1 01 3C */	addi r23, r1, 0x13c
+/* 003483FC 0035128C  39 A1 01 88 */	addi r13, r1, 0x188
+/* 00348400 00351290  48 00 02 E8 */	b lbl_003486E8
+lbl_00348404:
+/* 00348404 00351294  38 7E 00 00 */	addi r3, r30, 0
+/* 00348408 00351298  38 A0 FF FF */	li r5, -1
+/* 0034840C 0035129C  4B DF 38 65 */	bl ".GetString__13StringSetBaseFic"
+/* 00348410 003512A0  39 C3 00 00 */	addi r14, r3, 0
+/* 00348414 003512A4  38 61 02 14 */	addi r3, r1, 0x214
+/* 00348418 003512A8  38 91 00 00 */	addi r4, r17, 0
+/* 0034841C 003512AC  38 A0 00 00 */	li r5, 0
+/* 00348420 003512B0  38 C0 01 00 */	li r6, 0x100
+/* 00348424 003512B4  4B DF 10 AD */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348428 003512B8  93 61 02 1C */	stw r27, 0x21c(r1)
+/* 0034842C 003512BC  38 8E 00 00 */	addi r4, r14, 0
+/* 00348430 003512C0  38 61 02 14 */	addi r3, r1, 0x214
+/* 00348434 003512C4  38 A0 FF FF */	li r5, -1
+/* 00348438 003512C8  4B DF 0F 69 */	bl ".append__12StringBufferFPCci"
+/* 0034843C 003512CC  80 90 00 00 */	lwz r4, 0(r16)
+/* 00348440 003512D0  38 7D 00 00 */	addi r3, r29, 0
+/* 00348444 003512D4  38 A0 FF FF */	li r5, -1
+/* 00348448 003512D8  4B DF 38 29 */	bl ".GetString__13StringSetBaseFic"
+/* 0034844C 003512DC  39 C3 00 00 */	addi r14, r3, 0
+/* 00348450 003512E0  38 61 03 20 */	addi r3, r1, 0x320
+/* 00348454 003512E4  38 92 00 00 */	addi r4, r18, 0
+/* 00348458 003512E8  38 A0 00 00 */	li r5, 0
+/* 0034845C 003512EC  38 C0 01 00 */	li r6, 0x100
+/* 00348460 003512F0  4B DF 10 71 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348464 003512F4  93 61 03 28 */	stw r27, 0x328(r1)
+/* 00348468 003512F8  38 8E 00 00 */	addi r4, r14, 0
+/* 0034846C 003512FC  38 61 03 20 */	addi r3, r1, 0x320
+/* 00348470 00351300  38 A0 FF FF */	li r5, -1
+/* 00348474 00351304  4B DF 0F 2D */	bl ".append__12StringBufferFPCci"
+/* 00348478 00351308  38 61 02 14 */	addi r3, r1, 0x214
+/* 0034847C 0035130C  38 81 03 20 */	addi r4, r1, 0x320
+/* 00348480 00351310  4B DF 0A E1 */	bl ".compareNoCase__12StringBufferCFRC12StringBuffer"
+/* 00348484 00351314  2C 03 00 00 */	cmpwi r3, 0
+/* 00348488 00351318  41 82 02 5C */	beq lbl_003486E4
+/* 0034848C 0035131C  38 93 00 00 */	addi r4, r19, 0
+/* 00348490 00351320  38 61 04 2C */	addi r3, r1, 0x42c
+/* 00348494 00351324  38 A0 00 00 */	li r5, 0
+/* 00348498 00351328  38 C0 01 00 */	li r6, 0x100
+/* 0034849C 0035132C  4B DF 10 35 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 003484A0 00351330  93 61 04 34 */	stw r27, 0x434(r1)
+/* 003484A4 00351334  38 61 03 20 */	addi r3, r1, 0x320
+/* 003484A8 00351338  38 9C 00 01 */	addi r4, r28, 1
+/* 003484AC 0035133C  38 A0 00 00 */	li r5, 0
+/* 003484B0 00351340  4B DF 06 51 */	bl ".find__12StringBufferCFPCci"
+/* 003484B4 00351344  38 A3 00 00 */	addi r5, r3, 0
+/* 003484B8 00351348  38 61 04 2C */	addi r3, r1, 0x42c
+/* 003484BC 0035134C  38 81 03 20 */	addi r4, r1, 0x320
+/* 003484C0 00351350  4B DF 0C 51 */	bl ".append__12StringBufferFRC12StringBufferi"
+/* 003484C4 00351354  38 61 04 2C */	addi r3, r1, 0x42c
+/* 003484C8 00351358  38 9C 00 01 */	addi r4, r28, 1
+/* 003484CC 0035135C  38 A0 FF FF */	li r5, -1
+/* 003484D0 00351360  4B DF 0E D1 */	bl ".append__12StringBufferFPCci"
+/* 003484D4 00351364  38 61 04 2C */	addi r3, r1, 0x42c
+/* 003484D8 00351368  38 81 02 14 */	addi r4, r1, 0x214
+/* 003484DC 0035136C  38 A0 FF FF */	li r5, -1
+/* 003484E0 00351370  4B DF 0C 31 */	bl ".append__12StringBufferFRC12StringBufferi"
+/* 003484E4 00351374  38 94 00 00 */	addi r4, r20, 0
+/* 003484E8 00351378  38 61 00 4C */	addi r3, r1, 0x4c
+/* 003484EC 0035137C  38 A0 00 00 */	li r5, 0
+/* 003484F0 00351380  38 C0 00 40 */	li r6, 0x40
+/* 003484F4 00351384  4B DF 0F DD */	bl ".__ct__12StringBufferFPcUiUi"
+/* 003484F8 00351388  93 41 00 54 */	stw r26, 0x54(r1)
+/* 003484FC 0035138C  38 95 00 00 */	addi r4, r21, 0
+/* 00348500 00351390  38 61 00 98 */	addi r3, r1, 0x98
+/* 00348504 00351394  38 A0 00 00 */	li r5, 0
+/* 00348508 00351398  38 C0 00 40 */	li r6, 0x40
+/* 0034850C 0035139C  4B DF 0F C5 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348510 003513A0  93 41 00 A0 */	stw r26, 0xa0(r1)
+/* 00348514 003513A4  7F C3 F3 78 */	mr r3, r30
+/* 00348518 003513A8  80 90 00 00 */	lwz r4, 0(r16)
+/* 0034851C 003513AC  38 A1 00 4C */	addi r5, r1, 0x4c
+/* 00348520 003513B0  38 C1 00 98 */	addi r6, r1, 0x98
+lbl_00348524:
+/* 00348524 003513B4  38 E0 00 00 */	li r7, 0
+/* 00348528 003513B8  48 00 05 89 */	bl ".GetSuitAndTexture__11BodyStringsFiR12StringBufferR12StringBufferb"
+/* 0034852C 003513BC  38 96 00 00 */	addi r4, r22, 0
+/* 00348530 003513C0  38 61 00 E4 */	addi r3, r1, 0xe4
+/* 00348534 003513C4  38 A0 00 00 */	li r5, 0
+/* 00348538 003513C8  38 C0 00 40 */	li r6, 0x40
+/* 0034853C 003513CC  4B DF 0F 95 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348540 003513D0  93 41 00 EC */	stw r26, 0xec(r1)
+/* 00348544 003513D4  38 97 00 00 */	addi r4, r23, 0
+/* 00348548 003513D8  38 61 01 30 */	addi r3, r1, 0x130
+/* 0034854C 003513DC  38 A0 00 00 */	li r5, 0
+/* 00348550 003513E0  38 C0 00 40 */	li r6, 0x40
+/* 00348554 003513E4  4B DF 0F 7D */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348558 003513E8  93 41 01 38 */	stw r26, 0x138(r1)
+/* 0034855C 003513EC  7F A3 EB 78 */	mr r3, r29
+/* 00348560 003513F0  80 90 00 00 */	lwz r4, 0(r16)
+/* 00348564 003513F4  38 A1 00 E4 */	addi r5, r1, 0xe4
+/* 00348568 003513F8  38 C1 01 30 */	addi r6, r1, 0x130
+/* 0034856C 003513FC  38 E0 00 00 */	li r7, 0
+/* 00348570 00351400  48 00 05 41 */	bl ".GetSuitAndTexture__11BodyStringsFiR12StringBufferR12StringBufferb"
+/* 00348574 00351404  38 61 00 98 */	addi r3, r1, 0x98
+/* 00348578 00351408  38 81 01 30 */	addi r4, r1, 0x130
+/* 0034857C 0035140C  4B DF 09 E5 */	bl ".compareNoCase__12StringBufferCFRC12StringBuffer"
+/* 00348580 00351410  2C 03 00 00 */	cmpwi r3, 0
+/* 00348584 00351414  41 82 01 4C */	beq lbl_003486D0
+/* 00348588 00351418  38 8D 00 00 */	addi r4, r13, 0
+/* 0034858C 0035141C  38 61 01 7C */	addi r3, r1, 0x17c
+/* 00348590 00351420  38 A0 00 00 */	li r5, 0
+/* 00348594 00351424  38 C0 00 40 */	li r6, 0x40
+/* 00348598 00351428  4B DF 0F 39 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 0034859C 0035142C  93 41 01 84 */	stw r26, 0x184(r1)
+/* 003485A0 00351430  3B 19 00 00 */	addi r24, r25, 0
+/* 003485A4 00351434  39 C0 00 00 */	li r14, 0
+/* 003485A8 00351438  39 E0 00 00 */	li r15, 0
+/* 003485AC 0035143C  60 00 00 00 */	nop 
+lbl_003485B0:
+/* 003485B0 00351440  80 98 00 00 */	lwz r4, 0(r24)
+/* 003485B4 00351444  38 61 00 98 */	addi r3, r1, 0x98
+/* 003485B8 00351448  38 A0 00 00 */	li r5, 0
+/* 003485BC 0035144C  4B DF 05 45 */	bl ".find__12StringBufferCFPCci"
+/* 003485C0 00351450  2C 03 00 00 */	cmpwi r3, 0
+/* 003485C4 00351454  40 82 00 6C */	bne lbl_00348630
+/* 003485C8 00351458  1C 0F 00 4C */	mulli r0, r15, 0x4c
+/* 003485CC 0035145C  7C 79 02 14 */	add r3, r25, r0
+/* 003485D0 00351460  81 83 00 08 */	lwz r12, 8(r3)
+/* 003485D4 00351464  81 8C 00 08 */	lwz r12, 8(r12)
+/* 003485D8 00351468  48 25 15 79 */	bl func_00599B50
+/* 003485DC 0035146C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 003485E0 00351470  39 C3 00 00 */	addi r14, r3, 0
+/* 003485E4 00351474  38 61 00 98 */	addi r3, r1, 0x98
+/* 003485E8 00351478  4B DE E5 E9 */	bl ".c_str__12StringBufferCFv"
+/* 003485EC 0035147C  7D C3 72 14 */	add r14, r3, r14
+/* 003485F0 00351480  38 61 01 C8 */	addi r3, r1, 0x1c8
+/* 003485F4 00351484  38 81 01 D4 */	addi r4, r1, 0x1d4
+/* 003485F8 00351488  38 A0 00 00 */	li r5, 0
+/* 003485FC 0035148C  38 C0 00 40 */	li r6, 0x40
+/* 00348600 00351490  4B DF 0E D1 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348604 00351494  93 41 01 D0 */	stw r26, 0x1d0(r1)
+/* 00348608 00351498  38 8E 00 00 */	addi r4, r14, 0
+/* 0034860C 0035149C  38 61 01 C8 */	addi r3, r1, 0x1c8
+/* 00348610 003514A0  38 A0 FF FF */	li r5, -1
+/* 00348614 003514A4  4B DF 0D 8D */	bl ".append__12StringBufferFPCci"
+/* 00348618 003514A8  38 61 01 7C */	addi r3, r1, 0x17c
+/* 0034861C 003514AC  38 81 01 C8 */	addi r4, r1, 0x1c8
+/* 00348620 003514B0  4B DF 0C 61 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 00348624 003514B4  39 C0 00 01 */	li r14, 1
+/* 00348628 003514B8  48 00 00 18 */	b lbl_00348640
+/* 0034862C 003514BC  60 00 00 00 */	nop 
+lbl_00348630:
+/* 00348630 003514C0  39 EF 00 01 */	addi r15, r15, 1
+/* 00348634 003514C4  3B 18 00 4C */	addi r24, r24, 0x4c
+/* 00348638 003514C8  2C 0F 00 03 */	cmpwi r15, 3
+/* 0034863C 003514CC  41 80 FF 74 */	blt lbl_003485B0
+lbl_00348640:
+/* 00348640 003514D0  55 C0 06 3F */	clrlwi. r0, r14, 0x18
+/* 00348644 003514D4  40 82 00 10 */	bne lbl_00348654
+/* 00348648 003514D8  38 61 01 7C */	addi r3, r1, 0x17c
+/* 0034864C 003514DC  38 81 00 98 */	addi r4, r1, 0x98
+/* 00348650 003514E0  4B DF 0C 31 */	bl ".copy__12StringBufferFRC12StringBuffer"
+lbl_00348654:
+/* 00348654 003514E4  7F E3 FB 78 */	mr r3, r31
+/* 00348658 003514E8  48 00 03 09 */	bl ".begin__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv"
+/* 0034865C 003514EC  90 61 00 40 */	stw r3, 0x40(r1)
+/* 00348660 003514F0  38 61 00 40 */	addi r3, r1, 0x40
+/* 00348664 003514F4  48 00 02 6D */	bl ".__pointer2iterator__Q23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>FRCP15StackString<64>"
+/* 00348668 003514F8  7C 6E 1B 78 */	mr r14, r3
+/* 0034866C 003514FC  48 00 00 20 */	b lbl_0034868C
+/* 00348670 00351500  60 00 00 00 */	nop 
+lbl_00348674:
+/* 00348674 00351504  38 6E 00 00 */	addi r3, r14, 0
+/* 00348678 00351508  38 81 01 7C */	addi r4, r1, 0x17c
+/* 0034867C 0035150C  4B DF 08 E5 */	bl ".compareNoCase__12StringBufferCFRC12StringBuffer"
+/* 00348680 00351510  2C 03 00 00 */	cmpwi r3, 0
+/* 00348684 00351514  41 82 00 24 */	beq lbl_003486A8
+/* 00348688 00351518  39 CE 00 4C */	addi r14, r14, 0x4c
+lbl_0034868C:
+/* 0034868C 0035151C  7F E3 FB 78 */	mr r3, r31
+/* 00348690 00351520  48 00 01 C1 */	bl ".end__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv"
+/* 00348694 00351524  90 61 00 44 */	stw r3, 0x44(r1)
+/* 00348698 00351528  38 61 00 44 */	addi r3, r1, 0x44
+/* 0034869C 0035152C  48 00 02 35 */	bl ".__pointer2iterator__Q23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>FRCP15StackString<64>"
+/* 003486A0 00351530  7C 0E 18 40 */	cmplw r14, r3
+/* 003486A4 00351534  40 82 FF D0 */	bne lbl_00348674
+lbl_003486A8:
+/* 003486A8 00351538  7F E3 FB 78 */	mr r3, r31
+/* 003486AC 0035153C  48 00 01 A5 */	bl ".end__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv"
+/* 003486B0 00351540  90 61 00 48 */	stw r3, 0x48(r1)
+/* 003486B4 00351544  38 61 00 48 */	addi r3, r1, 0x48
+/* 003486B8 00351548  48 00 02 19 */	bl ".__pointer2iterator__Q23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>FRCP15StackString<64>"
+/* 003486BC 0035154C  7C 0E 18 40 */	cmplw r14, r3
+/* 003486C0 00351550  40 82 00 10 */	bne lbl_003486D0
+/* 003486C4 00351554  38 7F 00 00 */	addi r3, r31, 0
+/* 003486C8 00351558  38 81 01 7C */	addi r4, r1, 0x17c
+/* 003486CC 0035155C  48 00 00 C5 */	bl ".push_back__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>FRC15StackString<64>"
+lbl_003486D0:
+/* 003486D0 00351560  80 90 00 00 */	lwz r4, 0(r16)
+/* 003486D4 00351564  7F A3 EB 78 */	mr r3, r29
+/* 003486D8 00351568  80 A1 04 2C */	lwz r5, 0x42c(r1)
+/* 003486DC 0035156C  38 C0 FF FF */	li r6, -1
+/* 003486E0 00351570  4B DF 39 A1 */	bl ".SetString__13StringSetBaseFiPCcc"
+lbl_003486E4:
+/* 003486E4 00351574  3A 10 00 04 */	addi r16, r16, 4
+lbl_003486E8:
+/* 003486E8 00351578  80 90 00 00 */	lwz r4, 0(r16)
+/* 003486EC 0035157C  2C 04 FF FF */	cmpwi r4, -1
+/* 003486F0 00351580  40 82 FD 14 */	bne lbl_00348404
+/* 003486F4 00351584  80 01 05 98 */	lwz r0, 0x598(r1)
+/* 003486F8 00351588  38 21 05 90 */	addi r1, r1, 0x590
+/* 003486FC 0035158C  B9 A1 FF B4 */	lmw r13, -0x4c(r1)
+/* 00348700 00351590  7C 08 03 A6 */	mtlr r0
+/* 00348704 00351594  4E 80 00 20 */	blr 
+
+.global ".push_back__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>FRC15StackString<64>"
+".push_back__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>FRC15StackString<64>":
+/* 00348790 00351620  7C 08 02 A6 */	mflr r0
+/* 00348794 00351624  38 C4 00 00 */	addi r6, r4, 0
+/* 00348798 00351628  90 01 00 08 */	stw r0, 8(r1)
+/* 0034879C 0035162C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003487A0 00351630  80 03 00 04 */	lwz r0, 4(r3)
+/* 003487A4 00351634  80 A3 00 08 */	lwz r5, 8(r3)
+/* 003487A8 00351638  1C 00 00 4C */	mulli r0, r0, 0x4c
+/* 003487AC 0035163C  7C 85 02 14 */	add r4, r5, r0
+/* 003487B0 00351640  38 A0 00 01 */	li r5, 1
+/* 003487B4 00351644  4B D2 2D 9D */	bl ".insert__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>FP15StackString<64>UlRC15StackString<64>"
+/* 003487B8 00351648  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003487BC 0035164C  38 21 00 40 */	addi r1, r1, 0x40
+/* 003487C0 00351650  7C 08 03 A6 */	mtlr r0
+/* 003487C4 00351654  4E 80 00 20 */	blr 
+
+.global ".end__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv"
+".end__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv":
+/* 00348850 003516E0  80 03 00 04 */	lwz r0, 4(r3)
+/* 00348854 003516E4  80 63 00 08 */	lwz r3, 8(r3)
+/* 00348858 003516E8  1C 00 00 4C */	mulli r0, r0, 0x4c
+/* 0034885C 003516EC  7C 63 02 14 */	add r3, r3, r0
+/* 00348860 003516F0  4E 80 00 20 */	blr 
+
+.global ".__pointer2iterator__Q23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>FRCP15StackString<64>"
+".__pointer2iterator__Q23std62vector<15StackString<64>,Q23std28allocator<15StackString<64>>>FRCP15StackString<64>":
+/* 003488D0 00351760  80 63 00 00 */	lwz r3, 0(r3)
+/* 003488D4 00351764  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv"
+".begin__Q23std70__vector_imp<15StackString<64>,Q23std28allocator<15StackString<64>>,0>Fv":
+/* 00348960 003517F0  80 63 00 08 */	lwz r3, 8(r3)
+/* 00348964 003517F4  4E 80 00 20 */	blr 
+
+.global ".SetBodyString__11BodyStringsFiPCc"
+".SetBodyString__11BodyStringsFiPCc":
+/* 003489E0 00351870  93 E1 FF FC */	stw r31, -4(r1)
+/* 003489E4 00351874  7C 08 02 A6 */	mflr r0
+/* 003489E8 00351878  83 E2 B4 10 */	lwz r31, lbl_005BC870-_R2_BASE_(r2)
+/* 003489EC 0035187C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003489F0 00351880  3B C5 00 00 */	addi r30, r5, 0
+/* 003489F4 00351884  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 003489F8 00351888  3B A4 00 00 */	addi r29, r4, 0
+/* 003489FC 0035188C  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 00348A00 00351890  3B 83 00 00 */	addi r28, r3, 0
+/* 00348A04 00351894  90 01 00 08 */	stw r0, 8(r1)
+/* 00348A08 00351898  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00348A0C 0035189C  48 00 00 28 */	b lbl_00348A34
+lbl_00348A10:
+/* 00348A10 003518A0  38 7C 00 00 */	addi r3, r28, 0
+/* 00348A14 003518A4  38 80 FF FF */	li r4, -1
+/* 00348A18 003518A8  4B DF 4E 69 */	bl ".Count__13StringSetBaseCFc"
+/* 00348A1C 003518AC  38 83 00 00 */	addi r4, r3, 0
+/* 00348A20 003518B0  38 7C 00 00 */	addi r3, r28, 0
+/* 00348A24 003518B4  38 84 00 01 */	addi r4, r4, 1
+/* 00348A28 003518B8  38 BF 00 00 */	addi r5, r31, 0
+/* 00348A2C 003518BC  38 C0 FF FF */	li r6, -1
+/* 00348A30 003518C0  4B DF 33 61 */	bl ".InsertString__13StringSetBaseFiPCcc"
+lbl_00348A34:
+/* 00348A34 003518C4  38 7C 00 00 */	addi r3, r28, 0
+/* 00348A38 003518C8  38 80 FF FF */	li r4, -1
+/* 00348A3C 003518CC  4B DF 4E 45 */	bl ".Count__13StringSetBaseCFc"
+/* 00348A40 003518D0  7C 1D 18 00 */	cmpw r29, r3
+/* 00348A44 003518D4  41 81 FF CC */	bgt lbl_00348A10
+/* 00348A48 003518D8  38 7C 00 00 */	addi r3, r28, 0
+/* 00348A4C 003518DC  38 9D 00 00 */	addi r4, r29, 0
+/* 00348A50 003518E0  38 BE 00 00 */	addi r5, r30, 0
+/* 00348A54 003518E4  38 C0 FF FF */	li r6, -1
+/* 00348A58 003518E8  4B DF 36 29 */	bl ".SetString__13StringSetBaseFiPCcc"
+/* 00348A5C 003518EC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00348A60 003518F0  38 21 00 50 */	addi r1, r1, 0x50
+/* 00348A64 003518F4  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00348A68 003518F8  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00348A6C 003518FC  7C 08 03 A6 */	mtlr r0
+/* 00348A70 00351900  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00348A74 00351904  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 00348A78 00351908  4E 80 00 20 */	blr 
+
+.global ".GetSuitAndTexture__11BodyStringsFiR12StringBufferR12StringBufferb"
+".GetSuitAndTexture__11BodyStringsFiR12StringBufferR12StringBufferb":
+/* 00348AB0 00351940  BF 41 FF E8 */	stmw r26, -0x18(r1)
+/* 00348AB4 00351944  7C 08 02 A6 */	mflr r0
+/* 00348AB8 00351948  3B 66 00 00 */	addi r27, r6, 0
+/* 00348ABC 0035194C  83 C2 8C 60 */	lwz r30, lbl_005BA0C0-_R2_BASE_(r2)
+/* 00348AC0 00351950  83 E2 B4 10 */	lwz r31, lbl_005BC870-_R2_BASE_(r2)
+/* 00348AC4 00351954  7C BA 2B 78 */	mr r26, r5
+/* 00348AC8 00351958  3B 87 00 00 */	addi r28, r7, 0
+/* 00348ACC 0035195C  90 01 00 08 */	stw r0, 8(r1)
+/* 00348AD0 00351960  38 00 00 00 */	li r0, 0
+/* 00348AD4 00351964  94 21 FC 70 */	stwu r1, -0x390(r1)
+/* 00348AD8 00351968  B0 05 00 04 */	sth r0, 4(r5)
+/* 00348ADC 0035196C  80 C5 00 00 */	lwz r6, 0(r5)
+/* 00348AE0 00351970  38 A0 FF FF */	li r5, -1
+/* 00348AE4 00351974  98 06 00 00 */	stb r0, 0(r6)
+/* 00348AE8 00351978  B0 1B 00 04 */	sth r0, 4(r27)
+/* 00348AEC 0035197C  80 DB 00 00 */	lwz r6, 0(r27)
+/* 00348AF0 00351980  98 06 00 00 */	stb r0, 0(r6)
+/* 00348AF4 00351984  4B DF 31 7D */	bl ".GetString__13StringSetBaseFic"
+/* 00348AF8 00351988  3B A3 00 00 */	addi r29, r3, 0
+/* 00348AFC 0035198C  38 61 00 40 */	addi r3, r1, 0x40
+/* 00348B00 00351990  38 81 00 4C */	addi r4, r1, 0x4c
+/* 00348B04 00351994  38 A0 00 00 */	li r5, 0
+/* 00348B08 00351998  38 C0 01 00 */	li r6, 0x100
+/* 00348B0C 0035199C  4B DF 09 C5 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348B10 003519A0  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 00348B14 003519A4  38 9D 00 00 */	addi r4, r29, 0
+/* 00348B18 003519A8  38 61 00 40 */	addi r3, r1, 0x40
+/* 00348B1C 003519AC  38 A0 FF FF */	li r5, -1
+/* 00348B20 003519B0  4B DF 08 81 */	bl ".append__12StringBufferFPCci"
+/* 00348B24 003519B4  38 61 01 4C */	addi r3, r1, 0x14c
+/* 00348B28 003519B8  38 81 01 58 */	addi r4, r1, 0x158
+/* 00348B2C 003519BC  38 A0 00 00 */	li r5, 0
+/* 00348B30 003519C0  38 C0 01 00 */	li r6, 0x100
+/* 00348B34 003519C4  4B DF 09 9D */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348B38 003519C8  93 C1 01 54 */	stw r30, 0x154(r1)
+/* 00348B3C 003519CC  38 61 00 40 */	addi r3, r1, 0x40
+/* 00348B40 003519D0  38 9F 00 01 */	addi r4, r31, 1
+/* 00348B44 003519D4  38 A0 00 00 */	li r5, 0
+/* 00348B48 003519D8  4B DE FF B9 */	bl ".find__12StringBufferCFPCci"
+/* 00348B4C 003519DC  57 80 06 3F */	clrlwi. r0, r28, 0x18
+/* 00348B50 003519E0  41 82 00 28 */	beq lbl_00348B78
+/* 00348B54 003519E4  2C 03 FF FF */	cmpwi r3, -1
+/* 00348B58 003519E8  41 82 00 30 */	beq lbl_00348B88
+/* 00348B5C 003519EC  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 00348B60 003519F0  38 83 00 01 */	addi r4, r3, 1
+/* 00348B64 003519F4  38 61 01 4C */	addi r3, r1, 0x14c
+/* 00348B68 003519F8  7C 80 22 14 */	add r4, r0, r4
+/* 00348B6C 003519FC  38 A0 FF FF */	li r5, -1
+/* 00348B70 00351A00  4B DF 08 31 */	bl ".append__12StringBufferFPCci"
+/* 00348B74 00351A04  48 00 00 14 */	b lbl_00348B88
+lbl_00348B78:
+/* 00348B78 00351A08  38 A3 00 00 */	addi r5, r3, 0
+/* 00348B7C 00351A0C  38 61 01 4C */	addi r3, r1, 0x14c
+/* 00348B80 00351A10  38 81 00 40 */	addi r4, r1, 0x40
+/* 00348B84 00351A14  4B DF 05 8D */	bl ".append__12StringBufferFRC12StringBufferi"
+lbl_00348B88:
+/* 00348B88 00351A18  38 61 01 4C */	addi r3, r1, 0x14c
+/* 00348B8C 00351A1C  38 9F 00 03 */	addi r4, r31, 3
+/* 00348B90 00351A20  38 A0 00 00 */	li r5, 0
+/* 00348B94 00351A24  4B DE FF 6D */	bl ".find__12StringBufferCFPCci"
+/* 00348B98 00351A28  3B A3 00 00 */	addi r29, r3, 0
+/* 00348B9C 00351A2C  2C 1D FF FF */	cmpwi r29, -1
+/* 00348BA0 00351A30  40 82 00 20 */	bne lbl_00348BC0
+/* 00348BA4 00351A34  38 7A 00 00 */	addi r3, r26, 0
+/* 00348BA8 00351A38  38 81 01 4C */	addi r4, r1, 0x14c
+/* 00348BAC 00351A3C  38 A0 FF FF */	li r5, -1
+/* 00348BB0 00351A40  4B DF 05 61 */	bl ".append__12StringBufferFRC12StringBufferi"
+/* 00348BB4 00351A44  7F 43 D3 78 */	mr r3, r26
+/* 00348BB8 00351A48  4B DF 01 E9 */	bl ".toLower__12StringBufferFv"
+/* 00348BBC 00351A4C  48 00 00 B0 */	b lbl_00348C6C
+lbl_00348BC0:
+/* 00348BC0 00351A50  38 7A 00 00 */	addi r3, r26, 0
+/* 00348BC4 00351A54  38 81 01 4C */	addi r4, r1, 0x14c
+/* 00348BC8 00351A58  38 BD 00 00 */	addi r5, r29, 0
+/* 00348BCC 00351A5C  4B DF 05 45 */	bl ".append__12StringBufferFRC12StringBufferi"
+/* 00348BD0 00351A60  7F 43 D3 78 */	mr r3, r26
+/* 00348BD4 00351A64  4B DF 01 CD */	bl ".toLower__12StringBufferFv"
+/* 00348BD8 00351A68  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348BDC 00351A6C  38 81 02 64 */	addi r4, r1, 0x264
+/* 00348BE0 00351A70  38 A0 00 00 */	li r5, 0
+/* 00348BE4 00351A74  38 C0 01 00 */	li r6, 0x100
+/* 00348BE8 00351A78  4B DF 08 E9 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348BEC 00351A7C  80 01 01 4C */	lwz r0, 0x14c(r1)
+/* 00348BF0 00351A80  38 9D 00 01 */	addi r4, r29, 1
+/* 00348BF4 00351A84  93 C1 02 60 */	stw r30, 0x260(r1)
+/* 00348BF8 00351A88  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348BFC 00351A8C  7C 80 22 14 */	add r4, r0, r4
+/* 00348C00 00351A90  38 A0 FF FF */	li r5, -1
+/* 00348C04 00351A94  4B DF 07 9D */	bl ".append__12StringBufferFPCci"
+/* 00348C08 00351A98  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348C0C 00351A9C  38 9F 00 05 */	addi r4, r31, 5
+/* 00348C10 00351AA0  38 A0 00 00 */	li r5, 0
+/* 00348C14 00351AA4  4B DE FE ED */	bl ".find__12StringBufferCFPCci"
+/* 00348C18 00351AA8  3B E3 00 00 */	addi r31, r3, 0
+/* 00348C1C 00351AAC  2C 1F FF FF */	cmpwi r31, -1
+/* 00348C20 00351AB0  41 82 00 38 */	beq lbl_00348C58
+/* 00348C24 00351AB4  38 7B 00 00 */	addi r3, r27, 0
+/* 00348C28 00351AB8  38 81 02 58 */	addi r4, r1, 0x258
+/* 00348C2C 00351ABC  38 BF 00 01 */	addi r5, r31, 1
+/* 00348C30 00351AC0  4B DF 04 E1 */	bl ".append__12StringBufferFRC12StringBufferi"
+/* 00348C34 00351AC4  38 61 02 58 */	addi r3, r1, 0x258
+/* 00348C38 00351AC8  4B DF 01 69 */	bl ".toLower__12StringBufferFv"
+/* 00348C3C 00351ACC  80 01 02 58 */	lwz r0, 0x258(r1)
+/* 00348C40 00351AD0  38 9F 00 01 */	addi r4, r31, 1
+/* 00348C44 00351AD4  38 7B 00 00 */	addi r3, r27, 0
+/* 00348C48 00351AD8  7C 80 22 14 */	add r4, r0, r4
+/* 00348C4C 00351ADC  38 A0 FF FF */	li r5, -1
+/* 00348C50 00351AE0  4B DF 07 51 */	bl ".append__12StringBufferFPCci"
+/* 00348C54 00351AE4  48 00 00 18 */	b lbl_00348C6C
+lbl_00348C58:
+/* 00348C58 00351AE8  38 7B 00 00 */	addi r3, r27, 0
+/* 00348C5C 00351AEC  38 81 02 58 */	addi r4, r1, 0x258
+/* 00348C60 00351AF0  4B DF 06 21 */	bl ".copy__12StringBufferFRC12StringBuffer"
+/* 00348C64 00351AF4  7F 63 DB 78 */	mr r3, r27
+/* 00348C68 00351AF8  4B DF 01 39 */	bl ".toLower__12StringBufferFv"
+lbl_00348C6C:
+/* 00348C6C 00351AFC  80 01 03 98 */	lwz r0, 0x398(r1)
+/* 00348C70 00351B00  38 21 03 90 */	addi r1, r1, 0x390
+/* 00348C74 00351B04  BB 41 FF E8 */	lmw r26, -0x18(r1)
+/* 00348C78 00351B08  7C 08 03 A6 */	mtlr r0
+/* 00348C7C 00351B0C  4E 80 00 20 */	blr 
+
+.global ".__ct__11BodyStringsFv"
+".__ct__11BodyStringsFv":
+/* 00348CE0 00351B70  93 E1 FF FC */	stw r31, -4(r1)
+/* 00348CE4 00351B74  7C 08 02 A6 */	mflr r0
+/* 00348CE8 00351B78  7C 7F 1B 78 */	mr r31, r3
+/* 00348CEC 00351B7C  90 01 00 08 */	stw r0, 8(r1)
+/* 00348CF0 00351B80  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00348CF4 00351B84  4B DF 45 6D */	bl ".__ct__13StringSetBaseFv"
+/* 00348CF8 00351B88  80 02 8C 44 */	lwz r0, lbl_005BA0A4-_R2_BASE_(r2)
+/* 00348CFC 00351B8C  38 7F 00 00 */	addi r3, r31, 0
+/* 00348D00 00351B90  38 80 00 00 */	li r4, 0
+/* 00348D04 00351B94  90 1F 00 68 */	stw r0, 0x68(r31)
+/* 00348D08 00351B98  38 A0 00 00 */	li r5, 0
+/* 00348D0C 00351B9C  38 C0 00 00 */	li r6, 0
+/* 00348D10 00351BA0  38 E0 00 00 */	li r7, 0
+/* 00348D14 00351BA4  39 00 00 00 */	li r8, 0
+/* 00348D18 00351BA8  4B DF 38 09 */	bl ".SetInfo__13StringSetBaseFP8iResFilesUlbc"
+/* 00348D1C 00351BAC  7F E3 FB 78 */	mr r3, r31
+/* 00348D20 00351BB0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00348D24 00351BB4  38 21 00 50 */	addi r1, r1, 0x50
+/* 00348D28 00351BB8  7C 08 03 A6 */	mtlr r0
+/* 00348D2C 00351BBC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00348D30 00351BC0  4E 80 00 20 */	blr 
+
+.global ".__sinit_:BodyStrings_cpp"
+".__sinit_:BodyStrings_cpp":
+/* 00348D60 00351BF0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00348D64 00351BF4  7C 08 02 A6 */	mflr r0
+/* 00348D68 00351BF8  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00348D6C 00351BFC  38 A0 00 00 */	li r5, 0
+/* 00348D70 00351C00  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00348D74 00351C04  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00348D78 00351C08  38 C0 00 40 */	li r6, 0x40
+/* 00348D7C 00351C0C  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 00348D80 00351C10  83 A2 8C 54 */	lwz r29, lbl_005BA0B4-_R2_BASE_(r2)
+/* 00348D84 00351C14  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 00348D88 00351C18  83 C2 8B AC */	lwz r30, lbl_005BA00C-_R2_BASE_(r2)
+/* 00348D8C 00351C1C  90 01 00 08 */	stw r0, 8(r1)
+/* 00348D90 00351C20  83 E2 B4 10 */	lwz r31, lbl_005BC870-_R2_BASE_(r2)
+/* 00348D94 00351C24  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00348D98 00351C28  C8 44 00 00 */	lfd f2, 0(r4)
+/* 00348D9C 00351C2C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00348DA0 00351C30  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00348DA4 00351C34  FC 20 10 50 */	fneg f1, f2
+/* 00348DA8 00351C38  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00348DAC 00351C3C  FC 80 28 50 */	fneg f4, f5
+/* 00348DB0 00351C40  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00348DB4 00351C44  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00348DB8 00351C48  D0 82 0A E8 */	stfs f4, lbl_005C1F48-_R2_BASE_(r2)
+/* 00348DBC 00351C4C  7F A3 EB 78 */	mr r3, r29
+/* 00348DC0 00351C50  38 9D 00 0C */	addi r4, r29, 0xc
+/* 00348DC4 00351C54  D0 A2 0A EC */	stfs f5, lbl_005C1F4C-_R2_BASE_(r2)
+/* 00348DC8 00351C58  D0 62 0A F0 */	stfs f3, lbl_005C1F50-_R2_BASE_(r2)
+/* 00348DCC 00351C5C  D0 A2 0A F4 */	stfs f5, lbl_005C1F54-_R2_BASE_(r2)
+/* 00348DD0 00351C60  D8 22 0A F8 */	stfd f1, lbl_005C1F58-_R2_BASE_(r2)
+/* 00348DD4 00351C64  D8 42 0B 00 */	stfd f2, lbl_005C1F60-_R2_BASE_(r2)
+/* 00348DD8 00351C68  D8 02 0B 08 */	stfd f0, lbl_005C1F68-_R2_BASE_(r2)
+/* 00348DDC 00351C6C  D8 42 0B 10 */	stfd f2, lbl_005C1F70-_R2_BASE_(r2)
+/* 00348DE0 00351C70  4B DF 06 F1 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348DE4 00351C74  93 DD 00 08 */	stw r30, 8(r29)
+/* 00348DE8 00351C78  38 7D 00 00 */	addi r3, r29, 0
+/* 00348DEC 00351C7C  38 9F 00 5A */	addi r4, r31, 0x5a
+/* 00348DF0 00351C80  38 A0 FF FF */	li r5, -1
+/* 00348DF4 00351C84  4B DF 05 AD */	bl ".append__12StringBufferFPCci"
+/* 00348DF8 00351C88  3B 9D 00 4C */	addi r28, r29, 0x4c
+/* 00348DFC 00351C8C  38 7C 00 00 */	addi r3, r28, 0
+/* 00348E00 00351C90  38 9C 00 0C */	addi r4, r28, 0xc
+/* 00348E04 00351C94  38 A0 00 00 */	li r5, 0
+/* 00348E08 00351C98  38 C0 00 40 */	li r6, 0x40
+/* 00348E0C 00351C9C  4B DF 06 C5 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348E10 00351CA0  93 DD 00 54 */	stw r30, 0x54(r29)
+/* 00348E14 00351CA4  38 7C 00 00 */	addi r3, r28, 0
+/* 00348E18 00351CA8  38 9F 00 60 */	addi r4, r31, 0x60
+/* 00348E1C 00351CAC  38 A0 FF FF */	li r5, -1
+/* 00348E20 00351CB0  4B DF 05 81 */	bl ".append__12StringBufferFPCci"
+/* 00348E24 00351CB4  3B 9D 00 98 */	addi r28, r29, 0x98
+/* 00348E28 00351CB8  38 7C 00 00 */	addi r3, r28, 0
+/* 00348E2C 00351CBC  38 9C 00 0C */	addi r4, r28, 0xc
+/* 00348E30 00351CC0  38 A0 00 00 */	li r5, 0
+/* 00348E34 00351CC4  38 C0 00 40 */	li r6, 0x40
+/* 00348E38 00351CC8  4B DF 06 99 */	bl ".__ct__12StringBufferFPcUiUi"
+/* 00348E3C 00351CCC  93 DD 00 A0 */	stw r30, 0xa0(r29)
+/* 00348E40 00351CD0  38 7C 00 00 */	addi r3, r28, 0
+/* 00348E44 00351CD4  38 9F 00 6B */	addi r4, r31, 0x6b
+/* 00348E48 00351CD8  38 A0 FF FF */	li r5, -1
+/* 00348E4C 00351CDC  4B DF 05 55 */	bl ".append__12StringBufferFPCci"
+/* 00348E50 00351CE0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00348E54 00351CE4  38 21 00 50 */	addi r1, r1, 0x50
+/* 00348E58 00351CE8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00348E5C 00351CEC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00348E60 00351CF0  7C 08 03 A6 */	mtlr r0
+/* 00348E64 00351CF4  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00348E68 00351CF8  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 00348E6C 00351CFC  4E 80 00 20 */	blr 

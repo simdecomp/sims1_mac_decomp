@@ -1,0 +1,32 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".__ct__10cIGZStringFv"
+".__ct__10cIGZStringFv":
+/* 00531A80 0053A910  80 02 9F 60 */	lwz r0, lbl_005BB3C0-_R2_BASE_(r2)
+/* 00531A84 0053A914  90 03 00 00 */	stw r0, 0(r3)
+/* 00531A88 0053A918  4E 80 00 20 */	blr 
+
+.global ".__sinit_:RZFastCompression3_cpp"
+".__sinit_:RZFastCompression3_cpp":
+/* 00531AC0 0053A950  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00531AC4 0053A954  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00531AC8 0053A958  C8 44 00 00 */	lfd f2, 0(r4)
+/* 00531ACC 0053A95C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00531AD0 0053A960  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00531AD4 0053A964  FC 20 10 50 */	fneg f1, f2
+/* 00531AD8 0053A968  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00531ADC 0053A96C  FC 80 28 50 */	fneg f4, f5
+/* 00531AE0 0053A970  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00531AE4 0053A974  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00531AE8 0053A978  D0 82 2C 40 */	stfs f4, lbl_005C40A0-_R2_BASE_(r2)
+/* 00531AEC 0053A97C  D0 A2 2C 44 */	stfs f5, lbl_005C40A4-_R2_BASE_(r2)
+/* 00531AF0 0053A980  D0 62 2C 48 */	stfs f3, lbl_005C40A8-_R2_BASE_(r2)
+/* 00531AF4 0053A984  D0 A2 2C 4C */	stfs f5, lbl_005C40AC-_R2_BASE_(r2)
+/* 00531AF8 0053A988  D8 22 2C 50 */	stfd f1, lbl_005C40B0-_R2_BASE_(r2)
+/* 00531AFC 0053A98C  D8 42 2C 58 */	stfd f2, lbl_005C40B8-_R2_BASE_(r2)
+/* 00531B00 0053A990  D8 02 2C 60 */	stfd f0, lbl_005C40C0-_R2_BASE_(r2)
+/* 00531B04 0053A994  D8 42 2C 68 */	stfd f2, lbl_005C40C8-_R2_BASE_(r2)
+/* 00531B08 0053A998  4E 80 00 20 */	blr 

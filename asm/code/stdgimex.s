@@ -1,0 +1,140 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".gtell"
+".gtell":
+/* 00347CD0 00350B60  7C 08 02 A6 */	mflr r0
+/* 00347CD4 00350B64  90 01 00 08 */	stw r0, 8(r1)
+/* 00347CD8 00350B68  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347CDC 00350B6C  4B FF F9 95 */	bl ".Sims_gtell__FP7GSTREAM"
+/* 00347CE0 00350B70  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347CE4 00350B74  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347CE8 00350B78  7C 08 03 A6 */	mtlr r0
+/* 00347CEC 00350B7C  4E 80 00 20 */	blr 
+
+.global ".glen"
+".glen":
+/* 00347D10 00350BA0  7C 08 02 A6 */	mflr r0
+/* 00347D14 00350BA4  90 01 00 08 */	stw r0, 8(r1)
+/* 00347D18 00350BA8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347D1C 00350BAC  4B FF F9 95 */	bl ".Sims_glen__FP7GSTREAM"
+/* 00347D20 00350BB0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347D24 00350BB4  38 21 00 40 */	addi r1, r1, 0x40
+lbl_00347D28:
+/* 00347D28 00350BB8  7C 08 03 A6 */	mtlr r0
+/* 00347D2C 00350BBC  4E 80 00 20 */	blr 
+
+.global ".gseek"
+".gseek":
+/* 00347D50 00350BE0  7C 08 02 A6 */	mflr r0
+/* 00347D54 00350BE4  90 01 00 08 */	stw r0, 8(r1)
+/* 00347D58 00350BE8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347D5C 00350BEC  4B FF F9 85 */	bl ".Sims_gseek__FP7GSTREAMl"
+/* 00347D60 00350BF0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347D64 00350BF4  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347D68 00350BF8  7C 08 03 A6 */	mtlr r0
+/* 00347D6C 00350BFC  4E 80 00 20 */	blr 
+
+.global ".gwrite"
+".gwrite":
+/* 00347D90 00350C20  7C 08 02 A6 */	mflr r0
+/* 00347D94 00350C24  90 01 00 08 */	stw r0, 8(r1)
+/* 00347D98 00350C28  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347D9C 00350C2C  4B FF FA A5 */	bl ".Sims_gwrite__FP7GSTREAMPvl"
+/* 00347DA0 00350C30  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347DA4 00350C34  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347DA8 00350C38  7C 08 03 A6 */	mtlr r0
+/* 00347DAC 00350C3C  4E 80 00 20 */	blr 
+
+.global ".gread"
+".gread":
+/* 00347DD0 00350C60  7C 08 02 A6 */	mflr r0
+/* 00347DD4 00350C64  90 01 00 08 */	stw r0, 8(r1)
+/* 00347DD8 00350C68  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347DDC 00350C6C  4B FF FA E5 */	bl ".Sims_gread__FP7GSTREAMPvl"
+/* 00347DE0 00350C70  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347DE4 00350C74  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347DE8 00350C78  7C 08 03 A6 */	mtlr r0
+/* 00347DEC 00350C7C  4E 80 00 20 */	blr 
+
+.global ".gclose"
+".gclose":
+/* 00347E10 00350CA0  7C 08 02 A6 */	mflr r0
+/* 00347E14 00350CA4  90 01 00 08 */	stw r0, 8(r1)
+/* 00347E18 00350CA8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347E1C 00350CAC  4B FF FB E5 */	bl ".Sims_gclose__FP7GSTREAM"
+/* 00347E20 00350CB0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347E24 00350CB4  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347E28 00350CB8  7C 08 03 A6 */	mtlr r0
+/* 00347E2C 00350CBC  4E 80 00 20 */	blr 
+
+.global ".gwopen"
+".gwopen":
+/* 00347E50 00350CE0  7C 08 02 A6 */	mflr r0
+/* 00347E54 00350CE4  90 01 00 08 */	stw r0, 8(r1)
+/* 00347E58 00350CE8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347E5C 00350CEC  4B FF FC 35 */	bl ".Sims_gwopen__FPCc"
+/* 00347E60 00350CF0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347E64 00350CF4  38 21 00 40 */	addi r1, r1, 0x40
+lbl_00347E68:
+/* 00347E68 00350CF8  7C 08 03 A6 */	mtlr r0
+/* 00347E6C 00350CFC  4E 80 00 20 */	blr 
+
+.global ".gopen"
+".gopen":
+/* 00347E90 00350D20  7C 08 02 A6 */	mflr r0
+/* 00347E94 00350D24  90 01 00 08 */	stw r0, 8(r1)
+/* 00347E98 00350D28  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347E9C 00350D2C  4B FF FC D5 */	bl ".Sims_gopen__FPCc"
+/* 00347EA0 00350D30  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347EA4 00350D34  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347EA8 00350D38  7C 08 03 A6 */	mtlr r0
+/* 00347EAC 00350D3C  4E 80 00 20 */	blr 
+
+.global ".gfree"
+".gfree":
+/* 00347ED0 00350D60  7C 08 02 A6 */	mflr r0
+/* 00347ED4 00350D64  90 01 00 08 */	stw r0, 8(r1)
+/* 00347ED8 00350D68  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347EDC 00350D6C  48 24 08 45 */	bl func_00588720
+/* 00347EE0 00350D70  38 60 00 00 */	li r3, 0
+/* 00347EE4 00350D74  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347EE8 00350D78  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347EEC 00350D7C  7C 08 03 A6 */	mtlr r0
+lbl_00347EF0:
+/* 00347EF0 00350D80  4E 80 00 20 */	blr 
+
+.global ".galloc"
+".galloc":
+/* 00347F10 00350DA0  7C 08 02 A6 */	mflr r0
+/* 00347F14 00350DA4  90 01 00 08 */	stw r0, 8(r1)
+/* 00347F18 00350DA8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00347F1C 00350DAC  48 24 07 C5 */	bl func_005886E0
+/* 00347F20 00350DB0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00347F24 00350DB4  38 21 00 40 */	addi r1, r1, 0x40
+/* 00347F28 00350DB8  7C 08 03 A6 */	mtlr r0
+/* 00347F2C 00350DBC  4E 80 00 20 */	blr 
+
+.global ".__sinit_:stdgimex_c"
+".__sinit_:stdgimex_c":
+/* 00347F50 00350DE0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00347F54 00350DE4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00347F58 00350DE8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 00347F5C 00350DEC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00347F60 00350DF0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00347F64 00350DF4  FC 20 10 50 */	fneg f1, f2
+/* 00347F68 00350DF8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00347F6C 00350DFC  FC 80 28 50 */	fneg f4, f5
+/* 00347F70 00350E00  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00347F74 00350E04  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00347F78 00350E08  D0 82 0A B8 */	stfs f4, lbl_005C1F18-_R2_BASE_(r2)
+/* 00347F7C 00350E0C  D0 A2 0A BC */	stfs f5, lbl_005C1F1C-_R2_BASE_(r2)
+/* 00347F80 00350E10  D0 62 0A C0 */	stfs f3, lbl_005C1F20-_R2_BASE_(r2)
+/* 00347F84 00350E14  D0 A2 0A C4 */	stfs f5, lbl_005C1F24-_R2_BASE_(r2)
+/* 00347F88 00350E18  D8 22 0A C8 */	stfd f1, lbl_005C1F28-_R2_BASE_(r2)
+/* 00347F8C 00350E1C  D8 42 0A D0 */	stfd f2, lbl_005C1F30-_R2_BASE_(r2)
+/* 00347F90 00350E20  D8 02 0A D8 */	stfd f0, lbl_005C1F38-_R2_BASE_(r2)
+/* 00347F94 00350E24  D8 42 0A E0 */	stfd f2, lbl_005C1F40-_R2_BASE_(r2)
+/* 00347F98 00350E28  4E 80 00 20 */	blr 

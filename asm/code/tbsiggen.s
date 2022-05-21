@@ -1,0 +1,335 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".GetVal__13SineGeneratorFUl"
+".GetVal__13SineGeneratorFUl":
+/* 00145640 0014E4D0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00145644 0014E4D4  7C 08 02 A6 */	mflr r0
+/* 00145648 0014E4D8  7C 7F 1B 78 */	mr r31, r3
+/* 0014564C 0014E4DC  90 01 00 08 */	stw r0, 8(r1)
+/* 00145650 0014E4E0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00145654 0014E4E4  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 00145658 0014E4E8  38 60 00 00 */	li r3, 0
+/* 0014565C 0014E4EC  28 00 00 00 */	cmplwi r0, 0
+/* 00145660 0014E4F0  41 82 00 14 */	beq lbl_00145674
+/* 00145664 0014E4F4  80 1F 00 10 */	lwz r0, 0x10(r31)
+/* 00145668 0014E4F8  7C 04 00 40 */	cmplw r4, r0
+/* 0014566C 0014E4FC  41 80 00 08 */	blt lbl_00145674
+/* 00145670 0014E500  38 60 00 01 */	li r3, 1
+lbl_00145674:
+/* 00145674 0014E504  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 00145678 0014E508  41 82 00 10 */	beq lbl_00145688
+/* 0014567C 0014E50C  80 62 A8 2C */	lwz r3, lbl_005BBC8C-_R2_BASE_(r2)
+/* 00145680 0014E510  C0 23 00 00 */	lfs f1, 0(r3)
+/* 00145684 0014E514  48 00 00 44 */	b lbl_001456C8
+lbl_00145688:
+/* 00145688 0014E518  80 BF 00 0C */	lwz r5, 0xc(r31)
+/* 0014568C 0014E51C  3C 00 43 30 */	lis r0, 0x4330
+/* 00145690 0014E520  80 62 A8 28 */	lwz r3, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145694 0014E524  7C 85 20 50 */	subf r4, r5, r4
+/* 00145698 0014E528  90 01 00 40 */	stw r0, 0x40(r1)
+/* 0014569C 0014E52C  C8 23 00 00 */	lfd f1, 0(r3)
+/* 001456A0 0014E530  90 81 00 44 */	stw r4, 0x44(r1)
+/* 001456A4 0014E534  C8 5F 00 04 */	lfd f2, 4(r31)
+/* 001456A8 0014E538  C8 01 00 40 */	lfd f0, 0x40(r1)
+/* 001456AC 0014E53C  FC 00 08 28 */	fsub f0, f0, f1
+/* 001456B0 0014E540  FC 22 00 32 */	fmul f1, f2, f0
+/* 001456B4 0014E544  48 45 36 7D */	bl func_00598D30
+/* 001456B8 0014E548  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 001456BC 0014E54C  C0 1F 00 00 */	lfs f0, 0(r31)
+/* 001456C0 0014E550  FC 20 00 72 */	fmul f1, f0, f1
+/* 001456C4 0014E554  FC 20 08 18 */	frsp f1, f1
+lbl_001456C8:
+/* 001456C8 0014E558  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 001456CC 0014E55C  38 21 00 60 */	addi r1, r1, 0x60
+/* 001456D0 0014E560  83 E1 FF FC */	lwz r31, -4(r1)
+/* 001456D4 0014E564  7C 08 03 A6 */	mtlr r0
+/* 001456D8 0014E568  4E 80 00 20 */	blr 
+
+.global ".Start__13SineGeneratorFUl"
+".Start__13SineGeneratorFUl":
+/* 00145710 0014E5A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00145714 0014E5A4  7C 08 02 A6 */	mflr r0
+/* 00145718 0014E5A8  3B E4 00 00 */	addi r31, r4, 0
+/* 0014571C 0014E5AC  C8 22 D9 30 */	lfd f1, lbl_005BED90-_R2_BASE_(r2)
+/* 00145720 0014E5B0  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00145724 0014E5B4  7C 7E 1B 78 */	mr r30, r3
+/* 00145728 0014E5B8  80 62 A8 28 */	lwz r3, lbl_005BBC88-_R2_BASE_(r2)
+/* 0014572C 0014E5BC  90 01 00 08 */	stw r0, 8(r1)
+/* 00145730 0014E5C0  3C 00 43 30 */	lis r0, 0x4330
+/* 00145734 0014E5C4  C8 63 00 00 */	lfd f3, 0(r3)
+/* 00145738 0014E5C8  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 0014573C 0014E5CC  80 BE 00 14 */	lwz r5, 0x14(r30)
+/* 00145740 0014E5D0  90 01 00 40 */	stw r0, 0x40(r1)
+/* 00145744 0014E5D4  90 A1 00 44 */	stw r5, 0x44(r1)
+/* 00145748 0014E5D8  C8 01 00 40 */	lfd f0, 0x40(r1)
+/* 0014574C 0014E5DC  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 00145750 0014E5E0  FC 40 18 28 */	fsub f2, f0, f3
+/* 00145754 0014E5E4  90 01 00 48 */	stw r0, 0x48(r1)
+/* 00145758 0014E5E8  C8 01 00 48 */	lfd f0, 0x48(r1)
+/* 0014575C 0014E5EC  FC 00 18 28 */	fsub f0, f0, f3
+/* 00145760 0014E5F0  FC 22 00 7A */	fmadd f1, f2, f1, f0
+/* 00145764 0014E5F4  48 44 31 2D */	bl func_00588890
+/* 00145768 0014E5F8  90 7E 00 10 */	stw r3, 0x10(r30)
+/* 0014576C 0014E5FC  93 FE 00 0C */	stw r31, 0xc(r30)
+/* 00145770 0014E600  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 00145774 0014E604  38 21 00 60 */	addi r1, r1, 0x60
+/* 00145778 0014E608  7C 08 03 A6 */	mtlr r0
+/* 0014577C 0014E60C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00145780 0014E610  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00145784 0014E614  4E 80 00 20 */	blr 
+
+.global ".SetDuration__13SineGeneratorFUi"
+".SetDuration__13SineGeneratorFUi":
+/* 001457C0 0014E650  90 83 00 14 */	stw r4, 0x14(r3)
+/* 001457C4 0014E654  4E 80 00 20 */	blr 
+
+.global ".SetPeriod__13SineGeneratorFUl"
+".SetPeriod__13SineGeneratorFUl":
+/* 00145800 0014E690  3C 00 43 30 */	lis r0, 0x4330
+/* 00145804 0014E694  80 A2 A8 28 */	lwz r5, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145808 0014E698  90 81 FF F4 */	stw r4, -0xc(r1)
+/* 0014580C 0014E69C  C8 25 00 00 */	lfd f1, 0(r5)
+/* 00145810 0014E6A0  90 01 FF F0 */	stw r0, -0x10(r1)
+/* 00145814 0014E6A4  C8 42 D9 28 */	lfd f2, lbl_005BED88-_R2_BASE_(r2)
+/* 00145818 0014E6A8  C8 01 FF F0 */	lfd f0, -0x10(r1)
+/* 0014581C 0014E6AC  FC 00 08 28 */	fsub f0, f0, f1
+/* 00145820 0014E6B0  FC 02 00 24 */	fdiv f0, f2, f0
+/* 00145824 0014E6B4  D8 03 00 04 */	stfd f0, 4(r3)
+/* 00145828 0014E6B8  4E 80 00 20 */	blr 
+
+.global ".SetAmplitude__13SineGeneratorFf"
+".SetAmplitude__13SineGeneratorFf":
+/* 00145860 0014E6F0  D0 23 00 00 */	stfs f1, 0(r3)
+/* 00145864 0014E6F4  4E 80 00 20 */	blr 
+
+.global ".__ct__13SineGeneratorFv"
+".__ct__13SineGeneratorFv":
+/* 001458A0 0014E730  80 82 A8 28 */	lwz r4, lbl_005BBC88-_R2_BASE_(r2)
+/* 001458A4 0014E734  38 A0 00 02 */	li r5, 2
+/* 001458A8 0014E738  80 C2 A8 2C */	lwz r6, lbl_005BBC8C-_R2_BASE_(r2)
+/* 001458AC 0014E73C  38 00 00 00 */	li r0, 0
+/* 001458B0 0014E740  C8 22 D9 28 */	lfd f1, lbl_005BED88-_R2_BASE_(r2)
+/* 001458B4 0014E744  C8 04 00 08 */	lfd f0, 8(r4)
+/* 001458B8 0014E748  C0 46 00 04 */	lfs f2, 4(r6)
+/* 001458BC 0014E74C  FC 01 00 24 */	fdiv f0, f1, f0
+/* 001458C0 0014E750  D0 43 00 00 */	stfs f2, 0(r3)
+/* 001458C4 0014E754  90 A3 00 14 */	stw r5, 0x14(r3)
+/* 001458C8 0014E758  90 03 00 0C */	stw r0, 0xc(r3)
+/* 001458CC 0014E75C  90 03 00 10 */	stw r0, 0x10(r3)
+/* 001458D0 0014E760  D8 03 00 04 */	stfd f0, 4(r3)
+/* 001458D4 0014E764  4E 80 00 20 */	blr 
+
+.global ".SetupConstantSpeedRamp__13RampGeneratorFfffUl"
+".SetupConstantSpeedRamp__13RampGeneratorFfffUl":
+/* 00145910 0014E7A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00145914 0014E7A4  7C 08 02 A6 */	mflr r0
+/* 00145918 0014E7A8  80 82 A8 2C */	lwz r4, lbl_005BBC8C-_R2_BASE_(r2)
+/* 0014591C 0014E7AC  FC 80 18 18 */	frsp f4, f3
+/* 00145920 0014E7B0  90 01 00 08 */	stw r0, 8(r1)
+/* 00145924 0014E7B4  C0 04 00 00 */	lfs f0, 0(r4)
+/* 00145928 0014E7B8  7C 7F 1B 78 */	mr r31, r3
+/* 0014592C 0014E7BC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00145930 0014E7C0  FC 04 00 40 */	fcmpo cr0, f4, f0
+/* 00145934 0014E7C4  D0 43 00 00 */	stfs f2, 0(r3)
+/* 00145938 0014E7C8  D0 63 00 08 */	stfs f3, 8(r3)
+/* 0014593C 0014E7CC  40 80 00 10 */	bge lbl_0014594C
+/* 00145940 0014E7D0  FC 00 20 50 */	fneg f0, f4
+/* 00145944 0014E7D4  D0 1F 00 04 */	stfs f0, 4(r31)
+/* 00145948 0014E7D8  48 00 00 08 */	b lbl_00145950
+lbl_0014594C:
+/* 0014594C 0014E7DC  D0 9F 00 04 */	stfs f4, 4(r31)
+lbl_00145950:
+/* 00145950 0014E7E0  C0 5F 00 00 */	lfs f2, 0(r31)
+/* 00145954 0014E7E4  C0 04 00 00 */	lfs f0, 0(r4)
+/* 00145958 0014E7E8  EC 22 08 28 */	fsubs f1, f2, f1
+/* 0014595C 0014E7EC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 00145960 0014E7F0  40 81 00 0C */	ble lbl_0014596C
+/* 00145964 0014E7F4  C0 1F 00 04 */	lfs f0, 4(r31)
+/* 00145968 0014E7F8  48 00 00 0C */	b lbl_00145974
+lbl_0014596C:
+/* 0014596C 0014E7FC  C0 1F 00 04 */	lfs f0, 4(r31)
+/* 00145970 0014E800  FC 00 00 50 */	fneg f0, f0
+lbl_00145974:
+/* 00145974 0014E804  D0 1F 00 08 */	stfs f0, 8(r31)
+/* 00145978 0014E808  FC 00 00 18 */	frsp f0, f0
+/* 0014597C 0014E80C  3C 00 43 30 */	lis r0, 0x4330
+/* 00145980 0014E810  80 62 A8 28 */	lwz r3, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145984 0014E814  90 E1 00 44 */	stw r7, 0x44(r1)
+/* 00145988 0014E818  EC 01 00 24 */	fdivs f0, f1, f0
+/* 0014598C 0014E81C  90 01 00 40 */	stw r0, 0x40(r1)
+/* 00145990 0014E820  C8 43 00 00 */	lfd f2, 0(r3)
+/* 00145994 0014E824  C8 21 00 40 */	lfd f1, 0x40(r1)
+/* 00145998 0014E828  EC 21 10 28 */	fsubs f1, f1, f2
+/* 0014599C 0014E82C  EC 21 00 2A */	fadds f1, f1, f0
+/* 001459A0 0014E830  48 44 2E F1 */	bl func_00588890
+/* 001459A4 0014E834  90 7F 00 0C */	stw r3, 0xc(r31)
+/* 001459A8 0014E838  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 001459AC 0014E83C  38 21 00 60 */	addi r1, r1, 0x60
+/* 001459B0 0014E840  7C 08 03 A6 */	mtlr r0
+/* 001459B4 0014E844  83 E1 FF FC */	lwz r31, -4(r1)
+/* 001459B8 0014E848  4E 80 00 20 */	blr 
+
+.global ".SetupConstantTimeRamp__13RampGeneratorFffUlUl"
+".SetupConstantTimeRamp__13RampGeneratorFffUlUl":
+/* 00145A00 0014E890  3C 00 43 30 */	lis r0, 0x4330
+/* 00145A04 0014E894  80 A2 A8 28 */	lwz r5, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145A08 0014E898  90 C1 FF F4 */	stw r6, -0xc(r1)
+/* 00145A0C 0014E89C  EC 82 08 28 */	fsubs f4, f2, f1
+/* 00145A10 0014E8A0  80 82 A8 2C */	lwz r4, lbl_005BBC8C-_R2_BASE_(r2)
+/* 00145A14 0014E8A4  90 01 FF F0 */	stw r0, -0x10(r1)
+/* 00145A18 0014E8A8  C8 65 00 00 */	lfd f3, 0(r5)
+/* 00145A1C 0014E8AC  C8 21 FF F0 */	lfd f1, -0x10(r1)
+/* 00145A20 0014E8B0  C0 04 00 00 */	lfs f0, 0(r4)
+/* 00145A24 0014E8B4  EC 21 18 28 */	fsubs f1, f1, f3
+/* 00145A28 0014E8B8  D0 43 00 00 */	stfs f2, 0(r3)
+/* 00145A2C 0014E8BC  EC 24 08 24 */	fdivs f1, f4, f1
+/* 00145A30 0014E8C0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 00145A34 0014E8C4  D0 23 00 08 */	stfs f1, 8(r3)
+/* 00145A38 0014E8C8  40 80 00 10 */	bge lbl_00145A48
+/* 00145A3C 0014E8CC  FC 00 08 50 */	fneg f0, f1
+/* 00145A40 0014E8D0  D0 03 00 04 */	stfs f0, 4(r3)
+/* 00145A44 0014E8D4  48 00 00 08 */	b lbl_00145A4C
+lbl_00145A48:
+/* 00145A48 0014E8D8  D0 23 00 04 */	stfs f1, 4(r3)
+lbl_00145A4C:
+/* 00145A4C 0014E8DC  7C 07 32 14 */	add r0, r7, r6
+/* 00145A50 0014E8E0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 00145A54 0014E8E4  4E 80 00 20 */	blr 
+
+.global ".GetVal__13RampGeneratorFUl"
+".GetVal__13RampGeneratorFUl":
+/* 00145AA0 0014E930  80 03 00 0C */	lwz r0, 0xc(r3)
+/* 00145AA4 0014E934  7C 04 00 40 */	cmplw r4, r0
+/* 00145AA8 0014E938  41 80 00 0C */	blt lbl_00145AB4
+/* 00145AAC 0014E93C  C0 23 00 00 */	lfs f1, 0(r3)
+/* 00145AB0 0014E940  4E 80 00 20 */	blr 
+lbl_00145AB4:
+/* 00145AB4 0014E944  7C A4 00 50 */	subf r5, r4, r0
+/* 00145AB8 0014E948  80 82 A8 28 */	lwz r4, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145ABC 0014E94C  3C 00 43 30 */	lis r0, 0x4330
+/* 00145AC0 0014E950  90 A1 FF F4 */	stw r5, -0xc(r1)
+/* 00145AC4 0014E954  C8 64 00 00 */	lfd f3, 0(r4)
+/* 00145AC8 0014E958  90 01 FF F0 */	stw r0, -0x10(r1)
+/* 00145ACC 0014E95C  C0 23 00 08 */	lfs f1, 8(r3)
+/* 00145AD0 0014E960  C8 41 FF F0 */	lfd f2, -0x10(r1)
+/* 00145AD4 0014E964  C0 03 00 00 */	lfs f0, 0(r3)
+/* 00145AD8 0014E968  EC 42 18 28 */	fsubs f2, f2, f3
+/* 00145ADC 0014E96C  EC 22 00 7C */	fnmsubs f1, f2, f1, f0
+/* 00145AE0 0014E970  4E 80 00 20 */	blr 
+
+.global ".__ct__13RampGeneratorFff"
+".__ct__13RampGeneratorFff":
+/* 00145B20 0014E9B0  80 82 A8 2C */	lwz r4, lbl_005BBC8C-_R2_BASE_(r2)
+/* 00145B24 0014E9B4  38 00 00 00 */	li r0, 0
+/* 00145B28 0014E9B8  D0 23 00 00 */	stfs f1, 0(r3)
+/* 00145B2C 0014E9BC  C0 04 00 04 */	lfs f0, 4(r4)
+/* 00145B30 0014E9C0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 00145B34 0014E9C4  D0 03 00 04 */	stfs f0, 4(r3)
+/* 00145B38 0014E9C8  D0 03 00 08 */	stfs f0, 8(r3)
+/* 00145B3C 0014E9CC  4E 80 00 20 */	blr 
+
+.global ".SetMaxPulses__14PulseGeneratorFi"
+".SetMaxPulses__14PulseGeneratorFi":
+/* 00145B70 0014EA00  7C 04 00 D0 */	neg r0, r4
+/* 00145B74 0014EA04  7C 80 03 38 */	orc r0, r4, r0
+/* 00145B78 0014EA08  7C 00 FE 70 */	srawi r0, r0, 0x1f
+/* 00145B7C 0014EA0C  7C 80 00 78 */	andc r0, r4, r0
+/* 00145B80 0014EA10  90 03 00 0C */	stw r0, 0xc(r3)
+/* 00145B84 0014EA14  4E 80 00 20 */	blr 
+
+.global ".ShouldPulse__14PulseGeneratorFv"
+".ShouldPulse__14PulseGeneratorFv":
+/* 00145BC0 0014EA50  80 83 00 04 */	lwz r4, 4(r3)
+/* 00145BC4 0014EA54  80 03 00 00 */	lwz r0, 0(r3)
+/* 00145BC8 0014EA58  7C 00 20 40 */	cmplw r0, r4
+/* 00145BCC 0014EA5C  41 80 00 14 */	blt lbl_00145BE0
+/* 00145BD0 0014EA60  7C 04 00 50 */	subf r0, r4, r0
+/* 00145BD4 0014EA64  90 03 00 00 */	stw r0, 0(r3)
+/* 00145BD8 0014EA68  38 60 00 01 */	li r3, 1
+/* 00145BDC 0014EA6C  4E 80 00 20 */	blr 
+lbl_00145BE0:
+/* 00145BE0 0014EA70  38 60 00 00 */	li r3, 0
+/* 00145BE4 0014EA74  4E 80 00 20 */	blr 
+
+.global ".AdvanceTime__14PulseGeneratorFUl"
+".AdvanceTime__14PulseGeneratorFUl":
+/* 00145C20 0014EAB0  80 03 00 08 */	lwz r0, 8(r3)
+/* 00145C24 0014EAB4  28 00 00 00 */	cmplwi r0, 0
+/* 00145C28 0014EAB8  41 82 00 18 */	beq lbl_00145C40
+/* 00145C2C 0014EABC  80 A3 00 00 */	lwz r5, 0(r3)
+/* 00145C30 0014EAC0  7C 00 20 50 */	subf r0, r0, r4
+/* 00145C34 0014EAC4  7C 05 02 14 */	add r0, r5, r0
+/* 00145C38 0014EAC8  90 03 00 00 */	stw r0, 0(r3)
+/* 00145C3C 0014EACC  48 00 00 0C */	b lbl_00145C48
+lbl_00145C40:
+/* 00145C40 0014EAD0  80 03 00 04 */	lwz r0, 4(r3)
+/* 00145C44 0014EAD4  90 03 00 00 */	stw r0, 0(r3)
+lbl_00145C48:
+/* 00145C48 0014EAD8  90 83 00 08 */	stw r4, 8(r3)
+/* 00145C4C 0014EADC  80 A3 00 0C */	lwz r5, 0xc(r3)
+/* 00145C50 0014EAE0  28 05 00 00 */	cmplwi r5, 0
+/* 00145C54 0014EAE4  4D 82 00 20 */	beqlr 
+/* 00145C58 0014EAE8  80 83 00 04 */	lwz r4, 4(r3)
+/* 00145C5C 0014EAEC  80 03 00 00 */	lwz r0, 0(r3)
+/* 00145C60 0014EAF0  7C 85 21 D6 */	mullw r4, r5, r4
+/* 00145C64 0014EAF4  7C 00 20 40 */	cmplw r0, r4
+/* 00145C68 0014EAF8  4C 81 00 20 */	blelr 
+/* 00145C6C 0014EAFC  90 83 00 00 */	stw r4, 0(r3)
+/* 00145C70 0014EB00  4E 80 00 20 */	blr 
+
+.global ".SetAvgPeriod__14PulseGeneratorFUl"
+".SetAvgPeriod__14PulseGeneratorFUl":
+/* 00145CB0 0014EB40  90 83 00 04 */	stw r4, 4(r3)
+/* 00145CB4 0014EB44  4E 80 00 20 */	blr 
+
+.global ".__ct__14PulseGeneratorFv"
+".__ct__14PulseGeneratorFv":
+/* 00145CF0 0014EB80  38 80 00 00 */	li r4, 0
+/* 00145CF4 0014EB84  90 83 00 00 */	stw r4, 0(r3)
+/* 00145CF8 0014EB88  38 00 00 64 */	li r0, 0x64
+/* 00145CFC 0014EB8C  90 03 00 04 */	stw r0, 4(r3)
+/* 00145D00 0014EB90  90 83 00 0C */	stw r4, 0xc(r3)
+/* 00145D04 0014EB94  90 83 00 08 */	stw r4, 8(r3)
+/* 00145D08 0014EB98  4E 80 00 20 */	blr 
+
+.global ".__sinit_:tbsiggen_cpp"
+".__sinit_:tbsiggen_cpp":
+/* 00145D40 0014EBD0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00145D44 0014EBD4  7C 08 02 A6 */	mflr r0
+/* 00145D48 0014EBD8  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00145D4C 0014EBDC  90 01 00 08 */	stw r0, 8(r1)
+/* 00145D50 0014EBE0  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00145D54 0014EBE4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00145D58 0014EBE8  83 E2 A8 28 */	lwz r31, lbl_005BBC88-_R2_BASE_(r2)
+/* 00145D5C 0014EBEC  C8 64 00 00 */	lfd f3, 0(r4)
+/* 00145D60 0014EBF0  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00145D64 0014EBF4  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00145D68 0014EBF8  FC 40 18 50 */	fneg f2, f3
+/* 00145D6C 0014EBFC  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00145D70 0014EC00  FC 20 28 50 */	fneg f1, f5
+/* 00145D74 0014EC04  C0 84 00 00 */	lfs f4, 0(r4)
+/* 00145D78 0014EC08  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00145D7C 0014EC0C  D0 22 D8 F8 */	stfs f1, lbl_005BED58-_R2_BASE_(r2)
+/* 00145D80 0014EC10  C8 3F 00 20 */	lfd f1, 0x20(r31)
+/* 00145D84 0014EC14  D0 A2 D8 FC */	stfs f5, lbl_005BED5C-_R2_BASE_(r2)
+/* 00145D88 0014EC18  D0 82 D9 00 */	stfs f4, lbl_005BED60-_R2_BASE_(r2)
+/* 00145D8C 0014EC1C  D0 A2 D9 04 */	stfs f5, lbl_005BED64-_R2_BASE_(r2)
+/* 00145D90 0014EC20  D8 42 D9 08 */	stfd f2, lbl_005BED68-_R2_BASE_(r2)
+/* 00145D94 0014EC24  D8 62 D9 10 */	stfd f3, lbl_005BED70-_R2_BASE_(r2)
+/* 00145D98 0014EC28  D8 02 D9 18 */	stfd f0, lbl_005BED78-_R2_BASE_(r2)
+/* 00145D9C 0014EC2C  D8 62 D9 20 */	stfd f3, lbl_005BED80-_R2_BASE_(r2)
+/* 00145DA0 0014EC30  48 45 31 89 */	bl func_00598F28
+/* 00145DA4 0014EC34  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00145DA8 0014EC38  C8 1F 00 18 */	lfd f0, 0x18(r31)
+/* 00145DAC 0014EC3C  FC 20 00 72 */	fmul f1, f0, f1
+/* 00145DB0 0014EC40  FC 00 00 72 */	fmul f0, f0, f1
+/* 00145DB4 0014EC44  D8 22 D9 30 */	stfd f1, lbl_005BED90-_R2_BASE_(r2)
+/* 00145DB8 0014EC48  D8 02 D9 28 */	stfd f0, lbl_005BED88-_R2_BASE_(r2)
+/* 00145DBC 0014EC4C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00145DC0 0014EC50  38 21 00 50 */	addi r1, r1, 0x50
+/* 00145DC4 0014EC54  7C 08 03 A6 */	mtlr r0
+/* 00145DC8 0014EC58  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00145DCC 0014EC5C  4E 80 00 20 */	blr 

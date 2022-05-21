@@ -1,0 +1,46 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".CopyToStringBuffer__FPCUcR12StringBuffer"
+".CopyToStringBuffer__FPCUcR12StringBuffer":
+/* 00114B10 0011D9A0  7C 08 02 A6 */	mflr r0
+/* 00114B14 0011D9A4  38 A4 00 00 */	addi r5, r4, 0
+/* 00114B18 0011D9A8  90 01 00 08 */	stw r0, 8(r1)
+/* 00114B1C 0011D9AC  38 C3 00 00 */	addi r6, r3, 0
+/* 00114B20 0011D9B0  38 00 00 00 */	li r0, 0
+/* 00114B24 0011D9B4  38 65 00 00 */	addi r3, r5, 0
+/* 00114B28 0011D9B8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00114B2C 0011D9BC  B0 04 00 04 */	sth r0, 4(r4)
+/* 00114B30 0011D9C0  38 86 00 01 */	addi r4, r6, 1
+/* 00114B34 0011D9C4  80 A5 00 00 */	lwz r5, 0(r5)
+/* 00114B38 0011D9C8  98 05 00 00 */	stb r0, 0(r5)
+/* 00114B3C 0011D9CC  88 A6 00 00 */	lbz r5, 0(r6)
+/* 00114B40 0011D9D0  48 02 48 61 */	bl ".append__12StringBufferFPCci"
+/* 00114B44 0011D9D4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00114B48 0011D9D8  38 21 00 40 */	addi r1, r1, 0x40
+/* 00114B4C 0011D9DC  7C 08 03 A6 */	mtlr r0
+/* 00114B50 0011D9E0  4E 80 00 20 */	blr 
+
+.global ".__sinit_:PStrings_cpp"
+".__sinit_:PStrings_cpp":
+/* 00114B90 0011DA20  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 00114B94 0011DA24  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 00114B98 0011DA28  C8 44 00 00 */	lfd f2, 0(r4)
+/* 00114B9C 0011DA2C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 00114BA0 0011DA30  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 00114BA4 0011DA34  FC 20 10 50 */	fneg f1, f2
+/* 00114BA8 0011DA38  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 00114BAC 0011DA3C  FC 80 28 50 */	fneg f4, f5
+/* 00114BB0 0011DA40  C0 64 00 00 */	lfs f3, 0(r4)
+/* 00114BB4 0011DA44  C8 03 00 00 */	lfd f0, 0(r3)
+/* 00114BB8 0011DA48  D0 82 D4 80 */	stfs f4, lbl_005BE8E0-_R2_BASE_(r2)
+/* 00114BBC 0011DA4C  D0 A2 D4 84 */	stfs f5, lbl_005BE8E4-_R2_BASE_(r2)
+/* 00114BC0 0011DA50  D0 62 D4 88 */	stfs f3, lbl_005BE8E8-_R2_BASE_(r2)
+/* 00114BC4 0011DA54  D0 A2 D4 8C */	stfs f5, lbl_005BE8EC-_R2_BASE_(r2)
+/* 00114BC8 0011DA58  D8 22 D4 90 */	stfd f1, lbl_005BE8F0-_R2_BASE_(r2)
+/* 00114BCC 0011DA5C  D8 42 D4 98 */	stfd f2, lbl_005BE8F8-_R2_BASE_(r2)
+/* 00114BD0 0011DA60  D8 02 D4 A0 */	stfd f0, lbl_005BE900-_R2_BASE_(r2)
+/* 00114BD4 0011DA64  D8 42 D4 A8 */	stfd f2, lbl_005BE908-_R2_BASE_(r2)
+/* 00114BD8 0011DA68  4E 80 00 20 */	blr 

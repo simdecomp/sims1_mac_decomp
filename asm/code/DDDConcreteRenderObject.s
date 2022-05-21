@@ -1,0 +1,91 @@
+.include macros.inc
+
+
+.section .text0, "ax"  # 0x00000000 - 0x005B9458
+
+.global ".ResetRenderDamage__12RenderObjectFv"
+".ResetRenderDamage__12RenderObjectFv":
+/* 003BFB80 003C8A10  7C 08 02 A6 */	mflr r0
+/* 003BFB84 003C8A14  3C 80 80 00 */	lis r4, 0x7FFFFFFF@ha
+/* 003BFB88 003C8A18  90 01 00 08 */	stw r0, 8(r1)
+/* 003BFB8C 003C8A1C  38 84 FF FF */	addi r4, r4, 0x7FFFFFFF@l
+/* 003BFB90 003C8A20  38 A4 00 00 */	addi r5, r4, 0
+/* 003BFB94 003C8A24  38 63 00 04 */	addi r3, r3, 4
+/* 003BFB98 003C8A28  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 003BFB9C 003C8A2C  3C C0 80 00 */	lis r6, 0x8000
+/* 003BFBA0 003C8A30  3C E0 80 00 */	lis r7, 0x8000
+/* 003BFBA4 003C8A34  4B C6 F6 DD */	bl ".SetRect_Win32"
+/* 003BFBA8 003C8A38  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 003BFBAC 003C8A3C  38 21 00 40 */	addi r1, r1, 0x40
+/* 003BFBB0 003C8A40  7C 08 03 A6 */	mtlr r0
+/* 003BFBB4 003C8A44  4E 80 00 20 */	blr 
+
+.global ".__dt__20ConcreteRenderObjectFv"
+".__dt__20ConcreteRenderObjectFv":
+/* 003BFBF0 003C8A80  93 E1 FF FC */	stw r31, -4(r1)
+/* 003BFBF4 003C8A84  7C 08 02 A6 */	mflr r0
+/* 003BFBF8 003C8A88  3B E4 00 00 */	addi r31, r4, 0
+/* 003BFBFC 003C8A8C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003BFC00 003C8A90  7C 7E 1B 79 */	or. r30, r3, r3
+/* 003BFC04 003C8A94  90 01 00 08 */	stw r0, 8(r1)
+/* 003BFC08 003C8A98  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003BFC0C 003C8A9C  41 82 00 24 */	beq lbl_003BFC30
+/* 003BFC10 003C8AA0  80 02 9A 08 */	lwz r0, lbl_005BAE68-_R2_BASE_(r2)
+/* 003BFC14 003C8AA4  38 80 00 00 */	li r4, 0
+/* 003BFC18 003C8AA8  90 1E 00 00 */	stw r0, 0(r30)
+/* 003BFC1C 003C8AAC  48 01 26 55 */	bl ".__dt__12RenderObjectFv"
+/* 003BFC20 003C8AB0  7F E0 07 35 */	extsh. r0, r31
+/* 003BFC24 003C8AB4  40 81 00 0C */	ble lbl_003BFC30
+/* 003BFC28 003C8AB8  7F C3 F3 78 */	mr r3, r30
+/* 003BFC2C 003C8ABC  48 1C 8A 65 */	bl func_00588690
+lbl_003BFC30:
+/* 003BFC30 003C8AC0  7F C3 F3 78 */	mr r3, r30
+/* 003BFC34 003C8AC4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003BFC38 003C8AC8  38 21 00 50 */	addi r1, r1, 0x50
+/* 003BFC3C 003C8ACC  7C 08 03 A6 */	mtlr r0
+/* 003BFC40 003C8AD0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003BFC44 003C8AD4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003BFC48 003C8AD8  4E 80 00 20 */	blr 
+
+.global ".__ct__20ConcreteRenderObjectFR8Device3D"
+".__ct__20ConcreteRenderObjectFR8Device3D":
+/* 003BFC80 003C8B10  93 E1 FF FC */	stw r31, -4(r1)
+/* 003BFC84 003C8B14  7C 08 02 A6 */	mflr r0
+/* 003BFC88 003C8B18  3B E4 00 00 */	addi r31, r4, 0
+/* 003BFC8C 003C8B1C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 003BFC90 003C8B20  3B C3 00 00 */	addi r30, r3, 0
+/* 003BFC94 003C8B24  90 01 00 08 */	stw r0, 8(r1)
+/* 003BFC98 003C8B28  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 003BFC9C 003C8B2C  48 01 26 65 */	bl ".__ct__12RenderObjectFv"
+/* 003BFCA0 003C8B30  80 02 9A 08 */	lwz r0, lbl_005BAE68-_R2_BASE_(r2)
+/* 003BFCA4 003C8B34  7F C3 F3 78 */	mr r3, r30
+/* 003BFCA8 003C8B38  90 1E 00 00 */	stw r0, 0(r30)
+/* 003BFCAC 003C8B3C  93 FE 00 5C */	stw r31, 0x5c(r30)
+/* 003BFCB0 003C8B40  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 003BFCB4 003C8B44  38 21 00 50 */	addi r1, r1, 0x50
+/* 003BFCB8 003C8B48  7C 08 03 A6 */	mtlr r0
+/* 003BFCBC 003C8B4C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 003BFCC0 003C8B50  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 003BFCC4 003C8B54  4E 80 00 20 */	blr 
+
+.global ".__sinit_:DDDConcreteRenderObject_cpp"
+".__sinit_:DDDConcreteRenderObject_cpp":
+/* 003BFD10 003C8BA0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
+/* 003BFD14 003C8BA4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
+/* 003BFD18 003C8BA8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 003BFD1C 003C8BAC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 003BFD20 003C8BB0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
+/* 003BFD24 003C8BB4  FC 20 10 50 */	fneg f1, f2
+/* 003BFD28 003C8BB8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
+/* 003BFD2C 003C8BBC  FC 80 28 50 */	fneg f4, f5
+/* 003BFD30 003C8BC0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 003BFD34 003C8BC4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 003BFD38 003C8BC8  D0 82 10 B8 */	stfs f4, lbl_005C2518-_R2_BASE_(r2)
+/* 003BFD3C 003C8BCC  D0 A2 10 BC */	stfs f5, lbl_005C251C-_R2_BASE_(r2)
+/* 003BFD40 003C8BD0  D0 62 10 C0 */	stfs f3, lbl_005C2520-_R2_BASE_(r2)
+/* 003BFD44 003C8BD4  D0 A2 10 C4 */	stfs f5, lbl_005C2524-_R2_BASE_(r2)
+/* 003BFD48 003C8BD8  D8 22 10 C8 */	stfd f1, lbl_005C2528-_R2_BASE_(r2)
+/* 003BFD4C 003C8BDC  D8 42 10 D0 */	stfd f2, lbl_005C2530-_R2_BASE_(r2)
+/* 003BFD50 003C8BE0  D8 02 10 D8 */	stfd f0, lbl_005C2538-_R2_BASE_(r2)
+/* 003BFD54 003C8BE4  D8 42 10 E0 */	stfd f2, lbl_005C2540-_R2_BASE_(r2)
+/* 003BFD58 003C8BE8  4E 80 00 20 */	blr 

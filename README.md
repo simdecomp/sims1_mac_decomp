@@ -9,7 +9,7 @@ Extract a clean ppc executable of the game from an installation of it, dated Feb
 
 # Prerequisites:
 - WSL2, for running a linux shell that can execute the Win32 compilers; they don't run in wine unfortunately :(
-- [MWCPPC and MWLinkPPC](https://github.com/ChrisNonyminus/sims1_mac_decomp/files/8735152/compilers.zip); put the included compilers folder in the root of the repo.
+- [MWCPPC and MWLinkPPC](https://github.com/ChrisNonyminus/sims1_mac_decomp/files/8748510/compilers.zip); put the included compilers folder in the root of the repo.
 - build-essential, probably
 - Python 3.6 or higher.
 - Python dependencies: `python3 -m pip install --user colorama watchdog python-Levenshtein capstone macholib`

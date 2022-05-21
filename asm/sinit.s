@@ -1,4 +1,4 @@
-.include macros.inc
+.include "macros.inc"
 
 
 .global func_00000000

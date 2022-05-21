@@ -1,2414 +1,1398 @@
-# PowerPC Register Constants
-.set r0,0
-.set r1,1
-.set r2,2
-.set r3,3
-.set r4,4
-.set r5,5
-.set r6,6
-.set r7,7
-.set r8,8
-.set r9,9
-.set r10,10
-.set r11,11
-.set r12,12
-.set r13,13
-.set r14,14
-.set r15,15
-.set r16,16
-.set r17,17
-.set r18,18
-.set r19,19
-.set r20,20
-.set r21,21
-.set r22,22
-.set r23,23
-.set r24,24
-.set r25,25
-.set r26,26
-.set r27,27
-.set r28,28
-.set r29,29
-.set r30,30
-.set r31,31
-.set f0,0
-.set f1,1
-.set f2,2
-.set f3,3
-.set f4,4
-.set f5,5
-.set f6,6
-.set f7,7
-.set f8,8
-.set f9,9
-.set f10,10
-.set f11,11
-.set f12,12
-.set f13,13
-.set f14,14
-.set f15,15
-.set f16,16
-.set f17,17
-.set f18,18
-.set f19,19
-.set f20,20
-.set f21,21
-.set f22,22
-.set f23,23
-.set f24,24
-.set f25,25
-.set f26,26
-.set f27,27
-.set f28,28
-.set f29,29
-.set f30,30
-.set f31,31
-.set qr0,0
-.set qr1,1
-.set qr2,2
-.set qr3,3
-.set qr4,4
-.set qr5,5
-.set qr6,6
-.set qr7,7
-.set RTOC,r2
-.set SP,r1
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetUseWNE((bool))
-.global SetUseWNE__8CGameAppFb
-SetUseWNE__8CGameAppFb:		# DATA XREF: seg000:005A7948↓o
-                                        # seg000:005B4F14↓o ...
-                stb       r4, 4(r3)
-
-locret_7A4:                             # DATA XREF: seg000:005A24AC↓o
-                                        # seg000:005A2E3C↓o
-                blr
-# End of function CGameApp::SetUseWNE((bool))
-
-# ---------------------------------------------------------------------------
-unk_7A8:        .byte    0              # DATA XREF: seg000:005B180C↓o
-                .byte    0
-                .short 0
-off_7AC:        .long loc_92040         # DATA XREF: seg000:005A3AF0↓o
-                .long 0
-dword_7B4:      .long 8                 # DATA XREF: seg000:005A7438↓o
-                .byte    0
-                .byte 0x17
-aSetusewne8cgam:.string ".SetUseWNE__8CGameAppFb"
-                                        # DATA XREF: seg000:005A1FF0↓r
-                                        # seg000:005A4FC0↓o
-                .byte 0
-                .short 0
-dword_7D4:      .long 0, 0, 0           # DATA XREF: seg000:005A3AFC↓o
-                                        # seg000:005A9520↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetSystemTaskFrequency((unsigned long))
-.global SetSystemTaskFrequency__8CGameAppFUl
-SetSystemTaskFrequency__8CGameAppFUl:		# DATA XREF: seg001:off_5C46B8↓o
-                stw       r4, 0x10(r3)
-
-locret_7E4:                             # DATA XREF: seg000:005AA090↓o
-                blr
-# End of function CGameApp::SetSystemTaskFrequency((ulong))
-
-# ---------------------------------------------------------------------------
-dword_7E8:      .long 0                 # DATA XREF: seg000:0059F098↓o
-                .long loc_92040
-dword_7F0:      .long 0                 # DATA XREF: seg000:005A2C8C↓o
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    8
-                .byte    0
-                .byte 0x25 # %
-aSetsystemtaskf:.string ".SetSystemTaskFrequency__8CGameAppFUl"
-                                        # DATA XREF: seg000:005B21F0↓o
-                                        # seg000:00000875↓o ...
-                .byte 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetGenerateUpdateEvents((unsigned char))
-.global SetGenerateUpdateEvents__8CGameAppFUc
-SetGenerateUpdateEvents__8CGameAppFUc:		# DATA XREF: seg001:off_5C46C0↓o
-                stb       r4, 8(r3)
-                blr
-# End of function CGameApp::SetGenerateUpdateEvents((uchar))
-
-# ---------------------------------------------------------------------------
-dword_828:      .long 0                 # DATA XREF: seg000:005AAED0↓o
-                .byte    0
-                .byte    9
-                .byte 0x20
-                .byte 0x40 # @
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-unk_834:        .byte    0              # DATA XREF: seg000:005ADC78↓o
-                .byte    0
-                .byte    0
-                .byte    8
-unk_838:        .byte    0              # DATA XREF: seg000:005AB08C↓o
-                .byte 0x26 # &
-aSetgenerateupd:.string ".SetGenerateUpdateEvents__8CGameAppFUc"
-                                        # DATA XREF: seg000:005A6928↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetGenerateMouseMovedEvents((unsigned char))
-.global SetGenerateMouseMovedEvents__8CGameAppFUc
-SetGenerateMouseMovedEvents__8CGameAppFUc:
-                                        # DATA XREF: seg001:off_5C46C8↓o
-                stb       r4, 9(r3)
-                blr
-# End of function CGameApp::SetGenerateMouseMovedEvents((uchar))
-
-# ---------------------------------------------------------------------------
-                .long 0
-                .long loc_92040
-                .long 0
-unk_874:        .byte    0              # DATA XREF: seg000:005AFD90↓o
-                .long aSetsystemtaskf+6 # "stemTaskFrequency__8CGameAppFUl"
-aSetgeneratemou:.string "*.SetGenerateMouseMovedEvents__8CGameAppFUc"
-                                        # DATA XREF: seg000:005A214C↓o
-                .byte 0
-                .byte 0, 0, 0
-dword_8A8:      .long 0, 0              # DATA XREF: seg000:005A23E0↓o
-                                        # seg000:005A1834↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetMainPort((OpaqueGrafPtr *, bool))
-.global SetMainPort__8CGameAppFP13OpaqueGrafPtrb
-SetMainPort__8CGameAppFP13OpaqueGrafPtrb:
-                                        # DATA XREF: seg000:005A3598↓o
-                                        # seg001:off_5C46D0↓o
-                stw       r4, 0x54(r3)
-
-loc_8B4:                                # DATA XREF: seg000:005B2A30↓o
-                stb       r5, 0x58(r3)
-
-locret_8B8:                             # DATA XREF: seg000:005A7F54↓o
-                                        # seg000:005AB14C↓o ...
-                blr
-# End of function CGameApp::SetMainPort((OpaqueGrafPtr *,bool))
-
-# ---------------------------------------------------------------------------
-                .long 0
-off_8C0:        .long loc_92040         # DATA XREF: seg000:0034D9DC↓o
-                .long 0
-                .byte    0
-off_8C9:        .long loc_C00           # DATA XREF: seg000:005AA048↓o
-aSetmainport8cg:.string ").SetMainPort__8CGameAppFP13OpaqueGrafPtrb"
-                                        # DATA XREF: seg000:005A6B5C↓o
-                                        # seg000:005A5E84↓o ...
-                .byte 0
-dword_8F8:      .long 0, 0              # DATA XREF: seg000:005A60F4↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::GetMainPort((void))
-.global GetMainPort__8CGameAppFv
-GetMainPort__8CGameAppFv:		# DATA XREF: seg000:005B92E8↓o
-                                        # seg001:off_5C46D8↓o
-                lwz       r3, 0x54(r3)
-
-locret_904:                             # DATA XREF: seg000:005A5F38↓o
-                blr
-# End of function CGameApp::GetMainPort((void))
-
-# ---------------------------------------------------------------------------
-                .long 0
-                .long loc_92040
-                .long 0
-unk_914:        .byte    0              # DATA XREF: seg000:005A1174↓o
-                .long aSetsystemtaskf+6 # "stemTaskFrequency__8CGameAppFUl"
-                .byte 0x19
-aGetmainport8cg:.string ".GetMainPort__8CGameAppFv"
-                                        # DATA XREF: seg000:005B2FF4↓o
-                                        # seg000:005B4764↓o ...
-                .byte 0
-dword_934:      .long 0, 0, 0           # DATA XREF: seg000:005A5D88↓o
-                                        # seg000:005A8608↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::MainPortIsWindow((void))
-.global MainPortIsWindow__8CGameAppFv
-MainPortIsWindow__8CGameAppFv:		# DATA XREF: seg001:off_5C46E0↓o
-                lbz       r3, 0x58(r3)
-                blr
-# End of function CGameApp::MainPortIsWindow((void))
-
-# ---------------------------------------------------------------------------
-                .long 0
-                .long loc_92040
-                .long 0
-                .byte    0
-                .long aSetsystemtaskf+6 # "stemTaskFrequency__8CGameAppFUl"
-                .byte 0x1E
-aMainportiswind:.string ".MainPortIsWindow__8CGameAppFv"
-                                        # DATA XREF: seg000:005AA09C↓o
-                .byte 0
-                .byte 0, 0, 0
-                .long 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CGameApp::SetAppAsCurResFile((void))
-.global SetAppAsCurResFile__8CGameAppFv
-SetAppAsCurResFile__8CGameAppFv:		# DATA XREF: seg000:off_59CD90↓o
-                                        # seg000:005A820C↓o ...
-
-.set sender_sp, -0x40
-.set saved_toc, -0x2C
-.set sender_lr,  8
-
-                mflr      r0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lha       r3, 0x98(r3)
-                extsh.    r0, r3
-                beq       loc_9A0
-                bl        UseResFile
-                lwz       r2, 0x40+saved_toc(r1)
-
-loc_9A0:                                # CODE XREF: CGameApp::SetAppAsCurResFile((void))+14↑j
-                lwz       r0, 0x40+sender_lr(r1)
-
-loc_9A4:                                # DATA XREF: seg000:005A1198↓o
-                addi      r1, r1, 0x40
-                mtlr      r0
-
-locret_9AC:                             # DATA XREF: seg000:005B26F4↓o
-                blr
-# End of function CGameApp::SetAppAsCurResFile((void))
-
-# ---------------------------------------------------------------------------
-byte_9B0:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 0, 0, 0, 0, 0, 0, 0x30, 0, 0x20, 0x2E, 0x53, 0x65, 0x74, 0x41, 0x70, 0x70, 0x41, 0x73, 0x43, 0x75, 0x72, 0x52, 0x65, 0x73, 0x46, 0x69, 0x6C, 0x65, 0x5F, 0x5F, 0x38, 0x43, 0x47, 0x61, 0x6D, 0x65
-                                        # DATA XREF: seg000:005B207C↓o
-                .byte 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-dword_9E4:      .long 0, 0, 0           # DATA XREF: seg000:005B42A8↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::MoveHDSkinsBuy((void))
-.global MoveHDSkinsBuy__8CSimsAppFv
-MoveHDSkinsBuy__8CSimsAppFv:		# CODE XREF: CSimsApp::FinishInstallation((void)):loc_C04↓p
-                                        # DATA XREF: seg000:0059CD9C↓o
-
-.set sender_sp, -0x170
-.set saved_toc, -0x15C
-.set var_130, -0x130
-.set var_12C, -0x12C
-.set var_128, -0x128
-.set var_E0, -0xE0
-.set var_DE, -0xDE
-.set var_DA, -0xDA
-.set var_98, -0x98
-.set var_86, -0x86
-.set var_82, -0x82
-.set var_7C, -0x7C
-.set var_70, -0x70
-.set var_68, -0x68
-.set var_14, -0x14
-.set sender_lr,  8
-
-                stmw      r27, var_14(r1)
-
-loc_9F4:                                # DATA XREF: seg000:005B22C8↓o
-                                        # seg000:005B8D60↓o
-                mflr      r0
-
-loc_9F8:                                # DATA XREF: seg000:005A83C8↓o
-                lwz      	r30, off_5BB65C(r2) # byte_5F86A8
-                mr        r31, r3
-                addi      r5, r30, 0
-                stw       r0, sender_lr(r1)
-
-loc_A08:                                # DATA XREF: seg000:005AB458↓o
-                stwu      r1, sender_sp(r1)
-
-loc_A0C:                                # DATA XREF: seg000:005A4BF4↓o
-                lha       r3, 0x29E(r3)
-                addi      r6, r1, 0x170+var_12C
-                lwz       r4, 0x2A4(r31)
-                addi      r7, r1, 0x170+var_130
-                bl        GetDirectoryID
-                extsh.    r0, r3
-                beq       loc_A30
-                li        r3, 0
-                b         loc_B50
-# ---------------------------------------------------------------------------
-
-loc_A30:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+34↑j
-                lha       r3, 0x29E(r31)
-                addi      r5, r30, (unk_5F86C1 - 0x5F86A8)
-                lwz       r4, 0x2A4(r31)
-
-loc_A3C:                                # DATA XREF: seg000:005ADD20↓r
-                addi      r6, r1, 0x170+var_128
-
-loc_A40:                                # DATA XREF: seg000:005A5614↓o
-                bl        FSMakeFSSpec
-                lwz       r2, 0x170+saved_toc(r1)
-
-loc_A48:                                # DATA XREF: seg000:005A751C↓o
-                                        # seg000:005B50DC↓r
-                extsh.    r0, r3
-
-loc_A4C:                                # DATA XREF: seg000:005A3B08↓o
-                beq       loc_A5C
-                li        r3, 0x1F      # __int16
-                li        r4, 0         # char *
-                bl        ErrorDie__FsPc # ErrorDie(short,char *)
-
-loc_A5C:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void)):loc_A4C↑j
-                lha       r0, 0x29E(r31)
-                addi      r28, r1, 0x170+var_DA
-
-loc_A64:                                # DATA XREF: seg000:005A68E0↓o
-                lwz       r3, 0x170+var_12C(r1)
-                li        r27, 1
-                sth       r0, 0x170+var_E0(r1)
-                stw       r3, 0x170+var_DE(r1)
-
-loc_A74:                                # DATA XREF: seg000:005A2C2C↓o
-                stw       r28, 0x170+var_86(r1)
-                sth       r0, 0x170+var_82(r1)
-                stw       r3, 0x170+var_68(r1)
-
-loc_A80:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+11C↓j
-                lwz       r0, 0x170+var_12C(r1)
-                addi      r3, r1, 0x170+var_98
-                sth       r27, 0x170+var_7C(r1)
-                stw       r0, 0x170+var_68(r1)
-                bl        PBGetCatInfoSync
-                lwz       r2, 0x170+saved_toc(r1)
-                addi      r29, r3, 0
-
-loc_A9C:                                # DATA XREF: seg000:005B13C8↓o
-                extsh.    r0, r29
-                bne       loc_B08
-
-loc_AA4:                                # DATA XREF: seg000:005A1258↓o
-                lhz       r0, 0x170+var_70(r1)
-                rlwinm.   r0, r0, 0,17,17
-
-loc_AAC:                                # DATA XREF: seg000:0059F8CC↓o
-                bne       loc_B04
-                addi      r3, r1, 0x170+var_E0
-
-loc_AB4:                                # DATA XREF: seg000:005B84B4↓o
-                bl        FSpCheckObjectLock
-
-loc_AB8:                                # DATA XREF: seg000:005A7204↓o
-                extsh     r0, r3
-                cmpwi     r0, -0x2D
-                bne       loc_AD8
-                lha       r3, 0x170+var_E0(r1)
-                mr        r5, r28
-                lwz       r4, 0x170+var_DE(r1)
-
-loc_AD0:                                # DATA XREF: seg000:005B75B4↓o
-                bl        HRstFLock
-                lwz       r2, 0x170+saved_toc(r1)
-
-loc_AD8:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+D0↑j
-                addi      r3, r1, 0x170+var_E0
-
-loc_ADC:                                # DATA XREF: seg000:005A250C↓o
-                addi      r4, r1, 0x170+var_128
-
-loc_AE0:                                # DATA XREF: seg000:005AA150↓o
-                bl        FSpCatMove
-
-loc_AE4:                                # DATA XREF: seg000:005A51E8↓o
-                lwz       r2, 0x170+saved_toc(r1)
-                addi      r29, r3, 0
-
-loc_AEC:                                # DATA XREF: seg000:005AFD78↓o
-                extsh.    r0, r29
-                beq       loc_B08
-                li        r3, 0x1F      # __int16
-                li        r4, 0         # char *
-                bl        ErrorDie__FsPc # ErrorDie(short,char *)
-
-loc_B00:                                # DATA XREF: seg000:005A6898↓o
-                b         loc_B08
-# ---------------------------------------------------------------------------
-
-loc_B04:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void)):loc_AAC↑j
-                addi      r27, r27, 1
-
-loc_B08:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+B0↑j
-                                        # CSimsApp::MoveHDSkinsBuy((void))+100↑j ...
-                extsh.    r0, r29
-                beq       loc_A80
-                extsh     r0, r29
-                cmpwi     r0, -0x2B
-                beq       loc_B28
-                li        r3, 0x1F      # __int16
-
-loc_B20:                                # DATA XREF: seg000:005AC4C0↓o
-                li        r4, 0         # char *
-                bl        ErrorDie__FsPc # ErrorDie(short,char *)
-
-loc_B28:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+128↑j
-                lha       r3, 0x29E(r31)
-                mr        r5, r30
-
-loc_B30:                                # DATA XREF: seg000:005A99AC↓o
-                lwz       r4, 0x2A4(r31)
-                bl        DeleteDirectory
-
-loc_B38:                                # DATA XREF: seg000:005AADF8↓o
-                extsh.    r0, r3
-                beq       loc_B4C
-                li        r3, 0x1F      # __int16
-                li        r4, 0         # char *
-                bl        ErrorDie__FsPc # ErrorDie(short,char *)
-
-loc_B4C:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+14C↑j
-                                        # DATA XREF: seg000:005AB914↓o
-                li        r3, 1
-
-loc_B50:                                # CODE XREF: CSimsApp::MoveHDSkinsBuy((void))+3C↑j
-                lwz       r0, 0x170+sender_lr(r1)
-                addi      r1, r1, 0x170
-                lmw       r27, var_14(r1)
-
-loc_B5C:                                # DATA XREF: seg000:005A55CC↓o
-                mtlr      r0
-                blr
-# End of function CSimsApp::MoveHDSkinsBuy((void))
-
-# ---------------------------------------------------------------------------
-byte_B64:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 5, 0, 0, 0, 0, 1, 0x74, 0, 0x1C, 0x2E, 0x4D, 0x6F, 0x76, 0x65, 0x48, 0x44, 0x53, 0x6B, 0x69, 0x6E, 0x73, 0x42, 0x75, 0x79, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46
-                                        # DATA XREF: seg000:005A82F0↓o
-                .byte 0x76
-                .short 0
-dword_B94:      .long 0, 0, 0           # DATA XREF: seg000:005AAD98↓o
-                                        # seg000:005A1918↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::FinishInstallation((void))
-.global FinishInstallation__8CSimsAppFv
-FinishInstallation__8CSimsAppFv:		# CODE XREF: .main+B4↓p
-                                        # DATA XREF: seg000:0059CDA8↓o ...
-
-.set sender_sp, -0x50
-.set var_C, -0xC
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r31, off_5BB65C(r2) # byte_5F86A8
-
-loc_BAC:                                # DATA XREF: seg000:005AB53C↓r
-                li        r4, 0         # int
-                stw       r30, var_8(r1)
-
-loc_BB4:                                # DATA XREF: seg000:005B20DC↓o
-                                        # seg000:005B2580↓o ...
-                li        r30, 0
-
-loc_BB8:                                # DATA XREF: HouseViewer::GetMaxOverlayZ((void))+8↓o
-                                        # seg000:0059F65C↓o ...
-                addi      r5, r31, (aFinishSimsInst - 0x5F86A8) # char *
-
-loc_BBC:                                # DATA XREF: seg000:005A68B0↓o
-                stw       r29, var_C(r1)
-
-loc_BC0:                                # DATA XREF: seg000:005A8200↓o
-                addi      r29, r3, 0
-                li        r3, 0         # __int16
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-
-loc_BD0:                                # DATA XREF: seg000:005A6A48↓o
-                bl        FileExists__FslPCc # FileExists(short,long,char const *)
-                clrlwi.   r0, r3, 24
-                beq       loc_C00
-
-loc_BDC:                                # DATA XREF: seg000:005B8550↓o
-                addi      r3, r31, (aFinishSimsInst - 0x5F86A8) # "Finish Sims Installation"
-                li        r30, 1
-                bl        remove
-                bl        AreWeOnX__Fv # AreWeOnX(void)
-                clrlwi.   r0, r3, 24
-                bne       loc_C00
-
-loc_BF4:                                # DATA XREF: seg000:005A2B60↓o
-                addi      r3, r29, 0
-                li        r4, 0x3E8
-                bl        ExecuteScriptResource__8CSimsAppFs # CSimsApp::ExecuteScriptResource((short))
-
-loc_C00:                                # CODE XREF: CSimsApp::FinishInstallation((void))+38↑j
-                                        # CSimsApp::FinishInstallation((void))+50↑j
-                                        # DATA XREF: ...
-                mr        r3, r29
-
-loc_C04:                                # DATA XREF: seg000:004232F9↓o
-                                        # seg000:0049D099↓o ...
-                bl        MoveHDSkinsBuy__8CSimsAppFv # CSimsApp::MoveHDSkinsBuy((void))
-                clrlwi    r3, r3, 24
-                clrlwi    r0, r30, 24
-
-loc_C10:                                # DATA XREF: seg000:005A4C84↓o
-                or        r3, r0, r3
-                neg       r0, r3
-                or        r0, r0, r3
-
-loc_C1C:                                # DATA XREF: seg000:005AAE4C↓o
-                addi      r3, r29, 0
-
-loc_C20:                                # DATA XREF: seg000:005B2E8C↓o
-                srwi      r31, r0, 31
-                bl        InstallMusicFiles__8CSimsAppFv # CSimsApp::InstallMusicFiles((void))
-                clrlwi    r0, r3, 24
-                or        r3, r31, r0
-                neg       r0, r3
-                or        r0, r0, r3
-                srwi      r3, r0, 31
-
-loc_C3C:                                # DATA XREF: seg000:005A9484↓o
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                mtlr      r0
-
-loc_C48:                                # DATA XREF: seg000:005B2D84↓o
-                lwz       r31, var_4(r1)
-
-loc_C4C:                                # DATA XREF: seg000:005B1938↓o
-                lwz       r30, var_8(r1)
-                lwz       r29, var_C(r1)
-                blr
-# End of function CSimsApp::FinishInstallation((void))
-
-# ---------------------------------------------------------------------------
-byte_C58:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 3, 0, 0, 0, 0, 0, 0xB8, 0, 0x20, 0x2E, 0x46, 0x69, 0x6E, 0x69, 0x73, 0x68, 0x49, 0x6E, 0x73, 0x74, 0x61, 0x6C, 0x6C, 0x61, 0x74, 0x69, 0x6F, 0x6E, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73
-                                        # DATA XREF: seg000:005AB488↓o
-                                        # seg000:005B80D0↓o
-                .byte 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-                .long 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::MapExtensionToType((char *, long *))
-.global MapExtensionToType__8CSimsAppFPcPl
-MapExtensionToType__8CSimsAppFPcPl:		# DATA XREF: seg000:0059CDB4↓o
-                                        # seg001:off_5C46A8↓o
-
-.set sender_sp, -0x50
-.set var_C, -0xC
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r31, off_5BB65C(r2) # byte_5F86A8
-                stw       r30, var_8(r1)
-                addi      r30, r5, 0
-                stw       r29, var_C(r1)
-                addi      r29, r4, 0
-                addi      r3, r29, 0
-                addi      r4, r31, (aIff_7 - 0x5F86A8) # ".iff"
-                stw       r0, sender_lr(r1)
-
-loc_CB8:                                # DATA XREF: seg000:005AB3BC↓o
-                stwu      r1, sender_sp(r1)
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_CD8
-                lis       r3, 0x4946
-
-loc_CCC:                                # DATA XREF: seg000:005B219C↓o
-                addi      r0, r3, 0x4620 # 0x49464620
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_CD8:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+34↑j
-                addi      r3, r29, 0
-
-loc_CDC:                                # DATA XREF: seg000:005A0F28↓o
-                addi      r4, r31, (aJpg - 0x5F86A8) # ".jpg"
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_CFC
-                lis       r3, 0x4A50
-
-loc_CF0:                                # DATA XREF: seg000:005B28D4↓o
-                addi      r0, r3, 0x4547 # 0x4A504547
-
-loc_CF4:                                # DATA XREF: seg000:005A1354↓o
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_CFC:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+58↑j
-                addi      r3, r29, 0
-                addi      r4, r31, (aFam_5 - 0x5F86A8) # ".fam"
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_D20
-                lis       r3, 0x4661
-                addi      r0, r3, 0x6D20 # 0x46616D20
-
-loc_D18:                                # DATA XREF: seg000:005A8248↓o
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_D20:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+7C↑j
-                addi      r3, r29, 0
-                addi      r4, r31, (aTxt_0 - 0x5F86A8) # ".txt"
-                bl        sub_5961E0
-                cmpwi     r3, 0
-
-loc_D30:                                # DATA XREF: seg000:005B2C1C↓o
-                                        # seg000:005B8E8C↓o
-                bne       loc_D44
-                lis       r3, 0x5445
-                addi      r0, r3, 0x5854 # 0x54455854
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_D44:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *)):loc_D30↑j
-                addi      r3, r29, 0
-                addi      r4, r31, (aGif - 0x5F86A8) # ".gif"
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_D68
-                lis       r3, 0x4749
-
-loc_D5C:                                # DATA XREF: seg000:005A8098↓r
-                                        # seg000:005A9754↓o
-                addi      r0, r3, 0x4666 # 0x47494666
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_D68:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+C4↑j
-                addi      r3, r29, 0
-                addi      r4, r31, (aBmp_0 - 0x5F86A8) # ".bmp"
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_D8C
-                lis       r3, 0x424D
-
-loc_D80:                                # DATA XREF: seg000:005A856C↓o
-                addi      r0, r3, 0x5020 # 0x424D5020
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_D8C:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+E8↑j
-                addi      r3, r29, 0
-                addi      r4, r31, (aHtml_0 - 0x5F86A8) # ".html"
-
-loc_D94:                                # DATA XREF: seg000:005A3004↓o
-                                        # seg000:005A68D4↓o
-                bl        sub_5961E0
-                cmpwi     r3, 0
-                bne       loc_DB0
-                lis       r3, 0x5445
-                addi      r0, r3, 0x5854 # 0x54455854
-                stw       r0, 0(r30)
-                b         loc_DBC
-# ---------------------------------------------------------------------------
-
-loc_DB0:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+10C↑j
-                                        # DATA XREF: seg000:005B912C↓o
-                lis       r3, 0x4461
-                addi      r0, r3, 0x7461 # 0x44617461
-                stw       r0, 0(r30)
-
-loc_DBC:                                # CODE XREF: CSimsApp::MapExtensionToType((char *,long *))+44↑j
-                                        # CSimsApp::MapExtensionToType((char *,long *))+68↑j ...
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                mtlr      r0
-                lwz       r29, var_C(r1)
-                blr
-# End of function CSimsApp::MapExtensionToType((char *,long *))
-
-# ---------------------------------------------------------------------------
-byte_DD8:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 3, 0, 0, 0, 0, 1, 0x48, 0, 0x23, 0x2E, 0x4D, 0x61, 0x70, 0x45, 0x78, 0x74, 0x65, 0x6E, 0x73, 0x69, 0x6F, 0x6E, 0x54, 0x6F, 0x54, 0x79, 0x70, 0x65, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73
-                                        # DATA XREF: seg000:005B8DFC↓o
-                .byte 0x41, 0x70, 0x70, 0x46, 0x50, 0x63, 0x50, 0x6C
-                .byte 0, 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::SaveGameDisplay((void))
-.global SaveGameDisplay__8CSimsAppFv
-SaveGameDisplay__8CSimsAppFv:		# CODE XREF: CGameApp::UnpauseGameToMode((GameDisplay::GameDisplayInfo *))+4C↓p
-                                        # cTSFrameWork::CreateAndRun((cTSCmdLine const &))+180↓p
-                                        # DATA XREF: ...
-
-.set sender_sp, -0x70
-.set saved_toc, -0x5C
-.set var_30, -0x30
-.set var_2C, -0x2C
-.set var_28, -0x28
-.set var_20, -0x20
-.set var_1C, -0x1C
-.set var_18, -0x18
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                stw       r30, var_8(r1)
-                mr        r30, r3
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bl        GetPrefs__8CSimsAppFv # CSimsApp::GetPrefs((void))
-                addi      r31, r3, 0
-                addi      r3, r1, 0x70+var_30
-                bl        GetGameDisplayInfo__11GameDisplayFPQ211GameDisplay15GameDisplayInfo # GameDisplay::GetGameDisplayInfo((GameDisplay::GameDisplayInfo *))
-                lha       r4, 0x70+var_28(r1)
-                subfic    r3, r4, 0x320
-                addi      r0, r4, -0x320
-                or        r0, r3, r0
-                srwi      r0, r0, 31
-                stb       r0, 1(r31)
-                lwz       r0, 0x70+var_30(r1)
-                stw       r0, 4(r31)
-                lwz       r0, 0x70+var_2C(r1)
-                stw       r0, 8(r31)
-                lwz       r0, 0x70+var_20(r1)
-                stw       r0, 0xC(r31)
-                lwz       r0, 0x70+var_1C(r1)
-
-loc_E6C:                                # DATA XREF: seg000:0059F8F0↓o
-                stw       r0, 0x10(r31)
-
-loc_E70:                                # DATA XREF: seg000:005A2560↓o
-                lwz       r0, 0x70+var_18(r1)
-
-loc_E74:                                # DATA XREF: seg000:off_59B678↓o
-                stw       r0, 0x14(r31)
-                lwz       r4, 0x3E8(r30)
-                cmplwi    r4, 0
-
-loc_E80:                                # DATA XREF: seg000:005A95E0↓o
-                beq       loc_EA0
-                lwz      	r3, off_5B9CD8(r2) # dword_635440
-                li        r5, 0x18
-                lwz       r3, (dword_635440 - 0x635440)(r3)
-                lwz       r12, 0x3E0(r3)
-
-loc_E94:                                # DATA XREF: seg000:005B14D0↓o
-                lwz       r12, 0x44(r12)
-                bl        sub_599B50
-                lwz       r2, 0x70+saved_toc(r1)
-
-loc_EA0:                                # CODE XREF: CSimsApp::SaveGameDisplay((void)):loc_E80↑j
-                lwz       r0, 0x70+sender_lr(r1)
-                addi      r1, r1, 0x70
-                lwz       r31, var_4(r1)
-                mtlr      r0
-                lwz       r30, var_8(r1)
-                blr
-# End of function CSimsApp::SaveGameDisplay((void))
-
-# ---------------------------------------------------------------------------
-byte_EB8:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 2, 0, 0, 0, 0, 0, 0xA8, 0, 0x1D, 0x2E, 0x53, 0x61, 0x76, 0x65, 0x47, 0x61, 0x6D, 0x65, 0x44, 0x69, 0x73, 0x70, 0x6C, 0x61, 0x79, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70
-                                        # DATA XREF: seg000:005A1048↓o
-                .byte 0x46, 0x76
-                .byte 0
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::SavePrefs((void))
-.global SavePrefs__8CSimsAppFv
-SavePrefs__8CSimsAppFv:		# CODE XREF: SelectLanguage(char *)+6C↓p
-                                        # DATA XREF: seg000:0059CDCC↓o
-
-.set sender_sp, -0x40
-.set saved_toc, -0x2C
-.set sender_lr,  8
-
-                mflr      r0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r4, 0x3E8(r3)
-                cmplwi    r4, 0
-
-loc_F04:                                # DATA XREF: seg000:005A6AB4↓o
-                beq       loc_F24
-
-loc_F08:                                # DATA XREF: seg000:005B23D0↓o
-                lwz      	r3, off_5B9CD8(r2) # dword_635440
-                li        r5, 0x18
-                lwz       r3, (dword_635440 - 0x635440)(r3)
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x44(r12)
-                bl        sub_599B50
-                lwz       r2, 0x40+saved_toc(r1)
-
-loc_F24:                                # CODE XREF: CSimsApp::SavePrefs((void)):loc_F04↑j
-                lwz       r0, 0x40+sender_lr(r1)
-                addi      r1, r1, 0x40
-                mtlr      r0
-                blr
-# End of function CSimsApp::SavePrefs((void))
-
-# ---------------------------------------------------------------------------
-byte_F34:       .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 0, 0, 0, 0, 0, 0, 0x44, 0, 0x17, 0x2E, 0x53, 0x61, 0x76, 0x65, 0x50, 0x72, 0x65, 0x66, 0x73, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                                        # DATA XREF: seg000:off_59B808↓o
-                                        # seg000:0059B80C↓o ...
-                .byte 0, 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::GetPrefs((void))
-.global GetPrefs__8CSimsAppFv
-GetPrefs__8CSimsAppFv:		# CODE XREF: CSimsApp::SaveGameDisplay((void))+18↑p
-                                        # CSimsApp::DoPreferences((void))+D4↓p ...
-
-.set sender_sp, -0x60
-.set saved_toc, -0x4C
-.set var_20, -0x20
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r31, off_5B9CD8(r2) # dword_635440
-                stw       r30, var_8(r1)
-                mr        r30, r3
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r3, 0x3E8(r3)
-
-loc_F80:                                # DATA XREF: seg000:005A8230↓o
-                cmplwi    r3, 0
-                beq       loc_F8C
-                b         loc_1040
-# ---------------------------------------------------------------------------
-
-loc_F8C:                                # CODE XREF: CSimsApp::GetPrefs((void))+24↑j
-                li        r3, 0x18
-                bl        sub_5885B0
-
-loc_F94:                                # DATA XREF: seg000:005A1AE0↓o
-                                        # seg000:005AA5D0↓o
-                stw       r3, 0x3E8(r30)
-                li        r7, 1
-
-loc_F9C:                                # DATA XREF: seg000:005AE278↓o
-                                        # seg000:005B2CD0↓o
-                li        r6, 0
-                addi      r5, r1, 0x60+var_20
-                stb       r7, 0(r3)
-                lis       r4, -0x8000
-                lwz       r3, 0x3E8(r30)
-                li        r0, 0x18
-                stb       r6, 1(r3)
-
-loc_FB8:                                # DATA XREF: seg000:005A4E64↓o
-                lwz       r3, 0x3E8(r30)
-                stb       r7, 2(r3)
-                lwz       r3, 0x3E8(r30)
-                stb       r7, 3(r3)
-
-loc_FC8:                                # DATA XREF: seg000:005A88FC↓o
-                lwz       r3, 0x3E8(r30)
-
-loc_FCC:                                # DATA XREF: seg000:005A9820↓o
-                stw       r7, 4(r3)
-                lwz       r3, 0x3E8(r30)
-                stw       r6, 8(r3)
-                lwz       r3, 0x3E8(r30)
-                stw       r6, 0xC(r3)
-                lwz       r3, 0x3E8(r30)
-                stw       r4, 0x10(r3)
-                lwz       r3, 0x3E8(r30)
-                stw       r4, 0x14(r3)
-                stw       r0, 0x60+var_20(r1)
-                lwz       r3, (dword_635440 - 0x635440)(r31)
-                lwz       r4, 0x3E8(r30)
-                lwz       r12, 0x3E0(r3)
-
-loc_1000:                               # DATA XREF: seg000:0000624D↓o
-                                        # seg000:0000DB1D↓o ...
-                lwz       r12, 0x40(r12)
-
-loc_1004:                               # DATA XREF: seg000:0042376D↓o
-                                        # seg000:005A4D14↓o
-                bl        sub_599B50
-
-loc_1008:                               # DATA XREF: seg000:0059F8E4↓o
-                lwz       r2, 0x60+saved_toc(r1)
-                lwz       r0, 0x60+var_20(r1)
-                cmplwi    r0, 0x18
-                beq       loc_103C
-                lwz       r4, 0x3E8(r30)
-                cmplwi    r4, 0
-                beq       loc_103C
-                lwz       r3, (dword_635440 - 0x635440)(r31)
-                li        r5, 0x18
-
-loc_102C:                               # DATA XREF: seg000:005AA828↓o
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x44(r12)
-                bl        sub_599B50
-                lwz       r2, 0x60+saved_toc(r1)
-
-loc_103C:                               # CODE XREF: CSimsApp::GetPrefs((void))+B4↑j
-                                        # CSimsApp::GetPrefs((void))+C0↑j
-                lwz       r3, 0x3E8(r30)
-
-loc_1040:                               # CODE XREF: CSimsApp::GetPrefs((void))+28↑j
-                lwz       r0, 0x60+sender_lr(r1)
-                addi      r1, r1, 0x60
-                lwz       r31, var_4(r1)
-                mtlr      r0
-                lwz       r30, var_8(r1)
-                blr
-# End of function CSimsApp::GetPrefs((void))
-
-# ---------------------------------------------------------------------------
-byte_1058:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 2, 0, 0, 0, 0, 0, 0xF8, 0, 0x16, 0x2E, 0x47, 0x65, 0x74, 0x50, 0x72, 0x65, 0x66, 0x73, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                                        # DATA XREF: seg000:005A2CC8↓o
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::ResumeApp((void))
-.global ResumeApp__8CSimsAppFv
-ResumeApp__8CSimsAppFv:		# DATA XREF: seg000:0059CDE4↓o
-                                        # seg001:off_5C46A0↓o
-
-.set sender_sp, -0x50
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                mr        r31, r3
-
-loc_108C:                               # DATA XREF: seg000:005AEDF4↓o
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-
-loc_1094:                               # DATA XREF: seg000:005AEE00↓o
-                                        # seg000:005B8A60↓o
-                bl        ResumeApp__8CGameAppFv # CGameApp::ResumeApp((void))
-                li        r0, 0
-                lwz      	r3, off_5B9CD4(r2) # dword_63E56C
-                stw       r0, 0x1C(r31)
-                lwz       r3, 0(r3)
-                lbz       r0, 0x3EC(r31)
-                cmplwi    r3, 0
-                beq       loc_10E8
-
-loc_10B4:                               # DATA XREF: seg000:005A901C↓o
-                lwz       r3, 0x10(r3)
-                cmplwi    r3, 0
-                beq       loc_10E8
-
-loc_10C0:                               # DATA XREF: seg000:005ADB04↓o
-                cmplwi    r0, 0
-                lwz       r3, 0xC(r3)
-                li        r4, 0x16
-                beq       loc_10D4
-
-loc_10D0:                               # DATA XREF: seg000:005A9790↓o
-                li        r4, 0x15
-
-loc_10D4:                               # CODE XREF: CSimsApp::ResumeApp((void))+4C↑j
-                li        r5, 0
-                li        r6, 0
-                li        r7, 0
-                li        r8, 0
-                bl        Event__5cBoxXFlllll # cBoxX::Event((long,long,long,long,long))
-
-loc_10E8:                               # CODE XREF: CSimsApp::ResumeApp((void))+30↑j
-                                        # CSimsApp::ResumeApp((void))+3C↑j
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                lwz       r31, var_4(r1)
-                mtlr      r0
-                blr
-# End of function CSimsApp::ResumeApp((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 1, 0, 0, 0, 0, 0, 0x7C, 0, 0x17, 0x2E, 0x52, 0x65, 0x73, 0x75, 0x6D, 0x65, 0x41, 0x70, 0x70, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .byte 0, 0, 0
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::SuspendApp((void))
-.global SuspendApp__8CSimsAppFv
-SuspendApp__8CSimsAppFv:		# DATA XREF: seg000:0059CDF0↓o
-                                        # seg001:off_5C4698↓o
-
-.set sender_sp, -0x50
-.set saved_toc, -0x3C
-.set var_C, -0xC
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r4, off_5B9CD4(r2) # dword_63E56C
-                mr        r31, r3
-                stw       r30, var_8(r1)
-                lwz      	r30, off_5B9CD0(r2) # dword_64BAC0
-                stw       r29, var_C(r1)
-                li        r29, 0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r3, 0(r4)
-                cmplwi    r3, 0
-                beq       loc_1198
-
-loc_1164:                               # DATA XREF: seg000:005A1D98↓o
-                lwz       r3, 0x10(r3)
-                cmplwi    r3, 0
-                beq       loc_1198
-
-loc_1170:                               # DATA XREF: seg000:005AA054↓o
-                lwz       r3, 0xC(r3)
-                cmplwi    r3, 0
-                beq       loc_1180
-                lbz       r29, 0xD(r3)
-
-loc_1180:                               # CODE XREF: CSimsApp::SuspendApp((void))+48↑j
-                li        r4, 0x15
-                li        r5, 0
-
-loc_1188:                               # DATA XREF: seg000:005AA03C↓o
-                li        r6, 0
-                li        r7, 0
-                li        r8, 0
-
-loc_1194:                               # DATA XREF: seg000:off_59B708↓o
-                bl        Event__5cBoxXFlllll # cBoxX::Event((long,long,long,long,long))
-
-loc_1198:                               # CODE XREF: CSimsApp::SuspendApp((void))+30↑j
-                                        # CSimsApp::SuspendApp((void))+3C↑j
-                                        # DATA XREF: ...
-                stb       r29, 0x3EC(r31)
-                mr        r3, r31
-                bl        SuspendApp__8CGameAppFv # CGameApp::SuspendApp((void))
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                li        r29, 0
-                cmplwi    r3, 0
-                beq       loc_11E4
-                lwz       r3, 0xA4(r3)
-                cmplwi    r3, 0
-                beq       loc_11E4
-                bl        GetMode__7CPStateFv # CPState::GetMode((void))
-                cmpwi     r3, 2
-
-loc_11C8:                               # DATA XREF: seg000:005AA168↓o
-                bne       loc_11E4
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                lwz       r3, 0xA4(r3)
-                bl        IsPaused__7CPStateFv # CPState::IsPaused((void))
-                clrlwi    r0, r3, 24
-                cntlzw    r0, r0
-                srwi      r29, r0, 5
-
-loc_11E4:                               # CODE XREF: CSimsApp::SuspendApp((void))+80↑j
-                                        # CSimsApp::SuspendApp((void))+8C↑j ...
-                clrlwi.   r0, r29, 24
-
-loc_11E8:                               # DATA XREF: seg000:005A6B8C↓o
-                bne       loc_1220
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                li        r4, 0
-                cmplwi    r3, 0
-                beq       loc_120C
-                lwz       r0, 0xD8(r3)
-                cmplwi    r0, 0
-                beq       loc_120C
-                li        r4, 1
-
-loc_120C:                               # CODE XREF: CSimsApp::SuspendApp((void))+C8↑j
-                                        # CSimsApp::SuspendApp((void))+D4↑j
-                clrlwi.   r0, r4, 24
-                bne       loc_1220
-                lis       r3, -0x8000
-                addi      r0, r3, -1 # 0x7FFFFFFF
-                stw       r0, 0x1C(r31)
-
-loc_1220:                               # CODE XREF: CSimsApp::SuspendApp((void)):loc_11E8↑j
-                                        # CSimsApp::SuspendApp((void))+E0↑j
-                lwz       r0, 0x3DC(r31)
-                cmplwi    r0, 0
-                bne       loc_1258
-                bl        GetMainHWND__8HWND_MacFv # HWND_Mac::GetMainHWND((void))
-                cmplwi    r3, 0
-
-loc_1234:                               # DATA XREF: seg000:005A112C↓o
-                beq       loc_1258
-                bl        IsFullScreen__11GameDisplayFv # GameDisplay::IsFullScreen((void))
-                clrlwi.   r0, r3, 24
-                beq       loc_1258
-                mr        r3, r31
-                lwz       r12, 0x3E0(r31)
-                lwz       r12, 0x50(r12)
-                bl        sub_599B50
-                lwz       r2, 0x50+saved_toc(r1)
-
-loc_1258:                               # CODE XREF: CSimsApp::SuspendApp((void))+F8↑j
-                                        # CSimsApp::SuspendApp((void)):loc_1234↑j ...
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                mtlr      r0
-                lwz       r29, var_C(r1)
-                blr
-# End of function CSimsApp::SuspendApp((void))
-
-# ---------------------------------------------------------------------------
-byte_1274:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 3, 0, 0, 0, 0, 1, 0x44, 0, 0x18, 0x2E, 0x53, 0x75, 0x73, 0x70, 0x65, 0x6E, 0x64, 0x41, 0x70, 0x70, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::DoMenuSetup((void))
-.global DoMenuSetup__8CSimsAppFv
-DoMenuSetup__8CSimsAppFv:		# DATA XREF: seg000:0059CDFC↓o
-                                        # seg001:off_5C4688↓o
-
-.set sender_sp, -0x50
-.set saved_toc, -0x3C
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lis       r4, 0x6162
-                addi      r31, r3, 0
-                stw       r0, sender_lr(r1)
-                addi      r4, r4, 0x6F75 # 0x61626F75
-                stwu      r1, sender_sp(r1)
-                li        r3, 0
-                bl        EnableMenuCommand
-                lwz       r2, 0x50+saved_toc(r1)
-                mr        r3, r31
-                bl        DoMenuSetup__8CGameAppFv # CGameApp::DoMenuSetup((void))
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                lwz       r31, var_4(r1)
-                mtlr      r0
-                blr
-# End of function CSimsApp::DoMenuSetup((void))
-
-# ---------------------------------------------------------------------------
-byte_12E4:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 1, 0, 0, 0, 0, 0, 0x44, 0, 0x19, 0x2E, 0x44, 0x6F, 0x4D, 0x65, 0x6E, 0x75, 0x53, 0x65, 0x74, 0x75, 0x70, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .byte 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::DoPreferences((void))
-.global DoPreferences__8CSimsAppFv
-DoPreferences__8CSimsAppFv:		# DATA XREF: seg001:off_5C4690↓o
-
-.set sender_sp, -0xA0
-.set saved_toc, -0x8C
-.set var_60, -0x60
-.set var_5C, -0x5C
-.set var_58, -0x58
-.set var_56, -0x56
-.set var_54, -0x54
-.set var_50, -0x50
-.set var_4C, -0x4C
-.set var_48, -0x48
-.set var_44, -0x44
-.set var_40, -0x40
-.set var_3C, -0x3C
-.set var_38, -0x38
-.set var_30, -0x30
-.set var_2C, -0x2C
-.set var_28, -0x28
-.set var_20, -0x20
-.set sender_lr,  8
-
-                stmw      r24, var_20(r1)
-                mflr      r0
-                lwz      	r30, off_5B9CD0(r2) # dword_64BAC0
-                mr        r27, r3
-                lwz      	r31, off_5B9CD4(r2) # dword_63E56C
-
-loc_1324:                               # DATA XREF: seg000:off_59B868↓o
-                lwz      	r26, off_5B9CD8(r2) # dword_635440
-                li        r28, 0
-                li        r25, 1
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-
-loc_1338:                               # DATA XREF: seg000:005ABC2C↓o
-                bl        GetMainHWND__8HWND_MacFv # HWND_Mac::GetMainHWND((void))
-                cmplwi    r3, 0
-                bne       loc_1354
-                bl        GetGameDisplayMode__11GameDisplayFv # GameDisplay::GetGameDisplayMode((void))
-                cmpwi     r3, 0
-                bne       loc_1354
-                li        r25, 0
-
-loc_1354:                               # CODE XREF: CSimsApp::DoPreferences((void))+30↑j
-                                        # CSimsApp::DoPreferences((void))+3C↑j
-                                        # DATA XREF: ...
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-
-loc_1358:                               # DATA XREF: seg000:0059B650↓o
-                li        r29, 0
-
-loc_135C:                               # DATA XREF: seg000:off_59B654↓o
-                                        # seg000:0059B658↓o ...
-                cmplwi    r3, 0
-                beq       loc_139C
-                lwz       r3, 0xA4(r3)
-                cmplwi    r3, 0
-                beq       loc_139C
-                bl        GetMode__7CPStateFv # CPState::GetMode((void))
-
-loc_1374:                               # DATA XREF: seg000:0059B86C↓o
-                                        # seg000:0059B870↓o ...
-                cmpwi     r3, 2
-
-loc_1378:                               # DATA XREF: cWinSubpanelFame::Init((void))+9AC↓o
-                                        # seg001:off_5C33A8↓o
-                bne       loc_139C
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                lwz       r3, 0xA4(r3)
-                bl        IsPaused__7CPStateFv # CPState::IsPaused((void))
-                lwz       r4, (dword_64BAC0 - 0x64BAC0)(r30)
-                mr        r29, r3
-                lwz       r3, 0xA4(r4)
-                li        r4, 1
-                bl        Pause__7CPStateFb # CPState::Pause((bool))
-
-loc_139C:                               # CODE XREF: CSimsApp::DoPreferences((void))+50↑j
-                                        # CSimsApp::DoPreferences((void))+5C↑j ...
-                lwz       r3, 0(r31)
-
-loc_13A0:                               # DATA XREF: seg000:0059B95C↓o
-                                        # seg000:0059B960↓o ...
-                li        r24, 0
-
-loc_13A4:                               # DATA XREF: seg000:off_59B920↓o
-                cmplwi    r3, 0
-                beq       loc_13E0
-                lwz       r3, 0x10(r3)
-                cmplwi    r3, 0
-                beq       loc_13E0
-                lwz       r3, 0xC(r3)
-                cmplwi    r3, 0
-                beq       loc_13C8
-                lbz       r24, 0xD(r3)
-
-loc_13C8:                               # CODE XREF: CSimsApp::DoPreferences((void))+B0↑j
-                li        r4, 0x15
-                li        r5, 0
-                li        r6, 0
-                li        r7, 0
-                li        r8, 0
-                bl        Event__5cBoxXFlllll # cBoxX::Event((long,long,long,long,long))
-
-loc_13E0:                               # CODE XREF: CSimsApp::DoPreferences((void))+98↑j
-                                        # CSimsApp::DoPreferences((void))+A4↑j
-                                        # DATA XREF: ...
-                mr        r3, r27
-                bl        GetPrefs__8CSimsAppFv # CSimsApp::GetPrefs((void))
-                lwz       r5, 0x3E8(r27)
-
-loc_13EC:                               # DATA XREF: seg000:off_59B990↓o
-                addi      r4, r1, 0xA0+var_5C
-                li        r3, 0x400
-                lwz       r0, 4(r5)
-                stw       r0, 0xA0+var_60(r1)
-                lwz       r0, 8(r5)
-
-loc_1400:                               # DATA XREF: seg000:00011AA1↓o
-                                        # seg000:000127B1↓o ...
-                stw       r0, 0xA0+var_5C(r1)
-
-loc_1404:                               # DATA XREF: seg000:0042B021↓o
-                                        # seg000:0042BD01↓o
-                lbz       r0, 1(r5)
-                extsb.    r0, r0
-                bne       loc_1414
-                li        r3, 0x320
-
-loc_1414:                               # CODE XREF: CSimsApp::DoPreferences((void))+FC↑j
-                sth       r3, 0xA0+var_58(r1)
-                addi      r5, r1, 0xA0+var_58
-                li        r7, 0x300
-                lwz       r3, 0x3E8(r27)
-                lbz       r0, 1(r3)
-                extsb.    r0, r0
-                bne       loc_1434
-                li        r7, 0x258
-
-loc_1434:                               # CODE XREF: CSimsApp::DoPreferences((void))+11C↑j
-                li        r3, 0x10
-                sth       r7, 0xA0+var_56(r1)
-                clrlwi    r0, r25, 24
-                addi      r6, r1, 0xA0+var_56
-                sth       r3, 0xA0+var_54(r1)
-                cntlzw    r0, r0
-                srwi      r9, r0, 5
-
-loc_1450:                               # DATA XREF: seg001:off_6256A0↓o
-                                        # seg001:off_6262A0↓o
-                addi      r7, r1, 0xA0+var_54
-
-loc_1454:                               # DATA XREF: seg001:006256B4↓o
-                                        # seg001:006262B4↓o
-                lwz       r11, 0x3E8(r27)
-
-loc_1458:                               # DATA XREF: seg001:off_622614↓o
-                                        # seg001:off_624080↓o ...
-                li        r0, 1
-
-loc_145C:                               # DATA XREF: seg001:00622620↓o
-                addi      r8, r1, 0xA0+var_50
-                lwz       r10, 0xC(r11)
-                addi      r3, r1, 0xA0+var_60
-                stw       r10, 0xA0+var_50(r1)
-                lwz       r10, 0x10(r11)
-                stw       r10, 0xA0+var_4C(r1)
-                lwz       r10, 0x14(r11)
-                stw       r10, 0xA0+var_48(r1)
-                stw       r0, 0xA0+var_44(r1)
-                bl        MacSimsPreferencesDialog__FPQ211GameDisplay15GameDisplayModePUlPsPsPsPlb # MacSimsPreferencesDialog(GameDisplay::GameDisplayMode *,ulong *,short *,short *,short *,long *,bool)
-                clrlwi.   r0, r3, 24
-
-loc_1488:                               # DATA XREF: seg000:005AA00C↓o
-                beq       loc_15E4
-                lha       r5, 0xA0+var_58(r1)
-                lwz       r3, 0x3E8(r27)
-
-loc_1494:                               # DATA XREF: seg000:005AABDC↓o
-                subfic    r4, r5, 0x320
-                addi      r0, r5, -0x320
-                or        r0, r4, r0
-                srwi      r0, r0, 31
-                stb       r0, 1(r3)
-                lwz       r0, 0xA0+var_60(r1)
-                lwz       r3, 0x3E8(r27)
-                stw       r0, 4(r3)
-
-loc_14B4:                               # DATA XREF: seg000:005AB3F8↓o
-                lwz       r0, 0xA0+var_5C(r1)
-
-loc_14B8:                               # DATA XREF: cWinNeighborhoodUL::Init((void))+36C↓o
-                                        # cWinNeighborhoodUL::Init((void))+378↓o ...
-                lwz       r3, 0x3E8(r27)
-                stw       r0, 8(r3)
-                lwz       r0, 0xA0+var_50(r1)
-
-loc_14C4:                               # DATA XREF: seg000:005AB9BC↓o
-                lwz       r3, 0x3E8(r27)
-                stw       r0, 0xC(r3)
-                lwz       r4, 0x3E8(r27)
-                cmplwi    r4, 0
-                beq       loc_14F0
-
-loc_14D8:                               # DATA XREF: seg000:005ABD04↓o
-                lwz       r3, (dword_635440 - 0x635440)(r26)
-                li        r5, 0x18
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x44(r12)
-                bl        sub_599B50
-                lwz       r2, 0xA0+saved_toc(r1)
-
-loc_14F0:                               # CODE XREF: CSimsApp::DoPreferences((void))+1C4↑j
-                                        # DATA XREF: seg000:005B2B08↓o
-                clrlwi.   r0, r25, 24
-                beq       loc_15A0
-                lwz       r0, 0x3DC(r27)
-                cmplwi    r0, 0
-                beq       loc_1520
-                addi      r3, r27, 0
-
-loc_1508:                               # DATA XREF: seg000:0059F1C4↓o
-                addi      r4, r1, 0xA0+var_60
-                lwz       r12, 0x3E0(r27)
-                lwz       r12, 0x58(r12)
-                bl        sub_599B50
-                lwz       r2, 0xA0+saved_toc(r1)
-                b         loc_15A0
-# ---------------------------------------------------------------------------
-
-loc_1520:                               # CODE XREF: CSimsApp::DoPreferences((void))+1F0↑j
-                addi      r3, r1, 0xA0+var_60
-                bl        SetGameDisplay__11GameDisplayFPCQ211GameDisplay15GameDisplayInfo # GameDisplay::SetGameDisplay((GameDisplay::GameDisplayInfo const *))
-                mr        r3, r27
-
-loc_152C:                               # DATA XREF: seg000:005A4E7C↓o
-                bl        GetPrefs__8CSimsAppFv # CSimsApp::GetPrefs((void))
-                addi      r25, r3, 0
-                addi      r3, r1, 0xA0+var_40
-                bl        GetGameDisplayInfo__11GameDisplayFPQ211GameDisplay15GameDisplayInfo # GameDisplay::GetGameDisplayInfo((GameDisplay::GameDisplayInfo *))
-                lha       r4, 0xA0+var_38(r1)
-                subfic    r3, r4, 0x320
-                addi      r0, r4, -0x320
-                or        r0, r3, r0
-                srwi      r0, r0, 31
-                stb       r0, 1(r25)
-                lwz       r0, 0xA0+var_40(r1)
-                stw       r0, 4(r25)
-                lwz       r0, 0xA0+var_3C(r1)
-                stw       r0, 8(r25)
-                lwz       r0, 0xA0+var_30(r1)
-                stw       r0, 0xC(r25)
-                lwz       r0, 0xA0+var_2C(r1)
-                stw       r0, 0x10(r25)
-                lwz       r0, 0xA0+var_28(r1)
-                stw       r0, 0x14(r25)
-                lwz       r4, 0x3E8(r27)
-
-loc_1580:                               # DATA XREF: seg000:005A4A5C↓o
-                cmplwi    r4, 0
-                beq       loc_15A0
-                lwz       r3, (dword_635440 - 0x635440)(r26)
-                li        r5, 0x18
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x44(r12)
-                bl        sub_599B50
-                lwz       r2, 0xA0+saved_toc(r1)
-
-loc_15A0:                               # CODE XREF: CSimsApp::DoPreferences((void))+1E4↑j
-                                        # CSimsApp::DoPreferences((void))+20C↑j ...
-                li        r25, 0
-                bl        IsWindow__11GameDisplayFv # GameDisplay::IsWindow((void))
-                clrlwi.   r0, r3, 24
-                bne       loc_15BC
-                bl        AreWeOnX__Fv # AreWeOnX(void)
-                clrlwi.   r0, r3, 24
-                beq       loc_15C0
-
-loc_15BC:                               # CODE XREF: CSimsApp::DoPreferences((void))+29C↑j
-                li        r25, 1
-
-loc_15C0:                               # CODE XREF: CSimsApp::DoPreferences((void))+2A8↑j
-                mr        r3, r27
-                lwz       r12, 0x3E0(r27)
-                mr        r4, r25
-                lwz       r12, 0x30(r12)
-                bl        sub_599B50
-                lwz       r2, 0xA0+saved_toc(r1)
-                bl        IsFullScreen__11GameDisplayFv # GameDisplay::IsFullScreen((void))
-                stb       r3, 0xA(r27)
-                li        r28, 1
-
-loc_15E4:                               # CODE XREF: CSimsApp::DoPreferences((void)):loc_1488↑j
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                cmplwi    r3, 0
-                beq       loc_1624
-                lwz       r3, 0xA4(r3)
-                cmplwi    r3, 0
-                beq       loc_1624
-                bl        GetMode__7CPStateFv # CPState::GetMode((void))
-                cmpwi     r3, 2
-                bne       loc_1624
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                lwz       r3, 0xA4(r3)
-                bl        IsPaused__7CPStateFv # CPState::IsPaused((void))
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r30)
-                mr        r4, r29
-                lwz       r3, 0xA4(r3)
-                bl        Pause__7CPStateFb # CPState::Pause((bool))
-
-loc_1624:                               # CODE XREF: CSimsApp::DoPreferences((void))+2DC↑j
-                                        # CSimsApp::DoPreferences((void))+2E8↑j ...
-                lwz       r3, 0(r31)
-                cmplwi    r3, 0
-                beq       loc_1664
-                lwz       r3, 0x10(r3)
-                cmplwi    r3, 0
-                beq       loc_1664
-                clrlwi.   r0, r24, 24
-                lwz       r3, 0xC(r3)
-                li        r4, 0x16
-                beq       loc_1650
-                li        r4, 0x15
-
-loc_1650:                               # CODE XREF: CSimsApp::DoPreferences((void))+338↑j
-                li        r5, 0
-                li        r6, 0
-                li        r7, 0
-                li        r8, 0
-                bl        Event__5cBoxXFlllll # cBoxX::Event((long,long,long,long,long))
-
-loc_1664:                               # CODE XREF: CSimsApp::DoPreferences((void))+31C↑j
-                                        # CSimsApp::DoPreferences((void))+328↑j
-                mr        r3, r28
-                lwz       r0, 0xA0+sender_lr(r1)
-                addi      r1, r1, 0xA0
-                mtlr      r0
-                lmw       r24, var_20(r1)
-                blr
-# End of function CSimsApp::DoPreferences((void))
-
-# ---------------------------------------------------------------------------
-unk_167C:       .byte    0              # DATA XREF: seg000:005A0148↓o
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte 9, 0x20, 0x41
-                .byte 0x80
-                .byte 8, 0, 0
-                .byte    0
-                .byte    0
-                .byte    3
-                .byte 0x6C # l
-                .byte    0
-                .byte 0x1B
-                .byte 0x2E # .
-                .byte 0x44 # D
-aOpreferences8c:.string "oPreferences__8CSimsAppFv"
-                                        # DATA XREF: seg000:005A8278↓o
-                .byte 0
-                .short 0
-                .long 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# _DWORD IsLoading(void)
-.global IsLoading__Fv
-IsLoading__Fv:		# CODE XREF: IFFResFile2::LoadNode((IFFResNode *,void (*)(void *,long),long))+24↓p
-                                        # IFFResFile3::LoadNode((IFFResNode2 *,void (*)(void *,long),long))+24↓p
-                lwz      	r4, off_5B9CD0(r2) # dword_64BAC0
-                li        r3, 0
-                lwz       r4, (dword_64BAC0 - 0x64BAC0)(r4)
-                cmplwi    r4, 0
-                beqlr
-                lwz       r0, 0xD8(r4)
-                cmplwi    r0, 0
-                beqlr
-
-loc_16D0:                               # DATA XREF: seg000:005A5D94↓o
-                li        r3, 1
-                blr
-# End of function IsLoading(void)
-
-# ---------------------------------------------------------------------------
-byte_16D8:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x40, 0, 0, 0, 0, 0, 0, 0, 0x28, 0, 0xE, 0x2E, 0x49, 0x73, 0x4C, 0x6F, 0x61, 0x64, 0x69, 0x6E, 0x67, 0x5F, 0x5F, 0x46, 0x76
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# _DWORD IsSimming(void)
-.global IsSimming__Fv
-IsSimming__Fv:		# CODE XREF: CGameApp::UnpauseGameToMode((GameDisplay::GameDisplayInfo *)):loc_6C14↓p
-                                        # CGameApp::PauseGame((void))+118↓p
-                                        # DATA XREF: ...
-
-.set sender_sp, -0x50
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r31, off_5B9CD0(r2) # dword_64BAC0
-                stw       r30, var_8(r1)
-                li        r30, 0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r31)
-                cmplwi    r3, 0
-                beq       loc_175C
-                lwz       r3, 0xA4(r3)
-                cmplwi    r3, 0
-                beq       loc_175C
-                bl        GetMode__7CPStateFv # CPState::GetMode((void))
-                cmpwi     r3, 2
-                bne       loc_175C
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r31)
-                lwz       r3, 0xA4(r3)
-                bl        IsPaused__7CPStateFv # CPState::IsPaused((void))
-                clrlwi    r0, r3, 24
-                cntlzw    r0, r0
-                srwi      r0, r0, 5
-                mr        r30, r0
-
-loc_175C:                               # CODE XREF: IsSimming(void)+24↑j
-                                        # IsSimming(void)+30↑j ...
-                mr        r3, r30
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                mtlr      r0
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                blr
-# End of function IsSimming(void)
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 2, 0, 0, 0, 0, 0, 0x78, 0, 0xE, 0x2E, 0x49, 0x73, 0x53, 0x69, 0x6D, 0x6D, 0x69, 0x6E, 0x67, 0x5F, 0x5F, 0x46, 0x76
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::DoAboutBox((void))
-.global DoAboutBox__8CSimsAppFv
-DoAboutBox__8CSimsAppFv:		# DATA XREF: seg000:0059CE20↓o
-                                        # seg001:off_5C4680↓o
-
-.set sender_sp, -0x160
-.set saved_toc, -0x14C
-.set var_120, -0x120
-.set var_11E, -0x11E
-.set var_11C, -0x11C
-.set var_118, -0x118
-.set var_110, -0x110
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                li        r3, 0x2711
-                stw       r30, var_8(r1)
-                li        r4, 0
-                li        r5, -1
-                stw       r0, sender_lr(r1)
-                li        r0, 0
-                stwu      r1, sender_sp(r1)
-                sth       r0, 0x160+var_120(r1)
-                bl        GetNewDialog
-                lwz       r2, 0x160+saved_toc(r1)
-                mr.       r30, r3
-                beq       loc_18B0
-                bl        GetDialogWindow
-                lwz       r2, 0x160+saved_toc(r1)
-                addi      r4, r1, 0x160+var_110
-                bl        GetWTitle
-                lwz       r2, 0x160+saved_toc(r1)
-                addi      r3, r1, 0x160+var_110 # char *
-                bl        FormatPStringWithGameName__FPUc # FormatPStringWithGameName(uchar *)
-                mr        r3, r30
-                bl        GetDialogWindow
-                lwz       r2, 0x160+saved_toc(r1)
-
-loc_1800:                               # DATA XREF: seg000:00015875↓o
-                                        # seg000:00094B25↓o ...
-                addi      r4, r1, 0x160+var_110
-                bl        SetWTitle
-                lwz       r2, 0x160+saved_toc(r1)
-                addi      r3, r30, 0
-                addi      r5, r1, 0x160+var_11E
-                addi      r6, r1, 0x160+var_11C
-                addi      r7, r1, 0x160+var_118
-                li        r4, 4
-                bl        GetDialogItem
-                lwz       r2, 0x160+saved_toc(r1)
-                lwz      	r4, off_5B9CD8(r2) # dword_635440
-                lwz       r3, 0x160+var_11C(r1)
-                lwz       r4, (dword_635440 - 0x635440)(r4)
-                addi      r4, r4, 0x9E
-                bl        SetDialogItemText
-                lwz       r2, 0x160+saved_toc(r1)
-                addi      r3, r30, 0
-                li        r4, 1
-                bl        SetDialogDefaultItem
-                lwz       r2, 0x160+saved_toc(r1)
-                lwz      	r3, off_5B9CCC(r2) # off_5C4668
-                bl        NewModalFilterUPP
-                lwz       r2, 0x160+saved_toc(r1)
-                mr        r31, r3
-                bl        InitCursor
-                lwz       r2, 0x160+saved_toc(r1)
-                mr        r3, r30
-                bl        GetDialogWindow
-                lwz       r2, 0x160+saved_toc(r1)
-                bl        ShowWindow
-                lwz       r2, 0x160+saved_toc(r1)
-
-loc_187C:                               # CODE XREF: CSimsApp::DoAboutBox((void))+F4↓j
-                addi      r3, r31, 0
-                addi      r4, r1, 0x160+var_120
-                bl        ModalDialog
-                lwz       r2, 0x160+saved_toc(r1)
-                lha       r0, 0x160+var_120(r1)
-                cmpwi     r0, 1
-                bne       loc_187C
-                mr        r3, r30
-                bl        DisposeDialog
-
-loc_18A0:                               # DATA XREF: seg000:005A5DDC↓o
-                lwz       r2, 0x160+saved_toc(r1)
-                mr        r3, r31
-                bl        DisposeModalFilterUPP
-                lwz       r2, 0x160+saved_toc(r1)
-
-loc_18B0:                               # CODE XREF: CSimsApp::DoAboutBox((void))+34↑j
-                lwz       r0, 0x160+sender_lr(r1)
-                addi      r1, r1, 0x160
-                lwz       r31, var_4(r1)
-                mtlr      r0
-                lwz       r30, var_8(r1)
-                blr
-# End of function CSimsApp::DoAboutBox((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 2, 0, 0, 0, 0, 1, 0x28, 0, 0x18, 0x2E, 0x44, 0x6F, 0x41, 0x62, 0x6F, 0x75, 0x74, 0x42, 0x6F, 0x78, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-                .long 0, 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::DoQuit((void))
-.global DoQuit__8CSimsAppFv
-DoQuit__8CSimsAppFv:		# DATA XREF: seg000:0059CE2C↓o
-                                        # seg001:off_5C4678↓o
-
-.set sender_sp, -0x40
-.set saved_toc, -0x2C
-.set sender_lr,  8
-
-                mflr      r0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x54(r12)
-                bl        sub_599B50
-                lwz       r2, 0x40+saved_toc(r1)
-                lwz      	r3, off_5B9CD0(r2) # dword_64BAC0
-                lwz       r3, (dword_64BAC0 - 0x64BAC0)(r3)
-                lwz       r12, 0(r3)
-                lwz       r12, 0xE4(r12)
-                bl        sub_599B50
-                lwz       r2, 0x40+saved_toc(r1)
-                lwz       r0, 0x40+sender_lr(r1)
-                addi      r1, r1, 0x40
-                mtlr      r0
-                blr
-# End of function CSimsApp::DoQuit((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 0, 0, 0, 0, 0, 0, 0x44, 0, 0x14, 0x2E, 0x44, 0x6F, 0x51, 0x75, 0x69, 0x74, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-                .long 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-.global GameLibModalFilterProc
-GameLibModalFilterProc:		# DATA XREF: seg000:0059CE38↓o
-                                        # seg001:off_5C4668↓o
-
-.set sender_sp, -0x50
-.set saved_toc, -0x3C
-.set var_C, -0xC
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                lwz      	r6, off_5B9CD8(r2) # dword_635440
-                mr        r31, r5
-                stw       r30, var_8(r1)
-                addi      r30, r4, 0
-                stw       r29, var_C(r1)
-                addi      r29, r3, 0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lwz       r3, (dword_635440 - 0x635440)(r6)
-                lwz       r12, 0x3E0(r3)
-                lwz       r12, 0x2C(r12)
-                bl        sub_599B50
-                lwz       r2, 0x50+saved_toc(r1)
-                clrlwi.   r0, r3, 24
-                beq       loc_19BC
-                li        r3, 1
-                b         loc_19D0
-# ---------------------------------------------------------------------------
-
-loc_19BC:                               # CODE XREF: .GameLibModalFilterProc+40↑j
-                addi      r3, r29, 0
-                addi      r4, r30, 0
-                addi      r5, r31, 0
-                bl        StdFilterProc
-                lwz       r2, 0x50+saved_toc(r1)
-
-loc_19D0:                               # CODE XREF: .GameLibModalFilterProc+48↑j
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                mtlr      r0
-
-loc_19E4:                               # DATA XREF: seg000:005A4BC4↓o
-                lwz       r29, var_C(r1)
-                blr
-# End of function .GameLibModalFilterProc
-
-# ---------------------------------------------------------------------------
-byte_19EC:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 3, 0, 0, 0, 0, 0, 0x7C, 0, 0x17, 0x2E, 0x47, 0x61, 0x6D, 0x65, 0x4C, 0x69, 0x62, 0x4D, 0x6F, 0x64, 0x61, 0x6C, 0x46, 0x69, 0x6C, 0x74, 0x65, 0x72, 0x50, 0x72, 0x6F, 0x63
-                                        # DATA XREF: seg000:005A922C↓o
-                .byte 0, 0, 0
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::ForceGameToRefresh((void))
-.global ForceGameToRefresh__8CSimsAppFv
-ForceGameToRefresh__8CSimsAppFv:		# CODE XREF: CGameApp::UnpauseGameToMode((GameDisplay::GameDisplayInfo *))+88↓p
-                                        # CGameApp::PauseGame((void))+13C↓p
-                                        # DATA XREF: ...
-
-.set sender_sp, -0x60
-.set var_20, -0x20
-.set var_10, -0x10
-.set var_C, -0xC
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                stw       r30, var_8(r1)
-                lwz      	r30, off_5B9CD4(r2) # dword_63E56C
-                stw       r29, var_C(r1)
-                lwz      	r29, off_5B9CC8(r2) # dword_620E24
-                stw       r28, var_10(r1)
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                lbz       r0, 0xC(r3)
-                cmplwi    r0, 0
-                bne       loc_1B38
-                lwz       r3, 0(r30)
-                cmplwi    r3, 0
-                beq       loc_1B38
-                lwz       r3, 0x2C(r3)
-                cmplwi    r3, 0
-                beq       loc_1B38
-                bl        GetBuffDims__10AnimDeviceCFv # AnimDevice::GetBuffDims(const(void))
-                lwz       r4, 0(r30)
-                mr        r31, r3
-                lwz       r3, 0x2C(r4)
-                bl        GetBuffDims__10AnimDeviceCFv # AnimDevice::GetBuffDims(const(void))
-                lwz       r6, 0(r3)
-                addi      r3, r1, 0x60+var_20
-                lwz       r7, 4(r31)
-                li        r4, 0
-                li        r5, 0
-                bl        SetRect_Win32
-                lwz       r3, 0(r30)
-                lwz       r3, 0x2C(r3)
-                bl        GetCurrentDamage__10AnimDeviceFv # AnimDevice::GetCurrentDamage((void))
-                lwz       r0, 0(r29)
-                addi      r28, r3, 0
-                cmpwi     r0, 0
-                beq       loc_1ADC
-                bl        end__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::end((void))
-                addi      r31, r3, 0
-                addi      r3, r28, 0
-                bl        begin__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::begin((void))
-                addi      r4, r3, 0
-                addi      r3, r28, 0
-                addi      r5, r31, 0
-                bl        erase__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__FP7tagRECTP7tagRECT # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::erase((tagRECT *,tagRECT *))
-                li        r0, 0
-                stw       r0, 0xC(r28)
-                stw       r0, 0x10(r28)
-
-loc_1ADC:                               # CODE XREF: CSimsApp::ForceGameToRefresh((void))+8C↑j
-                lwz       r3, 0(r30)
-                lwz       r3, 0x2C(r3)
-                bl        GetPreviousDamage__10AnimDeviceFv # AnimDevice::GetPreviousDamage((void))
-                lwz       r0, 0(r29)
-                addi      r29, r3, 0
-                cmpwi     r0, 0
-                beq       loc_1B24
-                bl        end__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::end((void))
-                addi      r31, r3, 0
-                addi      r3, r29, 0
-                bl        begin__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::begin((void))
-                addi      r4, r3, 0
-                addi      r3, r29, 0
-                addi      r5, r31, 0
-                bl        erase__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__FP7tagRECTP7tagRECT # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::erase((tagRECT *,tagRECT *))
-                li        r0, 0
-                stw       r0, 0xC(r29)
-                stw       r0, 0x10(r29)
-
-loc_1B24:                               # CODE XREF: CSimsApp::ForceGameToRefresh((void))+D4↑j
-                lwz       r3, 0(r30)
-                lwz       r3, 0x2C(r3)
-                bl        GetCurrentDamage__10AnimDeviceFv # AnimDevice::GetCurrentDamage((void))
-                addi      r4, r1, 0x60+var_20
-                bl        Add__13DDDDamageListFRC7tagRECT # DDDDamageList::Add((tagRECT const &))
-
-loc_1B38:                               # CODE XREF: CSimsApp::ForceGameToRefresh((void))+2C↑j
-                                        # CSimsApp::ForceGameToRefresh((void))+38↑j ...
-                lwz       r0, 0x60+sender_lr(r1)
-                addi      r1, r1, 0x60
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                mtlr      r0
-                lwz       r29, var_C(r1)
-                lwz       r28, var_10(r1)
-                blr
-# End of function CSimsApp::ForceGameToRefresh((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 4, 0, 0, 0, 0, 1, 0x38, 0, 0x20, 0x2E, 0x46, 0x6F, 0x72, 0x63, 0x65, 0x47, 0x61, 0x6D, 0x65, 0x54, 0x6F, 0x52, 0x65, 0x66, 0x72, 0x65, 0x73, 0x68, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73
-                .byte 0x41, 0x70, 0x70, 0x46, 0x76
-                .short 0
-                .long 0
-# .rename .erase__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__FP7tagRECTP7tagRECT, ".erase__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>FP7tagRECTP7tagRECT"
-
-# =============== S U B R O U T I N E =======================================
-
-
-# std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::erase((tagRECT *, tagRECT *))
-.erase__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__FP7tagRECTP7tagRECT:
-                                        # CODE XREF: CSimsApp::ForceGameToRefresh((void))+AC↑p
-                                        # CSimsApp::ForceGameToRefresh((void))+F4↑p ...
-
-.set sender_sp, -0x40
-.set sender_lr,  8
-
-                mflr      r0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bl        erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT
-                lwz       r0, 0x40+sender_lr(r1)
-                addi      r1, r1, 0x40
-                mtlr      r0
-                blr
-# End of function std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::erase((tagRECT *,tagRECT *))
-
-# ---------------------------------------------------------------------------
-byte_1BB0:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 0, 0, 0, 0, 0, 0, 0x20, 0, 0x4F, 0x2E, 0x65, 0x72, 0x61, 0x73, 0x65, 0x5F, 0x5F, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x34, 0x34, 0x76, 0x65, 0x63, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67
-                .byte 0x52, 0x45, 0x43, 0x54, 0x2C, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x31, 0x39, 0x61, 0x6C, 0x6C, 0x6F, 0x63, 0x61, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54, 0x3E, 0x3E, 0x46, 0x50, 0x37, 0x74, 0x61, 0x67
-                .byte 0x52, 0x45, 0x43, 0x54, 0x50, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54
-                .byte 0, 0, 0
-                .long 0, 0, 0
-# .rename .end__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv, ".end__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
-
-# =============== S U B R O U T I N E =======================================
-
-
-# std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::end((void))
-.end__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv:
-                                        # CODE XREF: CSimsApp::ForceGameToRefresh((void))+90↑p
-                                        # CSimsApp::ForceGameToRefresh((void))+D8↑p ...
-
-.set sender_sp, -0x50
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                mr        r31, r3
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bl        data__Q23std54__vector_deleter_7tagRECT_Q23std19allocator_7tagRECT__Fv
-                lwz       r0, 4(r31)
-                lwz       r3, 0(r3)
-                slwi      r0, r0, 4
-                add       r3, r3, r0
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                mtlr      r0
-                lwz       r31, var_4(r1)
-                blr
-# End of function std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::end((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 1, 0, 0, 0, 0, 0, 0x3C, 0, 0x3C, 0x2E, 0x65, 0x6E, 0x64, 0x5F, 0x5F, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x34, 0x34, 0x76, 0x65, 0x63, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45
-                .byte 0x43, 0x54, 0x2C, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x31, 0x39, 0x61, 0x6C, 0x6C, 0x6F, 0x63, 0x61, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54, 0x3E, 0x3E, 0x46, 0x76
-                .short 0
-                .long 0
-# .rename .data__Q23std54__vector_deleter_7tagRECT_Q23std19allocator_7tagRECT__Fv, ".data__Q23std54__vector_deleter<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
-
-# =============== S U B R O U T I N E =======================================
-
-
-.data__Q23std54__vector_deleter_7tagRECT_Q23std19allocator_7tagRECT__Fv:
-                                        # CODE XREF: std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::end((void))+14↑p
-                                        # std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::begin((void))+C↓p
-                addi      r3, r3, 8
-                blr
-# End of function .data__Q23std54__vector_deleter_7tagRECT_Q23std19allocator_7tagRECT__Fv
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x40, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0x47, 0x2E, 0x64, 0x61, 0x74, 0x61, 0x5F, 0x5F, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x35, 0x34, 0x5F, 0x5F, 0x76, 0x65, 0x63, 0x74, 0x6F, 0x72, 0x5F, 0x64, 0x65, 0x6C, 0x65
-                .byte 0x74, 0x65, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54, 0x2C, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x31, 0x39, 0x61, 0x6C, 0x6C, 0x6F, 0x63, 0x61, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54
-                .byte 0x3E, 0x3E, 0x46, 0x76
-                .byte 0, 0, 0
-dword_1D14:     .long 0, 0, 0           # DATA XREF: seg000:005A1CD8↓o
-# .rename .begin__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv, ".begin__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
-
-# =============== S U B R O U T I N E =======================================
-
-
-# std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::begin((void))
-.begin__Q23std44vector_7tagRECT_Q23std19allocator_7tagRECT__Fv:
-                                        # CODE XREF: CSimsApp::ForceGameToRefresh((void))+9C↑p
-                                        # CSimsApp::ForceGameToRefresh((void))+E4↑p ...
-
-.set sender_sp, -0x40
-.set sender_lr,  8
-
-                mflr      r0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bl        data__Q23std54__vector_deleter_7tagRECT_Q23std19allocator_7tagRECT__Fv
-                lwz       r3, 0(r3)
-                lwz       r0, 0x40+sender_lr(r1)
-                addi      r1, r1, 0x40
-                mtlr      r0
-                blr
-# End of function std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::begin((void))
-
-# ---------------------------------------------------------------------------
-byte_1D44:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 0, 0, 0, 0, 0, 0, 0x24, 0, 0x3E, 0x2E, 0x62, 0x65, 0x67, 0x69, 0x6E, 0x5F, 0x5F, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x34, 0x34, 0x76, 0x65, 0x63, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67
-                                        # DATA XREF: seg001:00617BC0↓o
-                .byte 0x52, 0x45, 0x43, 0x54, 0x2C, 0x51, 0x32, 0x33, 0x73, 0x74, 0x64, 0x31, 0x39, 0x61, 0x6C, 0x6C, 0x6F, 0x63, 0x61, 0x74, 0x6F, 0x72, 0x3C, 0x37, 0x74, 0x61, 0x67, 0x52, 0x45, 0x43, 0x54, 0x3E, 0x3E, 0x46, 0x76
-                .long 0, 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::~CSimsApp((void))
-.global __dt__8CSimsAppFv
-__dt__8CSimsAppFv:		# DATA XREF: seg000:0059CE74↓o
-                                        # seg001:off_5C4670↓o
-
-.set sender_sp, -0x50
-.set var_8, -8
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                addi      r31, r4, 0
-                stw       r30, var_8(r1)
-                mr.       r30, r3
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                beq       loc_1DE8
-                lwz      	r0, off_5B9CC4(r2) # off_5F8608
-                stw       r0, 0x3E0(r30)
-                bl        CloseMacRegistry__Fv # CloseMacRegistry(void)
-                addi      r3, r30, 0
-                li        r4, 0
-                bl        __dt__8CGameAppFv # CGameApp::~CGameApp((void))
-                extsh.    r0, r31
-                ble       loc_1DE8
-                mr        r3, r30
-                bl        __dl__8CGameAppFPv # CGameApp::__dl((void *))
-
-loc_1DE8:                               # CODE XREF: CSimsApp::~CSimsApp((void))+1C↑j
-                                        # CSimsApp::~CSimsApp((void))+3C↑j
-                mr        r3, r30
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                mtlr      r0
-                lwz       r31, var_4(r1)
-                lwz       r30, var_8(r1)
-                blr
-# End of function CSimsApp::~CSimsApp((void))
-
-# ---------------------------------------------------------------------------
-                .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 2, 0, 0, 0, 0, 0, 0x64, 0, 0x12, 0x2E, 0x5F, 0x5F, 0x64, 0x74, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .long 0, 0
-
-# =============== S U B R O U T I N E =======================================
-
-
-# CSimsApp::CSimsApp((void))
-.global __ct__8CSimsAppFv
-__ct__8CSimsAppFv:		# CODE XREF: .main+30↓p
-                                        # DATA XREF: seg000:0059CE80↓o
-
-.set sender_sp, -0x50
-.set var_4, -4
-.set sender_lr,  8
-
-                stw       r31, var_4(r1)
-                mflr      r0
-                mr        r31, r3
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bl        __ct__8CGameAppFv # CGameApp::CGameApp((void))
-                lwz      	r0, off_5B9CC4(r2) # off_5F8608
-                stw       r0, 0x3E0(r31)
-                bl        InitMacRegistry__Fv # InitMacRegistry(void)
-                li        r0, 0
-                stb       r0, 8(r31)
-                mr        r3, r31
-                stb       r0, 0xA(r31)
-                stw       r0, 0x3E4(r31)
-                stw       r0, 0x3E8(r31)
-                stb       r0, 0x3EC(r31)
-                lwz       r0, 0x50+sender_lr(r1)
-                addi      r1, r1, 0x50
-                mtlr      r0
-                lwz       r31, var_4(r1)
-                blr
-# End of function CSimsApp::CSimsApp((void))
-
-# ---------------------------------------------------------------------------
-byte_1E84:      .byte 0, 0, 0, 0, 0, 9, 0x20, 0x41, 0x80, 1, 0, 0, 0, 0, 0, 0x54, 0, 0x12, 0x2E, 0x5F, 0x5F, 0x63, 0x74, 0x5F, 0x5F, 0x38, 0x43, 0x53, 0x69, 0x6D, 0x73, 0x41, 0x70, 0x70, 0x46, 0x76
-                .long 0, 0
-# .rename .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT, ".erase__Q23std52__vector_imp<7tagRECT,Q23std19allocator<7tagRECT>,0>FP7tagRECTP7tagRECT"
-
-# =============== S U B R O U T I N E =======================================
-
-
-.erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT:
-                                        # CODE XREF: std::vector<7tagRECT,Q23std19allocator<7tagRECT>>::erase((tagRECT *,tagRECT *))+C↑p
-                                        # HouseViewer::BuildStaticClearRegion((void))+48↓p ...
-
-.set sender_sp, -0x60
-.set var_14, -0x14
-.set sender_lr,  8
-
-                stmw      r27, var_14(r1)
-                mflr      r0
-                addi      r28, r4, 0
-                addi      r29, r5, 0
-                cmplw     r28, r29
-                addi      r27, r3, 0
-                stw       r0, sender_lr(r1)
-                stwu      r1, sender_sp(r1)
-                bne       loc_1EDC
-                mr        r3, r28
-                b         loc_1F48
-# ---------------------------------------------------------------------------
-
-loc_1EDC:                               # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+20↑j
-                lwz       r0, 4(r27)
-                lwz       r3, 8(r27)
-                slwi      r0, r0, 4
-                add       r31, r3, r0
-                subf      r0, r29, r31
-                srawi     r0, r0, 4
-                addze.    r30, r0
-
-loc_1EF8:                               # DATA XREF: seg000:005A7888↓o
-                beq       loc_1F0C
-                addi      r3, r29, 0
-                addi      r4, r31, 0
-                addi      r5, r28, 0
-                bl        copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT
-
-loc_1F0C:                               # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT:loc_1EF8↑j
-                slwi      r0, r30, 4
-                add       r30, r28, r0
-                b         loc_1F24
-# ---------------------------------------------------------------------------
-
-loc_1F18:                               # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+78↓j
-                mr        r3, r27
-                bl        first__Q310Metrowerks7details53compressed_pair_imp_Q23std19allocator_7tagRECT__Ul_1_Fv # Metrowerks::details::compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>::first((void))
-                addi      r30, r30, 0x10
-
-loc_1F24:                               # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+64↑j
-                cmplw     r30, r31
-                blt       loc_1F18
-                subf      r3, r28, r29
-                lwz       r0, 4(r27)
-                srawi     r3, r3, 4
-                addze     r3, r3
-                subf      r0, r3, r0
-                stw       r0, 4(r27)
-                mr        r3, r28
-
-loc_1F48:                               # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+28↑j
-                lwz       r0, 0x60+sender_lr(r1)
-                addi      r1, r1, 0x60
-                lmw       r27, var_14(r1)
-                mtlr      r0
-                blr
-# End of function .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT
-
-# ---------------------------------------------------------------------------
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    9
-                .byte 0x20
-                .byte 0x41 # A
-                .byte 0x80
-                .byte    5
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte 0xAC
-                .byte    0
-                .byte 0x57 # W
-aEraseQ23std52V:.string ".erase__Q23std52__vector_imp<7tagRECT,Q23std19allocator<7tagRECT>,0>FP7tagRECTP7tagRECT"
-                .byte 0
-                .byte    0
-                .byte    0
-                .long 0, 0
-# .rename .first__Q310Metrowerks7details53compressed_pair_imp_Q23std19allocator_7tagRECT__Ul_1_Fv, ".first__Q310Metrowerks7details53compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>Fv"
-
-# =============== S U B R O U T I N E =======================================
-
-
-# Metrowerks::details::compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>::first((void))
-.first__Q310Metrowerks7details53compressed_pair_imp_Q23std19allocator_7tagRECT__Ul_1_Fv:
-                                        # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+6C↑p
-                                        # .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECT+5C↓p
-                blr
-# End of function Metrowerks::details::compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>::first((void))
-
-# ---------------------------------------------------------------------------
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    9
-                .byte 0x20
-                .byte 0x40 # @
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    0
-                .byte    4
-                .byte    0
-                .byte 0x57 # W
-aFirstQ310metro_0:.string ".first__Q310Metrowerks7details53compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>Fv"
-                .byte 0
-                .byte    0
-                .byte    0
-# .rename .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT, ".copy__Q23std24__msl_copy<7tagRECT,0,0>FP7tagRECTP7tagRECTP7tagRECT"
-
-# =============== S U B R O U T I N E =======================================
-
-
-.copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT:
-                                        # CODE XREF: .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECTP7tagRECT+58↑p
-                                        # .erase__Q23std52__vector_imp_7tagRECT_Q23std19allocator_7tagRECT__0_FP7tagRECT+48↓p
-                addi      r6, r4, 0xF
-                cmplw     r3, r4
-                subf      r6, r3, r6
-                srwi      r6, r6, 4
-                bge       loc_2124
-                srwi.     r0, r6, 2
-                mtctr     r0
-                beq       loc_20F4
-
-loc_2060:                               # CODE XREF: .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT+A8↓j
-                lwz       r0, 0(r3)
-                stw       r0, 0(r5)
-                lwz       r0, 4(r3)
-                stw       r0, 4(r5)
-                lwz       r0, 8(r3)
-                stw       r0, 8(r5)
-                lwz       r0, 0xC(r3)
-                stw       r0, 0xC(r5)
-                lwz       r0, 0x10(r3)
-                stw       r0, 0x10(r5)
-                lwz       r0, 0x14(r3)
-
-loc_208C:                               # DATA XREF: seg000:005AADD4↓o
-                stw       r0, 0x14(r5)
-                lwz       r0, 0x18(r3)
-                stw       r0, 0x18(r5)
-                lwz       r0, 0x1C(r3)
-                stw       r0, 0x1C(r5)
-                lwz       r0, 0x20(r3)
-                stw       r0, 0x20(r5)
-                lwz       r0, 0x24(r3)
-                stw       r0, 0x24(r5)
-                lwz       r0, 0x28(r3)
-                stw       r0, 0x28(r5)
-                lwz       r0, 0x2C(r3)
-                stw       r0, 0x2C(r5)
-                lwz       r0, 0x30(r3)
-                stw       r0, 0x30(r5)
-                lwz       r0, 0x34(r3)
-                stw       r0, 0x34(r5)
-                lwz       r0, 0x38(r3)
-                stw       r0, 0x38(r5)
-                lwz       r0, 0x3C(r3)
-                addi      r3, r3, 0x40 # '@'
-                stw       r0, 0x3C(r5)
-                addi      r5, r5, 0x40 # '@'
-                bdnz      loc_2060
-                andi.     r6, r6, 3
-                beq       loc_2124
-
-loc_20F4:                               # CODE XREF: .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT+1C↑j
-                mtctr     r6
-
-loc_20F8:                               # CODE XREF: .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT+E0↓j
-                lwz       r0, 0(r3)
-                stw       r0, 0(r5)
-                lwz       r0, 4(r3)
-                stw       r0, 4(r5)
-                lwz       r0, 8(r3)
-                stw       r0, 8(r5)
-                lwz       r0, 0xC(r3)
-                addi      r3, r3, 0x10
-                stw       r0, 0xC(r5)
-                addi      r5, r5, 0x10
-                bdnz      loc_20F8
-
-loc_2124:                               # CODE XREF: .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT+10↑j
-                                        # .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT+B0↑j
-                mr        r3, r5
-                blr
-# End of function .copy__Q23std24__msl_copy_7tagRECT_0_0_FP7tagRECTP7tagRECTP7tagRECT
+.set r0, 0
+.set r1, 1
+.set r2, 2
+.set r3, 3
+.set r4, 4
+.set r5, 5
+.set r6, 6
+.set r7, 7
+.set r8, 8
+.set r9, 9
+.set r10, 10
+.set r11, 11
+.set r12, 12
+.set r13, 13
+.set r14, 14
+.set r15, 15
+.set r16, 16
+.set r17, 17
+.set r18, 18
+.set r19, 19
+.set r20, 20
+.set r21, 21
+.set r22, 22
+.set r23, 23
+.set r24, 24
+.set r25, 25
+.set r26, 26
+.set r27, 27
+.set r28, 28
+.set r29, 29
+.set r30, 30
+.set r31, 31
+.set f0, 0
+.set f1, 1
+.set f2, 2
+.set f3, 3
+.set f4, 4
+.set f5, 5
+.set f6, 6
+.set f7, 7
+.set f8, 8
+.set f9, 9
+.set f10, 10
+.set f11, 11
+.set f12, 12
+.set f13, 13
+.set f14, 14
+.set f15, 15
+.set f16, 16
+.set f17, 17
+.set f18, 18
+.set f19, 19
+.set f20, 20
+.set f21, 21
+.set f22, 22
+.set f23, 23
+.set f24, 24
+.set f25, 25
+.set f26, 26
+.set f27, 27
+.set f28, 28
+.set f29, 29
+.set f30, 30
+.set f31, 31
+.set qr0, 0
+.set qr1, 1
+.set qr2, 2
+.set qr3, 3
+.set qr4, 4
+.set qr5, 5
+.set qr6, 6
+.set qr7, 7
+
+.global ".SetUseWNE__8CGameAppFb"
+".SetUseWNE__8CGameAppFb":
+/* 000007A0 00009630  98 83 00 04 */	stb r4, 4(r3)
+/* 000007A4 00009634  4E 80 00 20 */	blr 
+
+.global ".SetSystemTaskFrequency__8CGameAppFUl"
+".SetSystemTaskFrequency__8CGameAppFUl":
+/* 000007E0 00009670  90 83 00 10 */	stw r4, 0x10(r3)
+/* 000007E4 00009674  4E 80 00 20 */	blr 
+
+.global ".SetGenerateUpdateEvents__8CGameAppFUc"
+".SetGenerateUpdateEvents__8CGameAppFUc":
+/* 00000820 000096B0  98 83 00 08 */	stb r4, 8(r3)
+/* 00000824 000096B4  4E 80 00 20 */	blr 
+
+.global ".SetGenerateMouseMovedEvents__8CGameAppFUc"
+".SetGenerateMouseMovedEvents__8CGameAppFUc":
+/* 00000860 000096F0  98 83 00 09 */	stb r4, 9(r3)
+/* 00000864 000096F4  4E 80 00 20 */	blr 
+
+.global ".SetMainPort__8CGameAppFP13OpaqueGrafPtrb"
+".SetMainPort__8CGameAppFP13OpaqueGrafPtrb":
+/* 000008B0 00009740  90 83 00 54 */	stw r4, 0x54(r3)
+/* 000008B4 00009744  98 A3 00 58 */	stb r5, 0x58(r3)
+/* 000008B8 00009748  4E 80 00 20 */	blr 
+
+.global ".GetMainPort__8CGameAppFv"
+".GetMainPort__8CGameAppFv":
+/* 00000900 00009790  80 63 00 54 */	lwz r3, 0x54(r3)
+/* 00000904 00009794  4E 80 00 20 */	blr 
+
+.global ".MainPortIsWindow__8CGameAppFv"
+".MainPortIsWindow__8CGameAppFv":
+/* 00000940 000097D0  88 63 00 58 */	lbz r3, 0x58(r3)
+/* 00000944 000097D4  4E 80 00 20 */	blr 
+
+.global ".SetAppAsCurResFile__8CGameAppFv"
+".SetAppAsCurResFile__8CGameAppFv":
+/* 00000980 00009810  7C 08 02 A6 */	mflr r0
+/* 00000984 00009814  90 01 00 08 */	stw r0, 8(r1)
+/* 00000988 00009818  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 0000098C 0000981C  A8 63 00 98 */	lha r3, 0x98(r3)
+/* 00000990 00009820  7C 60 07 35 */	extsh. r0, r3
+/* 00000994 00009824  41 82 00 0C */	beq lbl_000009A0
+/* 00000998 00009828  48 59 64 C1 */	bl func_00596E58
+/* 0000099C 0000982C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_000009A0:
+/* 000009A0 00009830  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 000009A4 00009834  38 21 00 40 */	addi r1, r1, 0x40
+/* 000009A8 00009838  7C 08 03 A6 */	mtlr r0
+/* 000009AC 0000983C  4E 80 00 20 */	blr 
+
+.global ".MoveHDSkinsBuy__8CSimsAppFv"
+".MoveHDSkinsBuy__8CSimsAppFv":
+/* 000009F0 00009880  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 000009F4 00009884  7C 08 02 A6 */	mflr r0
+/* 000009F8 00009888  83 C2 A1 FC */	lwz r30, -0x5e04(r2)
+/* 000009FC 0000988C  7C 7F 1B 78 */	mr r31, r3
+/* 00000A00 00009890  38 BE 00 00 */	addi r5, r30, 0
+/* 00000A04 00009894  90 01 00 08 */	stw r0, 8(r1)
+/* 00000A08 00009898  94 21 FE 90 */	stwu r1, -0x170(r1)
+/* 00000A0C 0000989C  A8 63 02 9E */	lha r3, 0x29e(r3)
+/* 00000A10 000098A0  38 C1 00 44 */	addi r6, r1, 0x44
+/* 00000A14 000098A4  80 9F 02 A4 */	lwz r4, 0x2a4(r31)
+/* 00000A18 000098A8  38 E1 00 40 */	addi r7, r1, 0x40
+/* 00000A1C 000098AC  48 40 6E C5 */	bl ".GetDirectoryID"
+/* 00000A20 000098B0  7C 60 07 35 */	extsh. r0, r3
+/* 00000A24 000098B4  41 82 00 0C */	beq lbl_00000A30
+/* 00000A28 000098B8  38 60 00 00 */	li r3, 0
+/* 00000A2C 000098BC  48 00 01 24 */	b lbl_00000B50
+lbl_00000A30:
+/* 00000A30 000098C0  A8 7F 02 9E */	lha r3, 0x29e(r31)
+/* 00000A34 000098C4  38 BE 00 19 */	addi r5, r30, 0x19
+/* 00000A38 000098C8  80 9F 02 A4 */	lwz r4, 0x2a4(r31)
+/* 00000A3C 000098CC  38 C1 00 48 */	addi r6, r1, 0x48
+/* 00000A40 000098D0  48 59 62 F9 */	bl func_00596D38
+/* 00000A44 000098D4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00000A48 000098D8  7C 60 07 35 */	extsh. r0, r3
+/* 00000A4C 000098DC  41 82 00 10 */	beq lbl_00000A5C
+/* 00000A50 000098E0  38 60 00 1F */	li r3, 0x1f
+/* 00000A54 000098E4  38 80 00 00 */	li r4, 0
+/* 00000A58 000098E8  48 01 03 C9 */	bl ".ErrorDie__FsPc"
+lbl_00000A5C:
+/* 00000A5C 000098EC  A8 1F 02 9E */	lha r0, 0x29e(r31)
+/* 00000A60 000098F0  3B 81 00 96 */	addi r28, r1, 0x96
+/* 00000A64 000098F4  80 61 00 44 */	lwz r3, 0x44(r1)
+/* 00000A68 000098F8  3B 60 00 01 */	li r27, 1
+/* 00000A6C 000098FC  B0 01 00 90 */	sth r0, 0x90(r1)
+/* 00000A70 00009900  90 61 00 92 */	stw r3, 0x92(r1)
+/* 00000A74 00009904  93 81 00 EA */	stw r28, 0xea(r1)
+/* 00000A78 00009908  B0 01 00 EE */	sth r0, 0xee(r1)
+/* 00000A7C 0000990C  90 61 01 08 */	stw r3, 0x108(r1)
+lbl_00000A80:
+/* 00000A80 00009910  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 00000A84 00009914  38 61 00 D8 */	addi r3, r1, 0xd8
+/* 00000A88 00009918  B3 61 00 F4 */	sth r27, 0xf4(r1)
+/* 00000A8C 0000991C  90 01 01 08 */	stw r0, 0x108(r1)
+/* 00000A90 00009920  48 59 64 89 */	bl func_00596F18
+/* 00000A94 00009924  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00000A98 00009928  3B A3 00 00 */	addi r29, r3, 0
+/* 00000A9C 0000992C  7F A0 07 35 */	extsh. r0, r29
+/* 00000AA0 00009930  40 82 00 68 */	bne lbl_00000B08
+/* 00000AA4 00009934  A0 01 01 00 */	lhz r0, 0x100(r1)
+/* 00000AA8 00009938  54 00 04 63 */	rlwinm. r0, r0, 0, 0x11, 0x11
+/* 00000AAC 0000993C  40 82 00 58 */	bne lbl_00000B04
+/* 00000AB0 00009940  38 61 00 90 */	addi r3, r1, 0x90
+/* 00000AB4 00009944  48 40 67 4D */	bl ".FSpCheckObjectLock"
+/* 00000AB8 00009948  7C 60 07 34 */	extsh r0, r3
+/* 00000ABC 0000994C  2C 00 FF D3 */	cmpwi r0, -45
+/* 00000AC0 00009950  40 82 00 18 */	bne lbl_00000AD8
+/* 00000AC4 00009954  A8 61 00 90 */	lha r3, 0x90(r1)
+/* 00000AC8 00009958  7F 85 E3 78 */	mr r5, r28
+/* 00000ACC 0000995C  80 81 00 92 */	lwz r4, 0x92(r1)
+/* 00000AD0 00009960  48 59 7B A1 */	bl func_00598670
+/* 00000AD4 00009964  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_00000AD8:
+/* 00000AD8 00009968  38 61 00 90 */	addi r3, r1, 0x90
+/* 00000ADC 0000996C  38 81 00 48 */	addi r4, r1, 0x48
+/* 00000AE0 00009970  48 59 7B A9 */	bl func_00598688
+/* 00000AE4 00009974  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00000AE8 00009978  3B A3 00 00 */	addi r29, r3, 0
+/* 00000AEC 0000997C  7F A0 07 35 */	extsh. r0, r29
+/* 00000AF0 00009980  41 82 00 18 */	beq lbl_00000B08
+/* 00000AF4 00009984  38 60 00 1F */	li r3, 0x1f
+/* 00000AF8 00009988  38 80 00 00 */	li r4, 0
+/* 00000AFC 0000998C  48 01 03 25 */	bl ".ErrorDie__FsPc"
+/* 00000B00 00009990  48 00 00 08 */	b lbl_00000B08
+lbl_00000B04:
+/* 00000B04 00009994  3B 7B 00 01 */	addi r27, r27, 1
+lbl_00000B08:
+/* 00000B08 00009998  7F A0 07 35 */	extsh. r0, r29
+/* 00000B0C 0000999C  41 82 FF 74 */	beq lbl_00000A80
+/* 00000B10 000099A0  7F A0 07 34 */	extsh r0, r29
+/* 00000B14 000099A4  2C 00 FF D5 */	cmpwi r0, -43
+/* 00000B18 000099A8  41 82 00 10 */	beq lbl_00000B28
+/* 00000B1C 000099AC  38 60 00 1F */	li r3, 0x1f
+/* 00000B20 000099B0  38 80 00 00 */	li r4, 0
+/* 00000B24 000099B4  48 01 02 FD */	bl ".ErrorDie__FsPc"
+lbl_00000B28:
+/* 00000B28 000099B8  A8 7F 02 9E */	lha r3, 0x29e(r31)
+/* 00000B2C 000099BC  7F C5 F3 78 */	mr r5, r30
+/* 00000B30 000099C0  80 9F 02 A4 */	lwz r4, 0x2a4(r31)
+/* 00000B34 000099C4  48 40 67 9D */	bl ".DeleteDirectory"
+/* 00000B38 000099C8  7C 60 07 35 */	extsh. r0, r3
+/* 00000B3C 000099CC  41 82 00 10 */	beq lbl_00000B4C
+/* 00000B40 000099D0  38 60 00 1F */	li r3, 0x1f
+/* 00000B44 000099D4  38 80 00 00 */	li r4, 0
+/* 00000B48 000099D8  48 01 02 D9 */	bl ".ErrorDie__FsPc"
+lbl_00000B4C:
+/* 00000B4C 000099DC  38 60 00 01 */	li r3, 1
+lbl_00000B50:
+/* 00000B50 000099E0  80 01 01 78 */	lwz r0, 0x178(r1)
+/* 00000B54 000099E4  38 21 01 70 */	addi r1, r1, 0x170
+/* 00000B58 000099E8  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 00000B5C 000099EC  7C 08 03 A6 */	mtlr r0
+/* 00000B60 000099F0  4E 80 00 20 */	blr 
+
+.global ".FinishInstallation__8CSimsAppFv"
+".FinishInstallation__8CSimsAppFv":
+/* 00000BA0 00009A30  93 E1 FF FC */	stw r31, -4(r1)
+/* 00000BA4 00009A34  7C 08 02 A6 */	mflr r0
+/* 00000BA8 00009A38  83 E2 A1 FC */	lwz r31, -0x5e04(r2)
+/* 00000BAC 00009A3C  38 80 00 00 */	li r4, 0
+/* 00000BB0 00009A40  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00000BB4 00009A44  3B C0 00 00 */	li r30, 0
+/* 00000BB8 00009A48  38 BF 00 33 */	addi r5, r31, 0x33
+/* 00000BBC 00009A4C  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 00000BC0 00009A50  3B A3 00 00 */	addi r29, r3, 0
+/* 00000BC4 00009A54  38 60 00 00 */	li r3, 0
+/* 00000BC8 00009A58  90 01 00 08 */	stw r0, 8(r1)
+/* 00000BCC 00009A5C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00000BD0 00009A60  48 00 BC 31 */	bl ".FileExists__FslPCc"
+/* 00000BD4 00009A64  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 00000BD8 00009A68  41 82 00 28 */	beq lbl_00000C00
+/* 00000BDC 00009A6C  38 7F 00 33 */	addi r3, r31, 0x33
+/* 00000BE0 00009A70  3B C0 00 01 */	li r30, 1
+/* 00000BE4 00009A74  48 01 08 1D */	bl ".remove"
+/* 00000BE8 00009A78  48 00 EB 39 */	bl ".AreWeOnX__Fv"
+/* 00000BEC 00009A7C  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 00000BF0 00009A80  40 82 00 10 */	bne lbl_00000C00
+/* 00000BF4 00009A84  38 7D 00 00 */	addi r3, r29, 0
+/* 00000BF8 00009A88  38 80 03 E8 */	li r4, 0x3e8
+/* 00000BFC 00009A8C  48 40 47 F5 */	bl ".ExecuteScriptResource__8CSimsAppFs"
+lbl_00000C00:
+/* 00000C00 00009A90  7F A3 EB 78 */	mr r3, r29
+/* 00000C04 00009A94  4B FF FD ED */	bl ".MoveHDSkinsBuy__8CSimsAppFv"
+/* 00000C08 00009A98  54 63 06 3E */	clrlwi r3, r3, 0x18
+/* 00000C0C 00009A9C  57 C0 06 3E */	clrlwi r0, r30, 0x18
+/* 00000C10 00009AA0  7C 03 1B 78 */	or r3, r0, r3
+/* 00000C14 00009AA4  7C 03 00 D0 */	neg r0, r3
+/* 00000C18 00009AA8  7C 00 1B 78 */	or r0, r0, r3
+/* 00000C1C 00009AAC  38 7D 00 00 */	addi r3, r29, 0
+/* 00000C20 00009AB0  54 1F 0F FE */	srwi r31, r0, 0x1f
+/* 00000C24 00009AB4  48 40 43 3D */	bl ".InstallMusicFiles__8CSimsAppFv"
+/* 00000C28 00009AB8  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 00000C2C 00009ABC  7F E3 03 78 */	or r3, r31, r0
+/* 00000C30 00009AC0  7C 03 00 D0 */	neg r0, r3
+/* 00000C34 00009AC4  7C 00 1B 78 */	or r0, r0, r3
+/* 00000C38 00009AC8  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 00000C3C 00009ACC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00000C40 00009AD0  38 21 00 50 */	addi r1, r1, 0x50
+/* 00000C44 00009AD4  7C 08 03 A6 */	mtlr r0
+/* 00000C48 00009AD8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00000C4C 00009ADC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00000C50 00009AE0  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00000C54 00009AE4  4E 80 00 20 */	blr 
+
+.global ".MapExtensionToType__8CSimsAppFPcPl"
+".MapExtensionToType__8CSimsAppFPcPl":
+/* 00000C90 00009B20  93 E1 FF FC */	stw r31, -4(r1)
+/* 00000C94 00009B24  7C 08 02 A6 */	mflr r0
+/* 00000C98 00009B28  83 E2 A1 FC */	lwz r31, -0x5e04(r2)
+/* 00000C9C 00009B2C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00000CA0 00009B30  3B C5 00 00 */	addi r30, r5, 0
+/* 00000CA4 00009B34  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 00000CA8 00009B38  3B A4 00 00 */	addi r29, r4, 0
+/* 00000CAC 00009B3C  38 7D 00 00 */	addi r3, r29, 0
+/* 00000CB0 00009B40  38 9F 00 4C */	addi r4, r31, 0x4c
+/* 00000CB4 00009B44  90 01 00 08 */	stw r0, 8(r1)
+/* 00000CB8 00009B48  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00000CBC 00009B4C  48 59 55 25 */	bl func_005961E0
+/* 00000CC0 00009B50  2C 03 00 00 */	cmpwi r3, 0
+/* 00000CC4 00009B54  40 82 00 14 */	bne lbl_00000CD8
+/* 00000CC8 00009B58  3C 60 49 46 */	lis r3, 0x49464620@ha
+/* 00000CCC 00009B5C  38 03 46 20 */	addi r0, r3, 0x49464620@l
+/* 00000CD0 00009B60  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000CD4 00009B64  48 00 00 E8 */	b lbl_00000DBC
+lbl_00000CD8:
+/* 00000CD8 00009B68  38 7D 00 00 */	addi r3, r29, 0
+/* 00000CDC 00009B6C  38 9F 00 51 */	addi r4, r31, 0x51
+/* 00000CE0 00009B70  48 59 55 01 */	bl func_005961E0
+/* 00000CE4 00009B74  2C 03 00 00 */	cmpwi r3, 0
+/* 00000CE8 00009B78  40 82 00 14 */	bne lbl_00000CFC
+/* 00000CEC 00009B7C  3C 60 4A 50 */	lis r3, 0x4A504547@ha
+/* 00000CF0 00009B80  38 03 45 47 */	addi r0, r3, 0x4A504547@l
+/* 00000CF4 00009B84  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000CF8 00009B88  48 00 00 C4 */	b lbl_00000DBC
+lbl_00000CFC:
+/* 00000CFC 00009B8C  38 7D 00 00 */	addi r3, r29, 0
+/* 00000D00 00009B90  38 9F 00 56 */	addi r4, r31, 0x56
+/* 00000D04 00009B94  48 59 54 DD */	bl func_005961E0
+/* 00000D08 00009B98  2C 03 00 00 */	cmpwi r3, 0
+/* 00000D0C 00009B9C  40 82 00 14 */	bne lbl_00000D20
+/* 00000D10 00009BA0  3C 60 46 61 */	lis r3, 0x46616D20@ha
+/* 00000D14 00009BA4  38 03 6D 20 */	addi r0, r3, 0x46616D20@l
+/* 00000D18 00009BA8  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000D1C 00009BAC  48 00 00 A0 */	b lbl_00000DBC
+lbl_00000D20:
+/* 00000D20 00009BB0  38 7D 00 00 */	addi r3, r29, 0
+/* 00000D24 00009BB4  38 9F 00 5B */	addi r4, r31, 0x5b
+/* 00000D28 00009BB8  48 59 54 B9 */	bl func_005961E0
+/* 00000D2C 00009BBC  2C 03 00 00 */	cmpwi r3, 0
+/* 00000D30 00009BC0  40 82 00 14 */	bne lbl_00000D44
+/* 00000D34 00009BC4  3C 60 54 45 */	lis r3, 0x54455854@ha
+/* 00000D38 00009BC8  38 03 58 54 */	addi r0, r3, 0x54455854@l
+/* 00000D3C 00009BCC  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000D40 00009BD0  48 00 00 7C */	b lbl_00000DBC
+lbl_00000D44:
+/* 00000D44 00009BD4  38 7D 00 00 */	addi r3, r29, 0
+/* 00000D48 00009BD8  38 9F 00 60 */	addi r4, r31, 0x60
+/* 00000D4C 00009BDC  48 59 54 95 */	bl func_005961E0
+/* 00000D50 00009BE0  2C 03 00 00 */	cmpwi r3, 0
+/* 00000D54 00009BE4  40 82 00 14 */	bne lbl_00000D68
+/* 00000D58 00009BE8  3C 60 47 49 */	lis r3, 0x47494666@ha
+/* 00000D5C 00009BEC  38 03 46 66 */	addi r0, r3, 0x47494666@l
+/* 00000D60 00009BF0  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000D64 00009BF4  48 00 00 58 */	b lbl_00000DBC
+lbl_00000D68:
+/* 00000D68 00009BF8  38 7D 00 00 */	addi r3, r29, 0
+/* 00000D6C 00009BFC  38 9F 00 65 */	addi r4, r31, 0x65
+/* 00000D70 00009C00  48 59 54 71 */	bl func_005961E0
+/* 00000D74 00009C04  2C 03 00 00 */	cmpwi r3, 0
+/* 00000D78 00009C08  40 82 00 14 */	bne lbl_00000D8C
+/* 00000D7C 00009C0C  3C 60 42 4D */	lis r3, 0x424D5020@ha
+/* 00000D80 00009C10  38 03 50 20 */	addi r0, r3, 0x424D5020@l
+/* 00000D84 00009C14  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000D88 00009C18  48 00 00 34 */	b lbl_00000DBC
+lbl_00000D8C:
+/* 00000D8C 00009C1C  38 7D 00 00 */	addi r3, r29, 0
+/* 00000D90 00009C20  38 9F 00 6A */	addi r4, r31, 0x6a
+/* 00000D94 00009C24  48 59 54 4D */	bl func_005961E0
+/* 00000D98 00009C28  2C 03 00 00 */	cmpwi r3, 0
+/* 00000D9C 00009C2C  40 82 00 14 */	bne lbl_00000DB0
+/* 00000DA0 00009C30  3C 60 54 45 */	lis r3, 0x54455854@ha
+/* 00000DA4 00009C34  38 03 58 54 */	addi r0, r3, 0x54455854@l
+/* 00000DA8 00009C38  90 1E 00 00 */	stw r0, 0(r30)
+/* 00000DAC 00009C3C  48 00 00 10 */	b lbl_00000DBC
+lbl_00000DB0:
+/* 00000DB0 00009C40  3C 60 44 61 */	lis r3, 0x44617461@ha
+/* 00000DB4 00009C44  38 03 74 61 */	addi r0, r3, 0x44617461@l
+/* 00000DB8 00009C48  90 1E 00 00 */	stw r0, 0(r30)
+lbl_00000DBC:
+/* 00000DBC 00009C4C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00000DC0 00009C50  38 21 00 50 */	addi r1, r1, 0x50
+/* 00000DC4 00009C54  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00000DC8 00009C58  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00000DCC 00009C5C  7C 08 03 A6 */	mtlr r0
+/* 00000DD0 00009C60  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00000DD4 00009C64  4E 80 00 20 */	blr 
+
+.global ".SaveGameDisplay__8CSimsAppFv"
+".SaveGameDisplay__8CSimsAppFv":
+/* 00000E10 00009CA0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00000E14 00009CA4  7C 08 02 A6 */	mflr r0
+/* 00000E18 00009CA8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00000E1C 00009CAC  7C 7E 1B 78 */	mr r30, r3
+/* 00000E20 00009CB0  90 01 00 08 */	stw r0, 8(r1)
+/* 00000E24 00009CB4  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 00000E28 00009CB8  48 00 01 39 */	bl ".GetPrefs__8CSimsAppFv"
+/* 00000E2C 00009CBC  3B E3 00 00 */	addi r31, r3, 0
+/* 00000E30 00009CC0  38 61 00 40 */	addi r3, r1, 0x40
+/* 00000E34 00009CC4  48 56 D8 DD */	bl ".GetGameDisplayInfo__11GameDisplayFPQ211GameDisplay15GameDisplayInfo"
+/* 00000E38 00009CC8  A8 81 00 48 */	lha r4, 0x48(r1)
+/* 00000E3C 00009CCC  20 64 03 20 */	subfic r3, r4, 0x320
+/* 00000E40 00009CD0  38 04 FC E0 */	addi r0, r4, -800
+/* 00000E44 00009CD4  7C 60 03 78 */	or r0, r3, r0
+/* 00000E48 00009CD8  54 00 0F FE */	srwi r0, r0, 0x1f
+/* 00000E4C 00009CDC  98 1F 00 01 */	stb r0, 1(r31)
+/* 00000E50 00009CE0  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 00000E54 00009CE4  90 1F 00 04 */	stw r0, 4(r31)
+/* 00000E58 00009CE8  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 00000E5C 00009CEC  90 1F 00 08 */	stw r0, 8(r31)
+/* 00000E60 00009CF0  80 01 00 50 */	lwz r0, 0x50(r1)
+/* 00000E64 00009CF4  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 00000E68 00009CF8  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 00000E6C 00009CFC  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 00000E70 00009D00  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00000E74 00009D04  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 00000E78 00009D08  80 9E 03 E8 */	lwz r4, 0x3e8(r30)
+/* 00000E7C 00009D0C  28 04 00 00 */	cmplwi r4, 0
+/* 00000E80 00009D10  41 82 00 20 */	beq lbl_00000EA0
+/* 00000E84 00009D14  80 62 88 78 */	lwz r3, -0x7788(r2)
+/* 00000E88 00009D18  38 A0 00 18 */	li r5, 0x18
+/* 00000E8C 00009D1C  80 63 00 00 */	lwz r3, 0(r3)
+/* 00000E90 00009D20  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00000E94 00009D24  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 00000E98 00009D28  48 59 8C B9 */	bl func_00599B50
+/* 00000E9C 00009D2C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_00000EA0:
+/* 00000EA0 00009D30  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 00000EA4 00009D34  38 21 00 70 */	addi r1, r1, 0x70
+/* 00000EA8 00009D38  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00000EAC 00009D3C  7C 08 03 A6 */	mtlr r0
+/* 00000EB0 00009D40  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00000EB4 00009D44  4E 80 00 20 */	blr 
+
+.global ".SavePrefs__8CSimsAppFv"
+".SavePrefs__8CSimsAppFv":
+/* 00000EF0 00009D80  7C 08 02 A6 */	mflr r0
+/* 00000EF4 00009D84  90 01 00 08 */	stw r0, 8(r1)
+/* 00000EF8 00009D88  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00000EFC 00009D8C  80 83 03 E8 */	lwz r4, 0x3e8(r3)
+/* 00000F00 00009D90  28 04 00 00 */	cmplwi r4, 0
+/* 00000F04 00009D94  41 82 00 20 */	beq lbl_00000F24
+/* 00000F08 00009D98  80 62 88 78 */	lwz r3, -0x7788(r2)
+/* 00000F0C 00009D9C  38 A0 00 18 */	li r5, 0x18
+/* 00000F10 00009DA0  80 63 00 00 */	lwz r3, 0(r3)
+/* 00000F14 00009DA4  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00000F18 00009DA8  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 00000F1C 00009DAC  48 59 8C 35 */	bl func_00599B50
+/* 00000F20 00009DB0  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_00000F24:
+/* 00000F24 00009DB4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00000F28 00009DB8  38 21 00 40 */	addi r1, r1, 0x40
+/* 00000F2C 00009DBC  7C 08 03 A6 */	mtlr r0
+/* 00000F30 00009DC0  4E 80 00 20 */	blr 
+
+.global ".GetPrefs__8CSimsAppFv"
+".GetPrefs__8CSimsAppFv":
+/* 00000F60 00009DF0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00000F64 00009DF4  7C 08 02 A6 */	mflr r0
+/* 00000F68 00009DF8  83 E2 88 78 */	lwz r31, -0x7788(r2)
+/* 00000F6C 00009DFC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00000F70 00009E00  7C 7E 1B 78 */	mr r30, r3
+/* 00000F74 00009E04  90 01 00 08 */	stw r0, 8(r1)
+/* 00000F78 00009E08  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00000F7C 00009E0C  80 63 03 E8 */	lwz r3, 0x3e8(r3)
+/* 00000F80 00009E10  28 03 00 00 */	cmplwi r3, 0
+/* 00000F84 00009E14  41 82 00 08 */	beq lbl_00000F8C
+/* 00000F88 00009E18  48 00 00 B8 */	b lbl_00001040
+lbl_00000F8C:
+/* 00000F8C 00009E1C  38 60 00 18 */	li r3, 0x18
+/* 00000F90 00009E20  48 58 76 21 */	bl func_005885B0
+/* 00000F94 00009E24  90 7E 03 E8 */	stw r3, 0x3e8(r30)
+/* 00000F98 00009E28  38 E0 00 01 */	li r7, 1
+/* 00000F9C 00009E2C  38 C0 00 00 */	li r6, 0
+/* 00000FA0 00009E30  38 A1 00 40 */	addi r5, r1, 0x40
+/* 00000FA4 00009E34  98 E3 00 00 */	stb r7, 0(r3)
+/* 00000FA8 00009E38  3C 80 80 00 */	lis r4, 0x8000
+/* 00000FAC 00009E3C  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FB0 00009E40  38 00 00 18 */	li r0, 0x18
+/* 00000FB4 00009E44  98 C3 00 01 */	stb r6, 1(r3)
+/* 00000FB8 00009E48  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FBC 00009E4C  98 E3 00 02 */	stb r7, 2(r3)
+/* 00000FC0 00009E50  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FC4 00009E54  98 E3 00 03 */	stb r7, 3(r3)
+/* 00000FC8 00009E58  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FCC 00009E5C  90 E3 00 04 */	stw r7, 4(r3)
+/* 00000FD0 00009E60  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FD4 00009E64  90 C3 00 08 */	stw r6, 8(r3)
+/* 00000FD8 00009E68  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FDC 00009E6C  90 C3 00 0C */	stw r6, 0xc(r3)
+/* 00000FE0 00009E70  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FE4 00009E74  90 83 00 10 */	stw r4, 0x10(r3)
+/* 00000FE8 00009E78  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+/* 00000FEC 00009E7C  90 83 00 14 */	stw r4, 0x14(r3)
+/* 00000FF0 00009E80  90 01 00 40 */	stw r0, 0x40(r1)
+/* 00000FF4 00009E84  80 7F 00 00 */	lwz r3, 0(r31)
+/* 00000FF8 00009E88  80 9E 03 E8 */	lwz r4, 0x3e8(r30)
+/* 00000FFC 00009E8C  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00001000 00009E90  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 00001004 00009E94  48 59 8B 4D */	bl func_00599B50
+/* 00001008 00009E98  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000100C 00009E9C  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 00001010 00009EA0  28 00 00 18 */	cmplwi r0, 0x18
+/* 00001014 00009EA4  41 82 00 28 */	beq lbl_0000103C
+/* 00001018 00009EA8  80 9E 03 E8 */	lwz r4, 0x3e8(r30)
+/* 0000101C 00009EAC  28 04 00 00 */	cmplwi r4, 0
+/* 00001020 00009EB0  41 82 00 1C */	beq lbl_0000103C
+/* 00001024 00009EB4  80 7F 00 00 */	lwz r3, 0(r31)
+/* 00001028 00009EB8  38 A0 00 18 */	li r5, 0x18
+/* 0000102C 00009EBC  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00001030 00009EC0  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 00001034 00009EC4  48 59 8B 1D */	bl func_00599B50
+/* 00001038 00009EC8  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_0000103C:
+/* 0000103C 00009ECC  80 7E 03 E8 */	lwz r3, 0x3e8(r30)
+lbl_00001040:
+/* 00001040 00009ED0  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 00001044 00009ED4  38 21 00 60 */	addi r1, r1, 0x60
+/* 00001048 00009ED8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 0000104C 00009EDC  7C 08 03 A6 */	mtlr r0
+/* 00001050 00009EE0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00001054 00009EE4  4E 80 00 20 */	blr 
+
+.global ".ResumeApp__8CSimsAppFv"
+".ResumeApp__8CSimsAppFv":
+/* 00001080 00009F10  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001084 00009F14  7C 08 02 A6 */	mflr r0
+/* 00001088 00009F18  7C 7F 1B 78 */	mr r31, r3
+/* 0000108C 00009F1C  90 01 00 08 */	stw r0, 8(r1)
+/* 00001090 00009F20  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001094 00009F24  48 00 61 2D */	bl ".ResumeApp__8CGameAppFv"
+/* 00001098 00009F28  38 00 00 00 */	li r0, 0
+/* 0000109C 00009F2C  80 62 88 74 */	lwz r3, -0x778c(r2)
+/* 000010A0 00009F30  90 1F 00 1C */	stw r0, 0x1c(r31)
+/* 000010A4 00009F34  80 63 00 00 */	lwz r3, 0(r3)
+/* 000010A8 00009F38  88 1F 03 EC */	lbz r0, 0x3ec(r31)
+/* 000010AC 00009F3C  28 03 00 00 */	cmplwi r3, 0
+/* 000010B0 00009F40  41 82 00 38 */	beq lbl_000010E8
+/* 000010B4 00009F44  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 000010B8 00009F48  28 03 00 00 */	cmplwi r3, 0
+/* 000010BC 00009F4C  41 82 00 2C */	beq lbl_000010E8
+/* 000010C0 00009F50  28 00 00 00 */	cmplwi r0, 0
+/* 000010C4 00009F54  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 000010C8 00009F58  38 80 00 16 */	li r4, 0x16
+/* 000010CC 00009F5C  41 82 00 08 */	beq lbl_000010D4
+/* 000010D0 00009F60  38 80 00 15 */	li r4, 0x15
+lbl_000010D4:
+/* 000010D4 00009F64  38 A0 00 00 */	li r5, 0
+/* 000010D8 00009F68  38 C0 00 00 */	li r6, 0
+/* 000010DC 00009F6C  38 E0 00 00 */	li r7, 0
+/* 000010E0 00009F70  39 00 00 00 */	li r8, 0
+/* 000010E4 00009F74  48 2D E5 7D */	bl ".Event__5cBoxXFlllll"
+lbl_000010E8:
+/* 000010E8 00009F78  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 000010EC 00009F7C  38 21 00 50 */	addi r1, r1, 0x50
+/* 000010F0 00009F80  83 E1 FF FC */	lwz r31, -4(r1)
+/* 000010F4 00009F84  7C 08 03 A6 */	mtlr r0
+/* 000010F8 00009F88  4E 80 00 20 */	blr 
+
+.global ".SuspendApp__8CSimsAppFv"
+".SuspendApp__8CSimsAppFv":
+/* 00001130 00009FC0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001134 00009FC4  7C 08 02 A6 */	mflr r0
+/* 00001138 00009FC8  80 82 88 74 */	lwz r4, -0x778c(r2)
+/* 0000113C 00009FCC  7C 7F 1B 78 */	mr r31, r3
+/* 00001140 00009FD0  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00001144 00009FD4  83 C2 88 70 */	lwz r30, -0x7790(r2)
+/* 00001148 00009FD8  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 0000114C 00009FDC  3B A0 00 00 */	li r29, 0
+/* 00001150 00009FE0  90 01 00 08 */	stw r0, 8(r1)
+/* 00001154 00009FE4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001158 00009FE8  80 64 00 00 */	lwz r3, 0(r4)
+/* 0000115C 00009FEC  28 03 00 00 */	cmplwi r3, 0
+/* 00001160 00009FF0  41 82 00 38 */	beq lbl_00001198
+/* 00001164 00009FF4  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 00001168 00009FF8  28 03 00 00 */	cmplwi r3, 0
+/* 0000116C 00009FFC  41 82 00 2C */	beq lbl_00001198
+/* 00001170 0000A000  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 00001174 0000A004  28 03 00 00 */	cmplwi r3, 0
+/* 00001178 0000A008  41 82 00 08 */	beq lbl_00001180
+/* 0000117C 0000A00C  8B A3 00 0D */	lbz r29, 0xd(r3)
+lbl_00001180:
+/* 00001180 0000A010  38 80 00 15 */	li r4, 0x15
+/* 00001184 0000A014  38 A0 00 00 */	li r5, 0
+/* 00001188 0000A018  38 C0 00 00 */	li r6, 0
+/* 0000118C 0000A01C  38 E0 00 00 */	li r7, 0
+/* 00001190 0000A020  39 00 00 00 */	li r8, 0
+/* 00001194 0000A024  48 2D E4 CD */	bl ".Event__5cBoxXFlllll"
+lbl_00001198:
+/* 00001198 0000A028  9B BF 03 EC */	stb r29, 0x3ec(r31)
+/* 0000119C 0000A02C  7F E3 FB 78 */	mr r3, r31
+/* 000011A0 0000A030  48 00 60 91 */	bl ".SuspendApp__8CGameAppFv"
+/* 000011A4 0000A034  80 7E 00 00 */	lwz r3, 0(r30)
+/* 000011A8 0000A038  3B A0 00 00 */	li r29, 0
+/* 000011AC 0000A03C  28 03 00 00 */	cmplwi r3, 0
+/* 000011B0 0000A040  41 82 00 34 */	beq lbl_000011E4
+/* 000011B4 0000A044  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 000011B8 0000A048  28 03 00 00 */	cmplwi r3, 0
+/* 000011BC 0000A04C  41 82 00 28 */	beq lbl_000011E4
+/* 000011C0 0000A050  48 20 71 01 */	bl ".GetMode__7CPStateFv"
+/* 000011C4 0000A054  2C 03 00 02 */	cmpwi r3, 2
+/* 000011C8 0000A058  40 82 00 1C */	bne lbl_000011E4
+/* 000011CC 0000A05C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 000011D0 0000A060  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 000011D4 0000A064  48 20 6F 4D */	bl ".IsPaused__7CPStateFv"
+/* 000011D8 0000A068  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 000011DC 0000A06C  7C 00 00 34 */	cntlzw r0, r0
+/* 000011E0 0000A070  54 1D D9 7E */	srwi r29, r0, 5
+lbl_000011E4:
+/* 000011E4 0000A074  57 A0 06 3F */	clrlwi. r0, r29, 0x18
+/* 000011E8 0000A078  40 82 00 38 */	bne lbl_00001220
+/* 000011EC 0000A07C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 000011F0 0000A080  38 80 00 00 */	li r4, 0
+/* 000011F4 0000A084  28 03 00 00 */	cmplwi r3, 0
+/* 000011F8 0000A088  41 82 00 14 */	beq lbl_0000120C
+/* 000011FC 0000A08C  80 03 00 D8 */	lwz r0, 0xd8(r3)
+/* 00001200 0000A090  28 00 00 00 */	cmplwi r0, 0
+/* 00001204 0000A094  41 82 00 08 */	beq lbl_0000120C
+/* 00001208 0000A098  38 80 00 01 */	li r4, 1
+lbl_0000120C:
+/* 0000120C 0000A09C  54 80 06 3F */	clrlwi. r0, r4, 0x18
+/* 00001210 0000A0A0  40 82 00 10 */	bne lbl_00001220
+/* 00001214 0000A0A4  3C 60 80 00 */	lis r3, 0x7FFFFFFF@ha
+/* 00001218 0000A0A8  38 03 FF FF */	addi r0, r3, 0x7FFFFFFF@l
+/* 0000121C 0000A0AC  90 1F 00 1C */	stw r0, 0x1c(r31)
+lbl_00001220:
+/* 00001220 0000A0B0  80 1F 03 DC */	lwz r0, 0x3dc(r31)
+/* 00001224 0000A0B4  28 00 00 00 */	cmplwi r0, 0
+/* 00001228 0000A0B8  40 82 00 30 */	bne lbl_00001258
+/* 0000122C 0000A0BC  48 02 43 45 */	bl ".GetMainHWND__8HWND_MacFv"
+/* 00001230 0000A0C0  28 03 00 00 */	cmplwi r3, 0
+/* 00001234 0000A0C4  41 82 00 24 */	beq lbl_00001258
+/* 00001238 0000A0C8  48 56 D4 39 */	bl ".IsFullScreen__11GameDisplayFv"
+/* 0000123C 0000A0CC  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 00001240 0000A0D0  41 82 00 18 */	beq lbl_00001258
+/* 00001244 0000A0D4  7F E3 FB 78 */	mr r3, r31
+/* 00001248 0000A0D8  81 9F 03 E0 */	lwz r12, 0x3e0(r31)
+/* 0000124C 0000A0DC  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 00001250 0000A0E0  48 59 89 01 */	bl func_00599B50
+/* 00001254 0000A0E4  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_00001258:
+/* 00001258 0000A0E8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 0000125C 0000A0EC  38 21 00 50 */	addi r1, r1, 0x50
+/* 00001260 0000A0F0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001264 0000A0F4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00001268 0000A0F8  7C 08 03 A6 */	mtlr r0
+/* 0000126C 0000A0FC  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00001270 0000A100  4E 80 00 20 */	blr 
+
+.global ".DoMenuSetup__8CSimsAppFv"
+".DoMenuSetup__8CSimsAppFv":
+/* 000012A0 0000A130  93 E1 FF FC */	stw r31, -4(r1)
+/* 000012A4 0000A134  7C 08 02 A6 */	mflr r0
+/* 000012A8 0000A138  3C 80 61 62 */	lis r4, 0x61626F75@ha
+/* 000012AC 0000A13C  3B E3 00 00 */	addi r31, r3, 0
+/* 000012B0 0000A140  90 01 00 08 */	stw r0, 8(r1)
+/* 000012B4 0000A144  38 84 6F 75 */	addi r4, r4, 0x61626F75@l
+/* 000012B8 0000A148  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 000012BC 0000A14C  38 60 00 00 */	li r3, 0
+/* 000012C0 0000A150  48 59 67 39 */	bl func_005979F8
+/* 000012C4 0000A154  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000012C8 0000A158  7F E3 FB 78 */	mr r3, r31
+/* 000012CC 0000A15C  48 00 55 95 */	bl ".DoMenuSetup__8CGameAppFv"
+/* 000012D0 0000A160  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 000012D4 0000A164  38 21 00 50 */	addi r1, r1, 0x50
+/* 000012D8 0000A168  83 E1 FF FC */	lwz r31, -4(r1)
+/* 000012DC 0000A16C  7C 08 03 A6 */	mtlr r0
+/* 000012E0 0000A170  4E 80 00 20 */	blr 
+
+.global ".DoPreferences__8CSimsAppFv"
+".DoPreferences__8CSimsAppFv":
+/* 00001310 0000A1A0  BF 01 FF E0 */	stmw r24, -0x20(r1)
+/* 00001314 0000A1A4  7C 08 02 A6 */	mflr r0
+/* 00001318 0000A1A8  83 C2 88 70 */	lwz r30, -0x7790(r2)
+/* 0000131C 0000A1AC  7C 7B 1B 78 */	mr r27, r3
+/* 00001320 0000A1B0  83 E2 88 74 */	lwz r31, -0x778c(r2)
+/* 00001324 0000A1B4  83 42 88 78 */	lwz r26, -0x7788(r2)
+/* 00001328 0000A1B8  3B 80 00 00 */	li r28, 0
+/* 0000132C 0000A1BC  3B 20 00 01 */	li r25, 1
+/* 00001330 0000A1C0  90 01 00 08 */	stw r0, 8(r1)
+/* 00001334 0000A1C4  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 00001338 0000A1C8  48 02 42 39 */	bl ".GetMainHWND__8HWND_MacFv"
+/* 0000133C 0000A1CC  28 03 00 00 */	cmplwi r3, 0
+/* 00001340 0000A1D0  40 82 00 14 */	bne lbl_00001354
+/* 00001344 0000A1D4  48 56 D3 7D */	bl ".GetGameDisplayMode__11GameDisplayFv"
+/* 00001348 0000A1D8  2C 03 00 00 */	cmpwi r3, 0
+/* 0000134C 0000A1DC  40 82 00 08 */	bne lbl_00001354
+/* 00001350 0000A1E0  3B 20 00 00 */	li r25, 0
+lbl_00001354:
+/* 00001354 0000A1E4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001358 0000A1E8  3B A0 00 00 */	li r29, 0
+/* 0000135C 0000A1EC  28 03 00 00 */	cmplwi r3, 0
+/* 00001360 0000A1F0  41 82 00 3C */	beq lbl_0000139C
+/* 00001364 0000A1F4  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 00001368 0000A1F8  28 03 00 00 */	cmplwi r3, 0
+/* 0000136C 0000A1FC  41 82 00 30 */	beq lbl_0000139C
+/* 00001370 0000A200  48 20 6F 51 */	bl ".GetMode__7CPStateFv"
+/* 00001374 0000A204  2C 03 00 02 */	cmpwi r3, 2
+/* 00001378 0000A208  40 82 00 24 */	bne lbl_0000139C
+/* 0000137C 0000A20C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001380 0000A210  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 00001384 0000A214  48 20 6D 9D */	bl ".IsPaused__7CPStateFv"
+/* 00001388 0000A218  80 9E 00 00 */	lwz r4, 0(r30)
+/* 0000138C 0000A21C  7C 7D 1B 78 */	mr r29, r3
+/* 00001390 0000A220  80 64 00 A4 */	lwz r3, 0xa4(r4)
+/* 00001394 0000A224  38 80 00 01 */	li r4, 1
+/* 00001398 0000A228  48 20 5E A9 */	bl ".Pause__7CPStateFb"
+lbl_0000139C:
+/* 0000139C 0000A22C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 000013A0 0000A230  3B 00 00 00 */	li r24, 0
+/* 000013A4 0000A234  28 03 00 00 */	cmplwi r3, 0
+/* 000013A8 0000A238  41 82 00 38 */	beq lbl_000013E0
+/* 000013AC 0000A23C  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 000013B0 0000A240  28 03 00 00 */	cmplwi r3, 0
+/* 000013B4 0000A244  41 82 00 2C */	beq lbl_000013E0
+/* 000013B8 0000A248  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 000013BC 0000A24C  28 03 00 00 */	cmplwi r3, 0
+/* 000013C0 0000A250  41 82 00 08 */	beq lbl_000013C8
+/* 000013C4 0000A254  8B 03 00 0D */	lbz r24, 0xd(r3)
+lbl_000013C8:
+/* 000013C8 0000A258  38 80 00 15 */	li r4, 0x15
+/* 000013CC 0000A25C  38 A0 00 00 */	li r5, 0
+/* 000013D0 0000A260  38 C0 00 00 */	li r6, 0
+/* 000013D4 0000A264  38 E0 00 00 */	li r7, 0
+/* 000013D8 0000A268  39 00 00 00 */	li r8, 0
+/* 000013DC 0000A26C  48 2D E2 85 */	bl ".Event__5cBoxXFlllll"
+lbl_000013E0:
+/* 000013E0 0000A270  7F 63 DB 78 */	mr r3, r27
+/* 000013E4 0000A274  4B FF FB 7D */	bl ".GetPrefs__8CSimsAppFv"
+/* 000013E8 0000A278  80 BB 03 E8 */	lwz r5, 0x3e8(r27)
+/* 000013EC 0000A27C  38 81 00 44 */	addi r4, r1, 0x44
+/* 000013F0 0000A280  38 60 04 00 */	li r3, 0x400
+/* 000013F4 0000A284  80 05 00 04 */	lwz r0, 4(r5)
+/* 000013F8 0000A288  90 01 00 40 */	stw r0, 0x40(r1)
+/* 000013FC 0000A28C  80 05 00 08 */	lwz r0, 8(r5)
+/* 00001400 0000A290  90 01 00 44 */	stw r0, 0x44(r1)
+/* 00001404 0000A294  88 05 00 01 */	lbz r0, 1(r5)
+/* 00001408 0000A298  7C 00 07 75 */	extsb. r0, r0
+/* 0000140C 0000A29C  40 82 00 08 */	bne lbl_00001414
+/* 00001410 0000A2A0  38 60 03 20 */	li r3, 0x320
+lbl_00001414:
+/* 00001414 0000A2A4  B0 61 00 48 */	sth r3, 0x48(r1)
+/* 00001418 0000A2A8  38 A1 00 48 */	addi r5, r1, 0x48
+/* 0000141C 0000A2AC  38 E0 03 00 */	li r7, 0x300
+/* 00001420 0000A2B0  80 7B 03 E8 */	lwz r3, 0x3e8(r27)
+/* 00001424 0000A2B4  88 03 00 01 */	lbz r0, 1(r3)
+/* 00001428 0000A2B8  7C 00 07 75 */	extsb. r0, r0
+/* 0000142C 0000A2BC  40 82 00 08 */	bne lbl_00001434
+/* 00001430 0000A2C0  38 E0 02 58 */	li r7, 0x258
+lbl_00001434:
+/* 00001434 0000A2C4  38 60 00 10 */	li r3, 0x10
+/* 00001438 0000A2C8  B0 E1 00 4A */	sth r7, 0x4a(r1)
+/* 0000143C 0000A2CC  57 20 06 3E */	clrlwi r0, r25, 0x18
+/* 00001440 0000A2D0  38 C1 00 4A */	addi r6, r1, 0x4a
+/* 00001444 0000A2D4  B0 61 00 4C */	sth r3, 0x4c(r1)
+/* 00001448 0000A2D8  7C 00 00 34 */	cntlzw r0, r0
+/* 0000144C 0000A2DC  54 09 D9 7E */	srwi r9, r0, 5
+/* 00001450 0000A2E0  38 E1 00 4C */	addi r7, r1, 0x4c
+/* 00001454 0000A2E4  81 7B 03 E8 */	lwz r11, 0x3e8(r27)
+/* 00001458 0000A2E8  38 00 00 01 */	li r0, 1
+/* 0000145C 0000A2EC  39 01 00 50 */	addi r8, r1, 0x50
+/* 00001460 0000A2F0  81 4B 00 0C */	lwz r10, 0xc(r11)
+/* 00001464 0000A2F4  38 61 00 40 */	addi r3, r1, 0x40
+/* 00001468 0000A2F8  91 41 00 50 */	stw r10, 0x50(r1)
+/* 0000146C 0000A2FC  81 4B 00 10 */	lwz r10, 0x10(r11)
+/* 00001470 0000A300  91 41 00 54 */	stw r10, 0x54(r1)
+/* 00001474 0000A304  81 4B 00 14 */	lwz r10, 0x14(r11)
+/* 00001478 0000A308  91 41 00 58 */	stw r10, 0x58(r1)
+/* 0000147C 0000A30C  90 01 00 5C */	stw r0, 0x5c(r1)
+/* 00001480 0000A310  48 56 E5 31 */	bl ".MacSimsPreferencesDialog__FPQ211GameDisplay15GameDisplayModePUlPsPsPsPlb"
+/* 00001484 0000A314  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 00001488 0000A318  41 82 01 5C */	beq lbl_000015E4
+/* 0000148C 0000A31C  A8 A1 00 48 */	lha r5, 0x48(r1)
+/* 00001490 0000A320  80 7B 03 E8 */	lwz r3, 0x3e8(r27)
+/* 00001494 0000A324  20 85 03 20 */	subfic r4, r5, 0x320
+/* 00001498 0000A328  38 05 FC E0 */	addi r0, r5, -800
+/* 0000149C 0000A32C  7C 80 03 78 */	or r0, r4, r0
+/* 000014A0 0000A330  54 00 0F FE */	srwi r0, r0, 0x1f
+/* 000014A4 0000A334  98 03 00 01 */	stb r0, 1(r3)
+/* 000014A8 0000A338  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 000014AC 0000A33C  80 7B 03 E8 */	lwz r3, 0x3e8(r27)
+/* 000014B0 0000A340  90 03 00 04 */	stw r0, 4(r3)
+/* 000014B4 0000A344  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 000014B8 0000A348  80 7B 03 E8 */	lwz r3, 0x3e8(r27)
+/* 000014BC 0000A34C  90 03 00 08 */	stw r0, 8(r3)
+/* 000014C0 0000A350  80 01 00 50 */	lwz r0, 0x50(r1)
+/* 000014C4 0000A354  80 7B 03 E8 */	lwz r3, 0x3e8(r27)
+/* 000014C8 0000A358  90 03 00 0C */	stw r0, 0xc(r3)
+/* 000014CC 0000A35C  80 9B 03 E8 */	lwz r4, 0x3e8(r27)
+/* 000014D0 0000A360  28 04 00 00 */	cmplwi r4, 0
+/* 000014D4 0000A364  41 82 00 1C */	beq lbl_000014F0
+/* 000014D8 0000A368  80 7A 00 00 */	lwz r3, 0(r26)
+/* 000014DC 0000A36C  38 A0 00 18 */	li r5, 0x18
+/* 000014E0 0000A370  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 000014E4 0000A374  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 000014E8 0000A378  48 59 86 69 */	bl func_00599B50
+/* 000014EC 0000A37C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_000014F0:
+/* 000014F0 0000A380  57 20 06 3F */	clrlwi. r0, r25, 0x18
+/* 000014F4 0000A384  41 82 00 AC */	beq lbl_000015A0
+/* 000014F8 0000A388  80 1B 03 DC */	lwz r0, 0x3dc(r27)
+/* 000014FC 0000A38C  28 00 00 00 */	cmplwi r0, 0
+/* 00001500 0000A390  41 82 00 20 */	beq lbl_00001520
+/* 00001504 0000A394  38 7B 00 00 */	addi r3, r27, 0
+/* 00001508 0000A398  38 81 00 40 */	addi r4, r1, 0x40
+/* 0000150C 0000A39C  81 9B 03 E0 */	lwz r12, 0x3e0(r27)
+/* 00001510 0000A3A0  81 8C 00 58 */	lwz r12, 0x58(r12)
+/* 00001514 0000A3A4  48 59 86 3D */	bl func_00599B50
+/* 00001518 0000A3A8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000151C 0000A3AC  48 00 00 84 */	b lbl_000015A0
+lbl_00001520:
+/* 00001520 0000A3B0  38 61 00 40 */	addi r3, r1, 0x40
+/* 00001524 0000A3B4  48 56 DE FD */	bl ".SetGameDisplay__11GameDisplayFPCQ211GameDisplay15GameDisplayInfo"
+/* 00001528 0000A3B8  7F 63 DB 78 */	mr r3, r27
+/* 0000152C 0000A3BC  4B FF FA 35 */	bl ".GetPrefs__8CSimsAppFv"
+/* 00001530 0000A3C0  3B 23 00 00 */	addi r25, r3, 0
+/* 00001534 0000A3C4  38 61 00 60 */	addi r3, r1, 0x60
+/* 00001538 0000A3C8  48 56 D1 D9 */	bl ".GetGameDisplayInfo__11GameDisplayFPQ211GameDisplay15GameDisplayInfo"
+/* 0000153C 0000A3CC  A8 81 00 68 */	lha r4, 0x68(r1)
+/* 00001540 0000A3D0  20 64 03 20 */	subfic r3, r4, 0x320
+/* 00001544 0000A3D4  38 04 FC E0 */	addi r0, r4, -800
+/* 00001548 0000A3D8  7C 60 03 78 */	or r0, r3, r0
+/* 0000154C 0000A3DC  54 00 0F FE */	srwi r0, r0, 0x1f
+/* 00001550 0000A3E0  98 19 00 01 */	stb r0, 1(r25)
+/* 00001554 0000A3E4  80 01 00 60 */	lwz r0, 0x60(r1)
+/* 00001558 0000A3E8  90 19 00 04 */	stw r0, 4(r25)
+/* 0000155C 0000A3EC  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 00001560 0000A3F0  90 19 00 08 */	stw r0, 8(r25)
+/* 00001564 0000A3F4  80 01 00 70 */	lwz r0, 0x70(r1)
+/* 00001568 0000A3F8  90 19 00 0C */	stw r0, 0xc(r25)
+/* 0000156C 0000A3FC  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 00001570 0000A400  90 19 00 10 */	stw r0, 0x10(r25)
+/* 00001574 0000A404  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 00001578 0000A408  90 19 00 14 */	stw r0, 0x14(r25)
+/* 0000157C 0000A40C  80 9B 03 E8 */	lwz r4, 0x3e8(r27)
+/* 00001580 0000A410  28 04 00 00 */	cmplwi r4, 0
+/* 00001584 0000A414  41 82 00 1C */	beq lbl_000015A0
+/* 00001588 0000A418  80 7A 00 00 */	lwz r3, 0(r26)
+/* 0000158C 0000A41C  38 A0 00 18 */	li r5, 0x18
+/* 00001590 0000A420  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00001594 0000A424  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 00001598 0000A428  48 59 85 B9 */	bl func_00599B50
+/* 0000159C 0000A42C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_000015A0:
+/* 000015A0 0000A430  3B 20 00 00 */	li r25, 0
+/* 000015A4 0000A434  48 56 D0 7D */	bl ".IsWindow__11GameDisplayFv"
+/* 000015A8 0000A438  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 000015AC 0000A43C  40 82 00 10 */	bne lbl_000015BC
+/* 000015B0 0000A440  48 00 E1 71 */	bl ".AreWeOnX__Fv"
+/* 000015B4 0000A444  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 000015B8 0000A448  41 82 00 08 */	beq lbl_000015C0
+lbl_000015BC:
+/* 000015BC 0000A44C  3B 20 00 01 */	li r25, 1
+lbl_000015C0:
+/* 000015C0 0000A450  7F 63 DB 78 */	mr r3, r27
+/* 000015C4 0000A454  81 9B 03 E0 */	lwz r12, 0x3e0(r27)
+/* 000015C8 0000A458  7F 24 CB 78 */	mr r4, r25
+/* 000015CC 0000A45C  81 8C 00 30 */	lwz r12, 0x30(r12)
+/* 000015D0 0000A460  48 59 85 81 */	bl func_00599B50
+/* 000015D4 0000A464  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000015D8 0000A468  48 56 D0 99 */	bl ".IsFullScreen__11GameDisplayFv"
+/* 000015DC 0000A46C  98 7B 00 0A */	stb r3, 0xa(r27)
+/* 000015E0 0000A470  3B 80 00 01 */	li r28, 1
+lbl_000015E4:
+/* 000015E4 0000A474  80 7E 00 00 */	lwz r3, 0(r30)
+/* 000015E8 0000A478  28 03 00 00 */	cmplwi r3, 0
+/* 000015EC 0000A47C  41 82 00 38 */	beq lbl_00001624
+/* 000015F0 0000A480  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 000015F4 0000A484  28 03 00 00 */	cmplwi r3, 0
+/* 000015F8 0000A488  41 82 00 2C */	beq lbl_00001624
+/* 000015FC 0000A48C  48 20 6C C5 */	bl ".GetMode__7CPStateFv"
+/* 00001600 0000A490  2C 03 00 02 */	cmpwi r3, 2
+/* 00001604 0000A494  40 82 00 20 */	bne lbl_00001624
+/* 00001608 0000A498  80 7E 00 00 */	lwz r3, 0(r30)
+/* 0000160C 0000A49C  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 00001610 0000A4A0  48 20 6B 11 */	bl ".IsPaused__7CPStateFv"
+/* 00001614 0000A4A4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001618 0000A4A8  7F A4 EB 78 */	mr r4, r29
+/* 0000161C 0000A4AC  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 00001620 0000A4B0  48 20 5C 21 */	bl ".Pause__7CPStateFb"
+lbl_00001624:
+/* 00001624 0000A4B4  80 7F 00 00 */	lwz r3, 0(r31)
+/* 00001628 0000A4B8  28 03 00 00 */	cmplwi r3, 0
+/* 0000162C 0000A4BC  41 82 00 38 */	beq lbl_00001664
+/* 00001630 0000A4C0  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 00001634 0000A4C4  28 03 00 00 */	cmplwi r3, 0
+/* 00001638 0000A4C8  41 82 00 2C */	beq lbl_00001664
+/* 0000163C 0000A4CC  57 00 06 3F */	clrlwi. r0, r24, 0x18
+/* 00001640 0000A4D0  80 63 00 0C */	lwz r3, 0xc(r3)
+/* 00001644 0000A4D4  38 80 00 16 */	li r4, 0x16
+/* 00001648 0000A4D8  41 82 00 08 */	beq lbl_00001650
+/* 0000164C 0000A4DC  38 80 00 15 */	li r4, 0x15
+lbl_00001650:
+/* 00001650 0000A4E0  38 A0 00 00 */	li r5, 0
+/* 00001654 0000A4E4  38 C0 00 00 */	li r6, 0
+/* 00001658 0000A4E8  38 E0 00 00 */	li r7, 0
+/* 0000165C 0000A4EC  39 00 00 00 */	li r8, 0
+/* 00001660 0000A4F0  48 2D E0 01 */	bl ".Event__5cBoxXFlllll"
+lbl_00001664:
+/* 00001664 0000A4F4  7F 83 E3 78 */	mr r3, r28
+/* 00001668 0000A4F8  80 01 00 A8 */	lwz r0, 0xa8(r1)
+/* 0000166C 0000A4FC  38 21 00 A0 */	addi r1, r1, 0xa0
+/* 00001670 0000A500  7C 08 03 A6 */	mtlr r0
+/* 00001674 0000A504  BB 01 FF E0 */	lmw r24, -0x20(r1)
+/* 00001678 0000A508  4E 80 00 20 */	blr 
+
+.global ".IsLoading__Fv"
+".IsLoading__Fv":
+/* 000016B0 0000A540  80 82 88 70 */	lwz r4, -0x7790(r2)
+/* 000016B4 0000A544  38 60 00 00 */	li r3, 0
+/* 000016B8 0000A548  80 84 00 00 */	lwz r4, 0(r4)
+/* 000016BC 0000A54C  28 04 00 00 */	cmplwi r4, 0
+/* 000016C0 0000A550  4D 82 00 20 */	beqlr 
+/* 000016C4 0000A554  80 04 00 D8 */	lwz r0, 0xd8(r4)
+/* 000016C8 0000A558  28 00 00 00 */	cmplwi r0, 0
+/* 000016CC 0000A55C  4D 82 00 20 */	beqlr 
+/* 000016D0 0000A560  38 60 00 01 */	li r3, 1
+/* 000016D4 0000A564  4E 80 00 20 */	blr 
+
+.global ".IsSimming__Fv"
+".IsSimming__Fv":
+/* 00001700 0000A590  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001704 0000A594  7C 08 02 A6 */	mflr r0
+/* 00001708 0000A598  83 E2 88 70 */	lwz r31, -0x7790(r2)
+/* 0000170C 0000A59C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00001710 0000A5A0  3B C0 00 00 */	li r30, 0
+/* 00001714 0000A5A4  90 01 00 08 */	stw r0, 8(r1)
+/* 00001718 0000A5A8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 0000171C 0000A5AC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 00001720 0000A5B0  28 03 00 00 */	cmplwi r3, 0
+/* 00001724 0000A5B4  41 82 00 38 */	beq lbl_0000175C
+/* 00001728 0000A5B8  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 0000172C 0000A5BC  28 03 00 00 */	cmplwi r3, 0
+/* 00001730 0000A5C0  41 82 00 2C */	beq lbl_0000175C
+/* 00001734 0000A5C4  48 20 6B 8D */	bl ".GetMode__7CPStateFv"
+/* 00001738 0000A5C8  2C 03 00 02 */	cmpwi r3, 2
+/* 0000173C 0000A5CC  40 82 00 20 */	bne lbl_0000175C
+/* 00001740 0000A5D0  80 7F 00 00 */	lwz r3, 0(r31)
+/* 00001744 0000A5D4  80 63 00 A4 */	lwz r3, 0xa4(r3)
+/* 00001748 0000A5D8  48 20 69 D9 */	bl ".IsPaused__7CPStateFv"
+/* 0000174C 0000A5DC  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 00001750 0000A5E0  7C 00 00 34 */	cntlzw r0, r0
+/* 00001754 0000A5E4  54 00 D9 7E */	srwi r0, r0, 5
+/* 00001758 0000A5E8  7C 1E 03 78 */	mr r30, r0
+lbl_0000175C:
+/* 0000175C 0000A5EC  7F C3 F3 78 */	mr r3, r30
+/* 00001760 0000A5F0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00001764 0000A5F4  38 21 00 50 */	addi r1, r1, 0x50
+/* 00001768 0000A5F8  7C 08 03 A6 */	mtlr r0
+/* 0000176C 0000A5FC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001770 0000A600  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00001774 0000A604  4E 80 00 20 */	blr 
+
+.global ".DoAboutBox__8CSimsAppFv"
+".DoAboutBox__8CSimsAppFv":
+/* 000017A0 0000A630  93 E1 FF FC */	stw r31, -4(r1)
+/* 000017A4 0000A634  7C 08 02 A6 */	mflr r0
+/* 000017A8 0000A638  38 60 27 11 */	li r3, 0x2711
+/* 000017AC 0000A63C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 000017B0 0000A640  38 80 00 00 */	li r4, 0
+/* 000017B4 0000A644  38 A0 FF FF */	li r5, -1
+/* 000017B8 0000A648  90 01 00 08 */	stw r0, 8(r1)
+/* 000017BC 0000A64C  38 00 00 00 */	li r0, 0
+/* 000017C0 0000A650  94 21 FE A0 */	stwu r1, -0x160(r1)
+/* 000017C4 0000A654  B0 01 00 40 */	sth r0, 0x40(r1)
+/* 000017C8 0000A658  48 59 53 A9 */	bl func_00596B70
+/* 000017CC 0000A65C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000017D0 0000A660  7C 7E 1B 79 */	or. r30, r3, r3
+/* 000017D4 0000A664  41 82 00 DC */	beq lbl_000018B0
+/* 000017D8 0000A668  48 59 54 41 */	bl func_00596C18
+/* 000017DC 0000A66C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000017E0 0000A670  38 81 00 50 */	addi r4, r1, 0x50
+/* 000017E4 0000A674  48 59 69 35 */	bl func_00598118
+/* 000017E8 0000A678  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000017EC 0000A67C  38 61 00 50 */	addi r3, r1, 0x50
+/* 000017F0 0000A680  48 00 ED 31 */	bl ".FormatPStringWithGameName__FPUc"
+/* 000017F4 0000A684  7F C3 F3 78 */	mr r3, r30
+/* 000017F8 0000A688  48 59 54 21 */	bl func_00596C18
+/* 000017FC 0000A68C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001800 0000A690  38 81 00 50 */	addi r4, r1, 0x50
+/* 00001804 0000A694  48 59 69 2D */	bl func_00598130
+/* 00001808 0000A698  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000180C 0000A69C  38 7E 00 00 */	addi r3, r30, 0
+/* 00001810 0000A6A0  38 A1 00 42 */	addi r5, r1, 0x42
+/* 00001814 0000A6A4  38 C1 00 44 */	addi r6, r1, 0x44
+/* 00001818 0000A6A8  38 E1 00 48 */	addi r7, r1, 0x48
+/* 0000181C 0000A6AC  38 80 00 04 */	li r4, 4
+/* 00001820 0000A6B0  48 59 54 59 */	bl func_00596C78
+/* 00001824 0000A6B4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001828 0000A6B8  80 82 88 78 */	lwz r4, -0x7788(r2)
+/* 0000182C 0000A6BC  80 61 00 44 */	lwz r3, 0x44(r1)
+/* 00001830 0000A6C0  80 84 00 00 */	lwz r4, 0(r4)
+/* 00001834 0000A6C4  38 84 00 9E */	addi r4, r4, 0x9e
+/* 00001838 0000A6C8  48 59 69 11 */	bl func_00598148
+/* 0000183C 0000A6CC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001840 0000A6D0  38 7E 00 00 */	addi r3, r30, 0
+/* 00001844 0000A6D4  38 80 00 01 */	li r4, 1
+/* 00001848 0000A6D8  48 59 53 A1 */	bl func_00596BE8
+/* 0000184C 0000A6DC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001850 0000A6E0  80 62 88 6C */	lwz r3, -0x7794(r2)
+/* 00001854 0000A6E4  48 59 57 55 */	bl func_00596FA8
+/* 00001858 0000A6E8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000185C 0000A6EC  7C 7F 1B 78 */	mr r31, r3
+/* 00001860 0000A6F0  48 59 51 C1 */	bl func_00596A20
+/* 00001864 0000A6F4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001868 0000A6F8  7F C3 F3 78 */	mr r3, r30
+/* 0000186C 0000A6FC  48 59 53 AD */	bl func_00596C18
+/* 00001870 0000A700  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001874 0000A704  48 59 53 BD */	bl func_00596C30
+/* 00001878 0000A708  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_0000187C:
+/* 0000187C 0000A70C  38 7F 00 00 */	addi r3, r31, 0
+/* 00001880 0000A710  38 81 00 40 */	addi r4, r1, 0x40
+/* 00001884 0000A714  48 59 53 C5 */	bl func_00596C48
+/* 00001888 0000A718  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000188C 0000A71C  A8 01 00 40 */	lha r0, 0x40(r1)
+/* 00001890 0000A720  2C 00 00 01 */	cmpwi r0, 1
+/* 00001894 0000A724  40 82 FF E8 */	bne lbl_0000187C
+/* 00001898 0000A728  7F C3 F3 78 */	mr r3, r30
+/* 0000189C 0000A72C  48 59 54 3D */	bl func_00596CD8
+/* 000018A0 0000A730  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000018A4 0000A734  7F E3 FB 78 */	mr r3, r31
+/* 000018A8 0000A738  48 59 57 19 */	bl func_00596FC0
+/* 000018AC 0000A73C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_000018B0:
+/* 000018B0 0000A740  80 01 01 68 */	lwz r0, 0x168(r1)
+/* 000018B4 0000A744  38 21 01 60 */	addi r1, r1, 0x160
+/* 000018B8 0000A748  83 E1 FF FC */	lwz r31, -4(r1)
+/* 000018BC 0000A74C  7C 08 03 A6 */	mtlr r0
+/* 000018C0 0000A750  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 000018C4 0000A754  4E 80 00 20 */	blr 
+
+.global ".DoQuit__8CSimsAppFv"
+".DoQuit__8CSimsAppFv":
+/* 00001900 0000A790  7C 08 02 A6 */	mflr r0
+/* 00001904 0000A794  90 01 00 08 */	stw r0, 8(r1)
+/* 00001908 0000A798  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 0000190C 0000A79C  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 00001910 0000A7A0  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 00001914 0000A7A4  48 59 82 3D */	bl func_00599B50
+/* 00001918 0000A7A8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 0000191C 0000A7AC  80 62 88 70 */	lwz r3, -0x7790(r2)
+/* 00001920 0000A7B0  80 63 00 00 */	lwz r3, 0(r3)
+/* 00001924 0000A7B4  81 83 00 00 */	lwz r12, 0(r3)
+/* 00001928 0000A7B8  81 8C 00 E4 */	lwz r12, 0xe4(r12)
+/* 0000192C 0000A7BC  48 59 82 25 */	bl func_00599B50
+/* 00001930 0000A7C0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 00001934 0000A7C4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00001938 0000A7C8  38 21 00 40 */	addi r1, r1, 0x40
+/* 0000193C 0000A7CC  7C 08 03 A6 */	mtlr r0
+/* 00001940 0000A7D0  4E 80 00 20 */	blr 
+
+.global ".GameLibModalFilterProc"
+".GameLibModalFilterProc":
+/* 00001970 0000A800  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001974 0000A804  7C 08 02 A6 */	mflr r0
+/* 00001978 0000A808  80 C2 88 78 */	lwz r6, -0x7788(r2)
+/* 0000197C 0000A80C  7C BF 2B 78 */	mr r31, r5
+/* 00001980 0000A810  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00001984 0000A814  3B C4 00 00 */	addi r30, r4, 0
+/* 00001988 0000A818  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 0000198C 0000A81C  3B A3 00 00 */	addi r29, r3, 0
+/* 00001990 0000A820  90 01 00 08 */	stw r0, 8(r1)
+/* 00001994 0000A824  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001998 0000A828  80 66 00 00 */	lwz r3, 0(r6)
+/* 0000199C 0000A82C  81 83 03 E0 */	lwz r12, 0x3e0(r3)
+/* 000019A0 0000A830  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 000019A4 0000A834  48 59 81 AD */	bl func_00599B50
+/* 000019A8 0000A838  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 000019AC 0000A83C  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 000019B0 0000A840  41 82 00 0C */	beq lbl_000019BC
+/* 000019B4 0000A844  38 60 00 01 */	li r3, 1
+/* 000019B8 0000A848  48 00 00 18 */	b lbl_000019D0
+lbl_000019BC:
+/* 000019BC 0000A84C  38 7D 00 00 */	addi r3, r29, 0
+/* 000019C0 0000A850  38 9E 00 00 */	addi r4, r30, 0
+/* 000019C4 0000A854  38 BF 00 00 */	addi r5, r31, 0
+/* 000019C8 0000A858  48 59 67 99 */	bl func_00598160
+/* 000019CC 0000A85C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_000019D0:
+/* 000019D0 0000A860  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 000019D4 0000A864  38 21 00 50 */	addi r1, r1, 0x50
+/* 000019D8 0000A868  83 E1 FF FC */	lwz r31, -4(r1)
+/* 000019DC 0000A86C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 000019E0 0000A870  7C 08 03 A6 */	mtlr r0
+/* 000019E4 0000A874  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 000019E8 0000A878  4E 80 00 20 */	blr 
+
+.global ".ForceGameToRefresh__8CSimsAppFv"
+".ForceGameToRefresh__8CSimsAppFv":
+/* 00001A20 0000A8B0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001A24 0000A8B4  7C 08 02 A6 */	mflr r0
+/* 00001A28 0000A8B8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00001A2C 0000A8BC  83 C2 88 74 */	lwz r30, -0x778c(r2)
+/* 00001A30 0000A8C0  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 00001A34 0000A8C4  83 A2 88 68 */	lwz r29, -0x7798(r2)
+/* 00001A38 0000A8C8  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 00001A3C 0000A8CC  90 01 00 08 */	stw r0, 8(r1)
+/* 00001A40 0000A8D0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00001A44 0000A8D4  88 03 00 0C */	lbz r0, 0xc(r3)
+/* 00001A48 0000A8D8  28 00 00 00 */	cmplwi r0, 0
+/* 00001A4C 0000A8DC  40 82 00 EC */	bne lbl_00001B38
+/* 00001A50 0000A8E0  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001A54 0000A8E4  28 03 00 00 */	cmplwi r3, 0
+/* 00001A58 0000A8E8  41 82 00 E0 */	beq lbl_00001B38
+/* 00001A5C 0000A8EC  80 63 00 2C */	lwz r3, 0x2c(r3)
+/* 00001A60 0000A8F0  28 03 00 00 */	cmplwi r3, 0
+/* 00001A64 0000A8F4  41 82 00 D4 */	beq lbl_00001B38
+/* 00001A68 0000A8F8  48 3B 20 69 */	bl ".GetBuffDims__10AnimDeviceCFv"
+/* 00001A6C 0000A8FC  80 9E 00 00 */	lwz r4, 0(r30)
+/* 00001A70 0000A900  7C 7F 1B 78 */	mr r31, r3
+/* 00001A74 0000A904  80 64 00 2C */	lwz r3, 0x2c(r4)
+/* 00001A78 0000A908  48 3B 20 59 */	bl ".GetBuffDims__10AnimDeviceCFv"
+/* 00001A7C 0000A90C  80 C3 00 00 */	lwz r6, 0(r3)
+/* 00001A80 0000A910  38 61 00 40 */	addi r3, r1, 0x40
+/* 00001A84 0000A914  80 FF 00 04 */	lwz r7, 4(r31)
+/* 00001A88 0000A918  38 80 00 00 */	li r4, 0
+/* 00001A8C 0000A91C  38 A0 00 00 */	li r5, 0
+/* 00001A90 0000A920  48 02 D7 F1 */	bl ".SetRect_Win32"
+/* 00001A94 0000A924  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001A98 0000A928  80 63 00 2C */	lwz r3, 0x2c(r3)
+/* 00001A9C 0000A92C  48 3B 1C F5 */	bl ".GetCurrentDamage__10AnimDeviceFv"
+/* 00001AA0 0000A930  80 1D 00 00 */	lwz r0, 0(r29)
+/* 00001AA4 0000A934  3B 83 00 00 */	addi r28, r3, 0
+/* 00001AA8 0000A938  2C 00 00 00 */	cmpwi r0, 0
+/* 00001AAC 0000A93C  41 82 00 30 */	beq lbl_00001ADC
+/* 00001AB0 0000A940  48 00 01 71 */	bl ".end__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001AB4 0000A944  3B E3 00 00 */	addi r31, r3, 0
+/* 00001AB8 0000A948  38 7C 00 00 */	addi r3, r28, 0
+/* 00001ABC 0000A94C  48 00 02 65 */	bl ".begin__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001AC0 0000A950  38 83 00 00 */	addi r4, r3, 0
+/* 00001AC4 0000A954  38 7C 00 00 */	addi r3, r28, 0
+/* 00001AC8 0000A958  38 BF 00 00 */	addi r5, r31, 0
+/* 00001ACC 0000A95C  48 00 00 C5 */	bl ".erase__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>FP7tagRECTP7tagRECT"
+/* 00001AD0 0000A960  38 00 00 00 */	li r0, 0
+/* 00001AD4 0000A964  90 1C 00 0C */	stw r0, 0xc(r28)
+/* 00001AD8 0000A968  90 1C 00 10 */	stw r0, 0x10(r28)
+lbl_00001ADC:
+/* 00001ADC 0000A96C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001AE0 0000A970  80 63 00 2C */	lwz r3, 0x2c(r3)
+/* 00001AE4 0000A974  48 3B 1C ED */	bl ".GetPreviousDamage__10AnimDeviceFv"
+/* 00001AE8 0000A978  80 1D 00 00 */	lwz r0, 0(r29)
+/* 00001AEC 0000A97C  3B A3 00 00 */	addi r29, r3, 0
+/* 00001AF0 0000A980  2C 00 00 00 */	cmpwi r0, 0
+/* 00001AF4 0000A984  41 82 00 30 */	beq lbl_00001B24
+/* 00001AF8 0000A988  48 00 01 29 */	bl ".end__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001AFC 0000A98C  3B E3 00 00 */	addi r31, r3, 0
+/* 00001B00 0000A990  38 7D 00 00 */	addi r3, r29, 0
+/* 00001B04 0000A994  48 00 02 1D */	bl ".begin__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001B08 0000A998  38 83 00 00 */	addi r4, r3, 0
+/* 00001B0C 0000A99C  38 7D 00 00 */	addi r3, r29, 0
+/* 00001B10 0000A9A0  38 BF 00 00 */	addi r5, r31, 0
+/* 00001B14 0000A9A4  48 00 00 7D */	bl ".erase__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>FP7tagRECTP7tagRECT"
+/* 00001B18 0000A9A8  38 00 00 00 */	li r0, 0
+/* 00001B1C 0000A9AC  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 00001B20 0000A9B0  90 1D 00 10 */	stw r0, 0x10(r29)
+lbl_00001B24:
+/* 00001B24 0000A9B4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 00001B28 0000A9B8  80 63 00 2C */	lwz r3, 0x2c(r3)
+/* 00001B2C 0000A9BC  48 3B 1C 65 */	bl ".GetCurrentDamage__10AnimDeviceFv"
+/* 00001B30 0000A9C0  38 81 00 40 */	addi r4, r1, 0x40
+/* 00001B34 0000A9C4  48 3C 02 FD */	bl ".Add__13DDDDamageListFRC7tagRECT"
+lbl_00001B38:
+/* 00001B38 0000A9C8  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 00001B3C 0000A9CC  38 21 00 60 */	addi r1, r1, 0x60
+/* 00001B40 0000A9D0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001B44 0000A9D4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00001B48 0000A9D8  7C 08 03 A6 */	mtlr r0
+/* 00001B4C 0000A9DC  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 00001B50 0000A9E0  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 00001B54 0000A9E4  4E 80 00 20 */	blr 
+
+.global ".erase__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>FP7tagRECTP7tagRECT"
+".erase__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>FP7tagRECTP7tagRECT":
+/* 00001B90 0000AA20  7C 08 02 A6 */	mflr r0
+/* 00001B94 0000AA24  90 01 00 08 */	stw r0, 8(r1)
+/* 00001B98 0000AA28  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00001B9C 0000AA2C  48 00 03 15 */	bl ".erase__Q23std52__vector_imp<7tagRECT,Q23std19allocator<7tagRECT>,0>FP7tagRECTP7tagRECT"
+/* 00001BA0 0000AA30  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00001BA4 0000AA34  38 21 00 40 */	addi r1, r1, 0x40
+/* 00001BA8 0000AA38  7C 08 03 A6 */	mtlr r0
+/* 00001BAC 0000AA3C  4E 80 00 20 */	blr 
+
+.global ".end__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+".end__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv":
+/* 00001C20 0000AAB0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001C24 0000AAB4  7C 08 02 A6 */	mflr r0
+/* 00001C28 0000AAB8  7C 7F 1B 78 */	mr r31, r3
+/* 00001C2C 0000AABC  90 01 00 08 */	stw r0, 8(r1)
+/* 00001C30 0000AAC0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001C34 0000AAC4  48 00 00 7D */	bl ".data__Q23std54__vector_deleter<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001C38 0000AAC8  80 1F 00 04 */	lwz r0, 4(r31)
+/* 00001C3C 0000AACC  80 63 00 00 */	lwz r3, 0(r3)
+/* 00001C40 0000AAD0  54 00 20 36 */	slwi r0, r0, 4
+/* 00001C44 0000AAD4  7C 63 02 14 */	add r3, r3, r0
+/* 00001C48 0000AAD8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00001C4C 0000AADC  38 21 00 50 */	addi r1, r1, 0x50
+/* 00001C50 0000AAE0  7C 08 03 A6 */	mtlr r0
+/* 00001C54 0000AAE4  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001C58 0000AAE8  4E 80 00 20 */	blr 
+
+.global ".data__Q23std54__vector_deleter<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+".data__Q23std54__vector_deleter<7tagRECT,Q23std19allocator<7tagRECT>>Fv":
+/* 00001CB0 0000AB40  38 63 00 08 */	addi r3, r3, 8
+/* 00001CB4 0000AB44  4E 80 00 20 */	blr 
+
+.global ".begin__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+".begin__Q23std44vector<7tagRECT,Q23std19allocator<7tagRECT>>Fv":
+/* 00001D20 0000ABB0  7C 08 02 A6 */	mflr r0
+/* 00001D24 0000ABB4  90 01 00 08 */	stw r0, 8(r1)
+/* 00001D28 0000ABB8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 00001D2C 0000ABBC  4B FF FF 85 */	bl ".data__Q23std54__vector_deleter<7tagRECT,Q23std19allocator<7tagRECT>>Fv"
+/* 00001D30 0000ABC0  80 63 00 00 */	lwz r3, 0(r3)
+/* 00001D34 0000ABC4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 00001D38 0000ABC8  38 21 00 40 */	addi r1, r1, 0x40
+/* 00001D3C 0000ABCC  7C 08 03 A6 */	mtlr r0
+/* 00001D40 0000ABD0  4E 80 00 20 */	blr 
+
+.global ".__dt__8CSimsAppFv"
+".__dt__8CSimsAppFv":
+/* 00001DA0 0000AC30  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001DA4 0000AC34  7C 08 02 A6 */	mflr r0
+/* 00001DA8 0000AC38  3B E4 00 00 */	addi r31, r4, 0
+/* 00001DAC 0000AC3C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 00001DB0 0000AC40  7C 7E 1B 79 */	or. r30, r3, r3
+/* 00001DB4 0000AC44  90 01 00 08 */	stw r0, 8(r1)
+/* 00001DB8 0000AC48  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001DBC 0000AC4C  41 82 00 2C */	beq lbl_00001DE8
+/* 00001DC0 0000AC50  80 02 88 64 */	lwz r0, -0x779c(r2)
+/* 00001DC4 0000AC54  90 1E 03 E0 */	stw r0, 0x3e0(r30)
+/* 00001DC8 0000AC58  48 02 A7 89 */	bl ".CloseMacRegistry__Fv"
+/* 00001DCC 0000AC5C  38 7E 00 00 */	addi r3, r30, 0
+/* 00001DD0 0000AC60  38 80 00 00 */	li r4, 0
+/* 00001DD4 0000AC64  48 00 72 AD */	bl ".__dt__8CGameAppFv"
+/* 00001DD8 0000AC68  7F E0 07 35 */	extsh. r0, r31
+/* 00001DDC 0000AC6C  40 81 00 0C */	ble lbl_00001DE8
+/* 00001DE0 0000AC70  7F C3 F3 78 */	mr r3, r30
+/* 00001DE4 0000AC74  48 00 71 DD */	bl ".__dl__8CGameAppFPv"
+lbl_00001DE8:
+/* 00001DE8 0000AC78  7F C3 F3 78 */	mr r3, r30
+/* 00001DEC 0000AC7C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00001DF0 0000AC80  38 21 00 50 */	addi r1, r1, 0x50
+/* 00001DF4 0000AC84  7C 08 03 A6 */	mtlr r0
+/* 00001DF8 0000AC88  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001DFC 0000AC8C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 00001E00 0000AC90  4E 80 00 20 */	blr 
+
+.global ".__ct__8CSimsAppFv"
+".__ct__8CSimsAppFv":
+/* 00001E30 0000ACC0  93 E1 FF FC */	stw r31, -4(r1)
+/* 00001E34 0000ACC4  7C 08 02 A6 */	mflr r0
+/* 00001E38 0000ACC8  7C 7F 1B 78 */	mr r31, r3
+/* 00001E3C 0000ACCC  90 01 00 08 */	stw r0, 8(r1)
+/* 00001E40 0000ACD0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 00001E44 0000ACD4  48 00 73 0D */	bl ".__ct__8CGameAppFv"
+/* 00001E48 0000ACD8  80 02 88 64 */	lwz r0, -0x779c(r2)
+/* 00001E4C 0000ACDC  90 1F 03 E0 */	stw r0, 0x3e0(r31)
+/* 00001E50 0000ACE0  48 02 AB A1 */	bl ".InitMacRegistry__Fv"
+/* 00001E54 0000ACE4  38 00 00 00 */	li r0, 0
+/* 00001E58 0000ACE8  98 1F 00 08 */	stb r0, 8(r31)
+/* 00001E5C 0000ACEC  7F E3 FB 78 */	mr r3, r31
+/* 00001E60 0000ACF0  98 1F 00 0A */	stb r0, 0xa(r31)
+/* 00001E64 0000ACF4  90 1F 03 E4 */	stw r0, 0x3e4(r31)
+/* 00001E68 0000ACF8  90 1F 03 E8 */	stw r0, 0x3e8(r31)
+/* 00001E6C 0000ACFC  98 1F 03 EC */	stb r0, 0x3ec(r31)
+/* 00001E70 0000AD00  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 00001E74 0000AD04  38 21 00 50 */	addi r1, r1, 0x50
+/* 00001E78 0000AD08  7C 08 03 A6 */	mtlr r0
+/* 00001E7C 0000AD0C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 00001E80 0000AD10  4E 80 00 20 */	blr 
+
+.global ".erase__Q23std52__vector_imp<7tagRECT,Q23std19allocator<7tagRECT>,0>FP7tagRECTP7tagRECT"
+".erase__Q23std52__vector_imp<7tagRECT,Q23std19allocator<7tagRECT>,0>FP7tagRECTP7tagRECT":
+/* 00001EB0 0000AD40  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 00001EB4 0000AD44  7C 08 02 A6 */	mflr r0
+/* 00001EB8 0000AD48  3B 84 00 00 */	addi r28, r4, 0
+/* 00001EBC 0000AD4C  3B A5 00 00 */	addi r29, r5, 0
+/* 00001EC0 0000AD50  7C 1C E8 40 */	cmplw r28, r29
+/* 00001EC4 0000AD54  3B 63 00 00 */	addi r27, r3, 0
+/* 00001EC8 0000AD58  90 01 00 08 */	stw r0, 8(r1)
+/* 00001ECC 0000AD5C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 00001ED0 0000AD60  40 82 00 0C */	bne lbl_00001EDC
+/* 00001ED4 0000AD64  7F 83 E3 78 */	mr r3, r28
+/* 00001ED8 0000AD68  48 00 00 70 */	b lbl_00001F48
+lbl_00001EDC:
+/* 00001EDC 0000AD6C  80 1B 00 04 */	lwz r0, 4(r27)
+/* 00001EE0 0000AD70  80 7B 00 08 */	lwz r3, 8(r27)
+/* 00001EE4 0000AD74  54 00 20 36 */	slwi r0, r0, 4
+/* 00001EE8 0000AD78  7F E3 02 14 */	add r31, r3, r0
+/* 00001EEC 0000AD7C  7C 1D F8 50 */	subf r0, r29, r31
+/* 00001EF0 0000AD80  7C 00 26 70 */	srawi r0, r0, 4
+/* 00001EF4 0000AD84  7F C0 01 95 */	addze. r30, r0
+/* 00001EF8 0000AD88  41 82 00 14 */	beq lbl_00001F0C
+/* 00001EFC 0000AD8C  38 7D 00 00 */	addi r3, r29, 0
+/* 00001F00 0000AD90  38 9F 00 00 */	addi r4, r31, 0
+/* 00001F04 0000AD94  38 BC 00 00 */	addi r5, r28, 0
+/* 00001F08 0000AD98  48 00 01 39 */	bl ".copy__Q23std24__msl_copy<7tagRECT,0,0>FP7tagRECTP7tagRECTP7tagRECT"
+lbl_00001F0C:
+/* 00001F0C 0000AD9C  57 C0 20 36 */	slwi r0, r30, 4
+/* 00001F10 0000ADA0  7F DC 02 14 */	add r30, r28, r0
+/* 00001F14 0000ADA4  48 00 00 10 */	b lbl_00001F24
+lbl_00001F18:
+/* 00001F18 0000ADA8  7F 63 DB 78 */	mr r3, r27
+/* 00001F1C 0000ADAC  48 00 00 B5 */	bl ".first__Q310Metrowerks7details53compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>Fv"
+/* 00001F20 0000ADB0  3B DE 00 10 */	addi r30, r30, 0x10
+lbl_00001F24:
+/* 00001F24 0000ADB4  7C 1E F8 40 */	cmplw r30, r31
+/* 00001F28 0000ADB8  41 80 FF F0 */	blt lbl_00001F18
+/* 00001F2C 0000ADBC  7C 7C E8 50 */	subf r3, r28, r29
+/* 00001F30 0000ADC0  80 1B 00 04 */	lwz r0, 4(r27)
+/* 00001F34 0000ADC4  7C 63 26 70 */	srawi r3, r3, 4
+/* 00001F38 0000ADC8  7C 63 01 94 */	addze r3, r3
+/* 00001F3C 0000ADCC  7C 03 00 50 */	subf r0, r3, r0
+/* 00001F40 0000ADD0  90 1B 00 04 */	stw r0, 4(r27)
+/* 00001F44 0000ADD4  7F 83 E3 78 */	mr r3, r28
+lbl_00001F48:
+/* 00001F48 0000ADD8  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 00001F4C 0000ADDC  38 21 00 60 */	addi r1, r1, 0x60
+/* 00001F50 0000ADE0  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 00001F54 0000ADE4  7C 08 03 A6 */	mtlr r0
+/* 00001F58 0000ADE8  4E 80 00 20 */	blr 
+
+.global ".first__Q310Metrowerks7details53compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>Fv"
+".first__Q310Metrowerks7details53compressed_pair_imp<Q23std19allocator<7tagRECT>,Ul,1>Fv":
+/* 00001FD0 0000AE60  4E 80 00 20 */	blr 
+
+.global ".copy__Q23std24__msl_copy<7tagRECT,0,0>FP7tagRECTP7tagRECTP7tagRECT"
+".copy__Q23std24__msl_copy<7tagRECT,0,0>FP7tagRECTP7tagRECTP7tagRECT":
+/* 00002040 0000AED0  38 C4 00 0F */	addi r6, r4, 0xf
+/* 00002044 0000AED4  7C 03 20 40 */	cmplw r3, r4
+/* 00002048 0000AED8  7C C3 30 50 */	subf r6, r3, r6
+/* 0000204C 0000AEDC  54 C6 E1 3E */	srwi r6, r6, 4
+/* 00002050 0000AEE0  40 80 00 D4 */	bge lbl_00002124
+/* 00002054 0000AEE4  54 C0 F0 BF */	rlwinm. r0, r6, 0x1e, 2, 0x1f
+/* 00002058 0000AEE8  7C 09 03 A6 */	mtctr r0
+/* 0000205C 0000AEEC  41 82 00 98 */	beq lbl_000020F4
+lbl_00002060:
+/* 00002060 0000AEF0  80 03 00 00 */	lwz r0, 0(r3)
+/* 00002064 0000AEF4  90 05 00 00 */	stw r0, 0(r5)
+/* 00002068 0000AEF8  80 03 00 04 */	lwz r0, 4(r3)
+/* 0000206C 0000AEFC  90 05 00 04 */	stw r0, 4(r5)
+/* 00002070 0000AF00  80 03 00 08 */	lwz r0, 8(r3)
+/* 00002074 0000AF04  90 05 00 08 */	stw r0, 8(r5)
+/* 00002078 0000AF08  80 03 00 0C */	lwz r0, 0xc(r3)
+/* 0000207C 0000AF0C  90 05 00 0C */	stw r0, 0xc(r5)
+/* 00002080 0000AF10  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 00002084 0000AF14  90 05 00 10 */	stw r0, 0x10(r5)
+/* 00002088 0000AF18  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 0000208C 0000AF1C  90 05 00 14 */	stw r0, 0x14(r5)
+/* 00002090 0000AF20  80 03 00 18 */	lwz r0, 0x18(r3)
+/* 00002094 0000AF24  90 05 00 18 */	stw r0, 0x18(r5)
+/* 00002098 0000AF28  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 0000209C 0000AF2C  90 05 00 1C */	stw r0, 0x1c(r5)
+/* 000020A0 0000AF30  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 000020A4 0000AF34  90 05 00 20 */	stw r0, 0x20(r5)
+/* 000020A8 0000AF38  80 03 00 24 */	lwz r0, 0x24(r3)
+/* 000020AC 0000AF3C  90 05 00 24 */	stw r0, 0x24(r5)
+/* 000020B0 0000AF40  80 03 00 28 */	lwz r0, 0x28(r3)
+/* 000020B4 0000AF44  90 05 00 28 */	stw r0, 0x28(r5)
+/* 000020B8 0000AF48  80 03 00 2C */	lwz r0, 0x2c(r3)
+/* 000020BC 0000AF4C  90 05 00 2C */	stw r0, 0x2c(r5)
+/* 000020C0 0000AF50  80 03 00 30 */	lwz r0, 0x30(r3)
+/* 000020C4 0000AF54  90 05 00 30 */	stw r0, 0x30(r5)
+/* 000020C8 0000AF58  80 03 00 34 */	lwz r0, 0x34(r3)
+/* 000020CC 0000AF5C  90 05 00 34 */	stw r0, 0x34(r5)
+/* 000020D0 0000AF60  80 03 00 38 */	lwz r0, 0x38(r3)
+/* 000020D4 0000AF64  90 05 00 38 */	stw r0, 0x38(r5)
+/* 000020D8 0000AF68  80 03 00 3C */	lwz r0, 0x3c(r3)
+/* 000020DC 0000AF6C  38 63 00 40 */	addi r3, r3, 0x40
+/* 000020E0 0000AF70  90 05 00 3C */	stw r0, 0x3c(r5)
+/* 000020E4 0000AF74  38 A5 00 40 */	addi r5, r5, 0x40
+/* 000020E8 0000AF78  42 00 FF 78 */	bdnz lbl_00002060
+/* 000020EC 0000AF7C  70 C6 00 03 */	andi. r6, r6, 3
+/* 000020F0 0000AF80  41 82 00 34 */	beq lbl_00002124
+lbl_000020F4:
+/* 000020F4 0000AF84  7C C9 03 A6 */	mtctr r6
+lbl_000020F8:
+/* 000020F8 0000AF88  80 03 00 00 */	lwz r0, 0(r3)
+/* 000020FC 0000AF8C  90 05 00 00 */	stw r0, 0(r5)
+/* 00002100 0000AF90  80 03 00 04 */	lwz r0, 4(r3)
+/* 00002104 0000AF94  90 05 00 04 */	stw r0, 4(r5)
+/* 00002108 0000AF98  80 03 00 08 */	lwz r0, 8(r3)
+/* 0000210C 0000AF9C  90 05 00 08 */	stw r0, 8(r5)
+/* 00002110 0000AFA0  80 03 00 0C */	lwz r0, 0xc(r3)
+/* 00002114 0000AFA4  38 63 00 10 */	addi r3, r3, 0x10
+/* 00002118 0000AFA8  90 05 00 0C */	stw r0, 0xc(r5)
+/* 0000211C 0000AFAC  38 A5 00 10 */	addi r5, r5, 0x10
+/* 00002120 0000AFB0  42 00 FF D8 */	bdnz lbl_000020F8
+lbl_00002124:
+/* 00002124 0000AFB4  7C A3 2B 78 */	mr r3, r5
+/* 00002128 0000AFB8  4E 80 00 20 */	blr 
+
+.global ".__sinit_:CSimsApp_cp"
+".__sinit_:CSimsApp_cp":
+/* 00002190 0000B020  80 82 88 58 */	lwz r4, -0x77a8(r2)
+/* 00002194 0000B024  80 62 88 60 */	lwz r3, -0x77a0(r2)
+/* 00002198 0000B028  C8 44 00 00 */	lfd f2, 0(r4)
+/* 0000219C 0000B02C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 000021A0 0000B030  80 82 88 5C */	lwz r4, -0x77a4(r2)
+/* 000021A4 0000B034  FC 20 10 50 */	fneg f1, f2
+/* 000021A8 0000B038  80 62 88 54 */	lwz r3, -0x77ac(r2)
+/* 000021AC 0000B03C  FC 80 28 50 */	fneg f4, f5
+/* 000021B0 0000B040  C0 64 00 00 */	lfs f3, 0(r4)
+/* 000021B4 0000B044  C8 03 00 00 */	lfd f0, 0(r3)
+/* 000021B8 0000B048  D0 82 BE DC */	stfs f4, -0x4124(r2)
+/* 000021BC 0000B04C  D0 A2 BE E0 */	stfs f5, -0x4120(r2)
+/* 000021C0 0000B050  D0 62 BE E4 */	stfs f3, -0x411c(r2)
+/* 000021C4 0000B054  D0 A2 BE E8 */	stfs f5, -0x4118(r2)
+/* 000021C8 0000B058  D8 22 BE F0 */	stfd f1, -0x4110(r2)
+/* 000021CC 0000B05C  D8 42 BE F8 */	stfd f2, -0x4108(r2)
+/* 000021D0 0000B060  D8 02 BF 00 */	stfd f0, -0x4100(r2)
+/* 000021D4 0000B064  D8 42 BF 08 */	stfd f2, -0x40f8(r2)
+/* 000021D8 0000B068  4E 80 00 20 */	blr

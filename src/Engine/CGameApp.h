@@ -15,7 +15,9 @@ struct CGameApp {
     unsigned char padding2[0x2];
     unsigned int unkC;
     unsigned long system_task_frequency;
-	unsigned char unk14[0x40];
+	unsigned char unk14[0x8];
+    int paused;
+    unsigned char unk20[0x34];
     OpaqueGrafPtr* main_port;
     bool main_port_is_window;
     unsigned char padding3[3];
@@ -25,7 +27,7 @@ struct CGameApp {
     short unk29E;
     int unk2A0;
     long unk2A4;
-    unsigned char unk2A8[0x9C];
+    unsigned char unk2A8[0x13C];
 	void SetAppAsCurResFile();
     void SetMainPort(OpaqueGrafPtr*, bool);
     OpaqueGrafPtr* GetMainPort();
@@ -48,8 +50,8 @@ struct CGameApp {
     virtual void SetGenerateMouseMovedEvents(unsigned char);
     virtual int ReadPrefs(void*, long*);
     virtual void WritePrefs(void*, long);
-    virtual int SuspendApp() = 0;
-    virtual int ResumeApp() = 0;
+    virtual int SuspendApp();
+    virtual void ResumeApp();
     virtual int PauseGame();
     virtual int UnpauseGame();
     virtual int UnpauseGameToMode(void*);

@@ -7,6 +7,12 @@
             -x | x\
         ) >> 31\
     ) & 1
+#define BOOL_ALT(x) (\
+        (\
+            x\
+        ) >> 31\
+    ) & 1
+
 
 int dword_5BD670;
 

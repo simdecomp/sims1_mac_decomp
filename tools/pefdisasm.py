@@ -60,7 +60,7 @@ def change_current_file():
     fname = currentFileName
     os.makedirs(os.path.dirname(fname), exist_ok = True)
     currentFile = open(currentFileName, 'x')
-    currentFile.write('.include macros.inc\n\n')
+    currentFile.write('.include \"macros.inc\"\n\n')
     print("Switched filename to %s" % currentFileName)
 
 default_address = 0

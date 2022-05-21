@@ -47,6 +47,7 @@ textCount = 0
 dataCount = 0
 entryPoint = 0
 
+default_address = 0
 for i in range(pef_info.container_header.sectionCount):
     sections = pef_info.section_headers
     if (sections[i].sectionKind == 4):
@@ -57,13 +58,15 @@ for i in range(pef_info.container_header.sectionCount):
         pass
     if (sections[i].sectionKind == 0):
         textOffsets.append(sections[i].containerOffset)
-        textAddresses.append(sections[i].defaultAddress)
+        textAddresses.append(default_address)
         textSizes.append(sections[i].totalSize)
+        default_address += sections[i].totalSize
         textCount += 1
     if (sections[i].sectionKind == 3 or sections[i].sectionKind == 1 or sections[i].sectionKind == 2):
         dataOffsets.append(sections[i].containerOffset)
-        dataAddresses.append(sections[i].defaultAddress)
+        dataAddresses.append(default_address)
         dataSizes.append(sections[i].totalSize)
+        default_address += sections[i].totalSize
         dataCount += 1
     pass
 

@@ -70,7 +70,7 @@
  0001:000943A0       .__sinit__Interaction_cpp
  0001:00094910       .__sinit__memwrap_cpp
  0001:00095AC0       .__sinit__menuwrap_cpp
- 0001:000965C0       .__sinit__Motive_cpp
+ 0001:000965C0       .__sinit__Motive_cpp | ✅ split into its own asm file!
  0001:00096AC0       .__sinit__MotiveCurve_cpp
  0001:00097190       .__sinit__MotiveEffects_cpp
  0001:000990E0       .__sinit__mouseobject_cpp
@@ -86,7 +86,7 @@
  0001:000D5FD0       .__sinit__ObjectFolder_cpp
  0001:000D64F0       .__sinit__ObjectIterator_cpp
  0001:000E2D80       .__sinit__ObjectModule_cpp
- 0001:000F2D60       .__sinit__ObjectSim_cpp
+ 0001:000F2D60       .__sinit__ObjectSim_cpp | ✅ split into its own asm file!
  0001:000F3550       .__sinit__ObjectStream_cpp
  0001:000F37A0       .__sinit__ObjectTypeAttributes_cpp
  0001:000F5520       .__sinit__ObjFnTable_cpp

@@ -1038,8 +1038,6 @@
 	.4byte 0x42B40000
 	.4byte 0x3F800000
 
-.global lbl_0059ABD0
-lbl_0059ABD0:
 	# ROM: 0x5A3A60
 	.4byte 0x43400000
 	.4byte 0x477FFF00
@@ -2653,21 +2651,19 @@ lbl_0059ABD0:
 	.asciz "std::ctype_base"
 	.asciz "std::ctype<char>"
 	.byte 0x00, 0x00, 0x00
-	.4byte 0x2A004300
+	.asciz "*"
+	.asciz "C"
 	.asciz "string compare: pos > len"
-	.byte 0x21, 0x73
-	.asciz "td::exception!!std::logic_error!!std::out_of_range!!"
+	.asciz "!std::exception!!std::logic_error!!std::out_of_range!!"
 	.byte 0x62, 0x61, 0x73
 	.asciz "ic_string::replace pos out of range"
 	.asciz "basic_string::replace length error"
-	.byte 0x21
-	.asciz "std::exception!!std::logic_error!!std::length_error!!"
+	.asciz "!std::exception!!std::logic_error!!std::length_error!!"
 	.byte 0x62, 0x61
 	.asciz "sic_string::append results in string > max_size"
 	.asciz "basic_string::reserve argument out of range"
 	.asciz "string constructor: n > max_size"
-	.byte 0x73, 0x74, 0x72
-	.asciz "ing copy constructor: pos > str len"
+	.asciz "string copy constructor: pos > str len"
 	.asciz "basic_string::length error.  Resizing out of range"
 	.byte 0x00
 	.4byte 0x00000000
@@ -2675,22 +2671,20 @@ lbl_0059ABD0:
 	.4byte 0x00000000
 	.4byte 0x08010000
 	.asciz "std::strstreambuf"
-	.byte 0x00, 0x00
+	.2byte 0
 	.asciz "std::bad_exception"
 	.byte 0x00
 	.asciz "!bad_exception!!"
-	.byte 0x21, 0x73, 0x74
-	.asciz "d::exception!!std::bad_exception!!"
+	.asciz "!std::exception!!std::bad_exception!!"
 	.byte 0x21
 	.asciz "std::bad_exception!!"
 	.byte 0x00, 0x00, 0x00
 	.asciz "std::bad_cast"
-	.byte 0x00, 0x00
-	.4byte 0x00000000
-	.4byte 0x3F3F3F00
+	.4byte 0
+	.2byte 0
+	.asciz "???"
 	.asciz "!std::exception!!std::bad_typeid!!"
-	.byte 0x21
-	.asciz "std::exception!!std::bad_cast!!"
+	.asciz "!std::exception!!std::bad_cast!!"
 	.asciz "std::bad_alloc"
 	.byte 0x00
 	.asciz "!std::exception!!std::bad_alloc!!"
@@ -2718,15 +2712,15 @@ lbl_0059ABD0:
 	.4byte 0x00000000
 	.4byte 0x2E000061
 	.asciz "m|pm"
-	.byte 0x25, 0x41, 0x20
-	.asciz "%B %d %T %Y|%I:%M:%S %p|%A %B %d %Y|%T"
+	.asciz "%A %B %d %T %Y|%I:%M:%S %p|%A %B %d %Y|%T"
 	.byte 0x53
 	.asciz "un|Sunday|Mon|Monday|Tue|Tuesday|Wed|Wednesday|Thu|Thursday|Fri|Friday|Sat|Saturday"
 	.asciz "Jan|January|Feb|February|Mar|March|Apr|April|May|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December"
-	.byte 0x7C, 0x00
-	.4byte 0x00000000
-	.4byte 0x2000002D
-	.4byte 0x494E4600
+	.asciz "|"
+	.4byte 0
+	.asciz " "
+	.byte 0x00
+	.asciz "-INF"
 	.asciz "-inf"
 	.byte 0x49, 0x4E, 0x46
 	.4byte 0x00696E66
@@ -2745,78 +2739,53 @@ lbl_0059ABD0:
 	.4byte 0x00417267
 	.asciz "ument list too long"
 	.asciz "Permission denied"
-	.byte 0x52, 0x65
-	.asciz "source temporarily unavailable"
+	.asciz "Resource temporarily unavailable"
 	.byte 0x42
 	.asciz "ad file descriptor"
-	.byte 0x44
-	.asciz "evice busy"
+	.asciz "Device busy"
 	.byte 0x4E
 	.asciz "o child processes"
-	.byte 0x52, 0x65
-	.asciz "source deadlock avoided"
+	.asciz "Resource deadlock avoided"
 	.asciz "Numerical argument out of domain"
-	.byte 0x46, 0x69, 0x6C
-	.asciz "e exists"
+	.asciz "File exists"
 	.byte 0x42, 0x61, 0x64
 	.asciz " address"
-	.byte 0x46, 0x69, 0x6C
-	.asciz "e too large"
+	.asciz "File too large"
 	.asciz "File Position Error"
 	.asciz "Wide character encoding error"
-	.byte 0x49, 0x6E
-	.asciz "terrupted system call"
+	.asciz "Interrupted system call"
 	.byte 0x49, 0x6E
 	.asciz "valid argument"
-	.byte 0x49
-	.asciz "nput/output error"
+	.asciz "Input/output error"
 	.byte 0x49, 0x73
 	.asciz " a directory"
-	.byte 0x4D, 0x61, 0x63
-	.asciz " OS error  (%d)"
+	.asciz "Mac OS error  (%d)"
 	.asciz "Too many open files"
 	.asciz "Too many links"
-	.byte 0x46
-	.asciz "ile name too long"
-	.byte 0x54, 0x6F
-	.asciz "o many open files in system"
+	.asciz "File name too long"
+	.asciz "Too many open files in system"
 	.asciz "Operation not supported by device"
-	.byte 0x4E, 0x6F
-	.asciz " such file or directory"
+	.asciz "No such file or directory"
 	.asciz "No error detected"
-	.byte 0x45, 0x78
-	.asciz "ec format error"
+	.asciz "Exec format error"
 	.asciz "No locks available"
-	.byte 0x43
-	.asciz "annot allocate memory"
-	.byte 0x4E, 0x6F
-	.asciz " space left on device"
-	.byte 0x46, 0x75
-	.asciz "nction not implemented"
-	.byte 0x4E
-	.asciz "ot a directory"
-	.byte 0x44
-	.asciz "irectory not empty"
-	.byte 0x49
-	.asciz "nappropriate ioctl for device"
-	.byte 0x44, 0x65
-	.asciz "vice not configured"
+	.asciz "Cannot allocate memory"
+	.asciz "No space left on device"
+	.asciz "Function not implemented"
+	.asciz "Not a directory"
+	.asciz "Directory not empty"
+	.asciz "Inappropriate ioctl for device"
+	.asciz "Device not configured"
 	.asciz "Operation not permitted"
 	.asciz "Broken pipe"
 	.asciz "Result too large"
-	.byte 0x52, 0x65, 0x61
-	.asciz "d-only file system"
-	.byte 0x53
-	.asciz "ignal error"
+	.asciz "Read-only file system"
+	.asciz "Signal error"
 	.asciz "Illegal seek"
-	.byte 0x4E, 0x6F, 0x20
-	.asciz "such process"
-	.byte 0x55, 0x6E, 0x6B
-	.asciz "nown error"
-	.byte 0x43
-	.asciz "ross-device link"
-	.byte 0x55, 0x6E, 0x6B
-	.asciz "nown Error (%d)"
+	.asciz "No such process"
+	.asciz "Unknown error"
+	.asciz "Cross-device link"
+	.asciz "Unknown Error (%d)"
 	.asciz "INFINITY"
 	.byte 0x00, 0x00, 0x00
 	.asciz "NAN("
@@ -3777,8 +3746,6 @@ lbl_0059ABD0:
 	.4byte 0x00000000
 	.4byte 0x00023DD0
 
-.global lbl_0059DC58
-lbl_0059DC58:
 	# ROM: 0x5A6AE8
 	.4byte 0x80000084
 	.4byte 0x08000000
@@ -3925,8 +3892,6 @@ lbl_0059DC58:
 	.4byte 0x00015794
 	.4byte 0x00028F30
 
-.global lbl_0059DE98
-lbl_0059DE98:
 	# ROM: 0x5A6D28
 	.4byte 0x80000080
 	.4byte 0x00000000
@@ -4047,8 +4012,6 @@ lbl_0059DE98:
 	.4byte 0x0002B640
 	.4byte 0x80000104
 
-.global lbl_0059E070
-lbl_0059E070:
 	# ROM: 0x5A6F00
 	.4byte 0x18000000
 	.4byte 0x0002B750
@@ -4523,8 +4486,6 @@ lbl_0059E070:
 	.4byte 0x8000016C
 	.4byte 0x18000000
 
-.global lbl_0059E7D0
-lbl_0059E7D0:
 	# ROM: 0x5A7660
 	.4byte 0x000392E0
 	.4byte 0x80000154
@@ -4547,8 +4508,6 @@ lbl_0059E7D0:
 	.4byte 0x00039C90
 	.4byte 0x00000268
 
-.global lbl_0059E820
-lbl_0059E820:
 	# ROM: 0x5A76B0
 	.4byte 0x00015CD6
 	.4byte 0x00039F00
@@ -4930,8 +4889,6 @@ lbl_0059E820:
 	.4byte 0x800000B8
 	.4byte 0x18000000
 
-.global lbl_0059EE0C
-lbl_0059EE0C:
 	# ROM: 0x5A7C9C
 	.4byte 0x00049890
 	.4byte 0x800001B4
@@ -5013,8 +4970,6 @@ lbl_0059EE0C:
 	.4byte 0x10000000
 	.4byte 0x0004C830
 
-.global lbl_0059EF48
-lbl_0059EF48:
 	# ROM: 0x5A7DD8
 	.4byte 0x800000B0
 	.4byte 0x10000000
@@ -5249,8 +5204,6 @@ lbl_0059EF48:
 	.4byte 0x00055BF0
 	.4byte 0x80000174
 
-.global lbl_0059F2E8
-lbl_0059F2E8:
 	# ROM: 0x5A8178
 	.4byte 0x48000000
 	.4byte 0x00055D70
@@ -5340,8 +5293,6 @@ lbl_0059F2E8:
 	.4byte 0x000577C0
 	.4byte 0x800002EC
 
-.global lbl_0059F444
-lbl_0059F444:
 	# ROM: 0x5A82D4
 	.4byte 0x48000000
 	.4byte 0x00057AB0
@@ -5596,15 +5547,11 @@ lbl_0059F444:
 	.4byte 0x00061790
 	.4byte 0x8000036C
 
-.global lbl_0059F834
-lbl_0059F834:
 	# ROM: 0x5A86C4
 	.4byte 0x48000000
 	.4byte 0x00061B00
 	.4byte 0x80000368
 
-.global lbl_0059F840
-lbl_0059F840:
 	# ROM: 0x5A86D0
 	.4byte 0x48000000
 	.4byte 0x00061E70
@@ -5641,8 +5588,6 @@ lbl_0059F840:
 	.4byte 0x000006EC
 	.4byte 0x00017136
 
-.global lbl_0059F8C8
-lbl_0059F8C8:
 	# ROM: 0x5A8758
 	.4byte 0x00063070
 	.4byte 0x00000AAC
@@ -5893,8 +5838,6 @@ lbl_0059F8C8:
 	.4byte 0x000713E0
 	.4byte 0x80000114
 
-.global lbl_0059FCA8
-lbl_0059FCA8:
 	# ROM: 0x5A8B38
 	.4byte 0x10000000
 	.4byte 0x00071500
@@ -5937,8 +5880,6 @@ lbl_0059FCA8:
 	.4byte 0x800000AC
 	.4byte 0x08000000
 
-.global lbl_0059FD48
-lbl_0059FD48:
 	# ROM: 0x5A8BD8
 	.4byte 0x00074000
 	.4byte 0x80000208
@@ -6179,8 +6120,6 @@ lbl_0059FD48:
 	.4byte 0x18000000
 	.4byte 0x0007EBF0
 
-.global lbl_005A0100
-lbl_005A0100:
 	# ROM: 0x5A8F90
 	.4byte 0x800000F0
 	.4byte 0x18000000
@@ -7021,8 +6960,6 @@ lbl_005A0100:
 	.4byte 0x0009A890
 	.4byte 0x8000029C
 
-.global lbl_005A0E18
-lbl_005A0E18:
 	# ROM: 0x5A9CA8
 	.4byte 0x48000000
 	.4byte 0x0009AC20
@@ -7280,8 +7217,6 @@ lbl_005A0E18:
 	.4byte 0x000A91A0
 	.4byte 0x80000184
 
-.global lbl_005A1214
-lbl_005A1214:
 	# ROM: 0x5AA0A4
 	.4byte 0x48000000
 	.4byte 0x000A9330
@@ -7290,8 +7225,6 @@ lbl_005A1214:
 	.4byte 0x000A93B0
 	.4byte 0x8000017C
 
-.global lbl_005A122C
-lbl_005A122C:
 	# ROM: 0x5AA0BC
 	.4byte 0x48000000
 	.4byte 0x000A9530
@@ -8176,8 +8109,6 @@ lbl_005A122C:
 	.4byte 0x000D6AC0
 	.4byte 0x800007BC
 
-.global lbl_005A1FF4
-lbl_005A1FF4:
 	# ROM: 0x5AAE84
 	.4byte 0x48000000
 	.4byte 0x000D7340
@@ -8210,8 +8141,6 @@ lbl_005A1FF4:
 	.4byte 0x000D8C00
 	.4byte 0x800002C4
 
-.global lbl_005A206C
-lbl_005A206C:
 	# ROM: 0x5AAEFC
 	.4byte 0x48000000
 	.4byte 0x000D8ED0
@@ -8352,8 +8281,6 @@ lbl_005A206C:
 	.4byte 0x000DEDE0
 	.4byte 0x800004FC
 
-.global lbl_005A2294
-lbl_005A2294:
 	# ROM: 0x5AB124
 	.4byte 0x48000000
 	.4byte 0x000DF2E0
@@ -10150,8 +10077,6 @@ lbl_005A2294:
 	.4byte 0x001384A0
 	.4byte 0x80000164
 
-.global lbl_005A3E9C
-lbl_005A3E9C:
 	# ROM: 0x5ACD2C
 	.4byte 0x48000000
 	.4byte 0x00138610
@@ -10568,8 +10493,6 @@ lbl_005A3E9C:
 	.4byte 0x00146610
 	.4byte 0x8000023C
 
-.global lbl_005A4514
-lbl_005A4514:
 	# ROM: 0x5AD3A4
 	.4byte 0x48000000
 	.4byte 0x00146850
@@ -10713,8 +10636,6 @@ lbl_005A4514:
 	.4byte 0x0014A1F0
 	.4byte 0x800003E8
 
-.global lbl_005A4748
-lbl_005A4748:
 	# ROM: 0x5AD5D8
 	.4byte 0x48000000
 	.4byte 0x0014A620
@@ -10984,8 +10905,6 @@ lbl_005A4748:
 	.4byte 0x00154830
 	.4byte 0x800000EC
 
-.global lbl_005A4B74
-lbl_005A4B74:
 	# ROM: 0x5ADA04
 	.4byte 0x48000000
 	.4byte 0x001549E0
@@ -11180,8 +11099,6 @@ lbl_005A4B74:
 	.4byte 0x00163D40
 	.4byte 0x80000210
 
-.global lbl_005A4E74
-lbl_005A4E74:
 	# ROM: 0x5ADD04
 	.4byte 0x48000000
 	.4byte 0x00164300
@@ -11322,8 +11239,6 @@ lbl_005A4E74:
 	.4byte 0x0016C000
 	.4byte 0x80000484
 
-.global lbl_005A509C
-lbl_005A509C:
 	# ROM: 0x5ADF2C
 	.4byte 0x48000000
 	.4byte 0x0016C490
@@ -11713,8 +11628,6 @@ lbl_005A509C:
 	.4byte 0x0017E2A0
 	.4byte 0x800001E0
 
-.global lbl_005A56A8
-lbl_005A56A8:
 	# ROM: 0x5AE538
 	.4byte 0x48000000
 	.4byte 0x0017E480
@@ -12176,8 +12089,6 @@ lbl_005A56A8:
 	.4byte 0x00191DC0
 	.4byte 0x800001EC
 
-.global lbl_005A5DD4
-lbl_005A5DD4:
 	# ROM: 0x5AEC64
 	.4byte 0x48000000
 	.4byte 0x00191FB0
@@ -12954,8 +12865,6 @@ lbl_005A5DD4:
 	.4byte 0x001BE3C0
 	.4byte 0x80000300
 
-.global lbl_005A69EC
-lbl_005A69EC:
 	# ROM: 0x5AF87C
 	.4byte 0x48000000
 	.4byte 0x001BE6C0
@@ -13090,8 +12999,6 @@ lbl_005A69EC:
 	.4byte 0x001CE8F0
 	.4byte 0x80000460
 
-.global lbl_005A6BFC
-lbl_005A6BFC:
 	# ROM: 0x5AFA8C
 	.4byte 0x48000000
 	.4byte 0x001CED50
@@ -13307,8 +13214,6 @@ lbl_005A6BFC:
 	.4byte 0x001DA140
 	.4byte 0x80000288
 
-.global lbl_005A6F50
-lbl_005A6F50:
 	# ROM: 0x5AFDE0
 	.4byte 0x48000000
 	.4byte 0x001DA3D0
@@ -13491,8 +13396,6 @@ lbl_005A6F50:
 	.4byte 0x001E6A90
 	.4byte 0x80000528
 
-.global lbl_005A7220
-lbl_005A7220:
 	# ROM: 0x5B00B0
 	.4byte 0x48000000
 	.4byte 0x001E7040
@@ -13786,8 +13689,6 @@ lbl_005A7220:
 	.4byte 0x001FA1B0
 	.4byte 0x800004E8
 
-.global lbl_005A76AC
-lbl_005A76AC:
 	# ROM: 0x5B053C
 	.4byte 0x48000000
 	.4byte 0x001FA6A0
@@ -14426,8 +14327,6 @@ lbl_005A76AC:
 	.4byte 0x00212C80
 	.4byte 0x80000D5C
 
-.global lbl_005A809C
-lbl_005A809C:
 	# ROM: 0x5B0F2C
 	.4byte 0x48000000
 	.4byte 0x002139E0
@@ -14865,15 +14764,11 @@ lbl_005A809C:
 	.4byte 0x0022ED90
 	.4byte 0x80000184
 
-.global lbl_005A8768
-lbl_005A8768:
 	# ROM: 0x5B15F8
 	.4byte 0x48000000
 	.4byte 0x0022EF20
 	.4byte 0x80000190
 
-.global lbl_005A8774
-lbl_005A8774:
 	# ROM: 0x5B1604
 	.4byte 0x48000000
 	.4byte 0x0022F130
@@ -15104,8 +14999,6 @@ lbl_005A8774:
 	.4byte 0x00238300
 	.4byte 0x80000224
 
-.global lbl_005A8B04
-lbl_005A8B04:
 	# ROM: 0x5B1994
 	.4byte 0x48000000
 	.4byte 0x00238530
@@ -15138,8 +15031,6 @@ lbl_005A8B04:
 	.4byte 0x0023A3D0
 	.4byte 0x80000664
 
-.global lbl_005A8B7C
-lbl_005A8B7C:
 	# ROM: 0x5B1A0C
 	.4byte 0x48000000
 	.4byte 0x0023AA40
@@ -15841,8 +15732,6 @@ lbl_005A8B7C:
 	.4byte 0x0025C580
 	.4byte 0x80000468
 
-.global lbl_005A9668
-lbl_005A9668:
 	# ROM: 0x5B24F8
 	.4byte 0x48000000
 	.4byte 0x0025C9F0
@@ -16157,8 +16046,6 @@ lbl_005A9668:
 	.4byte 0x0026BC20
 	.4byte 0x80000578
 
-.global lbl_005A9B48
-lbl_005A9B48:
 	# ROM: 0x5B29D8
 	.4byte 0x48000000
 	.4byte 0x0026C1A0
@@ -17424,8 +17311,6 @@ lbl_005A9B48:
 	.4byte 0x002B4DC0
 	.4byte 0x800001E8
 
-.global lbl_005AAF04
-lbl_005AAF04:
 	# ROM: 0x5B3D94
 	.4byte 0x48000000
 	.4byte 0x002B4FB0
@@ -17824,15 +17709,11 @@ lbl_005AAF04:
 	.4byte 0x002C9E60
 	.4byte 0x8000026C
 
-.global lbl_005AB534
-lbl_005AB534:
 	# ROM: 0x5B43C4
 	.4byte 0x48000000
 	.4byte 0x002CA0D0
 	.4byte 0x80000BAC
 
-.global lbl_005AB540
-lbl_005AB540:
 	# ROM: 0x5B43D0
 	.4byte 0x48000000
 	.4byte 0x002CAC80
@@ -18303,8 +18184,6 @@ lbl_005AB540:
 	.4byte 0x002E1E80
 	.4byte 0x8000032C
 
-.global lbl_005ABC90
-lbl_005ABC90:
 	# ROM: 0x5B4B20
 	.4byte 0x48000000
 	.4byte 0x002E21B0
@@ -18718,8 +18597,6 @@ lbl_005ABC90:
 	.4byte 0x002F8B90
 	.4byte 0x800004BC
 
-.global lbl_005AC2FC
-lbl_005AC2FC:
 	# ROM: 0x5B518C
 	.4byte 0x48000000
 	.4byte 0x002F9050
@@ -19145,8 +19022,6 @@ lbl_005AC2FC:
 	.4byte 0x00306A70
 	.4byte 0x800002D8
 
-.global lbl_005AC998
-lbl_005AC998:
 	# ROM: 0x5B5828
 	.4byte 0x48000000
 	.4byte 0x00306D50
@@ -20400,8 +20275,6 @@ lbl_005AC998:
 	.4byte 0x00356C40
 	.4byte 0x80000A3C
 
-.global lbl_005ADD24
-lbl_005ADD24:
 	# ROM: 0x5B6BB4
 	.4byte 0x48000000
 	.4byte 0x00357680
@@ -21109,8 +20982,6 @@ lbl_005ADD24:
 	.4byte 0x0036D120
 	.4byte 0x800004F4
 
-.global lbl_005AE828
-lbl_005AE828:
 	# ROM: 0x5B76B8
 	.4byte 0x48000000
 	.4byte 0x0036D890
@@ -22931,8 +22802,6 @@ lbl_005AE828:
 	.4byte 0x003CC7F0
 	.4byte 0x80000288
 
-.global lbl_005B0490
-lbl_005B0490:
 	# ROM: 0x5B9320
 	.4byte 0x48000000
 	.4byte 0x003CCA80
@@ -23445,8 +23314,6 @@ lbl_005B0490:
 	.4byte 0x003DEC70
 	.4byte 0x800001EC
 
-.global lbl_005B0C88
-lbl_005B0C88:
 	# ROM: 0x5B9B18
 	.4byte 0x48000000
 	.4byte 0x003DEE60
@@ -23881,8 +23748,6 @@ lbl_005B0C88:
 	.4byte 0x003F03B0
 	.4byte 0x80000294
 
-.global lbl_005B1348
-lbl_005B1348:
 	# ROM: 0x5BA1D8
 	.4byte 0x48000000
 	.4byte 0x003F0650
@@ -25031,8 +24896,6 @@ lbl_005B1348:
 	.4byte 0x0044DC20
 	.4byte 0x80000230
 
-.global lbl_005B2530
-lbl_005B2530:
 	# ROM: 0x5BB3C0
 	.4byte 0x48000000
 	.4byte 0x0044DED0
@@ -25554,15 +25417,11 @@ lbl_005B2530:
 	.4byte 0x0046CD40
 	.4byte 0x800001FC
 
-.global lbl_005B2D4C
-lbl_005B2D4C:
 	# ROM: 0x5BBBDC
 	.4byte 0x48000000
 	.4byte 0x0046CF40
 	.4byte 0x8000036C
 
-.global lbl_005B2D58
-lbl_005B2D58:
 	# ROM: 0x5BBBE8
 	.4byte 0x48000000
 	.4byte 0x0046D2B0
@@ -26387,8 +26246,6 @@ lbl_005B2D58:
 	.4byte 0x00492710
 	.4byte 0x800001E0
 
-.global lbl_005B3A30
-lbl_005B3A30:
 	# ROM: 0x5BC8C0
 	.4byte 0x48000000
 	.4byte 0x004928F0
@@ -26727,8 +26584,6 @@ lbl_005B3A30:
 	.4byte 0x004A4BD0
 	.4byte 0x80000200
 
-.global lbl_005B3F70
-lbl_005B3F70:
 	# ROM: 0x5BCE00
 	.4byte 0x48000000
 	.4byte 0x004A4DD0
@@ -27217,8 +27072,6 @@ lbl_005B3F70:
 	.4byte 0x004B8980
 	.4byte 0x8000013C
 
-.global lbl_005B4708
-lbl_005B4708:
 	# ROM: 0x5BD598
 	.4byte 0x48000000
 	.4byte 0x004B8AC0
@@ -27851,8 +27704,6 @@ lbl_005B4708:
 	.4byte 0x004D4670
 	.4byte 0x80000A48
 
-.global lbl_005B50E0
-lbl_005B50E0:
 	# ROM: 0x5BDF70
 	.4byte 0x48000000
 	.4byte 0x004D5100
@@ -28947,8 +28798,6 @@ lbl_005B50E0:
 	.4byte 0x004FB7D0
 	.4byte 0x800001F8
 
-.global lbl_005B61F0
-lbl_005B61F0:
 	# ROM: 0x5BF080
 	.4byte 0x48000000
 	.4byte 0x004FB9D0
@@ -29980,8 +29829,6 @@ lbl_005B61F0:
 	.4byte 0x0051FA20
 	.4byte 0x800002FC
 
-.global lbl_005B7204
-lbl_005B7204:
 	# ROM: 0x5C0094
 	.4byte 0x48000000
 	.4byte 0x0051FD20
@@ -31343,8 +31190,6 @@ lbl_005B7204:
 	.4byte 0x005679C0
 	.4byte 0x800004E4
 
-.global lbl_005B8740
-lbl_005B8740:
 	# ROM: 0x5C15D0
 	.4byte 0x48000000
 	.4byte 0x00567EB0
@@ -32076,8 +31921,6 @@ lbl_005B8740:
 	.4byte 0x00585920
 	.4byte 0x8000021C
 
-.global lbl_005B92A4
-lbl_005B92A4:
 	# ROM: 0x5C2134
 	.4byte 0x48000000
 	.4byte 0x00585EB0
@@ -32089,8 +31932,6 @@ lbl_005B92A4:
 	.4byte 0x00586000
 	.4byte 0x80000154
 
-.global lbl_005B92C8
-lbl_005B92C8:
 	# ROM: 0x5C2158
 	.4byte 0x48000000
 	.4byte 0x00586290

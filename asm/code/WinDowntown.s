@@ -3938,7 +3938,7 @@ lbl_003F49A8:
 /* 003F49E4 003FD874  38 C1 00 90 */	addi r6, r1, 0x90
 /* 003F49E8 003FD878  80 04 00 08 */	lwz r0, 8(r4)
 /* 003F49EC 003FD87C  90 01 00 8C */	stw r0, 0x8c(r1)
-/* 003F49F0 003FD880  4B CB CC 71 */	bl func_000B1660
+/* 003F49F0 003FD880  4B CB CC 71 */	bl ".erase__Q23std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>FQ33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>Q33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>"
 lbl_003F49F4:
 /* 003F49F4 003FD884  38 61 00 AC */	addi r3, r1, 0xac
 /* 003F49F8 003FD888  38 80 FF FF */	li r4, -1

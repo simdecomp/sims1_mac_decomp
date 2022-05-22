@@ -52,7 +52,6 @@
 /* 005127F0 0051B680  7F E3 FB 78 */	mr r3, r31
 /* 005127F4 0051B684  81 9F 00 00 */	lwz r12, 0(r31)
 /* 005127F8 0051B688  81 8C 00 0C */	lwz r12, 0xc(r12)
-lbl_005127FC:
 /* 005127FC 0051B68C  48 08 73 55 */	bl func_00599B50
 /* 00512800 0051B690  80 41 00 14 */	lwz r2, 0x14(r1)
 lbl_00512804:
@@ -92,7 +91,6 @@ lbl_00512898:
 /* 005128B8 0051B748  60 00 00 00 */	nop 
 lbl_005128BC:
 /* 005128BC 0051B74C  80 9E 00 50 */	lwz r4, 0x50(r30)
-lbl_005128C0:
 /* 005128C0 0051B750  38 61 00 48 */	addi r3, r1, 0x48
 /* 005128C4 0051B754  38 A0 02 00 */	li r5, 0x200
 /* 005128C8 0051B758  38 C0 02 0A */	li r6, 0x20a
@@ -3939,7 +3937,7 @@ lbl_00517690:
 /* 00517714 005205A4  38 9D 00 00 */	addi r4, r29, 0
 /* 00517718 005205A8  38 7B 00 10 */	addi r3, r27, 0x10
 /* 0051771C 005205AC  38 A1 00 50 */	addi r5, r1, 0x50
-/* 00517720 005205B0  48 00 28 D1 */	bl func_00519FF0
+/* 00517720 005205B0  48 00 28 D1 */	bl ".__partition_const_ref<P18cTimerSubscription,Q23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>>__3stdFP18cTimerSubscriptionP18cTimerSubscriptionRCQ23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>_P18cTimerSubscription"
 /* 00517724 005205B4  7C 7C 1B 78 */	mr r28, r3
 /* 00517728 005205B8  4B FF FF 18 */	b lbl_00517640
 lbl_0051772C:
@@ -5511,8 +5509,8 @@ lbl_00519CC8:
 /* 00519F78 00522E08  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 00519F7C 00522E0C  4E 80 00 20 */	blr 
 
-.global func_00519FF0
-func_00519FF0:
+.global ".__partition_const_ref<P18cTimerSubscription,Q23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>>__3stdFP18cTimerSubscriptionP18cTimerSubscriptionRCQ23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>_P18cTimerSubscription"
+".__partition_const_ref<P18cTimerSubscription,Q23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>>__3stdFP18cTimerSubscriptionP18cTimerSubscriptionRCQ23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>_P18cTimerSubscription":
 /* 00519FF0 00522E80  93 E1 FF FC */	stw r31, -4(r1)
 /* 00519FF4 00522E84  7C 08 02 A6 */	mflr r0
 /* 00519FF8 00522E88  3B E5 00 00 */	addi r31, r5, 0
@@ -5662,84 +5660,6 @@ lbl_0051A1D8:
 /* 0051A1EC 0052307C  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 0051A1F0 00523080  83 81 FF F0 */	lwz r28, -0x10(r1)
 /* 0051A1F4 00523084  4E 80 00 20 */	blr 
-/* 0051A1F8 00523088  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0051A1FC 0052308C  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 0051A200 00523090  80 04 00 00 */	lwz r0, 0(r4)
-/* 0051A204 00523094  00 00 02 08 */	.4byte 0x00000208  /* unknown instruction */
-/* 0051A208 00523098  01 25 2E 5F */	.4byte 0x01252E5F  /* unknown instruction */
-/* 0051A20C 0052309C  5F 70 61 72 */	rlwnm r16, r27, r12, 5, 0x19
-/* 0051A210 005230A0  74 69 74 69 */	andis. r9, r3, 0x7469
-/* 0051A214 005230A4  6F 6E 5F 63 */	xoris r14, r27, 0x5f63
-/* 0051A218 005230A8  6F 6E 73 74 */	xoris r14, r27, 0x7374
-/* 0051A21C 005230AC  5F 72 65 66 */	rlwnm r18, r27, r12, 0x15, 0x13
-/* 0051A220 005230B0  3C 50 31 38 */	addis r2, r16, 0x3138
-/* 0051A224 005230B4  63 54 69 6D */	ori r20, r26, 0x696d
-/* 0051A228 005230B8  65 72 53 75 */	oris r18, r11, 0x5375
-/* 0051A22C 005230BC  62 73 63 72 */	ori r19, r19, 0x6372
-/* 0051A230 005230C0  69 70 74 69 */	xori r16, r11, 0x7469
-/* 0051A234 005230C4  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 0051A238 005230C8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0051A23C 005230CC  64 37 39 75 */	oris r23, r1, 0x3975
-/* 0051A240 005230D0  6E 61 72 79 */	xoris r1, r19, 0x7279
-/* 0051A244 005230D4  5F 6E 65 67 */	rlwnm. r14, r27, r12, 0x15, 0x13
-/* 0051A248 005230D8  61 74 65 3C */	ori r20, r11, 0x653c
-/* 0051A24C 005230DC  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0051A250 005230E0  74 64 35 37 */	andis. r4, r3, 0x3537
-/* 0051A254 005230E4  5F 5F 62 69 */	rlwnm. r31, r26, r12, 9, 0x14
-/* 0051A258 005230E8  6E 64 65 72 */	xoris r4, r19, 0x6572
-/* 0051A25C 005230EC  31 73 74 5F */	addic r11, r19, 0x745f
-/* 0051A260 005230F0  63 6F 6E 73 */	ori r15, r27, 0x6e73
-/* 0051A264 005230F4  74 5F 72 65 */	andis. r31, r2, 0x7265
-/* 0051A268 005230F8  66 3C 51 32 */	oris r28, r17, 0x5132
-/* 0051A26C 005230FC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0051A270 00523100  32 36 6C 65 */	addic r17, r22, 0x6c65
-/* 0051A274 00523104  73 73 3C 31 */	andi. r19, r27, 0x3c31
-/* 0051A278 00523108  38 63 54 69 */	addi r3, r3, 0x5469
-/* 0051A27C 0052310C  6D 65 72 53 */	xoris r5, r11, 0x7253
-/* 0051A280 00523110  75 62 73 63 */	andis. r2, r11, 0x7363
-/* 0051A284 00523114  72 69 70 74 */	andi. r9, r19, 0x7074
-/* 0051A288 00523118  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 0051A28C 0052311C  3E 3E 3E 5F */	addis r17, r30, 0x3e5f
-/* 0051A290 00523120  5F 33 73 74 */	rlwnm r19, r25, r14, 0xd, 0x1a
-/* 0051A294 00523124  64 46 50 31 */	oris r6, r2, 0x5031
-/* 0051A298 00523128  38 63 54 69 */	addi r3, r3, 0x5469
-/* 0051A29C 0052312C  6D 65 72 53 */	xoris r5, r11, 0x7253
-/* 0051A2A0 00523130  75 62 73 63 */	andis. r2, r11, 0x7363
-/* 0051A2A4 00523134  72 69 70 74 */	andi. r9, r19, 0x7074
-/* 0051A2A8 00523138  69 6F 6E 50 */	xori r15, r11, 0x6e50
-/* 0051A2AC 0052313C  31 38 63 54 */	addic r9, r24, 0x6354
-/* 0051A2B0 00523140  69 6D 65 72 */	xori r13, r11, 0x6572
-/* 0051A2B4 00523144  53 75 62 73 */	rlwimi. r21, r27, 0xc, 9, 0x19
-/* 0051A2B8 00523148  63 72 69 70 */	ori r18, r27, 0x6970
-/* 0051A2BC 0052314C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 0051A2C0 00523150  52 43 51 32 */	rlwimi r3, r18, 0xa, 4, 0x19
-/* 0051A2C4 00523154  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0051A2C8 00523158  37 39 75 6E */	addic. r25, r25, 0x756e
-/* 0051A2CC 0052315C  61 72 79 5F */	ori r18, r11, 0x795f
-/* 0051A2D0 00523160  6E 65 67 61 */	xoris r5, r19, 0x6761
-/* 0051A2D4 00523164  74 65 3C 51 */	andis. r5, r3, 0x3c51
-/* 0051A2D8 00523168  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0051A2DC 0052316C  64 35 37 5F */	oris r21, r1, 0x375f
-/* 0051A2E0 00523170  5F 62 69 6E */	rlwnm r2, r27, r13, 5, 0x17
-/* 0051A2E4 00523174  64 65 72 31 */	oris r5, r3, 0x7231
-/* 0051A2E8 00523178  73 74 5F 63 */	andi. r20, r27, 0x5f63
-/* 0051A2EC 0052317C  6F 6E 73 74 */	xoris r14, r27, 0x7374
-/* 0051A2F0 00523180  5F 72 65 66 */	rlwnm r18, r27, r12, 0x15, 0x13
-/* 0051A2F4 00523184  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 0051A2F8 00523188  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 0051A2FC 0052318C  36 6C 65 73 */	addic. r19, r12, 0x6573
-/* 0051A300 00523190  73 3C 31 38 */	andi. r28, r25, 0x3138
-/* 0051A304 00523194  63 54 69 6D */	ori r20, r26, 0x696d
-/* 0051A308 00523198  65 72 53 75 */	oris r18, r11, 0x5375
-/* 0051A30C 0052319C  62 73 63 72 */	ori r19, r19, 0x6372
-/* 0051A310 005231A0  69 70 74 69 */	xori r16, r11, 0x7469
-/* 0051A314 005231A4  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 0051A318 005231A8  3E 5F 50 31 */	addis r18, r31, 0x5031
-/* 0051A31C 005231AC  38 63 54 69 */	addi r3, r3, 0x5469
-/* 0051A320 005231B0  6D 65 72 53 */	xoris r5, r11, 0x7253
-/* 0051A324 005231B4  75 62 73 63 */	andis. r2, r11, 0x7363
-/* 0051A328 005231B8  72 69 70 74 */	andi. r9, r19, 0x7074
-/* 0051A32C 005231BC  69 6F 6E 00 */	xori r15, r11, 0x6e00
 
 .global ".__cl__Q23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>CFRC18cTimerSubscription"
 ".__cl__Q23std79unary_negate<Q23std57__binder1st_const_ref<Q23std26less<18cTimerSubscription>>>CFRC18cTimerSubscription":

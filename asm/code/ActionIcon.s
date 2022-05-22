@@ -7,7 +7,6 @@
 ".TSOnMouseExit__11cActionIconFllP6cTSWin":
 /* 001FBE90 00204D20  7C 08 02 A6 */	mflr r0
 /* 001FBE94 00204D24  90 01 00 08 */	stw r0, 8(r1)
-lbl_001FBE98:
 /* 001FBE98 00204D28  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 001FBE9C 00204D2C  48 2F FF B5 */	bl ".TSOnMouseExit__6cTSWinFllP6cTSWin"
 /* 001FBEA0 00204D30  80 01 00 48 */	lwz r0, 0x48(r1)
@@ -57,7 +56,6 @@ lbl_001FBE98:
 /* 001FC020 00204EB0  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 001FC024 00204EB4  38 21 00 40 */	addi r1, r1, 0x40
 /* 001FC028 00204EB8  7C 08 03 A6 */	mtlr r0
-lbl_001FC02C:
 /* 001FC02C 00204EBC  4E 80 00 20 */	blr 
 
 .global ".TSOnMouseUpL__11cActionIconFllUl"

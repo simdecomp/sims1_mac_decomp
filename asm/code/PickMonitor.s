@@ -516,7 +516,7 @@ lbl_005723BC:
 /* 005723D8 0057B268  39 00 00 00 */	li r8, 0
 /* 005723DC 0057B26C  39 20 00 00 */	li r9, 0
 /* 005723E0 0057B270  39 40 00 00 */	li r10, 0
-/* 005723E4 0057B274  48 00 05 9D */	bl func_00572980
+/* 005723E4 0057B274  48 00 05 9D */	bl ".SetupUserPaneProcs__FP16OpaqueControlRefPFP16OpaqueControlRefs_vPFP16OpaqueControlRef5Point_sPFP16OpaqueControlRef5PointP26OpaqueControlActionProcPtr_sPFP16OpaqueControlRef_vPFP16OpaqueControlRefsss_sPFP16OpaqueControlRefUc_vPFP16OpaqueControlRefs_sPFP16OpaqueControlRefP20ControlBackgroundRec_v"
 lbl_005723E8:
 /* 005723E8 0057B278  80 01 00 F8 */	lwz r0, 0xf8(r1)
 /* 005723EC 0057B27C  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -860,8 +860,8 @@ lbl_00572928:
 /* 00572934 0057B7C4  7C 08 03 A6 */	mtlr r0
 /* 00572938 0057B7C8  4E 80 00 20 */	blr 
 
-.global func_00572980
-func_00572980:
+.global ".SetupUserPaneProcs__FP16OpaqueControlRefPFP16OpaqueControlRefs_vPFP16OpaqueControlRef5Point_sPFP16OpaqueControlRef5PointP26OpaqueControlActionProcPtr_sPFP16OpaqueControlRef_vPFP16OpaqueControlRefsss_sPFP16OpaqueControlRefUc_vPFP16OpaqueControlRefs_sPFP16OpaqueControlRefP20ControlBackgroundRec_v"
+".SetupUserPaneProcs__FP16OpaqueControlRefPFP16OpaqueControlRefs_vPFP16OpaqueControlRef5Point_sPFP16OpaqueControlRef5PointP26OpaqueControlActionProcPtr_sPFP16OpaqueControlRef_vPFP16OpaqueControlRefsss_sPFP16OpaqueControlRefUc_vPFP16OpaqueControlRefs_sPFP16OpaqueControlRefP20ControlBackgroundRec_v":
 /* 00572980 0057B810  BE A1 FF D4 */	stmw r21, -0x2c(r1)
 /* 00572984 0057B814  7C 08 02 A6 */	mflr r0
 /* 00572988 0057B818  7C 7E 1B 79 */	or. r30, r3, r3
@@ -1157,87 +1157,6 @@ lbl_00572D98:
 /* 00572DA0 0057BC30  BA A1 FF D4 */	lmw r21, -0x2c(r1)
 /* 00572DA4 0057BC34  7C 08 03 A6 */	mtlr r0
 /* 00572DA8 0057BC38  4E 80 00 20 */	blr 
-/* 00572DAC 0057BC3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00572DB0 0057BC40  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 00572DB4 0057BC44  80 0B 00 00 */	lwz r0, 0(r11)
-/* 00572DB8 0057BC48  00 00 04 2C */	.4byte 0x0000042C  /* unknown instruction */
-/* 00572DBC 0057BC4C  01 28 2E 53 */	.4byte 0x01282E53  /* unknown instruction */
-/* 00572DC0 0057BC50  65 74 75 70 */	oris r20, r11, 0x7570
-/* 00572DC4 0057BC54  55 73 65 72 */	rlwinm r19, r11, 0xc, 0x15, 0x19
-/* 00572DC8 0057BC58  50 61 6E 65 */	rlwimi. r1, r3, 0xd, 0x19, 0x12
-/* 00572DCC 0057BC5C  50 72 6F 63 */	rlwimi. r18, r3, 0xd, 0x1d, 0x11
-/* 00572DD0 0057BC60  73 5F 5F 46 */	andi. r31, r26, 0x5f46
-/* 00572DD4 0057BC64  50 31 36 4F */	rlwimi. r17, r1, 6, 0x19, 7
-/* 00572DD8 0057BC68  70 61 71 75 */	andi. r1, r3, 0x7175
-/* 00572DDC 0057BC6C  65 43 6F 6E */	oris r3, r10, 0x6f6e
-/* 00572DE0 0057BC70  74 72 6F 6C */	andis. r18, r3, 0x6f6c
-/* 00572DE4 0057BC74  52 65 66 50 */	rlwimi r5, r19, 0xc, 0x19, 8
-/* 00572DE8 0057BC78  46 50 31 36 */	sc 9
-/* 00572DEC 0057BC7C  4F 70 61 71 */	.4byte 0x4F706171  /* unknown instruction */
-/* 00572DF0 0057BC80  75 65 43 6F */	andis. r5, r11, 0x436f
-/* 00572DF4 0057BC84  6E 74 72 6F */	xoris r20, r19, 0x726f
-/* 00572DF8 0057BC88  6C 52 65 66 */	xoris r18, r2, 0x6566
-/* 00572DFC 0057BC8C  73 5F 76 50 */	andi. r31, r26, 0x7650
-/* 00572E00 0057BC90  46 50 31 36 */	sc 9
-/* 00572E04 0057BC94  4F 70 61 71 */	.4byte 0x4F706171  /* unknown instruction */
-/* 00572E08 0057BC98  75 65 43 6F */	andis. r5, r11, 0x436f
-/* 00572E0C 0057BC9C  6E 74 72 6F */	xoris r20, r19, 0x726f
-/* 00572E10 0057BCA0  6C 52 65 66 */	xoris r18, r2, 0x6566
-/* 00572E14 0057BCA4  35 50 6F 69 */	addic. r10, r16, 0x6f69
-/* 00572E18 0057BCA8  6E 74 5F 73 */	xoris r20, r19, 0x5f73
-/* 00572E1C 0057BCAC  50 46 50 31 */	rlwimi. r6, r2, 0xa, 0, 0x18
-/* 00572E20 0057BCB0  36 4F 70 61 */	addic. r18, r15, 0x7061
-/* 00572E24 0057BCB4  71 75 65 43 */	andi. r21, r11, 0x6543
-/* 00572E28 0057BCB8  6F 6E 74 72 */	xoris r14, r27, 0x7472
-/* 00572E2C 0057BCBC  6F 6C 52 65 */	xoris r12, r27, 0x5265
-/* 00572E30 0057BCC0  66 35 50 6F */	oris r21, r17, 0x506f
-/* 00572E34 0057BCC4  69 6E 74 50 */	xori r14, r11, 0x7450
-/* 00572E38 0057BCC8  32 36 4F 70 */	addic r17, r22, 0x4f70
-/* 00572E3C 0057BCCC  61 71 75 65 */	ori r17, r11, 0x7565
-/* 00572E40 0057BCD0  43 6F 6E 74 */	bdz+ lbl_00579CB4
-/* 00572E44 0057BCD4  72 6F 6C 41 */	andi. r15, r19, 0x6c41
-/* 00572E48 0057BCD8  63 74 69 6F */	ori r20, r27, 0x696f
-/* 00572E4C 0057BCDC  6E 50 72 6F */	xoris r16, r18, 0x726f
-/* 00572E50 0057BCE0  63 50 74 72 */	ori r16, r26, 0x7472
-/* 00572E54 0057BCE4  5F 73 50 46 */	rlwnm r19, r27, r10, 1, 3
-/* 00572E58 0057BCE8  50 31 36 4F */	rlwimi. r17, r1, 6, 0x19, 7
-/* 00572E5C 0057BCEC  70 61 71 75 */	andi. r1, r3, 0x7175
-/* 00572E60 0057BCF0  65 43 6F 6E */	oris r3, r10, 0x6f6e
-/* 00572E64 0057BCF4  74 72 6F 6C */	andis. r18, r3, 0x6f6c
-/* 00572E68 0057BCF8  52 65 66 5F */	rlwimi. r5, r19, 0xc, 0x19, 0xf
-/* 00572E6C 0057BCFC  76 50 46 50 */	andis. r16, r18, 0x4650
-/* 00572E70 0057BD00  31 36 4F 70 */	addic r9, r22, 0x4f70
-/* 00572E74 0057BD04  61 71 75 65 */	ori r17, r11, 0x7565
-/* 00572E78 0057BD08  43 6F 6E 74 */	bdz+ lbl_00579CEC
-/* 00572E7C 0057BD0C  72 6F 6C 52 */	andi. r15, r19, 0x6c52
-/* 00572E80 0057BD10  65 66 73 73 */	oris r6, r11, 0x7373
-/* 00572E84 0057BD14  73 5F 73 50 */	andi. r31, r26, 0x7350
-/* 00572E88 0057BD18  46 50 31 36 */	sc 9
-/* 00572E8C 0057BD1C  4F 70 61 71 */	.4byte 0x4F706171  /* unknown instruction */
-/* 00572E90 0057BD20  75 65 43 6F */	andis. r5, r11, 0x436f
-/* 00572E94 0057BD24  6E 74 72 6F */	xoris r20, r19, 0x726f
-/* 00572E98 0057BD28  6C 52 65 66 */	xoris r18, r2, 0x6566
-/* 00572E9C 0057BD2C  55 63 5F 76 */	rlwinm r3, r11, 0xb, 0x1d, 0x1b
-/* 00572EA0 0057BD30  50 46 50 31 */	rlwimi. r6, r2, 0xa, 0, 0x18
-/* 00572EA4 0057BD34  36 4F 70 61 */	addic. r18, r15, 0x7061
-/* 00572EA8 0057BD38  71 75 65 43 */	andi. r21, r11, 0x6543
-/* 00572EAC 0057BD3C  6F 6E 74 72 */	xoris r14, r27, 0x7472
-/* 00572EB0 0057BD40  6F 6C 52 65 */	xoris r12, r27, 0x5265
-/* 00572EB4 0057BD44  66 73 5F 73 */	oris r19, r19, 0x5f73
-/* 00572EB8 0057BD48  50 46 50 31 */	rlwimi. r6, r2, 0xa, 0, 0x18
-/* 00572EBC 0057BD4C  36 4F 70 61 */	addic. r18, r15, 0x7061
-/* 00572EC0 0057BD50  71 75 65 43 */	andi. r21, r11, 0x6543
-/* 00572EC4 0057BD54  6F 6E 74 72 */	xoris r14, r27, 0x7472
-/* 00572EC8 0057BD58  6F 6C 52 65 */	xoris r12, r27, 0x5265
-/* 00572ECC 0057BD5C  66 50 32 30 */	oris r16, r18, 0x3230
-/* 00572ED0 0057BD60  43 6F 6E 74 */	bdz+ lbl_00579D44
-/* 00572ED4 0057BD64  72 6F 6C 42 */	andi. r15, r19, 0x6c42
-/* 00572ED8 0057BD68  61 63 6B 67 */	ori r3, r11, 0x6b67
-/* 00572EDC 0057BD6C  72 6F 75 6E */	andi. r15, r19, 0x756e
-/* 00572EE0 0057BD70  64 52 65 63 */	oris r18, r2, 0x6563
-/* 00572EE4 0057BD74  5F 76 00 00 */	rlwnm r22, r27, r0, 0, 0
-/* 00572EE8 0057BD78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00572EEC 0057BD7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__sinit_:PickMonitor_cp"
 ".__sinit_:PickMonitor_cp":

@@ -846,7 +846,6 @@ lbl_0007E290:
 /* 0007E2B0 00087140  7F 24 CB 78 */	mr r4, r25
 /* 0007E2B4 00087144  48 00 05 ED */	bl ".__ct__17FloatConstantPairFRC17FloatConstantPair"
 /* 0007E2B8 00087148  48 00 00 20 */	b lbl_0007E2D8
-lbl_0007E2BC:
 /* 0007E2BC 0008714C  38 77 00 00 */	addi r3, r23, 0
 /* 0007E2C0 00087150  38 98 00 00 */	addi r4, r24, 0
 /* 0007E2C4 00087154  4B FB 6D 2D */	bl ".__dl__FPvPv"

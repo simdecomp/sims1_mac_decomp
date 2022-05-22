@@ -20,13 +20,13 @@
 /* 0002B670 00034500  48 00 05 61 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002B674 00034504  90 61 00 44 */	stw r3, 0x44(r1)
 /* 0002B678 00034508  38 61 00 44 */	addi r3, r1, 0x44
-/* 0002B67C 0003450C  48 00 04 25 */	bl func_0002BAA0
+/* 0002B67C 0003450C  48 00 04 25 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002B680 00034510  7C 7F 1B 78 */	mr r31, r3
 /* 0002B684 00034514  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)
 /* 0002B688 00034518  48 00 03 39 */	bl ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002B68C 0003451C  90 61 00 48 */	stw r3, 0x48(r1)
 /* 0002B690 00034520  38 61 00 48 */	addi r3, r1, 0x48
-/* 0002B694 00034524  48 00 04 0D */	bl func_0002BAA0
+/* 0002B694 00034524  48 00 04 0D */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002B698 00034528  7C 7E 1B 78 */	mr r30, r3
 /* 0002B69C 0003452C  48 00 00 08 */	b lbl_0002B6A4
 lbl_0002B6A0:
@@ -42,7 +42,7 @@ lbl_0002B6B8:
 /* 0002B6BC 0003454C  48 00 05 15 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002B6C0 00034550  90 61 00 4C */	stw r3, 0x4c(r1)
 /* 0002B6C4 00034554  38 61 00 4C */	addi r3, r1, 0x4c
-/* 0002B6C8 00034558  48 00 03 D9 */	bl func_0002BAA0
+/* 0002B6C8 00034558  48 00 03 D9 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002B6CC 0003455C  7C 1E 18 40 */	cmplw r30, r3
 /* 0002B6D0 00034560  41 82 00 34 */	beq lbl_0002B704
 /* 0002B6D4 00034564  80 7E 00 00 */	lwz r3, 0(r30)
@@ -51,10 +51,10 @@ lbl_0002B6B8:
 /* 0002B6E0 00034570  93 C1 00 40 */	stw r30, 0x40(r1)
 /* 0002B6E4 00034574  38 61 00 40 */	addi r3, r1, 0x40
 /* 0002B6E8 00034578  83 E2 C6 B8 */	lwz r31, lbl_005BDB18-_R2_BASE_(r2)
-/* 0002B6EC 0003457C  48 00 01 A5 */	bl func_0002B890
+/* 0002B6EC 0003457C  48 00 01 A5 */	bl ".__iterator2pointer__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002B6F0 00034580  38 83 00 00 */	addi r4, r3, 0
 /* 0002B6F4 00034584  38 7F 00 00 */	addi r3, r31, 0
-/* 0002B6F8 00034588  48 00 00 59 */	bl func_0002B750
+/* 0002B6F8 00034588  48 00 00 59 */	bl ".erase__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002B6FC 0003458C  38 60 00 00 */	li r3, 0
 /* 0002B700 00034590  48 00 00 08 */	b lbl_0002B708
 lbl_0002B704:
@@ -68,8 +68,8 @@ lbl_0002B708:
 /* 0002B71C 000345AC  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 0002B720 000345B0  4E 80 00 20 */	blr 
 
-.global func_0002B750
-func_0002B750:
+.global ".erase__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+".erase__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>":
 /* 0002B750 000345E0  7C 08 02 A6 */	mflr r0
 /* 0002B754 000345E4  90 01 00 08 */	stw r0, 8(r1)
 /* 0002B758 000345E8  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -78,241 +78,21 @@ func_0002B750:
 /* 0002B764 000345F4  38 21 00 40 */	addi r1, r1, 0x40
 /* 0002B768 000345F8  7C 08 03 A6 */	mtlr r0
 /* 0002B76C 000345FC  4E 80 00 20 */	blr 
-/* 0002B770 00034600  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B774 00034604  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 0002B778 00034608  80 00 00 00 */	lwz r0, 0(0)
-/* 0002B77C 0003460C  00 00 00 20 */	.4byte 0x00000020  /* unknown instruction */
-/* 0002B780 00034610  01 03 2E 65 */	.4byte 0x01032E65  /* unknown instruction */
-/* 0002B784 00034614  72 61 73 65 */	andi. r1, r19, 0x7365
-/* 0002B788 00034618  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 0002B78C 0003461C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002B790 00034620  31 37 32 5F */	addic r9, r23, 0x325f
-/* 0002B794 00034624  5F 76 65 63 */	rlwnm. r22, r27, r12, 0x15, 0x11
-/* 0002B798 00034628  74 6F 72 5F */	andis. r15, r3, 0x725f
-/* 0002B79C 0003462C  69 6D 70 3C */	xori r13, r11, 0x703c
-/* 0002B7A0 00034630  50 51 32 33 */	rlwimi. r17, r2, 6, 8, 0x19
-/* 0002B7A4 00034634  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 0002B7A8 00034638  39 62 61 73 */	addi r11, r2, lbl_005C75D3-_R2_BASE_
-/* 0002B7AC 0003463C  69 63 5F 73 */	xori r3, r11, 0x5f73
-/* 0002B7B0 00034640  74 72 69 6E */	andis. r18, r3, 0x696e
-/* 0002B7B4 00034644  67 3C 63 2C */	oris r28, r25, 0x632c
-/* 0002B7B8 00034648  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B7BC 0003464C  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 0002B7C0 00034650  63 68 61 72 */	ori r8, r27, 0x6172
-/* 0002B7C4 00034654  5F 74 72 61 */	rlwnm. r20, r27, r14, 9, 0x10
-/* 0002B7C8 00034658  69 74 73 3C */	xori r20, r11, 0x733c
-/* 0002B7CC 0003465C  63 3E 2C 51 */	ori r30, r25, 0x2c51
-/* 0002B7D0 00034660  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B7D4 00034664  64 31 32 61 */	oris r17, r1, 0x3261
-/* 0002B7D8 00034668  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 0002B7DC 0003466C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 0002B7E0 00034670  3C 63 3E 3E */	addis r3, r3, 0x3e3e
-/* 0002B7E4 00034674  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002B7E8 00034678  73 74 64 37 */	andi. r20, r27, 0x6437
-/* 0002B7EC 0003467C  39 61 6C 6C */	addi r11, r1, 0x6c6c
-/* 0002B7F0 00034680  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 0002B7F4 00034684  6F 72 3C 50 */	xoris r18, r27, 0x3c50
-/* 0002B7F8 00034688  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B7FC 0003468C  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 0002B800 00034690  62 61 73 69 */	ori r1, r19, 0x7369
-/* 0002B804 00034694  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 0002B808 00034698  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 0002B80C 0003469C  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 0002B810 000346A0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B814 000346A4  64 31 34 63 */	oris r17, r1, 0x3463
-/* 0002B818 000346A8  68 61 72 5F */	xori r1, r3, 0x725f
-/* 0002B81C 000346AC  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 0002B820 000346B0  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 0002B824 000346B4  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 0002B828 000346B8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002B82C 000346BC  31 32 61 6C */	addic r9, r18, 0x616c
-/* 0002B830 000346C0  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 0002B834 000346C4  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 0002B838 000346C8  63 3E 3E 3E */	ori r30, r25, 0x3e3e
-/* 0002B83C 000346CC  2C 31 3E 46 */	cmpdi r17, 0x3e46
-/* 0002B840 000346D0  50 50 51 32 */	rlwimi r16, r2, 0xa, 4, 0x19
-/* 0002B844 000346D4  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002B848 000346D8  35 39 62 61 */	addic. r9, r25, 0x6261
-/* 0002B84C 000346DC  73 69 63 5F */	andi. r9, r27, 0x635f
-/* 0002B850 000346E0  73 74 72 69 */	andi. r20, r27, 0x7269
-/* 0002B854 000346E4  6E 67 3C 63 */	xoris r7, r19, 0x3c63
-/* 0002B858 000346E8  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002B85C 000346EC  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 0002B860 000346F0  34 63 68 61 */	addic. r3, r3, 0x6861
-/* 0002B864 000346F4  72 5F 74 72 */	andi. r31, r18, 0x7472
-/* 0002B868 000346F8  61 69 74 73 */	ori r9, r11, 0x7473
-/* 0002B86C 000346FC  3C 63 3E 2C */	addis r3, r3, 0x3e2c
-/* 0002B870 00034700  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B874 00034704  74 64 31 32 */	andis. r4, r3, 0x3132
-/* 0002B878 00034708  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 0002B87C 0003470C  63 61 74 6F */	ori r1, r27, 0x746f
-/* 0002B880 00034710  72 3C 63 3E */	andi. r28, r17, 0x633e
-/* 0002B884 00034714  3E 00 00 00 */	lis r16, 0
-/* 0002B888 00034718  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B88C 0003471C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_0002B890
-func_0002B890:
+.global ".__iterator2pointer__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+".__iterator2pointer__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>":
 /* 0002B890 00034720  80 63 00 00 */	lwz r3, 0(r3)
 /* 0002B894 00034724  4E 80 00 20 */	blr 
-/* 0002B898 00034728  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B89C 0003472C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 0002B8A0 00034730  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B8A4 00034734  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 0002B8A8 00034738  01 0A 2E 5F */	.4byte 0x010A2E5F  /* unknown instruction */
-/* 0002B8AC 0003473C  5F 69 74 65 */	rlwnm. r9, r27, r14, 0x11, 0x12
-/* 0002B8B0 00034740  72 61 74 6F */	andi. r1, r19, 0x746f
-/* 0002B8B4 00034744  72 32 70 6F */	andi. r18, r17, 0x706f
-/* 0002B8B8 00034748  69 6E 74 65 */	xori r14, r11, 0x7465
-/* 0002B8BC 0003474C  72 5F 5F 51 */	andi. r31, r18, 0x5f51
-/* 0002B8C0 00034750  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B8C4 00034754  64 31 36 34 */	oris r17, r1, 0x3634
-/* 0002B8C8 00034758  76 65 63 74 */	andis. r5, r19, 0x6374
-/* 0002B8CC 0003475C  6F 72 3C 50 */	xoris r18, r27, 0x3c50
-/* 0002B8D0 00034760  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B8D4 00034764  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 0002B8D8 00034768  62 61 73 69 */	ori r1, r19, 0x7369
-/* 0002B8DC 0003476C  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 0002B8E0 00034770  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 0002B8E4 00034774  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 0002B8E8 00034778  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B8EC 0003477C  64 31 34 63 */	oris r17, r1, 0x3463
-/* 0002B8F0 00034780  68 61 72 5F */	xori r1, r3, 0x725f
-/* 0002B8F4 00034784  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 0002B8F8 00034788  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 0002B8FC 0003478C  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 0002B900 00034790  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002B904 00034794  31 32 61 6C */	addic r9, r18, 0x616c
-/* 0002B908 00034798  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 0002B90C 0003479C  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 0002B910 000347A0  63 3E 3E 2C */	ori r30, r25, 0x3e2c
-/* 0002B914 000347A4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B918 000347A8  74 64 37 39 */	andis. r4, r3, 0x3739
-/* 0002B91C 000347AC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 0002B920 000347B0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 0002B924 000347B4  72 3C 50 51 */	andi. r28, r17, 0x5051
-/* 0002B928 000347B8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B92C 000347BC  64 35 39 62 */	oris r21, r1, 0x3962
-/* 0002B930 000347C0  61 73 69 63 */	ori r19, r11, 0x6963
-/* 0002B934 000347C4  5F 73 74 72 */	rlwnm r19, r27, r14, 0x11, 0x19
-/* 0002B938 000347C8  69 6E 67 3C */	xori r14, r11, 0x673c
-/* 0002B93C 000347CC  63 2C 51 32 */	ori r12, r25, 0x5132
-/* 0002B940 000347D0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002B944 000347D4  31 34 63 68 */	addic r9, r20, 0x6368
-/* 0002B948 000347D8  61 72 5F 74 */	ori r18, r11, 0x5f74
-/* 0002B94C 000347DC  72 61 69 74 */	andi. r1, r19, 0x6974
-/* 0002B950 000347E0  73 3C 63 3E */	andi. r28, r25, 0x633e
-/* 0002B954 000347E4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002B958 000347E8  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 0002B95C 000347EC  32 61 6C 6C */	addic r19, r1, 0x6c6c
-/* 0002B960 000347F0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 0002B964 000347F4  6F 72 3C 63 */	xoris r18, r27, 0x3c63
-/* 0002B968 000347F8  3E 3E 3E 3E */	addis r17, r30, 0x3e3e
-/* 0002B96C 000347FC  46 52 43 50 */	.4byte 0x46524350  /* unknown instruction */
-/* 0002B970 00034800  50 51 32 33 */	rlwimi. r17, r2, 6, 8, 0x19
-/* 0002B974 00034804  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 0002B978 00034808  39 62 61 73 */	addi r11, r2, lbl_005C75D3-_R2_BASE_
-/* 0002B97C 0003480C  69 63 5F 73 */	xori r3, r11, 0x5f73
-/* 0002B980 00034810  74 72 69 6E */	andis. r18, r3, 0x696e
-/* 0002B984 00034814  67 3C 63 2C */	oris r28, r25, 0x632c
-/* 0002B988 00034818  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002B98C 0003481C  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 0002B990 00034820  63 68 61 72 */	ori r8, r27, 0x6172
-/* 0002B994 00034824  5F 74 72 61 */	rlwnm. r20, r27, r14, 9, 0x10
-/* 0002B998 00034828  69 74 73 3C */	xori r20, r11, 0x733c
-/* 0002B99C 0003482C  63 3E 2C 51 */	ori r30, r25, 0x2c51
-/* 0002B9A0 00034830  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002B9A4 00034834  64 31 32 61 */	oris r17, r1, 0x3261
-/* 0002B9A8 00034838  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 0002B9AC 0003483C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 0002B9B0 00034840  3C 63 3E 3E */	addis r3, r3, 0x3e3e
-/* 0002B9B4 00034844  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B9B8 00034848  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002B9BC 0003484C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv":
 /* 0002B9C0 00034850  80 63 00 08 */	lwz r3, 8(r3)
 /* 0002B9C4 00034854  4E 80 00 20 */	blr 
 
-.global func_0002BAA0
-func_0002BAA0:
+.global ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>":
 /* 0002BAA0 00034930  80 63 00 00 */	lwz r3, 0(r3)
 /* 0002BAA4 00034934  4E 80 00 20 */	blr 
-/* 0002BAA8 00034938  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BAAC 0003493C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 0002BAB0 00034940  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BAB4 00034944  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 0002BAB8 00034948  01 0A 2E 5F */	.4byte 0x010A2E5F  /* unknown instruction */
-/* 0002BABC 0003494C  5F 70 6F 69 */	rlwnm. r16, r27, r13, 0x1d, 0x14
-/* 0002BAC0 00034950  6E 74 65 72 */	xoris r20, r19, 0x6572
-/* 0002BAC4 00034954  32 69 74 65 */	addic r19, r9, 0x7465
-/* 0002BAC8 00034958  72 61 74 6F */	andi. r1, r19, 0x746f
-/* 0002BACC 0003495C  72 5F 5F 51 */	andi. r31, r18, 0x5f51
-/* 0002BAD0 00034960  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BAD4 00034964  64 31 36 34 */	oris r17, r1, 0x3634
-/* 0002BAD8 00034968  76 65 63 74 */	andis. r5, r19, 0x6374
-/* 0002BADC 0003496C  6F 72 3C 50 */	xoris r18, r27, 0x3c50
-/* 0002BAE0 00034970  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002BAE4 00034974  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 0002BAE8 00034978  62 61 73 69 */	ori r1, r19, 0x7369
-/* 0002BAEC 0003497C  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 0002BAF0 00034980  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 0002BAF4 00034984  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 0002BAF8 00034988  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BAFC 0003498C  64 31 34 63 */	oris r17, r1, 0x3463
-/* 0002BB00 00034990  68 61 72 5F */	xori r1, r3, 0x725f
-/* 0002BB04 00034994  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 0002BB08 00034998  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 0002BB0C 0003499C  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 0002BB10 000349A0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002BB14 000349A4  31 32 61 6C */	addic r9, r18, 0x616c
-/* 0002BB18 000349A8  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 0002BB1C 000349AC  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 0002BB20 000349B0  63 3E 3E 2C */	ori r30, r25, 0x3e2c
-/* 0002BB24 000349B4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002BB28 000349B8  74 64 37 39 */	andis. r4, r3, 0x3739
-/* 0002BB2C 000349BC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 0002BB30 000349C0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 0002BB34 000349C4  72 3C 50 51 */	andi. r28, r17, 0x5051
-/* 0002BB38 000349C8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BB3C 000349CC  64 35 39 62 */	oris r21, r1, 0x3962
-/* 0002BB40 000349D0  61 73 69 63 */	ori r19, r11, 0x6963
-/* 0002BB44 000349D4  5F 73 74 72 */	rlwnm r19, r27, r14, 0x11, 0x19
-/* 0002BB48 000349D8  69 6E 67 3C */	xori r14, r11, 0x673c
-/* 0002BB4C 000349DC  63 2C 51 32 */	ori r12, r25, 0x5132
-/* 0002BB50 000349E0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002BB54 000349E4  31 34 63 68 */	addic r9, r20, 0x6368
-/* 0002BB58 000349E8  61 72 5F 74 */	ori r18, r11, 0x5f74
-/* 0002BB5C 000349EC  72 61 69 74 */	andi. r1, r19, 0x6974
-/* 0002BB60 000349F0  73 3C 63 3E */	andi. r28, r25, 0x633e
-/* 0002BB64 000349F4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002BB68 000349F8  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 0002BB6C 000349FC  32 61 6C 6C */	addic r19, r1, 0x6c6c
-/* 0002BB70 00034A00  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 0002BB74 00034A04  6F 72 3C 63 */	xoris r18, r27, 0x3c63
-/* 0002BB78 00034A08  3E 3E 3E 3E */	addis r17, r30, 0x3e3e
-/* 0002BB7C 00034A0C  46 52 43 50 */	.4byte 0x46524350  /* unknown instruction */
-/* 0002BB80 00034A10  50 51 32 33 */	rlwimi. r17, r2, 6, 8, 0x19
-/* 0002BB84 00034A14  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 0002BB88 00034A18  39 62 61 73 */	addi r11, r2, lbl_005C75D3-_R2_BASE_
-/* 0002BB8C 00034A1C  69 63 5F 73 */	xori r3, r11, 0x5f73
-/* 0002BB90 00034A20  74 72 69 6E */	andis. r18, r3, 0x696e
-/* 0002BB94 00034A24  67 3C 63 2C */	oris r28, r25, 0x632c
-/* 0002BB98 00034A28  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002BB9C 00034A2C  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 0002BBA0 00034A30  63 68 61 72 */	ori r8, r27, 0x6172
-/* 0002BBA4 00034A34  5F 74 72 61 */	rlwnm. r20, r27, r14, 9, 0x10
-/* 0002BBA8 00034A38  69 74 73 3C */	xori r20, r11, 0x733c
-/* 0002BBAC 00034A3C  63 3E 2C 51 */	ori r30, r25, 0x2c51
-/* 0002BBB0 00034A40  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BBB4 00034A44  64 31 32 61 */	oris r17, r1, 0x3261
-/* 0002BBB8 00034A48  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 0002BBBC 00034A4C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 0002BBC0 00034A50  3C 63 3E 3E */	addis r3, r3, 0x3e3e
-/* 0002BBC4 00034A54  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BBC8 00034A58  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BBCC 00034A5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv":
@@ -350,7 +130,7 @@ lbl_0002BD0C:
 /* 0002BD18 00034BA8  93 BF 00 00 */	stw r29, 0(r31)
 /* 0002BD1C 00034BAC  38 81 00 44 */	addi r4, r1, 0x44
 /* 0002BD20 00034BB0  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)
-/* 0002BD24 00034BB4  48 00 00 4D */	bl func_0002BD70
+/* 0002BD24 00034BB4  48 00 00 4D */	bl ".push_back__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FRCPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002BD28 00034BB8  38 60 00 00 */	li r3, 0
 /* 0002BD2C 00034BBC  48 00 00 08 */	b lbl_0002BD34
 lbl_0002BD30:
@@ -364,8 +144,8 @@ lbl_0002BD34:
 /* 0002BD48 00034BD8  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 0002BD4C 00034BDC  4E 80 00 20 */	blr 
 
-.global func_0002BD70
-func_0002BD70:
+.global ".push_back__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FRCPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+".push_back__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FRCPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>":
 /* 0002BD70 00034C00  93 E1 FF FC */	stw r31, -4(r1)
 /* 0002BD74 00034C04  7C 08 02 A6 */	mflr r0
 /* 0002BD78 00034C08  3B E4 00 00 */	addi r31, r4, 0
@@ -385,79 +165,6 @@ func_0002BD70:
 /* 0002BDB0 00034C40  7C 08 03 A6 */	mtlr r0
 /* 0002BDB4 00034C44  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 0002BDB8 00034C48  4E 80 00 20 */	blr 
-/* 0002BDBC 00034C4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BDC0 00034C50  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 0002BDC4 00034C54  80 02 00 00 */	lwz r0, lbl_005C1460-_R2_BASE_(r2)
-/* 0002BDC8 00034C58  00 00 00 4C */	.4byte 0x0000004C  /* unknown instruction */
-/* 0002BDCC 00034C5C  01 08 2E 70 */	.4byte 0x01082E70  /* unknown instruction */
-/* 0002BDD0 00034C60  75 73 68 5F */	andis. r19, r11, 0x685f
-/* 0002BDD4 00034C64  62 61 63 6B */	ori r1, r19, 0x636b
-/* 0002BDD8 00034C68  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 0002BDDC 00034C6C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002BDE0 00034C70  31 37 32 5F */	addic r9, r23, 0x325f
-/* 0002BDE4 00034C74  5F 76 65 63 */	rlwnm. r22, r27, r12, 0x15, 0x11
-/* 0002BDE8 00034C78  74 6F 72 5F */	andis. r15, r3, 0x725f
-/* 0002BDEC 00034C7C  69 6D 70 3C */	xori r13, r11, 0x703c
-/* 0002BDF0 00034C80  50 51 32 33 */	rlwimi. r17, r2, 6, 8, 0x19
-/* 0002BDF4 00034C84  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 0002BDF8 00034C88  39 62 61 73 */	addi r11, r2, lbl_005C75D3-_R2_BASE_
-/* 0002BDFC 00034C8C  69 63 5F 73 */	xori r3, r11, 0x5f73
-/* 0002BE00 00034C90  74 72 69 6E */	andis. r18, r3, 0x696e
-/* 0002BE04 00034C94  67 3C 63 2C */	oris r28, r25, 0x632c
-/* 0002BE08 00034C98  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002BE0C 00034C9C  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 0002BE10 00034CA0  63 68 61 72 */	ori r8, r27, 0x6172
-/* 0002BE14 00034CA4  5F 74 72 61 */	rlwnm. r20, r27, r14, 9, 0x10
-/* 0002BE18 00034CA8  69 74 73 3C */	xori r20, r11, 0x733c
-/* 0002BE1C 00034CAC  63 3E 2C 51 */	ori r30, r25, 0x2c51
-/* 0002BE20 00034CB0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BE24 00034CB4  64 31 32 61 */	oris r17, r1, 0x3261
-/* 0002BE28 00034CB8  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 0002BE2C 00034CBC  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 0002BE30 00034CC0  3C 63 3E 3E */	addis r3, r3, 0x3e3e
-/* 0002BE34 00034CC4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002BE38 00034CC8  73 74 64 37 */	andi. r20, r27, 0x6437
-/* 0002BE3C 00034CCC  39 61 6C 6C */	addi r11, r1, 0x6c6c
-/* 0002BE40 00034CD0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 0002BE44 00034CD4  6F 72 3C 50 */	xoris r18, r27, 0x3c50
-/* 0002BE48 00034CD8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 0002BE4C 00034CDC  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 0002BE50 00034CE0  62 61 73 69 */	ori r1, r19, 0x7369
-/* 0002BE54 00034CE4  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 0002BE58 00034CE8  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 0002BE5C 00034CEC  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 0002BE60 00034CF0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BE64 00034CF4  64 31 34 63 */	oris r17, r1, 0x3463
-/* 0002BE68 00034CF8  68 61 72 5F */	xori r1, r3, 0x725f
-/* 0002BE6C 00034CFC  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 0002BE70 00034D00  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 0002BE74 00034D04  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 0002BE78 00034D08  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002BE7C 00034D0C  31 32 61 6C */	addic r9, r18, 0x616c
-/* 0002BE80 00034D10  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 0002BE84 00034D14  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 0002BE88 00034D18  63 3E 3E 3E */	ori r30, r25, 0x3e3e
-/* 0002BE8C 00034D1C  2C 31 3E 46 */	cmpdi r17, 0x3e46
-/* 0002BE90 00034D20  52 43 50 51 */	rlwimi. r3, r18, 0xa, 1, 8
-/* 0002BE94 00034D24  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0002BE98 00034D28  64 35 39 62 */	oris r21, r1, 0x3962
-/* 0002BE9C 00034D2C  61 73 69 63 */	ori r19, r11, 0x6963
-/* 0002BEA0 00034D30  5F 73 74 72 */	rlwnm r19, r27, r14, 0x11, 0x19
-/* 0002BEA4 00034D34  69 6E 67 3C */	xori r14, r11, 0x673c
-/* 0002BEA8 00034D38  63 2C 51 32 */	ori r12, r25, 0x5132
-/* 0002BEAC 00034D3C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0002BEB0 00034D40  31 34 63 68 */	addic r9, r20, 0x6368
-/* 0002BEB4 00034D44  61 72 5F 74 */	ori r18, r11, 0x5f74
-/* 0002BEB8 00034D48  72 61 69 74 */	andi. r1, r19, 0x6974
-/* 0002BEBC 00034D4C  73 3C 63 3E */	andi. r28, r25, 0x633e
-/* 0002BEC0 00034D50  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 0002BEC4 00034D54  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 0002BEC8 00034D58  32 61 6C 6C */	addic r19, r1, 0x6c6c
-/* 0002BECC 00034D5C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 0002BED0 00034D60  6F 72 3C 63 */	xoris r18, r27, 0x3c63
-/* 0002BED4 00034D64  3E 3E 00 00 */	addis r17, r30, 0
-/* 0002BED8 00034D68  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 0002BEDC 00034D6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".end__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv"
 ".end__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>Fv":
@@ -486,13 +193,13 @@ func_0002BD70:
 /* 0002BF78 00034E08  4B FF FC 59 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002BF7C 00034E0C  90 61 00 40 */	stw r3, 0x40(r1)
 /* 0002BF80 00034E10  38 61 00 40 */	addi r3, r1, 0x40
-/* 0002BF84 00034E14  4B FF FB 1D */	bl func_0002BAA0
+/* 0002BF84 00034E14  4B FF FB 1D */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002BF88 00034E18  7C 7F 1B 78 */	mr r31, r3
 /* 0002BF8C 00034E1C  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)
 /* 0002BF90 00034E20  4B FF FA 31 */	bl ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002BF94 00034E24  90 61 00 44 */	stw r3, 0x44(r1)
 /* 0002BF98 00034E28  38 61 00 44 */	addi r3, r1, 0x44
-/* 0002BF9C 00034E2C  4B FF FB 05 */	bl func_0002BAA0
+/* 0002BF9C 00034E2C  4B FF FB 05 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002BFA0 00034E30  7C 7B 1B 78 */	mr r27, r3
 /* 0002BFA4 00034E34  48 00 00 08 */	b lbl_0002BFAC
 lbl_0002BFA8:
@@ -508,7 +215,7 @@ lbl_0002BFC0:
 /* 0002BFC4 00034E54  4B FF FC 0D */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002BFC8 00034E58  90 61 00 48 */	stw r3, 0x48(r1)
 /* 0002BFCC 00034E5C  38 61 00 48 */	addi r3, r1, 0x48
-/* 0002BFD0 00034E60  4B FF FA D1 */	bl func_0002BAA0
+/* 0002BFD0 00034E60  4B FF FA D1 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002BFD4 00034E64  7C 1B 18 40 */	cmplw r27, r3
 /* 0002BFD8 00034E68  40 82 00 0C */	bne lbl_0002BFE4
 /* 0002BFDC 00034E6C  38 60 03 F3 */	li r3, 0x3f3
@@ -666,13 +373,13 @@ lbl_0002C1AC:
 /* 0002C29C 0003512C  4B FF F9 35 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002C2A0 00035130  90 61 00 40 */	stw r3, 0x40(r1)
 /* 0002C2A4 00035134  38 61 00 40 */	addi r3, r1, 0x40
-/* 0002C2A8 00035138  4B FF F7 F9 */	bl func_0002BAA0
+/* 0002C2A8 00035138  4B FF F7 F9 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C2AC 0003513C  7C 7A 1B 78 */	mr r26, r3
 /* 0002C2B0 00035140  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)
 /* 0002C2B4 00035144  4B FF F7 0D */	bl ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002C2B8 00035148  90 61 00 44 */	stw r3, 0x44(r1)
 /* 0002C2BC 0003514C  38 61 00 44 */	addi r3, r1, 0x44
-/* 0002C2C0 00035150  4B FF F7 E1 */	bl func_0002BAA0
+/* 0002C2C0 00035150  4B FF F7 E1 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C2C4 00035154  7C 79 1B 78 */	mr r25, r3
 /* 0002C2C8 00035158  48 00 00 0C */	b lbl_0002C2D4
 /* 0002C2CC 0003515C  60 00 00 00 */	nop 
@@ -689,7 +396,7 @@ lbl_0002C2E8:
 /* 0002C2EC 0003517C  4B FF F8 E5 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002C2F0 00035180  90 61 00 48 */	stw r3, 0x48(r1)
 /* 0002C2F4 00035184  38 61 00 48 */	addi r3, r1, 0x48
-/* 0002C2F8 00035188  4B FF F7 A9 */	bl func_0002BAA0
+/* 0002C2F8 00035188  4B FF F7 A9 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C2FC 0003518C  7C 19 18 40 */	cmplw r25, r3
 /* 0002C300 00035190  40 82 00 0C */	bne lbl_0002C30C
 /* 0002C304 00035194  38 60 03 F3 */	li r3, 0x3f3
@@ -817,7 +524,7 @@ lbl_0002C4DC:
 /* 0002C4E8 00035378  93 BF 00 00 */	stw r29, 0(r31)
 /* 0002C4EC 0003537C  38 81 00 44 */	addi r4, r1, 0x44
 /* 0002C4F0 00035380  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)
-/* 0002C4F4 00035384  4B FF F8 7D */	bl func_0002BD70
+/* 0002C4F4 00035384  4B FF F8 7D */	bl ".push_back__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>FRCPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C4F8 00035388  38 60 00 00 */	li r3, 0
 /* 0002C4FC 0003538C  48 00 00 08 */	b lbl_0002C504
 lbl_0002C500:
@@ -848,7 +555,7 @@ lbl_0002C504:
 /* 0002C580 00035410  4B FF F4 41 */	bl ".begin__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002C584 00035414  90 61 00 40 */	stw r3, 0x40(r1)
 /* 0002C588 00035418  38 61 00 40 */	addi r3, r1, 0x40
-/* 0002C58C 0003541C  4B FF F5 15 */	bl func_0002BAA0
+/* 0002C58C 0003541C  4B FF F5 15 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C590 00035420  7C 7E 1B 78 */	mr r30, r3
 /* 0002C594 00035424  48 00 00 14 */	b lbl_0002C5A8
 lbl_0002C598:
@@ -861,7 +568,7 @@ lbl_0002C5A8:
 /* 0002C5AC 0003543C  4B FF F6 25 */	bl ".end__Q23std172__vector_imp<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>,1>Fv"
 /* 0002C5B0 00035440  90 61 00 44 */	stw r3, 0x44(r1)
 /* 0002C5B4 00035444  38 61 00 44 */	addi r3, r1, 0x44
-/* 0002C5B8 00035448  4B FF F4 E9 */	bl func_0002BAA0
+/* 0002C5B8 00035448  4B FF F4 E9 */	bl ".__pointer2iterator__Q23std164vector<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>,Q23std79allocator<PQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>>>FRCPPQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0002C5BC 0003544C  7C 1E 18 40 */	cmplw r30, r3
 /* 0002C5C0 00035450  40 82 FF D8 */	bne lbl_0002C598
 /* 0002C5C4 00035454  80 62 C6 B8 */	lwz r3, lbl_005BDB18-_R2_BASE_(r2)

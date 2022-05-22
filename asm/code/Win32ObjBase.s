@@ -16,7 +16,7 @@
 /* 00027900 00030790  4B FF F7 41 */	bl ".first__Q310Metrowerks7details48compressed_pair_imp<Q23std14allocator<PCv>,Ul,1>Fv"
 /* 00027904 00030794  38 7F 00 04 */	addi r3, r31, 4
 /* 00027908 00030798  38 81 00 40 */	addi r4, r1, 0x40
-/* 0002790C 0003079C  48 00 00 85 */	bl func_00027990
+/* 0002790C 0003079C  48 00 00 85 */	bl ".__ct__Q310Metrowerks7details158compressed_pair_imp<Q23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>,Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>9node_base,1>FRCQ23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>"
 /* 00027910 000307A0  38 9F 00 04 */	addi r4, r31, 4
 /* 00027914 000307A4  90 84 00 04 */	stw r4, 4(r4)
 /* 00027918 000307A8  7F E3 FB 78 */	mr r3, r31
@@ -27,84 +27,9 @@
 /* 0002792C 000307BC  83 E1 FF FC */	lwz r31, -4(r1)
 /* 00027930 000307C0  4E 80 00 20 */	blr 
 
-.global func_00027990
-func_00027990:
+.global ".__ct__Q310Metrowerks7details158compressed_pair_imp<Q23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>,Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>9node_base,1>FRCQ23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>"
+".__ct__Q310Metrowerks7details158compressed_pair_imp<Q23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>,Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>9node_base,1>FRCQ23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>":
 /* 00027990 00030820  4E 80 00 20 */	blr 
-/* 00027994 00030824  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00027998 00030828  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 0002799C 0003082C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 000279A0 00030830  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 000279A4 00030834  01 0B 2E 5F */	.4byte 0x010B2E5F  /* unknown instruction */
-/* 000279A8 00030838  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 000279AC 0003083C  5F 51 33 31 */	rlwnm. r17, r26, r6, 0xc, 0x18
-/* 000279B0 00030840  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 000279B4 00030844  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 000279B8 00030848  72 6B 73 37 */	andi. r11, r19, 0x7337
-/* 000279BC 0003084C  64 65 74 61 */	oris r5, r3, 0x7461
-/* 000279C0 00030850  69 6C 73 31 */	xori r12, r11, 0x7331
-/* 000279C4 00030854  35 38 63 6F */	addic. r9, r24, 0x636f
-/* 000279C8 00030858  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 000279CC 0003085C  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 000279D0 00030860  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 000279D4 00030864  72 5F 69 6D */	andi. r31, r18, 0x696d
-/* 000279D8 00030868  70 3C 51 32 */	andi. r28, r1, 0x5132
-/* 000279DC 0003086C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 000279E0 00030870  36 36 61 6C */	addic. r17, r22, 0x616c
-/* 000279E4 00030874  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 000279E8 00030878  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 000279EC 0003087C  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 000279F0 00030880  74 64 34 32 */	andis. r4, r3, 0x3432
-/* 000279F4 00030884  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 000279F8 00030888  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 000279FC 0003088C  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 00027A00 00030890  65 72 3C 50 */	oris r18, r11, 0x3c50
-/* 00027A04 00030894  43 76 2C 51 */	bdzl+ 0x2a654
-/* 00027A08 00030898  32 33 73 74 */	addic r17, r19, 0x7374
-/* 00027A0C 0003089C  64 31 34 61 */	oris r17, r1, 0x3461
-/* 00027A10 000308A0  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 00027A14 000308A4  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 00027A18 000308A8  3C 50 43 76 */	addis r2, r16, 0x4376
-/* 00027A1C 000308AC  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 00027A20 000308B0  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 00027A24 000308B4  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 00027A28 000308B8  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 00027A2C 000308BC  32 5F 5F 6C */	addic r18, r31, 0x5f6c
-/* 00027A30 000308C0  69 73 74 5F */	xori r19, r11, 0x745f
-/* 00027A34 000308C4  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 00027A38 000308C8  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 00027A3C 000308CC  50 43 76 2C */	rlwimi r3, r2, 0xe, 0x18, 0x16
-/* 00027A40 000308D0  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 00027A44 000308D4  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 00027A48 000308D8  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 00027A4C 000308DC  63 61 74 6F */	ori r1, r27, 0x746f
-/* 00027A50 000308E0  72 3C 50 43 */	andi. r28, r17, 0x5043
-/* 00027A54 000308E4  76 3E 3E 39 */	andis. r30, r17, 0x3e39
-/* 00027A58 000308E8  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 00027A5C 000308EC  5F 62 61 73 */	rlwnm. r2, r27, r12, 5, 0x19
-/* 00027A60 000308F0  65 2C 31 3E */	oris r12, r9, 0x313e
-/* 00027A64 000308F4  46 52 43 51 */	.4byte 0x46524351  /* unknown instruction */
-/* 00027A68 000308F8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 00027A6C 000308FC  64 36 36 61 */	oris r22, r1, 0x3661
-/* 00027A70 00030900  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 00027A74 00030904  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 00027A78 00030908  3C 51 33 33 */	addis r2, r17, 0x3333
-/* 00027A7C 0003090C  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 00027A80 00030910  32 5F 5F 6C */	addic r18, r31, 0x5f6c
-/* 00027A84 00030914  69 73 74 5F */	xori r19, r11, 0x745f
-/* 00027A88 00030918  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 00027A8C 0003091C  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 00027A90 00030920  50 43 76 2C */	rlwimi r3, r2, 0xe, 0x18, 0x16
-/* 00027A94 00030924  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 00027A98 00030928  74 64 31 34 */	andis. r4, r3, 0x3134
-/* 00027A9C 0003092C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 00027AA0 00030930  63 61 74 6F */	ori r1, r27, 0x746f
-/* 00027AA4 00030934  72 3C 50 43 */	andi. r28, r17, 0x5043
-/* 00027AA8 00030938  76 3E 3E 34 */	andis. r30, r17, 0x3e34
-/* 00027AAC 0003093C  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 00027AB0 00030940  3E 00 00 00 */	lis r16, 0
-/* 00027AB4 00030944  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00027AB8 00030948  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00027ABC 0003094C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__ct__Q310Metrowerks7details48compressed_pair_imp<Q23std14allocator<PCv>,Ul,1>FUl"
 ".__ct__Q310Metrowerks7details48compressed_pair_imp<Q23std14allocator<PCv>,Ul,1>FUl":

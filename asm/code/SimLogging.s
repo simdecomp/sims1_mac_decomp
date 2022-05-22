@@ -431,7 +431,6 @@ lbl_0012C024:
 /* 0012C04C 00134EDC  1C 00 00 1C */	mulli r0, r0, 0x1c
 /* 0012C050 00134EE0  7C 84 02 14 */	add r4, r4, r0
 /* 0012C054 00134EE4  38 A0 00 01 */	li r5, 1
-lbl_0012C058:
 /* 0012C058 00134EE8  48 00 13 29 */	bl ".insert__Q23std68__vector_imp<14LogInteraction,Q23std27allocator<14LogInteraction>,0>FP14LogInteractionUlRC14LogInteraction"
 /* 0012C05C 00134EEC  34 61 00 50 */	addic. r3, r1, 0x50
 /* 0012C060 00134EF0  41 82 00 14 */	beq lbl_0012C074
@@ -491,7 +490,6 @@ lbl_0012C0CC:
 /* 0012C128 00134FB8  C0 21 00 78 */	lfs f1, 0x78(r1)
 /* 0012C12C 00134FBC  C0 1E 00 18 */	lfs f0, 0x18(r30)
 /* 0012C130 00134FC0  EC 01 00 28 */	fsubs f0, f1, f0
-lbl_0012C134:
 /* 0012C134 00134FC4  D0 1E 00 18 */	stfs f0, 0x18(r30)
 /* 0012C138 00134FC8  C0 21 00 7C */	lfs f1, 0x7c(r1)
 /* 0012C13C 00134FCC  C0 1E 00 1C */	lfs f0, 0x1c(r30)

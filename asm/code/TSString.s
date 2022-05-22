@@ -1535,7 +1535,7 @@ lbl_004EBB28:
 /* 004EBB94 004F4A24  48 00 01 CD */	bl ".__ct<c>__Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std12allocator<c>_Pv"
 /* 004EBB98 004F4A28  38 83 00 00 */	addi r4, r3, 0
 /* 004EBB9C 004F4A2C  38 7E 00 00 */	addi r3, r30, 0
-/* 004EBBA0 004F4A30  48 00 00 61 */	bl func_004EBC00
+/* 004EBBA0 004F4A30  48 00 00 61 */	bl ".__ct__Q23std192_EmptyMemberOpt<Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>,PQ33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>"
 /* 004EBBA4 004F4A34  38 7E 00 00 */	addi r3, r30, 0
 /* 004EBBA8 004F4A38  38 C1 00 40 */	addi r6, r1, 0x40
 /* 004EBBAC 004F4A3C  7F E5 07 74 */	extsb r5, r31
@@ -1549,96 +1549,11 @@ lbl_004EBB28:
 /* 004EBBCC 004F4A5C  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 004EBBD0 004F4A60  4E 80 00 20 */	blr 
 
-.global func_004EBC00
-func_004EBC00:
+.global ".__ct__Q23std192_EmptyMemberOpt<Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>,PQ33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>"
+".__ct__Q23std192_EmptyMemberOpt<Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>,PQ33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>":
 /* 004EBC00 004F4A90  38 00 00 00 */	li r0, 0
 /* 004EBC04 004F4A94  90 03 00 00 */	stw r0, 0(r3)
 /* 004EBC08 004F4A98  4E 80 00 20 */	blr 
-/* 004EBC0C 004F4A9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004EBC10 004F4AA0  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004EBC14 004F4AA4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004EBC18 004F4AA8  00 00 00 0C */	.4byte 0x0000000C  /* unknown instruction */
-/* 004EBC1C 004F4AAC  01 33 2E 5F */	.4byte 0x01332E5F  /* unknown instruction */
-/* 004EBC20 004F4AB0  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 004EBC24 004F4AB4  5F 51 32 33 */	rlwnm. r17, r26, r6, 8, 0x19
-/* 004EBC28 004F4AB8  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004EBC2C 004F4ABC  39 32 5F 45 */	addi r9, r18, 0x5f45
-/* 004EBC30 004F4AC0  6D 70 74 79 */	xoris r16, r11, 0x7479
-/* 004EBC34 004F4AC4  4D 65 6D 62 */	.4byte 0x4D656D62  /* unknown instruction */
-/* 004EBC38 004F4AC8  65 72 4F 70 */	oris r18, r11, 0x4f70
-/* 004EBC3C 004F4ACC  74 3C 51 32 */	andis. r28, r1, 0x5132
-/* 004EBC40 004F4AD0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004EBC44 004F4AD4  38 38 61 6C */	addi r1, r24, 0x616c
-/* 004EBC48 004F4AD8  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004EBC4C 004F4ADC  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004EBC50 004F4AE0  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004EBC54 004F4AE4  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 004EBC58 004F4AE8  62 61 73 69 */	ori r1, r19, 0x7369
-/* 004EBC5C 004F4AEC  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 004EBC60 004F4AF0  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 004EBC64 004F4AF4  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 004EBC68 004F4AF8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004EBC6C 004F4AFC  64 31 34 63 */	oris r17, r1, 0x3463
-/* 004EBC70 004F4B00  68 61 72 5F */	xori r1, r3, 0x725f
-/* 004EBC74 004F4B04  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 004EBC78 004F4B08  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 004EBC7C 004F4B0C  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 004EBC80 004F4B10  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004EBC84 004F4B14  31 32 61 6C */	addic r9, r18, 0x616c
-/* 004EBC88 004F4B18  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004EBC8C 004F4B1C  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004EBC90 004F4B20  63 3E 3E 39 */	ori r30, r25, 0x3e39
-/* 004EBC94 004F4B24  43 68 61 72 */	bdza+ 0x6170
-/* 004EBC98 004F4B28  41 72 72 61 */	bdztl 4*cr4+eq, 0x4f2ef8
-/* 004EBC9C 004F4B2C  79 3E 2C 50 */	rldcl r30, r9, r5, 0x11
-/* 004EBCA0 004F4B30  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004EBCA4 004F4B34  74 64 35 39 */	andis. r4, r3, 0x3539
-/* 004EBCA8 004F4B38  62 61 73 69 */	ori r1, r19, 0x7369
-/* 004EBCAC 004F4B3C  63 5F 73 74 */	ori r31, r26, 0x7374
-/* 004EBCB0 004F4B40  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 004EBCB4 004F4B44  3C 63 2C 51 */	addis r3, r3, 0x2c51
-/* 004EBCB8 004F4B48  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004EBCBC 004F4B4C  64 31 34 63 */	oris r17, r1, 0x3463
-/* 004EBCC0 004F4B50  68 61 72 5F */	xori r1, r3, 0x725f
-/* 004EBCC4 004F4B54  74 72 61 69 */	andis. r18, r3, 0x6169
-/* 004EBCC8 004F4B58  74 73 3C 63 */	andis. r19, r3, 0x3c63
-/* 004EBCCC 004F4B5C  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 004EBCD0 004F4B60  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004EBCD4 004F4B64  31 32 61 6C */	addic r9, r18, 0x616c
-/* 004EBCD8 004F4B68  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004EBCDC 004F4B6C  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004EBCE0 004F4B70  63 3E 3E 39 */	ori r30, r25, 0x3e39
-/* 004EBCE4 004F4B74  43 68 61 72 */	bdza+ 0x6170
-/* 004EBCE8 004F4B78  41 72 72 61 */	bdztl 4*cr4+eq, 0x4f2f48
-/* 004EBCEC 004F4B7C  79 3E 46 52 */	rldcr r30, r9, r8, 0x19
-/* 004EBCF0 004F4B80  43 51 32 33 */	bdzla- 0x3230
-/* 004EBCF4 004F4B84  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004EBCF8 004F4B88  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004EBCFC 004F4B8C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004EBD00 004F4B90  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004EBD04 004F4B94  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004EBD08 004F4B98  64 35 39 62 */	oris r21, r1, 0x3962
-/* 004EBD0C 004F4B9C  61 73 69 63 */	ori r19, r11, 0x6963
-/* 004EBD10 004F4BA0  5F 73 74 72 */	rlwnm r19, r27, r14, 0x11, 0x19
-/* 004EBD14 004F4BA4  69 6E 67 3C */	xori r14, r11, 0x673c
-/* 004EBD18 004F4BA8  63 2C 51 32 */	ori r12, r25, 0x5132
-/* 004EBD1C 004F4BAC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004EBD20 004F4BB0  31 34 63 68 */	addic r9, r20, 0x6368
-/* 004EBD24 004F4BB4  61 72 5F 74 */	ori r18, r11, 0x5f74
-/* 004EBD28 004F4BB8  72 61 69 74 */	andi. r1, r19, 0x6974
-/* 004EBD2C 004F4BBC  73 3C 63 3E */	andi. r28, r25, 0x633e
-/* 004EBD30 004F4BC0  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004EBD34 004F4BC4  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004EBD38 004F4BC8  32 61 6C 6C */	addic r19, r1, 0x6c6c
-/* 004EBD3C 004F4BCC  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004EBD40 004F4BD0  6F 72 3C 63 */	xoris r18, r27, 0x3c63
-/* 004EBD44 004F4BD4  3E 3E 39 43 */	addis r17, r30, 0x3943
-/* 004EBD48 004F4BD8  68 61 72 41 */	xori r1, r3, 0x7241
-/* 004EBD4C 004F4BDC  72 72 61 79 */	andi. r18, r19, 0x6179
-/* 004EBD50 004F4BE0  3E 00 00 00 */	lis r16, 0
-/* 004EBD54 004F4BE4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004EBD58 004F4BE8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004EBD5C 004F4BEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__ct<c>__Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std12allocator<c>_Pv"
 ".__ct<c>__Q23std88allocator<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>9CharArray>FRCQ23std12allocator<c>_Pv":

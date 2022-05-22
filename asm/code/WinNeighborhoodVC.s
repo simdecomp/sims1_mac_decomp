@@ -2371,7 +2371,6 @@ lbl_00467CA4:
 /* 00467D38 00470BC8  4B CD 3F 39 */	bl ".GetString__13StringSetBaseFic"
 /* 00467D3C 00470BCC  38 83 00 00 */	addi r4, r3, 0
 /* 00467D40 00470BD0  38 61 00 64 */	addi r3, r1, 0x64
-lbl_00467D44:
 /* 00467D44 00470BD4  48 10 08 6D */	bl ".__as__9CTGStringFPCc"
 /* 00467D48 00470BD8  38 61 00 64 */	addi r3, r1, 0x64
 /* 00467D4C 00470BDC  48 10 07 45 */	bl ".ToChar__9CTGStringCFv"
@@ -2396,7 +2395,6 @@ lbl_00467D44:
 /* 00467D98 00470C28  4B C1 73 39 */	bl ".GetStringConstant__Fi"
 /* 00467D9C 00470C2C  38 83 00 00 */	addi r4, r3, 0
 /* 00467DA0 00470C30  38 A1 02 14 */	addi r5, r1, 0x214
-lbl_00467DA4:
 /* 00467DA4 00470C34  38 60 00 90 */	li r3, 0x90
 /* 00467DA8 00470C38  38 C0 00 00 */	li r6, 0
 /* 00467DAC 00470C3C  4B DE E8 05 */	bl ".LoadUIStrings__FiPCcP9StringSetb"
@@ -2537,7 +2535,6 @@ lbl_00467F74:
 /* 00467FB0 00470E40  38 61 02 80 */	addi r3, r1, 0x280
 /* 00467FB4 00470E44  4B CD 52 AD */	bl ".__ct__13StringSetBaseFv"
 /* 00467FB8 00470E48  93 61 02 E8 */	stw r27, 0x2e8(r1)
-lbl_00467FBC:
 /* 00467FBC 00470E4C  38 61 00 74 */	addi r3, r1, 0x74
 /* 00467FC0 00470E50  38 9E 01 1E */	addi r4, r30, 0x11e
 /* 00467FC4 00470E54  48 08 3E 3D */	bl ".__ct__9cTSStringFPCc"
@@ -2561,7 +2558,6 @@ lbl_00467FBC:
 /* 0046800C 00470E9C  38 61 00 74 */	addi r3, r1, 0x74
 /* 00468010 00470EA0  48 08 39 91 */	bl ".__as__9cTSStringFPCc"
 /* 00468014 00470EA4  38 61 02 80 */	addi r3, r1, 0x280
-lbl_00468018:
 /* 00468018 00470EA8  38 80 00 17 */	li r4, 0x17
 /* 0046801C 00470EAC  38 A0 FF FF */	li r5, -1
 /* 00468020 00470EB0  4B CD 3C 51 */	bl ".GetString__13StringSetBaseFic"
@@ -2593,7 +2589,6 @@ lbl_00468080:
 /* 00468080 00470F10  2C 14 00 01 */	cmpwi r20, 1
 /* 00468084 00470F14  40 82 00 48 */	bne lbl_004680CC
 /* 00468088 00470F18  38 61 04 68 */	addi r3, r1, 0x468
-lbl_0046808C:
 /* 0046808C 00470F1C  38 81 00 7C */	addi r4, r1, 0x7c
 /* 00468090 00470F20  4B DC 0E D1 */	bl ".ImportFamily__FP10ImportInfoPi"
 /* 00468094 00470F24  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -2619,7 +2614,6 @@ lbl_004680CC:
 /* 004680DC 00470F6C  48 08 3D 25 */	bl ".__ct__9cTSStringFPCc"
 /* 004680E0 00470F70  38 61 00 84 */	addi r3, r1, 0x84
 /* 004680E4 00470F74  38 9E 01 5D */	addi r4, r30, 0x15d
-lbl_004680E8:
 /* 004680E8 00470F78  48 08 3D 19 */	bl ".__ct__9cTSStringFPCc"
 /* 004680EC 00470F7C  38 61 02 EC */	addi r3, r1, 0x2ec
 /* 004680F0 00470F80  4B CD 51 71 */	bl ".__ct__13StringSetBaseFv"
@@ -2747,7 +2741,7 @@ lbl_00468270:
 /* 004682AC 0047113C  38 C1 00 BC */	addi r6, r1, 0xbc
 /* 004682B0 00471140  80 04 00 08 */	lwz r0, 8(r4)
 /* 004682B4 00471144  90 01 00 B8 */	stw r0, 0xb8(r1)
-/* 004682B8 00471148  4B C4 93 A9 */	bl func_000B1660
+/* 004682B8 00471148  4B C4 93 A9 */	bl ".erase__Q23std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>FQ33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>Q33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>"
 lbl_004682BC:
 /* 004682BC 0047114C  38 61 00 D4 */	addi r3, r1, 0xd4
 /* 004682C0 00471150  38 80 FF FF */	li r4, -1
@@ -6562,7 +6556,6 @@ lbl_0046BDE4:
 /* 0046BEA0 00474D30  3A C0 01 2C */	li r22, 0x12c
 /* 0046BEA4 00474D34  3A E0 02 58 */	li r23, 0x258
 /* 0046BEA8 00474D38  83 A2 B9 48 */	lwz r29, lbl_005BCDA8-_R2_BASE_(r2)
-lbl_0046BEAC:
 /* 0046BEAC 00474D3C  3B 00 02 FA */	li r24, 0x2fa
 /* 0046BEB0 00474D40  3B 20 00 C3 */	li r25, 0xc3
 /* 0046BEB4 00474D44  83 82 8B BC */	lwz r28, lbl_005BA01C-_R2_BASE_(r2)

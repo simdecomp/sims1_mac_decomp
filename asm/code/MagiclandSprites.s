@@ -699,7 +699,6 @@ lbl_00573B18:
 /* 00573B34 0057C9C4  4B A9 D7 0D */	bl ".rand_override__Fv"
 /* 00573B38 0057C9C8  7C 1D 18 96 */	mulhw r0, r29, r3
 /* 00573B3C 0057C9CC  7C 00 0E 70 */	srawi r0, r0, 1
-lbl_00573B40:
 /* 00573B40 0057C9D0  54 04 0F FE */	srwi r4, r0, 0x1f
 /* 00573B44 0057C9D4  7C 00 22 14 */	add r0, r0, r4
 /* 00573B48 0057C9D8  1C 00 00 05 */	mulli r0, r0, 5

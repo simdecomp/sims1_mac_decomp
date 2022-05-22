@@ -866,7 +866,7 @@ lbl_004B28BC:
 /* 004B2910 004BB7A0  38 9D 00 C0 */	addi r4, r29, 0xc0
 /* 004B2914 004BB7A4  38 A1 00 4C */	addi r5, r1, 0x4c
 /* 004B2918 004BB7A8  38 C1 00 50 */	addi r6, r1, 0x50
-/* 004B291C 004BB7AC  48 00 32 45 */	bl func_004B5B60
+/* 004B291C 004BB7AC  48 00 32 45 */	bl ".erase__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>FQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>"
 /* 004B2920 004BB7B0  38 60 00 01 */	li r3, 1
 /* 004B2924 004BB7B4  80 01 00 78 */	lwz r0, 0x78(r1)
 /* 004B2928 004BB7B8  38 21 00 70 */	addi r1, r1, 0x70
@@ -1723,7 +1723,6 @@ lbl_004B3B60:
 /* 004B3BAC 004BCA3C  2C 00 FF FF */	cmpwi r0, -1
 /* 004B3BB0 004BCA40  41 82 01 24 */	beq lbl_004B3CD4
 /* 004B3BB4 004BCA44  38 7C 00 C0 */	addi r3, r28, 0xc0
-lbl_004B3BB8:
 /* 004B3BB8 004BCA48  4B FF EC 19 */	bl ".tail__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>Fv"
 /* 004B3BBC 004BCA4C  38 83 00 00 */	addi r4, r3, 0
 /* 004B3BC0 004BCA50  38 61 00 40 */	addi r3, r1, 0x40
@@ -1815,7 +1814,6 @@ lbl_004B3CEC:
 /* 004B3D00 004BCB90  80 41 00 14 */	lwz r2, 0x14(r1)
 /* 004B3D04 004BCB94  80 01 00 58 */	lwz r0, 0x58(r1)
 /* 004B3D08 004BCB98  38 7C 00 58 */	addi r3, r28, 0x58
-lbl_004B3D0C:
 /* 004B3D0C 004BCB9C  90 1C 00 8C */	stw r0, 0x8c(r28)
 /* 004B3D10 004BCBA0  80 01 00 5C */	lwz r0, 0x5c(r1)
 /* 004B3D14 004BCBA4  90 1C 00 90 */	stw r0, 0x90(r28)
@@ -1953,7 +1951,6 @@ lbl_004B3EFC:
 /* 004B3F08 004BCD98  40 82 00 18 */	bne lbl_004B3F20
 /* 004B3F0C 004BCD9C  38 7C 01 A0 */	addi r3, r28, 0x1a0
 /* 004B3F10 004BCDA0  81 9C 01 A0 */	lwz r12, 0x1a0(r28)
-lbl_004B3F14:
 /* 004B3F14 004BCDA4  81 8C 01 B0 */	lwz r12, 0x1b0(r12)
 /* 004B3F18 004BCDA8  48 0E 5C 39 */	bl func_00599B50
 /* 004B3F1C 004BCDAC  80 41 00 14 */	lwz r2, 0x14(r1)
@@ -1988,7 +1985,6 @@ lbl_004B3F44:
 /* 004B3FFC 004BCE8C  3B C4 00 00 */	addi r30, r4, 0
 /* 004B4000 004BCE90  93 A1 FF F4 */	stw r29, -0xc(r1)
 /* 004B4004 004BCE94  3B A3 00 00 */	addi r29, r3, 0
-lbl_004B4008:
 /* 004B4008 004BCE98  7C 1D F0 40 */	cmplw r29, r30
 /* 004B400C 004BCE9C  90 01 00 08 */	stw r0, 8(r1)
 /* 004B4010 004BCEA0  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -2135,7 +2131,7 @@ lbl_004B43BC:
 /* 004B4450 004BD2E0  38 61 00 40 */	addi r3, r1, 0x40
 /* 004B4454 004BD2E4  38 A1 00 44 */	addi r5, r1, 0x44
 /* 004B4458 004BD2E8  38 C1 00 48 */	addi r6, r1, 0x48
-/* 004B445C 004BD2EC  48 00 17 05 */	bl func_004B5B60
+/* 004B445C 004BD2EC  48 00 17 05 */	bl ".erase__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>FQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>"
 lbl_004B4460:
 /* 004B4460 004BD2F0  7F E0 07 35 */	extsh. r0, r31
 /* 004B4464 004BD2F4  40 81 00 0C */	ble lbl_004B4470
@@ -2277,7 +2273,7 @@ lbl_004B470C:
 /* 004B47EC 004BD67C  38 61 00 40 */	addi r3, r1, 0x40
 /* 004B47F0 004BD680  38 A1 00 44 */	addi r5, r1, 0x44
 /* 004B47F4 004BD684  38 C1 00 48 */	addi r6, r1, 0x48
-/* 004B47F8 004BD688  48 00 13 69 */	bl func_004B5B60
+/* 004B47F8 004BD688  48 00 13 69 */	bl ".erase__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>FQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>"
 /* 004B47FC 004BD68C  7F E0 07 35 */	extsh. r0, r31
 /* 004B4800 004BD690  40 81 00 0C */	ble lbl_004B480C
 /* 004B4804 004BD694  7F C3 F3 78 */	mr r3, r30
@@ -3093,8 +3089,8 @@ lbl_004B5AD0:
 /* 004B5AE8 004BE978  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 004B5AEC 004BE97C  4E 80 00 20 */	blr 
 
-.global func_004B5B60
-func_004B5B60:
+.global ".erase__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>FQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>"
+".erase__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>FQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>19generic_iterator<0>":
 /* 004B5B60 004BE9F0  BF 61 FF EC */	stmw r27, -0x14(r1)
 /* 004B5B64 004BE9F4  7C 08 02 A6 */	mflr r0
 /* 004B5B68 004BE9F8  3B A5 00 00 */	addi r29, r5, 0
@@ -3128,7 +3124,7 @@ lbl_004B5BB8:
 /* 004B5BD0 004BEA60  38 7C 00 04 */	addi r3, r28, 4
 /* 004B5BD4 004BEA64  80 1F 00 04 */	lwz r0, 4(r31)
 /* 004B5BD8 004BEA68  90 1D 00 00 */	stw r0, 0(r29)
-/* 004B5BDC 004BEA6C  48 00 01 A5 */	bl func_004B5D80
+/* 004B5BDC 004BEA6C  48 00 01 A5 */	bl ".first__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>Fv"
 /* 004B5BE0 004BEA70  7F E3 FB 78 */	mr r3, r31
 /* 004B5BE4 004BEA74  48 0D 2A AD */	bl func_00588690
 /* 004B5BE8 004BEA78  80 7C 00 00 */	lwz r3, 0(r28)
@@ -3146,175 +3142,10 @@ lbl_004B5C08:
 /* 004B5C10 004BEAA0  BB 61 FF EC */	lmw r27, -0x14(r1)
 /* 004B5C14 004BEAA4  7C 08 03 A6 */	mtlr r0
 /* 004B5C18 004BEAA8  4E 80 00 20 */	blr 
-/* 004B5C1C 004BEAAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B5C20 004BEAB0  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004B5C24 004BEAB4  80 05 00 00 */	lwz r0, 0(r5)
-/* 004B5C28 004BEAB8  00 00 00 BC */	.4byte 0x000000BC  /* unknown instruction */
-/* 004B5C2C 004BEABC  01 47 2E 65 */	.4byte 0x01472E65  /* unknown instruction */
-/* 004B5C30 004BEAC0  72 61 73 65 */	andi. r1, r19, 0x7365
-/* 004B5C34 004BEAC4  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 004B5C38 004BEAC8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B5C3C 004BEACC  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B5C40 004BEAD0  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B5C44 004BEAD4  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B5C48 004BEAD8  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B5C4C 004BEADC  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B5C50 004BEAE0  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B5C54 004BEAE4  44 72 69 76 */	sc 0x4b
-/* 004B5C58 004BEAE8  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B5C5C 004BEAEC  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B5C60 004BEAF0  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B5C64 004BEAF4  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B5C68 004BEAF8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B5C6C 004BEAFC  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B5C70 004BEB00  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B5C74 004BEB04  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B5C78 004BEB08  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B5C7C 004BEB0C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B5C80 004BEB10  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B5C84 004BEB14  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B5C88 004BEB18  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B5C8C 004BEB1C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B5C90 004BEB20  3E 3E 46 51 */	addis r17, r30, 0x4651
-/* 004B5C94 004BEB24  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B5C98 004BEB28  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B5C9C 004BEB2C  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B5CA0 004BEB30  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B5CA4 004BEB34  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B5CA8 004BEB38  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B5CAC 004BEB3C  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B5CB0 004BEB40  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B5CB4 004BEB44  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B5CB8 004BEB48  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B5CBC 004BEB4C  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B5CC0 004BEB50  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B5CC4 004BEB54  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B5CC8 004BEB58  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B5CCC 004BEB5C  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B5CD0 004BEB60  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B5CD4 004BEB64  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B5CD8 004BEB68  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B5CDC 004BEB6C  44 72 69 76 */	sc 0x4b
-/* 004B5CE0 004BEB70  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B5CE4 004BEB74  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B5CE8 004BEB78  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B5CEC 004BEB7C  6E 3E 3E 31 */	xoris r30, r17, 0x3e31
-/* 004B5CF0 004BEB80  39 67 65 6E */	addi r11, r7, 0x656e
-/* 004B5CF4 004BEB84  65 72 69 63 */	oris r18, r11, 0x6963
-/* 004B5CF8 004BEB88  5F 69 74 65 */	rlwnm. r9, r27, r14, 0x11, 0x12
-/* 004B5CFC 004BEB8C  72 61 74 6F */	andi. r1, r19, 0x746f
-/* 004B5D00 004BEB90  72 3C 30 3E */	andi. r28, r17, 0x303e
-/* 004B5D04 004BEB94  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B5D08 004BEB98  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B5D0C 004BEB9C  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B5D10 004BEBA0  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B5D14 004BEBA4  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B5D18 004BEBA8  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B5D1C 004BEBAC  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B5D20 004BEBB0  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B5D24 004BEBB4  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B5D28 004BEBB8  49 6E 66 6F */	bla 0x16e666c
-/* 004B5D2C 004BEBBC  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B5D30 004BEBC0  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B5D34 004BEBC4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B5D38 004BEBC8  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B5D3C 004BEBCC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B5D40 004BEBD0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B5D44 004BEBD4  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B5D48 004BEBD8  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B5D4C 004BEBDC  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B5D50 004BEBE0  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B5D54 004BEBE4  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B5D58 004BEBE8  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B5D5C 004BEBEC  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B5D60 004BEBF0  31 39 67 65 */	addic r9, r25, 0x6765
-/* 004B5D64 004BEBF4  6E 65 72 69 */	xoris r5, r19, 0x7269
-/* 004B5D68 004BEBF8  63 5F 69 74 */	ori r31, r26, 0x6974
-/* 004B5D6C 004BEBFC  65 72 61 74 */	oris r18, r11, 0x6174
-/* 004B5D70 004BEC00  6F 72 3C 30 */	xoris r18, r27, 0x3c30
-/* 004B5D74 004BEC04  3E 00 00 00 */	lis r16, 0
-/* 004B5D78 004BEC08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B5D7C 004BEC0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B5D80
-func_004B5D80:
+.global ".first__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>Fv"
+".first__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>Fv":
 /* 004B5D80 004BEC10  4E 80 00 20 */	blr 
-/* 004B5D84 004BEC14  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B5D88 004BEC18  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B5D8C 004BEC1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B5D90 004BEC20  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 004B5D94 004BEC24  01 16 2E 66 */	.4byte 0x01162E66  /* unknown instruction */
-/* 004B5D98 004BEC28  69 72 73 74 */	xori r18, r11, 0x7374
-/* 004B5D9C 004BEC2C  5F 5F 51 33 */	rlwnm. r31, r26, r10, 4, 0x19
-/* 004B5DA0 004BEC30  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B5DA4 004BEC34  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B5DA8 004BEC38  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B5DAC 004BEC3C  37 64 65 74 */	addic. r27, r4, 0x6574
-/* 004B5DB0 004BEC40  61 69 6C 73 */	ori r9, r11, 0x6c73
-/* 004B5DB4 004BEC44  32 34 33 63 */	addic r17, r20, 0x3363
-/* 004B5DB8 004BEC48  6F 6D 70 72 */	xoris r13, r27, 0x7072
-/* 004B5DBC 004BEC4C  65 73 73 65 */	oris r19, r11, 0x7365
-/* 004B5DC0 004BEC50  64 5F 70 61 */	oris r31, r2, 0x7061
-/* 004B5DC4 004BEC54  69 72 5F 69 */	xori r18, r11, 0x5f69
-/* 004B5DC8 004BEC58  6D 70 3C 51 */	xoris r16, r11, 0x3c51
-/* 004B5DCC 004BEC5C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B5DD0 004BEC60  64 31 30 38 */	oris r17, r1, 0x3038
-/* 004B5DD4 004BEC64  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B5DD8 004BEC68  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B5DDC 004BEC6C  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004B5DE0 004BEC70  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B5DE4 004BEC74  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B5DE8 004BEC78  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B5DEC 004BEC7C  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B5DF0 004BEC80  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B5DF4 004BEC84  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B5DF8 004BEC88  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B5DFC 004BEC8C  44 72 69 76 */	sc 0x4b
-/* 004B5E00 004BEC90  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B5E04 004BEC94  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B5E08 004BEC98  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B5E0C 004BEC9C  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B5E10 004BECA0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B5E14 004BECA4  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B5E18 004BECA8  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B5E1C 004BECAC  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B5E20 004BECB0  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B5E24 004BECB4  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B5E28 004BECB8  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B5E2C 004BECBC  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B5E30 004BECC0  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B5E34 004BECC4  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B5E38 004BECC8  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B5E3C 004BECCC  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B5E40 004BECD0  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 004B5E44 004BECD4  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004B5E48 004BECD8  34 5F 5F 6C */	addic. r2, r31, 0x5f6c
-/* 004B5E4C 004BECDC  69 73 74 5F */	xori r19, r11, 0x745f
-/* 004B5E50 004BECE0  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 004B5E54 004BECE4  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 004B5E58 004BECE8  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B5E5C 004BECEC  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B5E60 004BECF0  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B5E64 004BECF4  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B5E68 004BECF8  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B5E6C 004BECFC  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B5E70 004BED00  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004B5E74 004BED04  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 004B5E78 004BED08  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 004B5E7C 004BED0C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B5E80 004BED10  6F 72 3C 32 */	xoris r18, r27, 0x3c32
-/* 004B5E84 004BED14  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B5E88 004BED18  65 6F 44 72 */	oris r15, r11, 0x4472
-lbl_004B5E8C:
-/* 004B5E8C 004BED1C  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B5E90 004BED20  49 6E 66 6F */	bla 0x16e666c
-/* 004B5E94 004BED24  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B5E98 004BED28  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 004B5E9C 004BED2C  3E 39 6E 6F */	addis r17, r25, 0x6e6f
-/* 004B5EA0 004BED30  64 65 5F 62 */	oris r5, r3, 0x5f62
-/* 004B5EA4 004BED34  61 73 65 2C */	ori r19, r11, 0x652c
-/* 004B5EA8 004BED38  31 3E 46 76 */	addic r9, r30, 0x4676
-/* 004B5EAC 004BED3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".first__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>Fv"
 ".first__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>Fv":
@@ -3335,22 +3166,22 @@ lbl_004B5E8C:
 /* 004B5F58 004BEDE8  98 01 00 40 */	stb r0, 0x40(r1)
 /* 004B5F5C 004BEDEC  3B E1 00 00 */	addi r31, r1, 0
 /* 004B5F60 004BEDF0  98 01 00 44 */	stb r0, 0x44(r1)
-/* 004B5F64 004BEDF4  4B FF FE 1D */	bl func_004B5D80
+/* 004B5F64 004BEDF4  4B FF FE 1D */	bl ".first__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>Fv"
 /* 004B5F68 004BEDF8  3B 63 00 00 */	addi r27, r3, 0
 /* 004B5F6C 004BEDFC  38 7E 00 04 */	addi r3, r30, 4
-/* 004B5F70 004BEE00  4B FF FE 11 */	bl func_004B5D80
+/* 004B5F70 004BEE00  4B FF FE 11 */	bl ".first__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>Fv"
 /* 004B5F74 004BEE04  38 60 00 30 */	li r3, 0x30
 /* 004B5F78 004BEE08  48 0D 26 39 */	bl func_005885B0
 /* 004B5F7C 004BEE0C  38 A3 00 00 */	addi r5, r3, 0
 /* 004B5F80 004BEE10  38 7F 00 48 */	addi r3, r31, 0x48
 /* 004B5F84 004BEE14  38 9F 00 44 */	addi r4, r31, 0x44
-/* 004B5F88 004BEE18  48 00 17 79 */	bl func_004B7700
+/* 004B5F88 004BEE18  48 00 17 79 */	bl ".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks12number<Ul,1>PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node"
 /* 004B5F8C 004BEE1C  38 A3 00 00 */	addi r5, r3, 0
 /* 004B5F90 004BEE20  38 7F 00 50 */	addi r3, r31, 0x50
 /* 004B5F94 004BEE24  38 9B 00 00 */	addi r4, r27, 0
-/* 004B5F98 004BEE28  48 00 13 49 */	bl func_004B72E0
+/* 004B5F98 004BEE28  48 00 13 49 */	bl ".__ct__Q210Metrowerks297compressed_pair<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>>FRQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>RCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
 /* 004B5F9C 004BEE2C  38 7F 00 50 */	addi r3, r31, 0x50
-/* 004B5FA0 004BEE30  48 00 12 01 */	bl func_004B71A0
+/* 004B5FA0 004BEE30  48 00 12 01 */	bl ".__rf__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
 /* 004B5FA4 004BEE34  3B 83 00 08 */	addi r28, r3, 8
 /* 004B5FA8 004BEE38  38 7E 00 00 */	addi r3, r30, 0
 /* 004B5FAC 004BEE3C  4B FF FF 05 */	bl ".first__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>Fv"
@@ -3372,11 +3203,11 @@ lbl_004B5E8C:
 /* 004B5FEC 004BEE7C  48 0D 18 A5 */	bl func_00587890
 lbl_004B5FF0:
 /* 004B5FF0 004BEE80  38 7F 00 50 */	addi r3, r31, 0x50
-/* 004B5FF4 004BEE84  48 00 0D ED */	bl func_004B6DE0
+/* 004B5FF4 004BEE84  48 00 0D ED */	bl ".get__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
 /* 004B5FF8 004BEE88  3B 63 00 00 */	addi r27, r3, 0
 /* 004B5FFC 004BEE8C  38 7F 00 50 */	addi r3, r31, 0x50
 /* 004B6000 004BEE90  3B 80 00 00 */	li r28, 0
-/* 004B6004 004BEE94  48 00 0C 6D */	bl func_004B6C70
+/* 004B6004 004BEE94  48 00 0C 6D */	bl ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv"
 /* 004B6008 004BEE98  48 00 0B 99 */	bl ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>Fv"
 /* 004B600C 004BEE9C  93 83 00 00 */	stw r28, 0(r3)
 /* 004B6010 004BEEA0  38 7F 00 50 */	addi r3, r31, 0x50
@@ -3391,17 +3222,17 @@ lbl_004B5FF0:
 /* 004B6034 004BEEC4  38 04 00 01 */	addi r0, r4, 1
 /* 004B6038 004BEEC8  90 1E 00 00 */	stw r0, 0(r30)
 /* 004B603C 004BEECC  93 7D 00 00 */	stw r27, 0(r29)
-/* 004B6040 004BEED0  48 00 0D A1 */	bl func_004B6DE0
+/* 004B6040 004BEED0  48 00 0D A1 */	bl ".get__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
 /* 004B6044 004BEED4  28 03 00 00 */	cmplwi r3, 0
 /* 004B6048 004BEED8  41 82 00 30 */	beq lbl_004B6078
 /* 004B604C 004BEEDC  38 7F 00 50 */	addi r3, r31, 0x50
-/* 004B6050 004BEEE0  48 00 08 B1 */	bl func_004B6900
+/* 004B6050 004BEEE0  48 00 08 B1 */	bl ".capacity__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
 /* 004B6054 004BEEE4  3B C3 00 00 */	addi r30, r3, 0
 /* 004B6058 004BEEE8  38 7F 00 50 */	addi r3, r31, 0x50
-/* 004B605C 004BEEEC  48 00 0D 85 */	bl func_004B6DE0
+/* 004B605C 004BEEEC  48 00 0D 85 */	bl ".get__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
 /* 004B6060 004BEEF0  3B A3 00 00 */	addi r29, r3, 0
 /* 004B6064 004BEEF4  38 7F 00 50 */	addi r3, r31, 0x50
-/* 004B6068 004BEEF8  48 00 09 F9 */	bl func_004B6A60
+/* 004B6068 004BEEF8  48 00 09 F9 */	bl ".allocator__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>Fv"
 /* 004B606C 004BEEFC  38 9D 00 00 */	addi r4, r29, 0
 /* 004B6070 004BEF00  38 BE 00 00 */	addi r5, r30, 0
 /* 004B6074 004BEF04  48 00 07 6D */	bl ".deallocate__Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FPQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4nodeUl"
@@ -3411,6 +3242,9 @@ lbl_004B6078:
 /* 004B6080 004BEF10  7C 08 03 A6 */	mtlr r0
 /* 004B6084 004BEF14  BB 21 FF E4 */	lmw r25, -0x1c(r1)
 /* 004B6088 004BEF18  4E 80 00 20 */	blr 
+
+.global ".__dt__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>Fv"
+".__dt__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>Fv":
 /* 004B6190 004BF020  93 E1 FF FC */	stw r31, -4(r1)
 /* 004B6194 004BF024  7C 08 02 A6 */	mflr r0
 /* 004B6198 004BF028  93 C1 FF F8 */	stw r30, -8(r1)
@@ -3423,15 +3257,15 @@ lbl_004B6078:
 /* 004B61B4 004BF044  80 1D 00 04 */	lwz r0, 4(r29)
 /* 004B61B8 004BF048  28 00 00 00 */	cmplwi r0, 0
 /* 004B61BC 004BF04C  41 82 00 30 */	beq lbl_004B61EC
-/* 004B61C0 004BF050  48 00 04 B1 */	bl func_004B6670
+/* 004B61C0 004BF050  48 00 04 B1 */	bl ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>CFv"
 /* 004B61C4 004BF054  48 00 03 DD */	bl ".first__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>CFv"
 /* 004B61C8 004BF058  4B B7 07 C9 */	bl ".__opUl__Q210Metrowerks12number<Ul,1>CFv"
 /* 004B61CC 004BF05C  7F A3 EB 78 */	mr r3, r29
-/* 004B61D0 004BF060  48 00 04 A1 */	bl func_004B6670
+/* 004B61D0 004BF060  48 00 04 A1 */	bl ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>CFv"
 /* 004B61D4 004BF064  48 00 02 ED */	bl ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>CFv"
 /* 004B61D8 004BF068  83 E3 00 00 */	lwz r31, 0(r3)
 /* 004B61DC 004BF06C  7F A3 EB 78 */	mr r3, r29
-/* 004B61E0 004BF070  48 00 01 71 */	bl func_004B6350
+/* 004B61E0 004BF070  48 00 01 71 */	bl ".first__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv"
 /* 004B61E4 004BF074  7F E3 FB 78 */	mr r3, r31
 /* 004B61E8 004BF078  48 0D 24 A9 */	bl func_00588690
 lbl_004B61EC:
@@ -3448,179 +3282,11 @@ lbl_004B61FC:
 /* 004B6210 004BF0A0  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 004B6214 004BF0A4  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 004B6218 004BF0A8  4E 80 00 20 */	blr 
-/* 004B621C 004BF0AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6220 004BF0B0  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004B6224 004BF0B4  80 03 00 00 */	lwz r0, 0(r3)
-/* 004B6228 004BF0B8  00 00 00 8C */	.4byte 0x0000008C  /* unknown instruction */
-/* 004B622C 004BF0BC  01 1A 2E 5F */	.4byte 0x011A2E5F  /* unknown instruction */
-/* 004B6230 004BF0C0  5F 64 74 5F */	rlwnm. r4, r27, r14, 0x11, 0xf
-/* 004B6234 004BF0C4  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B6238 004BF0C8  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B623C 004BF0CC  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B6240 004BF0D0  72 6B 73 32 */	andi. r11, r19, 0x7332
-/* 004B6244 004BF0D4  35 36 61 6C */	addic. r9, r22, 0x616c
-/* 004B6248 004BF0D8  6C 6F 63 5F */	xoris r15, r3, 0x635f
-/* 004B624C 004BF0DC  70 74 72 3C */	andi. r20, r3, 0x723c
-/* 004B6250 004BF0E0  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B6254 004BF0E4  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B6258 004BF0E8  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B625C 004BF0EC  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B6260 004BF0F0  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B6264 004BF0F4  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B6268 004BF0F8  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B626C 004BF0FC  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B6270 004BF100  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B6274 004BF104  49 6E 66 6F */	bla 0x16e666c
-/* 004B6278 004BF108  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B627C 004BF10C  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B6280 004BF110  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B6284 004BF114  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B6288 004BF118  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B628C 004BF11C  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B6290 004BF120  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B6294 004BF124  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B6298 004BF128  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B629C 004BF12C  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B62A0 004BF130  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B62A4 004BF134  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B62A8 004BF138  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B62AC 004BF13C  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B62B0 004BF140  65 2C 52 51 */	oris r12, r9, 0x5251
-/* 004B62B4 004BF144  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B62B8 004BF148  64 31 30 38 */	oris r17, r1, 0x3038
-/* 004B62BC 004BF14C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B62C0 004BF150  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B62C4 004BF154  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004B62C8 004BF158  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B62CC 004BF15C  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B62D0 004BF160  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B62D4 004BF164  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B62D8 004BF168  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B62DC 004BF16C  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B62E0 004BF170  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B62E4 004BF174  44 72 69 76 */	sc 0x4b
-/* 004B62E8 004BF178  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B62EC 004BF17C  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B62F0 004BF180  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B62F4 004BF184  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B62F8 004BF188  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B62FC 004BF18C  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B6300 004BF190  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B6304 004BF194  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B6308 004BF198  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B630C 004BF19C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6310 004BF1A0  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6314 004BF1A4  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B6318 004BF1A8  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B631C 004BF1AC  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6320 004BF1B0  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B6324 004BF1B4  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B6328 004BF1B8  2C 51 32 31 */	.4byte 0x2C513231  /* unknown instruction */
-/* 004B632C 004BF1BC  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B6330 004BF1C0  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B6334 004BF1C4  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B6338 004BF1C8  32 6E 75 6D */	addic r19, r14, 0x756d
-/* 004B633C 004BF1CC  62 65 72 3C */	ori r5, r19, 0x723c
-/* 004B6340 004BF1D0  55 6C 2C 31 */	rlwinm. r12, r11, 5, 0x10, 0x18
-/* 004B6344 004BF1D4  3E 3E 46 76 */	addis r17, r30, 0x4676
-/* 004B6348 004BF1D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B634C 004BF1DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B6350
-func_004B6350:
+.global ".first__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv"
+".first__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv":
 /* 004B6350 004BF1E0  80 63 00 00 */	lwz r3, 0(r3)
 /* 004B6354 004BF1E4  4E 80 00 20 */	blr 
-/* 004B6358 004BF1E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B635C 004BF1EC  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B6360 004BF1F0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6364 004BF1F4  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B6368 004BF1F8  01 52 2E 66 */	.4byte 0x01522E66  /* unknown instruction */
-/* 004B636C 004BF1FC  69 72 73 74 */	xori r18, r11, 0x7374
-/* 004B6370 004BF200  5F 5F 51 33 */	rlwnm. r31, r26, r10, 4, 0x19
-/* 004B6374 004BF204  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B6378 004BF208  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B637C 004BF20C  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B6380 004BF210  37 64 65 74 */	addic. r27, r4, 0x6574
-/* 004B6384 004BF214  61 69 6C 73 */	ori r9, r11, 0x6c73
-/* 004B6388 004BF218  33 30 33 63 */	addic r25, r16, 0x3363
-/* 004B638C 004BF21C  6F 6D 70 72 */	xoris r13, r27, 0x7072
-/* 004B6390 004BF220  65 73 73 65 */	oris r19, r11, 0x7365
-/* 004B6394 004BF224  64 5F 70 61 */	oris r31, r2, 0x7061
-/* 004B6398 004BF228  69 72 5F 69 */	xori r18, r11, 0x5f69
-/* 004B639C 004BF22C  6D 70 3C 52 */	xoris r16, r11, 0x3c52
-/* 004B63A0 004BF230  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B63A4 004BF234  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004B63A8 004BF238  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004B63AC 004BF23C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B63B0 004BF240  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004B63B4 004BF244  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B63B8 004BF248  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B63BC 004BF24C  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B63C0 004BF250  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B63C4 004BF254  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B63C8 004BF258  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B63CC 004BF25C  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B63D0 004BF260  6F 44 72 69 */	xoris r4, r26, 0x7269
-lbl_004B63D4:
-/* 004B63D4 004BF264  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B63D8 004BF268  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B63DC 004BF26C  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B63E0 004BF270  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B63E4 004BF274  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B63E8 004BF278  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B63EC 004BF27C  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B63F0 004BF280  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B63F4 004BF284  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B63F8 004BF288  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B63FC 004BF28C  44 72 69 76 */	sc 0x4b
-/* 004B6400 004BF290  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B6404 004BF294  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B6408 004BF298  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B640C 004BF29C  6E 3E 3E 34 */	xoris r30, r17, 0x3e34
-/* 004B6410 004BF2A0  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 004B6414 004BF2A4  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 004B6418 004BF2A8  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B641C 004BF2AC  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B6420 004BF2B0  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B6424 004BF2B4  31 34 34 63 */	addic r9, r20, 0x3463
-/* 004B6428 004BF2B8  6F 6D 70 72 */	xoris r13, r27, 0x7072
-/* 004B642C 004BF2BC  65 73 73 65 */	oris r19, r11, 0x7365
-/* 004B6430 004BF2C0  64 5F 70 61 */	oris r31, r2, 0x7061
-/* 004B6434 004BF2C4  69 72 3C 51 */	xori r18, r11, 0x3c51
-/* 004B6438 004BF2C8  32 31 30 4D */	addic r17, r17, 0x304d
-/* 004B643C 004BF2CC  65 74 72 6F */	oris r20, r11, 0x726f
-/* 004B6440 004BF2D0  77 65 72 6B */	andis. r5, r27, 0x726b
-/* 004B6444 004BF2D4  73 31 32 6E */	andi. r17, r25, 0x326e
-/* 004B6448 004BF2D8  75 6D 62 65 */	andis. r13, r11, 0x6265
-/* 004B644C 004BF2DC  72 3C 55 6C */	andi. r28, r17, 0x556c
-/* 004B6450 004BF2E0  2C 31 3E 2C */	cmpdi r17, 0x3e2c
-/* 004B6454 004BF2E4  50 51 33 33 */	rlwimi. r17, r2, 6, 0xc, 0x19
-/* 004B6458 004BF2E8  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004B645C 004BF2EC  34 5F 5F 6C */	addic. r2, r31, 0x5f6c
-/* 004B6460 004BF2F0  69 73 74 5F */	xori r19, r11, 0x745f
-/* 004B6464 004BF2F4  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 004B6468 004BF2F8  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 004B646C 004BF2FC  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B6470 004BF300  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6474 004BF304  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6478 004BF308  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B647C 004BF30C  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B6480 004BF310  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6484 004BF314  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004B6488 004BF318  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 004B648C 004BF31C  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 004B6490 004BF320  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B6494 004BF324  6F 72 3C 32 */	xoris r18, r27, 0x3c32
-/* 004B6498 004BF328  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B649C 004BF32C  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B64A0 004BF330  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B64A4 004BF334  49 6E 66 6F */	bla 0x16e666c
-/* 004B64A8 004BF338  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B64AC 004BF33C  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 004B64B0 004BF340  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 004B64B4 004BF344  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 004B64B8 004BF348  30 3E 46 76 */	addic r1, r30, 0x4676
-/* 004B64BC 004BF34C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>CFv"
 ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>CFv":
@@ -3630,101 +3296,10 @@ lbl_004B63D4:
 ".first__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>CFv":
 /* 004B65A0 004BF430  4E 80 00 20 */	blr 
 
-.global func_004B6670
-func_004B6670:
+.global ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>CFv"
+".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>CFv":
 /* 004B6670 004BF500  38 63 00 04 */	addi r3, r3, 4
 /* 004B6674 004BF504  4E 80 00 20 */	blr 
-/* 004B6678 004BF508  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B667C 004BF50C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B6680 004BF510  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6684 004BF514  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B6688 004BF518  01 54 2E 73 */	.4byte 0x01542E73  /* unknown instruction */
-/* 004B668C 004BF51C  65 63 6F 6E */	oris r3, r11, 0x6f6e
-/* 004B6690 004BF520  64 5F 5F 51 */	oris r31, r2, 0x5f51
-/* 004B6694 004BF524  33 31 30 4D */	addic r25, r17, 0x304d
-/* 004B6698 004BF528  65 74 72 6F */	oris r20, r11, 0x726f
-/* 004B669C 004BF52C  77 65 72 6B */	andis. r5, r27, 0x726b
-/* 004B66A0 004BF530  73 37 64 65 */	andi. r23, r25, 0x6465
-/* 004B66A4 004BF534  74 61 69 6C */	andis. r1, r3, 0x696c
-/* 004B66A8 004BF538  73 33 30 33 */	andi. r19, r25, 0x3033
-/* 004B66AC 004BF53C  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 004B66B0 004BF540  72 65 73 73 */	andi. r5, r19, 0x7373
-/* 004B66B4 004BF544  65 64 5F 70 */	oris r4, r11, 0x5f70
-/* 004B66B8 004BF548  61 69 72 5F */	ori r9, r11, 0x725f
-/* 004B66BC 004BF54C  69 6D 70 3C */	xori r13, r11, 0x703c
-/* 004B66C0 004BF550  52 51 32 33 */	rlwimi. r17, r18, 6, 8, 0x19
-/* 004B66C4 004BF554  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004B66C8 004BF558  30 38 61 6C */	addic r1, r24, 0x616c
-/* 004B66CC 004BF55C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B66D0 004BF560  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B66D4 004BF564  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B66D8 004BF568  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B66DC 004BF56C  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B66E0 004BF570  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B66E4 004BF574  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B66E8 004BF578  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B66EC 004BF57C  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B66F0 004BF580  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B66F4 004BF584  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B66F8 004BF588  49 6E 66 6F */	bla 0x16e666c
-/* 004B66FC 004BF58C  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B6700 004BF590  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B6704 004BF594  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B6708 004BF598  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B670C 004BF59C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B6710 004BF5A0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B6714 004BF5A4  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B6718 004BF5A8  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B671C 004BF5AC  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B6720 004BF5B0  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B6724 004BF5B4  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B6728 004BF5B8  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B672C 004BF5BC  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B6730 004BF5C0  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B6734 004BF5C4  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 004B6738 004BF5C8  32 31 30 4D */	addic r17, r17, 0x304d
-/* 004B673C 004BF5CC  65 74 72 6F */	oris r20, r11, 0x726f
-/* 004B6740 004BF5D0  77 65 72 6B */	andis. r5, r27, 0x726b
-/* 004B6744 004BF5D4  73 31 34 34 */	andi. r17, r25, 0x3434
-/* 004B6748 004BF5D8  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 004B674C 004BF5DC  72 65 73 73 */	andi. r5, r19, 0x7373
-/* 004B6750 004BF5E0  65 64 5F 70 */	oris r4, r11, 0x5f70
-lbl_004B6754:
-/* 004B6754 004BF5E4  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004B6758 004BF5E8  51 32 31 30 */	rlwimi r18, r9, 6, 4, 0x18
-/* 004B675C 004BF5EC  4D 65 74 72 */	.4byte 0x4D657472  /* unknown instruction */
-/* 004B6760 004BF5F0  6F 77 65 72 */	xoris r23, r27, 0x6572
-/* 004B6764 004BF5F4  6B 73 31 32 */	xori r19, r27, 0x3132
-/* 004B6768 004BF5F8  6E 75 6D 62 */	xoris r21, r19, 0x6d62
-/* 004B676C 004BF5FC  65 72 3C 55 */	oris r18, r11, 0x3c55
-/* 004B6770 004BF600  6C 2C 31 3E */	xoris r12, r1, 0x313e
-/* 004B6774 004BF604  2C 50 51 33 */	.4byte 0x2C505133  /* unknown instruction */
-/* 004B6778 004BF608  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B677C 004BF60C  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B6780 004BF610  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B6784 004BF614  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B6788 004BF618  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B678C 004BF61C  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B6790 004BF620  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B6794 004BF624  44 72 69 76 */	sc 0x4b
-/* 004B6798 004BF628  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B679C 004BF62C  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B67A0 004BF630  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B67A4 004BF634  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B67A8 004BF638  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B67AC 004BF63C  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B67B0 004BF640  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B67B4 004BF644  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B67B8 004BF648  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B67BC 004BF64C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B67C0 004BF650  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B67C4 004BF654  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B67C8 004BF658  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B67CC 004BF65C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B67D0 004BF660  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B67D4 004BF664  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B67D8 004BF668  2C 30 3E 43 */	cmpdi r16, 0x3e43
-/* 004B67DC 004BF66C  46 76 00 00 */	.4byte 0x46760000  /* unknown instruction */
 
 .global ".deallocate__Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FPQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4nodeUl"
 ".deallocate__Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FPQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4nodeUl":
@@ -3738,364 +3313,36 @@ lbl_004B6754:
 /* 004B67FC 004BF68C  7C 08 03 A6 */	mtlr r0
 /* 004B6800 004BF690  4E 80 00 20 */	blr 
 
-.global func_004B6900
-func_004B6900:
+.global ".capacity__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
+".capacity__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv":
 /* 004B6900 004BF790  7C 08 02 A6 */	mflr r0
 /* 004B6904 004BF794  90 01 00 08 */	stw r0, 8(r1)
 /* 004B6908 004BF798  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 004B690C 004BF79C  4B FF FD 65 */	bl func_004B6670
+/* 004B690C 004BF79C  4B FF FD 65 */	bl ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>CFv"
 /* 004B6910 004BF7A0  38 60 00 01 */	li r3, 1
 /* 004B6914 004BF7A4  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 004B6918 004BF7A8  38 21 00 40 */	addi r1, r1, 0x40
 /* 004B691C 004BF7AC  7C 08 03 A6 */	mtlr r0
 /* 004B6920 004BF7B0  4E 80 00 20 */	blr 
-/* 004B6924 004BF7B4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6928 004BF7B8  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004B692C 004BF7BC  80 00 00 00 */	lwz r0, 0(0)
-/* 004B6930 004BF7C0  00 00 00 24 */	.4byte 0x00000024  /* unknown instruction */
-/* 004B6934 004BF7C4  01 1F 2E 63 */	.4byte 0x011F2E63  /* unknown instruction */
-/* 004B6938 004BF7C8  61 70 61 63 */	ori r16, r11, 0x6163
-/* 004B693C 004BF7CC  69 74 79 5F */	xori r20, r11, 0x795f
-/* 004B6940 004BF7D0  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B6944 004BF7D4  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B6948 004BF7D8  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B694C 004BF7DC  72 6B 73 32 */	andi. r11, r19, 0x7332
-/* 004B6950 004BF7E0  35 36 61 6C */	addic. r9, r22, 0x616c
-/* 004B6954 004BF7E4  6C 6F 63 5F */	xoris r15, r3, 0x635f
-/* 004B6958 004BF7E8  70 74 72 3C */	andi. r20, r3, 0x723c
-/* 004B695C 004BF7EC  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B6960 004BF7F0  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B6964 004BF7F4  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B6968 004BF7F8  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B696C 004BF7FC  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B6970 004BF800  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B6974 004BF804  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B6978 004BF808  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B697C 004BF80C  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B6980 004BF810  49 6E 66 6F */	bla 0x16e666c
-/* 004B6984 004BF814  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B6988 004BF818  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B698C 004BF81C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B6990 004BF820  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B6994 004BF824  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B6998 004BF828  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B699C 004BF82C  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B69A0 004BF830  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B69A4 004BF834  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B69A8 004BF838  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B69AC 004BF83C  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B69B0 004BF840  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B69B4 004BF844  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B69B8 004BF848  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B69BC 004BF84C  65 2C 52 51 */	oris r12, r9, 0x5251
-/* 004B69C0 004BF850  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B69C4 004BF854  64 31 30 38 */	oris r17, r1, 0x3038
-/* 004B69C8 004BF858  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B69CC 004BF85C  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B69D0 004BF860  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004B69D4 004BF864  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B69D8 004BF868  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B69DC 004BF86C  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B69E0 004BF870  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B69E4 004BF874  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B69E8 004BF878  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B69EC 004BF87C  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B69F0 004BF880  44 72 69 76 */	sc 0x4b
-/* 004B69F4 004BF884  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B69F8 004BF888  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B69FC 004BF88C  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B6A00 004BF890  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B6A04 004BF894  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B6A08 004BF898  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B6A0C 004BF89C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B6A10 004BF8A0  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B6A14 004BF8A4  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B6A18 004BF8A8  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6A1C 004BF8AC  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6A20 004BF8B0  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B6A24 004BF8B4  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B6A28 004BF8B8  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6A2C 004BF8BC  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B6A30 004BF8C0  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B6A34 004BF8C4  2C 51 32 31 */	.4byte 0x2C513231  /* unknown instruction */
-/* 004B6A38 004BF8C8  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B6A3C 004BF8CC  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B6A40 004BF8D0  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B6A44 004BF8D4  32 6E 75 6D */	addic r19, r14, 0x756d
-/* 004B6A48 004BF8D8  62 65 72 3C */	ori r5, r19, 0x723c
-/* 004B6A4C 004BF8DC  55 6C 2C 31 */	rlwinm. r12, r11, 5, 0x10, 0x18
-/* 004B6A50 004BF8E0  3E 3E 43 46 */	addis r17, r30, 0x4346
-/* 004B6A54 004BF8E4  76 00 00 00 */	andis. r0, r16, 0
-/* 004B6A58 004BF8E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6A5C 004BF8EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B6A60
-func_004B6A60:
+.global ".allocator__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>Fv"
+".allocator__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>Fv":
 /* 004B6A60 004BF8F0  80 63 00 00 */	lwz r3, 0(r3)
 /* 004B6A64 004BF8F4  4E 80 00 20 */	blr 
-/* 004B6A68 004BF8F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6A6C 004BF8FC  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B6A70 004BF900  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6A74 004BF904  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B6A78 004BF908  01 1F 2E 61 */	.4byte 0x011F2E61  /* unknown instruction */
-lbl_004B6A7C:
-/* 004B6A7C 004BF90C  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B6A80 004BF910  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B6A84 004BF914  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 004B6A88 004BF918  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B6A8C 004BF91C  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B6A90 004BF920  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B6A94 004BF924  32 35 36 61 */	addic r17, r21, 0x3661
-/* 004B6A98 004BF928  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B6A9C 004BF92C  5F 70 74 72 */	rlwnm r16, r27, r14, 0x11, 0x19
-/* 004B6AA0 004BF930  3C 51 33 33 */	addis r2, r17, 0x3333
-/* 004B6AA4 004BF934  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004B6AA8 004BF938  34 5F 5F 6C */	addic. r2, r31, 0x5f6c
-/* 004B6AAC 004BF93C  69 73 74 5F */	xori r19, r11, 0x745f
-/* 004B6AB0 004BF940  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 004B6AB4 004BF944  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 004B6AB8 004BF948  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B6ABC 004BF94C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6AC0 004BF950  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6AC4 004BF954  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B6AC8 004BF958  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B6ACC 004BF95C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6AD0 004BF960  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004B6AD4 004BF964  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 004B6AD8 004BF968  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 004B6ADC 004BF96C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B6AE0 004BF970  6F 72 3C 32 */	xoris r18, r27, 0x3c32
-/* 004B6AE4 004BF974  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B6AE8 004BF978  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B6AEC 004BF97C  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B6AF0 004BF980  49 6E 66 6F */	bla 0x16e666c
-/* 004B6AF4 004BF984  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B6AF8 004BF988  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 004B6AFC 004BF98C  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 004B6B00 004BF990  64 65 2C 52 */	oris r5, r3, 0x2c52
-/* 004B6B04 004BF994  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B6B08 004BF998  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004B6B0C 004BF99C  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004B6B10 004BF9A0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B6B14 004BF9A4  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004B6B18 004BF9A8  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B6B1C 004BF9AC  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B6B20 004BF9B0  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B6B24 004BF9B4  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B6B28 004BF9B8  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B6B2C 004BF9BC  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B6B30 004BF9C0  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B6B34 004BF9C4  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B6B38 004BF9C8  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B6B3C 004BF9CC  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B6B40 004BF9D0  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B6B44 004BF9D4  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B6B48 004BF9D8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B6B4C 004BF9DC  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B6B50 004BF9E0  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B6B54 004BF9E4  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B6B58 004BF9E8  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B6B5C 004BF9EC  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B6B60 004BF9F0  44 72 69 76 */	sc 0x4b
-/* 004B6B64 004BF9F4  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B6B68 004BF9F8  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B6B6C 004BF9FC  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B6B70 004BFA00  6E 3E 3E 34 */	xoris r30, r17, 0x3e34
-/* 004B6B74 004BFA04  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 004B6B78 004BFA08  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 004B6B7C 004BFA0C  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B6B80 004BFA10  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B6B84 004BFA14  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B6B88 004BFA18  31 32 6E 75 */	addic r9, r18, 0x6e75
-/* 004B6B8C 004BFA1C  6D 62 65 72 */	xoris r2, r11, 0x6572
-/* 004B6B90 004BFA20  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004B6B94 004BFA24  31 3E 3E 46 */	addic r9, r30, 0x3e46
-/* 004B6B98 004BFA28  76 00 00 00 */	andis. r0, r16, 0
-/* 004B6B9C 004BFA2C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>Fv"
 ".second__Q310Metrowerks7details150compressed_pair_imp<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,1>Fv":
 /* 004B6BA0 004BFA30  4E 80 00 20 */	blr 
 
-.global func_004B6C70
-func_004B6C70:
+.global ".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv"
+".second__Q310Metrowerks7details303compressed_pair_imp<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,0>Fv":
 /* 004B6C70 004BFB00  38 63 00 04 */	addi r3, r3, 4
 /* 004B6C74 004BFB04  4E 80 00 20 */	blr 
-/* 004B6C78 004BFB08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6C7C 004BFB0C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B6C80 004BFB10  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6C84 004BFB14  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B6C88 004BFB18  01 53 2E 73 */	.4byte 0x01532E73  /* unknown instruction */
-/* 004B6C8C 004BFB1C  65 63 6F 6E */	oris r3, r11, 0x6f6e
-/* 004B6C90 004BFB20  64 5F 5F 51 */	oris r31, r2, 0x5f51
-/* 004B6C94 004BFB24  33 31 30 4D */	addic r25, r17, 0x304d
-/* 004B6C98 004BFB28  65 74 72 6F */	oris r20, r11, 0x726f
-/* 004B6C9C 004BFB2C  77 65 72 6B */	andis. r5, r27, 0x726b
-/* 004B6CA0 004BFB30  73 37 64 65 */	andi. r23, r25, 0x6465
-/* 004B6CA4 004BFB34  74 61 69 6C */	andis. r1, r3, 0x696c
-/* 004B6CA8 004BFB38  73 33 30 33 */	andi. r19, r25, 0x3033
-/* 004B6CAC 004BFB3C  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 004B6CB0 004BFB40  72 65 73 73 */	andi. r5, r19, 0x7373
-/* 004B6CB4 004BFB44  65 64 5F 70 */	oris r4, r11, 0x5f70
-/* 004B6CB8 004BFB48  61 69 72 5F */	ori r9, r11, 0x725f
-/* 004B6CBC 004BFB4C  69 6D 70 3C */	xori r13, r11, 0x703c
-/* 004B6CC0 004BFB50  52 51 32 33 */	rlwimi. r17, r18, 6, 8, 0x19
-/* 004B6CC4 004BFB54  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004B6CC8 004BFB58  30 38 61 6C */	addic r1, r24, 0x616c
-/* 004B6CCC 004BFB5C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B6CD0 004BFB60  74 6F 72 3C */	andis. r15, r3, 0x723c
-lbl_004B6CD4:
-/* 004B6CD4 004BFB64  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B6CD8 004BFB68  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B6CDC 004BFB6C  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B6CE0 004BFB70  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B6CE4 004BFB74  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B6CE8 004BFB78  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B6CEC 004BFB7C  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B6CF0 004BFB80  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B6CF4 004BFB84  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B6CF8 004BFB88  49 6E 66 6F */	bla 0x16e666c
-/* 004B6CFC 004BFB8C  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B6D00 004BFB90  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B6D04 004BFB94  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B6D08 004BFB98  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B6D0C 004BFB9C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B6D10 004BFBA0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B6D14 004BFBA4  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B6D18 004BFBA8  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B6D1C 004BFBAC  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B6D20 004BFBB0  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B6D24 004BFBB4  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B6D28 004BFBB8  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B6D2C 004BFBBC  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B6D30 004BFBC0  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B6D34 004BFBC4  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 004B6D38 004BFBC8  32 31 30 4D */	addic r17, r17, 0x304d
-/* 004B6D3C 004BFBCC  65 74 72 6F */	oris r20, r11, 0x726f
-/* 004B6D40 004BFBD0  77 65 72 6B */	andis. r5, r27, 0x726b
-/* 004B6D44 004BFBD4  73 31 34 34 */	andi. r17, r25, 0x3434
-/* 004B6D48 004BFBD8  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 004B6D4C 004BFBDC  72 65 73 73 */	andi. r5, r19, 0x7373
-/* 004B6D50 004BFBE0  65 64 5F 70 */	oris r4, r11, 0x5f70
-/* 004B6D54 004BFBE4  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004B6D58 004BFBE8  51 32 31 30 */	rlwimi r18, r9, 6, 4, 0x18
-/* 004B6D5C 004BFBEC  4D 65 74 72 */	.4byte 0x4D657472  /* unknown instruction */
-/* 004B6D60 004BFBF0  6F 77 65 72 */	xoris r23, r27, 0x6572
-/* 004B6D64 004BFBF4  6B 73 31 32 */	xori r19, r27, 0x3132
-/* 004B6D68 004BFBF8  6E 75 6D 62 */	xoris r21, r19, 0x6d62
-/* 004B6D6C 004BFBFC  65 72 3C 55 */	oris r18, r11, 0x3c55
-/* 004B6D70 004BFC00  6C 2C 31 3E */	xoris r12, r1, 0x313e
-/* 004B6D74 004BFC04  2C 50 51 33 */	.4byte 0x2C505133  /* unknown instruction */
-/* 004B6D78 004BFC08  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B6D7C 004BFC0C  38 34 5F 5F */	addi r1, r20, 0x5f5f
-lbl_004B6D80:
-/* 004B6D80 004BFC10  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B6D84 004BFC14  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B6D88 004BFC18  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B6D8C 004BFC1C  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B6D90 004BFC20  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B6D94 004BFC24  44 72 69 76 */	sc 0x4b
-/* 004B6D98 004BFC28  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B6D9C 004BFC2C  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B6DA0 004BFC30  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B6DA4 004BFC34  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B6DA8 004BFC38  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B6DAC 004BFC3C  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B6DB0 004BFC40  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B6DB4 004BFC44  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B6DB8 004BFC48  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B6DBC 004BFC4C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6DC0 004BFC50  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6DC4 004BFC54  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B6DC8 004BFC58  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B6DCC 004BFC5C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6DD0 004BFC60  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B6DD4 004BFC64  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B6DD8 004BFC68  2C 30 3E 46 */	cmpdi r16, 0x3e46
-/* 004B6DDC 004BFC6C  76 00 00 00 */	andis. r0, r16, 0
 
-.global func_004B6DE0
-func_004B6DE0:
+.global ".get__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
+".get__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv":
 /* 004B6DE0 004BFC70  80 63 00 04 */	lwz r3, 4(r3)
 /* 004B6DE4 004BFC74  4E 80 00 20 */	blr 
-/* 004B6DE8 004BFC78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6DEC 004BFC7C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B6DF0 004BFC80  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6DF4 004BFC84  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B6DF8 004BFC88  01 1A 2E 67 */	.4byte 0x011A2E67  /* unknown instruction */
-/* 004B6DFC 004BFC8C  65 74 5F 5F */	oris r20, r11, 0x5f5f
-/* 004B6E00 004BFC90  51 32 31 30 */	rlwimi r18, r9, 6, 4, 0x18
-/* 004B6E04 004BFC94  4D 65 74 72 */	.4byte 0x4D657472  /* unknown instruction */
-/* 004B6E08 004BFC98  6F 77 65 72 */	xoris r23, r27, 0x6572
-/* 004B6E0C 004BFC9C  6B 73 32 35 */	xori r19, r27, 0x3235
-/* 004B6E10 004BFCA0  36 61 6C 6C */	addic. r19, r1, 0x6c6c
-/* 004B6E14 004BFCA4  6F 63 5F 70 */	xoris r3, r27, 0x5f70
-/* 004B6E18 004BFCA8  74 72 3C 51 */	andis. r18, r3, 0x3c51
-/* 004B6E1C 004BFCAC  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B6E20 004BFCB0  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B6E24 004BFCB4  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B6E28 004BFCB8  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B6E2C 004BFCBC  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B6E30 004BFCC0  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B6E34 004BFCC4  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B6E38 004BFCC8  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B6E3C 004BFCCC  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B6E40 004BFCD0  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B6E44 004BFCD4  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B6E48 004BFCD8  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B6E4C 004BFCDC  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B6E50 004BFCE0  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B6E54 004BFCE4  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B6E58 004BFCE8  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B6E5C 004BFCEC  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B6E60 004BFCF0  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B6E64 004BFCF4  44 72 69 76 */	sc 0x4b
-/* 004B6E68 004BFCF8  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B6E6C 004BFCFC  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B6E70 004BFD00  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B6E74 004BFD04  6E 3E 3E 34 */	xoris r30, r17, 0x3e34
-/* 004B6E78 004BFD08  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 004B6E7C 004BFD0C  2C 52 51 32 */	.4byte 0x2C525132  /* unknown instruction */
-/* 004B6E80 004BFD10  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B6E84 004BFD14  31 30 38 61 */	addic r9, r16, 0x3861
-/* 004B6E88 004BFD18  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B6E8C 004BFD1C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B6E90 004BFD20  3C 51 33 33 */	addis r2, r17, 0x3333
-/* 004B6E94 004BFD24  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004B6E98 004BFD28  34 5F 5F 6C */	addic. r2, r31, 0x5f6c
-/* 004B6E9C 004BFD2C  69 73 74 5F */	xori r19, r11, 0x745f
-/* 004B6EA0 004BFD30  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 004B6EA4 004BFD34  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 004B6EA8 004BFD38  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B6EAC 004BFD3C  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B6EB0 004BFD40  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B6EB4 004BFD44  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B6EB8 004BFD48  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B6EBC 004BFD4C  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B6EC0 004BFD50  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004B6EC4 004BFD54  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 004B6EC8 004BFD58  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 004B6ECC 004BFD5C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B6ED0 004BFD60  6F 72 3C 32 */	xoris r18, r27, 0x3c32
-/* 004B6ED4 004BFD64  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B6ED8 004BFD68  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B6EDC 004BFD6C  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B6EE0 004BFD70  49 6E 66 6F */	bla 0x16e666c
-/* 004B6EE4 004BFD74  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B6EE8 004BFD78  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 004B6EEC 004BFD7C  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 004B6EF0 004BFD80  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 004B6EF4 004BFD84  51 32 31 30 */	rlwimi r18, r9, 6, 4, 0x18
-/* 004B6EF8 004BFD88  4D 65 74 72 */	.4byte 0x4D657472  /* unknown instruction */
-/* 004B6EFC 004BFD8C  6F 77 65 72 */	xoris r23, r27, 0x6572
-/* 004B6F00 004BFD90  6B 73 31 32 */	xori r19, r27, 0x3132
-/* 004B6F04 004BFD94  6E 75 6D 62 */	xoris r21, r19, 0x6d62
-/* 004B6F08 004BFD98  65 72 3C 55 */	oris r18, r11, 0x3c55
-/* 004B6F0C 004BFD9C  6C 2C 31 3E */	xoris r12, r1, 0x313e
-/* 004B6F10 004BFDA0  3E 43 46 76 */	addis r18, r3, 0x4676
-/* 004B6F14 004BFDA4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6F18 004BFDA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B6F1C 004BFDAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__ct__22VideoDriverInformationFRC22VideoDriverInformation"
 ".__ct__22VideoDriverInformationFRC22VideoDriverInformation":
@@ -4166,91 +3413,13 @@ func_004B6DE0:
 ".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<17cTSDisplayMetrics>,Ul,1>CFv":
 /* 004B7120 004BFFB0  4E 80 00 20 */	blr 
 
-.global func_004B71A0
-func_004B71A0:
+.global ".__rf__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv"
+".__rf__Q210Metrowerks256alloc_ptr<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node,RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks12number<Ul,1>>CFv":
 /* 004B71A0 004C0030  80 63 00 04 */	lwz r3, 4(r3)
 /* 004B71A4 004C0034  4E 80 00 20 */	blr 
-/* 004B71A8 004C0038  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B71AC 004C003C  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B71B0 004C0040  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B71B4 004C0044  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 004B71B8 004C0048  01 1B 2E 5F */	.4byte 0x011B2E5F  /* unknown instruction */
-/* 004B71BC 004C004C  5F 72 66 5F */	rlwnm. r18, r27, r12, 0x19, 0xf
-/* 004B71C0 004C0050  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B71C4 004C0054  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B71C8 004C0058  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B71CC 004C005C  72 6B 73 32 */	andi. r11, r19, 0x7332
-/* 004B71D0 004C0060  35 36 61 6C */	addic. r9, r22, 0x616c
-/* 004B71D4 004C0064  6C 6F 63 5F */	xoris r15, r3, 0x635f
-/* 004B71D8 004C0068  70 74 72 3C */	andi. r20, r3, 0x723c
-/* 004B71DC 004C006C  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B71E0 004C0070  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B71E4 004C0074  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B71E8 004C0078  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B71EC 004C007C  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B71F0 004C0080  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B71F4 004C0084  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B71F8 004C0088  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B71FC 004C008C  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B7200 004C0090  49 6E 66 6F */	bla 0x16e666c
-/* 004B7204 004C0094  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B7208 004C0098  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B720C 004C009C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B7210 004C00A0  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B7214 004C00A4  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B7218 004C00A8  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B721C 004C00AC  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7220 004C00B0  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B7224 004C00B4  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7228 004C00B8  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B722C 004C00BC  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7230 004C00C0  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B7234 004C00C4  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B7238 004C00C8  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B723C 004C00CC  65 2C 52 51 */	oris r12, r9, 0x5251
-/* 004B7240 004C00D0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B7244 004C00D4  64 31 30 38 */	oris r17, r1, 0x3038
-/* 004B7248 004C00D8  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B724C 004C00DC  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B7250 004C00E0  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004B7254 004C00E4  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B7258 004C00E8  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B725C 004C00EC  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B7260 004C00F0  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B7264 004C00F4  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B7268 004C00F8  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B726C 004C00FC  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B7270 004C0100  44 72 69 76 */	sc 0x4b
-/* 004B7274 004C0104  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B7278 004C0108  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B727C 004C010C  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B7280 004C0110  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B7284 004C0114  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B7288 004C0118  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B728C 004C011C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B7290 004C0120  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B7294 004C0124  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B7298 004C0128  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B729C 004C012C  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B72A0 004C0130  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B72A4 004C0134  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B72A8 004C0138  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B72AC 004C013C  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B72B0 004C0140  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B72B4 004C0144  2C 51 32 31 */	.4byte 0x2C513231  /* unknown instruction */
-/* 004B72B8 004C0148  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B72BC 004C014C  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B72C0 004C0150  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B72C4 004C0154  32 6E 75 6D */	addic r19, r14, 0x756d
-/* 004B72C8 004C0158  62 65 72 3C */	ori r5, r19, 0x723c
-/* 004B72CC 004C015C  55 6C 2C 31 */	rlwinm. r12, r11, 5, 0x10, 0x18
-/* 004B72D0 004C0160  3E 3E 43 46 */	addis r17, r30, 0x4346
-/* 004B72D4 004C0164  76 00 00 00 */	andis. r0, r16, 0
-/* 004B72D8 004C0168  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B72DC 004C016C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B72E0
-func_004B72E0:
+.global ".__ct__Q210Metrowerks297compressed_pair<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>>FRQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>RCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
+".__ct__Q210Metrowerks297compressed_pair<RQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>>FRQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>RCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>":
 /* 004B72E0 004C0170  93 E1 FF FC */	stw r31, -4(r1)
 /* 004B72E4 004C0174  7C 08 02 A6 */	mflr r0
 /* 004B72E8 004C0178  7C 7F 1B 78 */	mr r31, r3
@@ -4259,352 +3428,26 @@ func_004B72E0:
 /* 004B72F4 004C0184  90 83 00 00 */	stw r4, 0(r3)
 /* 004B72F8 004C0188  38 85 00 00 */	addi r4, r5, 0
 /* 004B72FC 004C018C  38 7F 00 04 */	addi r3, r31, 4
-/* 004B7300 004C0190  48 00 02 91 */	bl func_004B7590
+/* 004B7300 004C0190  48 00 02 91 */	bl ".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
 /* 004B7304 004C0194  7F E3 FB 78 */	mr r3, r31
 /* 004B7308 004C0198  80 01 00 58 */	lwz r0, 0x58(r1)
 /* 004B730C 004C019C  38 21 00 50 */	addi r1, r1, 0x50
 /* 004B7310 004C01A0  7C 08 03 A6 */	mtlr r0
 /* 004B7314 004C01A4  83 E1 FF FC */	lwz r31, -4(r1)
 /* 004B7318 004C01A8  4E 80 00 20 */	blr 
-/* 004B731C 004C01AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7320 004C01B0  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004B7324 004C01B4  80 01 00 00 */	lwz r0, 0(r1)
-/* 004B7328 004C01B8  00 00 00 3C */	.4byte 0x0000003C  /* unknown instruction */
-/* 004B732C 004C01BC  02 5B 2E 5F */	.4byte 0x025B2E5F  /* unknown instruction */
-/* 004B7330 004C01C0  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 004B7334 004C01C4  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B7338 004C01C8  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B733C 004C01CC  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B7340 004C01D0  72 6B 73 32 */	andi. r11, r19, 0x7332
-/* 004B7344 004C01D4  39 37 63 6F */	addi r9, r23, 0x636f
-/* 004B7348 004C01D8  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B734C 004C01DC  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B7350 004C01E0  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B7354 004C01E4  72 3C 52 51 */	andi. r28, r17, 0x5251
-/* 004B7358 004C01E8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B735C 004C01EC  64 31 30 38 */	oris r17, r1, 0x3038
-/* 004B7360 004C01F0  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B7364 004C01F4  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B7368 004C01F8  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004B736C 004C01FC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B7370 004C0200  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B7374 004C0204  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B7378 004C0208  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B737C 004C020C  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B7380 004C0210  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B7384 004C0214  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B7388 004C0218  44 72 69 76 */	sc 0x4b
-/* 004B738C 004C021C  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B7390 004C0220  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B7394 004C0224  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B7398 004C0228  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B739C 004C022C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B73A0 004C0230  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B73A4 004C0234  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B73A8 004C0238  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B73AC 004C023C  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B73B0 004C0240  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B73B4 004C0244  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B73B8 004C0248  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B73BC 004C024C  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B73C0 004C0250  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B73C4 004C0254  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B73C8 004C0258  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004B73CC 004C025C  2C 51 32 31 */	.4byte 0x2C513231  /* unknown instruction */
-/* 004B73D0 004C0260  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B73D4 004C0264  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B73D8 004C0268  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B73DC 004C026C  34 34 63 6F */	addic. r1, r20, 0x636f
-/* 004B73E0 004C0270  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B73E4 004C0274  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B73E8 004C0278  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B73EC 004C027C  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004B73F0 004C0280  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B73F4 004C0284  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B73F8 004C0288  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B73FC 004C028C  31 32 6E 75 */	addic r9, r18, 0x6e75
-/* 004B7400 004C0290  6D 62 65 72 */	xoris r2, r11, 0x6572
-/* 004B7404 004C0294  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004B7408 004C0298  31 3E 2C 50 */	addic r9, r30, 0x2c50
-/* 004B740C 004C029C  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B7410 004C02A0  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B7414 004C02A4  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B7418 004C02A8  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B741C 004C02AC  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B7420 004C02B0  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B7424 004C02B4  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B7428 004C02B8  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B742C 004C02BC  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B7430 004C02C0  49 6E 66 6F */	bla 0x16e666c
-/* 004B7434 004C02C4  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B7438 004C02C8  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B743C 004C02CC  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B7440 004C02D0  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B7444 004C02D4  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B7448 004C02D8  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B744C 004C02DC  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7450 004C02E0  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B7454 004C02E4  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7458 004C02E8  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B745C 004C02EC  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7460 004C02F0  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B7464 004C02F4  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B7468 004C02F8  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B746C 004C02FC  65 3E 3E 46 */	oris r30, r9, 0x3e46
-/* 004B7470 004C0300  52 51 32 33 */	rlwimi. r17, r18, 6, 8, 0x19
-/* 004B7474 004C0304  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004B7478 004C0308  30 38 61 6C */	addic r1, r24, 0x616c
-/* 004B747C 004C030C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B7480 004C0310  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B7484 004C0314  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B7488 004C0318  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B748C 004C031C  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B7490 004C0320  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B7494 004C0324  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B7498 004C0328  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B749C 004C032C  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B74A0 004C0330  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B74A4 004C0334  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B74A8 004C0338  49 6E 66 6F */	bla 0x16e666c
-/* 004B74AC 004C033C  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B74B0 004C0340  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B74B4 004C0344  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B74B8 004C0348  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B74BC 004C034C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B74C0 004C0350  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B74C4 004C0354  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B74C8 004C0358  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B74CC 004C035C  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B74D0 004C0360  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B74D4 004C0364  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B74D8 004C0368  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B74DC 004C036C  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B74E0 004C0370  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B74E4 004C0374  65 3E 52 43 */	oris r30, r9, 0x5243
-/* 004B74E8 004C0378  51 32 31 30 */	rlwimi r18, r9, 6, 4, 0x18
-/* 004B74EC 004C037C  4D 65 74 72 */	.4byte 0x4D657472  /* unknown instruction */
-/* 004B74F0 004C0380  6F 77 65 72 */	xoris r23, r27, 0x6572
-/* 004B74F4 004C0384  6B 73 31 34 */	xori r19, r27, 0x3134
-/* 004B74F8 004C0388  34 63 6F 6D */	addic. r3, r3, 0x6f6d
-/* 004B74FC 004C038C  70 72 65 73 */	andi. r18, r3, 0x6573
-/* 004B7500 004C0390  73 65 64 5F */	andi. r5, r27, 0x645f
-/* 004B7504 004C0394  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 004B7508 004C0398  3C 51 32 31 */	addis r2, r17, 0x3231
-/* 004B750C 004C039C  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B7510 004C03A0  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B7514 004C03A4  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B7518 004C03A8  32 6E 75 6D */	addic r19, r14, 0x756d
-/* 004B751C 004C03AC  62 65 72 3C */	ori r5, r19, 0x723c
-/* 004B7520 004C03B0  55 6C 2C 31 */	rlwinm. r12, r11, 5, 0x10, 0x18
-/* 004B7524 004C03B4  3E 2C 50 51 */	addis r17, r12, 0x5051
-/* 004B7528 004C03B8  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B752C 004C03BC  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B7530 004C03C0  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B7534 004C03C4  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B7538 004C03C8  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B753C 004C03CC  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7540 004C03D0  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B7544 004C03D4  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7548 004C03D8  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B754C 004C03DC  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7550 004C03E0  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B7554 004C03E4  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B7558 004C03E8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B755C 004C03EC  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B7560 004C03F0  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B7564 004C03F4  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B7568 004C03F8  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B756C 004C03FC  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B7570 004C0400  44 72 69 76 */	sc 0x4b
-/* 004B7574 004C0404  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B7578 004C0408  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B757C 004C040C  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B7580 004C0410  6E 3E 3E 34 */	xoris r30, r17, 0x3e34
-/* 004B7584 004C0414  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 004B7588 004C0418  3E 00 00 00 */	lis r16, 0
-/* 004B758C 004C041C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B7590
-func_004B7590:
+.global ".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
+".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>":
 /* 004B7590 004C0420  80 04 00 00 */	lwz r0, 0(r4)
 /* 004B7594 004C0424  90 03 00 00 */	stw r0, 0(r3)
 /* 004B7598 004C0428  4E 80 00 20 */	blr 
-/* 004B759C 004C042C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B75A0 004C0430  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B75A4 004C0434  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B75A8 004C0438  00 00 00 0C */	.4byte 0x0000000C  /* unknown instruction */
-/* 004B75AC 004C043C  01 4C 2E 5F */	.4byte 0x014C2E5F  /* unknown instruction */
-/* 004B75B0 004C0440  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 004B75B4 004C0444  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B75B8 004C0448  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B75BC 004C044C  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B75C0 004C0450  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B75C4 004C0454  34 34 63 6F */	addic. r1, r20, 0x636f
-/* 004B75C8 004C0458  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B75CC 004C045C  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B75D0 004C0460  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B75D4 004C0464  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004B75D8 004C0468  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B75DC 004C046C  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B75E0 004C0470  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B75E4 004C0474  31 32 6E 75 */	addic r9, r18, 0x6e75
-/* 004B75E8 004C0478  6D 62 65 72 */	xoris r2, r11, 0x6572
-/* 004B75EC 004C047C  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004B75F0 004C0480  31 3E 2C 50 */	addic r9, r30, 0x2c50
-/* 004B75F4 004C0484  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B75F8 004C0488  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B75FC 004C048C  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B7600 004C0490  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B7604 004C0494  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B7608 004C0498  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B760C 004C049C  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B7610 004C04A0  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B7614 004C04A4  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B7618 004C04A8  49 6E 66 6F */	bla 0x16e666c
-/* 004B761C 004C04AC  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B7620 004C04B0  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B7624 004C04B4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B7628 004C04B8  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B762C 004C04BC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B7630 004C04C0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B7634 004C04C4  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7638 004C04C8  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B763C 004C04CC  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7640 004C04D0  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B7644 004C04D4  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7648 004C04D8  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B764C 004C04DC  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B7650 004C04E0  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B7654 004C04E4  65 3E 46 52 */	oris r30, r9, 0x4652
-/* 004B7658 004C04E8  43 51 32 31 */	bdzl- 0x4ba888
-/* 004B765C 004C04EC  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B7660 004C04F0  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B7664 004C04F4  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B7668 004C04F8  34 34 63 6F */	addic. r1, r20, 0x636f
-/* 004B766C 004C04FC  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B7670 004C0500  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B7674 004C0504  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B7678 004C0508  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004B767C 004C050C  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B7680 004C0510  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B7684 004C0514  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B7688 004C0518  31 32 6E 75 */	addic r9, r18, 0x6e75
-/* 004B768C 004C051C  6D 62 65 72 */	xoris r2, r11, 0x6572
-/* 004B7690 004C0520  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004B7694 004C0524  31 3E 2C 50 */	addic r9, r30, 0x2c50
-/* 004B7698 004C0528  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B769C 004C052C  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B76A0 004C0530  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B76A4 004C0534  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B76A8 004C0538  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B76AC 004C053C  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B76B0 004C0540  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B76B4 004C0544  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B76B8 004C0548  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B76BC 004C054C  49 6E 66 6F */	bla 0x16e666c
-/* 004B76C0 004C0550  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B76C4 004C0554  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B76C8 004C0558  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B76CC 004C055C  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B76D0 004C0560  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B76D4 004C0564  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B76D8 004C0568  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B76DC 004C056C  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B76E0 004C0570  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B76E4 004C0574  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B76E8 004C0578  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B76EC 004C057C  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B76F0 004C0580  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B76F4 004C0584  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B76F8 004C0588  65 3E 00 00 */	oris r30, r9, 0
-/* 004B76FC 004C058C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004B7700
-func_004B7700:
+.global ".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks12number<Ul,1>PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node"
+".__ct__Q210Metrowerks144compressed_pair<Q210Metrowerks12number<Ul,1>,PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>FRCQ210Metrowerks12number<Ul,1>PQ33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node":
 /* 004B7700 004C0590  88 04 00 00 */	lbz r0, 0(r4)
 /* 004B7704 004C0594  98 03 00 00 */	stb r0, 0(r3)
 /* 004B7708 004C0598  90 A3 00 00 */	stw r5, 0(r3)
 /* 004B770C 004C059C  4E 80 00 20 */	blr 
-/* 004B7710 004C05A0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7714 004C05A4  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B7718 004C05A8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B771C 004C05AC  00 00 00 10 */	.4byte 0x00000010  /* unknown instruction */
-/* 004B7720 004C05B0  01 29 2E 5F */	.4byte 0x01292E5F  /* unknown instruction */
-/* 004B7724 004C05B4  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 004B7728 004C05B8  5F 51 32 31 */	rlwnm. r17, r26, r6, 8, 0x18
-/* 004B772C 004C05BC  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B7730 004C05C0  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B7734 004C05C4  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B7738 004C05C8  34 34 63 6F */	addic. r1, r20, 0x636f
-/* 004B773C 004C05CC  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B7740 004C05D0  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B7744 004C05D4  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B7748 004C05D8  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004B774C 004C05DC  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004B7750 004C05E0  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004B7754 004C05E4  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004B7758 004C05E8  31 32 6E 75 */	addic r9, r18, 0x6e75
-/* 004B775C 004C05EC  6D 62 65 72 */	xoris r2, r11, 0x6572
-/* 004B7760 004C05F0  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004B7764 004C05F4  31 3E 2C 50 */	addic r9, r30, 0x2c50
-/* 004B7768 004C05F8  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B776C 004C05FC  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B7770 004C0600  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B7774 004C0604  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B7778 004C0608  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B777C 004C060C  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B7780 004C0610  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B7784 004C0614  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B7788 004C0618  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B778C 004C061C  49 6E 66 6F */	bla 0x16e666c
-/* 004B7790 004C0620  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B7794 004C0624  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B7798 004C0628  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B779C 004C062C  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B77A0 004C0630  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B77A4 004C0634  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B77A8 004C0638  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B77AC 004C063C  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B77B0 004C0640  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B77B4 004C0644  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B77B8 004C0648  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B77BC 004C064C  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B77C0 004C0650  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B77C4 004C0654  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 004B77C8 004C0658  65 3E 46 52 */	oris r30, r9, 0x4652
-/* 004B77CC 004C065C  43 51 32 31 */	bdzl- 0x4ba9fc
-/* 004B77D0 004C0660  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B77D4 004C0664  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B77D8 004C0668  72 6B 73 31 */	andi. r11, r19, 0x7331
-/* 004B77DC 004C066C  32 6E 75 6D */	addic r19, r14, 0x756d
-/* 004B77E0 004C0670  62 65 72 3C */	ori r5, r19, 0x723c
-/* 004B77E4 004C0674  55 6C 2C 31 */	rlwinm. r12, r11, 5, 0x10, 0x18
-/* 004B77E8 004C0678  3E 50 51 33 */	addis r18, r16, 0x5133
-/* 004B77EC 004C067C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B77F0 004C0680  38 34 5F 5F */	addi r1, r20, 0x5f5f
-/* 004B77F4 004C0684  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 004B77F8 004C0688  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 004B77FC 004C068C  65 74 65 72 */	oris r20, r11, 0x6572
-/* 004B7800 004C0690  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B7804 004C0694  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B7808 004C0698  44 72 69 76 */	sc 0x4b
-/* 004B780C 004C069C  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B7810 004C06A0  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B7814 004C06A4  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B7818 004C06A8  6E 2C 51 32 */	xoris r12, r17, 0x5132
-/* 004B781C 004C06AC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B7820 004C06B0  33 35 61 6C */	addic r25, r21, 0x616c
-/* 004B7824 004C06B4  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004B7828 004C06B8  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004B782C 004C06BC  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B7830 004C06C0  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B7834 004C06C4  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B7838 004C06C8  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B783C 004C06CC  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B7840 004C06D0  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B7844 004C06D4  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004B7848 004C06D8  6F 64 65 00 */	xoris r4, r27, 0x6500
-/* 004B784C 004C06DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__ct__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>Fv"
 ".__ct__Q23std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>Fv":
@@ -4619,7 +3462,7 @@ func_004B7700:
 /* 004B7870 004C0700  4B FF E6 41 */	bl ".first__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>Fv"
 /* 004B7874 004C0704  38 7F 00 04 */	addi r3, r31, 4
 /* 004B7878 004C0708  38 81 00 40 */	addi r4, r1, 0x40
-/* 004B787C 004C070C  48 00 00 A5 */	bl func_004B7920
+/* 004B787C 004C070C  48 00 00 A5 */	bl ".__ct__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>FRCQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
 /* 004B7880 004C0710  38 9F 00 04 */	addi r4, r31, 4
 /* 004B7884 004C0714  90 84 00 04 */	stw r4, 4(r4)
 /* 004B7888 004C0718  7F E3 FB 78 */	mr r3, r31
@@ -4630,116 +3473,9 @@ func_004B7700:
 /* 004B789C 004C072C  83 E1 FF FC */	lwz r31, -4(r1)
 /* 004B78A0 004C0730  4E 80 00 20 */	blr 
 
-.global func_004B7920
-func_004B7920:
+.global ".__ct__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>FRCQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>"
+".__ct__Q310Metrowerks7details243compressed_pair_imp<Q23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>,Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>9node_base,1>FRCQ23std108allocator<Q33std84__list_deleter<22VideoDriverInformation,Q23std35allocator<22VideoDriverInformation>>4node>":
 /* 004B7920 004C07B0  4E 80 00 20 */	blr 
-/* 004B7924 004C07B4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7928 004C07B8  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004B792C 004C07BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7930 004C07C0  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 004B7934 004C07C4  01 8B 2E 5F */	.4byte 0x018B2E5F  /* unknown instruction */
-/* 004B7938 004C07C8  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 004B793C 004C07CC  5F 51 33 31 */	rlwnm. r17, r26, r6, 0xc, 0x18
-/* 004B7940 004C07D0  30 4D 65 74 */	addic r2, r13, 0x6574
-/* 004B7944 004C07D4  72 6F 77 65 */	andi. r15, r19, 0x7765
-/* 004B7948 004C07D8  72 6B 73 37 */	andi. r11, r19, 0x7337
-/* 004B794C 004C07DC  64 65 74 61 */	oris r5, r3, 0x7461
-/* 004B7950 004C07E0  69 6C 73 32 */	xori r12, r11, 0x7332
-/* 004B7954 004C07E4  34 33 63 6F */	addic. r1, r19, 0x636f
-/* 004B7958 004C07E8  6D 70 72 65 */	xoris r16, r11, 0x7265
-/* 004B795C 004C07EC  73 73 65 64 */	andi. r19, r27, 0x6564
-/* 004B7960 004C07F0  5F 70 61 69 */	rlwnm. r16, r27, r12, 5, 0x14
-/* 004B7964 004C07F4  72 5F 69 6D */	andi. r31, r18, 0x696d
-/* 004B7968 004C07F8  70 3C 51 32 */	andi. r28, r1, 0x5132
-/* 004B796C 004C07FC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004B7970 004C0800  31 30 38 61 */	addic r9, r16, 0x3861
-/* 004B7974 004C0804  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B7978 004C0808  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B797C 004C080C  3C 51 33 33 */	addis r2, r17, 0x3333
-/* 004B7980 004C0810  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 004B7984 004C0814  34 5F 5F 6C */	addic. r2, r31, 0x5f6c
-/* 004B7988 004C0818  69 73 74 5F */	xori r19, r11, 0x745f
-/* 004B798C 004C081C  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 004B7990 004C0820  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 004B7994 004C0824  32 32 56 69 */	addic r17, r18, 0x5669
-/* 004B7998 004C0828  64 65 6F 44 */	oris r5, r3, 0x6f44
-/* 004B799C 004C082C  72 69 76 65 */	andi. r9, r19, 0x7665
-/* 004B79A0 004C0830  72 49 6E 66 */	andi. r9, r18, 0x6e66
-/* 004B79A4 004C0834  6F 72 6D 61 */	xoris r18, r27, 0x6d61
-/* 004B79A8 004C0838  74 69 6F 6E */	andis. r9, r3, 0x6f6e
-/* 004B79AC 004C083C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004B79B0 004C0840  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 004B79B4 004C0844  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 004B79B8 004C0848  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B79BC 004C084C  6F 72 3C 32 */	xoris r18, r27, 0x3c32
-/* 004B79C0 004C0850  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B79C4 004C0854  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B79C8 004C0858  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B79CC 004C085C  49 6E 66 6F */	bla 0x16e666c
-/* 004B79D0 004C0860  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B79D4 004C0864  69 6F 6E 3E */	xori r15, r11, 0x6e3e
-/* 004B79D8 004C0868  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 004B79DC 004C086C  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 004B79E0 004C0870  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004B79E4 004C0874  74 64 38 34 */	andis. r4, r3, 0x3834
-/* 004B79E8 004C0878  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 004B79EC 004C087C  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 004B79F0 004C0880  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 004B79F4 004C0884  65 72 3C 32 */	oris r18, r11, 0x3c32
-/* 004B79F8 004C0888  32 56 69 64 */	addic r18, r22, 0x6964
-/* 004B79FC 004C088C  65 6F 44 72 */	oris r15, r11, 0x4472
-/* 004B7A00 004C0890  69 76 65 72 */	xori r22, r11, 0x6572
-/* 004B7A04 004C0894  49 6E 66 6F */	bla 0x16e666c
-/* 004B7A08 004C0898  72 6D 61 74 */	andi. r13, r19, 0x6174
-/* 004B7A0C 004C089C  69 6F 6E 2C */	xori r15, r11, 0x6e2c
-/* 004B7A10 004C08A0  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B7A14 004C08A4  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 004B7A18 004C08A8  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004B7A1C 004C08AC  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004B7A20 004C08B0  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7A24 004C08B4  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B7A28 004C08B8  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7A2C 004C08BC  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B7A30 004C08C0  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7A34 004C08C4  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B7A38 004C08C8  6F 6E 3E 3E */	xoris r14, r27, 0x3e3e
-/* 004B7A3C 004C08CC  39 6E 6F 64 */	addi r11, r14, 0x6f64
-/* 004B7A40 004C08D0  65 5F 62 61 */	oris r31, r10, 0x6261
-/* 004B7A44 004C08D4  73 65 2C 31 */	andi. r5, r27, 0x2c31
-/* 004B7A48 004C08D8  3E 46 52 43 */	addis r18, r6, 0x5243
-/* 004B7A4C 004C08DC  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004B7A50 004C08E0  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004B7A54 004C08E4  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004B7A58 004C08E8  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004B7A5C 004C08EC  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004B7A60 004C08F0  33 33 73 74 */	addic r25, r19, 0x7374
-/* 004B7A64 004C08F4  64 38 34 5F */	oris r24, r1, 0x345f
-/* 004B7A68 004C08F8  5F 6C 69 73 */	rlwnm. r12, r27, r13, 5, 0x19
-/* 004B7A6C 004C08FC  74 5F 64 65 */	andis. r31, r2, 0x6465
-/* 004B7A70 004C0900  6C 65 74 65 */	xoris r5, r3, 0x7465
-/* 004B7A74 004C0904  72 3C 32 32 */	andi. r28, r17, 0x3232
-/* 004B7A78 004C0908  56 69 64 65 */	rlwinm. r9, r19, 0xc, 0x11, 0x12
-/* 004B7A7C 004C090C  6F 44 72 69 */	xoris r4, r26, 0x7269
-/* 004B7A80 004C0910  76 65 72 49 */	andis. r5, r19, 0x7249
-/* 004B7A84 004C0914  6E 66 6F 72 */	xoris r6, r19, 0x6f72
-/* 004B7A88 004C0918  6D 61 74 69 */	xoris r1, r11, 0x7469
-/* 004B7A8C 004C091C  6F 6E 2C 51 */	xoris r14, r27, 0x2c51
-/* 004B7A90 004C0920  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004B7A94 004C0924  64 33 35 61 */	oris r19, r1, 0x3561
-/* 004B7A98 004C0928  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004B7A9C 004C092C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004B7AA0 004C0930  3C 32 32 56 */	addis r1, r18, 0x3256
-/* 004B7AA4 004C0934  69 64 65 6F */	xori r4, r11, 0x656f
-/* 004B7AA8 004C0938  44 72 69 76 */	sc 0x4b
-/* 004B7AAC 004C093C  65 72 49 6E */	oris r18, r11, 0x496e
-/* 004B7AB0 004C0940  66 6F 72 6D */	oris r15, r19, 0x726d
-/* 004B7AB4 004C0944  61 74 69 6F */	ori r20, r11, 0x696f
-/* 004B7AB8 004C0948  6E 3E 3E 34 */	xoris r30, r17, 0x3e34
-/* 004B7ABC 004C094C  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 004B7AC0 004C0950  3E 00 00 00 */	lis r16, 0
-/* 004B7AC4 004C0954  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7AC8 004C0958  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004B7ACC 004C095C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".__ct__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>FUl"
 ".__ct__Q310Metrowerks7details69compressed_pair_imp<Q23std35allocator<22VideoDriverInformation>,Ul,1>FUl":

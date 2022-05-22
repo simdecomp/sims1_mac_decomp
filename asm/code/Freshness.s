@@ -153,7 +153,6 @@ lbl_002F7B7C:
 /* 002F7B8C 00300A1C  7F E3 FB 78 */	mr r3, r31
 /* 002F7B90 00300A20  81 9F 00 00 */	lwz r12, 0(r31)
 /* 002F7B94 00300A24  81 8C 00 B0 */	lwz r12, 0xb0(r12)
-lbl_002F7B98:
 /* 002F7B98 00300A28  48 2A 1F B9 */	bl func_00599B50
 /* 002F7B9C 00300A2C  80 41 00 14 */	lwz r2, 0x14(r1)
 /* 002F7BA0 00300A30  38 60 00 01 */	li r3, 1
@@ -222,7 +221,6 @@ lbl_002F7CC4:
 /* 002F7CC8 00300B58  39 08 00 01 */	addi r8, r8, 1
 lbl_002F7CCC:
 /* 002F7CCC 00300B5C  7C 08 38 00 */	cmpw r8, r7
-lbl_002F7CD0:
 /* 002F7CD0 00300B60  41 80 FF C4 */	blt lbl_002F7C94
 /* 002F7CD4 00300B64  7D 23 4B 78 */	mr r3, r9
 /* 002F7CD8 00300B68  4E 80 00 20 */	blr 
@@ -436,7 +434,6 @@ lbl_002F80A8:
 lbl_002F80B4:
 /* 002F80B4 00300F44  90 E3 00 40 */	stw r7, 0x40(r3)
 /* 002F80B8 00300F48  4B FF FD E9 */	bl ".UpdatePlayerInfo__12cFreshPlayerFv"
-lbl_002F80BC:
 /* 002F80BC 00300F4C  38 60 00 01 */	li r3, 1
 lbl_002F80C0:
 /* 002F80C0 00300F50  80 01 00 48 */	lwz r0, 0x48(r1)
@@ -525,7 +522,6 @@ lbl_002F81AC:
 /* 002F823C 003010CC  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 002F8240 003010D0  48 2A 19 11 */	bl func_00599B50
 /* 002F8244 003010D4  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_002F8248:
 /* 002F8248 003010D8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 002F824C 003010DC  40 82 00 24 */	bne lbl_002F8270
 /* 002F8250 003010E0  80 61 00 44 */	lwz r3, 0x44(r1)
@@ -753,7 +749,6 @@ lbl_002F85D8:
 /* 002F8604 00301494  81 8C 00 08 */	lwz r12, 8(r12)
 /* 002F8608 00301498  48 2A 15 49 */	bl func_00599B50
 /* 002F860C 0030149C  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_002F8610:
 /* 002F8610 003014A0  80 1C 00 24 */	lwz r0, 0x24(r28)
 /* 002F8614 003014A4  3C 60 66 66 */	lis r3, 0x66666667@ha
 /* 002F8618 003014A8  38 83 66 67 */	addi r4, r3, 0x66666667@l
@@ -2812,7 +2807,6 @@ lbl_002FA858:
 lbl_002FA864:
 /* 002FA864 003036F4  7F A3 EB 78 */	mr r3, r29
 /* 002FA868 003036F8  81 9D 00 00 */	lwz r12, 0(r29)
-lbl_002FA86C:
 /* 002FA86C 003036FC  38 9C 00 00 */	addi r4, r28, 0
 /* 002FA870 00303700  38 BB 00 00 */	addi r5, r27, 0
 /* 002FA874 00303704  81 8C 00 8C */	lwz r12, 0x8c(r12)
@@ -2865,7 +2859,6 @@ lbl_002FA8AC:
 /* 002FA980 00303810  90 01 00 08 */	stw r0, 8(r1)
 /* 002FA984 00303814  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 002FA988 00303818  48 28 DC 29 */	bl func_005885B0
-lbl_002FA98C:
 /* 002FA98C 0030381C  7C 7A 1B 79 */	or. r26, r3, r3
 /* 002FA990 00303820  41 82 00 08 */	beq lbl_002FA998
 /* 002FA994 00303824  48 00 33 8D */	bl ".__ct__11cFreshScoreFv"
@@ -2874,7 +2867,7 @@ lbl_002FA998:
 /* 002FA99C 0030382C  38 9C 00 00 */	addi r4, r28, 0
 /* 002FA9A0 00303830  38 BD 00 00 */	addi r5, r29, 0
 /* 002FA9A4 00303834  38 61 00 44 */	addi r3, r1, 0x44
-/* 002FA9A8 00303838  4B D7 FE E9 */	bl func_0007A890
+/* 002FA9A8 00303838  4B D7 FE E9 */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 002FA9AC 0030383C  38 61 00 40 */	addi r3, r1, 0x40
 /* 002FA9B0 00303840  38 81 00 44 */	addi r4, r1, 0x44
 /* 002FA9B4 00303844  48 1F 15 8D */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
@@ -2972,7 +2965,7 @@ lbl_002FAB64:
 /* 002FAB70 00303A00  38 9F 00 00 */	addi r4, r31, 0
 /* 002FAB74 00303A04  38 B9 00 00 */	addi r5, r25, 0
 /* 002FAB78 00303A08  38 61 00 48 */	addi r3, r1, 0x48
-/* 002FAB7C 00303A0C  4B D7 FD 15 */	bl func_0007A890
+/* 002FAB7C 00303A0C  4B D7 FD 15 */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 002FAB80 00303A10  38 61 00 40 */	addi r3, r1, 0x40
 /* 002FAB84 00303A14  38 81 00 48 */	addi r4, r1, 0x48
 /* 002FAB88 00303A18  48 1F 13 B9 */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
@@ -3006,7 +2999,7 @@ lbl_002FABE4:
 /* 002FABF0 00303A80  38 98 00 00 */	addi r4, r24, 0
 /* 002FABF4 00303A84  38 B7 00 00 */	addi r5, r23, 0
 /* 002FABF8 00303A88  38 61 00 4C */	addi r3, r1, 0x4c
-/* 002FABFC 00303A8C  4B D7 FC 95 */	bl func_0007A890
+/* 002FABFC 00303A8C  4B D7 FC 95 */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 002FAC00 00303A90  38 61 00 44 */	addi r3, r1, 0x44
 /* 002FAC04 00303A94  38 81 00 4C */	addi r4, r1, 0x4c
 /* 002FAC08 00303A98  48 1F 13 39 */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
@@ -3231,7 +3224,6 @@ lbl_002FAFF8:
 /* 002FB038 00303EC8  90 03 00 D0 */	stw r0, 0xd0(r3)
 /* 002FB03C 00303ECC  90 03 00 D4 */	stw r0, 0xd4(r3)
 /* 002FB040 00303ED0  90 03 00 D8 */	stw r0, 0xd8(r3)
-lbl_002FB044:
 /* 002FB044 00303ED4  90 03 00 DC */	stw r0, 0xdc(r3)
 /* 002FB048 00303ED8  90 03 00 E0 */	stw r0, 0xe0(r3)
 /* 002FB04C 00303EDC  90 03 00 E4 */	stw r0, 0xe4(r3)
@@ -3273,7 +3265,6 @@ lbl_002FB044:
 /* 002FB108 00303F98  80 62 B3 CC */	lwz r3, lbl_005BC82C-_R2_BASE_(r2)
 /* 002FB10C 00303F9C  93 E1 00 60 */	stw r31, 0x60(r1)
 /* 002FB110 00303FA0  81 83 00 00 */	lwz r12, 0(r3)
-lbl_002FB114:
 /* 002FB114 00303FA4  90 61 00 64 */	stw r3, 0x64(r1)
 /* 002FB118 00303FA8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 002FB11C 00303FAC  48 29 EA 35 */	bl func_00599B50
@@ -3317,7 +3308,6 @@ lbl_002FB17C:
 /* 002FB1AC 0030403C  81 83 00 00 */	lwz r12, 0(r3)
 /* 002FB1B0 00304040  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 002FB1B4 00304044  48 29 E9 9D */	bl func_00599B50
-lbl_002FB1B8:
 /* 002FB1B8 00304048  80 41 00 14 */	lwz r2, 0x14(r1)
 lbl_002FB1BC:
 /* 002FB1BC 0030404C  80 01 00 88 */	lwz r0, 0x88(r1)
@@ -3393,7 +3383,6 @@ lbl_002FB434:
 .global ".AddFastTimerRef__11cFreshTimerFv"
 ".AddFastTimerRef__11cFreshTimerFv":
 /* 002FB4B0 00304340  93 E1 FF FC */	stw r31, -4(r1)
-lbl_002FB4B4:
 /* 002FB4B4 00304344  7C 08 02 A6 */	mflr r0
 /* 002FB4B8 00304348  83 E2 94 C0 */	lwz r31, lbl_005BA920-_R2_BASE_(r2)
 /* 002FB4BC 0030434C  93 C1 FF F8 */	stw r30, -8(r1)
@@ -3456,7 +3445,6 @@ lbl_002FB4B4:
 /* 002FB5D0 00304460  80 41 00 14 */	lwz r2, 0x14(r1)
 lbl_002FB5D4:
 /* 002FB5D4 00304464  80 61 00 44 */	lwz r3, 0x44(r1)
-lbl_002FB5D8:
 /* 002FB5D8 00304468  93 E1 00 40 */	stw r31, 0x40(r1)
 /* 002FB5DC 0030446C  81 83 00 00 */	lwz r12, 0(r3)
 /* 002FB5E0 00304470  81 8C 00 10 */	lwz r12, 0x10(r12)
@@ -3572,7 +3560,6 @@ lbl_002FB79C:
 lbl_002FB7A4:
 /* 002FB7A4 00304634  80 61 00 64 */	lwz r3, 0x64(r1)
 /* 002FB7A8 00304638  93 E1 00 60 */	stw r31, 0x60(r1)
-lbl_002FB7AC:
 /* 002FB7AC 0030463C  81 83 00 00 */	lwz r12, 0(r3)
 /* 002FB7B0 00304640  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 002FB7B4 00304644  48 29 E3 9D */	bl func_00599B50
@@ -3619,7 +3606,6 @@ lbl_002FB7AC:
 /* 002FBAD0 00304960  93 E1 FF FC */	stw r31, -4(r1)
 /* 002FBAD4 00304964  7C 08 02 A6 */	mflr r0
 /* 002FBAD8 00304968  3B E3 00 00 */	addi r31, r3, 0
-lbl_002FBADC:
 /* 002FBADC 0030496C  38 64 00 00 */	addi r3, r4, 0
 /* 002FBAE0 00304970  90 01 00 08 */	stw r0, 8(r1)
 /* 002FBAE4 00304974  94 21 FF A0 */	stwu r1, -0x60(r1)

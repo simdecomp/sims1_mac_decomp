@@ -39,7 +39,6 @@
 /* 004B7F08 004C0D98  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 004B7F0C 004C0D9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 004B7F10 004C0DA0  38 63 FF B8 */	addi r3, r3, -72
-lbl_004B7F14:
 /* 004B7F14 004C0DA4  4B FF 9F 9C */	b ".GetVideoDriverVersionInformation__19cTSGraphicSystemW95FRUlRUl"
 /* 004B7F18 004C0DA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 004B7F1C 004C0DAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */

@@ -3429,7 +3429,7 @@ lbl_002457D0:
 /* 0024580C 0024E69C  38 61 00 B4 */	addi r3, r1, 0xb4
 /* 00245810 0024E6A0  38 81 00 B0 */	addi r4, r1, 0xb0
 /* 00245814 0024E6A4  38 A1 00 54 */	addi r5, r1, 0x54
-/* 00245818 0024E6A8  4B E3 50 79 */	bl func_0007A890
+/* 00245818 0024E6A8  4B E3 50 79 */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 0024581C 0024E6AC  38 61 00 B8 */	addi r3, r1, 0xb8
 /* 00245820 0024E6B0  38 81 00 B4 */	addi r4, r1, 0xb4
 /* 00245824 0024E6B4  48 2A 67 1D */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
@@ -3735,7 +3735,7 @@ lbl_00245C74:
 /* 00245C9C 0024EB2C  38 61 00 D8 */	addi r3, r1, 0xd8
 /* 00245CA0 0024EB30  38 81 00 D4 */	addi r4, r1, 0xd4
 /* 00245CA4 0024EB34  38 A1 00 54 */	addi r5, r1, 0x54
-/* 00245CA8 0024EB38  4B E3 4B E9 */	bl func_0007A890
+/* 00245CA8 0024EB38  4B E3 4B E9 */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 00245CAC 0024EB3C  38 61 00 DC */	addi r3, r1, 0xdc
 /* 00245CB0 0024EB40  38 81 00 D8 */	addi r4, r1, 0xd8
 /* 00245CB4 0024EB44  48 2A 62 8D */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
@@ -3771,7 +3771,7 @@ lbl_00245D0C:
 /* 00245D28 0024EBB8  38 61 00 E4 */	addi r3, r1, 0xe4
 /* 00245D2C 0024EBBC  38 81 00 E0 */	addi r4, r1, 0xe0
 /* 00245D30 0024EBC0  38 A1 00 54 */	addi r5, r1, 0x54
-/* 00245D34 0024EBC4  4B E3 4B 5D */	bl func_0007A890
+/* 00245D34 0024EBC4  4B E3 4B 5D */	bl ".__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 /* 00245D38 0024EBC8  38 61 00 E8 */	addi r3, r1, 0xe8
 /* 00245D3C 0024EBCC  38 81 00 E4 */	addi r4, r1, 0xe4
 /* 00245D40 0024EBD0  48 2A 62 01 */	bl ".__ct__9cTSStringFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"

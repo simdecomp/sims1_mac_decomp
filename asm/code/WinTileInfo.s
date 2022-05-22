@@ -820,7 +820,6 @@ lbl_002A7330:
 /* 002A7394 002B0224  80 7A 00 00 */	lwz r3, 0(r26)
 /* 002A7398 002B0228  98 A1 00 91 */	stb r5, 0x91(r1)
 /* 002A739C 002B022C  98 01 00 92 */	stb r0, 0x92(r1)
-lbl_002A73A0:
 /* 002A73A0 002B0230  4B EC A7 01 */	bl ".GetFlags__15cRotatableWorldF7CTilePt"
 /* 002A73A4 002B0234  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 002A73A8 002B0238  39 E3 00 00 */	addi r15, r3, 0
@@ -869,7 +868,6 @@ lbl_002A7424:
 lbl_002A7440:
 /* 002A7440 002B02D0  38 71 00 00 */	addi r3, r17, 0
 /* 002A7444 002B02D4  38 99 02 D2 */	addi r4, r25, 0x2d2
-lbl_002A7448:
 /* 002A7448 002B02D8  4B D9 11 79 */	bl ".__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"
 lbl_002A744C:
 /* 002A744C 002B02DC  38 71 00 00 */	addi r3, r17, 0
@@ -927,7 +925,6 @@ lbl_002A7468:
 /* 002A7514 002B03A4  38 99 03 2D */	addi r4, r25, 0x32d
 /* 002A7518 002B03A8  4B D9 10 A9 */	bl ".__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"
 /* 002A751C 002B03AC  48 00 00 70 */	b lbl_002A758C
-lbl_002A7520:
 /* 002A7520 002B03B0  38 71 00 00 */	addi r3, r17, 0
 /* 002A7524 002B03B4  38 99 03 35 */	addi r4, r25, 0x335
 /* 002A7528 002B03B8  4B D9 10 99 */	bl ".__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"
@@ -1053,7 +1050,6 @@ lbl_002A76BC:
 /* 002A76EC 002B057C  38 99 01 93 */	addi r4, r25, 0x193
 /* 002A76F0 002B0580  4B D9 0E D1 */	bl ".__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"
 /* 002A76F4 002B0584  38 71 00 00 */	addi r3, r17, 0
-lbl_002A76F8:
 /* 002A76F8 002B0588  38 99 03 A0 */	addi r4, r25, 0x3a0
 /* 002A76FC 002B058C  4B D9 0E C5 */	bl ".__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"
 /* 002A7700 002B0590  88 81 00 6A */	lbz r4, 0x6a(r1)
@@ -1149,7 +1145,6 @@ lbl_002A7814:
 /* 002A7854 002B06E4  7C 05 00 AE */	lbzx r0, r5, r0
 /* 002A7858 002B06E8  98 01 00 44 */	stb r0, 0x44(r1)
 /* 002A785C 002B06EC  80 84 00 84 */	lwz r4, 0x84(r4)
-lbl_002A7860:
 /* 002A7860 002B06F0  4B E6 8F 81 */	bl ".Rotate__9cPoolTileFi"
 /* 002A7864 002B06F4  38 71 00 00 */	addi r3, r17, 0
 /* 002A7868 002B06F8  38 99 03 C0 */	addi r4, r25, 0x3c0
@@ -1203,7 +1198,6 @@ lbl_002A7908:
 /* 002A7920 002B07B0  3B 00 00 00 */	li r24, 0
 /* 002A7924 002B07B4  38 80 00 01 */	li r4, 1
 /* 002A7928 002B07B8  48 2D DF B9 */	bl func_005858E0
-lbl_002A792C:
 /* 002A792C 002B07BC  82 01 00 D8 */	lwz r16, 0xd8(r1)
 /* 002A7930 002B07C0  28 10 00 00 */	cmplwi r16, 0
 /* 002A7934 002B07C4  3A 70 00 00 */	addi r19, r16, 0

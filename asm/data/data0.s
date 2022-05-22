@@ -28466,13 +28466,7 @@ lbl_005C46A0:
 	.incbin "baserom", 0x5CD538, 0x2F24
 .global lbl_005C75C4
 lbl_005C75C4:
-	.incbin "baserom", 0x5D045C, 0xF
-.global lbl_005C75D3
-lbl_005C75D3:
-	.incbin "baserom", 0x5D046B, 0x605D
-.global __start
-__start:
-	.incbin "baserom", 0x5D64C8, 0x3B9F2
+	.incbin "baserom", 0x5D045C, 0x41A5E
 .global lbl_00609022
 lbl_00609022:
 	.incbin "baserom", 0x611EBA, 0x48DDA

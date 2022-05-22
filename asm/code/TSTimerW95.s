@@ -200,7 +200,6 @@ lbl_004F91FC:
 /* 004F93A8 00502238  7C 03 0E 70 */	srawi r3, r0, 1
 /* 004F93AC 0050223C  48 00 00 55 */	bl ".SetOverheadMicroseconds__8cTSTimerFUl"
 /* 004F93B0 00502240  38 61 00 40 */	addi r3, r1, 0x40
-lbl_004F93B4:
 /* 004F93B4 00502244  38 80 FF FF */	li r4, -1
 /* 004F93B8 00502248  4B DF F3 19 */	bl ".__dt__8cTSTimerFv"
 lbl_004F93BC:

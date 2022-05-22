@@ -61,7 +61,7 @@ lbl_00504B3C:
 /* 00504BDC 0050DA6C  3B C0 00 00 */	li r30, 0
 /* 00504BE0 0050DA70  80 9C 01 10 */	lwz r4, 0x110(r28)
 /* 00504BE4 0050DA74  38 84 00 04 */	addi r4, r4, 4
-/* 00504BE8 0050DA78  48 00 01 79 */	bl func_00504D60
+/* 00504BE8 0050DA78  48 00 01 79 */	bl ".begin__Q23std496__tree<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>,Q33std252map<Q219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>13value_compare,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>Fv"
 /* 00504BEC 0050DA7C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 00504BF0 0050DA80  90 01 00 40 */	stw r0, 0x40(r1)
 /* 00504BF4 0050DA84  48 00 00 AC */	b lbl_00504CA0
@@ -114,7 +114,7 @@ lbl_00504CA0:
 /* 00504CA0 0050DB30  80 9C 01 10 */	lwz r4, 0x110(r28)
 /* 00504CA4 0050DB34  38 61 00 4C */	addi r3, r1, 0x4c
 /* 00504CA8 0050DB38  38 84 00 04 */	addi r4, r4, 4
-/* 00504CAC 0050DB3C  4B F9 16 B5 */	bl func_00496360
+/* 00504CAC 0050DB3C  4B F9 16 B5 */	bl ".end__Q23std496__tree<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>,Q33std252map<Q219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>13value_compare,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>Fv"
 /* 00504CB0 0050DB40  83 61 00 40 */	lwz r27, 0x40(r1)
 /* 00504CB4 0050DB44  80 01 00 4C */	lwz r0, 0x4c(r1)
 /* 00504CB8 0050DB48  7C 1B 00 40 */	cmplw r27, r0
@@ -148,148 +148,11 @@ lbl_00504D10:
 /* 00504D1C 0050DBAC  7C 08 03 A6 */	mtlr r0
 /* 00504D20 0050DBB0  4E 80 00 20 */	blr 
 
-.global func_00504D60
-func_00504D60:
+.global ".begin__Q23std496__tree<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>,Q33std252map<Q219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>13value_compare,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>Fv"
+".begin__Q23std496__tree<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>,Q33std252map<Q219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>13value_compare,Q23std106allocator<Q23std87pair<CQ219cTSCheatCodeManager11CheatStrKey,Q23std35pair<PFP17cCheatCommandLineUl_b,Ul>>>>Fv":
 /* 00504D60 0050DBF0  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 00504D64 0050DBF4  90 03 00 00 */	stw r0, 0(r3)
 /* 00504D68 0050DBF8  4E 80 00 20 */	blr 
-/* 00504D6C 0050DBFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00504D70 0050DC00  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 00504D74 0050DC04  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00504D78 0050DC08  00 00 00 0C */	.4byte 0x0000000C  /* unknown instruction */
-/* 00504D7C 0050DC0C  02 03 2E 62 */	.4byte 0x02032E62  /* unknown instruction */
-/* 00504D80 0050DC10  65 67 69 6E */	oris r7, r11, 0x696e
-/* 00504D84 0050DC14  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 00504D88 0050DC18  33 73 74 64 */	addic r27, r19, 0x7464
-/* 00504D8C 0050DC1C  34 39 36 5F */	addic. r1, r25, 0x365f
-/* 00504D90 0050DC20  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 00504D94 0050DC24  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 00504D98 0050DC28  33 73 74 64 */	addic r27, r19, 0x7464
-/* 00504D9C 0050DC2C  38 37 70 61 */	addi r1, r23, 0x7061
-/* 00504DA0 0050DC30  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 00504DA4 0050DC34  51 32 31 39 */	rlwimi. r18, r9, 6, 4, 0x1c
-/* 00504DA8 0050DC38  63 54 53 43 */	ori r20, r26, 0x5343
-/* 00504DAC 0050DC3C  68 65 61 74 */	xori r5, r3, 0x6174
-/* 00504DB0 0050DC40  43 6F 64 65 */	bdzl+ 0x50b214
-/* 00504DB4 0050DC44  4D 61 6E 61 */	.4byte 0x4D616E61  /* unknown instruction */
-/* 00504DB8 0050DC48  67 65 72 31 */	oris r5, r27, 0x7231
-/* 00504DBC 0050DC4C  31 43 68 65 */	addic r10, r3, 0x6865
-/* 00504DC0 0050DC50  61 74 53 74 */	ori r20, r11, 0x5374
-/* 00504DC4 0050DC54  72 4B 65 79 */	andi. r11, r18, 0x6579
-/* 00504DC8 0050DC58  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 00504DCC 0050DC5C  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 00504DD0 0050DC60  35 70 61 69 */	addic. r11, r16, 0x6169
-/* 00504DD4 0050DC64  72 3C 50 46 */	andi. r28, r17, 0x5046
-/* 00504DD8 0050DC68  50 31 37 63 */	rlwimi. r17, r1, 6, 0x1d, 0x11
-/* 00504DDC 0050DC6C  43 68 65 61 */	bdzl+ 0x50b33c
-/* 00504DE0 0050DC70  74 43 6F 6D */	andis. r3, r2, 0x6f6d
-/* 00504DE4 0050DC74  6D 61 6E 64 */	xoris r1, r11, 0x6e64
-/* 00504DE8 0050DC78  4C 69 6E 65 */	.4byte 0x4C696E65  /* unknown instruction */
-/* 00504DEC 0050DC7C  55 6C 5F 62 */	rlwinm r12, r11, 0xb, 0x1d, 0x11
-/* 00504DF0 0050DC80  2C 55 6C 3E */	.4byte 0x2C556C3E  /* unknown instruction */
-/* 00504DF4 0050DC84  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 00504DF8 0050DC88  33 73 74 64 */	addic r27, r19, 0x7464
-/* 00504DFC 0050DC8C  32 35 32 6D */	addic r17, r21, 0x326d
-/* 00504E00 0050DC90  61 70 3C 51 */	ori r16, r11, 0x3c51
-/* 00504E04 0050DC94  32 31 39 63 */	addic r17, r17, 0x3963
-/* 00504E08 0050DC98  54 53 43 68 */	rlwinm r19, r2, 8, 0xd, 0x14
-/* 00504E0C 0050DC9C  65 61 74 43 */	oris r1, r11, 0x7443
-/* 00504E10 0050DCA0  6F 64 65 4D */	xoris r4, r27, 0x654d
-/* 00504E14 0050DCA4  61 6E 61 67 */	ori r14, r11, 0x6167
-/* 00504E18 0050DCA8  65 72 31 31 */	oris r18, r11, 0x3131
-/* 00504E1C 0050DCAC  43 68 65 61 */	bdzl+ 0x50b37c
-/* 00504E20 0050DCB0  74 53 74 72 */	andis. r19, r2, 0x7472
-/* 00504E24 0050DCB4  4B 65 79 2C */	b lbl_-04A38B0
-/* 00504E28 0050DCB8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 00504E2C 0050DCBC  74 64 33 35 */	andis. r4, r3, 0x3335
-/* 00504E30 0050DCC0  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 00504E34 0050DCC4  3C 50 46 50 */	addis r2, r16, 0x4650
-/* 00504E38 0050DCC8  31 37 63 43 */	addic r9, r23, 0x6343
-/* 00504E3C 0050DCCC  68 65 61 74 */	xori r5, r3, 0x6174
-/* 00504E40 0050DCD0  43 6F 6D 6D */	bdzl+ 0x50bbac
-/* 00504E44 0050DCD4  61 6E 64 4C */	ori r14, r11, 0x644c
-/* 00504E48 0050DCD8  69 6E 65 55 */	xori r14, r11, 0x6555
-/* 00504E4C 0050DCDC  6C 5F 62 2C */	xoris r31, r2, 0x622c
-/* 00504E50 0050DCE0  55 6C 3E 2C */	rlwinm r12, r11, 7, 0x18, 0x16
-/* 00504E54 0050DCE4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 00504E58 0050DCE8  74 64 34 32 */	andis. r4, r3, 0x3432
-/* 00504E5C 0050DCEC  6C 65 73 73 */	xoris r5, r3, 0x7373
-/* 00504E60 0050DCF0  3C 51 32 31 */	addis r2, r17, 0x3231
-/* 00504E64 0050DCF4  39 63 54 53 */	addi r11, r3, 0x5453
-/* 00504E68 0050DCF8  43 68 65 61 */	bdzl+ 0x50b3c8
-/* 00504E6C 0050DCFC  74 43 6F 64 */	andis. r3, r2, 0x6f64
-/* 00504E70 0050DD00  65 4D 61 6E */	oris r13, r10, 0x616e
-/* 00504E74 0050DD04  61 67 65 72 */	ori r7, r11, 0x6572
-/* 00504E78 0050DD08  31 31 43 68 */	addic r9, r17, 0x4368
-/* 00504E7C 0050DD0C  65 61 74 53 */	oris r1, r11, 0x7453
-/* 00504E80 0050DD10  74 72 4B 65 */	andis. r18, r3, 0x4b65
-/* 00504E84 0050DD14  79 3E 2C 51 */	rldcl. r30, r9, r5, 0x11
-/* 00504E88 0050DD18  32 33 73 74 */	addic r17, r19, 0x7374
-/* 00504E8C 0050DD1C  64 31 30 36 */	oris r17, r1, 0x3036
-/* 00504E90 0050DD20  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 00504E94 0050DD24  63 61 74 6F */	ori r1, r27, 0x746f
-/* 00504E98 0050DD28  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 00504E9C 0050DD2C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 00504EA0 0050DD30  38 37 70 61 */	addi r1, r23, 0x7061
-/* 00504EA4 0050DD34  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 00504EA8 0050DD38  51 32 31 39 */	rlwimi. r18, r9, 6, 4, 0x1c
-/* 00504EAC 0050DD3C  63 54 53 43 */	ori r20, r26, 0x5343
-/* 00504EB0 0050DD40  68 65 61 74 */	xori r5, r3, 0x6174
-/* 00504EB4 0050DD44  43 6F 64 65 */	bdzl+ 0x50b318
-/* 00504EB8 0050DD48  4D 61 6E 61 */	.4byte 0x4D616E61  /* unknown instruction */
-/* 00504EBC 0050DD4C  67 65 72 31 */	oris r5, r27, 0x7231
-/* 00504EC0 0050DD50  31 43 68 65 */	addic r10, r3, 0x6865
-/* 00504EC4 0050DD54  61 74 53 74 */	ori r20, r11, 0x5374
-/* 00504EC8 0050DD58  72 4B 65 79 */	andi. r11, r18, 0x6579
-/* 00504ECC 0050DD5C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 00504ED0 0050DD60  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 00504ED4 0050DD64  35 70 61 69 */	addic. r11, r16, 0x6169
-/* 00504ED8 0050DD68  72 3C 50 46 */	andi. r28, r17, 0x5046
-/* 00504EDC 0050DD6C  50 31 37 63 */	rlwimi. r17, r1, 6, 0x1d, 0x11
-/* 00504EE0 0050DD70  43 68 65 61 */	bdzl+ 0x50b440
-/* 00504EE4 0050DD74  74 43 6F 6D */	andis. r3, r2, 0x6f6d
-/* 00504EE8 0050DD78  6D 61 6E 64 */	xoris r1, r11, 0x6e64
-/* 00504EEC 0050DD7C  4C 69 6E 65 */	.4byte 0x4C696E65  /* unknown instruction */
-/* 00504EF0 0050DD80  55 6C 5F 62 */	rlwinm r12, r11, 0xb, 0x1d, 0x11
-/* 00504EF4 0050DD84  2C 55 6C 3E */	.4byte 0x2C556C3E  /* unknown instruction */
-/* 00504EF8 0050DD88  3E 3E 3E 31 */	addis r17, r30, 0x3e31
-/* 00504EFC 0050DD8C  33 76 61 6C */	addic r27, r22, 0x616c
-/* 00504F00 0050DD90  75 65 5F 63 */	andis. r5, r11, 0x5f63
-/* 00504F04 0050DD94  6F 6D 70 61 */	xoris r13, r27, 0x7061
-/* 00504F08 0050DD98  72 65 2C 51 */	andi. r5, r19, 0x2c51
-/* 00504F0C 0050DD9C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 00504F10 0050DDA0  64 31 30 36 */	oris r17, r1, 0x3036
-/* 00504F14 0050DDA4  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 00504F18 0050DDA8  63 61 74 6F */	ori r1, r27, 0x746f
-/* 00504F1C 0050DDAC  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 00504F20 0050DDB0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 00504F24 0050DDB4  38 37 70 61 */	addi r1, r23, 0x7061
-/* 00504F28 0050DDB8  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 00504F2C 0050DDBC  51 32 31 39 */	rlwimi. r18, r9, 6, 4, 0x1c
-/* 00504F30 0050DDC0  63 54 53 43 */	ori r20, r26, 0x5343
-/* 00504F34 0050DDC4  68 65 61 74 */	xori r5, r3, 0x6174
-/* 00504F38 0050DDC8  43 6F 64 65 */	bdzl+ 0x50b39c
-/* 00504F3C 0050DDCC  4D 61 6E 61 */	.4byte 0x4D616E61  /* unknown instruction */
-/* 00504F40 0050DDD0  67 65 72 31 */	oris r5, r27, 0x7231
-/* 00504F44 0050DDD4  31 43 68 65 */	addic r10, r3, 0x6865
-/* 00504F48 0050DDD8  61 74 53 74 */	ori r20, r11, 0x5374
-/* 00504F4C 0050DDDC  72 4B 65 79 */	andi. r11, r18, 0x6579
-/* 00504F50 0050DDE0  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 00504F54 0050DDE4  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 00504F58 0050DDE8  35 70 61 69 */	addic. r11, r16, 0x6169
-/* 00504F5C 0050DDEC  72 3C 50 46 */	andi. r28, r17, 0x5046
-/* 00504F60 0050DDF0  50 31 37 63 */	rlwimi. r17, r1, 6, 0x1d, 0x11
-/* 00504F64 0050DDF4  43 68 65 61 */	bdzl+ 0x50b4c4
-/* 00504F68 0050DDF8  74 43 6F 6D */	andis. r3, r2, 0x6f6d
-/* 00504F6C 0050DDFC  6D 61 6E 64 */	xoris r1, r11, 0x6e64
-/* 00504F70 0050DE00  4C 69 6E 65 */	.4byte 0x4C696E65  /* unknown instruction */
-/* 00504F74 0050DE04  55 6C 5F 62 */	rlwinm r12, r11, 0xb, 0x1d, 0x11
-/* 00504F78 0050DE08  2C 55 6C 3E */	.4byte 0x2C556C3E  /* unknown instruction */
-/* 00504F7C 0050DE0C  3E 3E 3E 46 */	addis r17, r30, 0x3e46
-/* 00504F80 0050DE10  76 00 00 00 */	andis. r0, r16, 0
-/* 00504F84 0050DE14  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00504F88 0050DE18  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00504F8C 0050DE1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".TSOnKeyDown__15cTSWinCheatHelpFUlUl"
 ".TSOnKeyDown__15cTSWinCheatHelpFUlUl":
@@ -453,7 +316,7 @@ lbl_005051E4:
 /* 00505204 0050E094  80 9F 01 10 */	lwz r4, 0x110(r31)
 /* 00505208 0050E098  38 61 00 44 */	addi r3, r1, 0x44
 /* 0050520C 0050E09C  38 84 00 14 */	addi r4, r4, 0x14
-/* 00505210 0050E0A0  48 00 01 31 */	bl func_00505340
+/* 00505210 0050E0A0  48 00 01 31 */	bl ".begin__Q23std362__tree<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>,Q33std185map<Q219cTSCheatCodeManager11CheatStrKey,9cTSString,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>13value_compare,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>Fv"
 /* 00505214 0050E0A4  38 9B 00 00 */	addi r4, r27, 0
 /* 00505218 0050E0A8  38 7F 01 1C */	addi r3, r31, 0x11c
 /* 0050521C 0050E0AC  4B B4 43 C5 */	bl ".__vc__Q23std38__vector_imp<i,Q23std12allocator<i>,1>FUl"
@@ -524,112 +387,11 @@ lbl_005052F4:
 /* 00505300 0050E190  7C 08 03 A6 */	mtlr r0
 /* 00505304 0050E194  4E 80 00 20 */	blr 
 
-.global func_00505340
-func_00505340:
+.global ".begin__Q23std362__tree<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>,Q33std185map<Q219cTSCheatCodeManager11CheatStrKey,9cTSString,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>13value_compare,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>Fv"
+".begin__Q23std362__tree<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>,Q33std185map<Q219cTSCheatCodeManager11CheatStrKey,9cTSString,Q23std42less<Q219cTSCheatCodeManager11CheatStrKey>,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>13value_compare,Q23std73allocator<Q23std54pair<CQ219cTSCheatCodeManager11CheatStrKey,9cTSString>>>Fv":
 /* 00505340 0050E1D0  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 00505344 0050E1D4  90 03 00 00 */	stw r0, 0(r3)
 /* 00505348 0050E1D8  4E 80 00 20 */	blr 
-/* 0050534C 0050E1DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00505350 0050E1E0  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 00505354 0050E1E4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 00505358 0050E1E8  00 00 00 0C */	.4byte 0x0000000C  /* unknown instruction */
-/* 0050535C 0050E1EC  01 7D 2E 62 */	.4byte 0x017D2E62  /* unknown instruction */
-/* 00505360 0050E1F0  65 67 69 6E */	oris r7, r11, 0x696e
-/* 00505364 0050E1F4  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 00505368 0050E1F8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0050536C 0050E1FC  33 36 32 5F */	addic r25, r22, 0x325f
-/* 00505370 0050E200  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 00505374 0050E204  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 00505378 0050E208  33 73 74 64 */	addic r27, r19, 0x7464
-/* 0050537C 0050E20C  35 34 70 61 */	addic. r9, r20, 0x7061
-/* 00505380 0050E210  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 00505384 0050E214  51 32 31 39 */	rlwimi. r18, r9, 6, 4, 0x1c
-/* 00505388 0050E218  63 54 53 43 */	ori r20, r26, 0x5343
-/* 0050538C 0050E21C  68 65 61 74 */	xori r5, r3, 0x6174
-/* 00505390 0050E220  43 6F 64 65 */	bdzl+ 0x50b7f4
-/* 00505394 0050E224  4D 61 6E 61 */	.4byte 0x4D616E61  /* unknown instruction */
-/* 00505398 0050E228  67 65 72 31 */	oris r5, r27, 0x7231
-/* 0050539C 0050E22C  31 43 68 65 */	addic r10, r3, 0x6865
-/* 005053A0 0050E230  61 74 53 74 */	ori r20, r11, 0x5374
-/* 005053A4 0050E234  72 4B 65 79 */	andi. r11, r18, 0x6579
-/* 005053A8 0050E238  2C 39 63 54 */	cmpdi r25, 0x6354
-/* 005053AC 0050E23C  53 53 74 72 */	rlwimi r19, r26, 0xe, 0x11, 0x19
-/* 005053B0 0050E240  69 6E 67 3E */	xori r14, r11, 0x673e
-/* 005053B4 0050E244  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 005053B8 0050E248  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 005053BC 0050E24C  38 35 6D 61 */	addi r1, r21, 0x6d61
-/* 005053C0 0050E250  70 3C 51 32 */	andi. r28, r1, 0x5132
-/* 005053C4 0050E254  31 39 63 54 */	addic r9, r25, 0x6354
-/* 005053C8 0050E258  53 43 68 65 */	rlwimi. r3, r26, 0xd, 1, 0x12
-/* 005053CC 0050E25C  61 74 43 6F */	ori r20, r11, 0x436f
-/* 005053D0 0050E260  64 65 4D 61 */	oris r5, r3, 0x4d61
-/* 005053D4 0050E264  6E 61 67 65 */	xoris r1, r19, 0x6765
-/* 005053D8 0050E268  72 31 31 43 */	andi. r17, r17, 0x3143
-/* 005053DC 0050E26C  68 65 61 74 */	xori r5, r3, 0x6174
-/* 005053E0 0050E270  53 74 72 4B */	rlwimi. r20, r27, 0xe, 9, 5
-/* 005053E4 0050E274  65 79 2C 39 */	oris r25, r11, 0x2c39
-/* 005053E8 0050E278  63 54 53 53 */	ori r20, r26, 0x5353
-/* 005053EC 0050E27C  74 72 69 6E */	andis. r18, r3, 0x696e
-/* 005053F0 0050E280  67 2C 51 32 */	oris r12, r25, 0x5132
-/* 005053F4 0050E284  33 73 74 64 */	addic r27, r19, 0x7464
-/* 005053F8 0050E288  34 32 6C 65 */	addic. r1, r18, 0x6c65
-/* 005053FC 0050E28C  73 73 3C 51 */	andi. r19, r27, 0x3c51
-/* 00505400 0050E290  32 31 39 63 */	addic r17, r17, 0x3963
-/* 00505404 0050E294  54 53 43 68 */	rlwinm r19, r2, 8, 0xd, 0x14
-/* 00505408 0050E298  65 61 74 43 */	oris r1, r11, 0x7443
-/* 0050540C 0050E29C  6F 64 65 4D */	xoris r4, r27, 0x654d
-/* 00505410 0050E2A0  61 6E 61 67 */	ori r14, r11, 0x6167
-/* 00505414 0050E2A4  65 72 31 31 */	oris r18, r11, 0x3131
-/* 00505418 0050E2A8  43 68 65 61 */	bdzl+ 0x50b978
-/* 0050541C 0050E2AC  74 53 74 72 */	andis. r19, r2, 0x7472
-/* 00505420 0050E2B0  4B 65 79 3E */	ba 0xffffffffff65793c
-/* 00505424 0050E2B4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 00505428 0050E2B8  73 74 64 37 */	andi. r20, r27, 0x6437
-/* 0050542C 0050E2BC  33 61 6C 6C */	addic r27, r1, 0x6c6c
-/* 00505430 0050E2C0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 00505434 0050E2C4  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 00505438 0050E2C8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0050543C 0050E2CC  64 35 34 70 */	oris r21, r1, 0x3470
-/* 00505440 0050E2D0  61 69 72 3C */	ori r9, r11, 0x723c
-/* 00505444 0050E2D4  43 51 32 31 */	bdzl- 0x508674
-/* 00505448 0050E2D8  39 63 54 53 */	addi r11, r3, 0x5453
-/* 0050544C 0050E2DC  43 68 65 61 */	bdzl+ 0x50b9ac
-/* 00505450 0050E2E0  74 43 6F 64 */	andis. r3, r2, 0x6f64
-/* 00505454 0050E2E4  65 4D 61 6E */	oris r13, r10, 0x616e
-/* 00505458 0050E2E8  61 67 65 72 */	ori r7, r11, 0x6572
-/* 0050545C 0050E2EC  31 31 43 68 */	addic r9, r17, 0x4368
-/* 00505460 0050E2F0  65 61 74 53 */	oris r1, r11, 0x7453
-/* 00505464 0050E2F4  74 72 4B 65 */	andis. r18, r3, 0x4b65
-/* 00505468 0050E2F8  79 2C 39 63 */	rldicl. r12, r9, 0x27, 0x25
-/* 0050546C 0050E2FC  54 53 53 74 */	rlwinm r19, r2, 0xa, 0xd, 0x1a
-/* 00505470 0050E300  72 69 6E 67 */	andi. r9, r19, 0x6e67
-/* 00505474 0050E304  3E 3E 3E 31 */	addis r17, r30, 0x3e31
-/* 00505478 0050E308  33 76 61 6C */	addic r27, r22, 0x616c
-/* 0050547C 0050E30C  75 65 5F 63 */	andis. r5, r11, 0x5f63
-/* 00505480 0050E310  6F 6D 70 61 */	xoris r13, r27, 0x7061
-/* 00505484 0050E314  72 65 2C 51 */	andi. r5, r19, 0x2c51
-/* 00505488 0050E318  32 33 73 74 */	addic r17, r19, 0x7374
-/* 0050548C 0050E31C  64 37 33 61 */	oris r23, r1, 0x3361
-/* 00505490 0050E320  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 00505494 0050E324  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 00505498 0050E328  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 0050549C 0050E32C  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 005054A0 0050E330  34 70 61 69 */	addic. r3, r16, 0x6169
-/* 005054A4 0050E334  72 3C 43 51 */	andi. r28, r17, 0x4351
-/* 005054A8 0050E338  32 31 39 63 */	addic r17, r17, 0x3963
-/* 005054AC 0050E33C  54 53 43 68 */	rlwinm r19, r2, 8, 0xd, 0x14
-/* 005054B0 0050E340  65 61 74 43 */	oris r1, r11, 0x7443
-/* 005054B4 0050E344  6F 64 65 4D */	xoris r4, r27, 0x654d
-/* 005054B8 0050E348  61 6E 61 67 */	ori r14, r11, 0x6167
-/* 005054BC 0050E34C  65 72 31 31 */	oris r18, r11, 0x3131
-/* 005054C0 0050E350  43 68 65 61 */	bdzl+ 0x50ba20
-/* 005054C4 0050E354  74 53 74 72 */	andis. r19, r2, 0x7472
-/* 005054C8 0050E358  4B 65 79 2C */	b lbl_-04A320C
-/* 005054CC 0050E35C  39 63 54 53 */	addi r11, r3, 0x5453
-/* 005054D0 0050E360  53 74 72 69 */	rlwimi. r20, r27, 0xe, 9, 0x14
-/* 005054D4 0050E364  6E 67 3E 3E */	xoris r7, r19, 0x3e3e
-/* 005054D8 0050E368  3E 46 76 00 */	addis r18, r6, 0x7600
-/* 005054DC 0050E36C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".TSPaint__15cTSWinCheatHelpFb"
 ".TSPaint__15cTSWinCheatHelpFb":

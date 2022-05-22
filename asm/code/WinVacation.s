@@ -4137,7 +4137,7 @@ lbl_00437060:
 /* 0043709C 0043FF2C  38 C1 00 B0 */	addi r6, r1, 0xb0
 /* 004370A0 0043FF30  80 04 00 08 */	lwz r0, 8(r4)
 /* 004370A4 0043FF34  90 01 00 AC */	stw r0, 0xac(r1)
-/* 004370A8 0043FF38  4B C7 A5 B9 */	bl func_000B1660
+/* 004370A8 0043FF38  4B C7 A5 B9 */	bl ".erase__Q23std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>FQ33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>Q33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>"
 lbl_004370AC:
 /* 004370AC 0043FF3C  38 61 00 CC */	addi r3, r1, 0xcc
 /* 004370B0 0043FF40  38 80 FF FF */	li r4, -1

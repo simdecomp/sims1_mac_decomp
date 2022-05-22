@@ -109,10 +109,6 @@ sinitNames = []
 
 
 
-# Add entry point
-labels.add(entryPoint)
-labelNames[entryPoint] = '__start'
-
 def addr_to_label(addr):
     if addr in labels:
         if addr in labelNames:
@@ -371,7 +367,7 @@ for i in range(0, textCount):
                         if True:
                             if read_u32(textOffsets[i]+a + 16) <= 0xFFFF:
                                 name_length = read_u16(textOffsets[i]+a + 20)
-                                if (name_length < 255):
+                                if (True):
                                     labels.add(textAddresses[i] + a + 4 - read_u32(textOffsets[i]+a + 16))
                                     s = filecontent[textOffsets[i]+a+22:textOffsets[i]+a+22+name_length]
                                     #print("# %08X: %s" % ((textAddresses[i] + a), s.decode('ascii')))

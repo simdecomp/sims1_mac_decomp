@@ -129,7 +129,6 @@ lbl_004F969C:
 /* 004F96A0 00502530  38 9E 00 38 */	addi r4, r30, 0x38
 /* 004F96A4 00502534  4B B2 CB 3D */	bl ".begin__Q23std42__list_deleter<PCv,Q23std14allocator<PCv>>Fv"
 /* 004F96A8 00502538  38 61 00 40 */	addi r3, r1, 0x40
-lbl_004F96AC:
 /* 004F96AC 0050253C  38 81 00 4C */	addi r4, r1, 0x4c
 /* 004F96B0 00502540  48 00 01 71 */	bl ".__ct__Q33std42list<P6cTSWin,Q23std19allocator<P6cTSWin>>19generic_iterator<0>FQ33std42__list_deleter<PCv,Q23std14allocator<PCv>>19generic_iterator<0>"
 /* 004F96B4 00502544  48 00 00 3C */	b lbl_004F96F0
@@ -160,7 +159,6 @@ lbl_004F96F0:
 /* 004F9710 005025A0  7C 03 00 40 */	cmplw r3, r0
 /* 004F9714 005025A4  40 82 FF A8 */	bne lbl_004F96BC
 /* 004F9718 005025A8  80 01 00 78 */	lwz r0, 0x78(r1)
-lbl_004F971C:
 /* 004F971C 005025AC  38 21 00 70 */	addi r1, r1, 0x70
 /* 004F9720 005025B0  83 E1 FF FC */	lwz r31, -4(r1)
 /* 004F9724 005025B4  7C 08 03 A6 */	mtlr r0
@@ -6510,7 +6508,7 @@ lbl_00500C08:
 /* 00500D10 00509BA0  4B B2 63 31 */	bl ".first__Q310Metrowerks7details48compressed_pair_imp<Q23std14allocator<PCv>,Ul,1>Fv"
 /* 00500D14 00509BA4  38 7F 00 04 */	addi r3, r31, 4
 /* 00500D18 00509BA8  38 81 00 40 */	addi r4, r1, 0x40
-/* 00500D1C 00509BAC  4B B2 6C 75 */	bl func_00027990
+/* 00500D1C 00509BAC  4B B2 6C 75 */	bl ".__ct__Q310Metrowerks7details158compressed_pair_imp<Q23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>,Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>9node_base,1>FRCQ23std66allocator<Q33std42__list_deleter<PCv,Q23std14allocator<PCv>>4node>"
 /* 00500D20 00509BB0  38 9F 00 04 */	addi r4, r31, 4
 /* 00500D24 00509BB4  90 84 00 04 */	stw r4, 4(r4)
 /* 00500D28 00509BB8  7F E3 FB 78 */	mr r3, r31

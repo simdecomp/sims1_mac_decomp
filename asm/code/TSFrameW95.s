@@ -448,7 +448,7 @@ lbl_004AC420:
 /* 004AC4B4 004B5344  48 00 01 4D */	bl ".tail__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004AC4B8 004B5348  80 83 00 00 */	lwz r4, 0(r3)
 /* 004AC4BC 004B534C  7F C3 F3 78 */	mr r3, r30
-/* 004AC4C0 004B5350  48 00 06 F1 */	bl func_004ACBB0
+/* 004AC4C0 004B5350  48 00 06 F1 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004AC4C4:
 /* 004AC4C4 004B5354  7F E0 07 35 */	extsh. r0, r31
 /* 004AC4C8 004B5358  40 81 00 0C */	ble lbl_004AC4D4
@@ -570,7 +570,7 @@ lbl_004AC81C:
 /* 004AC8A8 004B5738  48 00 00 C9 */	bl ".root__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004AC8AC 004B573C  80 83 00 00 */	lwz r4, 0(r3)
 /* 004AC8B0 004B5740  7F C3 F3 78 */	mr r3, r30
-/* 004AC8B4 004B5744  48 00 02 FD */	bl func_004ACBB0
+/* 004AC8B4 004B5744  48 00 02 FD */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004AC8B8:
 /* 004AC8B8 004B5748  7F E0 07 35 */	extsh. r0, r31
 /* 004AC8BC 004B574C  40 81 00 0C */	ble lbl_004AC8C8
@@ -643,8 +643,8 @@ lbl_004ACB60:
 /* 004ACB74 004B5A04  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 004ACB78 004B5A08  4E 80 00 20 */	blr 
 
-.global func_004ACBB0
-func_004ACBB0:
+.global ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
+".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node":
 /* 004ACBB0 004B5A40  93 E1 FF FC */	stw r31, -4(r1)
 /* 004ACBB4 004B5A44  7C 08 02 A6 */	mflr r0
 /* 004ACBB8 004B5A48  7C 9F 23 78 */	mr r31, r4
@@ -663,13 +663,13 @@ func_004ACBB0:
 /* 004ACBEC 004B5A7C  80 9D 00 00 */	lwz r4, 0(r29)
 /* 004ACBF0 004B5A80  28 04 00 00 */	cmplwi r4, 0
 /* 004ACBF4 004B5A84  41 82 00 08 */	beq lbl_004ACBFC
-/* 004ACBF8 004B5A88  4B FF FF B9 */	bl func_004ACBB0
+/* 004ACBF8 004B5A88  4B FF FF B9 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACBFC:
 /* 004ACBFC 004B5A8C  80 9D 00 04 */	lwz r4, 4(r29)
 /* 004ACC00 004B5A90  28 04 00 00 */	cmplwi r4, 0
 /* 004ACC04 004B5A94  41 82 00 0C */	beq lbl_004ACC10
 /* 004ACC08 004B5A98  7F C3 F3 78 */	mr r3, r30
-/* 004ACC0C 004B5A9C  4B FF FF A5 */	bl func_004ACBB0
+/* 004ACC0C 004B5A9C  4B FF FF A5 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACC10:
 /* 004ACC10 004B5AA0  7F C3 F3 78 */	mr r3, r30
 /* 004ACC14 004B5AA4  48 00 09 8D */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -679,7 +679,7 @@ lbl_004ACC10:
 /* 004ACC24 004B5AB4  48 00 07 DD */	bl ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004ACC28 004B5AB8  38 9D 00 00 */	addi r4, r29, 0
 /* 004ACC2C 004B5ABC  38 A0 00 01 */	li r5, 1
-/* 004ACC30 004B5AC0  48 00 05 91 */	bl func_004AD1C0
+/* 004ACC30 004B5AC0  48 00 05 91 */	bl ".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl"
 lbl_004ACC34:
 /* 004ACC34 004B5AC4  83 BC 00 04 */	lwz r29, 4(r28)
 /* 004ACC38 004B5AC8  28 1D 00 00 */	cmplwi r29, 0
@@ -688,13 +688,13 @@ lbl_004ACC34:
 /* 004ACC44 004B5AD4  28 04 00 00 */	cmplwi r4, 0
 /* 004ACC48 004B5AD8  41 82 00 0C */	beq lbl_004ACC54
 /* 004ACC4C 004B5ADC  7F C3 F3 78 */	mr r3, r30
-/* 004ACC50 004B5AE0  4B FF FF 61 */	bl func_004ACBB0
+/* 004ACC50 004B5AE0  4B FF FF 61 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACC54:
 /* 004ACC54 004B5AE4  80 9D 00 04 */	lwz r4, 4(r29)
 /* 004ACC58 004B5AE8  28 04 00 00 */	cmplwi r4, 0
 /* 004ACC5C 004B5AEC  41 82 00 0C */	beq lbl_004ACC68
 /* 004ACC60 004B5AF0  7F C3 F3 78 */	mr r3, r30
-/* 004ACC64 004B5AF4  4B FF FF 4D */	bl func_004ACBB0
+/* 004ACC64 004B5AF4  4B FF FF 4D */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACC68:
 /* 004ACC68 004B5AF8  7F C3 F3 78 */	mr r3, r30
 /* 004ACC6C 004B5AFC  48 00 09 35 */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -704,7 +704,7 @@ lbl_004ACC68:
 /* 004ACC7C 004B5B0C  48 00 07 85 */	bl ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004ACC80 004B5B10  38 9D 00 00 */	addi r4, r29, 0
 /* 004ACC84 004B5B14  38 A0 00 01 */	li r5, 1
-/* 004ACC88 004B5B18  48 00 05 39 */	bl func_004AD1C0
+/* 004ACC88 004B5B18  48 00 05 39 */	bl ".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl"
 lbl_004ACC8C:
 /* 004ACC8C 004B5B1C  7F C3 F3 78 */	mr r3, r30
 /* 004ACC90 004B5B20  48 00 09 11 */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -723,13 +723,13 @@ lbl_004ACCA4:
 /* 004ACCC0 004B5B50  28 04 00 00 */	cmplwi r4, 0
 /* 004ACCC4 004B5B54  41 82 00 0C */	beq lbl_004ACCD0
 /* 004ACCC8 004B5B58  7F C3 F3 78 */	mr r3, r30
-/* 004ACCCC 004B5B5C  4B FF FE E5 */	bl func_004ACBB0
+/* 004ACCCC 004B5B5C  4B FF FE E5 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACCD0:
 /* 004ACCD0 004B5B60  80 9D 00 04 */	lwz r4, 4(r29)
 /* 004ACCD4 004B5B64  28 04 00 00 */	cmplwi r4, 0
 /* 004ACCD8 004B5B68  41 82 00 0C */	beq lbl_004ACCE4
 /* 004ACCDC 004B5B6C  7F C3 F3 78 */	mr r3, r30
-/* 004ACCE0 004B5B70  4B FF FE D1 */	bl func_004ACBB0
+/* 004ACCE0 004B5B70  4B FF FE D1 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACCE4:
 /* 004ACCE4 004B5B74  7F C3 F3 78 */	mr r3, r30
 /* 004ACCE8 004B5B78  48 00 08 B9 */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -739,7 +739,7 @@ lbl_004ACCE4:
 /* 004ACCF8 004B5B88  48 00 07 09 */	bl ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004ACCFC 004B5B8C  38 9D 00 00 */	addi r4, r29, 0
 /* 004ACD00 004B5B90  38 A0 00 01 */	li r5, 1
-/* 004ACD04 004B5B94  48 00 04 BD */	bl func_004AD1C0
+/* 004ACD04 004B5B94  48 00 04 BD */	bl ".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl"
 lbl_004ACD08:
 /* 004ACD08 004B5B98  83 BC 00 04 */	lwz r29, 4(r28)
 /* 004ACD0C 004B5B9C  28 1D 00 00 */	cmplwi r29, 0
@@ -748,13 +748,13 @@ lbl_004ACD08:
 /* 004ACD18 004B5BA8  28 04 00 00 */	cmplwi r4, 0
 /* 004ACD1C 004B5BAC  41 82 00 0C */	beq lbl_004ACD28
 /* 004ACD20 004B5BB0  7F C3 F3 78 */	mr r3, r30
-/* 004ACD24 004B5BB4  4B FF FE 8D */	bl func_004ACBB0
+/* 004ACD24 004B5BB4  4B FF FE 8D */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACD28:
 /* 004ACD28 004B5BB8  80 9D 00 04 */	lwz r4, 4(r29)
 /* 004ACD2C 004B5BBC  28 04 00 00 */	cmplwi r4, 0
 /* 004ACD30 004B5BC0  41 82 00 0C */	beq lbl_004ACD3C
 /* 004ACD34 004B5BC4  7F C3 F3 78 */	mr r3, r30
-/* 004ACD38 004B5BC8  4B FF FE 79 */	bl func_004ACBB0
+/* 004ACD38 004B5BC8  4B FF FE 79 */	bl ".destroy__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node"
 lbl_004ACD3C:
 /* 004ACD3C 004B5BCC  7F C3 F3 78 */	mr r3, r30
 /* 004ACD40 004B5BD0  48 00 08 61 */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -764,7 +764,7 @@ lbl_004ACD3C:
 /* 004ACD50 004B5BE0  48 00 06 B1 */	bl ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 /* 004ACD54 004B5BE4  38 9D 00 00 */	addi r4, r29, 0
 /* 004ACD58 004B5BE8  38 A0 00 01 */	li r5, 1
-/* 004ACD5C 004B5BEC  48 00 04 65 */	bl func_004AD1C0
+/* 004ACD5C 004B5BEC  48 00 04 65 */	bl ".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl"
 lbl_004ACD60:
 /* 004ACD60 004B5BF0  7F C3 F3 78 */	mr r3, r30
 /* 004ACD64 004B5BF4  48 00 08 3D */	bl ".alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
@@ -776,7 +776,7 @@ lbl_004ACD78:
 /* 004ACD78 004B5C08  7F C3 F3 78 */	mr r3, r30
 /* 004ACD7C 004B5C0C  48 00 03 B5 */	bl ".first__Q310Metrowerks7details82compressed_pair_imp<Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>,Ul,1>Fv"
 /* 004ACD80 004B5C10  38 7E 00 04 */	addi r3, r30, 4
-/* 004ACD84 004B5C14  48 00 02 2D */	bl func_004ACFB0
+/* 004ACD84 004B5C14  48 00 02 2D */	bl ".first__Q310Metrowerks7details319compressed_pair_imp<Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
 /* 004ACD88 004B5C18  7F E3 FB 78 */	mr r3, r31
 /* 004ACD8C 004B5C1C  48 0D B9 05 */	bl func_00588690
 /* 004ACD90 004B5C20  80 01 00 58 */	lwz r0, 0x58(r1)
@@ -787,240 +787,17 @@ lbl_004ACD78:
 /* 004ACDA4 004B5C34  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 004ACDA8 004B5C38  83 81 FF F0 */	lwz r28, -0x10(r1)
 /* 004ACDAC 004B5C3C  4E 80 00 20 */	blr 
-/* 004ACDB0 004B5C40  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004ACDB4 004B5C44  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004ACDB8 004B5C48  80 04 00 00 */	lwz r0, 0(r4)
-/* 004ACDBC 004B5C4C  00 00 02 00 */	attn 
-/* 004ACDC0 004B5C50  01 E9 2E 64 */	.4byte 0x01E92E64  /* unknown instruction */
-/* 004ACDC4 004B5C54  65 73 74 72 */	oris r19, r11, 0x7472
-/* 004ACDC8 004B5C58  6F 79 5F 5F */	xoris r25, r27, 0x5f5f
-/* 004ACDCC 004B5C5C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004ACDD0 004B5C60  74 64 32 32 */	andis. r4, r3, 0x3232
-/* 004ACDD4 004B5C64  37 5F 5F 74 */	addic. r26, r31, 0x5f74
-/* 004ACDD8 004B5C68  72 65 65 3C */	andi. r5, r19, 0x653c
-/* 004ACDDC 004B5C6C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004ACDE0 004B5C70  74 64 32 39 */	andis. r4, r3, 0x3239
-/* 004ACDE4 004B5C74  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 004ACDE8 004B5C78  3C 43 55 6C */	addis r2, r3, 0x556c
-/* 004ACDEC 004B5C7C  2C 50 31 36 */	.4byte 0x2C503136  /* unknown instruction */
-/* 004ACDF0 004B5C80  63 49 54 53 */	ori r9, r26, 0x5453
-/* 004ACDF4 004B5C84  4D 65 73 73 */	.4byte 0x4D657373  /* unknown instruction */
-/* 004ACDF8 004B5C88  61 67 65 51 */	ori r7, r11, 0x6551
-/* 004ACDFC 004B5C8C  75 65 75 65 */	andis. r5, r11, 0x7565
-/* 004ACE00 004B5C90  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 004ACE04 004B5C94  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACE08 004B5C98  31 30 30 6D */	addic r9, r16, 0x306d
-/* 004ACE0C 004B5C9C  61 70 3C 55 */	ori r16, r11, 0x3c55
-/* 004ACE10 004B5CA0  6C 2C 50 31 */	xoris r12, r1, 0x5031
-/* 004ACE14 004B5CA4  36 63 49 54 */	addic. r19, r3, 0x4954
-/* 004ACE18 004B5CA8  53 4D 65 73 */	rlwimi. r13, r26, 0xc, 0x15, 0x19
-/* 004ACE1C 004B5CAC  73 61 67 65 */	andi. r1, r27, 0x6765
-/* 004ACE20 004B5CB0  51 75 65 75 */	rlwimi. r21, r11, 0xc, 0x15, 0x1a
-/* 004ACE24 004B5CB4  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 004ACE28 004B5CB8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACE2C 004B5CBC  38 6C 65 73 */	addi r3, r12, 0x6573
-/* 004ACE30 004B5CC0  73 3C 55 6C */	andi. r28, r25, 0x556c
-/* 004ACE34 004B5CC4  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 004ACE38 004B5CC8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACE3C 004B5CCC  34 38 61 6C */	addic. r1, r24, 0x616c
-/* 004ACE40 004B5CD0  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 004ACE44 004B5CD4  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 004ACE48 004B5CD8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004ACE4C 004B5CDC  74 64 32 39 */	andis. r4, r3, 0x3239
-/* 004ACE50 004B5CE0  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 004ACE54 004B5CE4  3C 43 55 6C */	addis r2, r3, 0x556c
-/* 004ACE58 004B5CE8  2C 50 31 36 */	.4byte 0x2C503136  /* unknown instruction */
-/* 004ACE5C 004B5CEC  63 49 54 53 */	ori r9, r26, 0x5453
-/* 004ACE60 004B5CF0  4D 65 73 73 */	.4byte 0x4D657373  /* unknown instruction */
-/* 004ACE64 004B5CF4  61 67 65 51 */	ori r7, r11, 0x6551
-/* 004ACE68 004B5CF8  75 65 75 65 */	andis. r5, r11, 0x7565
-/* 004ACE6C 004B5CFC  3E 3E 3E 31 */	addis r17, r30, 0x3e31
-/* 004ACE70 004B5D00  33 76 61 6C */	addic r27, r22, 0x616c
-/* 004ACE74 004B5D04  75 65 5F 63 */	andis. r5, r11, 0x5f63
-/* 004ACE78 004B5D08  6F 6D 70 61 */	xoris r13, r27, 0x7061
-/* 004ACE7C 004B5D0C  72 65 2C 51 */	andi. r5, r19, 0x2c51
-/* 004ACE80 004B5D10  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004ACE84 004B5D14  64 34 38 61 */	oris r20, r1, 0x3861
-/* 004ACE88 004B5D18  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 004ACE8C 004B5D1C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 004ACE90 004B5D20  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 004ACE94 004B5D24  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 004ACE98 004B5D28  39 70 61 69 */	addi r11, r16, 0x6169
-/* 004ACE9C 004B5D2C  72 3C 43 55 */	andi. r28, r17, 0x4355
-/* 004ACEA0 004B5D30  6C 2C 50 31 */	xoris r12, r1, 0x5031
-/* 004ACEA4 004B5D34  36 63 49 54 */	addic. r19, r3, 0x4954
-/* 004ACEA8 004B5D38  53 4D 65 73 */	rlwimi. r13, r26, 0xc, 0x15, 0x19
-/* 004ACEAC 004B5D3C  73 61 67 65 */	andi. r1, r27, 0x6765
-/* 004ACEB0 004B5D40  51 75 65 75 */	rlwimi. r21, r11, 0xc, 0x15, 0x1a
-/* 004ACEB4 004B5D44  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 004ACEB8 004B5D48  46 50 51 33 */	sc 9
-/* 004ACEBC 004B5D4C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACEC0 004B5D50  32 32 37 5F */	addic r17, r18, 0x375f
-/* 004ACEC4 004B5D54  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 004ACEC8 004B5D58  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 004ACECC 004B5D5C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACED0 004B5D60  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004ACED4 004B5D64  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004ACED8 004B5D68  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004ACEDC 004B5D6C  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004ACEE0 004B5D70  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004ACEE4 004B5D74  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004ACEE8 004B5D78  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004ACEEC 004B5D7C  75 65 3E 2C */	andis. r5, r11, 0x3e2c
-/* 004ACEF0 004B5D80  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004ACEF4 004B5D84  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004ACEF8 004B5D88  30 6D 61 70 */	addic r3, r13, 0x6170
-/* 004ACEFC 004B5D8C  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004ACF00 004B5D90  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004ACF04 004B5D94  49 54 53 4D */	bl func_019F2250
-/* 004ACF08 004B5D98  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004ACF0C 004B5D9C  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004ACF10 004B5DA0  65 75 65 2C */	oris r21, r11, 0x652c
-/* 004ACF14 004B5DA4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004ACF18 004B5DA8  74 64 38 6C */	andis. r4, r3, 0x386c
-/* 004ACF1C 004B5DAC  65 73 73 3C */	oris r19, r11, 0x733c
-/* 004ACF20 004B5DB0  55 6C 3E 2C */	rlwinm r12, r11, 7, 0x18, 0x16
-/* 004ACF24 004B5DB4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004ACF28 004B5DB8  74 64 34 38 */	andis. r4, r3, 0x3438
-/* 004ACF2C 004B5DBC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004ACF30 004B5DC0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004ACF34 004B5DC4  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004ACF38 004B5DC8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004ACF3C 004B5DCC  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004ACF40 004B5DD0  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004ACF44 004B5DD4  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004ACF48 004B5DD8  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004ACF4C 004B5DDC  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004ACF50 004B5DE0  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004ACF54 004B5DE4  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004ACF58 004B5DE8  75 65 3E 3E */	andis. r5, r11, 0x3e3e
-/* 004ACF5C 004B5DEC  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 004ACF60 004B5DF0  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 004ACF64 004B5DF4  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 004ACF68 004B5DF8  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 004ACF6C 004B5DFC  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004ACF70 004B5E00  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 004ACF74 004B5E04  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004ACF78 004B5E08  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004ACF7C 004B5E0C  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004ACF80 004B5E10  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004ACF84 004B5E14  64 32 39 70 */	oris r18, r1, 0x3970
-/* 004ACF88 004B5E18  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004ACF8C 004B5E1C  43 55 6C 2C */	bdz- lbl_004B3BB8
-/* 004ACF90 004B5E20  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004ACF94 004B5E24  49 54 53 4D */	bl func_019F22E0
-/* 004ACF98 004B5E28  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004ACF9C 004B5E2C  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004ACFA0 004B5E30  65 75 65 3E */	oris r21, r11, 0x653e
-/* 004ACFA4 004B5E34  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004ACFA8 004B5E38  6F 64 65 00 */	xoris r4, r27, 0x6500
-/* 004ACFAC 004B5E3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_004ACFB0
-func_004ACFB0:
+.global ".first__Q310Metrowerks7details319compressed_pair_imp<Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+".first__Q310Metrowerks7details319compressed_pair_imp<Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
 /* 004ACFB0 004B5E40  4E 80 00 20 */	blr 
-/* 004ACFB4 004B5E44  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004ACFB8 004B5E48  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 004ACFBC 004B5E4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004ACFC0 004B5E50  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 004ACFC4 004B5E54  01 62 2E 66 */	.4byte 0x01622E66  /* unknown instruction */
-/* 004ACFC8 004B5E58  69 72 73 74 */	xori r18, r11, 0x7374
-/* 004ACFCC 004B5E5C  5F 5F 51 33 */	rlwnm. r31, r26, r10, 4, 0x19
-/* 004ACFD0 004B5E60  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 004ACFD4 004B5E64  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 004ACFD8 004B5E68  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 004ACFDC 004B5E6C  37 64 65 74 */	addic. r27, r4, 0x6574
-/* 004ACFE0 004B5E70  61 69 6C 73 */	ori r9, r11, 0x6c73
-/* 004ACFE4 004B5E74  33 31 39 63 */	addic r25, r17, 0x3963
-/* 004ACFE8 004B5E78  6F 6D 70 72 */	xoris r13, r27, 0x7072
-/* 004ACFEC 004B5E7C  65 73 73 65 */	oris r19, r11, 0x7365
-/* 004ACFF0 004B5E80  64 5F 70 61 */	oris r31, r2, 0x7061
-/* 004ACFF4 004B5E84  69 72 5F 69 */	xori r18, r11, 0x5f69
-/* 004ACFF8 004B5E88  6D 70 3C 51 */	xoris r16, r11, 0x3c51
-/* 004ACFFC 004B5E8C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004AD000 004B5E90  64 32 35 32 */	oris r18, r1, 0x3532
-/* 004AD004 004B5E94  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004AD008 004B5E98  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004AD00C 004B5E9C  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004AD010 004B5EA0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD014 004B5EA4  32 32 37 5F */	addic r17, r18, 0x375f
-/* 004AD018 004B5EA8  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 004AD01C 004B5EAC  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 004AD020 004B5EB0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD024 004B5EB4  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD028 004B5EB8  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD02C 004B5EBC  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD030 004B5EC0  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD034 004B5EC4  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD038 004B5EC8  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD03C 004B5ECC  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD040 004B5ED0  75 65 3E 2C */	andis. r5, r11, 0x3e2c
-/* 004AD044 004B5ED4  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004AD048 004B5ED8  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004AD04C 004B5EDC  30 6D 61 70 */	addic r3, r13, 0x6170
-/* 004AD050 004B5EE0  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004AD054 004B5EE4  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD058 004B5EE8  49 54 53 4D */	bl func_019F23A4
-/* 004AD05C 004B5EEC  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD060 004B5EF0  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD064 004B5EF4  65 75 65 2C */	oris r21, r11, 0x652c
-/* 004AD068 004B5EF8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD06C 004B5EFC  74 64 38 6C */	andis. r4, r3, 0x386c
-/* 004AD070 004B5F00  65 73 73 3C */	oris r19, r11, 0x733c
-/* 004AD074 004B5F04  55 6C 3E 2C */	rlwinm r12, r11, 7, 0x18, 0x16
-/* 004AD078 004B5F08  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD07C 004B5F0C  74 64 34 38 */	andis. r4, r3, 0x3438
-/* 004AD080 004B5F10  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004AD084 004B5F14  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004AD088 004B5F18  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004AD08C 004B5F1C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD090 004B5F20  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD094 004B5F24  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD098 004B5F28  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD09C 004B5F2C  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD0A0 004B5F30  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD0A4 004B5F34  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD0A8 004B5F38  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD0AC 004B5F3C  75 65 3E 3E */	andis. r5, r11, 0x3e3e
-/* 004AD0B0 004B5F40  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 004AD0B4 004B5F44  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 004AD0B8 004B5F48  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 004AD0BC 004B5F4C  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 004AD0C0 004B5F50  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004AD0C4 004B5F54  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 004AD0C8 004B5F58  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004AD0CC 004B5F5C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004AD0D0 004B5F60  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004AD0D4 004B5F64  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004AD0D8 004B5F68  64 32 39 70 */	oris r18, r1, 0x3970
-/* 004AD0DC 004B5F6C  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004AD0E0 004B5F70  43 55 6C 2C */	bdz- lbl_004B3D0C
-/* 004AD0E4 004B5F74  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD0E8 004B5F78  49 54 53 4D */	bl func_019F2434
-/* 004AD0EC 004B5F7C  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD0F0 004B5F80  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD0F4 004B5F84  65 75 65 3E */	oris r21, r11, 0x653e
-/* 004AD0F8 004B5F88  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004AD0FC 004B5F8C  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004AD100 004B5F90  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 004AD104 004B5F94  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 004AD108 004B5F98  39 5F 5F 72 */	addi r10, r31, 0x5f72
-/* 004AD10C 004B5F9C  65 64 5F 62 */	oris r4, r11, 0x5f62
-/* 004AD110 004B5FA0  6C 61 63 6B */	xoris r1, r3, 0x636b
-/* 004AD114 004B5FA4  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 004AD118 004B5FA8  65 3C 31 3E */	oris r28, r9, 0x313e
-/* 004AD11C 004B5FAC  36 61 6E 63 */	addic. r19, r1, 0x6e63
-/* 004AD120 004B5FB0  68 6F 72 2C */	xori r15, r3, 0x722c
-/* 004AD124 004B5FB4  31 3E 46 76 */	addic r9, r30, 0x4676
-/* 004AD128 004B5FB8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004AD12C 004B5FBC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".first__Q310Metrowerks7details82compressed_pair_imp<Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>,Ul,1>Fv"
 ".first__Q310Metrowerks7details82compressed_pair_imp<Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>,Ul,1>Fv":
 /* 004AD130 004B5FC0  4E 80 00 20 */	blr 
 
-.global func_004AD1C0
-func_004AD1C0:
+.global ".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl"
+".deallocate__Q23std252allocator<Q33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4node>FPQ33std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>4nodeUl":
 /* 004AD1C0 004B6050  7C 08 02 A6 */	mflr r0
 /* 004AD1C4 004B6054  7C 83 23 78 */	mr r3, r4
 /* 004AD1C8 004B6058  90 01 00 08 */	stw r0, 8(r1)
@@ -1030,141 +807,6 @@ func_004AD1C0:
 /* 004AD1D8 004B6068  38 21 00 40 */	addi r1, r1, 0x40
 /* 004AD1DC 004B606C  7C 08 03 A6 */	mtlr r0
 /* 004AD1E0 004B6070  4E 80 00 20 */	blr 
-/* 004AD1E4 004B6074  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 004AD1E8 004B6078  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 004AD1EC 004B607C  80 00 00 00 */	lwz r0, 0(0)
-/* 004AD1F0 004B6080  00 00 00 24 */	.4byte 0x00000024  /* unknown instruction */
-/* 004AD1F4 004B6084  02 07 2E 64 */	.4byte 0x02072E64  /* unknown instruction */
-/* 004AD1F8 004B6088  65 61 6C 6C */	oris r1, r11, 0x6c6c
-/* 004AD1FC 004B608C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004AD200 004B6090  65 5F 5F 51 */	oris r31, r10, 0x5f51
-/* 004AD204 004B6094  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004AD208 004B6098  64 32 35 32 */	oris r18, r1, 0x3532
-/* 004AD20C 004B609C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004AD210 004B60A0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004AD214 004B60A4  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 004AD218 004B60A8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD21C 004B60AC  32 32 37 5F */	addic r17, r18, 0x375f
-/* 004AD220 004B60B0  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 004AD224 004B60B4  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 004AD228 004B60B8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD22C 004B60BC  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD230 004B60C0  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD234 004B60C4  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD238 004B60C8  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD23C 004B60CC  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD240 004B60D0  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD244 004B60D4  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD248 004B60D8  75 65 3E 2C */	andis. r5, r11, 0x3e2c
-/* 004AD24C 004B60DC  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004AD250 004B60E0  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004AD254 004B60E4  30 6D 61 70 */	addic r3, r13, 0x6170
-/* 004AD258 004B60E8  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004AD25C 004B60EC  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD260 004B60F0  49 54 53 4D */	bl func_019F25AC
-/* 004AD264 004B60F4  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD268 004B60F8  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD26C 004B60FC  65 75 65 2C */	oris r21, r11, 0x652c
-/* 004AD270 004B6100  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD274 004B6104  74 64 38 6C */	andis. r4, r3, 0x386c
-/* 004AD278 004B6108  65 73 73 3C */	oris r19, r11, 0x733c
-/* 004AD27C 004B610C  55 6C 3E 2C */	rlwinm r12, r11, 7, 0x18, 0x16
-/* 004AD280 004B6110  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD284 004B6114  74 64 34 38 */	andis. r4, r3, 0x3438
-/* 004AD288 004B6118  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004AD28C 004B611C  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004AD290 004B6120  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004AD294 004B6124  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD298 004B6128  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD29C 004B612C  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD2A0 004B6130  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD2A4 004B6134  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD2A8 004B6138  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD2AC 004B613C  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD2B0 004B6140  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD2B4 004B6144  75 65 3E 3E */	andis. r5, r11, 0x3e3e
-/* 004AD2B8 004B6148  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 004AD2BC 004B614C  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 004AD2C0 004B6150  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 004AD2C4 004B6154  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 004AD2C8 004B6158  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004AD2CC 004B615C  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 004AD2D0 004B6160  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004AD2D4 004B6164  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004AD2D8 004B6168  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004AD2DC 004B616C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004AD2E0 004B6170  64 32 39 70 */	oris r18, r1, 0x3970
-/* 004AD2E4 004B6174  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004AD2E8 004B6178  43 55 6C 2C */	bdz- lbl_004B3F14
-/* 004AD2EC 004B617C  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD2F0 004B6180  49 54 53 4D */	bl func_019F263C
-/* 004AD2F4 004B6184  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD2F8 004B6188  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD2FC 004B618C  65 75 65 3E */	oris r21, r11, 0x653e
-/* 004AD300 004B6190  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004AD304 004B6194  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 004AD308 004B6198  46 50 51 33 */	sc 9
-/* 004AD30C 004B619C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD310 004B61A0  32 32 37 5F */	addic r17, r18, 0x375f
-/* 004AD314 004B61A4  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 004AD318 004B61A8  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 004AD31C 004B61AC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD320 004B61B0  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD324 004B61B4  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD328 004B61B8  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD32C 004B61BC  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD330 004B61C0  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD334 004B61C4  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD338 004B61C8  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD33C 004B61CC  75 65 3E 2C */	andis. r5, r11, 0x3e2c
-/* 004AD340 004B61D0  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 004AD344 004B61D4  74 64 31 30 */	andis. r4, r3, 0x3130
-/* 004AD348 004B61D8  30 6D 61 70 */	addic r3, r13, 0x6170
-/* 004AD34C 004B61DC  3C 55 6C 2C */	addis r2, r21, 0x6c2c
-/* 004AD350 004B61E0  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD354 004B61E4  49 54 53 4D */	bl func_019F26A0
-/* 004AD358 004B61E8  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD35C 004B61EC  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD360 004B61F0  65 75 65 2C */	oris r21, r11, 0x652c
-/* 004AD364 004B61F4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD368 004B61F8  74 64 38 6C */	andis. r4, r3, 0x386c
-/* 004AD36C 004B61FC  65 73 73 3C */	oris r19, r11, 0x733c
-/* 004AD370 004B6200  55 6C 3E 2C */	rlwinm r12, r11, 7, 0x18, 0x16
-/* 004AD374 004B6204  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 004AD378 004B6208  74 64 34 38 */	andis. r4, r3, 0x3438
-/* 004AD37C 004B620C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 004AD380 004B6210  63 61 74 6F */	ori r1, r27, 0x746f
-/* 004AD384 004B6214  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 004AD388 004B6218  33 73 74 64 */	addic r27, r19, 0x7464
-/* 004AD38C 004B621C  32 39 70 61 */	addic r17, r25, 0x7061
-/* 004AD390 004B6220  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 004AD394 004B6224  55 6C 2C 50 */	rlwinm r12, r11, 5, 0x11, 8
-/* 004AD398 004B6228  31 36 63 49 */	addic r9, r22, 0x6349
-/* 004AD39C 004B622C  54 53 4D 65 */	rlwinm. r19, r2, 9, 0x15, 0x12
-/* 004AD3A0 004B6230  73 73 61 67 */	andi. r19, r27, 0x6167
-/* 004AD3A4 004B6234  65 51 75 65 */	oris r17, r10, 0x7565
-/* 004AD3A8 004B6238  75 65 3E 3E */	andis. r5, r11, 0x3e3e
-/* 004AD3AC 004B623C  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 004AD3B0 004B6240  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 004AD3B4 004B6244  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 004AD3B8 004B6248  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 004AD3BC 004B624C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 004AD3C0 004B6250  73 74 64 34 */	andi. r20, r27, 0x6434
-/* 004AD3C4 004B6254  38 61 6C 6C */	addi r3, r1, 0x6c6c
-/* 004AD3C8 004B6258  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 004AD3CC 004B625C  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 004AD3D0 004B6260  32 33 73 74 */	addic r17, r19, 0x7374
-/* 004AD3D4 004B6264  64 32 39 70 */	oris r18, r1, 0x3970
-/* 004AD3D8 004B6268  61 69 72 3C */	ori r9, r11, 0x723c
-/* 004AD3DC 004B626C  43 55 6C 2C */	bdz- lbl_004B4008
-/* 004AD3E0 004B6270  50 31 36 63 */	rlwimi. r17, r1, 6, 0x19, 0x11
-/* 004AD3E4 004B6274  49 54 53 4D */	bl func_019F2730
-/* 004AD3E8 004B6278  65 73 73 61 */	oris r19, r11, 0x7361
-/* 004AD3EC 004B627C  67 65 51 75 */	oris r5, r27, 0x5175
-/* 004AD3F0 004B6280  65 75 65 3E */	oris r21, r11, 0x653e
-/* 004AD3F4 004B6284  3E 3E 34 6E */	addis r17, r30, 0x346e
-/* 004AD3F8 004B6288  6F 64 65 55 */	xoris r4, r27, 0x6555
-/* 004AD3FC 004B628C  6C 00 00 00 */	xoris r0, r0, 0
 
 .global ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv"
 ".node_alloc__Q23std227__tree<Q23std29pair<CUl,P16cITSMessageQueue>,Q33std100map<Ul,P16cITSMessageQueue,Q23std8less<Ul>,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>13value_compare,Q23std48allocator<Q23std29pair<CUl,P16cITSMessageQueue>>>Fv":

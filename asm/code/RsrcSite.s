@@ -748,7 +748,6 @@ lbl_003EE964:
 /* 003EE964 003F77F4  7F 83 E3 78 */	mr r3, r28
 /* 003EE968 003F77F8  4B E2 75 E9 */	bl ".alloc__Q23std58__vector_deleter<9CTGString,Q23std21allocator<9CTGString>>CFv"
 /* 003EE96C 003F77FC  4B E2 75 95 */	bl ".max_size__Q23std21allocator<9CTGString>CFv"
-lbl_003EE970:
 /* 003EE970 003F7800  80 1F 00 40 */	lwz r0, 0x40(r31)
 /* 003EE974 003F7804  7C 00 18 40 */	cmplw r0, r3
 /* 003EE978 003F7808  40 81 00 28 */	ble lbl_003EE9A0

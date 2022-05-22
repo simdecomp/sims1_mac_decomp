@@ -103,7 +103,6 @@ lbl_00492F4C:
 /* 00492F6C 0049BDFC  38 7B 00 04 */	addi r3, r27, 4
 /* 00492F70 0049BE00  4B FF FE 51 */	bl ".__vc__Q23std56__vector_imp<9cTSString,Q23std21allocator<9cTSString>,0>CFUl"
 /* 00492F74 0049BE04  4B B9 92 7D */	bl ".data__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
-lbl_00492F78:
 /* 00492F78 0049BE08  38 9C 00 00 */	addi r4, r28, 0
 /* 00492F7C 0049BE0C  38 B9 FF FF */	addi r5, r25, -1
 /* 00492F80 0049BE10  38 63 00 01 */	addi r3, r3, 1

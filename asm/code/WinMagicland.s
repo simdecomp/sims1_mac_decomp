@@ -4125,7 +4125,6 @@ lbl_00579B9C:
 /* 00579CA8 00582B38  93 41 05 A8 */	stw r26, 0x5a8(r1)
 /* 00579CAC 00582B3C  38 81 05 A0 */	addi r4, r1, 0x5a0
 /* 00579CB0 00582B40  80 79 00 00 */	lwz r3, 0(r25)
-lbl_00579CB4:
 /* 00579CB4 00582B44  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 00579CB8 00582B48  4B B3 28 69 */	bl ".GetDirectory__12NeighborhoodFP16StackString<260>"
 /* 00579CBC 00582B4C  38 61 05 A0 */	addi r3, r1, 0x5a0
@@ -4140,7 +4139,6 @@ lbl_00579CB4:
 /* 00579CE0 00582B70  4B BB E7 C1 */	bl ".Open__10StdResFileFRC16StackString<260>b"
 /* 00579CE4 00582B74  3A A3 00 00 */	addi r21, r3, 0
 /* 00579CE8 00582B78  38 61 02 A8 */	addi r3, r1, 0x2a8
-lbl_00579CEC:
 /* 00579CEC 00582B7C  4B BC 35 75 */	bl ".__ct__13StringSetBaseFv"
 /* 00579CF0 00582B80  7E A0 07 35 */	extsh. r0, r21
 /* 00579CF4 00582B84  93 E1 03 10 */	stw r31, 0x310(r1)
@@ -4163,7 +4161,6 @@ lbl_00579CEC:
 /* 00579D38 00582BC8  38 61 00 54 */	addi r3, r1, 0x54
 /* 00579D3C 00582BCC  4B F7 1B 45 */	bl ".ToChar__9cTSStringCFv"
 /* 00579D40 00582BD0  38 A3 00 00 */	addi r5, r3, 0
-lbl_00579D44:
 /* 00579D44 00582BD4  38 61 02 A8 */	addi r3, r1, 0x2a8
 /* 00579D48 00582BD8  38 80 00 02 */	li r4, 2
 /* 00579D4C 00582BDC  38 C0 FF FF */	li r6, -1
@@ -4334,7 +4331,7 @@ lbl_00579F70:
 /* 00579FAC 00582E3C  38 C1 00 8C */	addi r6, r1, 0x8c
 /* 00579FB0 00582E40  80 04 00 08 */	lwz r0, 8(r4)
 /* 00579FB4 00582E44  90 01 00 88 */	stw r0, 0x88(r1)
-/* 00579FB8 00582E48  4B B3 76 A9 */	bl func_000B1660
+/* 00579FB8 00582E48  4B B3 76 A9 */	bl ".erase__Q23std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>FQ33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>Q33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>"
 lbl_00579FBC:
 /* 00579FBC 00582E4C  38 61 00 A4 */	addi r3, r1, 0xa4
 /* 00579FC0 00582E50  38 80 FF FF */	li r4, -1
@@ -5248,7 +5245,7 @@ lbl_0057AD40:
 /* 0057AD7C 00583C0C  38 C1 00 BC */	addi r6, r1, 0xbc
 /* 0057AD80 00583C10  80 04 00 08 */	lwz r0, 8(r4)
 /* 0057AD84 00583C14  90 01 00 B8 */	stw r0, 0xb8(r1)
-/* 0057AD88 00583C18  4B B3 68 D9 */	bl func_000B1660
+/* 0057AD88 00583C18  4B B3 68 D9 */	bl ".erase__Q23std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>FQ33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>Q33std74__list_deleter<17cTSDirectoryEntry,Q23std30allocator<17cTSDirectoryEntry>>19generic_iterator<0>"
 lbl_0057AD8C:
 /* 0057AD8C 00583C1C  38 61 00 D4 */	addi r3, r1, 0xd4
 /* 0057AD90 00583C20  38 80 FF FF */	li r4, -1

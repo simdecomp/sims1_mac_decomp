@@ -78,7 +78,7 @@ lbl_001A4000:
 /* 001A4078 001ACF08  38 9F 00 00 */	addi r4, r31, 0
 /* 001A407C 001ACF0C  38 61 00 40 */	addi r3, r1, 0x40
 /* 001A4080 001ACF10  38 A1 00 7C */	addi r5, r1, 0x7c
-/* 001A4084 001ACF14  48 00 38 4D */	bl func_001A78D0
+/* 001A4084 001ACF14  48 00 38 4D */	bl ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
 /* 001A4088 001ACF18  80 61 00 40 */	lwz r3, 0x40(r1)
 /* 001A408C 001ACF1C  38 1F 00 04 */	addi r0, r31, 4
 /* 001A4090 001ACF20  7C 03 00 40 */	cmplw r3, r0
@@ -107,7 +107,7 @@ lbl_001A40AC:
 /* 001A4128 001ACFB8  38 9F 00 00 */	addi r4, r31, 0
 /* 001A412C 001ACFBC  38 61 00 40 */	addi r3, r1, 0x40
 /* 001A4130 001ACFC0  38 A1 00 7C */	addi r5, r1, 0x7c
-/* 001A4134 001ACFC4  48 00 37 9D */	bl func_001A78D0
+/* 001A4134 001ACFC4  48 00 37 9D */	bl ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
 /* 001A4138 001ACFC8  80 61 00 40 */	lwz r3, 0x40(r1)
 /* 001A413C 001ACFCC  38 1F 00 04 */	addi r0, r31, 4
 /* 001A4140 001ACFD0  7C 03 00 40 */	cmplw r3, r0
@@ -155,7 +155,7 @@ lbl_001A4158:
 /* 001A42B8 001AD148  38 9F 00 00 */	addi r4, r31, 0
 /* 001A42BC 001AD14C  38 61 00 40 */	addi r3, r1, 0x40
 /* 001A42C0 001AD150  38 A1 00 7C */	addi r5, r1, 0x7c
-/* 001A42C4 001AD154  48 00 36 0D */	bl func_001A78D0
+/* 001A42C4 001AD154  48 00 36 0D */	bl ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
 /* 001A42C8 001AD158  80 81 00 40 */	lwz r4, 0x40(r1)
 /* 001A42CC 001AD15C  38 1F 00 04 */	addi r0, r31, 4
 /* 001A42D0 001AD160  7C 64 00 50 */	subf r3, r4, r0
@@ -185,7 +185,7 @@ lbl_001A4158:
 /* 001A4370 001AD200  38 61 00 40 */	addi r3, r1, 0x40
 /* 001A4374 001AD204  38 A1 00 7C */	addi r5, r1, 0x7c
 /* 001A4378 001AD208  38 9C 00 00 */	addi r4, r28, 0
-/* 001A437C 001AD20C  48 00 35 55 */	bl func_001A78D0
+/* 001A437C 001AD20C  48 00 35 55 */	bl ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
 /* 001A4380 001AD210  80 61 00 40 */	lwz r3, 0x40(r1)
 /* 001A4384 001AD214  38 1C 00 04 */	addi r0, r28, 4
 /* 001A4388 001AD218  7C 03 00 40 */	cmplw r3, r0
@@ -444,7 +444,7 @@ lbl_001A4788:
 /* 001A4798 001AD628  38 9D 00 00 */	addi r4, r29, 0
 /* 001A479C 001AD62C  38 61 00 44 */	addi r3, r1, 0x44
 /* 001A47A0 001AD630  38 A1 00 48 */	addi r5, r1, 0x48
-/* 001A47A4 001AD634  48 00 31 2D */	bl func_001A78D0
+/* 001A47A4 001AD634  48 00 31 2D */	bl ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
 /* 001A47A8 001AD638  80 61 00 44 */	lwz r3, 0x44(r1)
 /* 001A47AC 001AD63C  38 1D 00 04 */	addi r0, r29, 4
 /* 001A47B0 001AD640  7C 03 00 40 */	cmplw r3, r0
@@ -1736,7 +1736,7 @@ lbl_001A5CD0:
 /* 001A5CD8 001AEB68  38 61 00 70 */	addi r3, r1, 0x70
 /* 001A5CDC 001AEB6C  38 A1 00 68 */	addi r5, r1, 0x68
 /* 001A5CE0 001AEB70  92 41 00 6C */	stw r18, 0x6c(r1)
-/* 001A5CE4 001AEB74  48 00 4A 8D */	bl func_001AA770
+/* 001A5CE4 001AEB74  48 00 4A 8D */	bl ".insert_one__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 lbl_001A5CE8:
 /* 001A5CE8 001AEB78  3B DE 00 01 */	addi r30, r30, 1
 lbl_001A5CEC:
@@ -2075,7 +2075,7 @@ lbl_001A6224:
 /* 001A622C 001AF0BC  38 61 00 50 */	addi r3, r1, 0x50
 /* 001A6230 001AF0C0  38 A1 00 48 */	addi r5, r1, 0x48
 /* 001A6234 001AF0C4  92 81 00 4C */	stw r20, 0x4c(r1)
-/* 001A6238 001AF0C8  48 00 45 39 */	bl func_001AA770
+/* 001A6238 001AF0C8  48 00 45 39 */	bl ".insert_one__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A623C 001AF0CC  3A B5 00 01 */	addi r21, r21, 1
 /* 001A6240 001AF0D0  3A D6 00 03 */	addi r22, r22, 3
 /* 001A6244 001AF0D4  2C 15 00 1D */	cmpwi r21, 0x1d
@@ -2412,7 +2412,7 @@ lbl_001A6690:
 /* 001A674C 001AF5DC  38 C1 00 48 */	addi r6, r1, 0x48
 /* 001A6750 001AF5E0  80 1A 00 08 */	lwz r0, 8(r26)
 /* 001A6754 001AF5E4  90 01 00 44 */	stw r0, 0x44(r1)
-/* 001A6758 001AF5E8  48 00 2C 09 */	bl func_001A9360
+/* 001A6758 001AF5E8  48 00 2C 09 */	bl ".erase__Q23std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>FQ33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>Q33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>"
 lbl_001A675C:
 /* 001A675C 001AF5EC  7F 43 D3 78 */	mr r3, r26
 /* 001A6760 001AF5F0  48 3E 1F 31 */	bl func_00588690
@@ -2517,7 +2517,7 @@ lbl_001A68AC:
 /* 001A68BC 001AF74C  28 04 00 00 */	cmplwi r4, 0
 /* 001A68C0 001AF750  41 82 00 0C */	beq lbl_001A68CC
 /* 001A68C4 001AF754  7F A3 EB 78 */	mr r3, r29
-/* 001A68C8 001AF758  48 00 30 89 */	bl func_001A9950
+/* 001A68C8 001AF758  48 00 30 89 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A68CC:
 /* 001A68CC 001AF75C  7F C0 07 35 */	extsh. r0, r30
 /* 001A68D0 001AF760  40 81 00 0C */	ble lbl_001A68DC
@@ -2544,7 +2544,7 @@ lbl_001A68DC:
 /* 001A6950 001AF7E0  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 001A6954 001AF7E4  38 81 00 40 */	addi r4, r1, 0x40
 /* 001A6958 001AF7E8  38 A1 00 44 */	addi r5, r1, 0x44
-/* 001A695C 001AF7EC  48 00 40 45 */	bl func_001AA9A0
+/* 001A695C 001AF7EC  48 00 40 45 */	bl ".__ct__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compareRCQ23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>"
 /* 001A6960 001AF7F0  38 00 00 00 */	li r0, 0
 /* 001A6964 001AF7F4  3B BE 00 40 */	addi r29, r30, 0x40
 /* 001A6968 001AF7F8  90 1E 00 1C */	stw r0, 0x1c(r30)
@@ -2684,7 +2684,7 @@ lbl_001A6BAC:
 /* 001A6C74 001AFB04  80 9E 00 04 */	lwz r4, 4(r30)
 /* 001A6C78 001AFB08  28 04 00 00 */	cmplwi r4, 0
 /* 001A6C7C 001AFB0C  41 82 00 08 */	beq lbl_001A6C84
-/* 001A6C80 001AFB10  48 00 2C D1 */	bl func_001A9950
+/* 001A6C80 001AFB10  48 00 2C D1 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A6C84:
 /* 001A6C84 001AFB14  7F E0 07 35 */	extsh. r0, r31
 /* 001A6C88 001AFB18  40 81 00 0C */	ble lbl_001A6C94
@@ -3152,8 +3152,8 @@ lbl_001A787C:
 /* 001A7890 001B0720  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 001A7894 001B0724  4E 80 00 20 */	blr 
 
-.global func_001A78D0
-func_001A78D0:
+.global ".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>"
+".find<12FloorPattern>__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRC12FloorPattern_Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>21__generic_iterator<0>":
 /* 001A78D0 001B0760  81 04 00 04 */	lwz r8, 4(r4)
 /* 001A78D4 001B0764  38 E4 00 04 */	addi r7, r4, 4
 /* 001A78D8 001B0768  48 00 00 28 */	b lbl_001A7900
@@ -3185,168 +3185,6 @@ lbl_001A7924:
 lbl_001A7930:
 /* 001A7930 001B07C0  90 E3 00 00 */	stw r7, 0(r3)
 /* 001A7934 001B07C4  4E 80 00 20 */	blr 
-/* 001A7938 001B07C8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A793C 001B07CC  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 001A7940 001B07D0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A7944 001B07D4  00 00 00 68 */	.4byte 0x00000068  /* unknown instruction */
-/* 001A7948 001B07D8  02 6E 2E 66 */	.4byte 0x026E2E66  /* unknown instruction */
-/* 001A794C 001B07DC  69 6E 64 3C */	xori r14, r11, 0x643c
-/* 001A7950 001B07E0  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A7954 001B07E4  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A7958 001B07E8  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A795C 001B07EC  72 6E 3E 5F */	andi. r14, r19, 0x3e5f
-/* 001A7960 001B07F0  5F 51 32 33 */	rlwnm. r17, r26, r6, 8, 0x19
-/* 001A7964 001B07F4  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001A7968 001B07F8  37 30 5F 5F */	addic. r25, r16, 0x5f5f
-/* 001A796C 001B07FC  74 72 65 65 */	andis. r18, r3, 0x6565
-/* 001A7970 001B0800  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001A7974 001B0804  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001A7978 001B0808  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001A797C 001B080C  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001A7980 001B0810  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A7984 001B0814  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A7988 001B0818  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A798C 001B081C  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001A7990 001B0820  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001A7994 001B0824  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001A7998 001B0828  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001A799C 001B082C  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 001A79A0 001B0830  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A79A4 001B0834  31 32 39 6D */	addic r9, r18, 0x396d
-/* 001A79A8 001B0838  61 70 3C 43 */	ori r16, r11, 0x3c43
-/* 001A79AC 001B083C  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A79B0 001B0840  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A79B4 001B0844  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A79B8 001B0848  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A79BC 001B084C  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A79C0 001B0850  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A79C4 001B0854  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A79C8 001B0858  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001A79CC 001B085C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A79D0 001B0860  32 31 6C 65 */	addic r17, r17, 0x6c65
-/* 001A79D4 001B0864  73 73 3C 43 */	andi. r19, r27, 0x3c43
-/* 001A79D8 001B0868  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A79DC 001B086C  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A79E0 001B0870  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A79E4 001B0874  72 6E 3E 2C */	andi. r14, r19, 0x3e2c
-/* 001A79E8 001B0878  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A79EC 001B087C  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001A79F0 001B0880  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001A79F4 001B0884  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001A79F8 001B0888  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001A79FC 001B088C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A7A00 001B0890  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A7A04 001B0894  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A7A08 001B0898  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A7A0C 001B089C  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A7A10 001B08A0  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A7A14 001B08A4  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A7A18 001B08A8  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A7A1C 001B08AC  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A7A20 001B08B0  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A7A24 001B08B4  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001A7A28 001B08B8  31 33 76 61 */	addic r9, r19, 0x7661
-/* 001A7A2C 001B08BC  6C 75 65 5F */	xoris r21, r3, 0x655f
-/* 001A7A30 001B08C0  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 001A7A34 001B08C4  61 72 65 2C */	ori r18, r11, 0x652c
-/* 001A7A38 001B08C8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A7A3C 001B08CC  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001A7A40 001B08D0  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001A7A44 001B08D4  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001A7A48 001B08D8  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001A7A4C 001B08DC  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A7A50 001B08E0  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A7A54 001B08E4  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A7A58 001B08E8  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A7A5C 001B08EC  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A7A60 001B08F0  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A7A64 001B08F4  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A7A68 001B08F8  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A7A6C 001B08FC  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A7A70 001B0900  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A7A74 001B0904  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001A7A78 001B0908  46 52 43 31 */	.4byte 0x46524331  /* unknown instruction */
-/* 001A7A7C 001B090C  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A7A80 001B0910  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A7A84 001B0914  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A7A88 001B0918  6E 5F 51 33 */	xoris r31, r18, 0x5133
-/* 001A7A8C 001B091C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A7A90 001B0920  32 37 30 5F */	addic r17, r23, 0x305f
-/* 001A7A94 001B0924  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 001A7A98 001B0928  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 001A7A9C 001B092C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A7AA0 001B0930  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A7AA4 001B0934  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A7AA8 001B0938  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A7AAC 001B093C  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A7AB0 001B0940  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A7AB4 001B0944  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A7AB8 001B0948  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A7ABC 001B094C  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A7AC0 001B0950  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A7AC4 001B0954  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 001A7AC8 001B0958  33 33 73 74 */	addic r25, r19, 0x7374
-/* 001A7ACC 001B095C  64 31 32 39 */	oris r17, r1, 0x3239
-/* 001A7AD0 001B0960  6D 61 70 3C */	xoris r1, r11, 0x703c
-/* 001A7AD4 001B0964  43 31 32 46 */	bdnza+ 0x3244
-/* 001A7AD8 001B0968  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7ADC 001B096C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001A7AE0 001B0970  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001A7AE4 001B0974  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001A7AE8 001B0978  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7AEC 001B097C  49 44 4E 6F */	bla 0x1444e6c
-/* 001A7AF0 001B0980  64 65 2C 51 */	oris r5, r3, 0x2c51
-/* 001A7AF4 001B0984  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A7AF8 001B0988  64 32 31 6C */	oris r18, r1, 0x316c
-/* 001A7AFC 001B098C  65 73 73 3C */	oris r19, r11, 0x733c
-/* 001A7B00 001B0990  43 31 32 46 */	bdnza+ 0x3244
-/* 001A7B04 001B0994  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7B08 001B0998  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001A7B0C 001B099C  65 72 6E 3E */	oris r18, r11, 0x6e3e
-/* 001A7B10 001B09A0  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001A7B14 001B09A4  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001A7B18 001B09A8  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001A7B1C 001B09AC  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001A7B20 001B09B0  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001A7B24 001B09B4  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A7B28 001B09B8  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001A7B2C 001B09BC  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001A7B30 001B09C0  43 31 32 46 */	bdnza+ 0x3244
-/* 001A7B34 001B09C4  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7B38 001B09C8  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001A7B3C 001B09CC  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001A7B40 001B09D0  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001A7B44 001B09D4  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7B48 001B09D8  49 44 4E 6F */	bla 0x1444e6c
-/* 001A7B4C 001B09DC  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001A7B50 001B09E0  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 001A7B54 001B09E4  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 001A7B58 001B09E8  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 001A7B5C 001B09EC  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 001A7B60 001B09F0  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001A7B64 001B09F4  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001A7B68 001B09F8  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001A7B6C 001B09FC  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001A7B70 001B0A00  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001A7B74 001B0A04  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A7B78 001B0A08  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001A7B7C 001B0A0C  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001A7B80 001B0A10  43 31 32 46 */	bdnza+ 0x3244
-/* 001A7B84 001B0A14  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7B88 001B0A18  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001A7B8C 001B0A1C  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001A7B90 001B0A20  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001A7B94 001B0A24  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001A7B98 001B0A28  49 44 4E 6F */	bla 0x1444e6c
-/* 001A7B9C 001B0A2C  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001A7BA0 001B0A30  3E 32 31 5F */	addis r17, r18, 0x315f
-/* 001A7BA4 001B0A34  5F 67 65 6E */	rlwnm r7, r27, r12, 0x15, 0x17
-/* 001A7BA8 001B0A38  65 72 69 63 */	oris r18, r11, 0x6963
-/* 001A7BAC 001B0A3C  5F 69 74 65 */	rlwnm. r9, r27, r14, 0x11, 0x12
-/* 001A7BB0 001B0A40  72 61 74 6F */	andi. r1, r19, 0x746f
-/* 001A7BB4 001B0A44  72 3C 30 3E */	andi. r28, r17, 0x303e
-/* 001A7BB8 001B0A48  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A7BBC 001B0A4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".insert__Q23std86__vector_imp<23SpriteUsageTemplate<Us>,Q23std36allocator<23SpriteUsageTemplate<Us>>,0>FP23SpriteUsageTemplate<Us>UlRC23SpriteUsageTemplate<Us>"
 ".insert__Q23std86__vector_imp<23SpriteUsageTemplate<Us>,Q23std36allocator<23SpriteUsageTemplate<Us>>,0>FP23SpriteUsageTemplate<Us>UlRC23SpriteUsageTemplate<Us>":
@@ -4654,8 +4492,8 @@ lbl_001A92B4:
 /* 001A92D0 001B2160  83 81 FF F0 */	lwz r28, -0x10(r1)
 /* 001A92D4 001B2164  4E 80 00 20 */	blr 
 
-.global func_001A9360
-func_001A9360:
+.global ".erase__Q23std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>FQ33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>Q33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>"
+".erase__Q23std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>FQ33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>Q33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>":
 /* 001A9360 001B21F0  93 E1 FF FC */	stw r31, -4(r1)
 /* 001A9364 001B21F4  7C 08 02 A6 */	mflr r0
 /* 001A9368 001B21F8  3B E6 00 00 */	addi r31, r6, 0
@@ -4705,97 +4543,6 @@ lbl_001A93F4:
 /* 001A9408 001B2298  83 A1 FF F4 */	lwz r29, -0xc(r1)
 /* 001A940C 001B229C  83 81 FF F0 */	lwz r28, -0x10(r1)
 /* 001A9410 001B22A0  4E 80 00 20 */	blr 
-/* 001A9414 001B22A4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A9418 001B22A8  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 001A941C 001B22AC  80 04 00 00 */	lwz r0, 0(r4)
-/* 001A9420 001B22B0  00 00 00 B4 */	.4byte 0x000000B4  /* unknown instruction */
-/* 001A9424 001B22B4  01 4D 2E 65 */	.4byte 0x014D2E65  /* unknown instruction */
-/* 001A9428 001B22B8  72 61 73 65 */	andi. r1, r19, 0x7365
-/* 001A942C 001B22BC  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 001A9430 001B22C0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9434 001B22C4  38 36 5F 5F */	addi r1, r22, 0x5f5f
-/* 001A9438 001B22C8  6C 69 73 74 */	xoris r9, r3, 0x7374
-/* 001A943C 001B22CC  5F 64 65 6C */	rlwnm r4, r27, r12, 0x15, 0x16
-/* 001A9440 001B22D0  65 74 65 72 */	oris r20, r11, 0x6572
-/* 001A9444 001B22D4  3C 51 32 31 */	addis r2, r17, 0x3231
-/* 001A9448 001B22D8  34 63 52 5A */	addic. r3, r3, 0x525a
-/* 001A944C 001B22DC  4E 75 6D 50 */	.4byte 0x4E756D50  /* unknown instruction */
-/* 001A9450 001B22E0  6F 6F 6C 3C */	xoris r15, r27, 0x6c3c
-/* 001A9454 001B22E4  55 73 3E 36 */	rlwinm r19, r11, 7, 0x18, 0x1b
-/* 001A9458 001B22E8  74 52 61 6E */	andis. r18, r2, 0x616e
-/* 001A945C 001B22EC  67 65 2C 51 */	oris r5, r27, 0x2c51
-/* 001A9460 001B22F0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A9464 001B22F4  64 33 36 61 */	oris r19, r1, 0x3661
-/* 001A9468 001B22F8  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001A946C 001B22FC  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001A9470 001B2300  3C 51 32 31 */	addis r2, r17, 0x3231
-/* 001A9474 001B2304  34 63 52 5A */	addic. r3, r3, 0x525a
-/* 001A9478 001B2308  4E 75 6D 50 */	.4byte 0x4E756D50  /* unknown instruction */
-/* 001A947C 001B230C  6F 6F 6C 3C */	xoris r15, r27, 0x6c3c
-/* 001A9480 001B2310  55 73 3E 36 */	rlwinm r19, r11, 7, 0x18, 0x1b
-/* 001A9484 001B2314  74 52 61 6E */	andis. r18, r2, 0x616e
-/* 001A9488 001B2318  67 65 3E 3E */	oris r5, r27, 0x3e3e
-/* 001A948C 001B231C  46 51 33 33 */	sc 0x19
-/* 001A9490 001B2320  73 74 64 38 */	andi. r20, r27, 0x6438
-/* 001A9494 001B2324  36 5F 5F 6C */	addic. r18, r31, 0x5f6c
-/* 001A9498 001B2328  69 73 74 5F */	xori r19, r11, 0x745f
-/* 001A949C 001B232C  64 65 6C 65 */	oris r5, r3, 0x6c65
-/* 001A94A0 001B2330  74 65 72 3C */	andis. r5, r3, 0x723c
-/* 001A94A4 001B2334  51 32 31 34 */	rlwimi r18, r9, 6, 4, 0x1a
-/* 001A94A8 001B2338  63 52 5A 4E */	ori r18, r26, 0x5a4e
-/* 001A94AC 001B233C  75 6D 50 6F */	andis. r13, r11, 0x506f
-/* 001A94B0 001B2340  6F 6C 3C 55 */	xoris r12, r27, 0x3c55
-/* 001A94B4 001B2344  73 3E 36 74 */	andi. r30, r25, 0x3674
-/* 001A94B8 001B2348  52 61 6E 67 */	rlwimi. r1, r19, 0xd, 0x19, 0x13
-/* 001A94BC 001B234C  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001A94C0 001B2350  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A94C4 001B2354  33 36 61 6C */	addic r25, r22, 0x616c
-/* 001A94C8 001B2358  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001A94CC 001B235C  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001A94D0 001B2360  51 32 31 34 */	rlwimi r18, r9, 6, 4, 0x1a
-/* 001A94D4 001B2364  63 52 5A 4E */	ori r18, r26, 0x5a4e
-/* 001A94D8 001B2368  75 6D 50 6F */	andis. r13, r11, 0x506f
-/* 001A94DC 001B236C  6F 6C 3C 55 */	xoris r12, r27, 0x3c55
-/* 001A94E0 001B2370  73 3E 36 74 */	andi. r30, r25, 0x3674
-/* 001A94E4 001B2374  52 61 6E 67 */	rlwimi. r1, r19, 0xd, 0x19, 0x13
-/* 001A94E8 001B2378  65 3E 3E 31 */	oris r30, r9, 0x3e31
-/* 001A94EC 001B237C  39 67 65 6E */	addi r11, r7, 0x656e
-/* 001A94F0 001B2380  65 72 69 63 */	oris r18, r11, 0x6963
-/* 001A94F4 001B2384  5F 69 74 65 */	rlwnm. r9, r27, r14, 0x11, 0x12
-/* 001A94F8 001B2388  72 61 74 6F */	andi. r1, r19, 0x746f
-/* 001A94FC 001B238C  72 3C 30 3E */	andi. r28, r17, 0x303e
-/* 001A9500 001B2390  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001A9504 001B2394  74 64 38 36 */	andis. r4, r3, 0x3836
-/* 001A9508 001B2398  5F 5F 6C 69 */	rlwnm. r31, r26, r13, 0x11, 0x14
-/* 001A950C 001B239C  73 74 5F 64 */	andi. r20, r27, 0x5f64
-/* 001A9510 001B23A0  65 6C 65 74 */	oris r12, r11, 0x6574
-/* 001A9514 001B23A4  65 72 3C 51 */	oris r18, r11, 0x3c51
-/* 001A9518 001B23A8  32 31 34 63 */	addic r17, r17, 0x3463
-/* 001A951C 001B23AC  52 5A 4E 75 */	rlwimi. r26, r18, 9, 0x19, 0x1a
-/* 001A9520 001B23B0  6D 50 6F 6F */	xoris r16, r10, 0x6f6f
-/* 001A9524 001B23B4  6C 3C 55 73 */	xoris r28, r1, 0x5573
-/* 001A9528 001B23B8  3E 36 74 52 */	addis r17, r22, 0x7452
-/* 001A952C 001B23BC  61 6E 67 65 */	ori r14, r11, 0x6765
-/* 001A9530 001B23C0  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001A9534 001B23C4  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001A9538 001B23C8  36 61 6C 6C */	addic. r19, r1, 0x6c6c
-/* 001A953C 001B23CC  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001A9540 001B23D0  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001A9544 001B23D4  32 31 34 63 */	addic r17, r17, 0x3463
-/* 001A9548 001B23D8  52 5A 4E 75 */	rlwimi. r26, r18, 9, 0x19, 0x1a
-/* 001A954C 001B23DC  6D 50 6F 6F */	xoris r16, r10, 0x6f6f
-/* 001A9550 001B23E0  6C 3C 55 73 */	xoris r28, r1, 0x5573
-/* 001A9554 001B23E4  3E 36 74 52 */	addis r17, r22, 0x7452
-/* 001A9558 001B23E8  61 6E 67 65 */	ori r14, r11, 0x6765
-/* 001A955C 001B23EC  3E 3E 31 39 */	addis r17, r30, 0x3139
-/* 001A9560 001B23F0  67 65 6E 65 */	oris r5, r27, 0x6e65
-/* 001A9564 001B23F4  72 69 63 5F */	andi. r9, r19, 0x635f
-/* 001A9568 001B23F8  69 74 65 72 */	xori r20, r11, 0x6572
-/* 001A956C 001B23FC  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001A9570 001B2400  3C 30 3E 00 */	addis r1, r16, 0x3e00
-/* 001A9574 001B2404  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A9578 001B2408  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A957C 001B240C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".erase__Q23std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>FQ33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>"
 ".erase__Q23std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>FQ33std86__list_deleter<Q214cRZNumPool<Us>6tRange,Q23std36allocator<Q214cRZNumPool<Us>6tRange>>19generic_iterator<0>":
@@ -4892,8 +4639,8 @@ lbl_001A9784:
 /* 001A98C0 001B2750  90 84 00 00 */	stw r4, 0(r4)
 /* 001A98C4 001B2754  4E 80 00 20 */	blr 
 
-.global func_001A9950
-func_001A9950:
+.global ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
+".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node":
 /* 001A9950 001B27E0  BF 61 FF EC */	stmw r27, -0x14(r1)
 /* 001A9954 001B27E4  7C 08 02 A6 */	mflr r0
 /* 001A9958 001B27E8  7C 9E 23 78 */	mr r30, r4
@@ -4912,23 +4659,23 @@ func_001A9950:
 /* 001A998C 001B281C  80 9C 00 00 */	lwz r4, 0(r28)
 /* 001A9990 001B2820  28 04 00 00 */	cmplwi r4, 0
 /* 001A9994 001B2824  41 82 00 08 */	beq lbl_001A999C
-/* 001A9998 001B2828  4B FF FF B9 */	bl func_001A9950
+/* 001A9998 001B2828  4B FF FF B9 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A999C:
 /* 001A999C 001B282C  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A99A0 001B2830  28 04 00 00 */	cmplwi r4, 0
 /* 001A99A4 001B2834  41 82 00 0C */	beq lbl_001A99B0
 /* 001A99A8 001B2838  7F E3 FB 78 */	mr r3, r31
-/* 001A99AC 001B283C  4B FF FF A5 */	bl func_001A9950
+/* 001A99AC 001B283C  4B FF FF A5 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A99B0:
 /* 001A99B0 001B2840  7F E3 FB 78 */	mr r3, r31
-/* 001A99B4 001B2844  48 00 0C 7D */	bl func_001AA630
+/* 001A99B4 001B2844  48 00 0C 7D */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A99B8 001B2848  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A99BC 001B284C  48 00 0B E5 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A99C0 001B2850  7F E3 FB 78 */	mr r3, r31
-/* 001A99C4 001B2854  48 00 0A 9D */	bl func_001AA460
+/* 001A99C4 001B2854  48 00 0A 9D */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A99C8 001B2858  38 9C 00 00 */	addi r4, r28, 0
 /* 001A99CC 001B285C  38 A0 00 01 */	li r5, 1
-/* 001A99D0 001B2860  48 00 07 F1 */	bl func_001AA1C0
+/* 001A99D0 001B2860  48 00 07 F1 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A99D4:
 /* 001A99D4 001B2864  83 9B 00 04 */	lwz r28, 4(r27)
 /* 001A99D8 001B2868  28 1C 00 00 */	cmplwi r28, 0
@@ -4937,28 +4684,28 @@ lbl_001A99D4:
 /* 001A99E4 001B2874  28 04 00 00 */	cmplwi r4, 0
 /* 001A99E8 001B2878  41 82 00 0C */	beq lbl_001A99F4
 /* 001A99EC 001B287C  7F E3 FB 78 */	mr r3, r31
-/* 001A99F0 001B2880  4B FF FF 61 */	bl func_001A9950
+/* 001A99F0 001B2880  4B FF FF 61 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A99F4:
 /* 001A99F4 001B2884  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A99F8 001B2888  28 04 00 00 */	cmplwi r4, 0
 /* 001A99FC 001B288C  41 82 00 0C */	beq lbl_001A9A08
 /* 001A9A00 001B2890  7F E3 FB 78 */	mr r3, r31
-/* 001A9A04 001B2894  4B FF FF 4D */	bl func_001A9950
+/* 001A9A04 001B2894  4B FF FF 4D */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9A08:
 /* 001A9A08 001B2898  7F E3 FB 78 */	mr r3, r31
-/* 001A9A0C 001B289C  48 00 0C 25 */	bl func_001AA630
+/* 001A9A0C 001B289C  48 00 0C 25 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A10 001B28A0  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9A14 001B28A4  48 00 0B 8D */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9A18 001B28A8  7F E3 FB 78 */	mr r3, r31
-/* 001A9A1C 001B28AC  48 00 0A 45 */	bl func_001AA460
+/* 001A9A1C 001B28AC  48 00 0A 45 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A20 001B28B0  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9A24 001B28B4  38 A0 00 01 */	li r5, 1
-/* 001A9A28 001B28B8  48 00 07 99 */	bl func_001AA1C0
+/* 001A9A28 001B28B8  48 00 07 99 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9A2C:
 /* 001A9A2C 001B28BC  7F E3 FB 78 */	mr r3, r31
-/* 001A9A30 001B28C0  48 00 0C 01 */	bl func_001AA630
+/* 001A9A30 001B28C0  48 00 0C 01 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A34 001B28C4  7F E3 FB 78 */	mr r3, r31
-/* 001A9A38 001B28C8  48 00 0A 29 */	bl func_001AA460
+/* 001A9A38 001B28C8  48 00 0A 29 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A3C 001B28CC  7F 63 DB 78 */	mr r3, r27
 /* 001A9A40 001B28D0  48 3D EC 51 */	bl func_00588690
 lbl_001A9A44:
@@ -4972,23 +4719,23 @@ lbl_001A9A44:
 /* 001A9A60 001B28F0  28 04 00 00 */	cmplwi r4, 0
 /* 001A9A64 001B28F4  41 82 00 0C */	beq lbl_001A9A70
 /* 001A9A68 001B28F8  7F E3 FB 78 */	mr r3, r31
-/* 001A9A6C 001B28FC  4B FF FE E5 */	bl func_001A9950
+/* 001A9A6C 001B28FC  4B FF FE E5 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9A70:
 /* 001A9A70 001B2900  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9A74 001B2904  28 04 00 00 */	cmplwi r4, 0
 /* 001A9A78 001B2908  41 82 00 0C */	beq lbl_001A9A84
 /* 001A9A7C 001B290C  7F E3 FB 78 */	mr r3, r31
-/* 001A9A80 001B2910  4B FF FE D1 */	bl func_001A9950
+/* 001A9A80 001B2910  4B FF FE D1 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9A84:
 /* 001A9A84 001B2914  7F E3 FB 78 */	mr r3, r31
-/* 001A9A88 001B2918  48 00 0B A9 */	bl func_001AA630
+/* 001A9A88 001B2918  48 00 0B A9 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A8C 001B291C  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9A90 001B2920  48 00 0B 11 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9A94 001B2924  7F E3 FB 78 */	mr r3, r31
-/* 001A9A98 001B2928  48 00 09 C9 */	bl func_001AA460
+/* 001A9A98 001B2928  48 00 09 C9 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9A9C 001B292C  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9AA0 001B2930  38 A0 00 01 */	li r5, 1
-/* 001A9AA4 001B2934  48 00 07 1D */	bl func_001AA1C0
+/* 001A9AA4 001B2934  48 00 07 1D */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9AA8:
 /* 001A9AA8 001B2938  83 9B 00 04 */	lwz r28, 4(r27)
 /* 001A9AAC 001B293C  28 1C 00 00 */	cmplwi r28, 0
@@ -4997,35 +4744,35 @@ lbl_001A9AA8:
 /* 001A9AB8 001B2948  28 04 00 00 */	cmplwi r4, 0
 /* 001A9ABC 001B294C  41 82 00 0C */	beq lbl_001A9AC8
 /* 001A9AC0 001B2950  7F E3 FB 78 */	mr r3, r31
-/* 001A9AC4 001B2954  4B FF FE 8D */	bl func_001A9950
+/* 001A9AC4 001B2954  4B FF FE 8D */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9AC8:
 /* 001A9AC8 001B2958  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9ACC 001B295C  28 04 00 00 */	cmplwi r4, 0
 /* 001A9AD0 001B2960  41 82 00 0C */	beq lbl_001A9ADC
 /* 001A9AD4 001B2964  7F E3 FB 78 */	mr r3, r31
-/* 001A9AD8 001B2968  4B FF FE 79 */	bl func_001A9950
+/* 001A9AD8 001B2968  4B FF FE 79 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9ADC:
 /* 001A9ADC 001B296C  7F E3 FB 78 */	mr r3, r31
-/* 001A9AE0 001B2970  48 00 0B 51 */	bl func_001AA630
+/* 001A9AE0 001B2970  48 00 0B 51 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9AE4 001B2974  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9AE8 001B2978  48 00 0A B9 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9AEC 001B297C  7F E3 FB 78 */	mr r3, r31
-/* 001A9AF0 001B2980  48 00 09 71 */	bl func_001AA460
+/* 001A9AF0 001B2980  48 00 09 71 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9AF4 001B2984  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9AF8 001B2988  38 A0 00 01 */	li r5, 1
-/* 001A9AFC 001B298C  48 00 06 C5 */	bl func_001AA1C0
+/* 001A9AFC 001B298C  48 00 06 C5 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9B00:
 /* 001A9B00 001B2990  7F E3 FB 78 */	mr r3, r31
-/* 001A9B04 001B2994  48 00 0B 2D */	bl func_001AA630
+/* 001A9B04 001B2994  48 00 0B 2D */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9B08 001B2998  7F E3 FB 78 */	mr r3, r31
-/* 001A9B0C 001B299C  48 00 09 55 */	bl func_001AA460
+/* 001A9B0C 001B299C  48 00 09 55 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9B10 001B29A0  7F 63 DB 78 */	mr r3, r27
 /* 001A9B14 001B29A4  48 3D EB 7D */	bl func_00588690
 lbl_001A9B18:
 /* 001A9B18 001B29A8  7F E3 FB 78 */	mr r3, r31
 /* 001A9B1C 001B29AC  48 00 06 05 */	bl ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>,Ul,1>Fv"
 /* 001A9B20 001B29B0  38 7F 00 04 */	addi r3, r31, 4
-/* 001A9B24 001B29B4  48 00 04 4D */	bl func_001A9F70
+/* 001A9B24 001B29B4  48 00 04 4D */	bl ".first__Q310Metrowerks7details362compressed_pair_imp<Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
 /* 001A9B28 001B29B8  7F A3 EB 78 */	mr r3, r29
 /* 001A9B2C 001B29BC  48 3D EB 65 */	bl func_00588690
 lbl_001A9B30:
@@ -5042,23 +4789,23 @@ lbl_001A9B30:
 /* 001A9B58 001B29E8  28 04 00 00 */	cmplwi r4, 0
 /* 001A9B5C 001B29EC  41 82 00 0C */	beq lbl_001A9B68
 /* 001A9B60 001B29F0  7F E3 FB 78 */	mr r3, r31
-/* 001A9B64 001B29F4  4B FF FD ED */	bl func_001A9950
+/* 001A9B64 001B29F4  4B FF FD ED */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9B68:
 /* 001A9B68 001B29F8  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9B6C 001B29FC  28 04 00 00 */	cmplwi r4, 0
 /* 001A9B70 001B2A00  41 82 00 0C */	beq lbl_001A9B7C
 /* 001A9B74 001B2A04  7F E3 FB 78 */	mr r3, r31
-/* 001A9B78 001B2A08  4B FF FD D9 */	bl func_001A9950
+/* 001A9B78 001B2A08  4B FF FD D9 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9B7C:
 /* 001A9B7C 001B2A0C  7F E3 FB 78 */	mr r3, r31
-/* 001A9B80 001B2A10  48 00 0A B1 */	bl func_001AA630
+/* 001A9B80 001B2A10  48 00 0A B1 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9B84 001B2A14  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9B88 001B2A18  48 00 0A 19 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9B8C 001B2A1C  7F E3 FB 78 */	mr r3, r31
-/* 001A9B90 001B2A20  48 00 08 D1 */	bl func_001AA460
+/* 001A9B90 001B2A20  48 00 08 D1 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9B94 001B2A24  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9B98 001B2A28  38 A0 00 01 */	li r5, 1
-/* 001A9B9C 001B2A2C  48 00 06 25 */	bl func_001AA1C0
+/* 001A9B9C 001B2A2C  48 00 06 25 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9BA0:
 /* 001A9BA0 001B2A30  83 9B 00 04 */	lwz r28, 4(r27)
 /* 001A9BA4 001B2A34  28 1C 00 00 */	cmplwi r28, 0
@@ -5067,28 +4814,28 @@ lbl_001A9BA0:
 /* 001A9BB0 001B2A40  28 04 00 00 */	cmplwi r4, 0
 /* 001A9BB4 001B2A44  41 82 00 0C */	beq lbl_001A9BC0
 /* 001A9BB8 001B2A48  7F E3 FB 78 */	mr r3, r31
-/* 001A9BBC 001B2A4C  4B FF FD 95 */	bl func_001A9950
+/* 001A9BBC 001B2A4C  4B FF FD 95 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9BC0:
 /* 001A9BC0 001B2A50  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9BC4 001B2A54  28 04 00 00 */	cmplwi r4, 0
 /* 001A9BC8 001B2A58  41 82 00 0C */	beq lbl_001A9BD4
 /* 001A9BCC 001B2A5C  7F E3 FB 78 */	mr r3, r31
-/* 001A9BD0 001B2A60  4B FF FD 81 */	bl func_001A9950
+/* 001A9BD0 001B2A60  4B FF FD 81 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9BD4:
 /* 001A9BD4 001B2A64  7F E3 FB 78 */	mr r3, r31
-/* 001A9BD8 001B2A68  48 00 0A 59 */	bl func_001AA630
+/* 001A9BD8 001B2A68  48 00 0A 59 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9BDC 001B2A6C  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9BE0 001B2A70  48 00 09 C1 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9BE4 001B2A74  7F E3 FB 78 */	mr r3, r31
-/* 001A9BE8 001B2A78  48 00 08 79 */	bl func_001AA460
+/* 001A9BE8 001B2A78  48 00 08 79 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9BEC 001B2A7C  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9BF0 001B2A80  38 A0 00 01 */	li r5, 1
-/* 001A9BF4 001B2A84  48 00 05 CD */	bl func_001AA1C0
+/* 001A9BF4 001B2A84  48 00 05 CD */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9BF8:
 /* 001A9BF8 001B2A88  7F E3 FB 78 */	mr r3, r31
-/* 001A9BFC 001B2A8C  48 00 0A 35 */	bl func_001AA630
+/* 001A9BFC 001B2A8C  48 00 0A 35 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9C00 001B2A90  7F E3 FB 78 */	mr r3, r31
-/* 001A9C04 001B2A94  48 00 08 5D */	bl func_001AA460
+/* 001A9C04 001B2A94  48 00 08 5D */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9C08 001B2A98  7F 63 DB 78 */	mr r3, r27
 /* 001A9C0C 001B2A9C  48 3D EA 85 */	bl func_00588690
 lbl_001A9C10:
@@ -5102,23 +4849,23 @@ lbl_001A9C10:
 /* 001A9C2C 001B2ABC  28 04 00 00 */	cmplwi r4, 0
 /* 001A9C30 001B2AC0  41 82 00 0C */	beq lbl_001A9C3C
 /* 001A9C34 001B2AC4  7F E3 FB 78 */	mr r3, r31
-/* 001A9C38 001B2AC8  4B FF FD 19 */	bl func_001A9950
+/* 001A9C38 001B2AC8  4B FF FD 19 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9C3C:
 /* 001A9C3C 001B2ACC  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9C40 001B2AD0  28 04 00 00 */	cmplwi r4, 0
 /* 001A9C44 001B2AD4  41 82 00 0C */	beq lbl_001A9C50
 /* 001A9C48 001B2AD8  7F E3 FB 78 */	mr r3, r31
-/* 001A9C4C 001B2ADC  4B FF FD 05 */	bl func_001A9950
+/* 001A9C4C 001B2ADC  4B FF FD 05 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9C50:
 /* 001A9C50 001B2AE0  7F E3 FB 78 */	mr r3, r31
-/* 001A9C54 001B2AE4  48 00 09 DD */	bl func_001AA630
+/* 001A9C54 001B2AE4  48 00 09 DD */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9C58 001B2AE8  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9C5C 001B2AEC  48 00 09 45 */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9C60 001B2AF0  7F E3 FB 78 */	mr r3, r31
-/* 001A9C64 001B2AF4  48 00 07 FD */	bl func_001AA460
+/* 001A9C64 001B2AF4  48 00 07 FD */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9C68 001B2AF8  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9C6C 001B2AFC  38 A0 00 01 */	li r5, 1
-/* 001A9C70 001B2B00  48 00 05 51 */	bl func_001AA1C0
+/* 001A9C70 001B2B00  48 00 05 51 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9C74:
 /* 001A9C74 001B2B04  83 9B 00 04 */	lwz r28, 4(r27)
 /* 001A9C78 001B2B08  28 1C 00 00 */	cmplwi r28, 0
@@ -5127,35 +4874,35 @@ lbl_001A9C74:
 /* 001A9C84 001B2B14  28 04 00 00 */	cmplwi r4, 0
 /* 001A9C88 001B2B18  41 82 00 0C */	beq lbl_001A9C94
 /* 001A9C8C 001B2B1C  7F E3 FB 78 */	mr r3, r31
-/* 001A9C90 001B2B20  4B FF FC C1 */	bl func_001A9950
+/* 001A9C90 001B2B20  4B FF FC C1 */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9C94:
 /* 001A9C94 001B2B24  80 9C 00 04 */	lwz r4, 4(r28)
 /* 001A9C98 001B2B28  28 04 00 00 */	cmplwi r4, 0
 /* 001A9C9C 001B2B2C  41 82 00 0C */	beq lbl_001A9CA8
 /* 001A9CA0 001B2B30  7F E3 FB 78 */	mr r3, r31
-/* 001A9CA4 001B2B34  4B FF FC AD */	bl func_001A9950
+/* 001A9CA4 001B2B34  4B FF FC AD */	bl ".destroy__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node"
 lbl_001A9CA8:
 /* 001A9CA8 001B2B38  7F E3 FB 78 */	mr r3, r31
-/* 001A9CAC 001B2B3C  48 00 09 85 */	bl func_001AA630
+/* 001A9CAC 001B2B3C  48 00 09 85 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9CB0 001B2B40  38 9C 00 0C */	addi r4, r28, 0xc
 /* 001A9CB4 001B2B44  48 00 08 ED */	bl ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001A9CB8 001B2B48  7F E3 FB 78 */	mr r3, r31
-/* 001A9CBC 001B2B4C  48 00 07 A5 */	bl func_001AA460
+/* 001A9CBC 001B2B4C  48 00 07 A5 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9CC0 001B2B50  38 9C 00 00 */	addi r4, r28, 0
 /* 001A9CC4 001B2B54  38 A0 00 01 */	li r5, 1
-/* 001A9CC8 001B2B58  48 00 04 F9 */	bl func_001AA1C0
+/* 001A9CC8 001B2B58  48 00 04 F9 */	bl ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
 lbl_001A9CCC:
 /* 001A9CCC 001B2B5C  7F E3 FB 78 */	mr r3, r31
-/* 001A9CD0 001B2B60  48 00 09 61 */	bl func_001AA630
+/* 001A9CD0 001B2B60  48 00 09 61 */	bl ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9CD4 001B2B64  7F E3 FB 78 */	mr r3, r31
-/* 001A9CD8 001B2B68  48 00 07 89 */	bl func_001AA460
+/* 001A9CD8 001B2B68  48 00 07 89 */	bl ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
 /* 001A9CDC 001B2B6C  7F 63 DB 78 */	mr r3, r27
 /* 001A9CE0 001B2B70  48 3D E9 B1 */	bl func_00588690
 lbl_001A9CE4:
 /* 001A9CE4 001B2B74  7F E3 FB 78 */	mr r3, r31
 /* 001A9CE8 001B2B78  48 00 04 39 */	bl ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>,Ul,1>Fv"
 /* 001A9CEC 001B2B7C  38 7F 00 04 */	addi r3, r31, 4
-/* 001A9CF0 001B2B80  48 00 02 81 */	bl func_001A9F70
+/* 001A9CF0 001B2B80  48 00 02 81 */	bl ".first__Q310Metrowerks7details362compressed_pair_imp<Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
 /* 001A9CF4 001B2B84  7F A3 EB 78 */	mr r3, r29
 /* 001A9CF8 001B2B88  48 3D E9 99 */	bl func_00588690
 lbl_001A9CFC:
@@ -5166,274 +4913,17 @@ lbl_001A9CFC:
 /* 001A9D0C 001B2B9C  BB 61 FF EC */	lmw r27, -0x14(r1)
 /* 001A9D10 001B2BA0  7C 08 03 A6 */	mtlr r0
 /* 001A9D14 001B2BA4  4E 80 00 20 */	blr 
-/* 001A9D18 001B2BA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A9D1C 001B2BAC  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 001A9D20 001B2BB0  80 05 00 00 */	lwz r0, 0(r5)
-/* 001A9D24 001B2BB4  00 00 03 C8 */	.4byte 0x000003C8  /* unknown instruction */
-/* 001A9D28 001B2BB8  02 3F 2E 64 */	.4byte 0x023F2E64  /* unknown instruction */
-/* 001A9D2C 001B2BBC  65 73 74 72 */	oris r19, r11, 0x7472
-/* 001A9D30 001B2BC0  6F 79 5F 5F */	xoris r25, r27, 0x5f5f
-/* 001A9D34 001B2BC4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A9D38 001B2BC8  74 64 32 37 */	andis. r4, r3, 0x3237
-/* 001A9D3C 001B2BCC  30 5F 5F 74 */	addic r2, r31, 0x5f74
-/* 001A9D40 001B2BD0  72 65 65 3C */	andi. r5, r19, 0x653c
-/* 001A9D44 001B2BD4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A9D48 001B2BD8  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001A9D4C 001B2BDC  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001A9D50 001B2BE0  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001A9D54 001B2BE4  46 6C 6F 6F */	sc 0x7b
-/* 001A9D58 001B2BE8  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001A9D5C 001B2BEC  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001A9D60 001B2BF0  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001A9D64 001B2BF4  46 6C 6F 6F */	sc 0x7b
-/* 001A9D68 001B2BF8  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001A9D6C 001B2BFC  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001A9D70 001B2C00  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 001A9D74 001B2C04  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 001A9D78 001B2C08  32 39 6D 61 */	addic r17, r25, 0x6d61
-/* 001A9D7C 001B2C0C  70 3C 43 31 */	andi. r28, r1, 0x4331
-/* 001A9D80 001B2C10  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A9D84 001B2C14  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A9D88 001B2C18  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A9D8C 001B2C1C  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001A9D90 001B2C20  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001A9D94 001B2C24  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001A9D98 001B2C28  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001A9D9C 001B2C2C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001A9DA0 001B2C30  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001A9DA4 001B2C34  31 6C 65 73 */	addic r11, r12, 0x6573
-/* 001A9DA8 001B2C38  73 3C 43 31 */	andi. r28, r25, 0x4331
-/* 001A9DAC 001B2C3C  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A9DB0 001B2C40  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A9DB4 001B2C44  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A9DB8 001B2C48  6E 3E 2C 51 */	xoris r30, r17, 0x2c51
-/* 001A9DBC 001B2C4C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A9DC0 001B2C50  64 35 35 61 */	oris r21, r1, 0x3561
-/* 001A9DC4 001B2C54  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001A9DC8 001B2C58  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001A9DCC 001B2C5C  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001A9DD0 001B2C60  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001A9DD4 001B2C64  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001A9DD8 001B2C68  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001A9DDC 001B2C6C  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A9DE0 001B2C70  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A9DE4 001B2C74  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A9DE8 001B2C78  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001A9DEC 001B2C7C  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001A9DF0 001B2C80  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001A9DF4 001B2C84  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001A9DF8 001B2C88  3E 3E 3E 31 */	addis r17, r30, 0x3e31
-/* 001A9DFC 001B2C8C  33 76 61 6C */	addic r27, r22, 0x616c
-/* 001A9E00 001B2C90  75 65 5F 63 */	andis. r5, r11, 0x5f63
-/* 001A9E04 001B2C94  6F 6D 70 61 */	xoris r13, r27, 0x7061
-/* 001A9E08 001B2C98  72 65 2C 51 */	andi. r5, r19, 0x2c51
-/* 001A9E0C 001B2C9C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A9E10 001B2CA0  64 35 35 61 */	oris r21, r1, 0x3561
-/* 001A9E14 001B2CA4  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001A9E18 001B2CA8  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001A9E1C 001B2CAC  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001A9E20 001B2CB0  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001A9E24 001B2CB4  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001A9E28 001B2CB8  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001A9E2C 001B2CBC  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A9E30 001B2CC0  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A9E34 001B2CC4  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A9E38 001B2CC8  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001A9E3C 001B2CCC  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001A9E40 001B2CD0  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001A9E44 001B2CD4  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001A9E48 001B2CD8  3E 3E 3E 46 */	addis r17, r30, 0x3e46
-/* 001A9E4C 001B2CDC  50 51 33 33 */	rlwimi. r17, r2, 6, 0xc, 0x19
-/* 001A9E50 001B2CE0  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001A9E54 001B2CE4  37 30 5F 5F */	addic. r25, r16, 0x5f5f
-/* 001A9E58 001B2CE8  74 72 65 65 */	andis. r18, r3, 0x6565
-/* 001A9E5C 001B2CEC  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001A9E60 001B2CF0  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001A9E64 001B2CF4  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001A9E68 001B2CF8  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001A9E6C 001B2CFC  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001A9E70 001B2D00  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001A9E74 001B2D04  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001A9E78 001B2D08  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001A9E7C 001B2D0C  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001A9E80 001B2D10  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001A9E84 001B2D14  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001A9E88 001B2D18  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 001A9E8C 001B2D1C  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9E90 001B2D20  31 32 39 6D */	addic r9, r18, 0x396d
-/* 001A9E94 001B2D24  61 70 3C 43 */	ori r16, r11, 0x3c43
-/* 001A9E98 001B2D28  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A9E9C 001B2D2C  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A9EA0 001B2D30  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A9EA4 001B2D34  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A9EA8 001B2D38  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A9EAC 001B2D3C  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A9EB0 001B2D40  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A9EB4 001B2D44  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001A9EB8 001B2D48  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9EBC 001B2D4C  32 31 6C 65 */	addic r17, r17, 0x6c65
-/* 001A9EC0 001B2D50  73 73 3C 43 */	andi. r19, r27, 0x3c43
-/* 001A9EC4 001B2D54  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A9EC8 001B2D58  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A9ECC 001B2D5C  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A9ED0 001B2D60  72 6E 3E 2C */	andi. r14, r19, 0x3e2c
-/* 001A9ED4 001B2D64  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A9ED8 001B2D68  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001A9EDC 001B2D6C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001A9EE0 001B2D70  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001A9EE4 001B2D74  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001A9EE8 001B2D78  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9EEC 001B2D7C  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A9EF0 001B2D80  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A9EF4 001B2D84  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A9EF8 001B2D88  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A9EFC 001B2D8C  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A9F00 001B2D90  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A9F04 001B2D94  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A9F08 001B2D98  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A9F0C 001B2D9C  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A9F10 001B2DA0  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001A9F14 001B2DA4  31 33 76 61 */	addic r9, r19, 0x7661
-/* 001A9F18 001B2DA8  6C 75 65 5F */	xoris r21, r3, 0x655f
-/* 001A9F1C 001B2DAC  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 001A9F20 001B2DB0  61 72 65 2C */	ori r18, r11, 0x652c
-/* 001A9F24 001B2DB4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001A9F28 001B2DB8  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001A9F2C 001B2DBC  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001A9F30 001B2DC0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001A9F34 001B2DC4  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001A9F38 001B2DC8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9F3C 001B2DCC  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A9F40 001B2DD0  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A9F44 001B2DD4  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A9F48 001B2DD8  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A9F4C 001B2DDC  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A9F50 001B2DE0  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A9F54 001B2DE4  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001A9F58 001B2DE8  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001A9F5C 001B2DEC  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001A9F60 001B2DF0  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001A9F64 001B2DF4  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 001A9F68 001B2DF8  65 00 00 00 */	oris r0, r8, 0
-/* 001A9F6C 001B2DFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_001A9F70
-func_001A9F70:
+.global ".first__Q310Metrowerks7details362compressed_pair_imp<Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+".first__Q310Metrowerks7details362compressed_pair_imp<Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
 /* 001A9F70 001B2E00  4E 80 00 20 */	blr 
-/* 001A9F74 001B2E04  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A9F78 001B2E08  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 001A9F7C 001B2E0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001A9F80 001B2E10  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 001A9F84 001B2E14  01 8D 2E 66 */	.4byte 0x018D2E66  /* unknown instruction */
-/* 001A9F88 001B2E18  69 72 73 74 */	xori r18, r11, 0x7374
-/* 001A9F8C 001B2E1C  5F 5F 51 33 */	rlwnm. r31, r26, r10, 4, 0x19
-/* 001A9F90 001B2E20  31 30 4D 65 */	addic r9, r16, 0x4d65
-/* 001A9F94 001B2E24  74 72 6F 77 */	andis. r18, r3, 0x6f77
-/* 001A9F98 001B2E28  65 72 6B 73 */	oris r18, r11, 0x6b73
-/* 001A9F9C 001B2E2C  37 64 65 74 */	addic. r27, r4, 0x6574
-/* 001A9FA0 001B2E30  61 69 6C 73 */	ori r9, r11, 0x6c73
-/* 001A9FA4 001B2E34  33 36 32 63 */	addic r25, r22, 0x3263
-/* 001A9FA8 001B2E38  6F 6D 70 72 */	xoris r13, r27, 0x7072
-/* 001A9FAC 001B2E3C  65 73 73 65 */	oris r19, r11, 0x7365
-/* 001A9FB0 001B2E40  64 5F 70 61 */	oris r31, r2, 0x7061
-/* 001A9FB4 001B2E44  69 72 5F 69 */	xori r18, r11, 0x5f69
-/* 001A9FB8 001B2E48  6D 70 3C 51 */	xoris r16, r11, 0x3c51
-/* 001A9FBC 001B2E4C  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001A9FC0 001B2E50  64 32 39 35 */	oris r18, r1, 0x3935
-/* 001A9FC4 001B2E54  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001A9FC8 001B2E58  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001A9FCC 001B2E5C  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 001A9FD0 001B2E60  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9FD4 001B2E64  32 37 30 5F */	addic r17, r23, 0x305f
-/* 001A9FD8 001B2E68  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 001A9FDC 001B2E6C  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 001A9FE0 001B2E70  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001A9FE4 001B2E74  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001A9FE8 001B2E78  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001A9FEC 001B2E7C  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001A9FF0 001B2E80  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001A9FF4 001B2E84  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001A9FF8 001B2E88  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001A9FFC 001B2E8C  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA000 001B2E90  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA004 001B2E94  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA008 001B2E98  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 001AA00C 001B2E9C  33 33 73 74 */	addic r25, r19, 0x7374
-/* 001AA010 001B2EA0  64 31 32 39 */	oris r17, r1, 0x3239
-/* 001AA014 001B2EA4  6D 61 70 3C */	xoris r1, r11, 0x703c
-/* 001AA018 001B2EA8  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA01C 001B2EAC  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA020 001B2EB0  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA024 001B2EB4  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA028 001B2EB8  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA02C 001B2EBC  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA030 001B2EC0  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA034 001B2EC4  64 65 2C 51 */	oris r5, r3, 0x2c51
-/* 001AA038 001B2EC8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA03C 001B2ECC  64 32 31 6C */	oris r18, r1, 0x316c
-/* 001AA040 001B2ED0  65 73 73 3C */	oris r19, r11, 0x733c
-/* 001AA044 001B2ED4  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA048 001B2ED8  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA04C 001B2EDC  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA050 001B2EE0  65 72 6E 3E */	oris r18, r11, 0x6e3e
-/* 001AA054 001B2EE4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA058 001B2EE8  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA05C 001B2EEC  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA060 001B2EF0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA064 001B2EF4  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA068 001B2EF8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA06C 001B2EFC  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA070 001B2F00  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA074 001B2F04  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA078 001B2F08  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA07C 001B2F0C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA080 001B2F10  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA084 001B2F14  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA088 001B2F18  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA08C 001B2F1C  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA090 001B2F20  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA094 001B2F24  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 001AA098 001B2F28  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 001AA09C 001B2F2C  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 001AA0A0 001B2F30  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 001AA0A4 001B2F34  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA0A8 001B2F38  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA0AC 001B2F3C  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA0B0 001B2F40  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA0B4 001B2F44  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA0B8 001B2F48  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA0BC 001B2F4C  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA0C0 001B2F50  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA0C4 001B2F54  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA0C8 001B2F58  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA0CC 001B2F5C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA0D0 001B2F60  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA0D4 001B2F64  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA0D8 001B2F68  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA0DC 001B2F6C  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA0E0 001B2F70  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA0E4 001B2F74  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 001AA0E8 001B2F78  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 001AA0EC 001B2F7C  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001AA0F0 001B2F80  74 64 31 39 */	andis. r4, r3, 0x3139
-/* 001AA0F4 001B2F84  5F 5F 72 65 */	rlwnm. r31, r26, r14, 9, 0x12
-/* 001AA0F8 001B2F88  64 5F 62 6C */	oris r31, r2, 0x626c
-/* 001AA0FC 001B2F8C  61 63 6B 5F */	ori r3, r11, 0x6b5f
-/* 001AA100 001B2F90  74 72 65 65 */	andis. r18, r3, 0x6565
-/* 001AA104 001B2F94  3C 31 3E 36 */	addis r1, r17, 0x3e36
-/* 001AA108 001B2F98  61 6E 63 68 */	ori r14, r11, 0x6368
-/* 001AA10C 001B2F9C  6F 72 2C 31 */	xoris r18, r27, 0x2c31
-/* 001AA110 001B2FA0  3E 46 76 00 */	addis r18, r6, 0x7600
-/* 001AA114 001B2FA4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA118 001B2FA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA11C 001B2FAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>,Ul,1>Fv"
 ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>,Ul,1>Fv":
 /* 001AA120 001B2FB0  4E 80 00 20 */	blr 
 
-.global func_001AA1C0
-func_001AA1C0:
+.global ".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl"
+".deallocate__Q23std295allocator<Q33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4node>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodeUl":
 /* 001AA1C0 001B3050  7C 08 02 A6 */	mflr r0
 /* 001AA1C4 001B3054  7C 83 23 78 */	mr r3, r4
 /* 001AA1C8 001B3058  90 01 00 08 */	stw r0, 8(r1)
@@ -5443,338 +4933,22 @@ func_001AA1C0:
 /* 001AA1D8 001B3068  38 21 00 40 */	addi r1, r1, 0x40
 /* 001AA1DC 001B306C  7C 08 03 A6 */	mtlr r0
 /* 001AA1E0 001B3070  4E 80 00 20 */	blr 
-/* 001AA1E4 001B3074  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA1E8 001B3078  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 001AA1EC 001B307C  80 00 00 00 */	lwz r0, 0(0)
-/* 001AA1F0 001B3080  00 00 00 24 */	.4byte 0x00000024  /* unknown instruction */
-/* 001AA1F4 001B3084  02 5D 2E 64 */	.4byte 0x025D2E64  /* unknown instruction */
-/* 001AA1F8 001B3088  65 61 6C 6C */	oris r1, r11, 0x6c6c
-/* 001AA1FC 001B308C  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA200 001B3090  65 5F 5F 51 */	oris r31, r10, 0x5f51
-/* 001AA204 001B3094  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA208 001B3098  64 32 39 35 */	oris r18, r1, 0x3935
-/* 001AA20C 001B309C  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AA210 001B30A0  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001AA214 001B30A4  72 3C 51 33 */	andi. r28, r17, 0x5133
-/* 001AA218 001B30A8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA21C 001B30AC  32 37 30 5F */	addic r17, r23, 0x305f
-/* 001AA220 001B30B0  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 001AA224 001B30B4  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 001AA228 001B30B8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA22C 001B30BC  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AA230 001B30C0  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AA234 001B30C4  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA238 001B30C8  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA23C 001B30CC  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA240 001B30D0  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AA244 001B30D4  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA248 001B30D8  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA24C 001B30DC  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA250 001B30E0  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 001AA254 001B30E4  33 33 73 74 */	addic r25, r19, 0x7374
-/* 001AA258 001B30E8  64 31 32 39 */	oris r17, r1, 0x3239
-/* 001AA25C 001B30EC  6D 61 70 3C */	xoris r1, r11, 0x703c
-/* 001AA260 001B30F0  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA264 001B30F4  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA268 001B30F8  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA26C 001B30FC  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA270 001B3100  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA274 001B3104  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA278 001B3108  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA27C 001B310C  64 65 2C 51 */	oris r5, r3, 0x2c51
-/* 001AA280 001B3110  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA284 001B3114  64 32 31 6C */	oris r18, r1, 0x316c
-/* 001AA288 001B3118  65 73 73 3C */	oris r19, r11, 0x733c
-/* 001AA28C 001B311C  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA290 001B3120  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA294 001B3124  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA298 001B3128  65 72 6E 3E */	oris r18, r11, 0x6e3e
-/* 001AA29C 001B312C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA2A0 001B3130  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA2A4 001B3134  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA2A8 001B3138  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA2AC 001B313C  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA2B0 001B3140  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA2B4 001B3144  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA2B8 001B3148  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA2BC 001B314C  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA2C0 001B3150  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA2C4 001B3154  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA2C8 001B3158  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA2CC 001B315C  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA2D0 001B3160  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA2D4 001B3164  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA2D8 001B3168  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA2DC 001B316C  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 001AA2E0 001B3170  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 001AA2E4 001B3174  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 001AA2E8 001B3178  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 001AA2EC 001B317C  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA2F0 001B3180  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA2F4 001B3184  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA2F8 001B3188  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA2FC 001B318C  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA300 001B3190  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA304 001B3194  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA308 001B3198  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA30C 001B319C  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA310 001B31A0  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA314 001B31A4  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA318 001B31A8  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA31C 001B31AC  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA320 001B31B0  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA324 001B31B4  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA328 001B31B8  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA32C 001B31BC  3E 34 6E 6F */	addis r17, r20, 0x6e6f
-/* 001AA330 001B31C0  64 65 3E 46 */	oris r5, r3, 0x3e46
-/* 001AA334 001B31C4  50 51 33 33 */	rlwimi. r17, r2, 6, 0xc, 0x19
-/* 001AA338 001B31C8  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001AA33C 001B31CC  37 30 5F 5F */	addic. r25, r16, 0x5f5f
-/* 001AA340 001B31D0  74 72 65 65 */	andis. r18, r3, 0x6565
-/* 001AA344 001B31D4  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001AA348 001B31D8  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001AA34C 001B31DC  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001AA350 001B31E0  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001AA354 001B31E4  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001AA358 001B31E8  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001AA35C 001B31EC  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001AA360 001B31F0  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001AA364 001B31F4  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001AA368 001B31F8  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001AA36C 001B31FC  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001AA370 001B3200  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 001AA374 001B3204  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA378 001B3208  31 32 39 6D */	addic r9, r18, 0x396d
-/* 001AA37C 001B320C  61 70 3C 43 */	ori r16, r11, 0x3c43
-/* 001AA380 001B3210  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA384 001B3214  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA388 001B3218  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA38C 001B321C  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AA390 001B3220  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA394 001B3224  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA398 001B3228  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA39C 001B322C  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001AA3A0 001B3230  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA3A4 001B3234  32 31 6C 65 */	addic r17, r17, 0x6c65
-/* 001AA3A8 001B3238  73 73 3C 43 */	andi. r19, r27, 0x3c43
-/* 001AA3AC 001B323C  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA3B0 001B3240  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA3B4 001B3244  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA3B8 001B3248  72 6E 3E 2C */	andi. r14, r19, 0x3e2c
-/* 001AA3BC 001B324C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA3C0 001B3250  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001AA3C4 001B3254  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AA3C8 001B3258  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001AA3CC 001B325C  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001AA3D0 001B3260  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA3D4 001B3264  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AA3D8 001B3268  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AA3DC 001B326C  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA3E0 001B3270  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA3E4 001B3274  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA3E8 001B3278  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AA3EC 001B327C  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA3F0 001B3280  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA3F4 001B3284  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA3F8 001B3288  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001AA3FC 001B328C  31 33 76 61 */	addic r9, r19, 0x7661
-/* 001AA400 001B3290  6C 75 65 5F */	xoris r21, r3, 0x655f
-/* 001AA404 001B3294  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 001AA408 001B3298  61 72 65 2C */	ori r18, r11, 0x652c
-/* 001AA40C 001B329C  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA410 001B32A0  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001AA414 001B32A4  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AA418 001B32A8  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001AA41C 001B32AC  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001AA420 001B32B0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA424 001B32B4  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AA428 001B32B8  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AA42C 001B32BC  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA430 001B32C0  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA434 001B32C4  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA438 001B32C8  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AA43C 001B32CC  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA440 001B32D0  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA444 001B32D4  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA448 001B32D8  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001AA44C 001B32DC  34 6E 6F 64 */	addic. r3, r14, 0x6f64
-/* 001AA450 001B32E0  65 55 6C 00 */	oris r21, r10, 0x6c00
-/* 001AA454 001B32E4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA458 001B32E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA45C 001B32EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_001AA460
-func_001AA460:
+.global ".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
+".node_alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv":
 /* 001AA460 001B32F0  38 63 00 04 */	addi r3, r3, 4
 /* 001AA464 001B32F4  4E 80 00 20 */	blr 
-/* 001AA468 001B32F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA46C 001B32FC  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 001AA470 001B3300  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA474 001B3304  00 00 00 08 */	.4byte 0x00000008  /* unknown instruction */
-/* 001AA478 001B3308  01 26 2E 6E */	.4byte 0x01262E6E  /* unknown instruction */
-/* 001AA47C 001B330C  6F 64 65 5F */	xoris r4, r27, 0x655f
-/* 001AA480 001B3310  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AA484 001B3314  63 5F 5F 51 */	ori r31, r26, 0x5f51
-/* 001AA488 001B3318  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA48C 001B331C  64 32 37 30 */	oris r18, r1, 0x3730
-/* 001AA490 001B3320  5F 5F 74 72 */	rlwnm r31, r26, r14, 0x11, 0x19
-/* 001AA494 001B3324  65 65 3C 51 */	oris r5, r11, 0x3c51
-/* 001AA498 001B3328  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA49C 001B332C  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA4A0 001B3330  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA4A4 001B3334  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA4A8 001B3338  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA4AC 001B333C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA4B0 001B3340  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA4B4 001B3344  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA4B8 001B3348  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA4BC 001B334C  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA4C0 001B3350  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 001AA4C4 001B3354  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001AA4C8 001B3358  74 64 31 32 */	andis. r4, r3, 0x3132
-/* 001AA4CC 001B335C  39 6D 61 70 */	addi r11, r13, 0x6170
-/* 001AA4D0 001B3360  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA4D4 001B3364  46 6C 6F 6F */	sc 0x7b
-/* 001AA4D8 001B3368  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA4DC 001B336C  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA4E0 001B3370  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA4E4 001B3374  46 6C 6F 6F */	sc 0x7b
-/* 001AA4E8 001B3378  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA4EC 001B337C  6F 64 65 2C */	xoris r4, r27, 0x652c
-/* 001AA4F0 001B3380  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA4F4 001B3384  74 64 32 31 */	andis. r4, r3, 0x3231
-/* 001AA4F8 001B3388  6C 65 73 73 */	xoris r5, r3, 0x7373
-/* 001AA4FC 001B338C  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA500 001B3390  46 6C 6F 6F */	sc 0x7b
-/* 001AA504 001B3394  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA508 001B3398  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA50C 001B339C  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 001AA510 001B33A0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA514 001B33A4  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AA518 001B33A8  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AA51C 001B33AC  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AA520 001B33B0  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA524 001B33B4  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AA528 001B33B8  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AA52C 001B33BC  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA530 001B33C0  46 6C 6F 6F */	sc 0x7b
-/* 001AA534 001B33C4  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA538 001B33C8  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA53C 001B33CC  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA540 001B33D0  46 6C 6F 6F */	sc 0x7b
-/* 001AA544 001B33D4  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA548 001B33D8  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AA54C 001B33DC  3E 3E 31 33 */	addis r17, r30, 0x3133
-/* 001AA550 001B33E0  76 61 6C 75 */	andis. r1, r19, 0x6c75
-/* 001AA554 001B33E4  65 5F 63 6F */	oris r31, r10, 0x636f
-/* 001AA558 001B33E8  6D 70 61 72 */	xoris r16, r11, 0x6172
-/* 001AA55C 001B33EC  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001AA560 001B33F0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA564 001B33F4  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AA568 001B33F8  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AA56C 001B33FC  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AA570 001B3400  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA574 001B3404  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AA578 001B3408  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AA57C 001B340C  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA580 001B3410  46 6C 6F 6F */	sc 0x7b
-/* 001AA584 001B3414  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA588 001B3418  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA58C 001B341C  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA590 001B3420  46 6C 6F 6F */	sc 0x7b
-/* 001AA594 001B3424  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA598 001B3428  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AA59C 001B342C  3E 3E 46 76 */	addis r17, r30, 0x4676
 
 .global ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 ".destroy__Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>FPQ23std36pair<C12FloorPattern,P11FloorIDNode>":
 /* 001AA5A0 001B3430  4E 80 00 20 */	blr 
 
-.global func_001AA630
-func_001AA630:
+.global ".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv"
+".alloc__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>Fv":
 /* 001AA630 001B34C0  4E 80 00 20 */	blr 
-/* 001AA634 001B34C4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA638 001B34C8  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 001AA63C 001B34CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA640 001B34D0  00 00 00 04 */	.4byte 0x00000004  /* unknown instruction */
-/* 001AA644 001B34D4  01 21 2E 61 */	.4byte 0x01212E61  /* unknown instruction */
-/* 001AA648 001B34D8  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001AA64C 001B34DC  5F 5F 51 32 */	rlwnm r31, r26, r10, 4, 0x19
-/* 001AA650 001B34E0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA654 001B34E4  32 37 30 5F */	addic r17, r23, 0x305f
-/* 001AA658 001B34E8  5F 74 72 65 */	rlwnm. r20, r27, r14, 9, 0x12
-/* 001AA65C 001B34EC  65 3C 51 32 */	oris r28, r9, 0x5132
-/* 001AA660 001B34F0  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA664 001B34F4  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AA668 001B34F8  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AA66C 001B34FC  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AA670 001B3500  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AA674 001B3504  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AA678 001B3508  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AA67C 001B350C  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AA680 001B3510  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AA684 001B3514  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AA688 001B3518  65 3E 2C 51 */	oris r30, r9, 0x2c51
-/* 001AA68C 001B351C  33 33 73 74 */	addic r25, r19, 0x7374
-/* 001AA690 001B3520  64 31 32 39 */	oris r17, r1, 0x3239
-/* 001AA694 001B3524  6D 61 70 3C */	xoris r1, r11, 0x703c
-/* 001AA698 001B3528  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA69C 001B352C  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA6A0 001B3530  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA6A4 001B3534  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA6A8 001B3538  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA6AC 001B353C  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA6B0 001B3540  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA6B4 001B3544  64 65 2C 51 */	oris r5, r3, 0x2c51
-/* 001AA6B8 001B3548  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA6BC 001B354C  64 32 31 6C */	oris r18, r1, 0x316c
-/* 001AA6C0 001B3550  65 73 73 3C */	oris r19, r11, 0x733c
-/* 001AA6C4 001B3554  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA6C8 001B3558  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA6CC 001B355C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA6D0 001B3560  65 72 6E 3E */	oris r18, r11, 0x6e3e
-/* 001AA6D4 001B3564  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA6D8 001B3568  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA6DC 001B356C  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA6E0 001B3570  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA6E4 001B3574  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA6E8 001B3578  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA6EC 001B357C  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA6F0 001B3580  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA6F4 001B3584  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA6F8 001B3588  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA6FC 001B358C  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA700 001B3590  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA704 001B3594  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA708 001B3598  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA70C 001B359C  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA710 001B35A0  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA714 001B35A4  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 001AA718 001B35A8  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 001AA71C 001B35AC  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 001AA720 001B35B0  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 001AA724 001B35B4  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AA728 001B35B8  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AA72C 001B35BC  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AA730 001B35C0  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AA734 001B35C4  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AA738 001B35C8  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA73C 001B35CC  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA740 001B35D0  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA744 001B35D4  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA748 001B35D8  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA74C 001B35DC  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA750 001B35E0  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA754 001B35E4  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA758 001B35E8  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA75C 001B35EC  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA760 001B35F0  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AA764 001B35F4  3E 46 76 00 */	addis r18, r6, 0x7600
-/* 001AA768 001B35F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA76C 001B35FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_001AA770
-func_001AA770:
+.global ".insert_one__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ23std36pair<C12FloorPattern,P11FloorIDNode>"
+".insert_one__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ23std36pair<C12FloorPattern,P11FloorIDNode>":
 /* 001AA770 001B3600  93 E1 FF FC */	stw r31, -4(r1)
 /* 001AA774 001B3604  7C 08 02 A6 */	mflr r0
 /* 001AA778 001B3608  38 E5 00 00 */	addi r7, r5, 0
@@ -5813,7 +4987,7 @@ lbl_001AA7D0:
 lbl_001AA7F0:
 /* 001AA7F0 001B3680  38 64 00 00 */	addi r3, r4, 0
 /* 001AA7F4 001B3684  38 89 00 00 */	addi r4, r9, 0
-/* 001AA7F8 001B3688  48 00 1E C9 */	bl func_001AC6C0
+/* 001AA7F8 001B3688  48 00 1E C9 */	bl ".insert_node_at__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodebbRCQ23std36pair<C12FloorPattern,P11FloorIDNode>"
 /* 001AA7FC 001B368C  90 7F 00 00 */	stw r3, 0(r31)
 /* 001AA800 001B3690  88 02 E3 C0 */	lbz r0, lbl_005BF820-_R2_BASE_(r2)
 /* 001AA804 001B3694  98 1F 00 04 */	stb r0, 4(r31)
@@ -5828,102 +5002,9 @@ lbl_001AA818:
 /* 001AA820 001B36B0  83 E1 FF FC */	lwz r31, -4(r1)
 /* 001AA824 001B36B4  7C 08 03 A6 */	mtlr r0
 /* 001AA828 001B36B8  4E 80 00 20 */	blr 
-/* 001AA82C 001B36BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA830 001B36C0  00 09 20 41 */	.4byte 0x00092041  /* unknown instruction */
-/* 001AA834 001B36C4  80 01 00 00 */	lwz r0, 0(r1)
-/* 001AA838 001B36C8  00 00 00 BC */	.4byte 0x000000BC  /* unknown instruction */
-/* 001AA83C 001B36CC  01 53 2E 69 */	.4byte 0x01532E69  /* unknown instruction */
-/* 001AA840 001B36D0  6E 73 65 72 */	xoris r19, r19, 0x6572
-/* 001AA844 001B36D4  74 5F 6F 6E */	andis. r31, r2, 0x6f6e
-/* 001AA848 001B36D8  65 5F 5F 51 */	oris r31, r10, 0x5f51
-/* 001AA84C 001B36DC  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA850 001B36E0  64 32 37 30 */	oris r18, r1, 0x3730
-/* 001AA854 001B36E4  5F 5F 74 72 */	rlwnm r31, r26, r14, 0x11, 0x19
-/* 001AA858 001B36E8  65 65 3C 51 */	oris r5, r11, 0x3c51
-/* 001AA85C 001B36EC  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AA860 001B36F0  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AA864 001B36F4  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AA868 001B36F8  43 31 32 46 */	bdnza+ 0x3244
-/* 001AA86C 001B36FC  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA870 001B3700  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AA874 001B3704  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AA878 001B3708  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AA87C 001B370C  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AA880 001B3710  49 44 4E 6F */	bla 0x1444e6c
-/* 001AA884 001B3714  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 001AA888 001B3718  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001AA88C 001B371C  74 64 31 32 */	andis. r4, r3, 0x3132
-/* 001AA890 001B3720  39 6D 61 70 */	addi r11, r13, 0x6170
-/* 001AA894 001B3724  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA898 001B3728  46 6C 6F 6F */	sc 0x7b
-/* 001AA89C 001B372C  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA8A0 001B3730  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA8A4 001B3734  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA8A8 001B3738  46 6C 6F 6F */	sc 0x7b
-/* 001AA8AC 001B373C  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA8B0 001B3740  6F 64 65 2C */	xoris r4, r27, 0x652c
-/* 001AA8B4 001B3744  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA8B8 001B3748  74 64 32 31 */	andis. r4, r3, 0x3231
-/* 001AA8BC 001B374C  6C 65 73 73 */	xoris r5, r3, 0x7373
-/* 001AA8C0 001B3750  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA8C4 001B3754  46 6C 6F 6F */	sc 0x7b
-/* 001AA8C8 001B3758  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA8CC 001B375C  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA8D0 001B3760  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 001AA8D4 001B3764  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA8D8 001B3768  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AA8DC 001B376C  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AA8E0 001B3770  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AA8E4 001B3774  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA8E8 001B3778  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AA8EC 001B377C  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AA8F0 001B3780  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA8F4 001B3784  46 6C 6F 6F */	sc 0x7b
-/* 001AA8F8 001B3788  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA8FC 001B378C  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA900 001B3790  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA904 001B3794  46 6C 6F 6F */	sc 0x7b
-/* 001AA908 001B3798  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA90C 001B379C  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AA910 001B37A0  3E 3E 31 33 */	addis r17, r30, 0x3133
-/* 001AA914 001B37A4  76 61 6C 75 */	andis. r1, r19, 0x6c75
-/* 001AA918 001B37A8  65 5F 63 6F */	oris r31, r10, 0x636f
-/* 001AA91C 001B37AC  6D 70 61 72 */	xoris r16, r11, 0x6172
-/* 001AA920 001B37B0  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001AA924 001B37B4  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AA928 001B37B8  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AA92C 001B37BC  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AA930 001B37C0  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AA934 001B37C4  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AA938 001B37C8  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AA93C 001B37CC  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AA940 001B37D0  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AA944 001B37D4  46 6C 6F 6F */	sc 0x7b
-/* 001AA948 001B37D8  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AA94C 001B37DC  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AA950 001B37E0  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AA954 001B37E4  46 6C 6F 6F */	sc 0x7b
-/* 001AA958 001B37E8  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AA95C 001B37EC  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AA960 001B37F0  3E 3E 46 52 */	addis r17, r30, 0x4652
-/* 001AA964 001B37F4  43 51 32 33 */	bdzla- 0x3230
-/* 001AA968 001B37F8  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001AA96C 001B37FC  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001AA970 001B3800  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001AA974 001B3804  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001AA978 001B3808  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001AA97C 001B380C  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001AA980 001B3810  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001AA984 001B3814  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001AA988 001B3818  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001AA98C 001B381C  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001AA990 001B3820  3E 00 00 00 */	lis r16, 0
-/* 001AA994 001B3824  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA998 001B3828  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA99C 001B382C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.global func_001AA9A0
-func_001AA9A0:
+.global ".__ct__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compareRCQ23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>"
+".__ct__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FRCQ33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compareRCQ23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>":
 /* 001AA9A0 001B3830  38 A0 00 00 */	li r5, 0
 /* 001AA9A4 001B3834  38 03 00 04 */	addi r0, r3, 4
 /* 001AA9A8 001B3838  90 A3 00 00 */	stw r5, 0(r3)
@@ -5932,138 +5013,6 @@ func_001AA9A0:
 /* 001AA9B4 001B3844  98 83 00 08 */	stb r4, 8(r3)
 /* 001AA9B8 001B3848  90 03 00 0C */	stw r0, 0xc(r3)
 /* 001AA9BC 001B384C  4E 80 00 20 */	blr 
-/* 001AA9C0 001B3850  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA9C4 001B3854  00 09 20 40 */	.4byte 0x00092040  /* unknown instruction */
-/* 001AA9C8 001B3858  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AA9CC 001B385C  00 00 00 20 */	.4byte 0x00000020  /* unknown instruction */
-/* 001AA9D0 001B3860  01 FB 2E 5F */	.4byte 0x01FB2E5F  /* unknown instruction */
-/* 001AA9D4 001B3864  5F 63 74 5F */	rlwnm. r3, r27, r14, 0x11, 0xf
-/* 001AA9D8 001B3868  5F 51 32 33 */	rlwnm. r17, r26, r6, 8, 0x19
-/* 001AA9DC 001B386C  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001AA9E0 001B3870  37 30 5F 5F */	addic. r25, r16, 0x5f5f
-/* 001AA9E4 001B3874  74 72 65 65 */	andis. r18, r3, 0x6565
-/* 001AA9E8 001B3878  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001AA9EC 001B387C  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001AA9F0 001B3880  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001AA9F4 001B3884  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001AA9F8 001B3888  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001AA9FC 001B388C  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001AAA00 001B3890  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001AAA04 001B3894  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001AAA08 001B3898  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001AAA0C 001B389C  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001AAA10 001B38A0  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001AAA14 001B38A4  3E 2C 51 33 */	addis r17, r12, 0x5133
-/* 001AAA18 001B38A8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AAA1C 001B38AC  31 32 39 6D */	addic r9, r18, 0x396d
-/* 001AAA20 001B38B0  61 70 3C 43 */	ori r16, r11, 0x3c43
-/* 001AAA24 001B38B4  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AAA28 001B38B8  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AAA2C 001B38BC  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AAA30 001B38C0  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AAA34 001B38C4  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AAA38 001B38C8  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AAA3C 001B38CC  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AAA40 001B38D0  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001AAA44 001B38D4  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AAA48 001B38D8  32 31 6C 65 */	addic r17, r17, 0x6c65
-/* 001AAA4C 001B38DC  73 73 3C 43 */	andi. r19, r27, 0x3c43
-/* 001AAA50 001B38E0  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AAA54 001B38E4  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AAA58 001B38E8  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AAA5C 001B38EC  72 6E 3E 2C */	andi. r14, r19, 0x3e2c
-/* 001AAA60 001B38F0  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AAA64 001B38F4  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001AAA68 001B38F8  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AAA6C 001B38FC  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001AAA70 001B3900  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001AAA74 001B3904  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AAA78 001B3908  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AAA7C 001B390C  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AAA80 001B3910  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AAA84 001B3914  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AAA88 001B3918  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AAA8C 001B391C  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AAA90 001B3920  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AAA94 001B3924  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AAA98 001B3928  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AAA9C 001B392C  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001AAAA0 001B3930  31 33 76 61 */	addic r9, r19, 0x7661
-/* 001AAAA4 001B3934  6C 75 65 5F */	xoris r21, r3, 0x655f
-/* 001AAAA8 001B3938  63 6F 6D 70 */	ori r15, r27, 0x6d70
-/* 001AAAAC 001B393C  61 72 65 2C */	ori r18, r11, 0x652c
-/* 001AAAB0 001B3940  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AAAB4 001B3944  74 64 35 35 */	andis. r4, r3, 0x3535
-/* 001AAAB8 001B3948  61 6C 6C 6F */	ori r12, r11, 0x6c6f
-/* 001AAABC 001B394C  63 61 74 6F */	ori r1, r27, 0x746f
-/* 001AAAC0 001B3950  72 3C 51 32 */	andi. r28, r17, 0x5132
-/* 001AAAC4 001B3954  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AAAC8 001B3958  33 36 70 61 */	addic r25, r22, 0x7061
-/* 001AAACC 001B395C  69 72 3C 43 */	xori r18, r11, 0x3c43
-/* 001AAAD0 001B3960  31 32 46 6C */	addic r9, r18, 0x466c
-/* 001AAAD4 001B3964  6F 6F 72 50 */	xoris r15, r27, 0x7250
-/* 001AAAD8 001B3968  61 74 74 65 */	ori r20, r11, 0x7465
-/* 001AAADC 001B396C  72 6E 2C 50 */	andi. r14, r19, 0x2c50
-/* 001AAAE0 001B3970  31 31 46 6C */	addic r9, r17, 0x466c
-/* 001AAAE4 001B3974  6F 6F 72 49 */	xoris r15, r27, 0x7249
-/* 001AAAE8 001B3978  44 4E 6F 64 */	.4byte 0x444E6F64  /* unknown instruction */
-/* 001AAAEC 001B397C  65 3E 3E 3E */	oris r30, r9, 0x3e3e
-/* 001AAAF0 001B3980  46 52 43 51 */	.4byte 0x46524351  /* unknown instruction */
-/* 001AAAF4 001B3984  33 33 73 74 */	addic r25, r19, 0x7374
-/* 001AAAF8 001B3988  64 31 32 39 */	oris r17, r1, 0x3239
-/* 001AAAFC 001B398C  6D 61 70 3C */	xoris r1, r11, 0x703c
-/* 001AAB00 001B3990  43 31 32 46 */	bdnza+ 0x3244
-/* 001AAB04 001B3994  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AAB08 001B3998  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AAB0C 001B399C  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AAB10 001B39A0  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AAB14 001B39A4  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AAB18 001B39A8  49 44 4E 6F */	bla 0x1444e6c
-/* 001AAB1C 001B39AC  64 65 2C 51 */	oris r5, r3, 0x2c51
-/* 001AAB20 001B39B0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AAB24 001B39B4  64 32 31 6C */	oris r18, r1, 0x316c
-/* 001AAB28 001B39B8  65 73 73 3C */	oris r19, r11, 0x733c
-/* 001AAB2C 001B39BC  43 31 32 46 */	bdnza+ 0x3244
-/* 001AAB30 001B39C0  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AAB34 001B39C4  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AAB38 001B39C8  65 72 6E 3E */	oris r18, r11, 0x6e3e
-/* 001AAB3C 001B39CC  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AAB40 001B39D0  73 74 64 35 */	andi. r20, r27, 0x6435
-/* 001AAB44 001B39D4  35 61 6C 6C */	addic. r11, r1, 0x6c6c
-/* 001AAB48 001B39D8  6F 63 61 74 */	xoris r3, r27, 0x6174
-/* 001AAB4C 001B39DC  6F 72 3C 51 */	xoris r18, r27, 0x3c51
-/* 001AAB50 001B39E0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AAB54 001B39E4  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AAB58 001B39E8  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AAB5C 001B39EC  43 31 32 46 */	bdnza+ 0x3244
-/* 001AAB60 001B39F0  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AAB64 001B39F4  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AAB68 001B39F8  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AAB6C 001B39FC  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AAB70 001B3A00  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AAB74 001B3A04  49 44 4E 6F */	bla 0x1444e6c
-/* 001AAB78 001B3A08  64 65 3E 3E */	oris r5, r3, 0x3e3e
-/* 001AAB7C 001B3A0C  3E 31 33 76 */	addis r17, r17, 0x3376
-/* 001AAB80 001B3A10  61 6C 75 65 */	ori r12, r11, 0x7565
-/* 001AAB84 001B3A14  5F 63 6F 6D */	rlwnm. r3, r27, r13, 0x1d, 0x16
-/* 001AAB88 001B3A18  70 61 72 65 */	andi. r1, r3, 0x7265
-/* 001AAB8C 001B3A1C  52 43 51 32 */	rlwimi r3, r18, 0xa, 4, 0x19
-/* 001AAB90 001B3A20  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AAB94 001B3A24  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AAB98 001B3A28  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AAB9C 001B3A2C  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AABA0 001B3A30  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AABA4 001B3A34  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AABA8 001B3A38  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AABAC 001B3A3C  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AABB0 001B3A40  46 6C 6F 6F */	sc 0x7b
-/* 001AABB4 001B3A44  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AABB8 001B3A48  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AABBC 001B3A4C  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AABC0 001B3A50  46 6C 6F 6F */	sc 0x7b
-/* 001AABC4 001B3A54  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AABC8 001B3A58  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AABCC 001B3A5C  3E 00 00 00 */	lis r16, 0
 
 .global ".ReconLoadObject<48ReconStreamVector<27SpriteFileUsageTemplate<Uc>>>__FP48ReconStreamVector<27SpriteFileUsageTemplate<Uc>>P8iResFilelsPl_s"
 ".ReconLoadObject<48ReconStreamVector<27SpriteFileUsageTemplate<Uc>>>__FP48ReconStreamVector<27SpriteFileUsageTemplate<Uc>>P8iResFilelsPl_s":
@@ -7430,8 +6379,8 @@ lbl_001AC624:
 /* 001AC638 001B54C8  83 C1 FF F8 */	lwz r30, -8(r1)
 /* 001AC63C 001B54CC  4E 80 00 20 */	blr 
 
-.global func_001AC6C0
-func_001AC6C0:
+.global ".insert_node_at__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodebbRCQ23std36pair<C12FloorPattern,P11FloorIDNode>"
+".insert_node_at__Q23std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>FPQ33std270__tree<Q23std36pair<C12FloorPattern,P11FloorIDNode>,Q33std129map<C12FloorPattern,P11FloorIDNode,Q23std21less<C12FloorPattern>,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>13value_compare,Q23std55allocator<Q23std36pair<C12FloorPattern,P11FloorIDNode>>>4nodebbRCQ23std36pair<C12FloorPattern,P11FloorIDNode>":
 /* 001AC6C0 001B5550  BE E1 FF DC */	stmw r23, -0x24(r1)
 /* 001AC6C4 001B5554  7C 08 02 A6 */	mflr r0
 /* 001AC6C8 001B5558  3B 23 00 00 */	addi r25, r3, 0
@@ -7534,171 +6483,6 @@ lbl_001AC824:
 /* 001AC830 001B56C0  7C 08 03 A6 */	mtlr r0
 /* 001AC834 001B56C4  BA E1 FF DC */	lmw r23, -0x24(r1)
 /* 001AC838 001B56C8  4E 80 00 20 */	blr 
-/* 001AC83C 001B56CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001AC840 001B56D0  00 09 20 61 */	.4byte 0x00092061  /* unknown instruction */
-/* 001AC844 001B56D4  80 09 00 00 */	lwz r0, 0(r9)
-/* 001AC848 001B56D8  00 00 01 7C */	.4byte 0x0000017C  /* unknown instruction */
-/* 001AC84C 001B56DC  02 76 2E 69 */	.4byte 0x02762E69  /* unknown instruction */
-/* 001AC850 001B56E0  6E 73 65 72 */	xoris r19, r19, 0x6572
-/* 001AC854 001B56E4  74 5F 6E 6F */	andis. r31, r2, 0x6e6f
-/* 001AC858 001B56E8  64 65 5F 61 */	oris r5, r3, 0x5f61
-/* 001AC85C 001B56EC  74 5F 5F 51 */	andis. r31, r2, 0x5f51
-/* 001AC860 001B56F0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AC864 001B56F4  64 32 37 30 */	oris r18, r1, 0x3730
-/* 001AC868 001B56F8  5F 5F 74 72 */	rlwnm r31, r26, r14, 0x11, 0x19
-/* 001AC86C 001B56FC  65 65 3C 51 */	oris r5, r11, 0x3c51
-/* 001AC870 001B5700  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001AC874 001B5704  64 33 36 70 */	oris r19, r1, 0x3670
-/* 001AC878 001B5708  61 69 72 3C */	ori r9, r11, 0x723c
-/* 001AC87C 001B570C  43 31 32 46 */	bdnza+ 0x3244
-/* 001AC880 001B5710  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AC884 001B5714  50 61 74 74 */	rlwimi r1, r3, 0xe, 0x11, 0x1a
-/* 001AC888 001B5718  65 72 6E 2C */	oris r18, r11, 0x6e2c
-/* 001AC88C 001B571C  50 31 31 46 */	rlwimi r17, r1, 6, 5, 3
-/* 001AC890 001B5720  6C 6F 6F 72 */	xoris r15, r3, 0x6f72
-/* 001AC894 001B5724  49 44 4E 6F */	bla 0x1444e6c
-/* 001AC898 001B5728  64 65 3E 2C */	oris r5, r3, 0x3e2c
-/* 001AC89C 001B572C  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001AC8A0 001B5730  74 64 31 32 */	andis. r4, r3, 0x3132
-/* 001AC8A4 001B5734  39 6D 61 70 */	addi r11, r13, 0x6170
-/* 001AC8A8 001B5738  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AC8AC 001B573C  46 6C 6F 6F */	sc 0x7b
-/* 001AC8B0 001B5740  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AC8B4 001B5744  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AC8B8 001B5748  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AC8BC 001B574C  46 6C 6F 6F */	sc 0x7b
-/* 001AC8C0 001B5750  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AC8C4 001B5754  6F 64 65 2C */	xoris r4, r27, 0x652c
-/* 001AC8C8 001B5758  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AC8CC 001B575C  74 64 32 31 */	andis. r4, r3, 0x3231
-/* 001AC8D0 001B5760  6C 65 73 73 */	xoris r5, r3, 0x7373
-/* 001AC8D4 001B5764  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AC8D8 001B5768  46 6C 6F 6F */	sc 0x7b
-/* 001AC8DC 001B576C  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AC8E0 001B5770  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AC8E4 001B5774  3E 2C 51 32 */	addis r17, r12, 0x5132
-/* 001AC8E8 001B5778  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AC8EC 001B577C  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AC8F0 001B5780  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AC8F4 001B5784  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AC8F8 001B5788  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AC8FC 001B578C  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AC900 001B5790  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AC904 001B5794  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AC908 001B5798  46 6C 6F 6F */	sc 0x7b
-/* 001AC90C 001B579C  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AC910 001B57A0  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AC914 001B57A4  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AC918 001B57A8  46 6C 6F 6F */	sc 0x7b
-/* 001AC91C 001B57AC  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AC920 001B57B0  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AC924 001B57B4  3E 3E 31 33 */	addis r17, r30, 0x3133
-/* 001AC928 001B57B8  76 61 6C 75 */	andis. r1, r19, 0x6c75
-/* 001AC92C 001B57BC  65 5F 63 6F */	oris r31, r10, 0x636f
-/* 001AC930 001B57C0  6D 70 61 72 */	xoris r16, r11, 0x6172
-/* 001AC934 001B57C4  65 2C 51 32 */	oris r12, r9, 0x5132
-/* 001AC938 001B57C8  33 73 74 64 */	addic r27, r19, 0x7464
-/* 001AC93C 001B57CC  35 35 61 6C */	addic. r9, r21, 0x616c
-/* 001AC940 001B57D0  6C 6F 63 61 */	xoris r15, r3, 0x6361
-/* 001AC944 001B57D4  74 6F 72 3C */	andis. r15, r3, 0x723c
-/* 001AC948 001B57D8  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AC94C 001B57DC  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AC950 001B57E0  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AC954 001B57E4  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AC958 001B57E8  46 6C 6F 6F */	sc 0x7b
-/* 001AC95C 001B57EC  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AC960 001B57F0  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AC964 001B57F4  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AC968 001B57F8  46 6C 6F 6F */	sc 0x7b
-/* 001AC96C 001B57FC  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AC970 001B5800  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AC974 001B5804  3E 3E 46 50 */	addis r17, r30, 0x4650
-/* 001AC978 001B5808  51 33 33 73 */	rlwimi. r19, r9, 6, 0xd, 0x19
-/* 001AC97C 001B580C  74 64 32 37 */	andis. r4, r3, 0x3237
-/* 001AC980 001B5810  30 5F 5F 74 */	addic r2, r31, 0x5f74
-/* 001AC984 001B5814  72 65 65 3C */	andi. r5, r19, 0x653c
-/* 001AC988 001B5818  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001AC98C 001B581C  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001AC990 001B5820  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001AC994 001B5824  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001AC998 001B5828  46 6C 6F 6F */	sc 0x7b
-/* 001AC99C 001B582C  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001AC9A0 001B5830  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001AC9A4 001B5834  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001AC9A8 001B5838  46 6C 6F 6F */	sc 0x7b
-/* 001AC9AC 001B583C  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001AC9B0 001B5840  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001AC9B4 001B5844  2C 51 33 33 */	.4byte 0x2C513333  /* unknown instruction */
-/* 001AC9B8 001B5848  73 74 64 31 */	andi. r20, r27, 0x6431
-/* 001AC9BC 001B584C  32 39 6D 61 */	addic r17, r25, 0x6d61
-/* 001AC9C0 001B5850  70 3C 43 31 */	andi. r28, r1, 0x4331
-/* 001AC9C4 001B5854  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001AC9C8 001B5858  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001AC9CC 001B585C  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001AC9D0 001B5860  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001AC9D4 001B5864  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001AC9D8 001B5868  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001AC9DC 001B586C  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001AC9E0 001B5870  2C 51 32 33 */	.4byte 0x2C513233  /* unknown instruction */
-/* 001AC9E4 001B5874  73 74 64 32 */	andi. r20, r27, 0x6432
-/* 001AC9E8 001B5878  31 6C 65 73 */	addic r11, r12, 0x6573
-/* 001AC9EC 001B587C  73 3C 43 31 */	andi. r28, r25, 0x4331
-/* 001AC9F0 001B5880  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001AC9F4 001B5884  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001AC9F8 001B5888  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001AC9FC 001B588C  6E 3E 2C 51 */	xoris r30, r17, 0x2c51
-/* 001ACA00 001B5890  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001ACA04 001B5894  64 35 35 61 */	oris r21, r1, 0x3561
-/* 001ACA08 001B5898  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001ACA0C 001B589C  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001ACA10 001B58A0  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001ACA14 001B58A4  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001ACA18 001B58A8  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001ACA1C 001B58AC  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001ACA20 001B58B0  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001ACA24 001B58B4  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001ACA28 001B58B8  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001ACA2C 001B58BC  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001ACA30 001B58C0  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001ACA34 001B58C4  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001ACA38 001B58C8  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001ACA3C 001B58CC  3E 3E 3E 31 */	addis r17, r30, 0x3e31
-/* 001ACA40 001B58D0  33 76 61 6C */	addic r27, r22, 0x616c
-/* 001ACA44 001B58D4  75 65 5F 63 */	andis. r5, r11, 0x5f63
-/* 001ACA48 001B58D8  6F 6D 70 61 */	xoris r13, r27, 0x7061
-/* 001ACA4C 001B58DC  72 65 2C 51 */	andi. r5, r19, 0x2c51
-/* 001ACA50 001B58E0  32 33 73 74 */	addic r17, r19, 0x7374
-/* 001ACA54 001B58E4  64 35 35 61 */	oris r21, r1, 0x3561
-/* 001ACA58 001B58E8  6C 6C 6F 63 */	xoris r12, r3, 0x6f63
-/* 001ACA5C 001B58EC  61 74 6F 72 */	ori r20, r11, 0x6f72
-/* 001ACA60 001B58F0  3C 51 32 33 */	addis r2, r17, 0x3233
-/* 001ACA64 001B58F4  73 74 64 33 */	andi. r20, r27, 0x6433
-/* 001ACA68 001B58F8  36 70 61 69 */	addic. r19, r16, 0x6169
-/* 001ACA6C 001B58FC  72 3C 43 31 */	andi. r28, r17, 0x4331
-/* 001ACA70 001B5900  32 46 6C 6F */	addic r18, r6, 0x6c6f
-/* 001ACA74 001B5904  6F 72 50 61 */	xoris r18, r27, 0x5061
-/* 001ACA78 001B5908  74 74 65 72 */	andis. r20, r3, 0x6572
-/* 001ACA7C 001B590C  6E 2C 50 31 */	xoris r12, r17, 0x5031
-/* 001ACA80 001B5910  31 46 6C 6F */	addic r10, r6, 0x6c6f
-/* 001ACA84 001B5914  6F 72 49 44 */	xoris r18, r27, 0x4944
-/* 001ACA88 001B5918  4E 6F 64 65 */	.4byte 0x4E6F6465  /* unknown instruction */
-/* 001ACA8C 001B591C  3E 3E 3E 34 */	addis r17, r30, 0x3e34
-/* 001ACA90 001B5920  6E 6F 64 65 */	xoris r15, r19, 0x6465
-/* 001ACA94 001B5924  62 62 52 43 */	ori r2, r19, 0x5243
-/* 001ACA98 001B5928  51 32 33 73 */	rlwimi. r18, r9, 6, 0xd, 0x19
-/* 001ACA9C 001B592C  74 64 33 36 */	andis. r4, r3, 0x3336
-/* 001ACAA0 001B5930  70 61 69 72 */	andi. r1, r3, 0x6972
-/* 001ACAA4 001B5934  3C 43 31 32 */	addis r2, r3, 0x3132
-/* 001ACAA8 001B5938  46 6C 6F 6F */	sc 0x7b
-/* 001ACAAC 001B593C  72 50 61 74 */	andi. r16, r18, 0x6174
-/* 001ACAB0 001B5940  74 65 72 6E */	andis. r5, r3, 0x726e
-/* 001ACAB4 001B5944  2C 50 31 31 */	.4byte 0x2C503131  /* unknown instruction */
-/* 001ACAB8 001B5948  46 6C 6F 6F */	sc 0x7b
-/* 001ACABC 001B594C  72 49 44 4E */	andi. r9, r18, 0x444e
-/* 001ACAC0 001B5950  6F 64 65 3E */	xoris r4, r27, 0x653e
-/* 001ACAC4 001B5954  1F 00 00 00 */	mulli r24, r0, 0
-/* 001ACAC8 001B5958  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 001ACACC 001B595C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .global ".GetType__69SimpleReconObject<48ReconStreamVector<27SpriteFileUsageTemplate<Us>>>Fv"
 ".GetType__69SimpleReconObject<48ReconStreamVector<27SpriteFileUsageTemplate<Us>>>Fv":

@@ -4,6 +4,9 @@ expected/
 compilers/
 .vscode/
 *.o
+*.suo
+tools/StringLabeler/StringLabeler/bin
+tools/StringLabeler/StringLabeler/obj
 tmp/
 /asm/full/
 /src/OS/Mac/CIncludes/

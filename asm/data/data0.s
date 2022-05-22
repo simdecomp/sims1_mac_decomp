@@ -24500,6 +24500,8 @@ lbl_005BE544:
 	# ROM: 0x5C73DC
 	.byte 0x65
 
+.global lbl_005BE545
+lbl_005BE545:
 	# ROM: 0x5C73DD
 	.byte 0x40, 0x00, 0x80
 
@@ -49507,6 +49509,8 @@ lbl_005C4664:
 	.4byte 0x01240122
 	.4byte 0x688D0222
 
+.global lbl_005C46A0
+lbl_005C46A0:
 	# ROM: 0x5CD538
 	.4byte 0x688C0522
 	.4byte 0x01E40122
@@ -52526,6 +52530,8 @@ lbl_005C4664:
 	.4byte 0xB8820221
 	.4byte 0x4C0223D0
 
+.global lbl_005C75C4
+lbl_005C75C4:
 	# ROM: 0x5D045C
 	.4byte 0x080D0222
 	.4byte 0xB8820221

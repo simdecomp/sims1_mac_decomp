@@ -2,7 +2,7 @@
 #
 # Uses regex to convert files from Metrowerks's assembly syntax (powerpc architecture only) to one that modern binutils can assemble.
 #
-# USAGE: ./convert_gas_syntax.py INPUT_ASM_FILE > OUTPUT_ASM_FILE
+# USAGE: ./mwasm2gas.py INPUT_ASM_FILE > OUTPUT_ASM_FILE
 
 import re
 import sys
@@ -101,22 +101,24 @@ def process_branches(asm_line, asm_line_index):
     return asm_line
 
 
-def process_asm_line(asm_line, function):
+def process_asm_line(asm_line):
     # only print defines and instructions
     asm_line = asm_line.replace("<", "_")
     asm_line = asm_line.replace(">", "_")
     asm_line = asm_line.replace("$0000", "0")
     asm_line = asm_line.replace("@", "")
-    if asm_line.startswith("Hunk") is True:
-        return ".global %s\n%s:" % (function, function)
-    if asm_line.startswith(".globl") is True:
-        return ".global %s\n%s:" % (function, function)
+    m = re.match(r'Hunk:\tKind=(.*)    Align=.*  Class=.*  Name=(.*)\(.*', asm_line)
+    if m and m.group(1) == "HUNK_GLOBAL_CODE":
+        symbol = m.group(2)
+        return ".global %s\n%s:" % (symbol, symbol)
+    if asm_line.strip().startswith("Hunk:"):
+        return ";# REDACTED"
     if ".align" in asm_line:
         # trim filler
         return ";# REDACTED"
     if asm_line.startswith("XRef"):
         return ";# REDACTED"
-    return asm_line
+    return "\t%s" % asm_line.strip()
 
 
 with open(sys.argv[1], "r") as asm_file:
@@ -130,7 +132,6 @@ with open(sys.argv[1], "r") as asm_file:
     print(".set RTOC,r2")
     print(".set SP,r1")
     print(" ")
-    function = sys.argv[2].replace(".", "")
     asm_lines = asm_file.readlines()
     for i in range(0, len(asm_lines)):
         branch_target[i] = False
@@ -139,18 +140,11 @@ with open(sys.argv[1], "r") as asm_file:
         check_for_branches(asm_line, i)
     for i in range(0, len(asm_lines)):
         asm_line = asm_lines[i]
-        asm_line = process_asm_line(asm_line, function)
+        asm_line = process_branches(asm_line, i)
         asm_line = convert_ha16(asm_line)
         asm_line = convert_lo16(asm_line)
         asm_line = convert_globl(asm_line)
-        asm_line = process_branches(asm_line, i)
+        asm_line = process_asm_line(asm_line)
         if branch_target[i] is True:
             print("loc_%d:" % i)
         print(asm_line)
-    # for asm_line in asm_file.readlines():
-    #     asm_line = process_asm_line(asm_line, function)
-    #     asm_line = convert_ha16(asm_line)
-    #     asm_line = convert_lo16(asm_line)
-    #     asm_line = convert_globl(asm_line)
-
-    #     print(asm_line)

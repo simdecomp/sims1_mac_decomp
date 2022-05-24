@@ -60,39 +60,4 @@ struct CGameApp {
     virtual int DoAboutBox() = 0;
 };
 
-void CGameApp::SetAppAsCurResFile() {
-    if (unk98) {
-        UseResFile(unk98);
-    }
-}
-
-void CGameApp::SetUseWNE(bool val) {
-    use_wne = val;
-}
-
-void CGameApp::SetSystemTaskFrequency(unsigned long val) {
-    system_task_frequency = val;
-}
-
-void CGameApp::SetGenerateUpdateEvents(unsigned char val) {
-    generate_update_events = val;
-}
-
-void CGameApp::SetGenerateMouseMovedEvents(unsigned char val) {
-    generate_mouse_moved_events = val;
-}
-
-void CGameApp::SetMainPort(OpaqueGrafPtr* port, bool is_window) {
-    main_port = port;
-    main_port_is_window = is_window;
-}
-
-OpaqueGrafPtr* CGameApp::GetMainPort() {
-    return main_port;
-}
-
-bool CGameApp::MainPortIsWindow() {
-    return main_port_is_window;
-}
-
 extern CGameApp* g_app;

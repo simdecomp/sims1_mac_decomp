@@ -1,10 +1,12 @@
 __pycache__/
 baserom
+build/
 expected/
 compilers/
 .vscode/
 *.o
 *.suo
+*.dump
 tools/StringLabeler/StringLabeler/bin
 tools/StringLabeler/StringLabeler/obj
 tmp/

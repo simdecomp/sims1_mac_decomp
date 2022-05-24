@@ -2720,8 +2720,7 @@ lbl_0059ABD0:
 	.asciz "m|pm"
 	.byte 0x25, 0x41, 0x20
 	.asciz "%B %d %T %Y|%I:%M:%S %p|%A %B %d %Y|%T"
-	.byte 0x53
-	.asciz "un|Sunday|Mon|Monday|Tue|Tuesday|Wed|Wednesday|Thu|Thursday|Fri|Friday|Sat|Saturday"
+	.asciz "Sun|Sunday|Mon|Monday|Tue|Tuesday|Wed|Wednesday|Thu|Thursday|Fri|Friday|Sat|Saturday"
 	.asciz "Jan|January|Feb|February|Mar|March|Apr|April|May|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December"
 	.byte 0x7C, 0x00
 	.4byte 0x00000000

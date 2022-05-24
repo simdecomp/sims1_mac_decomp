@@ -2,35 +2,45 @@
 #include "Engine/GameDisplay.h"
 #include "Game/CSimsApp.h"
 
-void CSimsApp::SavePrefs() {
-    if (!prefs) {
-        return;
-    }
-    g_app->WritePrefs(
-        prefs, sizeof(Prefs)
-    );
+void CGameApp::SetUseWNE(bool val) {
+    use_wne = val;
 }
 
-void CSimsApp::SaveGameDisplay() {
-    GameDisplay::GameDisplayInfo game_display;
-    Prefs* info = GetPrefs();
-    Prefs* _prefs = info;
-    GameDisplay::GetGameDisplayInfo(&game_display);
-    int test = OR((800 - game_display.unk8), (game_display.unk8 - 800));
-    _prefs->unk1 = BOOL_ALT(test);
-    _prefs->unk4 = game_display.unk0;
-    _prefs->unk8 = game_display.unk4;
-    _prefs->unkC = game_display.unk10;
-    _prefs->unk10 = game_display.unk14;
-    _prefs->unk14 = game_display.unk18;
-    if (prefs) {
-        g_app->WritePrefs(
-            prefs, sizeof(Prefs)
-        );
-    }
+void CGameApp::SetSystemTaskFrequency(unsigned long val) {
+    system_task_frequency = val;
 }
+
+void CGameApp::SetGenerateUpdateEvents(unsigned char val) {
+    generate_update_events = val;
+}
+
+void CGameApp::SetGenerateMouseMovedEvents(unsigned char val) {
+    generate_mouse_moved_events = val;
+}
+
+void CGameApp::SetMainPort(OpaqueGrafPtr* port, bool is_window) {
+    main_port = port;
+    main_port_is_window = is_window;
+}
+
+OpaqueGrafPtr* CGameApp::GetMainPort() {
+    return main_port;
+}
+
+bool CGameApp::MainPortIsWindow() {
+    return main_port_is_window;
+}
+
+#ifndef DIFFING
 
 #ifdef NONMATCHING
+
+
+void CGameApp::SetAppAsCurResFile() {
+    if (unk98) {
+        UseResFile(unk98);
+    }
+}
 
 // have to define this function and add its 
 // nonmatching state to keep the string pool matching
@@ -139,6 +149,39 @@ void CSimsApp::MapExtensionToType(char* extension, long* type) {
     *type = 0x44617461; // "Data"
 }
 
+
+#endif
+
+void CSimsApp::SaveGameDisplay() {
+    GameDisplay::GameDisplayInfo game_display;
+    Prefs* info = GetPrefs();
+    Prefs* _prefs = info;
+    GameDisplay::GetGameDisplayInfo(&game_display);
+    int test = OR((800 - game_display.unk8), (game_display.unk8 - 800));
+    _prefs->unk1 = BOOL_ALT(test);
+    _prefs->unk4 = game_display.unk0;
+    _prefs->unk8 = game_display.unk4;
+    _prefs->unkC = game_display.unk10;
+    _prefs->unk10 = game_display.unk14;
+    _prefs->unk14 = game_display.unk18;
+    if (prefs) {
+        g_app->WritePrefs(
+            prefs, sizeof(Prefs)
+        );
+    }
+}
+
+void CSimsApp::SavePrefs() {
+    if (!prefs) {
+        return;
+    }
+    g_app->WritePrefs(
+        prefs, sizeof(Prefs)
+    );
+}
+
+#ifdef NONMATCHING
+
 Prefs* CSimsApp::GetPrefs() {
     int pad[4];
     if (prefs) {
@@ -181,5 +224,6 @@ void CSimsApp::ResumeApp() {
         }
     }
 }
+#endif
 
 #endif

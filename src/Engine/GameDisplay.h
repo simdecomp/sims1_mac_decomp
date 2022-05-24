@@ -12,5 +12,3 @@ struct GameDisplay {
     };
     static void GetGameDisplayInfo(GameDisplayInfo*);
 };
-
-void GameDisplay::GetGameDisplayInfo(GameDisplay::GameDisplayInfo*) {}

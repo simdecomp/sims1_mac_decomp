@@ -1,14 +1,13 @@
 __pycache__/
 baserom
 build/
+check/
 expected/
 compilers/
 .vscode/
 *.o
 *.suo
 *.dump
-tools/StringLabeler/StringLabeler/bin
-tools/StringLabeler/StringLabeler/obj
 tmp/
 /asm/full/
 /src/OS/Mac/CIncludes/

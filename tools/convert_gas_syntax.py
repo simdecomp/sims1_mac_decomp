@@ -116,7 +116,7 @@ def process_asm_line(asm_line, function):
         return ";# REDACTED"
     if asm_line.startswith("XRef"):
         return ";# REDACTED"
-    return asm_line
+    return "\t%s" % asm_line.strip()
 
 
 with open(sys.argv[1], "r") as asm_file:
@@ -147,10 +147,3 @@ with open(sys.argv[1], "r") as asm_file:
         if branch_target[i] is True:
             print("loc_%d:" % i)
         print(asm_line)
-    # for asm_line in asm_file.readlines():
-    #     asm_line = process_asm_line(asm_line, function)
-    #     asm_line = convert_ha16(asm_line)
-    #     asm_line = convert_lo16(asm_line)
-    #     asm_line = convert_globl(asm_line)
-
-    #     print(asm_line)

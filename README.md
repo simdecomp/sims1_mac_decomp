@@ -9,7 +9,7 @@ To decompile, simply take a function from the ./asm/code folder and put it in de
 Contributions and PRs are more than welcome.
 
 # Prerequisites:
-- [MWCPPC and MWLinkPPC](https://github.com/ChrisNonyminus/sims1_mac_decomp/files/8748510/compilers.zip); put the included compilers folder in the root of the repo. NOTE: They DO run in Wine.
+- [MWCPPC and MWLinkPPC](https://github.com/simdecomp/sims1_mac_decomp/files/8766562/MWCPPC_COMPILERS.zip); put the included compilers folder in the root of the repo. NOTE: They DO run in Wine.
 - build-essential, probably
 - Python 3.6 or higher.
 - Dependencies for python scripts: `python3 -m pip install --user colorama watchdog python-Levenshtein capstone`

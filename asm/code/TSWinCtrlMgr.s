@@ -1,3259 +1,3258 @@
 .include "macros.inc"
 
 
-.section .text0, "ax"  # 0x00000000 - 0x005B9458
-
-.global ".SystemFont__13cTSWinCtrlMgrFl"
-".SystemFont__13cTSWinCtrlMgrFl":
-/* 00505C20 0050EAB0  7C 08 02 A6 */	mflr r0
-/* 00505C24 0050EAB4  38 63 00 20 */	addi r3, r3, 0x20
-/* 00505C28 0050EAB8  90 01 00 08 */	stw r0, 8(r1)
-/* 00505C2C 0050EABC  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00505C30 0050EAC0  90 81 00 5C */	stw r4, 0x5c(r1)
-/* 00505C34 0050EAC4  38 81 00 5C */	addi r4, r1, 0x5c
-/* 00505C38 0050EAC8  48 00 4B A9 */	bl ".find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>"
-/* 00505C3C 0050EACC  80 63 00 04 */	lwz r3, 4(r3)
-/* 00505C40 0050EAD0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00505C44 0050EAD4  38 21 00 40 */	addi r1, r1, 0x40
-lbl_00505C48:
-/* 00505C48 0050EAD8  7C 08 03 A6 */	mtlr r0
-/* 00505C4C 0050EADC  4E 80 00 20 */	blr 
-
-.global ".SetSystemFont__13cTSWinCtrlMgrFlP8cITSFont"
-".SetSystemFont__13cTSWinCtrlMgrFlP8cITSFont":
-/* 00505C80 0050EB10  93 E1 FF FC */	stw r31, -4(r1)
-/* 00505C84 0050EB14  7C 08 02 A6 */	mflr r0
-/* 00505C88 0050EB18  7C 7F 1B 78 */	mr r31, r3
-/* 00505C8C 0050EB1C  90 01 00 08 */	stw r0, 8(r1)
-/* 00505C90 0050EB20  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 00505C94 0050EB24  90 A1 00 90 */	stw r5, 0x90(r1)
-/* 00505C98 0050EB28  38 61 00 40 */	addi r3, r1, 0x40
-/* 00505C9C 0050EB2C  38 A1 00 44 */	addi r5, r1, 0x44
-/* 00505CA0 0050EB30  90 81 00 8C */	stw r4, 0x8c(r1)
-/* 00505CA4 0050EB34  90 81 00 44 */	stw r4, 0x44(r1)
-/* 00505CA8 0050EB38  38 9F 00 20 */	addi r4, r31, 0x20
-/* 00505CAC 0050EB3C  48 00 45 35 */	bl ".find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl"
-/* 00505CB0 0050EB40  38 61 00 48 */	addi r3, r1, 0x48
-/* 00505CB4 0050EB44  38 9F 00 20 */	addi r4, r31, 0x20
-/* 00505CB8 0050EB48  48 00 00 A9 */	bl ".end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 00505CBC 0050EB4C  80 81 00 40 */	lwz r4, 0x40(r1)
-/* 00505CC0 0050EB50  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00505CC4 0050EB54  7C 04 00 40 */	cmplw r4, r0
-/* 00505CC8 0050EB58  41 82 00 1C */	beq lbl_00505CE4
-/* 00505CCC 0050EB5C  80 7F 00 08 */	lwz r3, 8(r31)
-/* 00505CD0 0050EB60  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 00505CD4 0050EB64  81 83 00 00 */	lwz r12, 0(r3)
-/* 00505CD8 0050EB68  81 8C 00 1C */	lwz r12, 0x1c(r12)
-/* 00505CDC 0050EB6C  48 09 3E 75 */	bl func_00599B50
-/* 00505CE0 0050EB70  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00505CE4:
-/* 00505CE4 0050EB74  38 61 00 58 */	addi r3, r1, 0x58
-/* 00505CE8 0050EB78  38 81 00 8C */	addi r4, r1, 0x8c
-/* 00505CEC 0050EB7C  38 A1 00 90 */	addi r5, r1, 0x90
-/* 00505CF0 0050EB80  48 00 47 21 */	bl ".__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont"
-/* 00505CF4 0050EB84  38 A3 00 00 */	addi r5, r3, 0
-/* 00505CF8 0050EB88  38 61 00 50 */	addi r3, r1, 0x50
-/* 00505CFC 0050EB8C  38 9F 00 20 */	addi r4, r31, 0x20
-/* 00505D00 0050EB90  48 00 44 31 */	bl ".insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
-/* 00505D04 0050EB94  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 00505D08 0050EB98  38 21 00 70 */	addi r1, r1, 0x70
-/* 00505D0C 0050EB9C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00505D10 0050EBA0  7C 08 03 A6 */	mtlr r0
-/* 00505D14 0050EBA4  4E 80 00 20 */	blr 
-
-.global ".end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00505D60 0050EBF0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00505D64 0050EBF4  7C 08 02 A6 */	mflr r0
-/* 00505D68 0050EBF8  3B E3 00 00 */	addi r31, r3, 0
-/* 00505D6C 0050EBFC  38 64 00 00 */	addi r3, r4, 0
-/* 00505D70 0050EC00  90 01 00 08 */	stw r0, 8(r1)
-/* 00505D74 0050EC04  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00505D78 0050EC08  48 00 02 59 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 00505D7C 0050EC0C  38 83 00 00 */	addi r4, r3, 0
-/* 00505D80 0050EC10  38 7F 00 00 */	addi r3, r31, 0
-/* 00505D84 0050EC14  48 00 00 8D */	bl ".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-/* 00505D88 0050EC18  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00505D8C 0050EC1C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00505D90 0050EC20  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00505D94 0050EC24  7C 08 03 A6 */	mtlr r0
-/* 00505D98 0050EC28  4E 80 00 20 */	blr 
-
-.global ".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node":
-/* 00505E10 0050ECA0  90 83 00 00 */	stw r4, 0(r3)
-/* 00505E14 0050ECA4  4E 80 00 20 */	blr 
-
-.global ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00505FD0 0050EE60  38 63 00 04 */	addi r3, r3, 4
-/* 00505FD4 0050EE64  4E 80 00 20 */	blr 
-
-.global ".SystemBMP__13cTSWinCtrlMgrFl"
-".SystemBMP__13cTSWinCtrlMgrFl":
-/* 005060C0 0050EF50  7C 08 02 A6 */	mflr r0
-/* 005060C4 0050EF54  38 63 00 30 */	addi r3, r3, 0x30
-/* 005060C8 0050EF58  90 01 00 08 */	stw r0, 8(r1)
-/* 005060CC 0050EF5C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 005060D0 0050EF60  90 81 00 5C */	stw r4, 0x5c(r1)
-/* 005060D4 0050EF64  38 81 00 5C */	addi r4, r1, 0x5c
-/* 005060D8 0050EF68  48 00 4C F9 */	bl ".find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 005060DC 0050EF6C  80 63 00 04 */	lwz r3, 4(r3)
-/* 005060E0 0050EF70  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 005060E4 0050EF74  38 21 00 40 */	addi r1, r1, 0x40
-/* 005060E8 0050EF78  7C 08 03 A6 */	mtlr r0
-/* 005060EC 0050EF7C  4E 80 00 20 */	blr 
-
-.global ".SetSystemBMP__13cTSWinCtrlMgrFlP9cTSBufferb"
-".SetSystemBMP__13cTSWinCtrlMgrFlP9cTSBufferb":
-/* 00506120 0050EFB0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506124 0050EFB4  7C 08 02 A6 */	mflr r0
-/* 00506128 0050EFB8  7C 7F 1B 78 */	mr r31, r3
-/* 0050612C 0050EFBC  90 01 00 08 */	stw r0, 8(r1)
-/* 00506130 0050EFC0  94 21 FF 80 */	stwu r1, -0x80(r1)
-/* 00506134 0050EFC4  90 A1 00 A0 */	stw r5, 0xa0(r1)
-/* 00506138 0050EFC8  38 61 00 40 */	addi r3, r1, 0x40
-/* 0050613C 0050EFCC  38 A1 00 44 */	addi r5, r1, 0x44
-/* 00506140 0050EFD0  90 81 00 9C */	stw r4, 0x9c(r1)
-/* 00506144 0050EFD4  90 81 00 44 */	stw r4, 0x44(r1)
-/* 00506148 0050EFD8  38 9F 00 30 */	addi r4, r31, 0x30
-/* 0050614C 0050EFDC  98 C1 00 A7 */	stb r6, 0xa7(r1)
-/* 00506150 0050EFE0  48 00 3F 21 */	bl ".find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl"
-/* 00506154 0050EFE4  38 61 00 48 */	addi r3, r1, 0x48
-/* 00506158 0050EFE8  38 9F 00 30 */	addi r4, r31, 0x30
-/* 0050615C 0050EFEC  48 00 00 C5 */	bl ".end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00506160 0050EFF0  80 61 00 40 */	lwz r3, 0x40(r1)
-/* 00506164 0050EFF4  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00506168 0050EFF8  7C 03 00 40 */	cmplw r3, r0
-/* 0050616C 0050EFFC  41 82 00 24 */	beq lbl_00506190
-/* 00506170 0050F000  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 00506174 0050F004  28 03 00 00 */	cmplwi r3, 0
-/* 00506178 0050F008  41 82 00 18 */	beq lbl_00506190
-/* 0050617C 0050F00C  81 83 00 00 */	lwz r12, 0(r3)
-/* 00506180 0050F010  38 80 00 01 */	li r4, 1
-/* 00506184 0050F014  81 8C 00 08 */	lwz r12, 8(r12)
-/* 00506188 0050F018  48 09 39 C9 */	bl func_00599B50
-/* 0050618C 0050F01C  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00506190:
-/* 00506190 0050F020  38 61 00 58 */	addi r3, r1, 0x58
-/* 00506194 0050F024  38 81 00 A0 */	addi r4, r1, 0xa0
-/* 00506198 0050F028  38 A1 00 A7 */	addi r5, r1, 0xa7
-/* 0050619C 0050F02C  48 00 42 15 */	bl ".__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb"
-/* 005061A0 0050F030  38 A3 00 00 */	addi r5, r3, 0
-/* 005061A4 0050F034  38 61 00 60 */	addi r3, r1, 0x60
-/* 005061A8 0050F038  38 81 00 9C */	addi r4, r1, 0x9c
-/* 005061AC 0050F03C  48 00 53 75 */	bl ".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>"
-/* 005061B0 0050F040  38 A3 00 00 */	addi r5, r3, 0
-/* 005061B4 0050F044  38 61 00 50 */	addi r3, r1, 0x50
-/* 005061B8 0050F048  38 9F 00 30 */	addi r4, r31, 0x30
-/* 005061BC 0050F04C  48 00 3D C5 */	bl ".insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 005061C0 0050F050  80 01 00 88 */	lwz r0, 0x88(r1)
-/* 005061C4 0050F054  38 21 00 80 */	addi r1, r1, 0x80
-/* 005061C8 0050F058  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005061CC 0050F05C  7C 08 03 A6 */	mtlr r0
-/* 005061D0 0050F060  4E 80 00 20 */	blr 
-
-.global ".end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00506220 0050F0B0  38 04 00 04 */	addi r0, r4, 4
-/* 00506224 0050F0B4  90 03 00 00 */	stw r0, 0(r3)
-/* 00506228 0050F0B8  4E 80 00 20 */	blr 
-
-.global ".SystemBMPHasTransparency__13cTSWinCtrlMgrFl"
-".SystemBMPHasTransparency__13cTSWinCtrlMgrFl":
-/* 00506350 0050F1E0  7C 08 02 A6 */	mflr r0
-/* 00506354 0050F1E4  38 63 00 30 */	addi r3, r3, 0x30
-/* 00506358 0050F1E8  90 01 00 08 */	stw r0, 8(r1)
-/* 0050635C 0050F1EC  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00506360 0050F1F0  90 81 00 5C */	stw r4, 0x5c(r1)
-/* 00506364 0050F1F4  38 81 00 5C */	addi r4, r1, 0x5c
-/* 00506368 0050F1F8  48 00 4A 69 */	bl ".find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050636C 0050F1FC  88 63 00 08 */	lbz r3, 8(r3)
-/* 00506370 0050F200  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00506374 0050F204  38 21 00 40 */	addi r1, r1, 0x40
-/* 00506378 0050F208  7C 08 03 A6 */	mtlr r0
-/* 0050637C 0050F20C  4E 80 00 20 */	blr 
-
-.global ".DefaultSndID__13cTSWinCtrlMgrFl"
-".DefaultSndID__13cTSWinCtrlMgrFl":
-/* 005063C0 0050F250  7C 08 02 A6 */	mflr r0
-/* 005063C4 0050F254  38 63 00 40 */	addi r3, r3, 0x40
-/* 005063C8 0050F258  90 01 00 08 */	stw r0, 8(r1)
-/* 005063CC 0050F25C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 005063D0 0050F260  90 81 00 5C */	stw r4, 0x5c(r1)
-/* 005063D4 0050F264  38 81 00 5C */	addi r4, r1, 0x5c
-/* 005063D8 0050F268  48 00 3E A9 */	bl ".__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
-/* 005063DC 0050F26C  80 63 00 00 */	lwz r3, 0(r3)
-/* 005063E0 0050F270  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 005063E4 0050F274  38 21 00 40 */	addi r1, r1, 0x40
-/* 005063E8 0050F278  7C 08 03 A6 */	mtlr r0
-/* 005063EC 0050F27C  4E 80 00 20 */	blr 
-
-.global ".SetDefaultSndID__13cTSWinCtrlMgrFlUl"
-".SetDefaultSndID__13cTSWinCtrlMgrFlUl":
-/* 00506430 0050F2C0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506434 0050F2C4  7C 08 02 A6 */	mflr r0
-/* 00506438 0050F2C8  3B E3 00 00 */	addi r31, r3, 0
-/* 0050643C 0050F2CC  90 01 00 08 */	stw r0, 8(r1)
-/* 00506440 0050F2D0  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00506444 0050F2D4  90 81 00 7C */	stw r4, 0x7c(r1)
-/* 00506448 0050F2D8  38 61 00 48 */	addi r3, r1, 0x48
-/* 0050644C 0050F2DC  38 81 00 7C */	addi r4, r1, 0x7c
-/* 00506450 0050F2E0  90 A1 00 80 */	stw r5, 0x80(r1)
-/* 00506454 0050F2E4  38 A1 00 80 */	addi r5, r1, 0x80
-/* 00506458 0050F2E8  48 00 40 19 */	bl ".__ct__Q23std11pair<Cl,Ul>FRClRCUl"
-/* 0050645C 0050F2EC  38 A3 00 00 */	addi r5, r3, 0
-/* 00506460 0050F2F0  38 61 00 40 */	addi r3, r1, 0x40
-/* 00506464 0050F2F4  38 9F 00 40 */	addi r4, r31, 0x40
-/* 00506468 0050F2F8  48 00 3E A9 */	bl ".insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
-/* 0050646C 0050F2FC  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 00506470 0050F300  38 21 00 60 */	addi r1, r1, 0x60
-/* 00506474 0050F304  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506478 0050F308  7C 08 03 A6 */	mtlr r0
-/* 0050647C 0050F30C  4E 80 00 20 */	blr 
-
-.global ".DefaultColor__13cTSWinCtrlMgrFl"
-".DefaultColor__13cTSWinCtrlMgrFl":
-/* 005064C0 0050F350  7C 08 02 A6 */	mflr r0
-/* 005064C4 0050F354  38 63 00 10 */	addi r3, r3, 0x10
-/* 005064C8 0050F358  90 01 00 08 */	stw r0, 8(r1)
-/* 005064CC 0050F35C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 005064D0 0050F360  90 81 00 5C */	stw r4, 0x5c(r1)
-/* 005064D4 0050F364  38 81 00 5C */	addi r4, r1, 0x5c
-/* 005064D8 0050F368  48 00 3D A9 */	bl ".__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
-/* 005064DC 0050F36C  80 63 00 00 */	lwz r3, 0(r3)
-/* 005064E0 0050F370  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 005064E4 0050F374  38 21 00 40 */	addi r1, r1, 0x40
-/* 005064E8 0050F378  7C 08 03 A6 */	mtlr r0
-/* 005064EC 0050F37C  4E 80 00 20 */	blr 
-
-.global ".SetDefaultColor__13cTSWinCtrlMgrFlUl"
-".SetDefaultColor__13cTSWinCtrlMgrFlUl":
-/* 00506530 0050F3C0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506534 0050F3C4  7C 08 02 A6 */	mflr r0
-/* 00506538 0050F3C8  3B E3 00 00 */	addi r31, r3, 0
-/* 0050653C 0050F3CC  90 01 00 08 */	stw r0, 8(r1)
-/* 00506540 0050F3D0  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00506544 0050F3D4  90 81 00 7C */	stw r4, 0x7c(r1)
-/* 00506548 0050F3D8  38 61 00 48 */	addi r3, r1, 0x48
-/* 0050654C 0050F3DC  38 81 00 7C */	addi r4, r1, 0x7c
-/* 00506550 0050F3E0  90 A1 00 80 */	stw r5, 0x80(r1)
-/* 00506554 0050F3E4  38 A1 00 80 */	addi r5, r1, 0x80
-/* 00506558 0050F3E8  48 00 3F 19 */	bl ".__ct__Q23std11pair<Cl,Ul>FRClRCUl"
-/* 0050655C 0050F3EC  38 A3 00 00 */	addi r5, r3, 0
-/* 00506560 0050F3F0  38 61 00 40 */	addi r3, r1, 0x40
-/* 00506564 0050F3F4  38 9F 00 10 */	addi r4, r31, 0x10
-/* 00506568 0050F3F8  48 00 3D A9 */	bl ".insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
-/* 0050656C 0050F3FC  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 00506570 0050F400  38 21 00 60 */	addi r1, r1, 0x60
-/* 00506574 0050F404  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506578 0050F408  7C 08 03 A6 */	mtlr r0
-/* 0050657C 0050F40C  4E 80 00 20 */	blr 
-
-.global ".GetDefaultColors__13cTSWinCtrlMgrFi"
-".GetDefaultColors__13cTSWinCtrlMgrFi":
-/* 005065C0 0050F450  2C 04 00 04 */	cmpwi r4, 4
-/* 005065C4 0050F454  40 82 00 0C */	bne lbl_005065D0
-/* 005065C8 0050F458  38 63 00 50 */	addi r3, r3, 0x50
-/* 005065CC 0050F45C  4E 80 00 20 */	blr 
-lbl_005065D0:
-/* 005065D0 0050F460  38 63 00 60 */	addi r3, r3, 0x60
-/* 005065D4 0050F464  4E 80 00 20 */	blr 
-
-.global ".SetDefaultColors__13cTSWinCtrlMgrFiPCUl"
-".SetDefaultColors__13cTSWinCtrlMgrFiPCUl":
-/* 00506610 0050F4A0  7C 08 02 A6 */	mflr r0
-/* 00506614 0050F4A4  2C 04 00 04 */	cmpwi r4, 4
-/* 00506618 0050F4A8  90 01 00 08 */	stw r0, 8(r1)
-/* 0050661C 0050F4AC  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00506620 0050F4B0  40 82 00 18 */	bne lbl_00506638
-/* 00506624 0050F4B4  38 85 00 00 */	addi r4, r5, 0
-/* 00506628 0050F4B8  38 63 00 50 */	addi r3, r3, 0x50
-/* 0050662C 0050F4BC  38 A0 00 10 */	li r5, 0x10
-/* 00506630 0050F4C0  48 08 73 01 */	bl func_0058D930
-/* 00506634 0050F4C4  48 00 00 1C */	b lbl_00506650
-lbl_00506638:
-/* 00506638 0050F4C8  2C 04 00 06 */	cmpwi r4, 6
-/* 0050663C 0050F4CC  40 82 00 14 */	bne lbl_00506650
-/* 00506640 0050F4D0  38 85 00 00 */	addi r4, r5, 0
-/* 00506644 0050F4D4  38 63 00 60 */	addi r3, r3, 0x60
-/* 00506648 0050F4D8  38 A0 00 10 */	li r5, 0x10
-/* 0050664C 0050F4DC  48 08 72 E5 */	bl func_0058D930
-lbl_00506650:
-/* 00506650 0050F4E0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00506654 0050F4E4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00506658 0050F4E8  7C 08 03 A6 */	mtlr r0
-/* 0050665C 0050F4EC  4E 80 00 20 */	blr 
-
-.global ".DefaultScrollbarHorizontal__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultScrollbarHorizontal__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 005066A0 0050F530  93 E1 FF FC */	stw r31, -4(r1)
-/* 005066A4 0050F534  7C 08 02 A6 */	mflr r0
-/* 005066A8 0050F538  3B E4 00 00 */	addi r31, r4, 0
-/* 005066AC 0050F53C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005066B0 0050F540  3B C3 00 00 */	addi r30, r3, 0
-/* 005066B4 0050F544  38 60 01 48 */	li r3, 0x148
-/* 005066B8 0050F548  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 005066BC 0050F54C  3B A5 00 00 */	addi r29, r5, 0
-/* 005066C0 0050F550  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 005066C4 0050F554  90 01 00 08 */	stw r0, 8(r1)
-/* 005066C8 0050F558  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005066CC 0050F55C  48 08 1E E5 */	bl func_005885B0
-/* 005066D0 0050F560  7C 7C 1B 79 */	or. r28, r3, r3
-/* 005066D4 0050F564  41 82 00 08 */	beq lbl_005066DC
-/* 005066D8 0050F568  48 01 74 89 */	bl ".__ct__15cTSWinScrollbarFv"
-lbl_005066DC:
-/* 005066DC 0050F56C  7F C3 F3 78 */	mr r3, r30
-/* 005066E0 0050F570  81 9E 00 00 */	lwz r12, 0(r30)
-/* 005066E4 0050F574  38 80 00 04 */	li r4, 4
-/* 005066E8 0050F578  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 005066EC 0050F57C  48 09 34 65 */	bl func_00599B50
-/* 005066F0 0050F580  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005066F4 0050F584  38 03 00 00 */	addi r0, r3, 0
-/* 005066F8 0050F588  38 7E 00 00 */	addi r3, r30, 0
-/* 005066FC 0050F58C  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506700 0050F590  7C 1E 03 78 */	mr r30, r0
-/* 00506704 0050F594  38 80 00 04 */	li r4, 4
-/* 00506708 0050F598  81 8C 00 20 */	lwz r12, 0x20(r12)
-/* 0050670C 0050F59C  48 09 34 45 */	bl func_00599B50
-/* 00506710 0050F5A0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506714 0050F5A4  93 FC 00 08 */	stw r31, 8(r28)
-/* 00506718 0050F5A8  38 03 00 00 */	addi r0, r3, 0
-/* 0050671C 0050F5AC  38 7C 00 00 */	addi r3, r28, 0
-/* 00506720 0050F5B0  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506724 0050F5B4  7C 1F 03 78 */	mr r31, r0
-/* 00506728 0050F5B8  38 9D 00 00 */	addi r4, r29, 0
-/* 0050672C 0050F5BC  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506730 0050F5C0  48 09 34 21 */	bl func_00599B50
-/* 00506734 0050F5C4  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506738 0050F5C8  7F 83 E3 78 */	mr r3, r28
-/* 0050673C 0050F5CC  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506740 0050F5D0  38 80 00 01 */	li r4, 1
-/* 00506744 0050F5D4  81 8C 01 BC */	lwz r12, 0x1bc(r12)
-/* 00506748 0050F5D8  48 09 34 09 */	bl func_00599B50
-/* 0050674C 0050F5DC  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506750 0050F5E0  7F 83 E3 78 */	mr r3, r28
-/* 00506754 0050F5E4  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506758 0050F5E8  38 9E 00 00 */	addi r4, r30, 0
-/* 0050675C 0050F5EC  38 BF 00 00 */	addi r5, r31, 0
-/* 00506760 0050F5F0  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
-/* 00506764 0050F5F4  48 09 33 ED */	bl func_00599B50
-/* 00506768 0050F5F8  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 0050676C 0050F5FC  7F 83 E3 78 */	mr r3, r28
-/* 00506770 0050F600  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00506774 0050F604  38 21 00 50 */	addi r1, r1, 0x50
-/* 00506778 0050F608  7C 08 03 A6 */	mtlr r0
-/* 0050677C 0050F60C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506780 0050F610  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00506784 0050F614  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00506788 0050F618  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 0050678C 0050F61C  4E 80 00 20 */	blr 
-
-.global ".DefaultScrollbarVertical__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultScrollbarVertical__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 005067E0 0050F670  93 E1 FF FC */	stw r31, -4(r1)
-/* 005067E4 0050F674  7C 08 02 A6 */	mflr r0
-/* 005067E8 0050F678  3B E4 00 00 */	addi r31, r4, 0
-/* 005067EC 0050F67C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005067F0 0050F680  3B C3 00 00 */	addi r30, r3, 0
-/* 005067F4 0050F684  38 60 01 48 */	li r3, 0x148
-/* 005067F8 0050F688  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 005067FC 0050F68C  3B A5 00 00 */	addi r29, r5, 0
-/* 00506800 0050F690  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00506804 0050F694  90 01 00 08 */	stw r0, 8(r1)
-/* 00506808 0050F698  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050680C 0050F69C  48 08 1D A5 */	bl func_005885B0
-/* 00506810 0050F6A0  7C 7C 1B 79 */	or. r28, r3, r3
-/* 00506814 0050F6A4  41 82 00 08 */	beq lbl_0050681C
-/* 00506818 0050F6A8  48 01 73 49 */	bl ".__ct__15cTSWinScrollbarFv"
-lbl_0050681C:
-/* 0050681C 0050F6AC  7F C3 F3 78 */	mr r3, r30
-/* 00506820 0050F6B0  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506824 0050F6B4  38 80 00 04 */	li r4, 4
-/* 00506828 0050F6B8  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 0050682C 0050F6BC  48 09 33 25 */	bl func_00599B50
-/* 00506830 0050F6C0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506834 0050F6C4  38 03 00 00 */	addi r0, r3, 0
-/* 00506838 0050F6C8  38 7E 00 00 */	addi r3, r30, 0
-/* 0050683C 0050F6CC  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506840 0050F6D0  7C 1E 03 78 */	mr r30, r0
-/* 00506844 0050F6D4  38 80 00 04 */	li r4, 4
-/* 00506848 0050F6D8  81 8C 00 20 */	lwz r12, 0x20(r12)
-/* 0050684C 0050F6DC  48 09 33 05 */	bl func_00599B50
-/* 00506850 0050F6E0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506854 0050F6E4  93 FC 00 08 */	stw r31, 8(r28)
-/* 00506858 0050F6E8  38 03 00 00 */	addi r0, r3, 0
-/* 0050685C 0050F6EC  38 7C 00 00 */	addi r3, r28, 0
-/* 00506860 0050F6F0  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506864 0050F6F4  7C 1F 03 78 */	mr r31, r0
-/* 00506868 0050F6F8  38 9D 00 00 */	addi r4, r29, 0
-/* 0050686C 0050F6FC  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506870 0050F700  48 09 32 E1 */	bl func_00599B50
-/* 00506874 0050F704  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506878 0050F708  7F 83 E3 78 */	mr r3, r28
-/* 0050687C 0050F70C  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506880 0050F710  38 80 00 02 */	li r4, 2
-/* 00506884 0050F714  81 8C 01 BC */	lwz r12, 0x1bc(r12)
-/* 00506888 0050F718  48 09 32 C9 */	bl func_00599B50
-/* 0050688C 0050F71C  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506890 0050F720  7F 83 E3 78 */	mr r3, r28
-/* 00506894 0050F724  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506898 0050F728  38 9E 00 00 */	addi r4, r30, 0
-/* 0050689C 0050F72C  38 BF 00 00 */	addi r5, r31, 0
-/* 005068A0 0050F730  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
-/* 005068A4 0050F734  48 09 32 AD */	bl func_00599B50
-/* 005068A8 0050F738  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005068AC 0050F73C  7F 83 E3 78 */	mr r3, r28
-/* 005068B0 0050F740  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005068B4 0050F744  38 21 00 50 */	addi r1, r1, 0x50
-/* 005068B8 0050F748  7C 08 03 A6 */	mtlr r0
-/* 005068BC 0050F74C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005068C0 0050F750  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 005068C4 0050F754  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 005068C8 0050F758  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 005068CC 0050F75C  4E 80 00 20 */	blr 
-
-.global ".DefaultSliderHorizontal__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultSliderHorizontal__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506920 0050F7B0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506924 0050F7B4  7C 08 02 A6 */	mflr r0
-/* 00506928 0050F7B8  3B E4 00 00 */	addi r31, r4, 0
-/* 0050692C 0050F7BC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00506930 0050F7C0  3B C3 00 00 */	addi r30, r3, 0
-/* 00506934 0050F7C4  38 60 01 1C */	li r3, 0x11c
-/* 00506938 0050F7C8  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050693C 0050F7CC  3B A5 00 00 */	addi r29, r5, 0
-/* 00506940 0050F7D0  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00506944 0050F7D4  90 01 00 08 */	stw r0, 8(r1)
-/* 00506948 0050F7D8  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050694C 0050F7DC  48 08 1C 65 */	bl func_005885B0
-/* 00506950 0050F7E0  7C 7C 1B 79 */	or. r28, r3, r3
-/* 00506954 0050F7E4  41 82 00 08 */	beq lbl_0050695C
-/* 00506958 0050F7E8  48 01 D7 E9 */	bl ".__ct__12cTSWinSliderFv"
-lbl_0050695C:
-/* 0050695C 0050F7EC  7F C3 F3 78 */	mr r3, r30
-/* 00506960 0050F7F0  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506964 0050F7F4  38 80 00 02 */	li r4, 2
-/* 00506968 0050F7F8  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 0050696C 0050F7FC  48 09 31 E5 */	bl func_00599B50
-/* 00506970 0050F800  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506974 0050F804  38 03 00 00 */	addi r0, r3, 0
-/* 00506978 0050F808  38 7E 00 00 */	addi r3, r30, 0
-/* 0050697C 0050F80C  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506980 0050F810  7C 1E 03 78 */	mr r30, r0
-/* 00506984 0050F814  38 80 00 02 */	li r4, 2
-/* 00506988 0050F818  81 8C 00 20 */	lwz r12, 0x20(r12)
-/* 0050698C 0050F81C  48 09 31 C5 */	bl func_00599B50
-/* 00506990 0050F820  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506994 0050F824  93 FC 00 08 */	stw r31, 8(r28)
-/* 00506998 0050F828  38 03 00 00 */	addi r0, r3, 0
-/* 0050699C 0050F82C  38 7C 00 00 */	addi r3, r28, 0
-/* 005069A0 0050F830  81 9C 00 00 */	lwz r12, 0(r28)
-/* 005069A4 0050F834  7C 1F 03 78 */	mr r31, r0
-/* 005069A8 0050F838  38 9D 00 00 */	addi r4, r29, 0
-/* 005069AC 0050F83C  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 005069B0 0050F840  48 09 31 A1 */	bl func_00599B50
-/* 005069B4 0050F844  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005069B8 0050F848  7F 83 E3 78 */	mr r3, r28
-/* 005069BC 0050F84C  81 9C 00 00 */	lwz r12, 0(r28)
-/* 005069C0 0050F850  38 80 00 01 */	li r4, 1
-/* 005069C4 0050F854  81 8C 01 BC */	lwz r12, 0x1bc(r12)
-/* 005069C8 0050F858  48 09 31 89 */	bl func_00599B50
-/* 005069CC 0050F85C  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005069D0 0050F860  7F 83 E3 78 */	mr r3, r28
-/* 005069D4 0050F864  81 9C 00 00 */	lwz r12, 0(r28)
-/* 005069D8 0050F868  38 9E 00 00 */	addi r4, r30, 0
-/* 005069DC 0050F86C  38 BF 00 00 */	addi r5, r31, 0
-/* 005069E0 0050F870  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
-/* 005069E4 0050F874  48 09 31 6D */	bl func_00599B50
-/* 005069E8 0050F878  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005069EC 0050F87C  7F 83 E3 78 */	mr r3, r28
-/* 005069F0 0050F880  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005069F4 0050F884  38 21 00 50 */	addi r1, r1, 0x50
-/* 005069F8 0050F888  7C 08 03 A6 */	mtlr r0
-/* 005069FC 0050F88C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506A00 0050F890  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00506A04 0050F894  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00506A08 0050F898  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00506A0C 0050F89C  4E 80 00 20 */	blr 
-
-.global ".DefaultSliderVertical__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultSliderVertical__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506A60 0050F8F0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506A64 0050F8F4  7C 08 02 A6 */	mflr r0
-/* 00506A68 0050F8F8  3B E4 00 00 */	addi r31, r4, 0
-/* 00506A6C 0050F8FC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00506A70 0050F900  3B C3 00 00 */	addi r30, r3, 0
-/* 00506A74 0050F904  38 60 01 1C */	li r3, 0x11c
-/* 00506A78 0050F908  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00506A7C 0050F90C  3B A5 00 00 */	addi r29, r5, 0
-/* 00506A80 0050F910  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00506A84 0050F914  90 01 00 08 */	stw r0, 8(r1)
-/* 00506A88 0050F918  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00506A8C 0050F91C  48 08 1B 25 */	bl func_005885B0
-/* 00506A90 0050F920  7C 7C 1B 79 */	or. r28, r3, r3
-/* 00506A94 0050F924  41 82 00 08 */	beq lbl_00506A9C
-/* 00506A98 0050F928  48 01 D6 A9 */	bl ".__ct__12cTSWinSliderFv"
-lbl_00506A9C:
-/* 00506A9C 0050F92C  7F C3 F3 78 */	mr r3, r30
-/* 00506AA0 0050F930  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506AA4 0050F934  38 80 00 03 */	li r4, 3
-/* 00506AA8 0050F938  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 00506AAC 0050F93C  48 09 30 A5 */	bl func_00599B50
-/* 00506AB0 0050F940  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506AB4 0050F944  38 03 00 00 */	addi r0, r3, 0
-/* 00506AB8 0050F948  38 7E 00 00 */	addi r3, r30, 0
-/* 00506ABC 0050F94C  81 9E 00 00 */	lwz r12, 0(r30)
-/* 00506AC0 0050F950  7C 1E 03 78 */	mr r30, r0
-/* 00506AC4 0050F954  38 80 00 03 */	li r4, 3
-/* 00506AC8 0050F958  81 8C 00 20 */	lwz r12, 0x20(r12)
-/* 00506ACC 0050F95C  48 09 30 85 */	bl func_00599B50
-/* 00506AD0 0050F960  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506AD4 0050F964  93 FC 00 08 */	stw r31, 8(r28)
-/* 00506AD8 0050F968  38 03 00 00 */	addi r0, r3, 0
-/* 00506ADC 0050F96C  38 7C 00 00 */	addi r3, r28, 0
-/* 00506AE0 0050F970  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506AE4 0050F974  7C 1F 03 78 */	mr r31, r0
-/* 00506AE8 0050F978  38 9D 00 00 */	addi r4, r29, 0
-/* 00506AEC 0050F97C  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506AF0 0050F980  48 09 30 61 */	bl func_00599B50
-/* 00506AF4 0050F984  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506AF8 0050F988  7F 83 E3 78 */	mr r3, r28
-/* 00506AFC 0050F98C  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506B00 0050F990  38 80 00 02 */	li r4, 2
-/* 00506B04 0050F994  81 8C 01 BC */	lwz r12, 0x1bc(r12)
-/* 00506B08 0050F998  48 09 30 49 */	bl func_00599B50
-/* 00506B0C 0050F99C  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506B10 0050F9A0  7F 83 E3 78 */	mr r3, r28
-/* 00506B14 0050F9A4  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506B18 0050F9A8  38 9E 00 00 */	addi r4, r30, 0
-/* 00506B1C 0050F9AC  38 BF 00 00 */	addi r5, r31, 0
-/* 00506B20 0050F9B0  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
-/* 00506B24 0050F9B4  48 09 30 2D */	bl func_00599B50
-/* 00506B28 0050F9B8  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506B2C 0050F9BC  7F 83 E3 78 */	mr r3, r28
-/* 00506B30 0050F9C0  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00506B34 0050F9C4  38 21 00 50 */	addi r1, r1, 0x50
-/* 00506B38 0050F9C8  7C 08 03 A6 */	mtlr r0
-/* 00506B3C 0050F9CC  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506B40 0050F9D0  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00506B44 0050F9D4  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00506B48 0050F9D8  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00506B4C 0050F9DC  4E 80 00 20 */	blr 
-
-.global ".DefaultLabel__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultLabel__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506BA0 0050FA30  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506BA4 0050FA34  7C 08 02 A6 */	mflr r0
-/* 00506BA8 0050FA38  3B E5 00 00 */	addi r31, r5, 0
-/* 00506BAC 0050FA3C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00506BB0 0050FA40  3B C4 00 00 */	addi r30, r4, 0
-/* 00506BB4 0050FA44  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00506BB8 0050FA48  3B A3 00 00 */	addi r29, r3, 0
-/* 00506BBC 0050FA4C  38 60 01 08 */	li r3, 0x108
-/* 00506BC0 0050FA50  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00506BC4 0050FA54  90 01 00 08 */	stw r0, 8(r1)
-/* 00506BC8 0050FA58  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00506BCC 0050FA5C  48 08 19 E5 */	bl func_005885B0
-/* 00506BD0 0050FA60  7C 7C 1B 79 */	or. r28, r3, r3
-/* 00506BD4 0050FA64  41 82 00 08 */	beq lbl_00506BDC
-/* 00506BD8 0050FA68  48 02 8F E9 */	bl ".__ct__10cTSWinTextFv"
-lbl_00506BDC:
-/* 00506BDC 0050FA6C  93 DC 00 08 */	stw r30, 8(r28)
-/* 00506BE0 0050FA70  38 7C 00 00 */	addi r3, r28, 0
-/* 00506BE4 0050FA74  38 9F 00 00 */	addi r4, r31, 0
-/* 00506BE8 0050FA78  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506BEC 0050FA7C  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506BF0 0050FA80  48 09 2F 61 */	bl func_00599B50
-/* 00506BF4 0050FA84  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506BF8 0050FA88  7F A3 EB 78 */	mr r3, r29
-/* 00506BFC 0050FA8C  81 9D 00 00 */	lwz r12, 0(r29)
-/* 00506C00 0050FA90  38 80 00 00 */	li r4, 0
-/* 00506C04 0050FA94  81 8C 00 10 */	lwz r12, 0x10(r12)
-/* 00506C08 0050FA98  48 09 2F 49 */	bl func_00599B50
-/* 00506C0C 0050FA9C  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C10 0050FAA0  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506C14 0050FAA4  38 83 00 00 */	addi r4, r3, 0
-/* 00506C18 0050FAA8  38 7C 00 00 */	addi r3, r28, 0
-/* 00506C1C 0050FAAC  81 8C 01 F0 */	lwz r12, 0x1f0(r12)
-/* 00506C20 0050FAB0  48 09 2F 31 */	bl func_00599B50
-/* 00506C24 0050FAB4  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C28 0050FAB8  7F 83 E3 78 */	mr r3, r28
-/* 00506C2C 0050FABC  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506C30 0050FAC0  38 80 00 01 */	li r4, 1
-/* 00506C34 0050FAC4  81 8C 01 F4 */	lwz r12, 0x1f4(r12)
-/* 00506C38 0050FAC8  48 09 2F 19 */	bl func_00599B50
-/* 00506C3C 0050FACC  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C40 0050FAD0  7F 83 E3 78 */	mr r3, r28
-/* 00506C44 0050FAD4  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506C48 0050FAD8  38 80 00 00 */	li r4, 0
-/* 00506C4C 0050FADC  81 8C 01 EC */	lwz r12, 0x1ec(r12)
-/* 00506C50 0050FAE0  48 09 2F 01 */	bl func_00599B50
-/* 00506C54 0050FAE4  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C58 0050FAE8  7F 83 E3 78 */	mr r3, r28
-/* 00506C5C 0050FAEC  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506C60 0050FAF0  38 80 00 02 */	li r4, 2
-/* 00506C64 0050FAF4  38 A0 00 00 */	li r5, 0
-/* 00506C68 0050FAF8  81 8C 01 E4 */	lwz r12, 0x1e4(r12)
-/* 00506C6C 0050FAFC  48 09 2E E5 */	bl func_00599B50
-/* 00506C70 0050FB00  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C74 0050FB04  7F 83 E3 78 */	mr r3, r28
-/* 00506C78 0050FB08  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506C7C 0050FB0C  81 8C 01 D8 */	lwz r12, 0x1d8(r12)
-/* 00506C80 0050FB10  48 09 2E D1 */	bl func_00599B50
-/* 00506C84 0050FB14  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506C88 0050FB18  7F 83 E3 78 */	mr r3, r28
-/* 00506C8C 0050FB1C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00506C90 0050FB20  38 21 00 50 */	addi r1, r1, 0x50
-/* 00506C94 0050FB24  7C 08 03 A6 */	mtlr r0
-/* 00506C98 0050FB28  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506C9C 0050FB2C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00506CA0 0050FB30  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00506CA4 0050FB34  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00506CA8 0050FB38  4E 80 00 20 */	blr 
-
-.global ".DefaultPushBtn__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultPushBtn__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506CF0 0050FB80  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506CF4 0050FB84  7C 08 02 A6 */	mflr r0
-/* 00506CF8 0050FB88  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00506CFC 0050FB8C  3B C5 00 00 */	addi r30, r5, 0
-/* 00506D00 0050FB90  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00506D04 0050FB94  3B A4 00 00 */	addi r29, r4, 0
-/* 00506D08 0050FB98  38 80 00 00 */	li r4, 0
-/* 00506D0C 0050FB9C  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00506D10 0050FBA0  90 01 00 08 */	stw r0, 8(r1)
-/* 00506D14 0050FBA4  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00506D18 0050FBA8  81 83 00 00 */	lwz r12, 0(r3)
-/* 00506D1C 0050FBAC  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 00506D20 0050FBB0  48 09 2E 31 */	bl func_00599B50
-/* 00506D24 0050FBB4  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506D28 0050FBB8  3B E3 00 00 */	addi r31, r3, 0
-/* 00506D2C 0050FBBC  38 80 00 FF */	li r4, 0xff
-/* 00506D30 0050FBC0  38 A0 00 00 */	li r5, 0
-/* 00506D34 0050FBC4  38 C0 00 FF */	li r6, 0xff
-/* 00506D38 0050FBC8  4B F7 E7 B9 */	bl ".ConvertRGBValueToNative16Bit__9cTSBufferFUcUcUc"
-/* 00506D3C 0050FBCC  81 9F 00 00 */	lwz r12, 0(r31)
-/* 00506D40 0050FBD0  54 64 04 3E */	clrlwi r4, r3, 0x10
-/* 00506D44 0050FBD4  38 7F 00 00 */	addi r3, r31, 0
-/* 00506D48 0050FBD8  81 8C 00 70 */	lwz r12, 0x70(r12)
-/* 00506D4C 0050FBDC  48 09 2E 05 */	bl func_00599B50
-/* 00506D50 0050FBE0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506D54 0050FBE4  38 60 01 A4 */	li r3, 0x1a4
-/* 00506D58 0050FBE8  48 08 18 59 */	bl func_005885B0
-/* 00506D5C 0050FBEC  7C 7C 1B 79 */	or. r28, r3, r3
-/* 00506D60 0050FBF0  41 82 00 0C */	beq lbl_00506D6C
-/* 00506D64 0050FBF4  7F E4 FB 78 */	mr r4, r31
-/* 00506D68 0050FBF8  4B FF 0C 89 */	bl ".__ct__15cTSSystemButtonFP9cTSBuffer"
-lbl_00506D6C:
-/* 00506D6C 0050FBFC  28 1C 00 00 */	cmplwi r28, 0
-/* 00506D70 0050FC00  3B FC 00 00 */	addi r31, r28, 0
-/* 00506D74 0050FC04  41 82 00 5C */	beq lbl_00506DD0
-/* 00506D78 0050FC08  93 BC 00 08 */	stw r29, 8(r28)
-/* 00506D7C 0050FC0C  38 7C 00 00 */	addi r3, r28, 0
-/* 00506D80 0050FC10  38 9E 00 00 */	addi r4, r30, 0
-/* 00506D84 0050FC14  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506D88 0050FC18  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506D8C 0050FC1C  48 09 2D C5 */	bl func_00599B50
-/* 00506D90 0050FC20  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506D94 0050FC24  38 00 00 00 */	li r0, 0
-/* 00506D98 0050FC28  90 1C 00 EC */	stw r0, 0xec(r28)
-/* 00506D9C 0050FC2C  80 9C 00 74 */	lwz r4, 0x74(r28)
-/* 00506DA0 0050FC30  80 1C 00 7C */	lwz r0, 0x7c(r28)
-/* 00506DA4 0050FC34  7C 04 00 50 */	subf r0, r4, r0
-/* 00506DA8 0050FC38  2C 00 00 64 */	cmpwi r0, 0x64
-/* 00506DAC 0050FC3C  40 80 00 24 */	bge lbl_00506DD0
-/* 00506DB0 0050FC40  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506DB4 0050FC44  7F 83 E3 78 */	mr r3, r28
-/* 00506DB8 0050FC48  80 BC 00 78 */	lwz r5, 0x78(r28)
-/* 00506DBC 0050FC4C  38 C4 00 64 */	addi r6, r4, 0x64
-/* 00506DC0 0050FC50  80 FC 00 80 */	lwz r7, 0x80(r28)
-/* 00506DC4 0050FC54  81 8C 00 68 */	lwz r12, 0x68(r12)
-/* 00506DC8 0050FC58  48 09 2D 89 */	bl func_00599B50
-/* 00506DCC 0050FC5C  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00506DD0:
-/* 00506DD0 0050FC60  7F E3 FB 78 */	mr r3, r31
-/* 00506DD4 0050FC64  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00506DD8 0050FC68  38 21 00 50 */	addi r1, r1, 0x50
-/* 00506DDC 0050FC6C  7C 08 03 A6 */	mtlr r0
-/* 00506DE0 0050FC70  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00506DE4 0050FC74  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00506DE8 0050FC78  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00506DEC 0050FC7C  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00506DF0 0050FC80  4E 80 00 20 */	blr 
-
-.global ".DefaultOptGrp__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultOptGrp__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506E40 0050FCD0  38 60 00 00 */	li r3, 0
-/* 00506E44 0050FCD4  4E 80 00 20 */	blr 
-
-.global ".DefaultCheckBox__13cTSWinCtrlMgrFUlRC9cTSString"
-".DefaultCheckBox__13cTSWinCtrlMgrFUlRC9cTSString":
-/* 00506E90 0050FD20  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 00506E94 0050FD24  7C 08 02 A6 */	mflr r0
-/* 00506E98 0050FD28  3B 83 00 00 */	addi r28, r3, 0
-/* 00506E9C 0050FD2C  3B A4 00 00 */	addi r29, r4, 0
-/* 00506EA0 0050FD30  3B C5 00 00 */	addi r30, r5, 0
-/* 00506EA4 0050FD34  38 60 00 E0 */	li r3, 0xe0
-/* 00506EA8 0050FD38  90 01 00 08 */	stw r0, 8(r1)
-/* 00506EAC 0050FD3C  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00506EB0 0050FD40  48 08 17 01 */	bl func_005885B0
-/* 00506EB4 0050FD44  7C 7B 1B 79 */	or. r27, r3, r3
-/* 00506EB8 0050FD48  41 82 00 08 */	beq lbl_00506EC0
-/* 00506EBC 0050FD4C  4B FF AA 75 */	bl ".__ct__11cTSWinCheckFv"
-lbl_00506EC0:
-/* 00506EC0 0050FD50  7F 83 E3 78 */	mr r3, r28
-/* 00506EC4 0050FD54  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506EC8 0050FD58  38 80 00 01 */	li r4, 1
-/* 00506ECC 0050FD5C  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 00506ED0 0050FD60  48 09 2C 81 */	bl func_00599B50
-/* 00506ED4 0050FD64  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506ED8 0050FD68  28 1B 00 00 */	cmplwi r27, 0
-/* 00506EDC 0050FD6C  3B E3 00 00 */	addi r31, r3, 0
-/* 00506EE0 0050FD70  41 82 00 A4 */	beq lbl_00506F84
-/* 00506EE4 0050FD74  28 1F 00 00 */	cmplwi r31, 0
-/* 00506EE8 0050FD78  41 82 00 9C */	beq lbl_00506F84
-/* 00506EEC 0050FD7C  7F 83 E3 78 */	mr r3, r28
-/* 00506EF0 0050FD80  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506EF4 0050FD84  38 80 00 01 */	li r4, 1
-/* 00506EF8 0050FD88  81 8C 00 20 */	lwz r12, 0x20(r12)
-/* 00506EFC 0050FD8C  48 09 2C 55 */	bl func_00599B50
-/* 00506F00 0050FD90  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506F04 0050FD94  54 60 06 3F */	clrlwi. r0, r3, 0x18
-/* 00506F08 0050FD98  41 82 00 30 */	beq lbl_00506F38
-/* 00506F0C 0050FD9C  38 7F 00 00 */	addi r3, r31, 0
-/* 00506F10 0050FDA0  38 80 00 FF */	li r4, 0xff
-/* 00506F14 0050FDA4  38 A0 00 00 */	li r5, 0
-/* 00506F18 0050FDA8  38 C0 00 FF */	li r6, 0xff
-/* 00506F1C 0050FDAC  4B F7 E5 D5 */	bl ".ConvertRGBValueToNative16Bit__9cTSBufferFUcUcUc"
-/* 00506F20 0050FDB0  81 9F 00 00 */	lwz r12, 0(r31)
-/* 00506F24 0050FDB4  54 64 04 3E */	clrlwi r4, r3, 0x10
-/* 00506F28 0050FDB8  38 7F 00 00 */	addi r3, r31, 0
-/* 00506F2C 0050FDBC  81 8C 00 70 */	lwz r12, 0x70(r12)
-/* 00506F30 0050FDC0  48 09 2C 21 */	bl func_00599B50
-/* 00506F34 0050FDC4  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00506F38:
-/* 00506F38 0050FDC8  93 BB 00 08 */	stw r29, 8(r27)
-/* 00506F3C 0050FDCC  38 7B 00 00 */	addi r3, r27, 0
-/* 00506F40 0050FDD0  38 9E 00 00 */	addi r4, r30, 0
-/* 00506F44 0050FDD4  81 9B 00 00 */	lwz r12, 0(r27)
-/* 00506F48 0050FDD8  81 8C 00 A4 */	lwz r12, 0xa4(r12)
-/* 00506F4C 0050FDDC  48 09 2C 05 */	bl func_00599B50
-/* 00506F50 0050FDE0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506F54 0050FDE4  7F 83 E3 78 */	mr r3, r28
-/* 00506F58 0050FDE8  81 9C 00 00 */	lwz r12, 0(r28)
-/* 00506F5C 0050FDEC  38 80 00 00 */	li r4, 0
-/* 00506F60 0050FDF0  81 8C 00 10 */	lwz r12, 0x10(r12)
-/* 00506F64 0050FDF4  48 09 2B ED */	bl func_00599B50
-/* 00506F68 0050FDF8  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00506F6C 0050FDFC  38 83 00 00 */	addi r4, r3, 0
-/* 00506F70 0050FE00  38 7B 00 00 */	addi r3, r27, 0
-/* 00506F74 0050FE04  4B FF A1 FD */	bl ".SetFont__11cTSWinCheckFP8cITSFont"
-/* 00506F78 0050FE08  38 7B 00 00 */	addi r3, r27, 0
-/* 00506F7C 0050FE0C  38 9F 00 00 */	addi r4, r31, 0
-/* 00506F80 0050FE10  4B FF A2 31 */	bl ".SetImage__11cTSWinCheckFP9cTSBuffer"
-lbl_00506F84:
-/* 00506F84 0050FE14  7F 63 DB 78 */	mr r3, r27
-/* 00506F88 0050FE18  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 00506F8C 0050FE1C  38 21 00 60 */	addi r1, r1, 0x60
-/* 00506F90 0050FE20  7C 08 03 A6 */	mtlr r0
-/* 00506F94 0050FE24  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 00506F98 0050FE28  4E 80 00 20 */	blr 
-
-.global ".Shutdown__13cTSWinCtrlMgrFv"
-".Shutdown__13cTSWinCtrlMgrFv":
-/* 00506FE0 0050FE70  93 E1 FF FC */	stw r31, -4(r1)
-/* 00506FE4 0050FE74  7C 08 02 A6 */	mflr r0
-/* 00506FE8 0050FE78  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00506FEC 0050FE7C  7C 7E 1B 78 */	mr r30, r3
-/* 00506FF0 0050FE80  90 01 00 08 */	stw r0, 8(r1)
-/* 00506FF4 0050FE84  94 21 FF 50 */	stwu r1, -0xb0(r1)
-/* 00506FF8 0050FE88  88 03 00 04 */	lbz r0, 4(r3)
-/* 00506FFC 0050FE8C  28 00 00 00 */	cmplwi r0, 0
-/* 00507000 0050FE90  40 82 00 0C */	bne lbl_0050700C
-/* 00507004 0050FE94  38 60 00 01 */	li r3, 1
-/* 00507008 0050FE98  48 00 02 18 */	b lbl_00507220
-lbl_0050700C:
-/* 0050700C 0050FE9C  38 61 00 50 */	addi r3, r1, 0x50
-/* 00507010 0050FEA0  38 9E 00 10 */	addi r4, r30, 0x10
-/* 00507014 0050FEA4  48 00 21 8D */	bl ".end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00507018 0050FEA8  38 61 00 4C */	addi r3, r1, 0x4c
-/* 0050701C 0050FEAC  38 9E 00 10 */	addi r4, r30, 0x10
-/* 00507020 0050FEB0  48 00 1E 91 */	bl ".begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00507024 0050FEB4  38 61 00 7C */	addi r3, r1, 0x7c
-/* 00507028 0050FEB8  38 81 00 50 */	addi r4, r1, 0x50
-/* 0050702C 0050FEBC  48 00 1C E5 */	bl ".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 00507030 0050FEC0  3B E3 00 00 */	addi r31, r3, 0
-/* 00507034 0050FEC4  38 61 00 78 */	addi r3, r1, 0x78
-/* 00507038 0050FEC8  38 81 00 4C */	addi r4, r1, 0x4c
-/* 0050703C 0050FECC  48 00 1C D5 */	bl ".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 00507040 0050FED0  38 83 00 00 */	addi r4, r3, 0
-/* 00507044 0050FED4  38 7E 00 10 */	addi r3, r30, 0x10
-/* 00507048 0050FED8  38 BF 00 00 */	addi r5, r31, 0
-/* 0050704C 0050FEDC  48 00 1A 15 */	bl ".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 00507050 0050FEE0  38 61 00 40 */	addi r3, r1, 0x40
-/* 00507054 0050FEE4  38 9E 00 20 */	addi r4, r30, 0x20
-/* 00507058 0050FEE8  48 00 19 19 */	bl ".begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050705C 0050FEEC  48 00 00 24 */	b lbl_00507080
-lbl_00507060:
-/* 00507060 0050FEF0  80 7E 00 08 */	lwz r3, 8(r30)
-/* 00507064 0050FEF4  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 00507068 0050FEF8  81 83 00 00 */	lwz r12, 0(r3)
-/* 0050706C 0050FEFC  81 8C 00 1C */	lwz r12, 0x1c(r12)
-/* 00507070 0050FF00  48 09 2A E1 */	bl func_00599B50
-/* 00507074 0050FF04  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00507078 0050FF08  38 61 00 40 */	addi r3, r1, 0x40
-/* 0050707C 0050FF0C  4B B7 DC 15 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-lbl_00507080:
-/* 00507080 0050FF10  38 61 00 54 */	addi r3, r1, 0x54
-/* 00507084 0050FF14  38 9E 00 20 */	addi r4, r30, 0x20
-/* 00507088 0050FF18  48 00 17 F9 */	bl ".end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050708C 0050FF1C  80 81 00 40 */	lwz r4, 0x40(r1)
-/* 00507090 0050FF20  80 01 00 54 */	lwz r0, 0x54(r1)
-/* 00507094 0050FF24  7C 04 00 40 */	cmplw r4, r0
-/* 00507098 0050FF28  40 82 FF C8 */	bne lbl_00507060
-/* 0050709C 0050FF2C  38 61 00 5C */	addi r3, r1, 0x5c
-/* 005070A0 0050FF30  38 9E 00 20 */	addi r4, r30, 0x20
-/* 005070A4 0050FF34  4B FF EC BD */	bl ".end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 005070A8 0050FF38  38 61 00 58 */	addi r3, r1, 0x58
-/* 005070AC 0050FF3C  38 9E 00 20 */	addi r4, r30, 0x20
-/* 005070B0 0050FF40  48 00 16 31 */	bl ".begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 005070B4 0050FF44  38 61 00 84 */	addi r3, r1, 0x84
-/* 005070B8 0050FF48  38 81 00 5C */	addi r4, r1, 0x5c
-/* 005070BC 0050FF4C  48 00 14 45 */	bl ".__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-/* 005070C0 0050FF50  3B E3 00 00 */	addi r31, r3, 0
-/* 005070C4 0050FF54  38 61 00 80 */	addi r3, r1, 0x80
-/* 005070C8 0050FF58  38 81 00 58 */	addi r4, r1, 0x58
-/* 005070CC 0050FF5C  48 00 14 35 */	bl ".__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-/* 005070D0 0050FF60  38 83 00 00 */	addi r4, r3, 0
-/* 005070D4 0050FF64  38 7E 00 20 */	addi r3, r30, 0x20
-/* 005070D8 0050FF68  38 BF 00 00 */	addi r5, r31, 0
-/* 005070DC 0050FF6C  48 00 11 15 */	bl ".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-/* 005070E0 0050FF70  38 61 00 44 */	addi r3, r1, 0x44
-/* 005070E4 0050FF74  38 9E 00 30 */	addi r4, r30, 0x30
-/* 005070E8 0050FF78  48 00 0F D9 */	bl ".begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 005070EC 0050FF7C  48 00 00 30 */	b lbl_0050711C
-/* 005070F0 0050FF80  60 00 00 00 */	nop 
-lbl_005070F4:
-/* 005070F4 0050FF84  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 005070F8 0050FF88  28 03 00 00 */	cmplwi r3, 0
-/* 005070FC 0050FF8C  41 82 00 18 */	beq lbl_00507114
-/* 00507100 0050FF90  81 83 00 00 */	lwz r12, 0(r3)
-/* 00507104 0050FF94  38 80 00 01 */	li r4, 1
-/* 00507108 0050FF98  81 8C 00 08 */	lwz r12, 8(r12)
-/* 0050710C 0050FF9C  48 09 2A 45 */	bl func_00599B50
-/* 00507110 0050FFA0  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00507114:
-/* 00507114 0050FFA4  38 61 00 44 */	addi r3, r1, 0x44
-/* 00507118 0050FFA8  4B B7 DB 79 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-lbl_0050711C:
-/* 0050711C 0050FFAC  38 61 00 60 */	addi r3, r1, 0x60
-/* 00507120 0050FFB0  38 9E 00 30 */	addi r4, r30, 0x30
-/* 00507124 0050FFB4  4B FF F0 FD */	bl ".end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00507128 0050FFB8  80 61 00 44 */	lwz r3, 0x44(r1)
-/* 0050712C 0050FFBC  80 01 00 60 */	lwz r0, 0x60(r1)
-/* 00507130 0050FFC0  7C 03 00 40 */	cmplw r3, r0
-/* 00507134 0050FFC4  40 82 FF C0 */	bne lbl_005070F4
-/* 00507138 0050FFC8  38 61 00 68 */	addi r3, r1, 0x68
-/* 0050713C 0050FFCC  38 9E 00 30 */	addi r4, r30, 0x30
-/* 00507140 0050FFD0  48 00 0D 81 */	bl ".end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00507144 0050FFD4  38 61 00 64 */	addi r3, r1, 0x64
-/* 00507148 0050FFD8  38 9E 00 30 */	addi r4, r30, 0x30
-/* 0050714C 0050FFDC  48 00 09 15 */	bl ".begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00507150 0050FFE0  38 61 00 8C */	addi r3, r1, 0x8c
-/* 00507154 0050FFE4  38 81 00 68 */	addi r4, r1, 0x68
-/* 00507158 0050FFE8  48 00 06 99 */	bl ".__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-/* 0050715C 0050FFEC  3B E3 00 00 */	addi r31, r3, 0
-/* 00507160 0050FFF0  38 61 00 88 */	addi r3, r1, 0x88
-/* 00507164 0050FFF4  38 81 00 64 */	addi r4, r1, 0x64
-/* 00507168 0050FFF8  48 00 06 89 */	bl ".__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-/* 0050716C 0050FFFC  38 83 00 00 */	addi r4, r3, 0
-/* 00507170 00510000  38 7E 00 30 */	addi r3, r30, 0x30
-/* 00507174 00510004  38 BF 00 00 */	addi r5, r31, 0
-/* 00507178 00510008  48 00 02 99 */	bl ".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-/* 0050717C 0051000C  38 61 00 48 */	addi r3, r1, 0x48
-/* 00507180 00510010  38 9E 00 40 */	addi r4, r30, 0x40
-/* 00507184 00510014  48 00 01 BD */	bl ".begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00507188 00510018  48 00 00 2C */	b lbl_005071B4
-/* 0050718C 0051001C  60 00 00 00 */	nop 
-lbl_00507190:
-/* 00507190 00510020  80 7E 00 0C */	lwz r3, 0xc(r30)
-/* 00507194 00510024  38 A0 00 01 */	li r5, 1
-/* 00507198 00510028  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 0050719C 0051002C  81 83 00 00 */	lwz r12, 0(r3)
-/* 005071A0 00510030  81 8C 00 38 */	lwz r12, 0x38(r12)
-/* 005071A4 00510034  48 09 29 AD */	bl func_00599B50
-/* 005071A8 00510038  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005071AC 0051003C  38 61 00 48 */	addi r3, r1, 0x48
-/* 005071B0 00510040  4B B7 DA E1 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-lbl_005071B4:
-/* 005071B4 00510044  38 61 00 6C */	addi r3, r1, 0x6c
-/* 005071B8 00510048  38 9E 00 40 */	addi r4, r30, 0x40
-/* 005071BC 0051004C  48 00 00 B5 */	bl ".end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005071C0 00510050  80 81 00 48 */	lwz r4, 0x48(r1)
-/* 005071C4 00510054  80 01 00 6C */	lwz r0, 0x6c(r1)
-/* 005071C8 00510058  7C 04 00 40 */	cmplw r4, r0
-/* 005071CC 0051005C  40 82 FF C4 */	bne lbl_00507190
-/* 005071D0 00510060  38 61 00 74 */	addi r3, r1, 0x74
-/* 005071D4 00510064  38 9E 00 40 */	addi r4, r30, 0x40
-/* 005071D8 00510068  48 00 1F C9 */	bl ".end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005071DC 0051006C  38 61 00 70 */	addi r3, r1, 0x70
-/* 005071E0 00510070  38 9E 00 40 */	addi r4, r30, 0x40
-/* 005071E4 00510074  48 00 1C CD */	bl ".begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005071E8 00510078  38 61 00 94 */	addi r3, r1, 0x94
-/* 005071EC 0051007C  38 81 00 74 */	addi r4, r1, 0x74
-/* 005071F0 00510080  48 00 1B 21 */	bl ".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 005071F4 00510084  3B E3 00 00 */	addi r31, r3, 0
-/* 005071F8 00510088  38 61 00 90 */	addi r3, r1, 0x90
-/* 005071FC 0051008C  38 81 00 70 */	addi r4, r1, 0x70
-/* 00507200 00510090  48 00 1B 11 */	bl ".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 00507204 00510094  38 83 00 00 */	addi r4, r3, 0
-/* 00507208 00510098  38 7E 00 40 */	addi r3, r30, 0x40
-/* 0050720C 0051009C  38 BF 00 00 */	addi r5, r31, 0
-/* 00507210 005100A0  48 00 18 51 */	bl ".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-/* 00507214 005100A4  38 00 00 00 */	li r0, 0
-/* 00507218 005100A8  98 1E 00 04 */	stb r0, 4(r30)
-/* 0050721C 005100AC  38 60 00 01 */	li r3, 1
-lbl_00507220:
-/* 00507220 005100B0  80 01 00 B8 */	lwz r0, 0xb8(r1)
-/* 00507224 005100B4  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 00507228 005100B8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050722C 005100BC  7C 08 03 A6 */	mtlr r0
-/* 00507230 005100C0  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00507234 005100C4  4E 80 00 20 */	blr 
-
-.global ".end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00507270 00510100  38 04 00 04 */	addi r0, r4, 4
-/* 00507274 00510104  90 03 00 00 */	stw r0, 0(r3)
-/* 00507278 00510108  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00507340 005101D0  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 00507344 005101D4  90 03 00 00 */	stw r0, 0(r3)
-/* 00507348 005101D8  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
-/* 00507410 005102A0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00507414 005102A4  7C 08 02 A6 */	mflr r0
-/* 00507418 005102A8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050741C 005102AC  3B C5 00 00 */	addi r30, r5, 0
-/* 00507420 005102B0  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00507424 005102B4  3B A4 00 00 */	addi r29, r4, 0
-/* 00507428 005102B8  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 0050742C 005102BC  3B 83 00 00 */	addi r28, r3, 0
-/* 00507430 005102C0  90 01 00 08 */	stw r0, 8(r1)
-/* 00507434 005102C4  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00507438 005102C8  48 00 00 20 */	b lbl_00507458
-/* 0050743C 005102CC  60 00 00 00 */	nop 
-lbl_00507440:
-/* 00507440 005102D0  7F A3 EB 78 */	mr r3, r29
-/* 00507444 005102D4  4B B7 D8 4D */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 00507448 005102D8  93 E1 00 40 */	stw r31, 0x40(r1)
-/* 0050744C 005102DC  38 7C 00 00 */	addi r3, r28, 0
-/* 00507450 005102E0  38 81 00 40 */	addi r4, r1, 0x40
-/* 00507454 005102E4  48 00 74 FD */	bl ".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-lbl_00507458:
-/* 00507458 005102E8  83 FD 00 00 */	lwz r31, 0(r29)
-/* 0050745C 005102EC  80 1E 00 00 */	lwz r0, 0(r30)
-/* 00507460 005102F0  7C 1F 00 40 */	cmplw r31, r0
-/* 00507464 005102F4  40 82 FF DC */	bne lbl_00507440
-/* 00507468 005102F8  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050746C 005102FC  38 21 00 60 */	addi r1, r1, 0x60
-/* 00507470 00510300  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00507474 00510304  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00507478 00510308  7C 08 03 A6 */	mtlr r0
-/* 0050747C 0051030C  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00507480 00510310  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00507484 00510314  4E 80 00 20 */	blr 
-
-.global ".__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-".__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
-/* 005077F0 00510680  80 04 00 00 */	lwz r0, 0(r4)
-/* 005077F4 00510684  90 03 00 00 */	stw r0, 0(r3)
-/* 005077F8 00510688  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00507A60 005108F0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00507A64 005108F4  7C 08 02 A6 */	mflr r0
-/* 00507A68 005108F8  3B E3 00 00 */	addi r31, r3, 0
-/* 00507A6C 005108FC  38 64 00 00 */	addi r3, r4, 0
-/* 00507A70 00510900  90 01 00 08 */	stw r0, 8(r1)
-/* 00507A74 00510904  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00507A78 00510908  48 00 03 19 */	bl ".front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00507A7C 0051090C  80 83 00 00 */	lwz r4, 0(r3)
-/* 00507A80 00510910  7F E3 FB 78 */	mr r3, r31
-/* 00507A84 00510914  48 00 00 BD */	bl ".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-/* 00507A88 00510918  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00507A8C 0051091C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00507A90 00510920  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00507A94 00510924  7C 08 03 A6 */	mtlr r0
-/* 00507A98 00510928  4E 80 00 20 */	blr 
-
-.global ".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node":
-/* 00507B40 005109D0  90 83 00 00 */	stw r4, 0(r3)
-/* 00507B44 005109D4  4E 80 00 20 */	blr 
-
-.global ".front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00507D90 00510C20  38 63 00 0C */	addi r3, r3, 0xc
-/* 00507D94 00510C24  4E 80 00 20 */	blr 
-
-.global ".end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00507EC0 00510D50  93 E1 FF FC */	stw r31, -4(r1)
-/* 00507EC4 00510D54  7C 08 02 A6 */	mflr r0
-/* 00507EC8 00510D58  3B E3 00 00 */	addi r31, r3, 0
-/* 00507ECC 00510D5C  38 64 00 00 */	addi r3, r4, 0
-/* 00507ED0 00510D60  90 01 00 08 */	stw r0, 8(r1)
-/* 00507ED4 00510D64  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00507ED8 00510D68  48 00 00 B9 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00507EDC 00510D6C  38 83 00 00 */	addi r4, r3, 0
-/* 00507EE0 00510D70  38 7F 00 00 */	addi r3, r31, 0
-/* 00507EE4 00510D74  4B FF FC 5D */	bl ".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-/* 00507EE8 00510D78  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00507EEC 00510D7C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00507EF0 00510D80  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00507EF4 00510D84  7C 08 03 A6 */	mtlr r0
-/* 00507EF8 00510D88  4E 80 00 20 */	blr 
-
-.global ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00507F90 00510E20  38 63 00 04 */	addi r3, r3, 4
-/* 00507F94 00510E24  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 005080C0 00510F50  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 005080C4 00510F54  90 03 00 00 */	stw r0, 0(r3)
-/* 005080C8 00510F58  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
-/* 005081F0 00511080  93 E1 FF FC */	stw r31, -4(r1)
-/* 005081F4 00511084  7C 08 02 A6 */	mflr r0
-/* 005081F8 00511088  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005081FC 0051108C  3B C5 00 00 */	addi r30, r5, 0
-/* 00508200 00511090  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00508204 00511094  3B A4 00 00 */	addi r29, r4, 0
-/* 00508208 00511098  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 0050820C 0051109C  3B 83 00 00 */	addi r28, r3, 0
-/* 00508210 005110A0  90 01 00 08 */	stw r0, 8(r1)
-/* 00508214 005110A4  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00508218 005110A8  48 00 00 20 */	b lbl_00508238
-/* 0050821C 005110AC  60 00 00 00 */	nop 
-lbl_00508220:
-/* 00508220 005110B0  7F A3 EB 78 */	mr r3, r29
-/* 00508224 005110B4  4B B7 CA 6D */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 00508228 005110B8  93 E1 00 40 */	stw r31, 0x40(r1)
-/* 0050822C 005110BC  38 7C 00 00 */	addi r3, r28, 0
-/* 00508230 005110C0  38 81 00 40 */	addi r4, r1, 0x40
-/* 00508234 005110C4  48 00 4F FD */	bl ".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-lbl_00508238:
-/* 00508238 005110C8  83 FD 00 00 */	lwz r31, 0(r29)
-/* 0050823C 005110CC  80 1E 00 00 */	lwz r0, 0(r30)
-/* 00508240 005110D0  7C 1F 00 40 */	cmplw r31, r0
-/* 00508244 005110D4  40 82 FF DC */	bne lbl_00508220
-/* 00508248 005110D8  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050824C 005110DC  38 21 00 60 */	addi r1, r1, 0x60
-/* 00508250 005110E0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00508254 005110E4  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00508258 005110E8  7C 08 03 A6 */	mtlr r0
-/* 0050825C 005110EC  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00508260 005110F0  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00508264 005110F4  4E 80 00 20 */	blr 
-
-.global ".__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-".__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
-/* 00508500 00511390  80 04 00 00 */	lwz r0, 0(r4)
-/* 00508504 00511394  90 03 00 00 */	stw r0, 0(r3)
-/* 00508508 00511398  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 005086E0 00511570  93 E1 FF FC */	stw r31, -4(r1)
-/* 005086E4 00511574  7C 08 02 A6 */	mflr r0
-/* 005086E8 00511578  3B E3 00 00 */	addi r31, r3, 0
-/* 005086EC 0051157C  38 64 00 00 */	addi r3, r4, 0
-/* 005086F0 00511580  90 01 00 08 */	stw r0, 8(r1)
-/* 005086F4 00511584  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005086F8 00511588  48 00 00 99 */	bl ".front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 005086FC 0051158C  80 83 00 00 */	lwz r4, 0(r3)
-/* 00508700 00511590  7F E3 FB 78 */	mr r3, r31
-/* 00508704 00511594  4B FF D7 0D */	bl ".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-/* 00508708 00511598  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0050870C 0051159C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00508710 005115A0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00508714 005115A4  7C 08 03 A6 */	mtlr r0
-/* 00508718 005115A8  4E 80 00 20 */	blr 
-
-.global ".front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00508790 00511620  38 63 00 0C */	addi r3, r3, 0xc
-/* 00508794 00511624  4E 80 00 20 */	blr 
-
-.global ".end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00508880 00511710  38 04 00 04 */	addi r0, r4, 4
-/* 00508884 00511714  90 03 00 00 */	stw r0, 0(r3)
-/* 00508888 00511718  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00508970 00511800  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 00508974 00511804  90 03 00 00 */	stw r0, 0(r3)
-/* 00508978 00511808  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
-/* 00508A60 005118F0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00508A64 005118F4  7C 08 02 A6 */	mflr r0
-/* 00508A68 005118F8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00508A6C 005118FC  3B C5 00 00 */	addi r30, r5, 0
-/* 00508A70 00511900  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00508A74 00511904  3B A4 00 00 */	addi r29, r4, 0
-/* 00508A78 00511908  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 00508A7C 0051190C  3B 83 00 00 */	addi r28, r3, 0
-/* 00508A80 00511910  90 01 00 08 */	stw r0, 8(r1)
-/* 00508A84 00511914  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00508A88 00511918  48 00 00 20 */	b lbl_00508AA8
-/* 00508A8C 0051191C  60 00 00 00 */	nop 
-lbl_00508A90:
-/* 00508A90 00511920  7F A3 EB 78 */	mr r3, r29
-/* 00508A94 00511924  4B B7 C1 FD */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 00508A98 00511928  93 E1 00 40 */	stw r31, 0x40(r1)
-/* 00508A9C 0051192C  38 7C 00 00 */	addi r3, r28, 0
-/* 00508AA0 00511930  38 81 00 40 */	addi r4, r1, 0x40
-/* 00508AA4 00511934  48 00 33 DD */	bl ".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-lbl_00508AA8:
-/* 00508AA8 00511938  83 FD 00 00 */	lwz r31, 0(r29)
-/* 00508AAC 0051193C  80 1E 00 00 */	lwz r0, 0(r30)
-/* 00508AB0 00511940  7C 1F 00 40 */	cmplw r31, r0
-/* 00508AB4 00511944  40 82 FF DC */	bne lbl_00508A90
-/* 00508AB8 00511948  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 00508ABC 0051194C  38 21 00 60 */	addi r1, r1, 0x60
-/* 00508AC0 00511950  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00508AC4 00511954  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00508AC8 00511958  7C 08 03 A6 */	mtlr r0
-/* 00508ACC 0051195C  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00508AD0 00511960  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00508AD4 00511964  4E 80 00 20 */	blr 
-
-.global ".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-".__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
-/* 00508D10 00511BA0  80 04 00 00 */	lwz r0, 0(r4)
-/* 00508D14 00511BA4  90 03 00 00 */	stw r0, 0(r3)
-/* 00508D18 00511BA8  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00508EB0 00511D40  93 E1 FF FC */	stw r31, -4(r1)
-/* 00508EB4 00511D44  7C 08 02 A6 */	mflr r0
-/* 00508EB8 00511D48  3B E3 00 00 */	addi r31, r3, 0
-/* 00508EBC 00511D4C  38 64 00 00 */	addi r3, r4, 0
-/* 00508EC0 00511D50  90 01 00 08 */	stw r0, 8(r1)
-/* 00508EC4 00511D54  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00508EC8 00511D58  48 00 02 09 */	bl ".front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00508ECC 00511D5C  80 83 00 00 */	lwz r4, 0(r3)
-/* 00508ED0 00511D60  7F E3 FB 78 */	mr r3, r31
-/* 00508ED4 00511D64  48 00 00 7D */	bl ".__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-/* 00508ED8 00511D68  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00508EDC 00511D6C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00508EE0 00511D70  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00508EE4 00511D74  7C 08 03 A6 */	mtlr r0
-/* 00508EE8 00511D78  4E 80 00 20 */	blr 
-
-.global ".__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-".__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node":
-/* 00508F50 00511DE0  90 83 00 00 */	stw r4, 0(r3)
-/* 00508F54 00511DE4  4E 80 00 20 */	blr 
-
-.global ".front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 005090D0 00511F60  38 63 00 0C */	addi r3, r3, 0xc
-/* 005090D4 00511F64  4E 80 00 20 */	blr 
-
-.global ".end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 005091A0 00512030  93 E1 FF FC */	stw r31, -4(r1)
-/* 005091A4 00512034  7C 08 02 A6 */	mflr r0
-/* 005091A8 00512038  3B E3 00 00 */	addi r31, r3, 0
-/* 005091AC 0051203C  38 64 00 00 */	addi r3, r4, 0
-/* 005091B0 00512040  90 01 00 08 */	stw r0, 8(r1)
-/* 005091B4 00512044  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005091B8 00512048  48 00 00 89 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005091BC 0051204C  38 83 00 00 */	addi r4, r3, 0
-/* 005091C0 00512050  38 7F 00 00 */	addi r3, r31, 0
-/* 005091C4 00512054  4B FF FD 8D */	bl ".__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-/* 005091C8 00512058  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005091CC 0051205C  38 21 00 50 */	addi r1, r1, 0x50
-/* 005091D0 00512060  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005091D4 00512064  7C 08 03 A6 */	mtlr r0
-/* 005091D8 00512068  4E 80 00 20 */	blr 
-
-.global ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00509240 005120D0  38 63 00 04 */	addi r3, r3, 4
-/* 00509244 005120D4  4E 80 00 20 */	blr 
-
-.global ".Init__13cTSWinCtrlMgrFv"
-".Init__13cTSWinCtrlMgrFv":
-/* 00509310 005121A0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00509314 005121A4  7C 08 02 A6 */	mflr r0
-/* 00509318 005121A8  83 E2 8C A4 */	lwz r31, lbl_005BA104-_R2_BASE_(r2)
-/* 0050931C 005121AC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00509320 005121B0  7C 7E 1B 78 */	mr r30, r3
-/* 00509324 005121B4  90 01 00 08 */	stw r0, 8(r1)
-/* 00509328 005121B8  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050932C 005121BC  88 03 00 04 */	lbz r0, 4(r3)
-/* 00509330 005121C0  28 00 00 00 */	cmplwi r0, 0
-/* 00509334 005121C4  40 82 00 3C */	bne lbl_00509370
-/* 00509338 005121C8  38 00 00 01 */	li r0, 1
-/* 0050933C 005121CC  98 1E 00 04 */	stb r0, 4(r30)
-/* 00509340 005121D0  80 7F 00 00 */	lwz r3, 0(r31)
-/* 00509344 005121D4  81 83 00 00 */	lwz r12, 0(r3)
-/* 00509348 005121D8  81 8C 00 18 */	lwz r12, 0x18(r12)
-/* 0050934C 005121DC  48 09 08 05 */	bl func_00599B50
-/* 00509350 005121E0  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 00509354 005121E4  90 7E 00 08 */	stw r3, 8(r30)
-/* 00509358 005121E8  80 7F 00 00 */	lwz r3, 0(r31)
-/* 0050935C 005121EC  81 83 00 00 */	lwz r12, 0(r3)
-/* 00509360 005121F0  81 8C 00 1C */	lwz r12, 0x1c(r12)
-/* 00509364 005121F4  48 09 07 ED */	bl func_00599B50
-/* 00509368 005121F8  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 0050936C 005121FC  90 7E 00 0C */	stw r3, 0xc(r30)
-lbl_00509370:
-/* 00509370 00512200  38 60 00 01 */	li r3, 1
-/* 00509374 00512204  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00509378 00512208  38 21 00 50 */	addi r1, r1, 0x50
-/* 0050937C 0051220C  7C 08 03 A6 */	mtlr r0
-/* 00509380 00512210  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509384 00512214  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00509388 00512218  4E 80 00 20 */	blr 
-
-.global ".__dt__13cTSWinCtrlMgrFv"
-".__dt__13cTSWinCtrlMgrFv":
-/* 005093C0 00512250  93 E1 FF FC */	stw r31, -4(r1)
-/* 005093C4 00512254  7C 08 02 A6 */	mflr r0
-/* 005093C8 00512258  3B E4 00 00 */	addi r31, r4, 0
-/* 005093CC 0051225C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005093D0 00512260  7C 7E 1B 79 */	or. r30, r3, r3
-/* 005093D4 00512264  90 01 00 08 */	stw r0, 8(r1)
-/* 005093D8 00512268  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005093DC 0051226C  41 82 00 7C */	beq lbl_00509458
-/* 005093E0 00512270  80 02 9F 0C */	lwz r0, lbl_005BB36C-_R2_BASE_(r2)
-/* 005093E4 00512274  90 1E 00 00 */	stw r0, 0(r30)
-/* 005093E8 00512278  81 83 00 00 */	lwz r12, 0(r3)
-/* 005093EC 0051227C  81 8C 00 0C */	lwz r12, 0xc(r12)
-/* 005093F0 00512280  48 09 07 61 */	bl func_00599B50
-/* 005093F4 00512284  80 41 00 14 */	lwz r2, 0x14(r1)
-/* 005093F8 00512288  34 1E 00 40 */	addic. r0, r30, 0x40
-/* 005093FC 0051228C  41 82 00 10 */	beq lbl_0050940C
-/* 00509400 00512290  38 7E 00 40 */	addi r3, r30, 0x40
-/* 00509404 00512294  38 80 FF FF */	li r4, -1
-/* 00509408 00512298  48 00 03 89 */	bl ".__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-lbl_0050940C:
-/* 0050940C 0051229C  34 1E 00 30 */	addic. r0, r30, 0x30
-/* 00509410 005122A0  41 82 00 10 */	beq lbl_00509420
-/* 00509414 005122A4  38 7E 00 30 */	addi r3, r30, 0x30
-/* 00509418 005122A8  38 80 FF FF */	li r4, -1
-/* 0050941C 005122AC  48 00 01 D5 */	bl ".__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-lbl_00509420:
-/* 00509420 005122B0  34 1E 00 20 */	addic. r0, r30, 0x20
-/* 00509424 005122B4  41 82 00 10 */	beq lbl_00509434
-/* 00509428 005122B8  38 7E 00 20 */	addi r3, r30, 0x20
-/* 0050942C 005122BC  38 80 FF FF */	li r4, -1
-/* 00509430 005122C0  48 00 00 71 */	bl ".__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-lbl_00509434:
-/* 00509434 005122C4  34 1E 00 10 */	addic. r0, r30, 0x10
-/* 00509438 005122C8  41 82 00 10 */	beq lbl_00509448
-/* 0050943C 005122CC  38 7E 00 10 */	addi r3, r30, 0x10
-/* 00509440 005122D0  38 80 FF FF */	li r4, -1
-/* 00509444 005122D4  48 00 03 4D */	bl ".__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-lbl_00509448:
-/* 00509448 005122D8  7F E0 07 35 */	extsh. r0, r31
-/* 0050944C 005122DC  40 81 00 0C */	ble lbl_00509458
-/* 00509450 005122E0  7F C3 F3 78 */	mr r3, r30
-/* 00509454 005122E4  48 07 F2 3D */	bl func_00588690
-lbl_00509458:
-/* 00509458 005122E8  7F C3 F3 78 */	mr r3, r30
-/* 0050945C 005122EC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00509460 005122F0  38 21 00 50 */	addi r1, r1, 0x50
-/* 00509464 005122F4  7C 08 03 A6 */	mtlr r0
-/* 00509468 005122F8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050946C 005122FC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00509470 00512300  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 005094A0 00512330  93 E1 FF FC */	stw r31, -4(r1)
-/* 005094A4 00512334  7C 08 02 A6 */	mflr r0
-/* 005094A8 00512338  3B E4 00 00 */	addi r31, r4, 0
-/* 005094AC 0051233C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005094B0 00512340  7C 7E 1B 79 */	or. r30, r3, r3
-/* 005094B4 00512344  90 01 00 08 */	stw r0, 8(r1)
-/* 005094B8 00512348  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005094BC 0051234C  41 82 00 38 */	beq lbl_005094F4
-/* 005094C0 00512350  4B FF CB 11 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 005094C4 00512354  80 03 00 00 */	lwz r0, 0(r3)
-/* 005094C8 00512358  28 00 00 00 */	cmplwi r0, 0
-/* 005094CC 0051235C  41 82 00 18 */	beq lbl_005094E4
-/* 005094D0 00512360  7F C3 F3 78 */	mr r3, r30
-/* 005094D4 00512364  4B FF CA FD */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 005094D8 00512368  80 83 00 00 */	lwz r4, 0(r3)
-/* 005094DC 0051236C  7F C3 F3 78 */	mr r3, r30
-/* 005094E0 00512370  48 00 33 91 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_005094E4:
-/* 005094E4 00512374  7F E0 07 35 */	extsh. r0, r31
-/* 005094E8 00512378  40 81 00 0C */	ble lbl_005094F4
-/* 005094EC 0051237C  7F C3 F3 78 */	mr r3, r30
-/* 005094F0 00512380  48 07 F1 A1 */	bl func_00588690
-lbl_005094F4:
-/* 005094F4 00512384  7F C3 F3 78 */	mr r3, r30
-/* 005094F8 00512388  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005094FC 0051238C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00509500 00512390  7C 08 03 A6 */	mtlr r0
-/* 00509504 00512394  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509508 00512398  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050950C 0051239C  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 005095F0 00512480  93 E1 FF FC */	stw r31, -4(r1)
-/* 005095F4 00512484  7C 08 02 A6 */	mflr r0
-/* 005095F8 00512488  3B E4 00 00 */	addi r31, r4, 0
-/* 005095FC 0051248C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00509600 00512490  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00509604 00512494  90 01 00 08 */	stw r0, 8(r1)
-/* 00509608 00512498  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050960C 0051249C  41 82 00 38 */	beq lbl_00509644
-/* 00509610 005124A0  4B FF E9 81 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00509614 005124A4  80 03 00 00 */	lwz r0, 0(r3)
-/* 00509618 005124A8  28 00 00 00 */	cmplwi r0, 0
-/* 0050961C 005124AC  41 82 00 18 */	beq lbl_00509634
-/* 00509620 005124B0  7F C3 F3 78 */	mr r3, r30
-/* 00509624 005124B4  4B FF E9 6D */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00509628 005124B8  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050962C 005124BC  7F C3 F3 78 */	mr r3, r30
-/* 00509630 005124C0  48 00 47 31 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_00509634:
-/* 00509634 005124C4  7F E0 07 35 */	extsh. r0, r31
-/* 00509638 005124C8  40 81 00 0C */	ble lbl_00509644
-/* 0050963C 005124CC  7F C3 F3 78 */	mr r3, r30
-/* 00509640 005124D0  48 07 F0 51 */	bl func_00588690
-lbl_00509644:
-/* 00509644 005124D4  7F C3 F3 78 */	mr r3, r30
-/* 00509648 005124D8  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0050964C 005124DC  38 21 00 50 */	addi r1, r1, 0x50
-/* 00509650 005124E0  7C 08 03 A6 */	mtlr r0
-/* 00509654 005124E4  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509658 005124E8  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050965C 005124EC  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00509790 00512620  93 E1 FF FC */	stw r31, -4(r1)
-/* 00509794 00512624  7C 08 02 A6 */	mflr r0
-/* 00509798 00512628  3B E4 00 00 */	addi r31, r4, 0
-/* 0050979C 0051262C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 005097A0 00512630  7C 7E 1B 79 */	or. r30, r3, r3
-/* 005097A4 00512634  90 01 00 08 */	stw r0, 8(r1)
-/* 005097A8 00512638  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 005097AC 0051263C  41 82 00 38 */	beq lbl_005097E4
-/* 005097B0 00512640  4B FF FA 91 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005097B4 00512644  80 03 00 00 */	lwz r0, 0(r3)
-/* 005097B8 00512648  28 00 00 00 */	cmplwi r0, 0
-/* 005097BC 0051264C  41 82 00 18 */	beq lbl_005097D4
-/* 005097C0 00512650  7F C3 F3 78 */	mr r3, r30
-/* 005097C4 00512654  4B FF FA 7D */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 005097C8 00512658  80 83 00 00 */	lwz r4, 0(r3)
-/* 005097CC 0051265C  7F C3 F3 78 */	mr r3, r30
-/* 005097D0 00512660  48 00 1D E1 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_005097D4:
-/* 005097D4 00512664  7F E0 07 35 */	extsh. r0, r31
-/* 005097D8 00512668  40 81 00 0C */	ble lbl_005097E4
-/* 005097DC 0051266C  7F C3 F3 78 */	mr r3, r30
-/* 005097E0 00512670  48 07 EE B1 */	bl func_00588690
-lbl_005097E4:
-/* 005097E4 00512674  7F C3 F3 78 */	mr r3, r30
-/* 005097E8 00512678  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005097EC 0051267C  38 21 00 50 */	addi r1, r1, 0x50
-/* 005097F0 00512680  7C 08 03 A6 */	mtlr r0
-/* 005097F4 00512684  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005097F8 00512688  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 005097FC 0051268C  4E 80 00 20 */	blr 
-
-.global ".__ct__13cTSWinCtrlMgrFv"
-".__ct__13cTSWinCtrlMgrFv":
-/* 005098C0 00512750  93 E1 FF FC */	stw r31, -4(r1)
-/* 005098C4 00512754  7C 08 02 A6 */	mflr r0
-/* 005098C8 00512758  7C 7F 1B 78 */	mr r31, r3
-/* 005098CC 0051275C  80 A2 9F 0C */	lwz r5, lbl_005BB36C-_R2_BASE_(r2)
-/* 005098D0 00512760  90 01 00 08 */	stw r0, 8(r1)
-/* 005098D4 00512764  38 00 00 00 */	li r0, 0
-/* 005098D8 00512768  38 7F 00 10 */	addi r3, r31, 0x10
-/* 005098DC 0051276C  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 005098E0 00512770  90 BF 00 00 */	stw r5, 0(r31)
-/* 005098E4 00512774  38 81 00 40 */	addi r4, r1, 0x40
-/* 005098E8 00512778  38 A1 00 44 */	addi r5, r1, 0x44
-/* 005098EC 0051277C  98 1F 00 04 */	stb r0, 4(r31)
-/* 005098F0 00512780  90 1F 00 08 */	stw r0, 8(r31)
-/* 005098F4 00512784  90 1F 00 0C */	stw r0, 0xc(r31)
-/* 005098F8 00512788  48 00 29 79 */	bl ".__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
-/* 005098FC 0051278C  38 7F 00 20 */	addi r3, r31, 0x20
-/* 00509900 00512790  38 81 00 48 */	addi r4, r1, 0x48
-/* 00509904 00512794  38 A1 00 4C */	addi r5, r1, 0x4c
-/* 00509908 00512798  48 00 3D 89 */	bl ".__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>"
-/* 0050990C 0051279C  38 7F 00 30 */	addi r3, r31, 0x30
-/* 00509910 005127A0  38 81 00 50 */	addi r4, r1, 0x50
-/* 00509914 005127A4  38 A1 00 54 */	addi r5, r1, 0x54
-/* 00509918 005127A8  48 00 55 69 */	bl ".__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>"
-/* 0050991C 005127AC  38 7F 00 40 */	addi r3, r31, 0x40
-/* 00509920 005127B0  38 81 00 58 */	addi r4, r1, 0x58
-/* 00509924 005127B4  38 A1 00 5C */	addi r5, r1, 0x5c
-/* 00509928 005127B8  48 00 29 49 */	bl ".__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
-/* 0050992C 005127BC  7F E3 FB 78 */	mr r3, r31
-/* 00509930 005127C0  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 00509934 005127C4  38 21 00 70 */	addi r1, r1, 0x70
-/* 00509938 005127C8  7C 08 03 A6 */	mtlr r0
-/* 0050993C 005127CC  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509940 005127D0  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".__dt__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00509970 00512800  93 E1 FF FC */	stw r31, -4(r1)
-/* 00509974 00512804  7C 08 02 A6 */	mflr r0
-/* 00509978 00512808  3B E4 00 00 */	addi r31, r4, 0
-/* 0050997C 0051280C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00509980 00512810  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00509984 00512814  90 01 00 08 */	stw r0, 8(r1)
-/* 00509988 00512818  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050998C 0051281C  41 82 00 3C */	beq lbl_005099C8
-/* 00509990 00512820  41 82 00 28 */	beq lbl_005099B8
-/* 00509994 00512824  48 00 00 ED */	bl ".root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 00509998 00512828  80 03 00 00 */	lwz r0, 0(r3)
-/* 0050999C 0051282C  28 00 00 00 */	cmplwi r0, 0
-/* 005099A0 00512830  41 82 00 18 */	beq lbl_005099B8
-/* 005099A4 00512834  7F C3 F3 78 */	mr r3, r30
-/* 005099A8 00512838  48 00 00 D9 */	bl ".root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 005099AC 0051283C  80 83 00 00 */	lwz r4, 0(r3)
-/* 005099B0 00512840  7F C3 F3 78 */	mr r3, r30
-/* 005099B4 00512844  48 00 43 AD */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_005099B8:
-/* 005099B8 00512848  7F E0 07 35 */	extsh. r0, r31
-/* 005099BC 0051284C  40 81 00 0C */	ble lbl_005099C8
-/* 005099C0 00512850  7F C3 F3 78 */	mr r3, r30
-/* 005099C4 00512854  48 07 EC CD */	bl func_00588690
-lbl_005099C8:
-/* 005099C8 00512858  7F C3 F3 78 */	mr r3, r30
-/* 005099CC 0051285C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005099D0 00512860  38 21 00 50 */	addi r1, r1, 0x50
-/* 005099D4 00512864  7C 08 03 A6 */	mtlr r0
-/* 005099D8 00512868  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005099DC 0051286C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 005099E0 00512870  4E 80 00 20 */	blr 
-
-.global ".root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 00509A80 00512910  38 63 00 04 */	addi r3, r3, 4
-/* 00509A84 00512914  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".__dt__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00509BB0 00512A40  93 E1 FF FC */	stw r31, -4(r1)
-/* 00509BB4 00512A44  7C 08 02 A6 */	mflr r0
-/* 00509BB8 00512A48  3B E4 00 00 */	addi r31, r4, 0
-/* 00509BBC 00512A4C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00509BC0 00512A50  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00509BC4 00512A54  90 01 00 08 */	stw r0, 8(r1)
-/* 00509BC8 00512A58  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00509BCC 00512A5C  41 82 00 3C */	beq lbl_00509C08
-/* 00509BD0 00512A60  41 82 00 28 */	beq lbl_00509BF8
-/* 00509BD4 00512A64  48 00 00 CD */	bl ".root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 00509BD8 00512A68  80 03 00 00 */	lwz r0, 0(r3)
-/* 00509BDC 00512A6C  28 00 00 00 */	cmplwi r0, 0
-/* 00509BE0 00512A70  41 82 00 18 */	beq lbl_00509BF8
-/* 00509BE4 00512A74  7F C3 F3 78 */	mr r3, r30
-/* 00509BE8 00512A78  48 00 00 B9 */	bl ".root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 00509BEC 00512A7C  80 83 00 00 */	lwz r4, 0(r3)
-/* 00509BF0 00512A80  7F C3 F3 78 */	mr r3, r30
-/* 00509BF4 00512A84  48 00 2C 7D */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_00509BF8:
-/* 00509BF8 00512A88  7F E0 07 35 */	extsh. r0, r31
-/* 00509BFC 00512A8C  40 81 00 0C */	ble lbl_00509C08
-/* 00509C00 00512A90  7F C3 F3 78 */	mr r3, r30
-/* 00509C04 00512A94  48 07 EA 8D */	bl func_00588690
-lbl_00509C08:
-/* 00509C08 00512A98  7F C3 F3 78 */	mr r3, r30
-/* 00509C0C 00512A9C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00509C10 00512AA0  38 21 00 50 */	addi r1, r1, 0x50
-/* 00509C14 00512AA4  7C 08 03 A6 */	mtlr r0
-/* 00509C18 00512AA8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509C1C 00512AAC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00509C20 00512AB0  4E 80 00 20 */	blr 
-
-.global ".root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 00509CA0 00512B30  38 63 00 04 */	addi r3, r3, 4
-/* 00509CA4 00512B34  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".__dt__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00509D90 00512C20  93 E1 FF FC */	stw r31, -4(r1)
-/* 00509D94 00512C24  7C 08 02 A6 */	mflr r0
-/* 00509D98 00512C28  3B E4 00 00 */	addi r31, r4, 0
-/* 00509D9C 00512C2C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00509DA0 00512C30  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00509DA4 00512C34  90 01 00 08 */	stw r0, 8(r1)
-/* 00509DA8 00512C38  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00509DAC 00512C3C  41 82 00 3C */	beq lbl_00509DE8
-/* 00509DB0 00512C40  41 82 00 28 */	beq lbl_00509DD8
-/* 00509DB4 00512C44  48 00 00 BD */	bl ".root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00509DB8 00512C48  80 03 00 00 */	lwz r0, 0(r3)
-/* 00509DBC 00512C4C  28 00 00 00 */	cmplwi r0, 0
-/* 00509DC0 00512C50  41 82 00 18 */	beq lbl_00509DD8
-/* 00509DC4 00512C54  7F C3 F3 78 */	mr r3, r30
-/* 00509DC8 00512C58  48 00 00 A9 */	bl ".root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 00509DCC 00512C5C  80 83 00 00 */	lwz r4, 0(r3)
-/* 00509DD0 00512C60  7F C3 F3 78 */	mr r3, r30
-/* 00509DD4 00512C64  48 00 17 DD */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_00509DD8:
-/* 00509DD8 00512C68  7F E0 07 35 */	extsh. r0, r31
-/* 00509DDC 00512C6C  40 81 00 0C */	ble lbl_00509DE8
-/* 00509DE0 00512C70  7F C3 F3 78 */	mr r3, r30
-/* 00509DE4 00512C74  48 07 E8 AD */	bl func_00588690
-lbl_00509DE8:
-/* 00509DE8 00512C78  7F C3 F3 78 */	mr r3, r30
-/* 00509DEC 00512C7C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00509DF0 00512C80  38 21 00 50 */	addi r1, r1, 0x50
-/* 00509DF4 00512C84  7C 08 03 A6 */	mtlr r0
-/* 00509DF8 00512C88  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00509DFC 00512C8C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00509E00 00512C90  4E 80 00 20 */	blr 
-
-.global ".root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 00509E70 00512D00  38 63 00 04 */	addi r3, r3, 4
-/* 00509E74 00512D04  4E 80 00 20 */	blr 
-
-.global ".cTSFrameWork_CtrlMgr__Fv"
-".cTSFrameWork_CtrlMgr__Fv":
-/* 00509F40 00512DD0  80 62 BC 30 */	lwz r3, lbl_005BD090-_R2_BASE_(r2)
-/* 00509F44 00512DD4  4E 80 00 20 */	blr 
-
-.global ".insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 00509F80 00512E10  7C 08 02 A6 */	mflr r0
-/* 00509F84 00512E14  90 01 00 08 */	stw r0, 8(r1)
-/* 00509F88 00512E18  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00509F8C 00512E1C  48 00 4C B5 */	bl ".insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 00509F90 00512E20  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00509F94 00512E24  38 21 00 40 */	addi r1, r1, 0x40
-/* 00509F98 00512E28  7C 08 03 A6 */	mtlr r0
-/* 00509F9C 00512E2C  4E 80 00 20 */	blr 
-
-.global ".find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl"
-".find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl":
-/* 0050A070 00512F00  7C 08 02 A6 */	mflr r0
-/* 0050A074 00512F04  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A078 00512F08  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050A07C 00512F0C  48 00 11 A5 */	bl ".find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-/* 0050A080 00512F10  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050A084 00512F14  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050A088 00512F18  7C 08 03 A6 */	mtlr r0
-/* 0050A08C 00512F1C  4E 80 00 20 */	blr 
-
-.global ".insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
-".insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>":
-/* 0050A130 00512FC0  7C 08 02 A6 */	mflr r0
-/* 0050A134 00512FC4  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A138 00512FC8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050A13C 00512FCC  48 00 33 65 */	bl ".insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
-/* 0050A140 00512FD0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050A144 00512FD4  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050A148 00512FD8  7C 08 03 A6 */	mtlr r0
-/* 0050A14C 00512FDC  4E 80 00 20 */	blr 
-
-.global ".find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl"
-".find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl":
-/* 0050A1E0 00513070  7C 08 02 A6 */	mflr r0
-/* 0050A1E4 00513074  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A1E8 00513078  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050A1EC 0051307C  48 00 09 75 */	bl ".find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-/* 0050A1F0 00513080  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050A1F4 00513084  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050A1F8 00513088  7C 08 03 A6 */	mtlr r0
-/* 0050A1FC 0051308C  4E 80 00 20 */	blr 
-
-.global ".__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
-".__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl":
-/* 0050A280 00513110  7C 08 02 A6 */	mflr r0
-/* 0050A284 00513114  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A288 00513118  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050A28C 0051311C  48 00 02 35 */	bl ".find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>"
-/* 0050A290 00513120  38 63 00 04 */	addi r3, r3, 4
-/* 0050A294 00513124  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050A298 00513128  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050A29C 0051312C  7C 08 03 A6 */	mtlr r0
-/* 0050A2A0 00513130  4E 80 00 20 */	blr 
-
-.global ".insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
-".insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>":
-/* 0050A310 005131A0  7C 08 02 A6 */	mflr r0
-/* 0050A314 005131A4  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A318 005131A8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050A31C 005131AC  48 00 1D 95 */	bl ".insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
-/* 0050A320 005131B0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050A324 005131B4  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050A328 005131B8  7C 08 03 A6 */	mtlr r0
-/* 0050A32C 005131BC  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb"
-".__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb":
-/* 0050A3B0 00513240  80 04 00 00 */	lwz r0, 0(r4)
-/* 0050A3B4 00513244  90 03 00 00 */	stw r0, 0(r3)
-/* 0050A3B8 00513248  88 05 00 00 */	lbz r0, 0(r5)
-/* 0050A3BC 0051324C  98 03 00 04 */	stb r0, 4(r3)
-/* 0050A3C0 00513250  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont"
-".__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont":
-/* 0050A410 005132A0  80 04 00 00 */	lwz r0, 0(r4)
-/* 0050A414 005132A4  90 03 00 00 */	stw r0, 0(r3)
-/* 0050A418 005132A8  80 05 00 00 */	lwz r0, 0(r5)
-/* 0050A41C 005132AC  90 03 00 04 */	stw r0, 4(r3)
-/* 0050A420 005132B0  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std11pair<Cl,Ul>FRClRCUl"
-".__ct__Q23std11pair<Cl,Ul>FRClRCUl":
-/* 0050A470 00513300  80 04 00 00 */	lwz r0, 0(r4)
-/* 0050A474 00513304  90 03 00 00 */	stw r0, 0(r3)
-/* 0050A478 00513308  80 05 00 00 */	lwz r0, 0(r5)
-/* 0050A47C 0051330C  90 03 00 04 */	stw r0, 4(r3)
-/* 0050A480 00513310  4E 80 00 20 */	blr 
-
-.global ".find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>"
-".find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>":
-/* 0050A4C0 00513350  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050A4C4 00513354  7C 08 02 A6 */	mflr r0
-/* 0050A4C8 00513358  3B 23 00 00 */	addi r25, r3, 0
-/* 0050A4CC 0051335C  3B 44 00 00 */	addi r26, r4, 0
-/* 0050A4D0 00513360  3B 99 00 04 */	addi r28, r25, 4
-/* 0050A4D4 00513364  3B 60 00 00 */	li r27, 0
-/* 0050A4D8 00513368  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A4DC 0051336C  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 0050A4E0 00513370  4B FF ED 61 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050A4E4 00513374  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050A4E8 00513378  3B C0 00 01 */	li r30, 1
-/* 0050A4EC 0051337C  3B E0 00 01 */	li r31, 1
-/* 0050A4F0 00513380  48 00 00 40 */	b lbl_0050A530
-/* 0050A4F4 00513384  60 00 00 00 */	nop 
-lbl_0050A4F8:
-/* 0050A4F8 00513388  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050A4FC 0051338C  38 79 00 08 */	addi r3, r25, 8
-/* 0050A500 00513390  48 00 01 91 */	bl ".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
-/* 0050A504 00513394  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050A508 00513398  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050A50C 0051339C  7C 03 00 00 */	cmpw r3, r0
-/* 0050A510 005133A0  40 80 00 10 */	bge lbl_0050A520
-/* 0050A514 005133A4  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050A518 005133A8  3B C0 00 01 */	li r30, 1
-/* 0050A51C 005133AC  48 00 00 14 */	b lbl_0050A530
-lbl_0050A520:
-/* 0050A520 005133B0  7F BB EB 78 */	mr r27, r29
-/* 0050A524 005133B4  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050A528 005133B8  3B C0 00 00 */	li r30, 0
-/* 0050A52C 005133BC  3B E0 00 00 */	li r31, 0
-lbl_0050A530:
-/* 0050A530 005133C0  28 1D 00 00 */	cmplwi r29, 0
-/* 0050A534 005133C4  40 82 FF C4 */	bne lbl_0050A4F8
-/* 0050A538 005133C8  28 1B 00 00 */	cmplwi r27, 0
-/* 0050A53C 005133CC  41 82 00 1C */	beq lbl_0050A558
-/* 0050A540 005133D0  38 79 00 08 */	addi r3, r25, 8
-/* 0050A544 005133D4  48 00 01 4D */	bl ".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
-/* 0050A548 005133D8  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050A54C 005133DC  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050A550 005133E0  7C 03 00 00 */	cmpw r3, r0
-/* 0050A554 005133E4  40 80 00 34 */	bge lbl_0050A588
-lbl_0050A558:
-/* 0050A558 005133E8  80 BA 00 00 */	lwz r5, 0(r26)
-/* 0050A55C 005133EC  7F 23 CB 78 */	mr r3, r25
-/* 0050A560 005133F0  80 02 28 C0 */	lwz r0, lbl_005C3D20-_R2_BASE_(r2)
-/* 0050A564 005133F4  7F 84 E3 78 */	mr r4, r28
-/* 0050A568 005133F8  90 A1 00 40 */	stw r5, 0x40(r1)
-/* 0050A56C 005133FC  38 BE 00 00 */	addi r5, r30, 0
-/* 0050A570 00513400  38 E1 00 40 */	addi r7, r1, 0x40
-/* 0050A574 00513404  90 01 00 44 */	stw r0, 0x44(r1)
-/* 0050A578 00513408  7F E6 FB 78 */	mr r6, r31
-/* 0050A57C 0051340C  48 00 51 85 */	bl ".insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
-/* 0050A580 00513410  38 63 00 0C */	addi r3, r3, 0xc
-/* 0050A584 00513414  48 00 00 08 */	b lbl_0050A58C
-lbl_0050A588:
-/* 0050A588 00513418  38 7B 00 0C */	addi r3, r27, 0xc
-lbl_0050A58C:
-/* 0050A58C 0051341C  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 0050A590 00513420  38 21 00 70 */	addi r1, r1, 0x70
-/* 0050A594 00513424  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050A598 00513428  7C 08 03 A6 */	mtlr r0
-/* 0050A59C 0051342C  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
-".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv":
-/* 0050A690 00513520  4E 80 00 20 */	blr 
-
-.global ".find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>"
-".find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>":
-/* 0050A7E0 00513670  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050A7E4 00513674  7C 08 02 A6 */	mflr r0
-/* 0050A7E8 00513678  3B 23 00 00 */	addi r25, r3, 0
-/* 0050A7EC 0051367C  3B 44 00 00 */	addi r26, r4, 0
-/* 0050A7F0 00513680  3B 99 00 04 */	addi r28, r25, 4
-/* 0050A7F4 00513684  3B 60 00 00 */	li r27, 0
-/* 0050A7F8 00513688  90 01 00 08 */	stw r0, 8(r1)
-/* 0050A7FC 0051368C  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 0050A800 00513690  4B FF B7 D1 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050A804 00513694  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050A808 00513698  3B C0 00 01 */	li r30, 1
-/* 0050A80C 0051369C  3B E0 00 01 */	li r31, 1
-/* 0050A810 005136A0  48 00 00 40 */	b lbl_0050A850
-/* 0050A814 005136A4  60 00 00 00 */	nop 
-lbl_0050A818:
-/* 0050A818 005136A8  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050A81C 005136AC  38 79 00 08 */	addi r3, r25, 8
-/* 0050A820 005136B0  48 00 01 C1 */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050A824 005136B4  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050A828 005136B8  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050A82C 005136BC  7C 03 00 00 */	cmpw r3, r0
-/* 0050A830 005136C0  40 80 00 10 */	bge lbl_0050A840
-/* 0050A834 005136C4  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050A838 005136C8  3B C0 00 01 */	li r30, 1
-/* 0050A83C 005136CC  48 00 00 14 */	b lbl_0050A850
-lbl_0050A840:
-/* 0050A840 005136D0  7F BB EB 78 */	mr r27, r29
-/* 0050A844 005136D4  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050A848 005136D8  3B C0 00 00 */	li r30, 0
-/* 0050A84C 005136DC  3B E0 00 00 */	li r31, 0
-lbl_0050A850:
-/* 0050A850 005136E0  28 1D 00 00 */	cmplwi r29, 0
-/* 0050A854 005136E4  40 82 FF C4 */	bne lbl_0050A818
-/* 0050A858 005136E8  28 1B 00 00 */	cmplwi r27, 0
-/* 0050A85C 005136EC  41 82 00 1C */	beq lbl_0050A878
-/* 0050A860 005136F0  38 79 00 08 */	addi r3, r25, 8
-/* 0050A864 005136F4  48 00 01 7D */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050A868 005136F8  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050A86C 005136FC  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050A870 00513700  7C 03 00 00 */	cmpw r3, r0
-/* 0050A874 00513704  40 80 00 34 */	bge lbl_0050A8A8
-lbl_0050A878:
-/* 0050A878 00513708  80 9A 00 00 */	lwz r4, 0(r26)
-/* 0050A87C 0051370C  38 00 00 00 */	li r0, 0
-/* 0050A880 00513710  38 79 00 00 */	addi r3, r25, 0
-/* 0050A884 00513714  38 E1 00 40 */	addi r7, r1, 0x40
-/* 0050A888 00513718  90 81 00 40 */	stw r4, 0x40(r1)
-/* 0050A88C 0051371C  7F 84 E3 78 */	mr r4, r28
-/* 0050A890 00513720  90 01 00 44 */	stw r0, 0x44(r1)
-/* 0050A894 00513724  38 BE 00 00 */	addi r5, r30, 0
-/* 0050A898 00513728  38 DF 00 00 */	addi r6, r31, 0
-/* 0050A89C 0051372C  48 00 51 C5 */	bl ".insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
-/* 0050A8A0 00513730  38 63 00 0C */	addi r3, r3, 0xc
-/* 0050A8A4 00513734  48 00 00 08 */	b lbl_0050A8AC
-lbl_0050A8A8:
-/* 0050A8A8 00513738  38 7B 00 0C */	addi r3, r27, 0xc
-lbl_0050A8AC:
-/* 0050A8AC 0051373C  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 0050A8B0 00513740  38 21 00 70 */	addi r1, r1, 0x70
-/* 0050A8B4 00513744  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050A8B8 00513748  7C 08 03 A6 */	mtlr r0
-/* 0050A8BC 0051374C  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv":
-/* 0050A9E0 00513870  4E 80 00 20 */	blr 
-
-.global ".find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-".find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
-/* 0050AB60 005139F0  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 0050AB64 005139F4  7C 08 02 A6 */	mflr r0
-/* 0050AB68 005139F8  3B 84 00 00 */	addi r28, r4, 0
-/* 0050AB6C 005139FC  3B 63 00 00 */	addi r27, r3, 0
-/* 0050AB70 00513A00  3B A5 00 00 */	addi r29, r5, 0
-/* 0050AB74 00513A04  38 7C 00 00 */	addi r3, r28, 0
-/* 0050AB78 00513A08  90 01 00 08 */	stw r0, 8(r1)
-/* 0050AB7C 00513A0C  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050AB80 00513A10  4B FF B4 51 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050AB84 00513A14  83 C3 00 00 */	lwz r30, 0(r3)
-/* 0050AB88 00513A18  3B FC 00 04 */	addi r31, r28, 4
-/* 0050AB8C 00513A1C  48 00 00 2C */	b lbl_0050ABB8
-lbl_0050AB90:
-/* 0050AB90 00513A20  38 7C 00 08 */	addi r3, r28, 8
-/* 0050AB94 00513A24  4B FF FE 4D */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050AB98 00513A28  80 7E 00 0C */	lwz r3, 0xc(r30)
-/* 0050AB9C 00513A2C  80 1D 00 00 */	lwz r0, 0(r29)
-/* 0050ABA0 00513A30  7C 03 00 00 */	cmpw r3, r0
-/* 0050ABA4 00513A34  41 80 00 10 */	blt lbl_0050ABB4
-/* 0050ABA8 00513A38  7F DF F3 78 */	mr r31, r30
-/* 0050ABAC 00513A3C  83 DE 00 00 */	lwz r30, 0(r30)
-/* 0050ABB0 00513A40  48 00 00 08 */	b lbl_0050ABB8
-lbl_0050ABB4:
-/* 0050ABB4 00513A44  83 DE 00 04 */	lwz r30, 4(r30)
-lbl_0050ABB8:
-/* 0050ABB8 00513A48  28 1E 00 00 */	cmplwi r30, 0
-/* 0050ABBC 00513A4C  40 82 FF D4 */	bne lbl_0050AB90
-/* 0050ABC0 00513A50  38 1C 00 04 */	addi r0, r28, 4
-/* 0050ABC4 00513A54  7C 1F 00 40 */	cmplw r31, r0
-/* 0050ABC8 00513A58  41 82 00 1C */	beq lbl_0050ABE4
-/* 0050ABCC 00513A5C  38 7C 00 08 */	addi r3, r28, 8
-/* 0050ABD0 00513A60  4B FF FE 11 */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050ABD4 00513A64  80 7D 00 00 */	lwz r3, 0(r29)
-/* 0050ABD8 00513A68  80 1F 00 0C */	lwz r0, 0xc(r31)
-/* 0050ABDC 00513A6C  7C 03 00 00 */	cmpw r3, r0
-/* 0050ABE0 00513A70  40 80 00 1C */	bge lbl_0050ABFC
-lbl_0050ABE4:
-/* 0050ABE4 00513A74  7F 83 E3 78 */	mr r3, r28
-/* 0050ABE8 00513A78  4B FF B3 E9 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050ABEC 00513A7C  38 83 00 00 */	addi r4, r3, 0
-/* 0050ABF0 00513A80  38 7B 00 00 */	addi r3, r27, 0
-/* 0050ABF4 00513A84  4B FF B2 1D */	bl ".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-/* 0050ABF8 00513A88  48 00 00 08 */	b lbl_0050AC00
-lbl_0050ABFC:
-/* 0050ABFC 00513A8C  93 FB 00 00 */	stw r31, 0(r27)
-lbl_0050AC00:
-/* 0050AC00 00513A90  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050AC04 00513A94  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050AC08 00513A98  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 0050AC0C 00513A9C  7C 08 03 A6 */	mtlr r0
-/* 0050AC10 00513AA0  4E 80 00 20 */	blr 
-
-.global ".find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 0050ADD0 00513C60  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050ADD4 00513C64  7C 08 02 A6 */	mflr r0
-/* 0050ADD8 00513C68  3B 23 00 00 */	addi r25, r3, 0
-/* 0050ADDC 00513C6C  3B 44 00 00 */	addi r26, r4, 0
-/* 0050ADE0 00513C70  3B 99 00 04 */	addi r28, r25, 4
-/* 0050ADE4 00513C74  3B 60 00 00 */	li r27, 0
-/* 0050ADE8 00513C78  90 01 00 08 */	stw r0, 8(r1)
-/* 0050ADEC 00513C7C  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 0050ADF0 00513C80  4B FF D1 A1 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050ADF4 00513C84  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050ADF8 00513C88  3B C0 00 01 */	li r30, 1
-/* 0050ADFC 00513C8C  3B E0 00 01 */	li r31, 1
-/* 0050AE00 00513C90  48 00 00 40 */	b lbl_0050AE40
-/* 0050AE04 00513C94  60 00 00 00 */	nop 
-lbl_0050AE08:
-/* 0050AE08 00513C98  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050AE0C 00513C9C  38 79 00 08 */	addi r3, r25, 8
-/* 0050AE10 00513CA0  48 00 02 21 */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050AE14 00513CA4  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050AE18 00513CA8  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050AE1C 00513CAC  7C 03 00 00 */	cmpw r3, r0
-/* 0050AE20 00513CB0  40 80 00 10 */	bge lbl_0050AE30
-/* 0050AE24 00513CB4  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050AE28 00513CB8  3B C0 00 01 */	li r30, 1
-/* 0050AE2C 00513CBC  48 00 00 14 */	b lbl_0050AE40
-lbl_0050AE30:
-/* 0050AE30 00513CC0  7F BB EB 78 */	mr r27, r29
-/* 0050AE34 00513CC4  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050AE38 00513CC8  3B C0 00 00 */	li r30, 0
-/* 0050AE3C 00513CCC  3B E0 00 00 */	li r31, 0
-lbl_0050AE40:
-/* 0050AE40 00513CD0  28 1D 00 00 */	cmplwi r29, 0
-/* 0050AE44 00513CD4  40 82 FF C4 */	bne lbl_0050AE08
-/* 0050AE48 00513CD8  28 1B 00 00 */	cmplwi r27, 0
-/* 0050AE4C 00513CDC  41 82 00 1C */	beq lbl_0050AE68
-/* 0050AE50 00513CE0  38 79 00 08 */	addi r3, r25, 8
-/* 0050AE54 00513CE4  48 00 01 DD */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050AE58 00513CE8  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050AE5C 00513CEC  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050AE60 00513CF0  7C 03 00 00 */	cmpw r3, r0
-/* 0050AE64 00513CF4  40 80 00 38 */	bge lbl_0050AE9C
-lbl_0050AE68:
-/* 0050AE68 00513CF8  80 9A 00 00 */	lwz r4, 0(r26)
-/* 0050AE6C 00513CFC  38 00 00 00 */	li r0, 0
-/* 0050AE70 00513D00  38 79 00 00 */	addi r3, r25, 0
-/* 0050AE74 00513D04  38 E1 00 40 */	addi r7, r1, 0x40
-/* 0050AE78 00513D08  90 81 00 40 */	stw r4, 0x40(r1)
-/* 0050AE7C 00513D0C  7F 84 E3 78 */	mr r4, r28
-/* 0050AE80 00513D10  90 01 00 44 */	stw r0, 0x44(r1)
-/* 0050AE84 00513D14  38 BE 00 00 */	addi r5, r30, 0
-/* 0050AE88 00513D18  38 DF 00 00 */	addi r6, r31, 0
-/* 0050AE8C 00513D1C  98 01 00 48 */	stb r0, 0x48(r1)
-/* 0050AE90 00513D20  48 00 4F 91 */	bl ".insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050AE94 00513D24  38 63 00 0C */	addi r3, r3, 0xc
-/* 0050AE98 00513D28  48 00 00 08 */	b lbl_0050AEA0
-lbl_0050AE9C:
-/* 0050AE9C 00513D2C  38 7B 00 0C */	addi r3, r27, 0xc
-lbl_0050AEA0:
-/* 0050AEA0 00513D30  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 0050AEA4 00513D34  38 21 00 70 */	addi r1, r1, 0x70
-/* 0050AEA8 00513D38  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050AEAC 00513D3C  7C 08 03 A6 */	mtlr r0
-/* 0050AEB0 00513D40  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv":
-/* 0050B030 00513EC0  4E 80 00 20 */	blr 
-
-.global ".find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-".find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
-/* 0050B220 005140B0  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 0050B224 005140B4  7C 08 02 A6 */	mflr r0
-/* 0050B228 005140B8  3B 84 00 00 */	addi r28, r4, 0
-/* 0050B22C 005140BC  3B 63 00 00 */	addi r27, r3, 0
-/* 0050B230 005140C0  3B A5 00 00 */	addi r29, r5, 0
-/* 0050B234 005140C4  38 7C 00 00 */	addi r3, r28, 0
-/* 0050B238 005140C8  90 01 00 08 */	stw r0, 8(r1)
-/* 0050B23C 005140CC  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050B240 005140D0  4B FF CD 51 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050B244 005140D4  83 C3 00 00 */	lwz r30, 0(r3)
-/* 0050B248 005140D8  3B FC 00 04 */	addi r31, r28, 4
-/* 0050B24C 005140DC  48 00 00 2C */	b lbl_0050B278
-lbl_0050B250:
-/* 0050B250 005140E0  38 7C 00 08 */	addi r3, r28, 8
-/* 0050B254 005140E4  4B FF FD DD */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050B258 005140E8  80 7E 00 0C */	lwz r3, 0xc(r30)
-/* 0050B25C 005140EC  80 1D 00 00 */	lwz r0, 0(r29)
-/* 0050B260 005140F0  7C 03 00 00 */	cmpw r3, r0
-/* 0050B264 005140F4  41 80 00 10 */	blt lbl_0050B274
-/* 0050B268 005140F8  7F DF F3 78 */	mr r31, r30
-/* 0050B26C 005140FC  83 DE 00 00 */	lwz r30, 0(r30)
-/* 0050B270 00514100  48 00 00 08 */	b lbl_0050B278
-lbl_0050B274:
-/* 0050B274 00514104  83 DE 00 04 */	lwz r30, 4(r30)
-lbl_0050B278:
-/* 0050B278 00514108  28 1E 00 00 */	cmplwi r30, 0
-/* 0050B27C 0051410C  40 82 FF D4 */	bne lbl_0050B250
-/* 0050B280 00514110  38 1C 00 04 */	addi r0, r28, 4
-/* 0050B284 00514114  7C 1F 00 40 */	cmplw r31, r0
-/* 0050B288 00514118  41 82 00 1C */	beq lbl_0050B2A4
-/* 0050B28C 0051411C  38 7C 00 08 */	addi r3, r28, 8
-/* 0050B290 00514120  4B FF FD A1 */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050B294 00514124  80 7D 00 00 */	lwz r3, 0(r29)
-/* 0050B298 00514128  80 1F 00 0C */	lwz r0, 0xc(r31)
-/* 0050B29C 0051412C  7C 03 00 00 */	cmpw r3, r0
-/* 0050B2A0 00514130  40 80 00 1C */	bge lbl_0050B2BC
-lbl_0050B2A4:
-/* 0050B2A4 00514134  7F 83 E3 78 */	mr r3, r28
-/* 0050B2A8 00514138  4B FF CC E9 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050B2AC 0051413C  38 83 00 00 */	addi r4, r3, 0
-/* 0050B2B0 00514140  38 7B 00 00 */	addi r3, r27, 0
-/* 0050B2B4 00514144  4B FF C8 8D */	bl ".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-/* 0050B2B8 00514148  48 00 00 08 */	b lbl_0050B2C0
-lbl_0050B2BC:
-/* 0050B2BC 0051414C  93 FB 00 00 */	stw r31, 0(r27)
-lbl_0050B2C0:
-/* 0050B2C0 00514150  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050B2C4 00514154  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050B2C8 00514158  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 0050B2CC 0051415C  7C 08 03 A6 */	mtlr r0
-/* 0050B2D0 00514160  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>"
-".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>":
-/* 0050B520 005143B0  80 04 00 00 */	lwz r0, 0(r4)
-/* 0050B524 005143B4  90 03 00 00 */	stw r0, 0(r3)
-/* 0050B528 005143B8  80 05 00 00 */	lwz r0, 0(r5)
-/* 0050B52C 005143BC  90 03 00 04 */	stw r0, 4(r3)
-/* 0050B530 005143C0  88 05 00 04 */	lbz r0, 4(r5)
-/* 0050B534 005143C4  98 03 00 08 */	stb r0, 8(r3)
-/* 0050B538 005143C8  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node":
-/* 0050B5B0 00514440  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050B5B4 00514444  7C 08 02 A6 */	mflr r0
-/* 0050B5B8 00514448  7C 9F 23 78 */	mr r31, r4
-/* 0050B5BC 0051444C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050B5C0 00514450  3B C3 00 00 */	addi r30, r3, 0
-/* 0050B5C4 00514454  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050B5C8 00514458  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 0050B5CC 0051445C  90 01 00 08 */	stw r0, 8(r1)
-/* 0050B5D0 00514460  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050B5D4 00514464  83 84 00 00 */	lwz r28, 0(r4)
-/* 0050B5D8 00514468  28 1C 00 00 */	cmplwi r28, 0
-/* 0050B5DC 0051446C  41 82 00 C8 */	beq lbl_0050B6A4
-/* 0050B5E0 00514470  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050B5E4 00514474  28 1D 00 00 */	cmplwi r29, 0
-/* 0050B5E8 00514478  41 82 00 4C */	beq lbl_0050B634
-/* 0050B5EC 0051447C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050B5F0 00514480  28 04 00 00 */	cmplwi r4, 0
-/* 0050B5F4 00514484  41 82 00 08 */	beq lbl_0050B5FC
-/* 0050B5F8 00514488  4B FF FF B9 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B5FC:
-/* 0050B5FC 0051448C  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050B600 00514490  28 04 00 00 */	cmplwi r4, 0
-/* 0050B604 00514494  41 82 00 0C */	beq lbl_0050B610
-/* 0050B608 00514498  7F C3 F3 78 */	mr r3, r30
-/* 0050B60C 0051449C  4B FF FF A5 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B610:
-/* 0050B610 005144A0  7F C3 F3 78 */	mr r3, r30
-/* 0050B614 005144A4  48 00 07 9D */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B618 005144A8  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050B61C 005144AC  48 00 07 35 */	bl ".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
-/* 0050B620 005144B0  7F C3 F3 78 */	mr r3, r30
-/* 0050B624 005144B4  48 00 06 5D */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B628 005144B8  38 9D 00 00 */	addi r4, r29, 0
-/* 0050B62C 005144BC  38 A0 00 01 */	li r5, 1
-/* 0050B630 005144C0  48 00 04 A1 */	bl ".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
-lbl_0050B634:
-/* 0050B634 005144C4  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050B638 005144C8  28 1D 00 00 */	cmplwi r29, 0
-/* 0050B63C 005144CC  41 82 00 50 */	beq lbl_0050B68C
-/* 0050B640 005144D0  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050B644 005144D4  28 04 00 00 */	cmplwi r4, 0
-/* 0050B648 005144D8  41 82 00 0C */	beq lbl_0050B654
-/* 0050B64C 005144DC  7F C3 F3 78 */	mr r3, r30
-/* 0050B650 005144E0  4B FF FF 61 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B654:
-/* 0050B654 005144E4  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050B658 005144E8  28 04 00 00 */	cmplwi r4, 0
-/* 0050B65C 005144EC  41 82 00 0C */	beq lbl_0050B668
-/* 0050B660 005144F0  7F C3 F3 78 */	mr r3, r30
-/* 0050B664 005144F4  4B FF FF 4D */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B668:
-/* 0050B668 005144F8  7F C3 F3 78 */	mr r3, r30
-/* 0050B66C 005144FC  48 00 07 45 */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B670 00514500  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050B674 00514504  48 00 06 DD */	bl ".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
-/* 0050B678 00514508  7F C3 F3 78 */	mr r3, r30
-/* 0050B67C 0051450C  48 00 06 05 */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B680 00514510  38 9D 00 00 */	addi r4, r29, 0
-/* 0050B684 00514514  38 A0 00 01 */	li r5, 1
-/* 0050B688 00514518  48 00 04 49 */	bl ".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
-lbl_0050B68C:
-/* 0050B68C 0051451C  7F C3 F3 78 */	mr r3, r30
-/* 0050B690 00514520  48 00 07 21 */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B694 00514524  7F C3 F3 78 */	mr r3, r30
-/* 0050B698 00514528  48 00 05 E9 */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B69C 0051452C  7F 83 E3 78 */	mr r3, r28
-/* 0050B6A0 00514530  48 07 CF F1 */	bl func_00588690
-lbl_0050B6A4:
-/* 0050B6A4 00514534  83 9F 00 04 */	lwz r28, 4(r31)
-/* 0050B6A8 00514538  28 1C 00 00 */	cmplwi r28, 0
-/* 0050B6AC 0051453C  41 82 00 CC */	beq lbl_0050B778
-/* 0050B6B0 00514540  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050B6B4 00514544  28 1D 00 00 */	cmplwi r29, 0
-/* 0050B6B8 00514548  41 82 00 50 */	beq lbl_0050B708
-/* 0050B6BC 0051454C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050B6C0 00514550  28 04 00 00 */	cmplwi r4, 0
-/* 0050B6C4 00514554  41 82 00 0C */	beq lbl_0050B6D0
-/* 0050B6C8 00514558  7F C3 F3 78 */	mr r3, r30
-/* 0050B6CC 0051455C  4B FF FE E5 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B6D0:
-/* 0050B6D0 00514560  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050B6D4 00514564  28 04 00 00 */	cmplwi r4, 0
-/* 0050B6D8 00514568  41 82 00 0C */	beq lbl_0050B6E4
-/* 0050B6DC 0051456C  7F C3 F3 78 */	mr r3, r30
-/* 0050B6E0 00514570  4B FF FE D1 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B6E4:
-/* 0050B6E4 00514574  7F C3 F3 78 */	mr r3, r30
-/* 0050B6E8 00514578  48 00 06 C9 */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B6EC 0051457C  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050B6F0 00514580  48 00 06 61 */	bl ".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
-/* 0050B6F4 00514584  7F C3 F3 78 */	mr r3, r30
-/* 0050B6F8 00514588  48 00 05 89 */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B6FC 0051458C  38 9D 00 00 */	addi r4, r29, 0
-/* 0050B700 00514590  38 A0 00 01 */	li r5, 1
-/* 0050B704 00514594  48 00 03 CD */	bl ".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
-lbl_0050B708:
-/* 0050B708 00514598  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050B70C 0051459C  28 1D 00 00 */	cmplwi r29, 0
-/* 0050B710 005145A0  41 82 00 50 */	beq lbl_0050B760
-/* 0050B714 005145A4  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050B718 005145A8  28 04 00 00 */	cmplwi r4, 0
-/* 0050B71C 005145AC  41 82 00 0C */	beq lbl_0050B728
-/* 0050B720 005145B0  7F C3 F3 78 */	mr r3, r30
-/* 0050B724 005145B4  4B FF FE 8D */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B728:
-/* 0050B728 005145B8  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050B72C 005145BC  28 04 00 00 */	cmplwi r4, 0
-/* 0050B730 005145C0  41 82 00 0C */	beq lbl_0050B73C
-/* 0050B734 005145C4  7F C3 F3 78 */	mr r3, r30
-/* 0050B738 005145C8  4B FF FE 79 */	bl ".destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-lbl_0050B73C:
-/* 0050B73C 005145CC  7F C3 F3 78 */	mr r3, r30
-/* 0050B740 005145D0  48 00 06 71 */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B744 005145D4  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050B748 005145D8  48 00 06 09 */	bl ".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
-/* 0050B74C 005145DC  7F C3 F3 78 */	mr r3, r30
-/* 0050B750 005145E0  48 00 05 31 */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B754 005145E4  38 9D 00 00 */	addi r4, r29, 0
-/* 0050B758 005145E8  38 A0 00 01 */	li r5, 1
-/* 0050B75C 005145EC  48 00 03 75 */	bl ".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
-lbl_0050B760:
-/* 0050B760 005145F0  7F C3 F3 78 */	mr r3, r30
-/* 0050B764 005145F4  48 00 06 4D */	bl ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B768 005145F8  7F C3 F3 78 */	mr r3, r30
-/* 0050B76C 005145FC  48 00 05 15 */	bl ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050B770 00514600  7F 83 E3 78 */	mr r3, r28
-/* 0050B774 00514604  48 07 CF 1D */	bl func_00588690
-lbl_0050B778:
-/* 0050B778 00514608  7F C3 F3 78 */	mr r3, r30
-/* 0050B77C 0051460C  48 00 02 D5 */	bl ".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
-/* 0050B780 00514610  38 7E 00 04 */	addi r3, r30, 4
-/* 0050B784 00514614  48 00 01 9D */	bl ".first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050B788 00514618  7F E3 FB 78 */	mr r3, r31
-/* 0050B78C 0051461C  48 07 CF 05 */	bl func_00588690
-/* 0050B790 00514620  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0050B794 00514624  38 21 00 50 */	addi r1, r1, 0x50
-/* 0050B798 00514628  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050B79C 0051462C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050B7A0 00514630  7C 08 03 A6 */	mtlr r0
-/* 0050B7A4 00514634  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050B7A8 00514638  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 0050B7AC 0051463C  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-".first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
-/* 0050B920 005147B0  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
-".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv":
-/* 0050BA50 005148E0  4E 80 00 20 */	blr 
-
-.global ".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
-".deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl":
-/* 0050BAD0 00514960  7C 08 02 A6 */	mflr r0
-/* 0050BAD4 00514964  7C 83 23 78 */	mr r3, r4
-/* 0050BAD8 00514968  90 01 00 08 */	stw r0, 8(r1)
-/* 0050BADC 0051496C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050BAE0 00514970  48 07 CB B1 */	bl func_00588690
-/* 0050BAE4 00514974  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050BAE8 00514978  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050BAEC 0051497C  7C 08 03 A6 */	mtlr r0
-/* 0050BAF0 00514980  4E 80 00 20 */	blr 
-
-.global ".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 0050BC80 00514B10  38 63 00 04 */	addi r3, r3, 4
-/* 0050BC84 00514B14  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
-".destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>":
-/* 0050BD50 00514BE0  4E 80 00 20 */	blr 
-
-.global ".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-".alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
-/* 0050BDB0 00514C40  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
-".erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
-/* 0050BE80 00514D10  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050BE84 00514D14  7C 08 02 A6 */	mflr r0
-/* 0050BE88 00514D18  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050BE8C 00514D1C  7C 9E 23 78 */	mr r30, r4
-/* 0050BE90 00514D20  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050BE94 00514D24  7C 7D 1B 78 */	mr r29, r3
-/* 0050BE98 00514D28  90 01 00 08 */	stw r0, 8(r1)
-/* 0050BE9C 00514D2C  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050BEA0 00514D30  83 E4 00 00 */	lwz r31, 0(r4)
-/* 0050BEA4 00514D34  4B FF D2 2D */	bl ".front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050BEA8 00514D38  38 83 00 00 */	addi r4, r3, 0
-/* 0050BEAC 00514D3C  38 61 00 40 */	addi r3, r1, 0x40
-/* 0050BEB0 00514D40  80 84 00 00 */	lwz r4, 0(r4)
-/* 0050BEB4 00514D44  4B FF D0 9D */	bl ".__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
-/* 0050BEB8 00514D48  80 7E 00 00 */	lwz r3, 0(r30)
-/* 0050BEBC 00514D4C  80 01 00 40 */	lwz r0, 0x40(r1)
-/* 0050BEC0 00514D50  7C 03 00 40 */	cmplw r3, r0
-/* 0050BEC4 00514D54  40 82 00 14 */	bne lbl_0050BED8
-/* 0050BEC8 00514D58  7F C3 F3 78 */	mr r3, r30
-/* 0050BECC 00514D5C  4B B7 8D C5 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 0050BED0 00514D60  80 1E 00 00 */	lwz r0, 0(r30)
-/* 0050BED4 00514D64  90 1D 00 0C */	stw r0, 0xc(r29)
-lbl_0050BED8:
-/* 0050BED8 00514D68  7F A3 EB 78 */	mr r3, r29
-/* 0050BEDC 00514D6C  4B FF D3 65 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050BEE0 00514D70  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050BEE4 00514D74  7F E3 FB 78 */	mr r3, r31
-/* 0050BEE8 00514D78  4B BA A2 49 */	bl ".balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050BEEC 00514D7C  7F A3 EB 78 */	mr r3, r29
-/* 0050BEF0 00514D80  4B FF FB 61 */	bl ".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
-/* 0050BEF4 00514D84  38 7D 00 04 */	addi r3, r29, 4
-/* 0050BEF8 00514D88  4B FF FA 29 */	bl ".first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050BEFC 00514D8C  7F E3 FB 78 */	mr r3, r31
-/* 0050BF00 00514D90  48 07 C7 91 */	bl func_00588690
-/* 0050BF04 00514D94  80 7D 00 00 */	lwz r3, 0(r29)
-/* 0050BF08 00514D98  38 03 FF FF */	addi r0, r3, -1
-/* 0050BF0C 00514D9C  90 1D 00 00 */	stw r0, 0(r29)
-/* 0050BF10 00514DA0  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050BF14 00514DA4  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050BF18 00514DA8  7C 08 03 A6 */	mtlr r0
-/* 0050BF1C 00514DAC  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050BF20 00514DB0  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050BF24 00514DB4  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050BF28 00514DB8  4E 80 00 20 */	blr 
-
-.global ".insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
-".insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>":
-/* 0050C0B0 00514F40  BF 01 FF E0 */	stmw r24, -0x20(r1)
-/* 0050C0B4 00514F44  7C 08 02 A6 */	mflr r0
-/* 0050C0B8 00514F48  3B 24 00 00 */	addi r25, r4, 0
-/* 0050C0BC 00514F4C  3B 03 00 00 */	addi r24, r3, 0
-/* 0050C0C0 00514F50  3B 99 00 04 */	addi r28, r25, 4
-/* 0050C0C4 00514F54  3B 45 00 00 */	addi r26, r5, 0
-/* 0050C0C8 00514F58  38 79 00 00 */	addi r3, r25, 0
-/* 0050C0CC 00514F5C  3B 60 00 00 */	li r27, 0
-/* 0050C0D0 00514F60  90 01 00 08 */	stw r0, 8(r1)
-/* 0050C0D4 00514F64  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050C0D8 00514F68  4B FF D1 69 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050C0DC 00514F6C  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050C0E0 00514F70  3B C0 00 01 */	li r30, 1
-/* 0050C0E4 00514F74  3B E0 00 01 */	li r31, 1
-/* 0050C0E8 00514F78  48 00 00 40 */	b lbl_0050C128
-/* 0050C0EC 00514F7C  60 00 00 00 */	nop 
-lbl_0050C0F0:
-/* 0050C0F0 00514F80  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050C0F4 00514F84  38 79 00 08 */	addi r3, r25, 8
-/* 0050C0F8 00514F88  4B FF E5 99 */	bl ".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
-/* 0050C0FC 00514F8C  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050C100 00514F90  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050C104 00514F94  7C 03 00 00 */	cmpw r3, r0
-/* 0050C108 00514F98  40 80 00 10 */	bge lbl_0050C118
-/* 0050C10C 00514F9C  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050C110 00514FA0  3B C0 00 01 */	li r30, 1
-/* 0050C114 00514FA4  48 00 00 14 */	b lbl_0050C128
-lbl_0050C118:
-/* 0050C118 00514FA8  7F BB EB 78 */	mr r27, r29
-/* 0050C11C 00514FAC  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050C120 00514FB0  3B C0 00 00 */	li r30, 0
-/* 0050C124 00514FB4  3B E0 00 00 */	li r31, 0
-lbl_0050C128:
-/* 0050C128 00514FB8  28 1D 00 00 */	cmplwi r29, 0
-/* 0050C12C 00514FBC  40 82 FF C4 */	bne lbl_0050C0F0
-/* 0050C130 00514FC0  28 1B 00 00 */	cmplwi r27, 0
-/* 0050C134 00514FC4  41 82 00 1C */	beq lbl_0050C150
-/* 0050C138 00514FC8  38 79 00 08 */	addi r3, r25, 8
-/* 0050C13C 00514FCC  4B FF E5 55 */	bl ".first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
-/* 0050C140 00514FD0  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050C144 00514FD4  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050C148 00514FD8  7C 03 00 00 */	cmpw r3, r0
-/* 0050C14C 00514FDC  40 80 00 2C */	bge lbl_0050C178
-lbl_0050C150:
-/* 0050C150 00514FE0  38 79 00 00 */	addi r3, r25, 0
-/* 0050C154 00514FE4  38 9C 00 00 */	addi r4, r28, 0
-/* 0050C158 00514FE8  38 BE 00 00 */	addi r5, r30, 0
-/* 0050C15C 00514FEC  38 DF 00 00 */	addi r6, r31, 0
-/* 0050C160 00514FF0  38 FA 00 00 */	addi r7, r26, 0
-/* 0050C164 00514FF4  48 00 35 9D */	bl ".insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
-/* 0050C168 00514FF8  90 78 00 00 */	stw r3, 0(r24)
-/* 0050C16C 00514FFC  88 02 28 BC */	lbz r0, lbl_005C3D1C-_R2_BASE_(r2)
-/* 0050C170 00515000  98 18 00 04 */	stb r0, 4(r24)
-/* 0050C174 00515004  48 00 00 10 */	b lbl_0050C184
-lbl_0050C178:
-/* 0050C178 00515008  93 78 00 00 */	stw r27, 0(r24)
-/* 0050C17C 0051500C  88 02 28 BD */	lbz r0, lbl_005C3D1D-_R2_BASE_(r2)
-/* 0050C180 00515010  98 18 00 04 */	stb r0, 4(r24)
-lbl_0050C184:
-/* 0050C184 00515014  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050C188 00515018  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050C18C 0051501C  BB 01 FF E0 */	lmw r24, -0x20(r1)
-/* 0050C190 00515020  7C 08 03 A6 */	mtlr r0
-/* 0050C194 00515024  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
-".__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>":
-/* 0050C270 00515100  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050C274 00515104  3B E4 00 00 */	addi r31, r4, 0
-/* 0050C278 00515108  38 85 00 00 */	addi r4, r5, 0
-/* 0050C27C 0051510C  7C 08 02 A6 */	mflr r0
-/* 0050C280 00515110  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050C284 00515114  3B C3 00 00 */	addi r30, r3, 0
-/* 0050C288 00515118  90 01 00 08 */	stw r0, 8(r1)
-/* 0050C28C 0051511C  38 A0 00 00 */	li r5, 0
-/* 0050C290 00515120  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050C294 00515124  48 00 05 2D */	bl ".__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul"
-/* 0050C298 00515128  38 7E 00 04 */	addi r3, r30, 4
-/* 0050C29C 0051512C  38 81 00 40 */	addi r4, r1, 0x40
-/* 0050C2A0 00515130  48 00 03 21 */	bl ".__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>"
-/* 0050C2A4 00515134  38 9F 00 00 */	addi r4, r31, 0
-/* 0050C2A8 00515138  38 7E 00 08 */	addi r3, r30, 8
-/* 0050C2AC 0051513C  48 00 01 65 */	bl ".__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare"
-/* 0050C2B0 00515140  38 1E 00 04 */	addi r0, r30, 4
-/* 0050C2B4 00515144  90 1E 00 0C */	stw r0, 0xc(r30)
-/* 0050C2B8 00515148  7F C3 F3 78 */	mr r3, r30
-/* 0050C2BC 0051514C  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050C2C0 00515150  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050C2C4 00515154  7C 08 03 A6 */	mtlr r0
-/* 0050C2C8 00515158  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050C2CC 0051515C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050C2D0 00515160  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare"
-".__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare":
-/* 0050C410 005152A0  88 04 00 00 */	lbz r0, 0(r4)
-/* 0050C414 005152A4  98 03 00 00 */	stb r0, 0(r3)
-/* 0050C418 005152A8  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>"
-".__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>":
-/* 0050C5C0 00515450  38 00 00 00 */	li r0, 0
-/* 0050C5C4 00515454  90 03 00 00 */	stw r0, 0(r3)
-/* 0050C5C8 00515458  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul"
-".__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul":
-/* 0050C7C0 00515650  90 A3 00 00 */	stw r5, 0(r3)
-/* 0050C7C4 00515654  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node":
-/* 0050C870 00515700  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050C874 00515704  7C 08 02 A6 */	mflr r0
-/* 0050C878 00515708  7C 9F 23 78 */	mr r31, r4
-/* 0050C87C 0051570C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050C880 00515710  3B C3 00 00 */	addi r30, r3, 0
-/* 0050C884 00515714  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050C888 00515718  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 0050C88C 0051571C  90 01 00 08 */	stw r0, 8(r1)
-/* 0050C890 00515720  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050C894 00515724  83 84 00 00 */	lwz r28, 0(r4)
-/* 0050C898 00515728  28 1C 00 00 */	cmplwi r28, 0
-/* 0050C89C 0051572C  41 82 00 C8 */	beq lbl_0050C964
-/* 0050C8A0 00515730  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050C8A4 00515734  28 1D 00 00 */	cmplwi r29, 0
-/* 0050C8A8 00515738  41 82 00 4C */	beq lbl_0050C8F4
-/* 0050C8AC 0051573C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050C8B0 00515740  28 04 00 00 */	cmplwi r4, 0
-/* 0050C8B4 00515744  41 82 00 08 */	beq lbl_0050C8BC
-/* 0050C8B8 00515748  4B FF FF B9 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C8BC:
-/* 0050C8BC 0051574C  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050C8C0 00515750  28 04 00 00 */	cmplwi r4, 0
-/* 0050C8C4 00515754  41 82 00 0C */	beq lbl_0050C8D0
-/* 0050C8C8 00515758  7F C3 F3 78 */	mr r3, r30
-/* 0050C8CC 0051575C  4B FF FF A5 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C8D0:
-/* 0050C8D0 00515760  7F C3 F3 78 */	mr r3, r30
-/* 0050C8D4 00515764  48 00 08 6D */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C8D8 00515768  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050C8DC 0051576C  48 00 07 F5 */	bl ".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
-/* 0050C8E0 00515770  7F C3 F3 78 */	mr r3, r30
-/* 0050C8E4 00515774  48 00 06 FD */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C8E8 00515778  38 9D 00 00 */	addi r4, r29, 0
-/* 0050C8EC 0051577C  38 A0 00 01 */	li r5, 1
-/* 0050C8F0 00515780  48 00 05 01 */	bl ".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
-lbl_0050C8F4:
-/* 0050C8F4 00515784  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050C8F8 00515788  28 1D 00 00 */	cmplwi r29, 0
-/* 0050C8FC 0051578C  41 82 00 50 */	beq lbl_0050C94C
-/* 0050C900 00515790  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050C904 00515794  28 04 00 00 */	cmplwi r4, 0
-/* 0050C908 00515798  41 82 00 0C */	beq lbl_0050C914
-/* 0050C90C 0051579C  7F C3 F3 78 */	mr r3, r30
-/* 0050C910 005157A0  4B FF FF 61 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C914:
-/* 0050C914 005157A4  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050C918 005157A8  28 04 00 00 */	cmplwi r4, 0
-/* 0050C91C 005157AC  41 82 00 0C */	beq lbl_0050C928
-/* 0050C920 005157B0  7F C3 F3 78 */	mr r3, r30
-/* 0050C924 005157B4  4B FF FF 4D */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C928:
-/* 0050C928 005157B8  7F C3 F3 78 */	mr r3, r30
-/* 0050C92C 005157BC  48 00 08 15 */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C930 005157C0  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050C934 005157C4  48 00 07 9D */	bl ".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
-/* 0050C938 005157C8  7F C3 F3 78 */	mr r3, r30
-/* 0050C93C 005157CC  48 00 06 A5 */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C940 005157D0  38 9D 00 00 */	addi r4, r29, 0
-/* 0050C944 005157D4  38 A0 00 01 */	li r5, 1
-/* 0050C948 005157D8  48 00 04 A9 */	bl ".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
-lbl_0050C94C:
-/* 0050C94C 005157DC  7F C3 F3 78 */	mr r3, r30
-/* 0050C950 005157E0  48 00 07 F1 */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C954 005157E4  7F C3 F3 78 */	mr r3, r30
-/* 0050C958 005157E8  48 00 06 89 */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C95C 005157EC  7F 83 E3 78 */	mr r3, r28
-/* 0050C960 005157F0  48 07 BD 31 */	bl func_00588690
-lbl_0050C964:
-/* 0050C964 005157F4  83 9F 00 04 */	lwz r28, 4(r31)
-/* 0050C968 005157F8  28 1C 00 00 */	cmplwi r28, 0
-/* 0050C96C 005157FC  41 82 00 CC */	beq lbl_0050CA38
-/* 0050C970 00515800  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050C974 00515804  28 1D 00 00 */	cmplwi r29, 0
-/* 0050C978 00515808  41 82 00 50 */	beq lbl_0050C9C8
-/* 0050C97C 0051580C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050C980 00515810  28 04 00 00 */	cmplwi r4, 0
-/* 0050C984 00515814  41 82 00 0C */	beq lbl_0050C990
-/* 0050C988 00515818  7F C3 F3 78 */	mr r3, r30
-/* 0050C98C 0051581C  4B FF FE E5 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C990:
-/* 0050C990 00515820  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050C994 00515824  28 04 00 00 */	cmplwi r4, 0
-/* 0050C998 00515828  41 82 00 0C */	beq lbl_0050C9A4
-/* 0050C99C 0051582C  7F C3 F3 78 */	mr r3, r30
-/* 0050C9A0 00515830  4B FF FE D1 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C9A4:
-/* 0050C9A4 00515834  7F C3 F3 78 */	mr r3, r30
-/* 0050C9A8 00515838  48 00 07 99 */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C9AC 0051583C  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050C9B0 00515840  48 00 07 21 */	bl ".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
-/* 0050C9B4 00515844  7F C3 F3 78 */	mr r3, r30
-/* 0050C9B8 00515848  48 00 06 29 */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050C9BC 0051584C  38 9D 00 00 */	addi r4, r29, 0
-/* 0050C9C0 00515850  38 A0 00 01 */	li r5, 1
-/* 0050C9C4 00515854  48 00 04 2D */	bl ".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
-lbl_0050C9C8:
-/* 0050C9C8 00515858  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050C9CC 0051585C  28 1D 00 00 */	cmplwi r29, 0
-/* 0050C9D0 00515860  41 82 00 50 */	beq lbl_0050CA20
-/* 0050C9D4 00515864  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050C9D8 00515868  28 04 00 00 */	cmplwi r4, 0
-/* 0050C9DC 0051586C  41 82 00 0C */	beq lbl_0050C9E8
-/* 0050C9E0 00515870  7F C3 F3 78 */	mr r3, r30
-/* 0050C9E4 00515874  4B FF FE 8D */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C9E8:
-/* 0050C9E8 00515878  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050C9EC 0051587C  28 04 00 00 */	cmplwi r4, 0
-/* 0050C9F0 00515880  41 82 00 0C */	beq lbl_0050C9FC
-/* 0050C9F4 00515884  7F C3 F3 78 */	mr r3, r30
-/* 0050C9F8 00515888  4B FF FE 79 */	bl ".destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-lbl_0050C9FC:
-/* 0050C9FC 0051588C  7F C3 F3 78 */	mr r3, r30
-/* 0050CA00 00515890  48 00 07 41 */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050CA04 00515894  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050CA08 00515898  48 00 06 C9 */	bl ".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
-/* 0050CA0C 0051589C  7F C3 F3 78 */	mr r3, r30
-/* 0050CA10 005158A0  48 00 05 D1 */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050CA14 005158A4  38 9D 00 00 */	addi r4, r29, 0
-/* 0050CA18 005158A8  38 A0 00 01 */	li r5, 1
-/* 0050CA1C 005158AC  48 00 03 D5 */	bl ".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
-lbl_0050CA20:
-/* 0050CA20 005158B0  7F C3 F3 78 */	mr r3, r30
-/* 0050CA24 005158B4  48 00 07 1D */	bl ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050CA28 005158B8  7F C3 F3 78 */	mr r3, r30
-/* 0050CA2C 005158BC  48 00 05 B5 */	bl ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050CA30 005158C0  7F 83 E3 78 */	mr r3, r28
-/* 0050CA34 005158C4  48 07 BC 5D */	bl func_00588690
-lbl_0050CA38:
-/* 0050CA38 005158C8  7F C3 F3 78 */	mr r3, r30
-/* 0050CA3C 005158CC  48 00 03 35 */	bl ".first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
-/* 0050CA40 005158D0  38 7E 00 04 */	addi r3, r30, 4
-/* 0050CA44 005158D4  48 00 01 DD */	bl ".first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050CA48 005158D8  7F E3 FB 78 */	mr r3, r31
-/* 0050CA4C 005158DC  48 07 BC 45 */	bl func_00588690
-/* 0050CA50 005158E0  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0050CA54 005158E4  38 21 00 50 */	addi r1, r1, 0x50
-/* 0050CA58 005158E8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050CA5C 005158EC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050CA60 005158F0  7C 08 03 A6 */	mtlr r0
-/* 0050CA64 005158F4  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050CA68 005158F8  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 0050CA6C 005158FC  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-".first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
-/* 0050CC20 00515AB0  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
-".first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv":
-/* 0050CD70 00515C00  4E 80 00 20 */	blr 
-
-.global ".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
-".deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl":
-/* 0050CDF0 00515C80  7C 08 02 A6 */	mflr r0
-/* 0050CDF4 00515C84  7C 83 23 78 */	mr r3, r4
-/* 0050CDF8 00515C88  90 01 00 08 */	stw r0, 8(r1)
-/* 0050CDFC 00515C8C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050CE00 00515C90  48 07 B8 91 */	bl func_00588690
-/* 0050CE04 00515C94  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050CE08 00515C98  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050CE0C 00515C9C  7C 08 03 A6 */	mtlr r0
-/* 0050CE10 00515CA0  4E 80 00 20 */	blr 
-
-.global ".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 0050CFE0 00515E70  38 63 00 04 */	addi r3, r3, 4
-/* 0050CFE4 00515E74  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
-".destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>":
-/* 0050D0D0 00515F60  4E 80 00 20 */	blr 
-
-.global ".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-".alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
-/* 0050D140 00515FD0  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
-".erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
-/* 0050D230 005160C0  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050D234 005160C4  7C 08 02 A6 */	mflr r0
-/* 0050D238 005160C8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050D23C 005160CC  7C 9E 23 78 */	mr r30, r4
-/* 0050D240 005160D0  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050D244 005160D4  7C 7D 1B 78 */	mr r29, r3
-/* 0050D248 005160D8  90 01 00 08 */	stw r0, 8(r1)
-/* 0050D24C 005160DC  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050D250 005160E0  83 E4 00 00 */	lwz r31, 0(r4)
-/* 0050D254 005160E4  4B FF B5 3D */	bl ".front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050D258 005160E8  38 83 00 00 */	addi r4, r3, 0
-/* 0050D25C 005160EC  38 61 00 40 */	addi r3, r1, 0x40
-/* 0050D260 005160F0  80 84 00 00 */	lwz r4, 0(r4)
-/* 0050D264 005160F4  4B FF 8B AD */	bl ".__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
-/* 0050D268 005160F8  80 7E 00 00 */	lwz r3, 0(r30)
-/* 0050D26C 005160FC  80 01 00 40 */	lwz r0, 0x40(r1)
-/* 0050D270 00516100  7C 03 00 40 */	cmplw r3, r0
-/* 0050D274 00516104  40 82 00 14 */	bne lbl_0050D288
-/* 0050D278 00516108  7F C3 F3 78 */	mr r3, r30
-/* 0050D27C 0051610C  4B B7 7A 15 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 0050D280 00516110  80 1E 00 00 */	lwz r0, 0(r30)
-/* 0050D284 00516114  90 1D 00 0C */	stw r0, 0xc(r29)
-lbl_0050D288:
-/* 0050D288 00516118  7F A3 EB 78 */	mr r3, r29
-/* 0050D28C 0051611C  4B FF 8D 45 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050D290 00516120  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050D294 00516124  7F E3 FB 78 */	mr r3, r31
-/* 0050D298 00516128  4B BA 8E 99 */	bl ".balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050D29C 0051612C  7F A3 EB 78 */	mr r3, r29
-/* 0050D2A0 00516130  4B FF FA D1 */	bl ".first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
-/* 0050D2A4 00516134  38 7D 00 04 */	addi r3, r29, 4
-/* 0050D2A8 00516138  4B FF F9 79 */	bl ".first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050D2AC 0051613C  7F E3 FB 78 */	mr r3, r31
-/* 0050D2B0 00516140  48 07 B3 E1 */	bl func_00588690
-/* 0050D2B4 00516144  80 7D 00 00 */	lwz r3, 0(r29)
-/* 0050D2B8 00516148  38 03 FF FF */	addi r0, r3, -1
-/* 0050D2BC 0051614C  90 1D 00 00 */	stw r0, 0(r29)
-/* 0050D2C0 00516150  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050D2C4 00516154  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050D2C8 00516158  7C 08 03 A6 */	mtlr r0
-/* 0050D2CC 0051615C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050D2D0 00516160  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050D2D4 00516164  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050D2D8 00516168  4E 80 00 20 */	blr 
-
-.global ".insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
-".insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>":
-/* 0050D4A0 00516330  BF 01 FF E0 */	stmw r24, -0x20(r1)
-/* 0050D4A4 00516334  7C 08 02 A6 */	mflr r0
-/* 0050D4A8 00516338  3B 24 00 00 */	addi r25, r4, 0
-/* 0050D4AC 0051633C  3B 03 00 00 */	addi r24, r3, 0
-/* 0050D4B0 00516340  3B 99 00 04 */	addi r28, r25, 4
-/* 0050D4B4 00516344  3B 45 00 00 */	addi r26, r5, 0
-/* 0050D4B8 00516348  38 79 00 00 */	addi r3, r25, 0
-/* 0050D4BC 0051634C  3B 60 00 00 */	li r27, 0
-/* 0050D4C0 00516350  90 01 00 08 */	stw r0, 8(r1)
-/* 0050D4C4 00516354  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050D4C8 00516358  4B FF 8B 09 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050D4CC 0051635C  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050D4D0 00516360  3B C0 00 01 */	li r30, 1
-/* 0050D4D4 00516364  3B E0 00 01 */	li r31, 1
-/* 0050D4D8 00516368  48 00 00 40 */	b lbl_0050D518
-/* 0050D4DC 0051636C  60 00 00 00 */	nop 
-lbl_0050D4E0:
-/* 0050D4E0 00516370  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050D4E4 00516374  38 79 00 08 */	addi r3, r25, 8
-/* 0050D4E8 00516378  4B FF D4 F9 */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050D4EC 0051637C  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050D4F0 00516380  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050D4F4 00516384  7C 03 00 00 */	cmpw r3, r0
-/* 0050D4F8 00516388  40 80 00 10 */	bge lbl_0050D508
-/* 0050D4FC 0051638C  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050D500 00516390  3B C0 00 01 */	li r30, 1
-/* 0050D504 00516394  48 00 00 14 */	b lbl_0050D518
-lbl_0050D508:
-/* 0050D508 00516398  7F BB EB 78 */	mr r27, r29
-/* 0050D50C 0051639C  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050D510 005163A0  3B C0 00 00 */	li r30, 0
-/* 0050D514 005163A4  3B E0 00 00 */	li r31, 0
-lbl_0050D518:
-/* 0050D518 005163A8  28 1D 00 00 */	cmplwi r29, 0
-/* 0050D51C 005163AC  40 82 FF C4 */	bne lbl_0050D4E0
-/* 0050D520 005163B0  28 1B 00 00 */	cmplwi r27, 0
-/* 0050D524 005163B4  41 82 00 1C */	beq lbl_0050D540
-/* 0050D528 005163B8  38 79 00 08 */	addi r3, r25, 8
-/* 0050D52C 005163BC  4B FF D4 B5 */	bl ".first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
-/* 0050D530 005163C0  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050D534 005163C4  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050D538 005163C8  7C 03 00 00 */	cmpw r3, r0
-/* 0050D53C 005163CC  40 80 00 2C */	bge lbl_0050D568
-lbl_0050D540:
-/* 0050D540 005163D0  38 79 00 00 */	addi r3, r25, 0
-/* 0050D544 005163D4  38 9C 00 00 */	addi r4, r28, 0
-/* 0050D548 005163D8  38 BE 00 00 */	addi r5, r30, 0
-/* 0050D54C 005163DC  38 DF 00 00 */	addi r6, r31, 0
-/* 0050D550 005163E0  38 FA 00 00 */	addi r7, r26, 0
-/* 0050D554 005163E4  48 00 25 0D */	bl ".insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
-/* 0050D558 005163E8  90 78 00 00 */	stw r3, 0(r24)
-/* 0050D55C 005163EC  88 02 28 BA */	lbz r0, lbl_005C3D1A-_R2_BASE_(r2)
-/* 0050D560 005163F0  98 18 00 04 */	stb r0, 4(r24)
-/* 0050D564 005163F4  48 00 00 10 */	b lbl_0050D574
-lbl_0050D568:
-/* 0050D568 005163F8  93 78 00 00 */	stw r27, 0(r24)
-/* 0050D56C 005163FC  88 02 28 BB */	lbz r0, lbl_005C3D1B-_R2_BASE_(r2)
-/* 0050D570 00516400  98 18 00 04 */	stb r0, 4(r24)
-lbl_0050D574:
-/* 0050D574 00516404  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050D578 00516408  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050D57C 0051640C  BB 01 FF E0 */	lmw r24, -0x20(r1)
-/* 0050D580 00516410  7C 08 03 A6 */	mtlr r0
-/* 0050D584 00516414  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>"
-".__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>":
-/* 0050D690 00516520  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050D694 00516524  3B E4 00 00 */	addi r31, r4, 0
-/* 0050D698 00516528  38 85 00 00 */	addi r4, r5, 0
-/* 0050D69C 0051652C  7C 08 02 A6 */	mflr r0
-/* 0050D6A0 00516530  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050D6A4 00516534  3B C3 00 00 */	addi r30, r3, 0
-/* 0050D6A8 00516538  90 01 00 08 */	stw r0, 8(r1)
-/* 0050D6AC 0051653C  38 A0 00 00 */	li r5, 0
-/* 0050D6B0 00516540  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050D6B4 00516544  48 00 05 ED */	bl ".__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul"
-/* 0050D6B8 00516548  38 7E 00 04 */	addi r3, r30, 4
-/* 0050D6BC 0051654C  38 81 00 40 */	addi r4, r1, 0x40
-/* 0050D6C0 00516550  48 00 03 A1 */	bl ".__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>"
-/* 0050D6C4 00516554  38 9F 00 00 */	addi r4, r31, 0
-/* 0050D6C8 00516558  38 7E 00 08 */	addi r3, r30, 8
-/* 0050D6CC 0051655C  48 00 01 A5 */	bl ".__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare"
-/* 0050D6D0 00516560  38 1E 00 04 */	addi r0, r30, 4
-/* 0050D6D4 00516564  90 1E 00 0C */	stw r0, 0xc(r30)
-/* 0050D6D8 00516568  7F C3 F3 78 */	mr r3, r30
-/* 0050D6DC 0051656C  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050D6E0 00516570  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050D6E4 00516574  7C 08 03 A6 */	mtlr r0
-/* 0050D6E8 00516578  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050D6EC 0051657C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050D6F0 00516580  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare"
-".__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare":
-/* 0050D870 00516700  88 04 00 00 */	lbz r0, 0(r4)
-/* 0050D874 00516704  98 03 00 00 */	stb r0, 0(r3)
-/* 0050D878 00516708  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>"
-".__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>":
-/* 0050DA60 005168F0  38 00 00 00 */	li r0, 0
-/* 0050DA64 005168F4  90 03 00 00 */	stw r0, 0(r3)
-/* 0050DA68 005168F8  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul"
-".__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul":
-/* 0050DCA0 00516B30  90 A3 00 00 */	stw r5, 0(r3)
-/* 0050DCA4 00516B34  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node":
-/* 0050DD60 00516BF0  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050DD64 00516BF4  7C 08 02 A6 */	mflr r0
-/* 0050DD68 00516BF8  7C 9F 23 78 */	mr r31, r4
-/* 0050DD6C 00516BFC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050DD70 00516C00  3B C3 00 00 */	addi r30, r3, 0
-/* 0050DD74 00516C04  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050DD78 00516C08  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 0050DD7C 00516C0C  90 01 00 08 */	stw r0, 8(r1)
-/* 0050DD80 00516C10  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0050DD84 00516C14  83 84 00 00 */	lwz r28, 0(r4)
-/* 0050DD88 00516C18  28 1C 00 00 */	cmplwi r28, 0
-/* 0050DD8C 00516C1C  41 82 00 C8 */	beq lbl_0050DE54
-/* 0050DD90 00516C20  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050DD94 00516C24  28 1D 00 00 */	cmplwi r29, 0
-/* 0050DD98 00516C28  41 82 00 4C */	beq lbl_0050DDE4
-/* 0050DD9C 00516C2C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050DDA0 00516C30  28 04 00 00 */	cmplwi r4, 0
-/* 0050DDA4 00516C34  41 82 00 08 */	beq lbl_0050DDAC
-/* 0050DDA8 00516C38  4B FF FF B9 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DDAC:
-/* 0050DDAC 00516C3C  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050DDB0 00516C40  28 04 00 00 */	cmplwi r4, 0
-/* 0050DDB4 00516C44  41 82 00 0C */	beq lbl_0050DDC0
-/* 0050DDB8 00516C48  7F C3 F3 78 */	mr r3, r30
-/* 0050DDBC 00516C4C  4B FF FF A5 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DDC0:
-/* 0050DDC0 00516C50  7F C3 F3 78 */	mr r3, r30
-/* 0050DDC4 00516C54  48 00 0A 5D */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DDC8 00516C58  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050DDCC 00516C5C  48 00 09 C5 */	bl ".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050DDD0 00516C60  7F C3 F3 78 */	mr r3, r30
-/* 0050DDD4 00516C64  48 00 08 8D */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DDD8 00516C68  38 9D 00 00 */	addi r4, r29, 0
-/* 0050DDDC 00516C6C  38 A0 00 01 */	li r5, 1
-/* 0050DDE0 00516C70  48 00 06 01 */	bl ".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
-lbl_0050DDE4:
-/* 0050DDE4 00516C74  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050DDE8 00516C78  28 1D 00 00 */	cmplwi r29, 0
-/* 0050DDEC 00516C7C  41 82 00 50 */	beq lbl_0050DE3C
-/* 0050DDF0 00516C80  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050DDF4 00516C84  28 04 00 00 */	cmplwi r4, 0
-/* 0050DDF8 00516C88  41 82 00 0C */	beq lbl_0050DE04
-/* 0050DDFC 00516C8C  7F C3 F3 78 */	mr r3, r30
-/* 0050DE00 00516C90  4B FF FF 61 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DE04:
-/* 0050DE04 00516C94  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050DE08 00516C98  28 04 00 00 */	cmplwi r4, 0
-/* 0050DE0C 00516C9C  41 82 00 0C */	beq lbl_0050DE18
-/* 0050DE10 00516CA0  7F C3 F3 78 */	mr r3, r30
-/* 0050DE14 00516CA4  4B FF FF 4D */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DE18:
-/* 0050DE18 00516CA8  7F C3 F3 78 */	mr r3, r30
-/* 0050DE1C 00516CAC  48 00 0A 05 */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DE20 00516CB0  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050DE24 00516CB4  48 00 09 6D */	bl ".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050DE28 00516CB8  7F C3 F3 78 */	mr r3, r30
-/* 0050DE2C 00516CBC  48 00 08 35 */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DE30 00516CC0  38 9D 00 00 */	addi r4, r29, 0
-/* 0050DE34 00516CC4  38 A0 00 01 */	li r5, 1
-/* 0050DE38 00516CC8  48 00 05 A9 */	bl ".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
-lbl_0050DE3C:
-/* 0050DE3C 00516CCC  7F C3 F3 78 */	mr r3, r30
-/* 0050DE40 00516CD0  48 00 09 E1 */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DE44 00516CD4  7F C3 F3 78 */	mr r3, r30
-/* 0050DE48 00516CD8  48 00 08 19 */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DE4C 00516CDC  7F 83 E3 78 */	mr r3, r28
-/* 0050DE50 00516CE0  48 07 A8 41 */	bl func_00588690
-lbl_0050DE54:
-/* 0050DE54 00516CE4  83 9F 00 04 */	lwz r28, 4(r31)
-/* 0050DE58 00516CE8  28 1C 00 00 */	cmplwi r28, 0
-/* 0050DE5C 00516CEC  41 82 00 CC */	beq lbl_0050DF28
-/* 0050DE60 00516CF0  83 BC 00 00 */	lwz r29, 0(r28)
-/* 0050DE64 00516CF4  28 1D 00 00 */	cmplwi r29, 0
-/* 0050DE68 00516CF8  41 82 00 50 */	beq lbl_0050DEB8
-/* 0050DE6C 00516CFC  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050DE70 00516D00  28 04 00 00 */	cmplwi r4, 0
-/* 0050DE74 00516D04  41 82 00 0C */	beq lbl_0050DE80
-/* 0050DE78 00516D08  7F C3 F3 78 */	mr r3, r30
-/* 0050DE7C 00516D0C  4B FF FE E5 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DE80:
-/* 0050DE80 00516D10  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050DE84 00516D14  28 04 00 00 */	cmplwi r4, 0
-/* 0050DE88 00516D18  41 82 00 0C */	beq lbl_0050DE94
-/* 0050DE8C 00516D1C  7F C3 F3 78 */	mr r3, r30
-/* 0050DE90 00516D20  4B FF FE D1 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DE94:
-/* 0050DE94 00516D24  7F C3 F3 78 */	mr r3, r30
-/* 0050DE98 00516D28  48 00 09 89 */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DE9C 00516D2C  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050DEA0 00516D30  48 00 08 F1 */	bl ".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050DEA4 00516D34  7F C3 F3 78 */	mr r3, r30
-/* 0050DEA8 00516D38  48 00 07 B9 */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DEAC 00516D3C  38 9D 00 00 */	addi r4, r29, 0
-/* 0050DEB0 00516D40  38 A0 00 01 */	li r5, 1
-/* 0050DEB4 00516D44  48 00 05 2D */	bl ".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
-lbl_0050DEB8:
-/* 0050DEB8 00516D48  83 BC 00 04 */	lwz r29, 4(r28)
-/* 0050DEBC 00516D4C  28 1D 00 00 */	cmplwi r29, 0
-/* 0050DEC0 00516D50  41 82 00 50 */	beq lbl_0050DF10
-/* 0050DEC4 00516D54  80 9D 00 00 */	lwz r4, 0(r29)
-/* 0050DEC8 00516D58  28 04 00 00 */	cmplwi r4, 0
-/* 0050DECC 00516D5C  41 82 00 0C */	beq lbl_0050DED8
-/* 0050DED0 00516D60  7F C3 F3 78 */	mr r3, r30
-/* 0050DED4 00516D64  4B FF FE 8D */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DED8:
-/* 0050DED8 00516D68  80 9D 00 04 */	lwz r4, 4(r29)
-/* 0050DEDC 00516D6C  28 04 00 00 */	cmplwi r4, 0
-/* 0050DEE0 00516D70  41 82 00 0C */	beq lbl_0050DEEC
-/* 0050DEE4 00516D74  7F C3 F3 78 */	mr r3, r30
-/* 0050DEE8 00516D78  4B FF FE 79 */	bl ".destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-lbl_0050DEEC:
-/* 0050DEEC 00516D7C  7F C3 F3 78 */	mr r3, r30
-/* 0050DEF0 00516D80  48 00 09 31 */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DEF4 00516D84  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0050DEF8 00516D88  48 00 08 99 */	bl ".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050DEFC 00516D8C  7F C3 F3 78 */	mr r3, r30
-/* 0050DF00 00516D90  48 00 07 61 */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DF04 00516D94  38 9D 00 00 */	addi r4, r29, 0
-/* 0050DF08 00516D98  38 A0 00 01 */	li r5, 1
-/* 0050DF0C 00516D9C  48 00 04 D5 */	bl ".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
-lbl_0050DF10:
-/* 0050DF10 00516DA0  7F C3 F3 78 */	mr r3, r30
-/* 0050DF14 00516DA4  48 00 09 0D */	bl ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DF18 00516DA8  7F C3 F3 78 */	mr r3, r30
-/* 0050DF1C 00516DAC  48 00 07 45 */	bl ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050DF20 00516DB0  7F 83 E3 78 */	mr r3, r28
-/* 0050DF24 00516DB4  48 07 A7 6D */	bl func_00588690
-lbl_0050DF28:
-/* 0050DF28 00516DB8  7F C3 F3 78 */	mr r3, r30
-/* 0050DF2C 00516DBC  48 00 04 15 */	bl ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
-/* 0050DF30 00516DC0  38 7E 00 04 */	addi r3, r30, 4
-/* 0050DF34 00516DC4  48 00 02 6D */	bl ".first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050DF38 00516DC8  7F E3 FB 78 */	mr r3, r31
-/* 0050DF3C 00516DCC  48 07 A7 55 */	bl func_00588690
-/* 0050DF40 00516DD0  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0050DF44 00516DD4  38 21 00 50 */	addi r1, r1, 0x50
-/* 0050DF48 00516DD8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050DF4C 00516DDC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050DF50 00516DE0  7C 08 03 A6 */	mtlr r0
-/* 0050DF54 00516DE4  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050DF58 00516DE8  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 0050DF5C 00516DEC  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-".first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
-/* 0050E1A0 00517030  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
-".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv":
-/* 0050E340 005171D0  4E 80 00 20 */	blr 
-
-.global ".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
-".deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl":
-/* 0050E3E0 00517270  7C 08 02 A6 */	mflr r0
-/* 0050E3E4 00517274  7C 83 23 78 */	mr r3, r4
-/* 0050E3E8 00517278  90 01 00 08 */	stw r0, 8(r1)
-/* 0050E3EC 0051727C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0050E3F0 00517280  48 07 A2 A1 */	bl func_00588690
-/* 0050E3F4 00517284  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0050E3F8 00517288  38 21 00 40 */	addi r1, r1, 0x40
-/* 0050E3FC 0051728C  7C 08 03 A6 */	mtlr r0
-/* 0050E400 00517290  4E 80 00 20 */	blr 
-
-.global ".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 0050E660 005174F0  38 63 00 04 */	addi r3, r3, 4
-/* 0050E664 005174F4  4E 80 00 20 */	blr 
-
-.global ".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 0050E790 00517620  4E 80 00 20 */	blr 
-
-.global ".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-".alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
-/* 0050E820 005176B0  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
-".erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
-/* 0050E950 005177E0  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050E954 005177E4  7C 08 02 A6 */	mflr r0
-/* 0050E958 005177E8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050E95C 005177EC  7C 9E 23 78 */	mr r30, r4
-/* 0050E960 005177F0  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0050E964 005177F4  7C 7D 1B 78 */	mr r29, r3
-/* 0050E968 005177F8  90 01 00 08 */	stw r0, 8(r1)
-/* 0050E96C 005177FC  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050E970 00517800  83 E4 00 00 */	lwz r31, 0(r4)
-/* 0050E974 00517804  4B FF 94 1D */	bl ".front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050E978 00517808  38 83 00 00 */	addi r4, r3, 0
-/* 0050E97C 0051780C  38 61 00 40 */	addi r3, r1, 0x40
-/* 0050E980 00517810  80 84 00 00 */	lwz r4, 0(r4)
-/* 0050E984 00517814  4B FF 91 BD */	bl ".__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
-/* 0050E988 00517818  80 7E 00 00 */	lwz r3, 0(r30)
-/* 0050E98C 0051781C  80 01 00 40 */	lwz r0, 0x40(r1)
-/* 0050E990 00517820  7C 03 00 40 */	cmplw r3, r0
-/* 0050E994 00517824  40 82 00 14 */	bne lbl_0050E9A8
-/* 0050E998 00517828  7F C3 F3 78 */	mr r3, r30
-/* 0050E99C 0051782C  4B B7 62 F5 */	bl ".increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
-/* 0050E9A0 00517830  80 1E 00 00 */	lwz r0, 0(r30)
-/* 0050E9A4 00517834  90 1D 00 0C */	stw r0, 0xc(r29)
-lbl_0050E9A8:
-/* 0050E9A8 00517838  7F A3 EB 78 */	mr r3, r29
-/* 0050E9AC 0051783C  4B FF 95 E5 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050E9B0 00517840  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050E9B4 00517844  7F E3 FB 78 */	mr r3, r31
-/* 0050E9B8 00517848  4B BA 77 79 */	bl ".balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050E9BC 0051784C  7F A3 EB 78 */	mr r3, r29
-/* 0050E9C0 00517850  4B FF F9 81 */	bl ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
-/* 0050E9C4 00517854  38 7D 00 04 */	addi r3, r29, 4
-/* 0050E9C8 00517858  4B FF F7 D9 */	bl ".first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
-/* 0050E9CC 0051785C  7F E3 FB 78 */	mr r3, r31
-/* 0050E9D0 00517860  48 07 9C C1 */	bl func_00588690
-/* 0050E9D4 00517864  80 7D 00 00 */	lwz r3, 0(r29)
-/* 0050E9D8 00517868  38 03 FF FF */	addi r0, r3, -1
-/* 0050E9DC 0051786C  90 1D 00 00 */	stw r0, 0(r29)
-/* 0050E9E0 00517870  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050E9E4 00517874  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050E9E8 00517878  7C 08 03 A6 */	mtlr r0
-/* 0050E9EC 0051787C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050E9F0 00517880  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050E9F4 00517884  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0050E9F8 00517888  4E 80 00 20 */	blr 
-
-.global ".insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 0050EC40 00517AD0  BF 01 FF E0 */	stmw r24, -0x20(r1)
-/* 0050EC44 00517AD4  7C 08 02 A6 */	mflr r0
-/* 0050EC48 00517AD8  3B 24 00 00 */	addi r25, r4, 0
-/* 0050EC4C 00517ADC  3B 03 00 00 */	addi r24, r3, 0
-/* 0050EC50 00517AE0  3B 99 00 04 */	addi r28, r25, 4
-/* 0050EC54 00517AE4  3B 45 00 00 */	addi r26, r5, 0
-/* 0050EC58 00517AE8  38 79 00 00 */	addi r3, r25, 0
-/* 0050EC5C 00517AEC  3B 60 00 00 */	li r27, 0
-/* 0050EC60 00517AF0  90 01 00 08 */	stw r0, 8(r1)
-/* 0050EC64 00517AF4  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050EC68 00517AF8  4B FF 93 29 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050EC6C 00517AFC  83 A3 00 00 */	lwz r29, 0(r3)
-/* 0050EC70 00517B00  3B C0 00 01 */	li r30, 1
-/* 0050EC74 00517B04  3B E0 00 01 */	li r31, 1
-/* 0050EC78 00517B08  48 00 00 40 */	b lbl_0050ECB8
-/* 0050EC7C 00517B0C  60 00 00 00 */	nop 
-lbl_0050EC80:
-/* 0050EC80 00517B10  3B 9D 00 00 */	addi r28, r29, 0
-/* 0050EC84 00517B14  38 79 00 08 */	addi r3, r25, 8
-/* 0050EC88 00517B18  4B FF C3 A9 */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050EC8C 00517B1C  80 7A 00 00 */	lwz r3, 0(r26)
-/* 0050EC90 00517B20  80 1D 00 0C */	lwz r0, 0xc(r29)
-/* 0050EC94 00517B24  7C 03 00 00 */	cmpw r3, r0
-/* 0050EC98 00517B28  40 80 00 10 */	bge lbl_0050ECA8
-/* 0050EC9C 00517B2C  83 BD 00 00 */	lwz r29, 0(r29)
-/* 0050ECA0 00517B30  3B C0 00 01 */	li r30, 1
-/* 0050ECA4 00517B34  48 00 00 14 */	b lbl_0050ECB8
-lbl_0050ECA8:
-/* 0050ECA8 00517B38  7F BB EB 78 */	mr r27, r29
-/* 0050ECAC 00517B3C  83 BD 00 04 */	lwz r29, 4(r29)
-/* 0050ECB0 00517B40  3B C0 00 00 */	li r30, 0
-/* 0050ECB4 00517B44  3B E0 00 00 */	li r31, 0
-lbl_0050ECB8:
-/* 0050ECB8 00517B48  28 1D 00 00 */	cmplwi r29, 0
-/* 0050ECBC 00517B4C  40 82 FF C4 */	bne lbl_0050EC80
-/* 0050ECC0 00517B50  28 1B 00 00 */	cmplwi r27, 0
-/* 0050ECC4 00517B54  41 82 00 1C */	beq lbl_0050ECE0
-/* 0050ECC8 00517B58  38 79 00 08 */	addi r3, r25, 8
-/* 0050ECCC 00517B5C  4B FF C3 65 */	bl ".first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
-/* 0050ECD0 00517B60  80 7B 00 0C */	lwz r3, 0xc(r27)
-/* 0050ECD4 00517B64  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050ECD8 00517B68  7C 03 00 00 */	cmpw r3, r0
-/* 0050ECDC 00517B6C  40 80 00 2C */	bge lbl_0050ED08
-lbl_0050ECE0:
-/* 0050ECE0 00517B70  38 79 00 00 */	addi r3, r25, 0
-/* 0050ECE4 00517B74  38 9C 00 00 */	addi r4, r28, 0
-/* 0050ECE8 00517B78  38 BE 00 00 */	addi r5, r30, 0
-/* 0050ECEC 00517B7C  38 DF 00 00 */	addi r6, r31, 0
-/* 0050ECF0 00517B80  38 FA 00 00 */	addi r7, r26, 0
-/* 0050ECF4 00517B84  48 00 11 2D */	bl ".insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-/* 0050ECF8 00517B88  90 78 00 00 */	stw r3, 0(r24)
-/* 0050ECFC 00517B8C  88 02 28 B8 */	lbz r0, lbl_005C3D18-_R2_BASE_(r2)
-/* 0050ED00 00517B90  98 18 00 04 */	stb r0, 4(r24)
-/* 0050ED04 00517B94  48 00 00 10 */	b lbl_0050ED14
-lbl_0050ED08:
-/* 0050ED08 00517B98  93 78 00 00 */	stw r27, 0(r24)
-/* 0050ED0C 00517B9C  88 02 28 B9 */	lbz r0, lbl_005C3D19-_R2_BASE_(r2)
-/* 0050ED10 00517BA0  98 18 00 04 */	stb r0, 4(r24)
-lbl_0050ED14:
-/* 0050ED14 00517BA4  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050ED18 00517BA8  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050ED1C 00517BAC  BB 01 FF E0 */	lmw r24, -0x20(r1)
-/* 0050ED20 00517BB0  7C 08 03 A6 */	mtlr r0
-/* 0050ED24 00517BB4  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>"
-".__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>":
-/* 0050EE80 00517D10  93 E1 FF FC */	stw r31, -4(r1)
-/* 0050EE84 00517D14  3B E4 00 00 */	addi r31, r4, 0
-/* 0050EE88 00517D18  38 85 00 00 */	addi r4, r5, 0
-/* 0050EE8C 00517D1C  7C 08 02 A6 */	mflr r0
-/* 0050EE90 00517D20  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0050EE94 00517D24  3B C3 00 00 */	addi r30, r3, 0
-/* 0050EE98 00517D28  90 01 00 08 */	stw r0, 8(r1)
-/* 0050EE9C 00517D2C  38 A0 00 00 */	li r5, 0
-/* 0050EEA0 00517D30  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 0050EEA4 00517D34  48 00 07 7D */	bl ".__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul"
-/* 0050EEA8 00517D38  38 7E 00 04 */	addi r3, r30, 4
-/* 0050EEAC 00517D3C  38 81 00 40 */	addi r4, r1, 0x40
-/* 0050EEB0 00517D40  48 00 04 B1 */	bl ".__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>"
-/* 0050EEB4 00517D44  38 9F 00 00 */	addi r4, r31, 0
-/* 0050EEB8 00517D48  38 7E 00 08 */	addi r3, r30, 8
-/* 0050EEBC 00517D4C  48 00 02 25 */	bl ".__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare"
-/* 0050EEC0 00517D50  38 1E 00 04 */	addi r0, r30, 4
-/* 0050EEC4 00517D54  90 1E 00 0C */	stw r0, 0xc(r30)
-/* 0050EEC8 00517D58  7F C3 F3 78 */	mr r3, r30
-/* 0050EECC 00517D5C  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0050EED0 00517D60  38 21 00 60 */	addi r1, r1, 0x60
-/* 0050EED4 00517D64  7C 08 03 A6 */	mtlr r0
-/* 0050EED8 00517D68  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0050EEDC 00517D6C  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0050EEE0 00517D70  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare"
-".__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare":
-/* 0050F0E0 00517F70  88 04 00 00 */	lbz r0, 0(r4)
-/* 0050F0E4 00517F74  98 03 00 00 */	stb r0, 0(r3)
-/* 0050F0E8 00517F78  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>"
-".__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>":
-/* 0050F360 005181F0  38 00 00 00 */	li r0, 0
-/* 0050F364 005181F4  90 03 00 00 */	stw r0, 0(r3)
-/* 0050F368 005181F8  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul"
-".__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul":
-/* 0050F620 005184B0  90 A3 00 00 */	stw r5, 0(r3)
-/* 0050F624 005184B4  4E 80 00 20 */	blr 
-
-.global ".insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
-".insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>":
-/* 0050F700 00518590  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050F704 00518594  7C 08 02 A6 */	mflr r0
-/* 0050F708 00518598  83 62 BC 2C */	lwz r27, lbl_005BD08C-_R2_BASE_(r2)
-/* 0050F70C 0051859C  3B 83 00 00 */	addi r28, r3, 0
-/* 0050F710 005185A0  3B A4 00 00 */	addi r29, r4, 0
-/* 0050F714 005185A4  3B 25 00 00 */	addi r25, r5, 0
-/* 0050F718 005185A8  3B C6 00 00 */	addi r30, r6, 0
-/* 0050F71C 005185AC  3B 47 00 00 */	addi r26, r7, 0
-/* 0050F720 005185B0  90 01 00 08 */	stw r0, 8(r1)
-/* 0050F724 005185B4  94 21 FF 60 */	stwu r1, -0xa0(r1)
-/* 0050F728 005185B8  7C 3F 0B 78 */	mr r31, r1
-/* 0050F72C 005185BC  48 00 02 75 */	bl ".sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv"
-/* 0050F730 005185C0  80 63 00 00 */	lwz r3, 0(r3)
-/* 0050F734 005185C4  38 00 FF FE */	li r0, -2
-/* 0050F738 005185C8  7C 03 00 40 */	cmplw r3, r0
-/* 0050F73C 005185CC  40 81 00 28 */	ble lbl_0050F764
-/* 0050F740 005185D0  38 9B 00 00 */	addi r4, r27, 0
-/* 0050F744 005185D4  38 7F 00 40 */	addi r3, r31, 0x40
-/* 0050F748 005185D8  4B B1 DB 59 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 0050F74C 005185DC  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 0050F750 005185E0  38 7B 00 1A */	addi r3, r27, 0x1a
-/* 0050F754 005185E4  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 0050F758 005185E8  38 9F 00 40 */	addi r4, r31, 0x40
-/* 0050F75C 005185EC  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 0050F760 005185F0  48 07 81 31 */	bl func_00587890
-lbl_0050F764:
-/* 0050F764 005185F4  38 60 00 14 */	li r3, 0x14
-/* 0050F768 005185F8  48 07 8E 49 */	bl func_005885B0
-/* 0050F76C 005185FC  90 3F 00 64 */	stw r1, 0x64(r31)
-/* 0050F770 00518600  3B 63 00 00 */	addi r27, r3, 0
-/* 0050F774 00518604  38 7C 00 00 */	addi r3, r28, 0
-/* 0050F778 00518608  4B FF C2 D9 */	bl ".first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
-/* 0050F77C 0051860C  34 7B 00 0C */	addic. r3, r27, 0xc
-/* 0050F780 00518610  41 82 00 18 */	beq lbl_0050F798
-/* 0050F784 00518614  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050F788 00518618  90 3F 00 7C */	stw r1, 0x7c(r31)
-/* 0050F78C 0051861C  90 03 00 00 */	stw r0, 0(r3)
-/* 0050F790 00518620  80 1A 00 04 */	lwz r0, 4(r26)
-/* 0050F794 00518624  90 03 00 04 */	stw r0, 4(r3)
-lbl_0050F798:
-/* 0050F798 00518628  38 60 00 00 */	li r3, 0
-/* 0050F79C 0051862C  90 7B 00 04 */	stw r3, 4(r27)
-/* 0050F7A0 00518630  57 20 06 3F */	clrlwi. r0, r25, 0x18
-/* 0050F7A4 00518634  90 7B 00 00 */	stw r3, 0(r27)
-/* 0050F7A8 00518638  80 1B 00 08 */	lwz r0, 8(r27)
-/* 0050F7AC 0051863C  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 0050F7B0 00518640  7F A0 03 78 */	or r0, r29, r0
-/* 0050F7B4 00518644  90 1B 00 08 */	stw r0, 8(r27)
-/* 0050F7B8 00518648  41 82 00 0C */	beq lbl_0050F7C4
-/* 0050F7BC 0051864C  93 7D 00 00 */	stw r27, 0(r29)
-/* 0050F7C0 00518650  48 00 00 08 */	b lbl_0050F7C8
-lbl_0050F7C4:
-/* 0050F7C4 00518654  93 7D 00 04 */	stw r27, 4(r29)
-lbl_0050F7C8:
-/* 0050F7C8 00518658  80 9C 00 00 */	lwz r4, 0(r28)
-/* 0050F7CC 0051865C  38 7C 00 00 */	addi r3, r28, 0
-/* 0050F7D0 00518660  38 04 00 01 */	addi r0, r4, 1
-/* 0050F7D4 00518664  90 1C 00 00 */	stw r0, 0(r28)
-/* 0050F7D8 00518668  4B FF 9A 69 */	bl ".tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
-/* 0050F7DC 0051866C  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050F7E0 00518670  7F 63 DB 78 */	mr r3, r27
-/* 0050F7E4 00518674  4B BA 7D ED */	bl ".balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050F7E8 00518678  57 C0 06 3F */	clrlwi. r0, r30, 0x18
-/* 0050F7EC 0051867C  41 82 00 08 */	beq lbl_0050F7F4
-/* 0050F7F0 00518680  93 7C 00 0C */	stw r27, 0xc(r28)
-lbl_0050F7F4:
-/* 0050F7F4 00518684  7F 63 DB 78 */	mr r3, r27
-/* 0050F7F8 00518688  80 1F 00 A8 */	lwz r0, 0xa8(r31)
-/* 0050F7FC 0051868C  80 21 00 00 */	lwz r1, 0(r1)
-/* 0050F800 00518690  7C 08 03 A6 */	mtlr r0
-/* 0050F804 00518694  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050F808 00518698  4E 80 00 20 */	blr 
-
-.global ".sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv"
-".sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv":
-/* 0050F9A0 00518830  4E 80 00 20 */	blr 
-
-.global ".insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
-".insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>":
-/* 0050FA60 005188F0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050FA64 005188F4  7C 08 02 A6 */	mflr r0
-/* 0050FA68 005188F8  83 62 BC 2C */	lwz r27, lbl_005BD08C-_R2_BASE_(r2)
-/* 0050FA6C 005188FC  3B 83 00 00 */	addi r28, r3, 0
-/* 0050FA70 00518900  3B A4 00 00 */	addi r29, r4, 0
-/* 0050FA74 00518904  3B 25 00 00 */	addi r25, r5, 0
-/* 0050FA78 00518908  3B C6 00 00 */	addi r30, r6, 0
-/* 0050FA7C 0051890C  3B 47 00 00 */	addi r26, r7, 0
-/* 0050FA80 00518910  90 01 00 08 */	stw r0, 8(r1)
-/* 0050FA84 00518914  94 21 FF 60 */	stwu r1, -0xa0(r1)
-/* 0050FA88 00518918  7C 3F 0B 78 */	mr r31, r1
-/* 0050FA8C 0051891C  48 00 02 B5 */	bl ".sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv"
-/* 0050FA90 00518920  80 63 00 00 */	lwz r3, 0(r3)
-/* 0050FA94 00518924  38 00 FF FE */	li r0, -2
-/* 0050FA98 00518928  7C 03 00 40 */	cmplw r3, r0
-/* 0050FA9C 0051892C  40 81 00 28 */	ble lbl_0050FAC4
-/* 0050FAA0 00518930  38 9B 00 00 */	addi r4, r27, 0
-/* 0050FAA4 00518934  38 7F 00 40 */	addi r3, r31, 0x40
-/* 0050FAA8 00518938  4B B1 D7 F9 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 0050FAAC 0051893C  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 0050FAB0 00518940  38 7B 00 1A */	addi r3, r27, 0x1a
-/* 0050FAB4 00518944  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 0050FAB8 00518948  38 9F 00 40 */	addi r4, r31, 0x40
-/* 0050FABC 0051894C  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 0050FAC0 00518950  48 07 7D D1 */	bl func_00587890
-lbl_0050FAC4:
-/* 0050FAC4 00518954  38 60 00 14 */	li r3, 0x14
-/* 0050FAC8 00518958  48 07 8A E9 */	bl func_005885B0
-/* 0050FACC 0051895C  90 3F 00 64 */	stw r1, 0x64(r31)
-/* 0050FAD0 00518960  3B 63 00 00 */	addi r27, r3, 0
-/* 0050FAD4 00518964  38 7C 00 00 */	addi r3, r28, 0
-/* 0050FAD8 00518968  4B FF D2 99 */	bl ".first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
-/* 0050FADC 0051896C  34 7B 00 0C */	addic. r3, r27, 0xc
-/* 0050FAE0 00518970  41 82 00 18 */	beq lbl_0050FAF8
-/* 0050FAE4 00518974  80 1A 00 00 */	lwz r0, 0(r26)
-/* 0050FAE8 00518978  90 3F 00 7C */	stw r1, 0x7c(r31)
-/* 0050FAEC 0051897C  90 03 00 00 */	stw r0, 0(r3)
-/* 0050FAF0 00518980  80 1A 00 04 */	lwz r0, 4(r26)
-/* 0050FAF4 00518984  90 03 00 04 */	stw r0, 4(r3)
-lbl_0050FAF8:
-/* 0050FAF8 00518988  38 60 00 00 */	li r3, 0
-/* 0050FAFC 0051898C  90 7B 00 04 */	stw r3, 4(r27)
-/* 0050FB00 00518990  57 20 06 3F */	clrlwi. r0, r25, 0x18
-/* 0050FB04 00518994  90 7B 00 00 */	stw r3, 0(r27)
-/* 0050FB08 00518998  80 1B 00 08 */	lwz r0, 8(r27)
-/* 0050FB0C 0051899C  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 0050FB10 005189A0  7F A0 03 78 */	or r0, r29, r0
-/* 0050FB14 005189A4  90 1B 00 08 */	stw r0, 8(r27)
-/* 0050FB18 005189A8  41 82 00 0C */	beq lbl_0050FB24
-/* 0050FB1C 005189AC  93 7D 00 00 */	stw r27, 0(r29)
-/* 0050FB20 005189B0  48 00 00 08 */	b lbl_0050FB28
-lbl_0050FB24:
-/* 0050FB24 005189B4  93 7D 00 04 */	stw r27, 4(r29)
-lbl_0050FB28:
-/* 0050FB28 005189B8  80 9C 00 00 */	lwz r4, 0(r28)
-/* 0050FB2C 005189BC  38 7C 00 00 */	addi r3, r28, 0
-/* 0050FB30 005189C0  38 04 00 01 */	addi r0, r4, 1
-/* 0050FB34 005189C4  90 1C 00 00 */	stw r0, 0(r28)
-/* 0050FB38 005189C8  4B FF 64 99 */	bl ".tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
-/* 0050FB3C 005189CC  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050FB40 005189D0  7F 63 DB 78 */	mr r3, r27
-/* 0050FB44 005189D4  4B BA 7A 8D */	bl ".balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050FB48 005189D8  57 C0 06 3F */	clrlwi. r0, r30, 0x18
-/* 0050FB4C 005189DC  41 82 00 08 */	beq lbl_0050FB54
-/* 0050FB50 005189E0  93 7C 00 0C */	stw r27, 0xc(r28)
-lbl_0050FB54:
-/* 0050FB54 005189E4  7F 63 DB 78 */	mr r3, r27
-/* 0050FB58 005189E8  80 1F 00 A8 */	lwz r0, 0xa8(r31)
-/* 0050FB5C 005189EC  80 21 00 00 */	lwz r1, 0(r1)
-/* 0050FB60 005189F0  7C 08 03 A6 */	mtlr r0
-/* 0050FB64 005189F4  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050FB68 005189F8  4E 80 00 20 */	blr 
-
-.global ".sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv"
-".sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv":
-/* 0050FD40 00518BD0  4E 80 00 20 */	blr 
-
-.global ".insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 0050FE20 00518CB0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
-/* 0050FE24 00518CB4  7C 08 02 A6 */	mflr r0
-/* 0050FE28 00518CB8  83 62 BC 2C */	lwz r27, lbl_005BD08C-_R2_BASE_(r2)
-/* 0050FE2C 00518CBC  3B 83 00 00 */	addi r28, r3, 0
-/* 0050FE30 00518CC0  3B A4 00 00 */	addi r29, r4, 0
-/* 0050FE34 00518CC4  3B 25 00 00 */	addi r25, r5, 0
-/* 0050FE38 00518CC8  3B C6 00 00 */	addi r30, r6, 0
-/* 0050FE3C 00518CCC  3B 47 00 00 */	addi r26, r7, 0
-/* 0050FE40 00518CD0  90 01 00 08 */	stw r0, 8(r1)
-/* 0050FE44 00518CD4  94 21 FF 60 */	stwu r1, -0xa0(r1)
-/* 0050FE48 00518CD8  7C 3F 0B 78 */	mr r31, r1
-/* 0050FE4C 00518CDC  48 00 03 E5 */	bl ".sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv"
-/* 0050FE50 00518CE0  80 63 00 00 */	lwz r3, 0(r3)
-/* 0050FE54 00518CE4  38 00 FF FE */	li r0, -2
-/* 0050FE58 00518CE8  7C 03 00 40 */	cmplw r3, r0
-/* 0050FE5C 00518CEC  40 81 00 28 */	ble lbl_0050FE84
-/* 0050FE60 00518CF0  38 9B 00 00 */	addi r4, r27, 0
-/* 0050FE64 00518CF4  38 7F 00 40 */	addi r3, r31, 0x40
-/* 0050FE68 00518CF8  4B B1 D4 39 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 0050FE6C 00518CFC  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 0050FE70 00518D00  38 7B 00 1A */	addi r3, r27, 0x1a
-/* 0050FE74 00518D04  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 0050FE78 00518D08  38 9F 00 40 */	addi r4, r31, 0x40
-/* 0050FE7C 00518D0C  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 0050FE80 00518D10  48 07 7A 11 */	bl func_00587890
-lbl_0050FE84:
-/* 0050FE84 00518D14  38 60 00 18 */	li r3, 0x18
-/* 0050FE88 00518D18  48 07 87 29 */	bl func_005885B0
-/* 0050FE8C 00518D1C  90 3F 00 64 */	stw r1, 0x64(r31)
-/* 0050FE90 00518D20  3B 63 00 00 */	addi r27, r3, 0
-/* 0050FE94 00518D24  38 7C 00 00 */	addi r3, r28, 0
-/* 0050FE98 00518D28  4B FF E4 A9 */	bl ".first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
-/* 0050FE9C 00518D2C  38 9B 00 0C */	addi r4, r27, 0xc
-/* 0050FEA0 00518D30  38 60 00 0C */	li r3, 0xc
-/* 0050FEA4 00518D34  4B B2 52 4D */	bl ".__nw__FUlPv"
-/* 0050FEA8 00518D38  28 03 00 00 */	cmplwi r3, 0
-/* 0050FEAC 00518D3C  41 82 00 10 */	beq lbl_0050FEBC
-/* 0050FEB0 00518D40  90 3F 00 7C */	stw r1, 0x7c(r31)
-/* 0050FEB4 00518D44  7F 44 D3 78 */	mr r4, r26
-/* 0050FEB8 00518D48  48 00 02 E9 */	bl ".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-lbl_0050FEBC:
-/* 0050FEBC 00518D4C  38 60 00 00 */	li r3, 0
-/* 0050FEC0 00518D50  90 7B 00 04 */	stw r3, 4(r27)
-/* 0050FEC4 00518D54  57 20 06 3F */	clrlwi. r0, r25, 0x18
-/* 0050FEC8 00518D58  90 7B 00 00 */	stw r3, 0(r27)
-/* 0050FECC 00518D5C  80 1B 00 08 */	lwz r0, 8(r27)
-/* 0050FED0 00518D60  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 0050FED4 00518D64  7F A0 03 78 */	or r0, r29, r0
-/* 0050FED8 00518D68  90 1B 00 08 */	stw r0, 8(r27)
-/* 0050FEDC 00518D6C  41 82 00 0C */	beq lbl_0050FEE8
-/* 0050FEE0 00518D70  93 7D 00 00 */	stw r27, 0(r29)
-/* 0050FEE4 00518D74  48 00 00 08 */	b lbl_0050FEEC
-lbl_0050FEE8:
-/* 0050FEE8 00518D78  93 7D 00 04 */	stw r27, 4(r29)
-lbl_0050FEEC:
-/* 0050FEEC 00518D7C  80 9C 00 00 */	lwz r4, 0(r28)
-/* 0050FEF0 00518D80  38 7C 00 00 */	addi r3, r28, 0
-/* 0050FEF4 00518D84  38 04 00 01 */	addi r0, r4, 1
-/* 0050FEF8 00518D88  90 1C 00 00 */	stw r0, 0(r28)
-/* 0050FEFC 00518D8C  4B FF 80 95 */	bl ".tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
-/* 0050FF00 00518D90  80 83 00 00 */	lwz r4, 0(r3)
-/* 0050FF04 00518D94  7F 63 DB 78 */	mr r3, r27
-/* 0050FF08 00518D98  4B BA 76 C9 */	bl ".balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
-/* 0050FF0C 00518D9C  57 C0 06 3F */	clrlwi. r0, r30, 0x18
-/* 0050FF10 00518DA0  41 82 00 08 */	beq lbl_0050FF18
-/* 0050FF14 00518DA4  93 7C 00 0C */	stw r27, 0xc(r28)
-lbl_0050FF18:
-/* 0050FF18 00518DA8  7F 63 DB 78 */	mr r3, r27
-/* 0050FF1C 00518DAC  80 1F 00 A8 */	lwz r0, 0xa8(r31)
-/* 0050FF20 00518DB0  80 21 00 00 */	lwz r1, 0(r1)
-/* 0050FF24 00518DB4  7C 08 03 A6 */	mtlr r0
-/* 0050FF28 00518DB8  BB 21 FF E4 */	lmw r25, -0x1c(r1)
-/* 0050FF2C 00518DBC  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
-".__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
-/* 005101A0 00519030  80 04 00 00 */	lwz r0, 0(r4)
-/* 005101A4 00519034  90 03 00 00 */	stw r0, 0(r3)
-/* 005101A8 00519038  80 04 00 04 */	lwz r0, 4(r4)
-/* 005101AC 0051903C  90 03 00 04 */	stw r0, 4(r3)
-/* 005101B0 00519040  88 04 00 08 */	lbz r0, 8(r4)
-/* 005101B4 00519044  98 03 00 08 */	stb r0, 8(r3)
-/* 005101B8 00519048  4E 80 00 20 */	blr 
-
-.global ".sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv"
-".sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv":
-/* 00510230 005190C0  4E 80 00 20 */	blr 
-
-.global ".__sinit_:TSWinCtrlMgr_cpp"
-".__sinit_:TSWinCtrlMgr_cpp":
-/* 00510360 005191F0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00510364 005191F4  7C 08 02 A6 */	mflr r0
-/* 00510368 005191F8  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
-/* 0051036C 005191FC  90 01 00 08 */	stw r0, 8(r1)
-/* 00510370 00519200  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
-/* 00510374 00519204  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00510378 00519208  83 E2 BC 30 */	lwz r31, lbl_005BD090-_R2_BASE_(r2)
-/* 0051037C 0051920C  C8 44 00 00 */	lfd f2, 0(r4)
-/* 00510380 00519210  C0 A3 00 00 */	lfs f5, 0(r3)
-/* 00510384 00519214  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
-/* 00510388 00519218  FC 20 10 50 */	fneg f1, f2
-/* 0051038C 0051921C  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
-/* 00510390 00519220  FC 80 28 50 */	fneg f4, f5
-/* 00510394 00519224  C0 64 00 00 */	lfs f3, 0(r4)
-/* 00510398 00519228  C8 03 00 00 */	lfd f0, 0(r3)
-/* 0051039C 0051922C  D0 82 28 C4 */	stfs f4, lbl_005C3D24-_R2_BASE_(r2)
-/* 005103A0 00519230  7F E3 FB 78 */	mr r3, r31
-/* 005103A4 00519234  D0 A2 28 C8 */	stfs f5, lbl_005C3D28-_R2_BASE_(r2)
-/* 005103A8 00519238  D0 62 28 CC */	stfs f3, lbl_005C3D2C-_R2_BASE_(r2)
-/* 005103AC 0051923C  D0 A2 28 D0 */	stfs f5, lbl_005C3D30-_R2_BASE_(r2)
-/* 005103B0 00519240  D8 22 28 D8 */	stfd f1, lbl_005C3D38-_R2_BASE_(r2)
-/* 005103B4 00519244  D8 42 28 E0 */	stfd f2, lbl_005C3D40-_R2_BASE_(r2)
-/* 005103B8 00519248  D8 02 28 E8 */	stfd f0, lbl_005C3D48-_R2_BASE_(r2)
-/* 005103BC 0051924C  D8 42 28 F0 */	stfd f2, lbl_005C3D50-_R2_BASE_(r2)
-/* 005103C0 00519250  4B FF 95 01 */	bl ".__ct__13cTSWinCtrlMgrFv"
-/* 005103C4 00519254  80 82 9F 08 */	lwz r4, lbl_005BB368-_R2_BASE_(r2)
-/* 005103C8 00519258  7F E3 FB 78 */	mr r3, r31
-/* 005103CC 0051925C  80 A2 BC 28 */	lwz r5, lbl_005BD088-_R2_BASE_(r2)
-/* 005103D0 00519260  48 07 77 D1 */	bl func_00587BA0
-/* 005103D4 00519264  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 005103D8 00519268  38 21 00 50 */	addi r1, r1, 0x50
-/* 005103DC 0051926C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 005103E0 00519270  7C 08 03 A6 */	mtlr r0
-/* 005103E4 00519274  4E 80 00 20 */	blr 
+.section .text0, "ax"  # 0x10000000 - 0x105B9458
+
+.global "SystemFont__13cTSWinCtrlMgrFl"
+"SystemFont__13cTSWinCtrlMgrFl":
+/* 10505C20 00505C20  7C 08 02 A6 */	mflr r0
+/* 10505C24 00505C24  38 63 00 20 */	addi r3, r3, 0x20
+/* 10505C28 00505C28  90 01 00 08 */	stw r0, 8(r1)
+/* 10505C2C 00505C2C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10505C30 00505C30  90 81 00 5C */	stw r4, 0x5c(r1)
+/* 10505C34 00505C34  38 81 00 5C */	addi r4, r1, 0x5c
+/* 10505C38 00505C38  48 00 4B A9 */	bl "find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>"
+/* 10505C3C 00505C3C  80 63 00 04 */	lwz r3, 4(r3)
+/* 10505C40 00505C40  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10505C44 00505C44  38 21 00 40 */	addi r1, r1, 0x40
+/* 10505C48 00505C48  7C 08 03 A6 */	mtlr r0
+/* 10505C4C 00505C4C  4E 80 00 20 */	blr 
+
+.global "SetSystemFont__13cTSWinCtrlMgrFlP8cITSFont"
+"SetSystemFont__13cTSWinCtrlMgrFlP8cITSFont":
+/* 10505C80 00505C80  93 E1 FF FC */	stw r31, -4(r1)
+/* 10505C84 00505C84  7C 08 02 A6 */	mflr r0
+/* 10505C88 00505C88  7C 7F 1B 78 */	mr r31, r3
+/* 10505C8C 00505C8C  90 01 00 08 */	stw r0, 8(r1)
+/* 10505C90 00505C90  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 10505C94 00505C94  90 A1 00 90 */	stw r5, 0x90(r1)
+/* 10505C98 00505C98  38 61 00 40 */	addi r3, r1, 0x40
+/* 10505C9C 00505C9C  38 A1 00 44 */	addi r5, r1, 0x44
+/* 10505CA0 00505CA0  90 81 00 8C */	stw r4, 0x8c(r1)
+/* 10505CA4 00505CA4  90 81 00 44 */	stw r4, 0x44(r1)
+/* 10505CA8 00505CA8  38 9F 00 20 */	addi r4, r31, 0x20
+/* 10505CAC 00505CAC  48 00 45 35 */	bl "find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl"
+/* 10505CB0 00505CB0  38 61 00 48 */	addi r3, r1, 0x48
+/* 10505CB4 00505CB4  38 9F 00 20 */	addi r4, r31, 0x20
+/* 10505CB8 00505CB8  48 00 00 A9 */	bl "end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 10505CBC 00505CBC  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 10505CC0 00505CC0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10505CC4 00505CC4  7C 04 00 40 */	cmplw r4, r0
+/* 10505CC8 00505CC8  41 82 00 1C */	beq lbl_10505CE4
+/* 10505CCC 00505CCC  80 7F 00 08 */	lwz r3, 8(r31)
+/* 10505CD0 00505CD0  80 84 00 10 */	lwz r4, 0x10(r4)
+/* 10505CD4 00505CD4  81 83 00 00 */	lwz r12, 0(r3)
+/* 10505CD8 00505CD8  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 10505CDC 00505CDC  48 09 3E 75 */	bl func_10599B50
+/* 10505CE0 00505CE0  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10505CE4:
+/* 10505CE4 00505CE4  38 61 00 58 */	addi r3, r1, 0x58
+/* 10505CE8 00505CE8  38 81 00 8C */	addi r4, r1, 0x8c
+/* 10505CEC 00505CEC  38 A1 00 90 */	addi r5, r1, 0x90
+/* 10505CF0 00505CF0  48 00 47 21 */	bl "__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont"
+/* 10505CF4 00505CF4  38 A3 00 00 */	addi r5, r3, 0
+/* 10505CF8 00505CF8  38 61 00 50 */	addi r3, r1, 0x50
+/* 10505CFC 00505CFC  38 9F 00 20 */	addi r4, r31, 0x20
+/* 10505D00 00505D00  48 00 44 31 */	bl "insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
+/* 10505D04 00505D04  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 10505D08 00505D08  38 21 00 70 */	addi r1, r1, 0x70
+/* 10505D0C 00505D0C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10505D10 00505D10  7C 08 03 A6 */	mtlr r0
+/* 10505D14 00505D14  4E 80 00 20 */	blr 
+
+.global "end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10505D60 00505D60  93 E1 FF FC */	stw r31, -4(r1)
+/* 10505D64 00505D64  7C 08 02 A6 */	mflr r0
+/* 10505D68 00505D68  3B E3 00 00 */	addi r31, r3, 0
+/* 10505D6C 00505D6C  38 64 00 00 */	addi r3, r4, 0
+/* 10505D70 00505D70  90 01 00 08 */	stw r0, 8(r1)
+/* 10505D74 00505D74  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10505D78 00505D78  48 00 02 59 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 10505D7C 00505D7C  38 83 00 00 */	addi r4, r3, 0
+/* 10505D80 00505D80  38 7F 00 00 */	addi r3, r31, 0
+/* 10505D84 00505D84  48 00 00 8D */	bl "__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+/* 10505D88 00505D88  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10505D8C 00505D8C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10505D90 00505D90  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10505D94 00505D94  7C 08 03 A6 */	mtlr r0
+/* 10505D98 00505D98  4E 80 00 20 */	blr 
+
+.global "__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+"__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node":
+/* 10505E10 00505E10  90 83 00 00 */	stw r4, 0(r3)
+/* 10505E14 00505E14  4E 80 00 20 */	blr 
+
+.global "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10505FD0 00505FD0  38 63 00 04 */	addi r3, r3, 4
+/* 10505FD4 00505FD4  4E 80 00 20 */	blr 
+
+.global "SystemBMP__13cTSWinCtrlMgrFl"
+"SystemBMP__13cTSWinCtrlMgrFl":
+/* 105060C0 005060C0  7C 08 02 A6 */	mflr r0
+/* 105060C4 005060C4  38 63 00 30 */	addi r3, r3, 0x30
+/* 105060C8 005060C8  90 01 00 08 */	stw r0, 8(r1)
+/* 105060CC 005060CC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 105060D0 005060D0  90 81 00 5C */	stw r4, 0x5c(r1)
+/* 105060D4 005060D4  38 81 00 5C */	addi r4, r1, 0x5c
+/* 105060D8 005060D8  48 00 4C F9 */	bl "find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 105060DC 005060DC  80 63 00 04 */	lwz r3, 4(r3)
+/* 105060E0 005060E0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 105060E4 005060E4  38 21 00 40 */	addi r1, r1, 0x40
+/* 105060E8 005060E8  7C 08 03 A6 */	mtlr r0
+/* 105060EC 005060EC  4E 80 00 20 */	blr 
+
+.global "SetSystemBMP__13cTSWinCtrlMgrFlP9cTSBufferb"
+"SetSystemBMP__13cTSWinCtrlMgrFlP9cTSBufferb":
+/* 10506120 00506120  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506124 00506124  7C 08 02 A6 */	mflr r0
+/* 10506128 00506128  7C 7F 1B 78 */	mr r31, r3
+/* 1050612C 0050612C  90 01 00 08 */	stw r0, 8(r1)
+/* 10506130 00506130  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 10506134 00506134  90 A1 00 A0 */	stw r5, 0xa0(r1)
+/* 10506138 00506138  38 61 00 40 */	addi r3, r1, 0x40
+/* 1050613C 0050613C  38 A1 00 44 */	addi r5, r1, 0x44
+/* 10506140 00506140  90 81 00 9C */	stw r4, 0x9c(r1)
+/* 10506144 00506144  90 81 00 44 */	stw r4, 0x44(r1)
+/* 10506148 00506148  38 9F 00 30 */	addi r4, r31, 0x30
+/* 1050614C 0050614C  98 C1 00 A7 */	stb r6, 0xa7(r1)
+/* 10506150 00506150  48 00 3F 21 */	bl "find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl"
+/* 10506154 00506154  38 61 00 48 */	addi r3, r1, 0x48
+/* 10506158 00506158  38 9F 00 30 */	addi r4, r31, 0x30
+/* 1050615C 0050615C  48 00 00 C5 */	bl "end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10506160 00506160  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 10506164 00506164  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10506168 00506168  7C 03 00 40 */	cmplw r3, r0
+/* 1050616C 0050616C  41 82 00 24 */	beq lbl_10506190
+/* 10506170 00506170  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 10506174 00506174  28 03 00 00 */	cmplwi r3, 0
+/* 10506178 00506178  41 82 00 18 */	beq lbl_10506190
+/* 1050617C 0050617C  81 83 00 00 */	lwz r12, 0(r3)
+/* 10506180 00506180  38 80 00 01 */	li r4, 1
+/* 10506184 00506184  81 8C 00 08 */	lwz r12, 8(r12)
+/* 10506188 00506188  48 09 39 C9 */	bl func_10599B50
+/* 1050618C 0050618C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10506190:
+/* 10506190 00506190  38 61 00 58 */	addi r3, r1, 0x58
+/* 10506194 00506194  38 81 00 A0 */	addi r4, r1, 0xa0
+/* 10506198 00506198  38 A1 00 A7 */	addi r5, r1, 0xa7
+/* 1050619C 0050619C  48 00 42 15 */	bl "__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb"
+/* 105061A0 005061A0  38 A3 00 00 */	addi r5, r3, 0
+/* 105061A4 005061A4  38 61 00 60 */	addi r3, r1, 0x60
+/* 105061A8 005061A8  38 81 00 9C */	addi r4, r1, 0x9c
+/* 105061AC 005061AC  48 00 53 75 */	bl "__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>"
+/* 105061B0 005061B0  38 A3 00 00 */	addi r5, r3, 0
+/* 105061B4 005061B4  38 61 00 50 */	addi r3, r1, 0x50
+/* 105061B8 005061B8  38 9F 00 30 */	addi r4, r31, 0x30
+/* 105061BC 005061BC  48 00 3D C5 */	bl "insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 105061C0 005061C0  80 01 00 88 */	lwz r0, 0x88(r1)
+/* 105061C4 005061C4  38 21 00 80 */	addi r1, r1, 0x80
+/* 105061C8 005061C8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105061CC 005061CC  7C 08 03 A6 */	mtlr r0
+/* 105061D0 005061D0  4E 80 00 20 */	blr 
+
+.global "end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10506220 00506220  38 04 00 04 */	addi r0, r4, 4
+/* 10506224 00506224  90 03 00 00 */	stw r0, 0(r3)
+/* 10506228 00506228  4E 80 00 20 */	blr 
+
+.global "SystemBMPHasTransparency__13cTSWinCtrlMgrFl"
+"SystemBMPHasTransparency__13cTSWinCtrlMgrFl":
+/* 10506350 00506350  7C 08 02 A6 */	mflr r0
+/* 10506354 00506354  38 63 00 30 */	addi r3, r3, 0x30
+/* 10506358 00506358  90 01 00 08 */	stw r0, 8(r1)
+/* 1050635C 0050635C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10506360 00506360  90 81 00 5C */	stw r4, 0x5c(r1)
+/* 10506364 00506364  38 81 00 5C */	addi r4, r1, 0x5c
+/* 10506368 00506368  48 00 4A 69 */	bl "find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050636C 0050636C  88 63 00 08 */	lbz r3, 8(r3)
+/* 10506370 00506370  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10506374 00506374  38 21 00 40 */	addi r1, r1, 0x40
+/* 10506378 00506378  7C 08 03 A6 */	mtlr r0
+/* 1050637C 0050637C  4E 80 00 20 */	blr 
+
+.global "DefaultSndID__13cTSWinCtrlMgrFl"
+"DefaultSndID__13cTSWinCtrlMgrFl":
+/* 105063C0 005063C0  7C 08 02 A6 */	mflr r0
+/* 105063C4 005063C4  38 63 00 40 */	addi r3, r3, 0x40
+/* 105063C8 005063C8  90 01 00 08 */	stw r0, 8(r1)
+/* 105063CC 005063CC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 105063D0 005063D0  90 81 00 5C */	stw r4, 0x5c(r1)
+/* 105063D4 005063D4  38 81 00 5C */	addi r4, r1, 0x5c
+/* 105063D8 005063D8  48 00 3E A9 */	bl "__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
+/* 105063DC 005063DC  80 63 00 00 */	lwz r3, 0(r3)
+/* 105063E0 005063E0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 105063E4 005063E4  38 21 00 40 */	addi r1, r1, 0x40
+/* 105063E8 005063E8  7C 08 03 A6 */	mtlr r0
+/* 105063EC 005063EC  4E 80 00 20 */	blr 
+
+.global "SetDefaultSndID__13cTSWinCtrlMgrFlUl"
+"SetDefaultSndID__13cTSWinCtrlMgrFlUl":
+/* 10506430 00506430  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506434 00506434  7C 08 02 A6 */	mflr r0
+/* 10506438 00506438  3B E3 00 00 */	addi r31, r3, 0
+/* 1050643C 0050643C  90 01 00 08 */	stw r0, 8(r1)
+/* 10506440 00506440  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10506444 00506444  90 81 00 7C */	stw r4, 0x7c(r1)
+/* 10506448 00506448  38 61 00 48 */	addi r3, r1, 0x48
+/* 1050644C 0050644C  38 81 00 7C */	addi r4, r1, 0x7c
+/* 10506450 00506450  90 A1 00 80 */	stw r5, 0x80(r1)
+/* 10506454 00506454  38 A1 00 80 */	addi r5, r1, 0x80
+/* 10506458 00506458  48 00 40 19 */	bl "__ct__Q23std11pair<Cl,Ul>FRClRCUl"
+/* 1050645C 0050645C  38 A3 00 00 */	addi r5, r3, 0
+/* 10506460 00506460  38 61 00 40 */	addi r3, r1, 0x40
+/* 10506464 00506464  38 9F 00 40 */	addi r4, r31, 0x40
+/* 10506468 00506468  48 00 3E A9 */	bl "insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
+/* 1050646C 0050646C  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 10506470 00506470  38 21 00 60 */	addi r1, r1, 0x60
+/* 10506474 00506474  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506478 00506478  7C 08 03 A6 */	mtlr r0
+/* 1050647C 0050647C  4E 80 00 20 */	blr 
+
+.global "DefaultColor__13cTSWinCtrlMgrFl"
+"DefaultColor__13cTSWinCtrlMgrFl":
+/* 105064C0 005064C0  7C 08 02 A6 */	mflr r0
+/* 105064C4 005064C4  38 63 00 10 */	addi r3, r3, 0x10
+/* 105064C8 005064C8  90 01 00 08 */	stw r0, 8(r1)
+/* 105064CC 005064CC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 105064D0 005064D0  90 81 00 5C */	stw r4, 0x5c(r1)
+/* 105064D4 005064D4  38 81 00 5C */	addi r4, r1, 0x5c
+/* 105064D8 005064D8  48 00 3D A9 */	bl "__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
+/* 105064DC 005064DC  80 63 00 00 */	lwz r3, 0(r3)
+/* 105064E0 005064E0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 105064E4 005064E4  38 21 00 40 */	addi r1, r1, 0x40
+/* 105064E8 005064E8  7C 08 03 A6 */	mtlr r0
+/* 105064EC 005064EC  4E 80 00 20 */	blr 
+
+.global "SetDefaultColor__13cTSWinCtrlMgrFlUl"
+"SetDefaultColor__13cTSWinCtrlMgrFlUl":
+/* 10506530 00506530  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506534 00506534  7C 08 02 A6 */	mflr r0
+/* 10506538 00506538  3B E3 00 00 */	addi r31, r3, 0
+/* 1050653C 0050653C  90 01 00 08 */	stw r0, 8(r1)
+/* 10506540 00506540  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10506544 00506544  90 81 00 7C */	stw r4, 0x7c(r1)
+/* 10506548 00506548  38 61 00 48 */	addi r3, r1, 0x48
+/* 1050654C 0050654C  38 81 00 7C */	addi r4, r1, 0x7c
+/* 10506550 00506550  90 A1 00 80 */	stw r5, 0x80(r1)
+/* 10506554 00506554  38 A1 00 80 */	addi r5, r1, 0x80
+/* 10506558 00506558  48 00 3F 19 */	bl "__ct__Q23std11pair<Cl,Ul>FRClRCUl"
+/* 1050655C 0050655C  38 A3 00 00 */	addi r5, r3, 0
+/* 10506560 00506560  38 61 00 40 */	addi r3, r1, 0x40
+/* 10506564 00506564  38 9F 00 10 */	addi r4, r31, 0x10
+/* 10506568 00506568  48 00 3D A9 */	bl "insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
+/* 1050656C 0050656C  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 10506570 00506570  38 21 00 60 */	addi r1, r1, 0x60
+/* 10506574 00506574  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506578 00506578  7C 08 03 A6 */	mtlr r0
+/* 1050657C 0050657C  4E 80 00 20 */	blr 
+
+.global "GetDefaultColors__13cTSWinCtrlMgrFi"
+"GetDefaultColors__13cTSWinCtrlMgrFi":
+/* 105065C0 005065C0  2C 04 00 04 */	cmpwi r4, 4
+/* 105065C4 005065C4  40 82 00 0C */	bne lbl_105065D0
+/* 105065C8 005065C8  38 63 00 50 */	addi r3, r3, 0x50
+/* 105065CC 005065CC  4E 80 00 20 */	blr 
+lbl_105065D0:
+/* 105065D0 005065D0  38 63 00 60 */	addi r3, r3, 0x60
+/* 105065D4 005065D4  4E 80 00 20 */	blr 
+
+.global "SetDefaultColors__13cTSWinCtrlMgrFiPCUl"
+"SetDefaultColors__13cTSWinCtrlMgrFiPCUl":
+/* 10506610 00506610  7C 08 02 A6 */	mflr r0
+/* 10506614 00506614  2C 04 00 04 */	cmpwi r4, 4
+/* 10506618 00506618  90 01 00 08 */	stw r0, 8(r1)
+/* 1050661C 0050661C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10506620 00506620  40 82 00 18 */	bne lbl_10506638
+/* 10506624 00506624  38 85 00 00 */	addi r4, r5, 0
+/* 10506628 00506628  38 63 00 50 */	addi r3, r3, 0x50
+/* 1050662C 0050662C  38 A0 00 10 */	li r5, 0x10
+/* 10506630 00506630  48 08 73 01 */	bl func_1058D930
+/* 10506634 00506634  48 00 00 1C */	b lbl_10506650
+lbl_10506638:
+/* 10506638 00506638  2C 04 00 06 */	cmpwi r4, 6
+/* 1050663C 0050663C  40 82 00 14 */	bne lbl_10506650
+/* 10506640 00506640  38 85 00 00 */	addi r4, r5, 0
+/* 10506644 00506644  38 63 00 60 */	addi r3, r3, 0x60
+/* 10506648 00506648  38 A0 00 10 */	li r5, 0x10
+/* 1050664C 0050664C  48 08 72 E5 */	bl func_1058D930
+lbl_10506650:
+/* 10506650 00506650  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10506654 00506654  38 21 00 40 */	addi r1, r1, 0x40
+/* 10506658 00506658  7C 08 03 A6 */	mtlr r0
+/* 1050665C 0050665C  4E 80 00 20 */	blr 
+
+.global "DefaultScrollbarHorizontal__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultScrollbarHorizontal__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 105066A0 005066A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105066A4 005066A4  7C 08 02 A6 */	mflr r0
+/* 105066A8 005066A8  3B E4 00 00 */	addi r31, r4, 0
+/* 105066AC 005066AC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105066B0 005066B0  3B C3 00 00 */	addi r30, r3, 0
+/* 105066B4 005066B4  38 60 01 48 */	li r3, 0x148
+/* 105066B8 005066B8  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 105066BC 005066BC  3B A5 00 00 */	addi r29, r5, 0
+/* 105066C0 005066C0  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 105066C4 005066C4  90 01 00 08 */	stw r0, 8(r1)
+/* 105066C8 005066C8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105066CC 005066CC  48 08 1E E5 */	bl func_105885B0
+/* 105066D0 005066D0  7C 7C 1B 79 */	or. r28, r3, r3
+/* 105066D4 005066D4  41 82 00 08 */	beq lbl_105066DC
+/* 105066D8 005066D8  48 01 74 89 */	bl "__ct__15cTSWinScrollbarFv"
+lbl_105066DC:
+/* 105066DC 005066DC  7F C3 F3 78 */	mr r3, r30
+/* 105066E0 005066E0  81 9E 00 00 */	lwz r12, 0(r30)
+/* 105066E4 005066E4  38 80 00 04 */	li r4, 4
+/* 105066E8 005066E8  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 105066EC 005066EC  48 09 34 65 */	bl func_10599B50
+/* 105066F0 005066F0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105066F4 005066F4  38 03 00 00 */	addi r0, r3, 0
+/* 105066F8 005066F8  38 7E 00 00 */	addi r3, r30, 0
+/* 105066FC 005066FC  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506700 00506700  7C 1E 03 78 */	mr r30, r0
+/* 10506704 00506704  38 80 00 04 */	li r4, 4
+/* 10506708 00506708  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 1050670C 0050670C  48 09 34 45 */	bl func_10599B50
+/* 10506710 00506710  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506714 00506714  93 FC 00 08 */	stw r31, 8(r28)
+/* 10506718 00506718  38 03 00 00 */	addi r0, r3, 0
+/* 1050671C 0050671C  38 7C 00 00 */	addi r3, r28, 0
+/* 10506720 00506720  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506724 00506724  7C 1F 03 78 */	mr r31, r0
+/* 10506728 00506728  38 9D 00 00 */	addi r4, r29, 0
+/* 1050672C 0050672C  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506730 00506730  48 09 34 21 */	bl func_10599B50
+/* 10506734 00506734  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506738 00506738  7F 83 E3 78 */	mr r3, r28
+/* 1050673C 0050673C  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506740 00506740  38 80 00 01 */	li r4, 1
+/* 10506744 00506744  81 8C 01 BC */	lwz r12, 0x1bc(r12)
+/* 10506748 00506748  48 09 34 09 */	bl func_10599B50
+/* 1050674C 0050674C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506750 00506750  7F 83 E3 78 */	mr r3, r28
+/* 10506754 00506754  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506758 00506758  38 9E 00 00 */	addi r4, r30, 0
+/* 1050675C 0050675C  38 BF 00 00 */	addi r5, r31, 0
+/* 10506760 00506760  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
+/* 10506764 00506764  48 09 33 ED */	bl func_10599B50
+/* 10506768 00506768  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 1050676C 0050676C  7F 83 E3 78 */	mr r3, r28
+/* 10506770 00506770  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10506774 00506774  38 21 00 50 */	addi r1, r1, 0x50
+/* 10506778 00506778  7C 08 03 A6 */	mtlr r0
+/* 1050677C 0050677C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506780 00506780  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10506784 00506784  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10506788 00506788  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 1050678C 0050678C  4E 80 00 20 */	blr 
+
+.global "DefaultScrollbarVertical__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultScrollbarVertical__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 105067E0 005067E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105067E4 005067E4  7C 08 02 A6 */	mflr r0
+/* 105067E8 005067E8  3B E4 00 00 */	addi r31, r4, 0
+/* 105067EC 005067EC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105067F0 005067F0  3B C3 00 00 */	addi r30, r3, 0
+/* 105067F4 005067F4  38 60 01 48 */	li r3, 0x148
+/* 105067F8 005067F8  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 105067FC 005067FC  3B A5 00 00 */	addi r29, r5, 0
+/* 10506800 00506800  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10506804 00506804  90 01 00 08 */	stw r0, 8(r1)
+/* 10506808 00506808  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050680C 0050680C  48 08 1D A5 */	bl func_105885B0
+/* 10506810 00506810  7C 7C 1B 79 */	or. r28, r3, r3
+/* 10506814 00506814  41 82 00 08 */	beq lbl_1050681C
+/* 10506818 00506818  48 01 73 49 */	bl "__ct__15cTSWinScrollbarFv"
+lbl_1050681C:
+/* 1050681C 0050681C  7F C3 F3 78 */	mr r3, r30
+/* 10506820 00506820  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506824 00506824  38 80 00 04 */	li r4, 4
+/* 10506828 00506828  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 1050682C 0050682C  48 09 33 25 */	bl func_10599B50
+/* 10506830 00506830  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506834 00506834  38 03 00 00 */	addi r0, r3, 0
+/* 10506838 00506838  38 7E 00 00 */	addi r3, r30, 0
+/* 1050683C 0050683C  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506840 00506840  7C 1E 03 78 */	mr r30, r0
+/* 10506844 00506844  38 80 00 04 */	li r4, 4
+/* 10506848 00506848  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 1050684C 0050684C  48 09 33 05 */	bl func_10599B50
+/* 10506850 00506850  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506854 00506854  93 FC 00 08 */	stw r31, 8(r28)
+/* 10506858 00506858  38 03 00 00 */	addi r0, r3, 0
+/* 1050685C 0050685C  38 7C 00 00 */	addi r3, r28, 0
+/* 10506860 00506860  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506864 00506864  7C 1F 03 78 */	mr r31, r0
+/* 10506868 00506868  38 9D 00 00 */	addi r4, r29, 0
+/* 1050686C 0050686C  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506870 00506870  48 09 32 E1 */	bl func_10599B50
+/* 10506874 00506874  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506878 00506878  7F 83 E3 78 */	mr r3, r28
+/* 1050687C 0050687C  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506880 00506880  38 80 00 02 */	li r4, 2
+/* 10506884 00506884  81 8C 01 BC */	lwz r12, 0x1bc(r12)
+/* 10506888 00506888  48 09 32 C9 */	bl func_10599B50
+/* 1050688C 0050688C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506890 00506890  7F 83 E3 78 */	mr r3, r28
+/* 10506894 00506894  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506898 00506898  38 9E 00 00 */	addi r4, r30, 0
+/* 1050689C 0050689C  38 BF 00 00 */	addi r5, r31, 0
+/* 105068A0 005068A0  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
+/* 105068A4 005068A4  48 09 32 AD */	bl func_10599B50
+/* 105068A8 005068A8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105068AC 005068AC  7F 83 E3 78 */	mr r3, r28
+/* 105068B0 005068B0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105068B4 005068B4  38 21 00 50 */	addi r1, r1, 0x50
+/* 105068B8 005068B8  7C 08 03 A6 */	mtlr r0
+/* 105068BC 005068BC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105068C0 005068C0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 105068C4 005068C4  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 105068C8 005068C8  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 105068CC 005068CC  4E 80 00 20 */	blr 
+
+.global "DefaultSliderHorizontal__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultSliderHorizontal__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506920 00506920  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506924 00506924  7C 08 02 A6 */	mflr r0
+/* 10506928 00506928  3B E4 00 00 */	addi r31, r4, 0
+/* 1050692C 0050692C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10506930 00506930  3B C3 00 00 */	addi r30, r3, 0
+/* 10506934 00506934  38 60 01 1C */	li r3, 0x11c
+/* 10506938 00506938  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050693C 0050693C  3B A5 00 00 */	addi r29, r5, 0
+/* 10506940 00506940  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10506944 00506944  90 01 00 08 */	stw r0, 8(r1)
+/* 10506948 00506948  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050694C 0050694C  48 08 1C 65 */	bl func_105885B0
+/* 10506950 00506950  7C 7C 1B 79 */	or. r28, r3, r3
+/* 10506954 00506954  41 82 00 08 */	beq lbl_1050695C
+/* 10506958 00506958  48 01 D7 E9 */	bl "__ct__12cTSWinSliderFv"
+lbl_1050695C:
+/* 1050695C 0050695C  7F C3 F3 78 */	mr r3, r30
+/* 10506960 00506960  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506964 00506964  38 80 00 02 */	li r4, 2
+/* 10506968 00506968  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 1050696C 0050696C  48 09 31 E5 */	bl func_10599B50
+/* 10506970 00506970  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506974 00506974  38 03 00 00 */	addi r0, r3, 0
+/* 10506978 00506978  38 7E 00 00 */	addi r3, r30, 0
+/* 1050697C 0050697C  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506980 00506980  7C 1E 03 78 */	mr r30, r0
+/* 10506984 00506984  38 80 00 02 */	li r4, 2
+/* 10506988 00506988  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 1050698C 0050698C  48 09 31 C5 */	bl func_10599B50
+/* 10506990 00506990  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506994 00506994  93 FC 00 08 */	stw r31, 8(r28)
+/* 10506998 00506998  38 03 00 00 */	addi r0, r3, 0
+/* 1050699C 0050699C  38 7C 00 00 */	addi r3, r28, 0
+/* 105069A0 005069A0  81 9C 00 00 */	lwz r12, 0(r28)
+/* 105069A4 005069A4  7C 1F 03 78 */	mr r31, r0
+/* 105069A8 005069A8  38 9D 00 00 */	addi r4, r29, 0
+/* 105069AC 005069AC  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 105069B0 005069B0  48 09 31 A1 */	bl func_10599B50
+/* 105069B4 005069B4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105069B8 005069B8  7F 83 E3 78 */	mr r3, r28
+/* 105069BC 005069BC  81 9C 00 00 */	lwz r12, 0(r28)
+/* 105069C0 005069C0  38 80 00 01 */	li r4, 1
+/* 105069C4 005069C4  81 8C 01 BC */	lwz r12, 0x1bc(r12)
+/* 105069C8 005069C8  48 09 31 89 */	bl func_10599B50
+/* 105069CC 005069CC  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105069D0 005069D0  7F 83 E3 78 */	mr r3, r28
+/* 105069D4 005069D4  81 9C 00 00 */	lwz r12, 0(r28)
+/* 105069D8 005069D8  38 9E 00 00 */	addi r4, r30, 0
+/* 105069DC 005069DC  38 BF 00 00 */	addi r5, r31, 0
+/* 105069E0 005069E0  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
+/* 105069E4 005069E4  48 09 31 6D */	bl func_10599B50
+/* 105069E8 005069E8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105069EC 005069EC  7F 83 E3 78 */	mr r3, r28
+/* 105069F0 005069F0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105069F4 005069F4  38 21 00 50 */	addi r1, r1, 0x50
+/* 105069F8 005069F8  7C 08 03 A6 */	mtlr r0
+/* 105069FC 005069FC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506A00 00506A00  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10506A04 00506A04  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10506A08 00506A08  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10506A0C 00506A0C  4E 80 00 20 */	blr 
+
+.global "DefaultSliderVertical__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultSliderVertical__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506A60 00506A60  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506A64 00506A64  7C 08 02 A6 */	mflr r0
+/* 10506A68 00506A68  3B E4 00 00 */	addi r31, r4, 0
+/* 10506A6C 00506A6C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10506A70 00506A70  3B C3 00 00 */	addi r30, r3, 0
+/* 10506A74 00506A74  38 60 01 1C */	li r3, 0x11c
+/* 10506A78 00506A78  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10506A7C 00506A7C  3B A5 00 00 */	addi r29, r5, 0
+/* 10506A80 00506A80  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10506A84 00506A84  90 01 00 08 */	stw r0, 8(r1)
+/* 10506A88 00506A88  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10506A8C 00506A8C  48 08 1B 25 */	bl func_105885B0
+/* 10506A90 00506A90  7C 7C 1B 79 */	or. r28, r3, r3
+/* 10506A94 00506A94  41 82 00 08 */	beq lbl_10506A9C
+/* 10506A98 00506A98  48 01 D6 A9 */	bl "__ct__12cTSWinSliderFv"
+lbl_10506A9C:
+/* 10506A9C 00506A9C  7F C3 F3 78 */	mr r3, r30
+/* 10506AA0 00506AA0  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506AA4 00506AA4  38 80 00 03 */	li r4, 3
+/* 10506AA8 00506AA8  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 10506AAC 00506AAC  48 09 30 A5 */	bl func_10599B50
+/* 10506AB0 00506AB0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506AB4 00506AB4  38 03 00 00 */	addi r0, r3, 0
+/* 10506AB8 00506AB8  38 7E 00 00 */	addi r3, r30, 0
+/* 10506ABC 00506ABC  81 9E 00 00 */	lwz r12, 0(r30)
+/* 10506AC0 00506AC0  7C 1E 03 78 */	mr r30, r0
+/* 10506AC4 00506AC4  38 80 00 03 */	li r4, 3
+/* 10506AC8 00506AC8  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 10506ACC 00506ACC  48 09 30 85 */	bl func_10599B50
+/* 10506AD0 00506AD0  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506AD4 00506AD4  93 FC 00 08 */	stw r31, 8(r28)
+/* 10506AD8 00506AD8  38 03 00 00 */	addi r0, r3, 0
+/* 10506ADC 00506ADC  38 7C 00 00 */	addi r3, r28, 0
+/* 10506AE0 00506AE0  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506AE4 00506AE4  7C 1F 03 78 */	mr r31, r0
+/* 10506AE8 00506AE8  38 9D 00 00 */	addi r4, r29, 0
+/* 10506AEC 00506AEC  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506AF0 00506AF0  48 09 30 61 */	bl func_10599B50
+/* 10506AF4 00506AF4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506AF8 00506AF8  7F 83 E3 78 */	mr r3, r28
+/* 10506AFC 00506AFC  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506B00 00506B00  38 80 00 02 */	li r4, 2
+/* 10506B04 00506B04  81 8C 01 BC */	lwz r12, 0x1bc(r12)
+/* 10506B08 00506B08  48 09 30 49 */	bl func_10599B50
+/* 10506B0C 00506B0C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506B10 00506B10  7F 83 E3 78 */	mr r3, r28
+/* 10506B14 00506B14  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506B18 00506B18  38 9E 00 00 */	addi r4, r30, 0
+/* 10506B1C 00506B1C  38 BF 00 00 */	addi r5, r31, 0
+/* 10506B20 00506B20  81 8C 01 C0 */	lwz r12, 0x1c0(r12)
+/* 10506B24 00506B24  48 09 30 2D */	bl func_10599B50
+/* 10506B28 00506B28  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506B2C 00506B2C  7F 83 E3 78 */	mr r3, r28
+/* 10506B30 00506B30  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10506B34 00506B34  38 21 00 50 */	addi r1, r1, 0x50
+/* 10506B38 00506B38  7C 08 03 A6 */	mtlr r0
+/* 10506B3C 00506B3C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506B40 00506B40  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10506B44 00506B44  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10506B48 00506B48  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10506B4C 00506B4C  4E 80 00 20 */	blr 
+
+.global "DefaultLabel__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultLabel__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506BA0 00506BA0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506BA4 00506BA4  7C 08 02 A6 */	mflr r0
+/* 10506BA8 00506BA8  3B E5 00 00 */	addi r31, r5, 0
+/* 10506BAC 00506BAC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10506BB0 00506BB0  3B C4 00 00 */	addi r30, r4, 0
+/* 10506BB4 00506BB4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10506BB8 00506BB8  3B A3 00 00 */	addi r29, r3, 0
+/* 10506BBC 00506BBC  38 60 01 08 */	li r3, 0x108
+/* 10506BC0 00506BC0  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10506BC4 00506BC4  90 01 00 08 */	stw r0, 8(r1)
+/* 10506BC8 00506BC8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10506BCC 00506BCC  48 08 19 E5 */	bl func_105885B0
+/* 10506BD0 00506BD0  7C 7C 1B 79 */	or. r28, r3, r3
+/* 10506BD4 00506BD4  41 82 00 08 */	beq lbl_10506BDC
+/* 10506BD8 00506BD8  48 02 8F E9 */	bl "__ct__10cTSWinTextFv"
+lbl_10506BDC:
+/* 10506BDC 00506BDC  93 DC 00 08 */	stw r30, 8(r28)
+/* 10506BE0 00506BE0  38 7C 00 00 */	addi r3, r28, 0
+/* 10506BE4 00506BE4  38 9F 00 00 */	addi r4, r31, 0
+/* 10506BE8 00506BE8  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506BEC 00506BEC  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506BF0 00506BF0  48 09 2F 61 */	bl func_10599B50
+/* 10506BF4 00506BF4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506BF8 00506BF8  7F A3 EB 78 */	mr r3, r29
+/* 10506BFC 00506BFC  81 9D 00 00 */	lwz r12, 0(r29)
+/* 10506C00 00506C00  38 80 00 00 */	li r4, 0
+/* 10506C04 00506C04  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 10506C08 00506C08  48 09 2F 49 */	bl func_10599B50
+/* 10506C0C 00506C0C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C10 00506C10  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506C14 00506C14  38 83 00 00 */	addi r4, r3, 0
+/* 10506C18 00506C18  38 7C 00 00 */	addi r3, r28, 0
+/* 10506C1C 00506C1C  81 8C 01 F0 */	lwz r12, 0x1f0(r12)
+/* 10506C20 00506C20  48 09 2F 31 */	bl func_10599B50
+/* 10506C24 00506C24  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C28 00506C28  7F 83 E3 78 */	mr r3, r28
+/* 10506C2C 00506C2C  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506C30 00506C30  38 80 00 01 */	li r4, 1
+/* 10506C34 00506C34  81 8C 01 F4 */	lwz r12, 0x1f4(r12)
+/* 10506C38 00506C38  48 09 2F 19 */	bl func_10599B50
+/* 10506C3C 00506C3C  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C40 00506C40  7F 83 E3 78 */	mr r3, r28
+/* 10506C44 00506C44  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506C48 00506C48  38 80 00 00 */	li r4, 0
+/* 10506C4C 00506C4C  81 8C 01 EC */	lwz r12, 0x1ec(r12)
+/* 10506C50 00506C50  48 09 2F 01 */	bl func_10599B50
+/* 10506C54 00506C54  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C58 00506C58  7F 83 E3 78 */	mr r3, r28
+/* 10506C5C 00506C5C  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506C60 00506C60  38 80 00 02 */	li r4, 2
+/* 10506C64 00506C64  38 A0 00 00 */	li r5, 0
+/* 10506C68 00506C68  81 8C 01 E4 */	lwz r12, 0x1e4(r12)
+/* 10506C6C 00506C6C  48 09 2E E5 */	bl func_10599B50
+/* 10506C70 00506C70  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C74 00506C74  7F 83 E3 78 */	mr r3, r28
+/* 10506C78 00506C78  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506C7C 00506C7C  81 8C 01 D8 */	lwz r12, 0x1d8(r12)
+/* 10506C80 00506C80  48 09 2E D1 */	bl func_10599B50
+/* 10506C84 00506C84  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506C88 00506C88  7F 83 E3 78 */	mr r3, r28
+/* 10506C8C 00506C8C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10506C90 00506C90  38 21 00 50 */	addi r1, r1, 0x50
+/* 10506C94 00506C94  7C 08 03 A6 */	mtlr r0
+/* 10506C98 00506C98  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506C9C 00506C9C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10506CA0 00506CA0  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10506CA4 00506CA4  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10506CA8 00506CA8  4E 80 00 20 */	blr 
+
+.global "DefaultPushBtn__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultPushBtn__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506CF0 00506CF0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506CF4 00506CF4  7C 08 02 A6 */	mflr r0
+/* 10506CF8 00506CF8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10506CFC 00506CFC  3B C5 00 00 */	addi r30, r5, 0
+/* 10506D00 00506D00  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10506D04 00506D04  3B A4 00 00 */	addi r29, r4, 0
+/* 10506D08 00506D08  38 80 00 00 */	li r4, 0
+/* 10506D0C 00506D0C  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10506D10 00506D10  90 01 00 08 */	stw r0, 8(r1)
+/* 10506D14 00506D14  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10506D18 00506D18  81 83 00 00 */	lwz r12, 0(r3)
+/* 10506D1C 00506D1C  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 10506D20 00506D20  48 09 2E 31 */	bl func_10599B50
+/* 10506D24 00506D24  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506D28 00506D28  3B E3 00 00 */	addi r31, r3, 0
+/* 10506D2C 00506D2C  38 80 00 FF */	li r4, 0xff
+/* 10506D30 00506D30  38 A0 00 00 */	li r5, 0
+/* 10506D34 00506D34  38 C0 00 FF */	li r6, 0xff
+/* 10506D38 00506D38  4B F7 E7 B9 */	bl "ConvertRGBValueToNative16Bit__9cTSBufferFUcUcUc"
+/* 10506D3C 00506D3C  81 9F 00 00 */	lwz r12, 0(r31)
+/* 10506D40 00506D40  54 64 04 3E */	clrlwi r4, r3, 0x10
+/* 10506D44 00506D44  38 7F 00 00 */	addi r3, r31, 0
+/* 10506D48 00506D48  81 8C 00 70 */	lwz r12, 0x70(r12)
+/* 10506D4C 00506D4C  48 09 2E 05 */	bl func_10599B50
+/* 10506D50 00506D50  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506D54 00506D54  38 60 01 A4 */	li r3, 0x1a4
+/* 10506D58 00506D58  48 08 18 59 */	bl func_105885B0
+/* 10506D5C 00506D5C  7C 7C 1B 79 */	or. r28, r3, r3
+/* 10506D60 00506D60  41 82 00 0C */	beq lbl_10506D6C
+/* 10506D64 00506D64  7F E4 FB 78 */	mr r4, r31
+/* 10506D68 00506D68  4B FF 0C 89 */	bl "__ct__15cTSSystemButtonFP9cTSBuffer"
+lbl_10506D6C:
+/* 10506D6C 00506D6C  28 1C 00 00 */	cmplwi r28, 0
+/* 10506D70 00506D70  3B FC 00 00 */	addi r31, r28, 0
+/* 10506D74 00506D74  41 82 00 5C */	beq lbl_10506DD0
+/* 10506D78 00506D78  93 BC 00 08 */	stw r29, 8(r28)
+/* 10506D7C 00506D7C  38 7C 00 00 */	addi r3, r28, 0
+/* 10506D80 00506D80  38 9E 00 00 */	addi r4, r30, 0
+/* 10506D84 00506D84  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506D88 00506D88  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506D8C 00506D8C  48 09 2D C5 */	bl func_10599B50
+/* 10506D90 00506D90  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506D94 00506D94  38 00 00 00 */	li r0, 0
+/* 10506D98 00506D98  90 1C 00 EC */	stw r0, 0xec(r28)
+/* 10506D9C 00506D9C  80 9C 00 74 */	lwz r4, 0x74(r28)
+/* 10506DA0 00506DA0  80 1C 00 7C */	lwz r0, 0x7c(r28)
+/* 10506DA4 00506DA4  7C 04 00 50 */	subf r0, r4, r0
+/* 10506DA8 00506DA8  2C 00 00 64 */	cmpwi r0, 0x64
+/* 10506DAC 00506DAC  40 80 00 24 */	bge lbl_10506DD0
+/* 10506DB0 00506DB0  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506DB4 00506DB4  7F 83 E3 78 */	mr r3, r28
+/* 10506DB8 00506DB8  80 BC 00 78 */	lwz r5, 0x78(r28)
+/* 10506DBC 00506DBC  38 C4 00 64 */	addi r6, r4, 0x64
+/* 10506DC0 00506DC0  80 FC 00 80 */	lwz r7, 0x80(r28)
+/* 10506DC4 00506DC4  81 8C 00 68 */	lwz r12, 0x68(r12)
+/* 10506DC8 00506DC8  48 09 2D 89 */	bl func_10599B50
+/* 10506DCC 00506DCC  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10506DD0:
+/* 10506DD0 00506DD0  7F E3 FB 78 */	mr r3, r31
+/* 10506DD4 00506DD4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10506DD8 00506DD8  38 21 00 50 */	addi r1, r1, 0x50
+/* 10506DDC 00506DDC  7C 08 03 A6 */	mtlr r0
+/* 10506DE0 00506DE0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10506DE4 00506DE4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10506DE8 00506DE8  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10506DEC 00506DEC  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10506DF0 00506DF0  4E 80 00 20 */	blr 
+
+.global "DefaultOptGrp__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultOptGrp__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506E40 00506E40  38 60 00 00 */	li r3, 0
+/* 10506E44 00506E44  4E 80 00 20 */	blr 
+
+.global "DefaultCheckBox__13cTSWinCtrlMgrFUlRC9cTSString"
+"DefaultCheckBox__13cTSWinCtrlMgrFUlRC9cTSString":
+/* 10506E90 00506E90  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 10506E94 00506E94  7C 08 02 A6 */	mflr r0
+/* 10506E98 00506E98  3B 83 00 00 */	addi r28, r3, 0
+/* 10506E9C 00506E9C  3B A4 00 00 */	addi r29, r4, 0
+/* 10506EA0 00506EA0  3B C5 00 00 */	addi r30, r5, 0
+/* 10506EA4 00506EA4  38 60 00 E0 */	li r3, 0xe0
+/* 10506EA8 00506EA8  90 01 00 08 */	stw r0, 8(r1)
+/* 10506EAC 00506EAC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10506EB0 00506EB0  48 08 17 01 */	bl func_105885B0
+/* 10506EB4 00506EB4  7C 7B 1B 79 */	or. r27, r3, r3
+/* 10506EB8 00506EB8  41 82 00 08 */	beq lbl_10506EC0
+/* 10506EBC 00506EBC  4B FF AA 75 */	bl "__ct__11cTSWinCheckFv"
+lbl_10506EC0:
+/* 10506EC0 00506EC0  7F 83 E3 78 */	mr r3, r28
+/* 10506EC4 00506EC4  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506EC8 00506EC8  38 80 00 01 */	li r4, 1
+/* 10506ECC 00506ECC  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 10506ED0 00506ED0  48 09 2C 81 */	bl func_10599B50
+/* 10506ED4 00506ED4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506ED8 00506ED8  28 1B 00 00 */	cmplwi r27, 0
+/* 10506EDC 00506EDC  3B E3 00 00 */	addi r31, r3, 0
+/* 10506EE0 00506EE0  41 82 00 A4 */	beq lbl_10506F84
+/* 10506EE4 00506EE4  28 1F 00 00 */	cmplwi r31, 0
+/* 10506EE8 00506EE8  41 82 00 9C */	beq lbl_10506F84
+/* 10506EEC 00506EEC  7F 83 E3 78 */	mr r3, r28
+/* 10506EF0 00506EF0  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506EF4 00506EF4  38 80 00 01 */	li r4, 1
+/* 10506EF8 00506EF8  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 10506EFC 00506EFC  48 09 2C 55 */	bl func_10599B50
+/* 10506F00 00506F00  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506F04 00506F04  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 10506F08 00506F08  41 82 00 30 */	beq lbl_10506F38
+/* 10506F0C 00506F0C  38 7F 00 00 */	addi r3, r31, 0
+/* 10506F10 00506F10  38 80 00 FF */	li r4, 0xff
+/* 10506F14 00506F14  38 A0 00 00 */	li r5, 0
+/* 10506F18 00506F18  38 C0 00 FF */	li r6, 0xff
+/* 10506F1C 00506F1C  4B F7 E5 D5 */	bl "ConvertRGBValueToNative16Bit__9cTSBufferFUcUcUc"
+/* 10506F20 00506F20  81 9F 00 00 */	lwz r12, 0(r31)
+/* 10506F24 00506F24  54 64 04 3E */	clrlwi r4, r3, 0x10
+/* 10506F28 00506F28  38 7F 00 00 */	addi r3, r31, 0
+/* 10506F2C 00506F2C  81 8C 00 70 */	lwz r12, 0x70(r12)
+/* 10506F30 00506F30  48 09 2C 21 */	bl func_10599B50
+/* 10506F34 00506F34  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10506F38:
+/* 10506F38 00506F38  93 BB 00 08 */	stw r29, 8(r27)
+/* 10506F3C 00506F3C  38 7B 00 00 */	addi r3, r27, 0
+/* 10506F40 00506F40  38 9E 00 00 */	addi r4, r30, 0
+/* 10506F44 00506F44  81 9B 00 00 */	lwz r12, 0(r27)
+/* 10506F48 00506F48  81 8C 00 A4 */	lwz r12, 0xa4(r12)
+/* 10506F4C 00506F4C  48 09 2C 05 */	bl func_10599B50
+/* 10506F50 00506F50  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506F54 00506F54  7F 83 E3 78 */	mr r3, r28
+/* 10506F58 00506F58  81 9C 00 00 */	lwz r12, 0(r28)
+/* 10506F5C 00506F5C  38 80 00 00 */	li r4, 0
+/* 10506F60 00506F60  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 10506F64 00506F64  48 09 2B ED */	bl func_10599B50
+/* 10506F68 00506F68  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10506F6C 00506F6C  38 83 00 00 */	addi r4, r3, 0
+/* 10506F70 00506F70  38 7B 00 00 */	addi r3, r27, 0
+/* 10506F74 00506F74  4B FF A1 FD */	bl "SetFont__11cTSWinCheckFP8cITSFont"
+/* 10506F78 00506F78  38 7B 00 00 */	addi r3, r27, 0
+/* 10506F7C 00506F7C  38 9F 00 00 */	addi r4, r31, 0
+/* 10506F80 00506F80  4B FF A2 31 */	bl "SetImage__11cTSWinCheckFP9cTSBuffer"
+lbl_10506F84:
+/* 10506F84 00506F84  7F 63 DB 78 */	mr r3, r27
+/* 10506F88 00506F88  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 10506F8C 00506F8C  38 21 00 60 */	addi r1, r1, 0x60
+/* 10506F90 00506F90  7C 08 03 A6 */	mtlr r0
+/* 10506F94 00506F94  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 10506F98 00506F98  4E 80 00 20 */	blr 
+
+.global "Shutdown__13cTSWinCtrlMgrFv"
+"Shutdown__13cTSWinCtrlMgrFv":
+/* 10506FE0 00506FE0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10506FE4 00506FE4  7C 08 02 A6 */	mflr r0
+/* 10506FE8 00506FE8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10506FEC 00506FEC  7C 7E 1B 78 */	mr r30, r3
+/* 10506FF0 00506FF0  90 01 00 08 */	stw r0, 8(r1)
+/* 10506FF4 00506FF4  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 10506FF8 00506FF8  88 03 00 04 */	lbz r0, 4(r3)
+/* 10506FFC 00506FFC  28 00 00 00 */	cmplwi r0, 0
+/* 10507000 00507000  40 82 00 0C */	bne lbl_1050700C
+/* 10507004 00507004  38 60 00 01 */	li r3, 1
+/* 10507008 00507008  48 00 02 18 */	b lbl_10507220
+lbl_1050700C:
+/* 1050700C 0050700C  38 61 00 50 */	addi r3, r1, 0x50
+/* 10507010 00507010  38 9E 00 10 */	addi r4, r30, 0x10
+/* 10507014 00507014  48 00 21 8D */	bl "end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10507018 00507018  38 61 00 4C */	addi r3, r1, 0x4c
+/* 1050701C 0050701C  38 9E 00 10 */	addi r4, r30, 0x10
+/* 10507020 00507020  48 00 1E 91 */	bl "begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10507024 00507024  38 61 00 7C */	addi r3, r1, 0x7c
+/* 10507028 00507028  38 81 00 50 */	addi r4, r1, 0x50
+/* 1050702C 0050702C  48 00 1C E5 */	bl "__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 10507030 00507030  3B E3 00 00 */	addi r31, r3, 0
+/* 10507034 00507034  38 61 00 78 */	addi r3, r1, 0x78
+/* 10507038 00507038  38 81 00 4C */	addi r4, r1, 0x4c
+/* 1050703C 0050703C  48 00 1C D5 */	bl "__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 10507040 00507040  38 83 00 00 */	addi r4, r3, 0
+/* 10507044 00507044  38 7E 00 10 */	addi r3, r30, 0x10
+/* 10507048 00507048  38 BF 00 00 */	addi r5, r31, 0
+/* 1050704C 0050704C  48 00 1A 15 */	bl "erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 10507050 00507050  38 61 00 40 */	addi r3, r1, 0x40
+/* 10507054 00507054  38 9E 00 20 */	addi r4, r30, 0x20
+/* 10507058 00507058  48 00 19 19 */	bl "begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050705C 0050705C  48 00 00 24 */	b lbl_10507080
+lbl_10507060:
+/* 10507060 00507060  80 7E 00 08 */	lwz r3, 8(r30)
+/* 10507064 00507064  80 84 00 10 */	lwz r4, 0x10(r4)
+/* 10507068 00507068  81 83 00 00 */	lwz r12, 0(r3)
+/* 1050706C 0050706C  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 10507070 00507070  48 09 2A E1 */	bl func_10599B50
+/* 10507074 00507074  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10507078 00507078  38 61 00 40 */	addi r3, r1, 0x40
+/* 1050707C 0050707C  4B B7 DC 15 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+lbl_10507080:
+/* 10507080 00507080  38 61 00 54 */	addi r3, r1, 0x54
+/* 10507084 00507084  38 9E 00 20 */	addi r4, r30, 0x20
+/* 10507088 00507088  48 00 17 F9 */	bl "end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050708C 0050708C  80 81 00 40 */	lwz r4, 0x40(r1)
+/* 10507090 00507090  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 10507094 00507094  7C 04 00 40 */	cmplw r4, r0
+/* 10507098 00507098  40 82 FF C8 */	bne lbl_10507060
+/* 1050709C 0050709C  38 61 00 5C */	addi r3, r1, 0x5c
+/* 105070A0 005070A0  38 9E 00 20 */	addi r4, r30, 0x20
+/* 105070A4 005070A4  4B FF EC BD */	bl "end__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 105070A8 005070A8  38 61 00 58 */	addi r3, r1, 0x58
+/* 105070AC 005070AC  38 9E 00 20 */	addi r4, r30, 0x20
+/* 105070B0 005070B0  48 00 16 31 */	bl "begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 105070B4 005070B4  38 61 00 84 */	addi r3, r1, 0x84
+/* 105070B8 005070B8  38 81 00 5C */	addi r4, r1, 0x5c
+/* 105070BC 005070BC  48 00 14 45 */	bl "__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+/* 105070C0 005070C0  3B E3 00 00 */	addi r31, r3, 0
+/* 105070C4 005070C4  38 61 00 80 */	addi r3, r1, 0x80
+/* 105070C8 005070C8  38 81 00 58 */	addi r4, r1, 0x58
+/* 105070CC 005070CC  48 00 14 35 */	bl "__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+/* 105070D0 005070D0  38 83 00 00 */	addi r4, r3, 0
+/* 105070D4 005070D4  38 7E 00 20 */	addi r3, r30, 0x20
+/* 105070D8 005070D8  38 BF 00 00 */	addi r5, r31, 0
+/* 105070DC 005070DC  48 00 11 15 */	bl "erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+/* 105070E0 005070E0  38 61 00 44 */	addi r3, r1, 0x44
+/* 105070E4 005070E4  38 9E 00 30 */	addi r4, r30, 0x30
+/* 105070E8 005070E8  48 00 0F D9 */	bl "begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 105070EC 005070EC  48 00 00 30 */	b lbl_1050711C
+/* 105070F0 005070F0  60 00 00 00 */	nop 
+lbl_105070F4:
+/* 105070F4 005070F4  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 105070F8 005070F8  28 03 00 00 */	cmplwi r3, 0
+/* 105070FC 005070FC  41 82 00 18 */	beq lbl_10507114
+/* 10507100 00507100  81 83 00 00 */	lwz r12, 0(r3)
+/* 10507104 00507104  38 80 00 01 */	li r4, 1
+/* 10507108 00507108  81 8C 00 08 */	lwz r12, 8(r12)
+/* 1050710C 0050710C  48 09 2A 45 */	bl func_10599B50
+/* 10507110 00507110  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10507114:
+/* 10507114 00507114  38 61 00 44 */	addi r3, r1, 0x44
+/* 10507118 00507118  4B B7 DB 79 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+lbl_1050711C:
+/* 1050711C 0050711C  38 61 00 60 */	addi r3, r1, 0x60
+/* 10507120 00507120  38 9E 00 30 */	addi r4, r30, 0x30
+/* 10507124 00507124  4B FF F0 FD */	bl "end__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10507128 00507128  80 61 00 44 */	lwz r3, 0x44(r1)
+/* 1050712C 0050712C  80 01 00 60 */	lwz r0, 0x60(r1)
+/* 10507130 00507130  7C 03 00 40 */	cmplw r3, r0
+/* 10507134 00507134  40 82 FF C0 */	bne lbl_105070F4
+/* 10507138 00507138  38 61 00 68 */	addi r3, r1, 0x68
+/* 1050713C 0050713C  38 9E 00 30 */	addi r4, r30, 0x30
+/* 10507140 00507140  48 00 0D 81 */	bl "end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10507144 00507144  38 61 00 64 */	addi r3, r1, 0x64
+/* 10507148 00507148  38 9E 00 30 */	addi r4, r30, 0x30
+/* 1050714C 0050714C  48 00 09 15 */	bl "begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10507150 00507150  38 61 00 8C */	addi r3, r1, 0x8c
+/* 10507154 00507154  38 81 00 68 */	addi r4, r1, 0x68
+/* 10507158 00507158  48 00 06 99 */	bl "__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+/* 1050715C 0050715C  3B E3 00 00 */	addi r31, r3, 0
+/* 10507160 00507160  38 61 00 88 */	addi r3, r1, 0x88
+/* 10507164 00507164  38 81 00 64 */	addi r4, r1, 0x64
+/* 10507168 00507168  48 00 06 89 */	bl "__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+/* 1050716C 0050716C  38 83 00 00 */	addi r4, r3, 0
+/* 10507170 00507170  38 7E 00 30 */	addi r3, r30, 0x30
+/* 10507174 00507174  38 BF 00 00 */	addi r5, r31, 0
+/* 10507178 00507178  48 00 02 99 */	bl "erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+/* 1050717C 0050717C  38 61 00 48 */	addi r3, r1, 0x48
+/* 10507180 00507180  38 9E 00 40 */	addi r4, r30, 0x40
+/* 10507184 00507184  48 00 01 BD */	bl "begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10507188 00507188  48 00 00 2C */	b lbl_105071B4
+/* 1050718C 0050718C  60 00 00 00 */	nop 
+lbl_10507190:
+/* 10507190 00507190  80 7E 00 0C */	lwz r3, 0xc(r30)
+/* 10507194 00507194  38 A0 00 01 */	li r5, 1
+/* 10507198 00507198  80 84 00 10 */	lwz r4, 0x10(r4)
+/* 1050719C 0050719C  81 83 00 00 */	lwz r12, 0(r3)
+/* 105071A0 005071A0  81 8C 00 38 */	lwz r12, 0x38(r12)
+/* 105071A4 005071A4  48 09 29 AD */	bl func_10599B50
+/* 105071A8 005071A8  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105071AC 005071AC  38 61 00 48 */	addi r3, r1, 0x48
+/* 105071B0 005071B0  4B B7 DA E1 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+lbl_105071B4:
+/* 105071B4 005071B4  38 61 00 6C */	addi r3, r1, 0x6c
+/* 105071B8 005071B8  38 9E 00 40 */	addi r4, r30, 0x40
+/* 105071BC 005071BC  48 00 00 B5 */	bl "end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105071C0 005071C0  80 81 00 48 */	lwz r4, 0x48(r1)
+/* 105071C4 005071C4  80 01 00 6C */	lwz r0, 0x6c(r1)
+/* 105071C8 005071C8  7C 04 00 40 */	cmplw r4, r0
+/* 105071CC 005071CC  40 82 FF C4 */	bne lbl_10507190
+/* 105071D0 005071D0  38 61 00 74 */	addi r3, r1, 0x74
+/* 105071D4 005071D4  38 9E 00 40 */	addi r4, r30, 0x40
+/* 105071D8 005071D8  48 00 1F C9 */	bl "end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105071DC 005071DC  38 61 00 70 */	addi r3, r1, 0x70
+/* 105071E0 005071E0  38 9E 00 40 */	addi r4, r30, 0x40
+/* 105071E4 005071E4  48 00 1C CD */	bl "begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105071E8 005071E8  38 61 00 94 */	addi r3, r1, 0x94
+/* 105071EC 005071EC  38 81 00 74 */	addi r4, r1, 0x74
+/* 105071F0 005071F0  48 00 1B 21 */	bl "__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 105071F4 005071F4  3B E3 00 00 */	addi r31, r3, 0
+/* 105071F8 005071F8  38 61 00 90 */	addi r3, r1, 0x90
+/* 105071FC 005071FC  38 81 00 70 */	addi r4, r1, 0x70
+/* 10507200 00507200  48 00 1B 11 */	bl "__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 10507204 00507204  38 83 00 00 */	addi r4, r3, 0
+/* 10507208 00507208  38 7E 00 40 */	addi r3, r30, 0x40
+/* 1050720C 0050720C  38 BF 00 00 */	addi r5, r31, 0
+/* 10507210 00507210  48 00 18 51 */	bl "erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+/* 10507214 00507214  38 00 00 00 */	li r0, 0
+/* 10507218 00507218  98 1E 00 04 */	stb r0, 4(r30)
+/* 1050721C 0050721C  38 60 00 01 */	li r3, 1
+lbl_10507220:
+/* 10507220 00507220  80 01 00 B8 */	lwz r0, 0xb8(r1)
+/* 10507224 00507224  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 10507228 00507228  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050722C 0050722C  7C 08 03 A6 */	mtlr r0
+/* 10507230 00507230  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10507234 00507234  4E 80 00 20 */	blr 
+
+.global "end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"end__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10507270 00507270  38 04 00 04 */	addi r0, r4, 4
+/* 10507274 00507274  90 03 00 00 */	stw r0, 0(r3)
+/* 10507278 00507278  4E 80 00 20 */	blr 
+
+.global "begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"begin__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10507340 00507340  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 10507344 00507344  90 03 00 00 */	stw r0, 0(r3)
+/* 10507348 00507348  4E 80 00 20 */	blr 
+
+.global "erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+"erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
+/* 10507410 00507410  93 E1 FF FC */	stw r31, -4(r1)
+/* 10507414 00507414  7C 08 02 A6 */	mflr r0
+/* 10507418 00507418  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050741C 0050741C  3B C5 00 00 */	addi r30, r5, 0
+/* 10507420 00507420  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10507424 00507424  3B A4 00 00 */	addi r29, r4, 0
+/* 10507428 00507428  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 1050742C 0050742C  3B 83 00 00 */	addi r28, r3, 0
+/* 10507430 00507430  90 01 00 08 */	stw r0, 8(r1)
+/* 10507434 00507434  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10507438 00507438  48 00 00 20 */	b lbl_10507458
+/* 1050743C 0050743C  60 00 00 00 */	nop 
+lbl_10507440:
+/* 10507440 00507440  7F A3 EB 78 */	mr r3, r29
+/* 10507444 00507444  4B B7 D8 4D */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 10507448 00507448  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 1050744C 0050744C  38 7C 00 00 */	addi r3, r28, 0
+/* 10507450 00507450  38 81 00 40 */	addi r4, r1, 0x40
+/* 10507454 00507454  48 00 74 FD */	bl "erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+lbl_10507458:
+/* 10507458 00507458  83 FD 00 00 */	lwz r31, 0(r29)
+/* 1050745C 0050745C  80 1E 00 00 */	lwz r0, 0(r30)
+/* 10507460 00507460  7C 1F 00 40 */	cmplw r31, r0
+/* 10507464 00507464  40 82 FF DC */	bne lbl_10507440
+/* 10507468 00507468  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050746C 0050746C  38 21 00 60 */	addi r1, r1, 0x60
+/* 10507470 00507470  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10507474 00507474  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10507478 00507478  7C 08 03 A6 */	mtlr r0
+/* 1050747C 0050747C  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10507480 00507480  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10507484 00507484  4E 80 00 20 */	blr 
+
+.global "__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+"__ct__Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>FRCQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
+/* 105077F0 005077F0  80 04 00 00 */	lwz r0, 0(r4)
+/* 105077F4 005077F4  90 03 00 00 */	stw r0, 0(r3)
+/* 105077F8 005077F8  4E 80 00 20 */	blr 
+
+.global "begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"begin__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10507A60 00507A60  93 E1 FF FC */	stw r31, -4(r1)
+/* 10507A64 00507A64  7C 08 02 A6 */	mflr r0
+/* 10507A68 00507A68  3B E3 00 00 */	addi r31, r3, 0
+/* 10507A6C 00507A6C  38 64 00 00 */	addi r3, r4, 0
+/* 10507A70 00507A70  90 01 00 08 */	stw r0, 8(r1)
+/* 10507A74 00507A74  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10507A78 00507A78  48 00 03 19 */	bl "front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10507A7C 00507A7C  80 83 00 00 */	lwz r4, 0(r3)
+/* 10507A80 00507A80  7F E3 FB 78 */	mr r3, r31
+/* 10507A84 00507A84  48 00 00 BD */	bl "__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+/* 10507A88 00507A88  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10507A8C 00507A8C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10507A90 00507A90  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10507A94 00507A94  7C 08 03 A6 */	mtlr r0
+/* 10507A98 00507A98  4E 80 00 20 */	blr 
+
+.global "__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+"__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node":
+/* 10507B40 00507B40  90 83 00 00 */	stw r4, 0(r3)
+/* 10507B44 00507B44  4E 80 00 20 */	blr 
+
+.global "front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10507D90 00507D90  38 63 00 0C */	addi r3, r3, 0xc
+/* 10507D94 00507D94  4E 80 00 20 */	blr 
+
+.global "end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"end__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10507EC0 00507EC0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10507EC4 00507EC4  7C 08 02 A6 */	mflr r0
+/* 10507EC8 00507EC8  3B E3 00 00 */	addi r31, r3, 0
+/* 10507ECC 00507ECC  38 64 00 00 */	addi r3, r4, 0
+/* 10507ED0 00507ED0  90 01 00 08 */	stw r0, 8(r1)
+/* 10507ED4 00507ED4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10507ED8 00507ED8  48 00 00 B9 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10507EDC 00507EDC  38 83 00 00 */	addi r4, r3, 0
+/* 10507EE0 00507EE0  38 7F 00 00 */	addi r3, r31, 0
+/* 10507EE4 00507EE4  4B FF FC 5D */	bl "__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+/* 10507EE8 00507EE8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10507EEC 00507EEC  38 21 00 50 */	addi r1, r1, 0x50
+/* 10507EF0 00507EF0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10507EF4 00507EF4  7C 08 03 A6 */	mtlr r0
+/* 10507EF8 00507EF8  4E 80 00 20 */	blr 
+
+.global "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10507F90 00507F90  38 63 00 04 */	addi r3, r3, 4
+/* 10507F94 00507F94  4E 80 00 20 */	blr 
+
+.global "begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"begin__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 105080C0 005080C0  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 105080C4 005080C4  90 03 00 00 */	stw r0, 0(r3)
+/* 105080C8 005080C8  4E 80 00 20 */	blr 
+
+.global "erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+"erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
+/* 105081F0 005081F0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105081F4 005081F4  7C 08 02 A6 */	mflr r0
+/* 105081F8 005081F8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105081FC 005081FC  3B C5 00 00 */	addi r30, r5, 0
+/* 10508200 00508200  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10508204 00508204  3B A4 00 00 */	addi r29, r4, 0
+/* 10508208 00508208  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 1050820C 0050820C  3B 83 00 00 */	addi r28, r3, 0
+/* 10508210 00508210  90 01 00 08 */	stw r0, 8(r1)
+/* 10508214 00508214  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10508218 00508218  48 00 00 20 */	b lbl_10508238
+/* 1050821C 0050821C  60 00 00 00 */	nop 
+lbl_10508220:
+/* 10508220 00508220  7F A3 EB 78 */	mr r3, r29
+/* 10508224 00508224  4B B7 CA 6D */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 10508228 00508228  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 1050822C 0050822C  38 7C 00 00 */	addi r3, r28, 0
+/* 10508230 00508230  38 81 00 40 */	addi r4, r1, 0x40
+/* 10508234 00508234  48 00 4F FD */	bl "erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+lbl_10508238:
+/* 10508238 00508238  83 FD 00 00 */	lwz r31, 0(r29)
+/* 1050823C 0050823C  80 1E 00 00 */	lwz r0, 0(r30)
+/* 10508240 00508240  7C 1F 00 40 */	cmplw r31, r0
+/* 10508244 00508244  40 82 FF DC */	bne lbl_10508220
+/* 10508248 00508248  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050824C 0050824C  38 21 00 60 */	addi r1, r1, 0x60
+/* 10508250 00508250  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10508254 00508254  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10508258 00508258  7C 08 03 A6 */	mtlr r0
+/* 1050825C 0050825C  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10508260 00508260  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10508264 00508264  4E 80 00 20 */	blr 
+
+.global "__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+"__ct__Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>FRCQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
+/* 10508500 00508500  80 04 00 00 */	lwz r0, 0(r4)
+/* 10508504 00508504  90 03 00 00 */	stw r0, 0(r3)
+/* 10508508 00508508  4E 80 00 20 */	blr 
+
+.global "begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"begin__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 105086E0 005086E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105086E4 005086E4  7C 08 02 A6 */	mflr r0
+/* 105086E8 005086E8  3B E3 00 00 */	addi r31, r3, 0
+/* 105086EC 005086EC  38 64 00 00 */	addi r3, r4, 0
+/* 105086F0 005086F0  90 01 00 08 */	stw r0, 8(r1)
+/* 105086F4 005086F4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105086F8 005086F8  48 00 00 99 */	bl "front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 105086FC 005086FC  80 83 00 00 */	lwz r4, 0(r3)
+/* 10508700 00508700  7F E3 FB 78 */	mr r3, r31
+/* 10508704 00508704  4B FF D7 0D */	bl "__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+/* 10508708 00508708  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1050870C 0050870C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10508710 00508710  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10508714 00508714  7C 08 03 A6 */	mtlr r0
+/* 10508718 00508718  4E 80 00 20 */	blr 
+
+.global "front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10508790 00508790  38 63 00 0C */	addi r3, r3, 0xc
+/* 10508794 00508794  4E 80 00 20 */	blr 
+
+.global "end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"end__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10508880 00508880  38 04 00 04 */	addi r0, r4, 4
+/* 10508884 00508884  90 03 00 00 */	stw r0, 0(r3)
+/* 10508888 00508888  4E 80 00 20 */	blr 
+
+.global "begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"begin__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10508970 00508970  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 10508974 00508974  90 03 00 00 */	stw r0, 0(r3)
+/* 10508978 00508978  4E 80 00 20 */	blr 
+
+.global "erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+"erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
+/* 10508A60 00508A60  93 E1 FF FC */	stw r31, -4(r1)
+/* 10508A64 00508A64  7C 08 02 A6 */	mflr r0
+/* 10508A68 00508A68  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10508A6C 00508A6C  3B C5 00 00 */	addi r30, r5, 0
+/* 10508A70 00508A70  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10508A74 00508A74  3B A4 00 00 */	addi r29, r4, 0
+/* 10508A78 00508A78  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 10508A7C 00508A7C  3B 83 00 00 */	addi r28, r3, 0
+/* 10508A80 00508A80  90 01 00 08 */	stw r0, 8(r1)
+/* 10508A84 00508A84  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10508A88 00508A88  48 00 00 20 */	b lbl_10508AA8
+/* 10508A8C 00508A8C  60 00 00 00 */	nop 
+lbl_10508A90:
+/* 10508A90 00508A90  7F A3 EB 78 */	mr r3, r29
+/* 10508A94 00508A94  4B B7 C1 FD */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 10508A98 00508A98  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 10508A9C 00508A9C  38 7C 00 00 */	addi r3, r28, 0
+/* 10508AA0 00508AA0  38 81 00 40 */	addi r4, r1, 0x40
+/* 10508AA4 00508AA4  48 00 33 DD */	bl "erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+lbl_10508AA8:
+/* 10508AA8 00508AA8  83 FD 00 00 */	lwz r31, 0(r29)
+/* 10508AAC 00508AAC  80 1E 00 00 */	lwz r0, 0(r30)
+/* 10508AB0 00508AB0  7C 1F 00 40 */	cmplw r31, r0
+/* 10508AB4 00508AB4  40 82 FF DC */	bne lbl_10508A90
+/* 10508AB8 00508AB8  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 10508ABC 00508ABC  38 21 00 60 */	addi r1, r1, 0x60
+/* 10508AC0 00508AC0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10508AC4 00508AC4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10508AC8 00508AC8  7C 08 03 A6 */	mtlr r0
+/* 10508ACC 00508ACC  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10508AD0 00508AD0  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10508AD4 00508AD4  4E 80 00 20 */	blr 
+
+.global "__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+"__ct__Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>FRCQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
+/* 10508D10 00508D10  80 04 00 00 */	lwz r0, 0(r4)
+/* 10508D14 00508D14  90 03 00 00 */	stw r0, 0(r3)
+/* 10508D18 00508D18  4E 80 00 20 */	blr 
+
+.global "begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"begin__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10508EB0 00508EB0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10508EB4 00508EB4  7C 08 02 A6 */	mflr r0
+/* 10508EB8 00508EB8  3B E3 00 00 */	addi r31, r3, 0
+/* 10508EBC 00508EBC  38 64 00 00 */	addi r3, r4, 0
+/* 10508EC0 00508EC0  90 01 00 08 */	stw r0, 8(r1)
+/* 10508EC4 00508EC4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10508EC8 00508EC8  48 00 02 09 */	bl "front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10508ECC 00508ECC  80 83 00 00 */	lwz r4, 0(r3)
+/* 10508ED0 00508ED0  7F E3 FB 78 */	mr r3, r31
+/* 10508ED4 00508ED4  48 00 00 7D */	bl "__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+/* 10508ED8 00508ED8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10508EDC 00508EDC  38 21 00 50 */	addi r1, r1, 0x50
+/* 10508EE0 00508EE0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10508EE4 00508EE4  7C 08 03 A6 */	mtlr r0
+/* 10508EE8 00508EE8  4E 80 00 20 */	blr 
+
+.global "__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+"__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node":
+/* 10508F50 00508F50  90 83 00 00 */	stw r4, 0(r3)
+/* 10508F54 00508F54  4E 80 00 20 */	blr 
+
+.global "front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 105090D0 005090D0  38 63 00 0C */	addi r3, r3, 0xc
+/* 105090D4 005090D4  4E 80 00 20 */	blr 
+
+.global "end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"end__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 105091A0 005091A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105091A4 005091A4  7C 08 02 A6 */	mflr r0
+/* 105091A8 005091A8  3B E3 00 00 */	addi r31, r3, 0
+/* 105091AC 005091AC  38 64 00 00 */	addi r3, r4, 0
+/* 105091B0 005091B0  90 01 00 08 */	stw r0, 8(r1)
+/* 105091B4 005091B4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105091B8 005091B8  48 00 00 89 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105091BC 005091BC  38 83 00 00 */	addi r4, r3, 0
+/* 105091C0 005091C0  38 7F 00 00 */	addi r3, r31, 0
+/* 105091C4 005091C4  4B FF FD 8D */	bl "__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+/* 105091C8 005091C8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105091CC 005091CC  38 21 00 50 */	addi r1, r1, 0x50
+/* 105091D0 005091D0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105091D4 005091D4  7C 08 03 A6 */	mtlr r0
+/* 105091D8 005091D8  4E 80 00 20 */	blr 
+
+.global "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10509240 00509240  38 63 00 04 */	addi r3, r3, 4
+/* 10509244 00509244  4E 80 00 20 */	blr 
+
+.global "Init__13cTSWinCtrlMgrFv"
+"Init__13cTSWinCtrlMgrFv":
+/* 10509310 00509310  93 E1 FF FC */	stw r31, -4(r1)
+/* 10509314 00509314  7C 08 02 A6 */	mflr r0
+/* 10509318 00509318  83 E2 8C A4 */	lwz r31, lbl_105BA104-_R2_BASE_(r2)
+/* 1050931C 0050931C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10509320 00509320  7C 7E 1B 78 */	mr r30, r3
+/* 10509324 00509324  90 01 00 08 */	stw r0, 8(r1)
+/* 10509328 00509328  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050932C 0050932C  88 03 00 04 */	lbz r0, 4(r3)
+/* 10509330 00509330  28 00 00 00 */	cmplwi r0, 0
+/* 10509334 00509334  40 82 00 3C */	bne lbl_10509370
+/* 10509338 00509338  38 00 00 01 */	li r0, 1
+/* 1050933C 0050933C  98 1E 00 04 */	stb r0, 4(r30)
+/* 10509340 00509340  80 7F 00 00 */	lwz r3, 0(r31)
+/* 10509344 00509344  81 83 00 00 */	lwz r12, 0(r3)
+/* 10509348 00509348  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 1050934C 0050934C  48 09 08 05 */	bl func_10599B50
+/* 10509350 00509350  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 10509354 00509354  90 7E 00 08 */	stw r3, 8(r30)
+/* 10509358 00509358  80 7F 00 00 */	lwz r3, 0(r31)
+/* 1050935C 0050935C  81 83 00 00 */	lwz r12, 0(r3)
+/* 10509360 00509360  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 10509364 00509364  48 09 07 ED */	bl func_10599B50
+/* 10509368 00509368  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 1050936C 0050936C  90 7E 00 0C */	stw r3, 0xc(r30)
+lbl_10509370:
+/* 10509370 00509370  38 60 00 01 */	li r3, 1
+/* 10509374 00509374  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10509378 00509378  38 21 00 50 */	addi r1, r1, 0x50
+/* 1050937C 0050937C  7C 08 03 A6 */	mtlr r0
+/* 10509380 00509380  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509384 00509384  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10509388 00509388  4E 80 00 20 */	blr 
+
+.global "__dt__13cTSWinCtrlMgrFv"
+"__dt__13cTSWinCtrlMgrFv":
+/* 105093C0 005093C0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105093C4 005093C4  7C 08 02 A6 */	mflr r0
+/* 105093C8 005093C8  3B E4 00 00 */	addi r31, r4, 0
+/* 105093CC 005093CC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105093D0 005093D0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 105093D4 005093D4  90 01 00 08 */	stw r0, 8(r1)
+/* 105093D8 005093D8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105093DC 005093DC  41 82 00 7C */	beq lbl_10509458
+/* 105093E0 005093E0  80 02 9F 0C */	lwz r0, lbl_105BB36C-_R2_BASE_(r2)
+/* 105093E4 005093E4  90 1E 00 00 */	stw r0, 0(r30)
+/* 105093E8 005093E8  81 83 00 00 */	lwz r12, 0(r3)
+/* 105093EC 005093EC  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 105093F0 005093F0  48 09 07 61 */	bl func_10599B50
+/* 105093F4 005093F4  80 41 00 14 */	lwz r2, 0x14(r1)
+/* 105093F8 005093F8  34 1E 00 40 */	addic. r0, r30, 0x40
+/* 105093FC 005093FC  41 82 00 10 */	beq lbl_1050940C
+/* 10509400 00509400  38 7E 00 40 */	addi r3, r30, 0x40
+/* 10509404 00509404  38 80 FF FF */	li r4, -1
+/* 10509408 00509408  48 00 03 89 */	bl "__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+lbl_1050940C:
+/* 1050940C 0050940C  34 1E 00 30 */	addic. r0, r30, 0x30
+/* 10509410 00509410  41 82 00 10 */	beq lbl_10509420
+/* 10509414 00509414  38 7E 00 30 */	addi r3, r30, 0x30
+/* 10509418 00509418  38 80 FF FF */	li r4, -1
+/* 1050941C 0050941C  48 00 01 D5 */	bl "__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+lbl_10509420:
+/* 10509420 00509420  34 1E 00 20 */	addic. r0, r30, 0x20
+/* 10509424 00509424  41 82 00 10 */	beq lbl_10509434
+/* 10509428 00509428  38 7E 00 20 */	addi r3, r30, 0x20
+/* 1050942C 0050942C  38 80 FF FF */	li r4, -1
+/* 10509430 00509430  48 00 00 71 */	bl "__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+lbl_10509434:
+/* 10509434 00509434  34 1E 00 10 */	addic. r0, r30, 0x10
+/* 10509438 00509438  41 82 00 10 */	beq lbl_10509448
+/* 1050943C 0050943C  38 7E 00 10 */	addi r3, r30, 0x10
+/* 10509440 00509440  38 80 FF FF */	li r4, -1
+/* 10509444 00509444  48 00 03 4D */	bl "__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+lbl_10509448:
+/* 10509448 00509448  7F E0 07 35 */	extsh. r0, r31
+/* 1050944C 0050944C  40 81 00 0C */	ble lbl_10509458
+/* 10509450 00509450  7F C3 F3 78 */	mr r3, r30
+/* 10509454 00509454  48 07 F2 3D */	bl func_10588690
+lbl_10509458:
+/* 10509458 00509458  7F C3 F3 78 */	mr r3, r30
+/* 1050945C 0050945C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10509460 00509460  38 21 00 50 */	addi r1, r1, 0x50
+/* 10509464 00509464  7C 08 03 A6 */	mtlr r0
+/* 10509468 00509468  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050946C 0050946C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10509470 00509470  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"__dt__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 105094A0 005094A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105094A4 005094A4  7C 08 02 A6 */	mflr r0
+/* 105094A8 005094A8  3B E4 00 00 */	addi r31, r4, 0
+/* 105094AC 005094AC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105094B0 005094B0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 105094B4 005094B4  90 01 00 08 */	stw r0, 8(r1)
+/* 105094B8 005094B8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105094BC 005094BC  41 82 00 38 */	beq lbl_105094F4
+/* 105094C0 005094C0  4B FF CB 11 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 105094C4 005094C4  80 03 00 00 */	lwz r0, 0(r3)
+/* 105094C8 005094C8  28 00 00 00 */	cmplwi r0, 0
+/* 105094CC 005094CC  41 82 00 18 */	beq lbl_105094E4
+/* 105094D0 005094D0  7F C3 F3 78 */	mr r3, r30
+/* 105094D4 005094D4  4B FF CA FD */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 105094D8 005094D8  80 83 00 00 */	lwz r4, 0(r3)
+/* 105094DC 005094DC  7F C3 F3 78 */	mr r3, r30
+/* 105094E0 005094E0  48 00 33 91 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_105094E4:
+/* 105094E4 005094E4  7F E0 07 35 */	extsh. r0, r31
+/* 105094E8 005094E8  40 81 00 0C */	ble lbl_105094F4
+/* 105094EC 005094EC  7F C3 F3 78 */	mr r3, r30
+/* 105094F0 005094F0  48 07 F1 A1 */	bl func_10588690
+lbl_105094F4:
+/* 105094F4 005094F4  7F C3 F3 78 */	mr r3, r30
+/* 105094F8 005094F8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105094FC 005094FC  38 21 00 50 */	addi r1, r1, 0x50
+/* 10509500 00509500  7C 08 03 A6 */	mtlr r0
+/* 10509504 00509504  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509508 00509508  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050950C 0050950C  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"__dt__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 105095F0 005095F0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105095F4 005095F4  7C 08 02 A6 */	mflr r0
+/* 105095F8 005095F8  3B E4 00 00 */	addi r31, r4, 0
+/* 105095FC 005095FC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10509600 00509600  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10509604 00509604  90 01 00 08 */	stw r0, 8(r1)
+/* 10509608 00509608  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050960C 0050960C  41 82 00 38 */	beq lbl_10509644
+/* 10509610 00509610  4B FF E9 81 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10509614 00509614  80 03 00 00 */	lwz r0, 0(r3)
+/* 10509618 00509618  28 00 00 00 */	cmplwi r0, 0
+/* 1050961C 0050961C  41 82 00 18 */	beq lbl_10509634
+/* 10509620 00509620  7F C3 F3 78 */	mr r3, r30
+/* 10509624 00509624  4B FF E9 6D */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10509628 00509628  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050962C 0050962C  7F C3 F3 78 */	mr r3, r30
+/* 10509630 00509630  48 00 47 31 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_10509634:
+/* 10509634 00509634  7F E0 07 35 */	extsh. r0, r31
+/* 10509638 00509638  40 81 00 0C */	ble lbl_10509644
+/* 1050963C 0050963C  7F C3 F3 78 */	mr r3, r30
+/* 10509640 00509640  48 07 F0 51 */	bl func_10588690
+lbl_10509644:
+/* 10509644 00509644  7F C3 F3 78 */	mr r3, r30
+/* 10509648 00509648  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1050964C 0050964C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10509650 00509650  7C 08 03 A6 */	mtlr r0
+/* 10509654 00509654  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509658 00509658  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050965C 0050965C  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"__dt__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10509790 00509790  93 E1 FF FC */	stw r31, -4(r1)
+/* 10509794 00509794  7C 08 02 A6 */	mflr r0
+/* 10509798 00509798  3B E4 00 00 */	addi r31, r4, 0
+/* 1050979C 0050979C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 105097A0 005097A0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 105097A4 005097A4  90 01 00 08 */	stw r0, 8(r1)
+/* 105097A8 005097A8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 105097AC 005097AC  41 82 00 38 */	beq lbl_105097E4
+/* 105097B0 005097B0  4B FF FA 91 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105097B4 005097B4  80 03 00 00 */	lwz r0, 0(r3)
+/* 105097B8 005097B8  28 00 00 00 */	cmplwi r0, 0
+/* 105097BC 005097BC  41 82 00 18 */	beq lbl_105097D4
+/* 105097C0 005097C0  7F C3 F3 78 */	mr r3, r30
+/* 105097C4 005097C4  4B FF FA 7D */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 105097C8 005097C8  80 83 00 00 */	lwz r4, 0(r3)
+/* 105097CC 005097CC  7F C3 F3 78 */	mr r3, r30
+/* 105097D0 005097D0  48 00 1D E1 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_105097D4:
+/* 105097D4 005097D4  7F E0 07 35 */	extsh. r0, r31
+/* 105097D8 005097D8  40 81 00 0C */	ble lbl_105097E4
+/* 105097DC 005097DC  7F C3 F3 78 */	mr r3, r30
+/* 105097E0 005097E0  48 07 EE B1 */	bl func_10588690
+lbl_105097E4:
+/* 105097E4 005097E4  7F C3 F3 78 */	mr r3, r30
+/* 105097E8 005097E8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105097EC 005097EC  38 21 00 50 */	addi r1, r1, 0x50
+/* 105097F0 005097F0  7C 08 03 A6 */	mtlr r0
+/* 105097F4 005097F4  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105097F8 005097F8  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 105097FC 005097FC  4E 80 00 20 */	blr 
+
+.global "__ct__13cTSWinCtrlMgrFv"
+"__ct__13cTSWinCtrlMgrFv":
+/* 105098C0 005098C0  93 E1 FF FC */	stw r31, -4(r1)
+/* 105098C4 005098C4  7C 08 02 A6 */	mflr r0
+/* 105098C8 005098C8  7C 7F 1B 78 */	mr r31, r3
+/* 105098CC 005098CC  80 A2 9F 0C */	lwz r5, lbl_105BB36C-_R2_BASE_(r2)
+/* 105098D0 005098D0  90 01 00 08 */	stw r0, 8(r1)
+/* 105098D4 005098D4  38 00 00 00 */	li r0, 0
+/* 105098D8 005098D8  38 7F 00 10 */	addi r3, r31, 0x10
+/* 105098DC 005098DC  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 105098E0 005098E0  90 BF 00 00 */	stw r5, 0(r31)
+/* 105098E4 005098E4  38 81 00 40 */	addi r4, r1, 0x40
+/* 105098E8 005098E8  38 A1 00 44 */	addi r5, r1, 0x44
+/* 105098EC 005098EC  98 1F 00 04 */	stb r0, 4(r31)
+/* 105098F0 005098F0  90 1F 00 08 */	stw r0, 8(r31)
+/* 105098F4 005098F4  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 105098F8 005098F8  48 00 29 79 */	bl "__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
+/* 105098FC 005098FC  38 7F 00 20 */	addi r3, r31, 0x20
+/* 10509900 00509900  38 81 00 48 */	addi r4, r1, 0x48
+/* 10509904 00509904  38 A1 00 4C */	addi r5, r1, 0x4c
+/* 10509908 00509908  48 00 3D 89 */	bl "__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>"
+/* 1050990C 0050990C  38 7F 00 30 */	addi r3, r31, 0x30
+/* 10509910 00509910  38 81 00 50 */	addi r4, r1, 0x50
+/* 10509914 00509914  38 A1 00 54 */	addi r5, r1, 0x54
+/* 10509918 00509918  48 00 55 69 */	bl "__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>"
+/* 1050991C 0050991C  38 7F 00 40 */	addi r3, r31, 0x40
+/* 10509920 00509920  38 81 00 58 */	addi r4, r1, 0x58
+/* 10509924 00509924  38 A1 00 5C */	addi r5, r1, 0x5c
+/* 10509928 00509928  48 00 29 49 */	bl "__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
+/* 1050992C 0050992C  7F E3 FB 78 */	mr r3, r31
+/* 10509930 00509930  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 10509934 00509934  38 21 00 70 */	addi r1, r1, 0x70
+/* 10509938 00509938  7C 08 03 A6 */	mtlr r0
+/* 1050993C 0050993C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509940 00509940  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"__dt__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10509970 00509970  93 E1 FF FC */	stw r31, -4(r1)
+/* 10509974 00509974  7C 08 02 A6 */	mflr r0
+/* 10509978 00509978  3B E4 00 00 */	addi r31, r4, 0
+/* 1050997C 0050997C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10509980 00509980  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10509984 00509984  90 01 00 08 */	stw r0, 8(r1)
+/* 10509988 00509988  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050998C 0050998C  41 82 00 3C */	beq lbl_105099C8
+/* 10509990 00509990  41 82 00 28 */	beq lbl_105099B8
+/* 10509994 00509994  48 00 00 ED */	bl "root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 10509998 00509998  80 03 00 00 */	lwz r0, 0(r3)
+/* 1050999C 0050999C  28 00 00 00 */	cmplwi r0, 0
+/* 105099A0 005099A0  41 82 00 18 */	beq lbl_105099B8
+/* 105099A4 005099A4  7F C3 F3 78 */	mr r3, r30
+/* 105099A8 005099A8  48 00 00 D9 */	bl "root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 105099AC 005099AC  80 83 00 00 */	lwz r4, 0(r3)
+/* 105099B0 005099B0  7F C3 F3 78 */	mr r3, r30
+/* 105099B4 005099B4  48 00 43 AD */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_105099B8:
+/* 105099B8 005099B8  7F E0 07 35 */	extsh. r0, r31
+/* 105099BC 005099BC  40 81 00 0C */	ble lbl_105099C8
+/* 105099C0 005099C0  7F C3 F3 78 */	mr r3, r30
+/* 105099C4 005099C4  48 07 EC CD */	bl func_10588690
+lbl_105099C8:
+/* 105099C8 005099C8  7F C3 F3 78 */	mr r3, r30
+/* 105099CC 005099CC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105099D0 005099D0  38 21 00 50 */	addi r1, r1, 0x50
+/* 105099D4 005099D4  7C 08 03 A6 */	mtlr r0
+/* 105099D8 005099D8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105099DC 005099DC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 105099E0 005099E0  4E 80 00 20 */	blr 
+
+.global "root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"root__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 10509A80 00509A80  38 63 00 04 */	addi r3, r3, 4
+/* 10509A84 00509A84  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"__dt__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10509BB0 00509BB0  93 E1 FF FC */	stw r31, -4(r1)
+/* 10509BB4 00509BB4  7C 08 02 A6 */	mflr r0
+/* 10509BB8 00509BB8  3B E4 00 00 */	addi r31, r4, 0
+/* 10509BBC 00509BBC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10509BC0 00509BC0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10509BC4 00509BC4  90 01 00 08 */	stw r0, 8(r1)
+/* 10509BC8 00509BC8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10509BCC 00509BCC  41 82 00 3C */	beq lbl_10509C08
+/* 10509BD0 00509BD0  41 82 00 28 */	beq lbl_10509BF8
+/* 10509BD4 00509BD4  48 00 00 CD */	bl "root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 10509BD8 00509BD8  80 03 00 00 */	lwz r0, 0(r3)
+/* 10509BDC 00509BDC  28 00 00 00 */	cmplwi r0, 0
+/* 10509BE0 00509BE0  41 82 00 18 */	beq lbl_10509BF8
+/* 10509BE4 00509BE4  7F C3 F3 78 */	mr r3, r30
+/* 10509BE8 00509BE8  48 00 00 B9 */	bl "root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 10509BEC 00509BEC  80 83 00 00 */	lwz r4, 0(r3)
+/* 10509BF0 00509BF0  7F C3 F3 78 */	mr r3, r30
+/* 10509BF4 00509BF4  48 00 2C 7D */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_10509BF8:
+/* 10509BF8 00509BF8  7F E0 07 35 */	extsh. r0, r31
+/* 10509BFC 00509BFC  40 81 00 0C */	ble lbl_10509C08
+/* 10509C00 00509C00  7F C3 F3 78 */	mr r3, r30
+/* 10509C04 00509C04  48 07 EA 8D */	bl func_10588690
+lbl_10509C08:
+/* 10509C08 00509C08  7F C3 F3 78 */	mr r3, r30
+/* 10509C0C 00509C0C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10509C10 00509C10  38 21 00 50 */	addi r1, r1, 0x50
+/* 10509C14 00509C14  7C 08 03 A6 */	mtlr r0
+/* 10509C18 00509C18  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509C1C 00509C1C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10509C20 00509C20  4E 80 00 20 */	blr 
+
+.global "root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"root__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 10509CA0 00509CA0  38 63 00 04 */	addi r3, r3, 4
+/* 10509CA4 00509CA4  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"__dt__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10509D90 00509D90  93 E1 FF FC */	stw r31, -4(r1)
+/* 10509D94 00509D94  7C 08 02 A6 */	mflr r0
+/* 10509D98 00509D98  3B E4 00 00 */	addi r31, r4, 0
+/* 10509D9C 00509D9C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10509DA0 00509DA0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10509DA4 00509DA4  90 01 00 08 */	stw r0, 8(r1)
+/* 10509DA8 00509DA8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10509DAC 00509DAC  41 82 00 3C */	beq lbl_10509DE8
+/* 10509DB0 00509DB0  41 82 00 28 */	beq lbl_10509DD8
+/* 10509DB4 00509DB4  48 00 00 BD */	bl "root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10509DB8 00509DB8  80 03 00 00 */	lwz r0, 0(r3)
+/* 10509DBC 00509DBC  28 00 00 00 */	cmplwi r0, 0
+/* 10509DC0 00509DC0  41 82 00 18 */	beq lbl_10509DD8
+/* 10509DC4 00509DC4  7F C3 F3 78 */	mr r3, r30
+/* 10509DC8 00509DC8  48 00 00 A9 */	bl "root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 10509DCC 00509DCC  80 83 00 00 */	lwz r4, 0(r3)
+/* 10509DD0 00509DD0  7F C3 F3 78 */	mr r3, r30
+/* 10509DD4 00509DD4  48 00 17 DD */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_10509DD8:
+/* 10509DD8 00509DD8  7F E0 07 35 */	extsh. r0, r31
+/* 10509DDC 00509DDC  40 81 00 0C */	ble lbl_10509DE8
+/* 10509DE0 00509DE0  7F C3 F3 78 */	mr r3, r30
+/* 10509DE4 00509DE4  48 07 E8 AD */	bl func_10588690
+lbl_10509DE8:
+/* 10509DE8 00509DE8  7F C3 F3 78 */	mr r3, r30
+/* 10509DEC 00509DEC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10509DF0 00509DF0  38 21 00 50 */	addi r1, r1, 0x50
+/* 10509DF4 00509DF4  7C 08 03 A6 */	mtlr r0
+/* 10509DF8 00509DF8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10509DFC 00509DFC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10509E00 00509E00  4E 80 00 20 */	blr 
+
+.global "root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"root__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 10509E70 00509E70  38 63 00 04 */	addi r3, r3, 4
+/* 10509E74 00509E74  4E 80 00 20 */	blr 
+
+.global "cTSFrameWork_CtrlMgr__Fv"
+"cTSFrameWork_CtrlMgr__Fv":
+/* 10509F40 00509F40  80 62 BC 30 */	lwz r3, lbl_105BD090-_R2_BASE_(r2)
+/* 10509F44 00509F44  4E 80 00 20 */	blr 
+
+.global "insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"insert__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 10509F80 00509F80  7C 08 02 A6 */	mflr r0
+/* 10509F84 00509F84  90 01 00 08 */	stw r0, 8(r1)
+/* 10509F88 00509F88  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10509F8C 00509F8C  48 00 4C B5 */	bl "insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 10509F90 00509F90  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10509F94 00509F94  38 21 00 40 */	addi r1, r1, 0x40
+/* 10509F98 00509F98  7C 08 03 A6 */	mtlr r0
+/* 10509F9C 00509F9C  4E 80 00 20 */	blr 
+
+.global "find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl"
+"find__Q23std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl":
+/* 1050A070 0050A070  7C 08 02 A6 */	mflr r0
+/* 1050A074 0050A074  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A078 0050A078  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050A07C 0050A07C  48 00 11 A5 */	bl "find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+/* 1050A080 0050A080  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050A084 0050A084  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050A088 0050A088  7C 08 03 A6 */	mtlr r0
+/* 1050A08C 0050A08C  4E 80 00 20 */	blr 
+
+.global "insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
+"insert__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>":
+/* 1050A130 0050A130  7C 08 02 A6 */	mflr r0
+/* 1050A134 0050A134  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A138 0050A138  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050A13C 0050A13C  48 00 33 65 */	bl "insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
+/* 1050A140 0050A140  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050A144 0050A144  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050A148 0050A148  7C 08 03 A6 */	mtlr r0
+/* 1050A14C 0050A14C  4E 80 00 20 */	blr 
+
+.global "find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl"
+"find__Q23std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl":
+/* 1050A1E0 0050A1E0  7C 08 02 A6 */	mflr r0
+/* 1050A1E4 0050A1E4  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A1E8 0050A1E8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050A1EC 0050A1EC  48 00 09 75 */	bl "find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+/* 1050A1F0 0050A1F0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050A1F4 0050A1F4  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050A1F8 0050A1F8  7C 08 03 A6 */	mtlr r0
+/* 1050A1FC 0050A1FC  4E 80 00 20 */	blr 
+
+.global "__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl"
+"__vc__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl":
+/* 1050A280 0050A280  7C 08 02 A6 */	mflr r0
+/* 1050A284 0050A284  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A288 0050A288  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050A28C 0050A28C  48 00 02 35 */	bl "find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>"
+/* 1050A290 0050A290  38 63 00 04 */	addi r3, r3, 4
+/* 1050A294 0050A294  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050A298 0050A298  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050A29C 0050A29C  7C 08 03 A6 */	mtlr r0
+/* 1050A2A0 0050A2A0  4E 80 00 20 */	blr 
+
+.global "insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
+"insert__Q23std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>":
+/* 1050A310 0050A310  7C 08 02 A6 */	mflr r0
+/* 1050A314 0050A314  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A318 0050A318  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050A31C 0050A31C  48 00 1D 95 */	bl "insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
+/* 1050A320 0050A320  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050A324 0050A324  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050A328 0050A328  7C 08 03 A6 */	mtlr r0
+/* 1050A32C 0050A32C  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb"
+"__ct__Q23std19pair<P9cTSBuffer,b>FRCP9cTSBufferRCb":
+/* 1050A3B0 0050A3B0  80 04 00 00 */	lwz r0, 0(r4)
+/* 1050A3B4 0050A3B4  90 03 00 00 */	stw r0, 0(r3)
+/* 1050A3B8 0050A3B8  88 05 00 00 */	lbz r0, 0(r5)
+/* 1050A3BC 0050A3BC  98 03 00 04 */	stb r0, 4(r3)
+/* 1050A3C0 0050A3C0  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont"
+"__ct__Q23std19pair<Cl,P8cITSFont>FRClRCP8cITSFont":
+/* 1050A410 0050A410  80 04 00 00 */	lwz r0, 0(r4)
+/* 1050A414 0050A414  90 03 00 00 */	stw r0, 0(r3)
+/* 1050A418 0050A418  80 05 00 00 */	lwz r0, 0(r5)
+/* 1050A41C 0050A41C  90 03 00 04 */	stw r0, 4(r3)
+/* 1050A420 0050A420  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std11pair<Cl,Ul>FRClRCUl"
+"__ct__Q23std11pair<Cl,Ul>FRClRCUl":
+/* 1050A470 0050A470  80 04 00 00 */	lwz r0, 0(r4)
+/* 1050A474 0050A474  90 03 00 00 */	stw r0, 0(r3)
+/* 1050A478 0050A478  80 05 00 00 */	lwz r0, 0(r5)
+/* 1050A47C 0050A47C  90 03 00 04 */	stw r0, 4(r3)
+/* 1050A480 0050A480  4E 80 00 20 */	blr 
+
+.global "find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>"
+"find_or_insert<l,Ul>__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCl_RQ23std11pair<Cl,Ul>":
+/* 1050A4C0 0050A4C0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050A4C4 0050A4C4  7C 08 02 A6 */	mflr r0
+/* 1050A4C8 0050A4C8  3B 23 00 00 */	addi r25, r3, 0
+/* 1050A4CC 0050A4CC  3B 44 00 00 */	addi r26, r4, 0
+/* 1050A4D0 0050A4D0  3B 99 00 04 */	addi r28, r25, 4
+/* 1050A4D4 0050A4D4  3B 60 00 00 */	li r27, 0
+/* 1050A4D8 0050A4D8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A4DC 0050A4DC  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 1050A4E0 0050A4E0  4B FF ED 61 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050A4E4 0050A4E4  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050A4E8 0050A4E8  3B C0 00 01 */	li r30, 1
+/* 1050A4EC 0050A4EC  3B E0 00 01 */	li r31, 1
+/* 1050A4F0 0050A4F0  48 00 00 40 */	b lbl_1050A530
+/* 1050A4F4 0050A4F4  60 00 00 00 */	nop 
+lbl_1050A4F8:
+/* 1050A4F8 0050A4F8  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050A4FC 0050A4FC  38 79 00 08 */	addi r3, r25, 8
+/* 1050A500 0050A500  48 00 01 91 */	bl "first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
+/* 1050A504 0050A504  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050A508 0050A508  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050A50C 0050A50C  7C 03 00 00 */	cmpw r3, r0
+/* 1050A510 0050A510  40 80 00 10 */	bge lbl_1050A520
+/* 1050A514 0050A514  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050A518 0050A518  3B C0 00 01 */	li r30, 1
+/* 1050A51C 0050A51C  48 00 00 14 */	b lbl_1050A530
+lbl_1050A520:
+/* 1050A520 0050A520  7F BB EB 78 */	mr r27, r29
+/* 1050A524 0050A524  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050A528 0050A528  3B C0 00 00 */	li r30, 0
+/* 1050A52C 0050A52C  3B E0 00 00 */	li r31, 0
+lbl_1050A530:
+/* 1050A530 0050A530  28 1D 00 00 */	cmplwi r29, 0
+/* 1050A534 0050A534  40 82 FF C4 */	bne lbl_1050A4F8
+/* 1050A538 0050A538  28 1B 00 00 */	cmplwi r27, 0
+/* 1050A53C 0050A53C  41 82 00 1C */	beq lbl_1050A558
+/* 1050A540 0050A540  38 79 00 08 */	addi r3, r25, 8
+/* 1050A544 0050A544  48 00 01 4D */	bl "first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
+/* 1050A548 0050A548  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050A54C 0050A54C  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050A550 0050A550  7C 03 00 00 */	cmpw r3, r0
+/* 1050A554 0050A554  40 80 00 34 */	bge lbl_1050A588
+lbl_1050A558:
+/* 1050A558 0050A558  80 BA 00 00 */	lwz r5, 0(r26)
+/* 1050A55C 0050A55C  7F 23 CB 78 */	mr r3, r25
+/* 1050A560 0050A560  80 02 28 C0 */	lwz r0, lbl_105C3D20-_R2_BASE_(r2)
+/* 1050A564 0050A564  7F 84 E3 78 */	mr r4, r28
+/* 1050A568 0050A568  90 A1 00 40 */	stw r5, 0x40(r1)
+/* 1050A56C 0050A56C  38 BE 00 00 */	addi r5, r30, 0
+/* 1050A570 0050A570  38 E1 00 40 */	addi r7, r1, 0x40
+/* 1050A574 0050A574  90 01 00 44 */	stw r0, 0x44(r1)
+/* 1050A578 0050A578  7F E6 FB 78 */	mr r6, r31
+/* 1050A57C 0050A57C  48 00 51 85 */	bl "insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
+/* 1050A580 0050A580  38 63 00 0C */	addi r3, r3, 0xc
+/* 1050A584 0050A584  48 00 00 08 */	b lbl_1050A58C
+lbl_1050A588:
+/* 1050A588 0050A588  38 7B 00 0C */	addi r3, r27, 0xc
+lbl_1050A58C:
+/* 1050A58C 0050A58C  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 1050A590 0050A590  38 21 00 70 */	addi r1, r1, 0x70
+/* 1050A594 0050A594  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050A598 0050A598  7C 08 03 A6 */	mtlr r0
+/* 1050A59C 0050A59C  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
+"first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv":
+/* 1050A690 0050A690  4E 80 00 20 */	blr 
+
+.global "find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>"
+"find_or_insert<l,P8cITSFont>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_RQ23std19pair<Cl,P8cITSFont>":
+/* 1050A7E0 0050A7E0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050A7E4 0050A7E4  7C 08 02 A6 */	mflr r0
+/* 1050A7E8 0050A7E8  3B 23 00 00 */	addi r25, r3, 0
+/* 1050A7EC 0050A7EC  3B 44 00 00 */	addi r26, r4, 0
+/* 1050A7F0 0050A7F0  3B 99 00 04 */	addi r28, r25, 4
+/* 1050A7F4 0050A7F4  3B 60 00 00 */	li r27, 0
+/* 1050A7F8 0050A7F8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050A7FC 0050A7FC  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 1050A800 0050A800  4B FF B7 D1 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050A804 0050A804  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050A808 0050A808  3B C0 00 01 */	li r30, 1
+/* 1050A80C 0050A80C  3B E0 00 01 */	li r31, 1
+/* 1050A810 0050A810  48 00 00 40 */	b lbl_1050A850
+/* 1050A814 0050A814  60 00 00 00 */	nop 
+lbl_1050A818:
+/* 1050A818 0050A818  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050A81C 0050A81C  38 79 00 08 */	addi r3, r25, 8
+/* 1050A820 0050A820  48 00 01 C1 */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050A824 0050A824  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050A828 0050A828  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050A82C 0050A82C  7C 03 00 00 */	cmpw r3, r0
+/* 1050A830 0050A830  40 80 00 10 */	bge lbl_1050A840
+/* 1050A834 0050A834  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050A838 0050A838  3B C0 00 01 */	li r30, 1
+/* 1050A83C 0050A83C  48 00 00 14 */	b lbl_1050A850
+lbl_1050A840:
+/* 1050A840 0050A840  7F BB EB 78 */	mr r27, r29
+/* 1050A844 0050A844  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050A848 0050A848  3B C0 00 00 */	li r30, 0
+/* 1050A84C 0050A84C  3B E0 00 00 */	li r31, 0
+lbl_1050A850:
+/* 1050A850 0050A850  28 1D 00 00 */	cmplwi r29, 0
+/* 1050A854 0050A854  40 82 FF C4 */	bne lbl_1050A818
+/* 1050A858 0050A858  28 1B 00 00 */	cmplwi r27, 0
+/* 1050A85C 0050A85C  41 82 00 1C */	beq lbl_1050A878
+/* 1050A860 0050A860  38 79 00 08 */	addi r3, r25, 8
+/* 1050A864 0050A864  48 00 01 7D */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050A868 0050A868  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050A86C 0050A86C  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050A870 0050A870  7C 03 00 00 */	cmpw r3, r0
+/* 1050A874 0050A874  40 80 00 34 */	bge lbl_1050A8A8
+lbl_1050A878:
+/* 1050A878 0050A878  80 9A 00 00 */	lwz r4, 0(r26)
+/* 1050A87C 0050A87C  38 00 00 00 */	li r0, 0
+/* 1050A880 0050A880  38 79 00 00 */	addi r3, r25, 0
+/* 1050A884 0050A884  38 E1 00 40 */	addi r7, r1, 0x40
+/* 1050A888 0050A888  90 81 00 40 */	stw r4, 0x40(r1)
+/* 1050A88C 0050A88C  7F 84 E3 78 */	mr r4, r28
+/* 1050A890 0050A890  90 01 00 44 */	stw r0, 0x44(r1)
+/* 1050A894 0050A894  38 BE 00 00 */	addi r5, r30, 0
+/* 1050A898 0050A898  38 DF 00 00 */	addi r6, r31, 0
+/* 1050A89C 0050A89C  48 00 51 C5 */	bl "insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
+/* 1050A8A0 0050A8A0  38 63 00 0C */	addi r3, r3, 0xc
+/* 1050A8A4 0050A8A4  48 00 00 08 */	b lbl_1050A8AC
+lbl_1050A8A8:
+/* 1050A8A8 0050A8A8  38 7B 00 0C */	addi r3, r27, 0xc
+lbl_1050A8AC:
+/* 1050A8AC 0050A8AC  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 1050A8B0 0050A8B0  38 21 00 70 */	addi r1, r1, 0x70
+/* 1050A8B4 0050A8B4  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050A8B8 0050A8B8  7C 08 03 A6 */	mtlr r0
+/* 1050A8BC 0050A8BC  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+"first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv":
+/* 1050A9E0 0050A9E0  4E 80 00 20 */	blr 
+
+.global "find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+"find<l>__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCl_Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
+/* 1050AB60 0050AB60  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 1050AB64 0050AB64  7C 08 02 A6 */	mflr r0
+/* 1050AB68 0050AB68  3B 84 00 00 */	addi r28, r4, 0
+/* 1050AB6C 0050AB6C  3B 63 00 00 */	addi r27, r3, 0
+/* 1050AB70 0050AB70  3B A5 00 00 */	addi r29, r5, 0
+/* 1050AB74 0050AB74  38 7C 00 00 */	addi r3, r28, 0
+/* 1050AB78 0050AB78  90 01 00 08 */	stw r0, 8(r1)
+/* 1050AB7C 0050AB7C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050AB80 0050AB80  4B FF B4 51 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050AB84 0050AB84  83 C3 00 00 */	lwz r30, 0(r3)
+/* 1050AB88 0050AB88  3B FC 00 04 */	addi r31, r28, 4
+/* 1050AB8C 0050AB8C  48 00 00 2C */	b lbl_1050ABB8
+lbl_1050AB90:
+/* 1050AB90 0050AB90  38 7C 00 08 */	addi r3, r28, 8
+/* 1050AB94 0050AB94  4B FF FE 4D */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050AB98 0050AB98  80 7E 00 0C */	lwz r3, 0xc(r30)
+/* 1050AB9C 0050AB9C  80 1D 00 00 */	lwz r0, 0(r29)
+/* 1050ABA0 0050ABA0  7C 03 00 00 */	cmpw r3, r0
+/* 1050ABA4 0050ABA4  41 80 00 10 */	blt lbl_1050ABB4
+/* 1050ABA8 0050ABA8  7F DF F3 78 */	mr r31, r30
+/* 1050ABAC 0050ABAC  83 DE 00 00 */	lwz r30, 0(r30)
+/* 1050ABB0 0050ABB0  48 00 00 08 */	b lbl_1050ABB8
+lbl_1050ABB4:
+/* 1050ABB4 0050ABB4  83 DE 00 04 */	lwz r30, 4(r30)
+lbl_1050ABB8:
+/* 1050ABB8 0050ABB8  28 1E 00 00 */	cmplwi r30, 0
+/* 1050ABBC 0050ABBC  40 82 FF D4 */	bne lbl_1050AB90
+/* 1050ABC0 0050ABC0  38 1C 00 04 */	addi r0, r28, 4
+/* 1050ABC4 0050ABC4  7C 1F 00 40 */	cmplw r31, r0
+/* 1050ABC8 0050ABC8  41 82 00 1C */	beq lbl_1050ABE4
+/* 1050ABCC 0050ABCC  38 7C 00 08 */	addi r3, r28, 8
+/* 1050ABD0 0050ABD0  4B FF FE 11 */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050ABD4 0050ABD4  80 7D 00 00 */	lwz r3, 0(r29)
+/* 1050ABD8 0050ABD8  80 1F 00 0C */	lwz r0, 0xc(r31)
+/* 1050ABDC 0050ABDC  7C 03 00 00 */	cmpw r3, r0
+/* 1050ABE0 0050ABE0  40 80 00 1C */	bge lbl_1050ABFC
+lbl_1050ABE4:
+/* 1050ABE4 0050ABE4  7F 83 E3 78 */	mr r3, r28
+/* 1050ABE8 0050ABE8  4B FF B3 E9 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050ABEC 0050ABEC  38 83 00 00 */	addi r4, r3, 0
+/* 1050ABF0 0050ABF0  38 7B 00 00 */	addi r3, r27, 0
+/* 1050ABF4 0050ABF4  4B FF B2 1D */	bl "__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+/* 1050ABF8 0050ABF8  48 00 00 08 */	b lbl_1050AC00
+lbl_1050ABFC:
+/* 1050ABFC 0050ABFC  93 FB 00 00 */	stw r31, 0(r27)
+lbl_1050AC00:
+/* 1050AC00 0050AC00  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050AC04 0050AC04  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050AC08 0050AC08  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 1050AC0C 0050AC0C  7C 08 03 A6 */	mtlr r0
+/* 1050AC10 0050AC10  4E 80 00 20 */	blr 
+
+.global "find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"find_or_insert<l,Q23std19pair<P9cTSBuffer,b>>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_RQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 1050ADD0 0050ADD0  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050ADD4 0050ADD4  7C 08 02 A6 */	mflr r0
+/* 1050ADD8 0050ADD8  3B 23 00 00 */	addi r25, r3, 0
+/* 1050ADDC 0050ADDC  3B 44 00 00 */	addi r26, r4, 0
+/* 1050ADE0 0050ADE0  3B 99 00 04 */	addi r28, r25, 4
+/* 1050ADE4 0050ADE4  3B 60 00 00 */	li r27, 0
+/* 1050ADE8 0050ADE8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050ADEC 0050ADEC  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 1050ADF0 0050ADF0  4B FF D1 A1 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050ADF4 0050ADF4  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050ADF8 0050ADF8  3B C0 00 01 */	li r30, 1
+/* 1050ADFC 0050ADFC  3B E0 00 01 */	li r31, 1
+/* 1050AE00 0050AE00  48 00 00 40 */	b lbl_1050AE40
+/* 1050AE04 0050AE04  60 00 00 00 */	nop 
+lbl_1050AE08:
+/* 1050AE08 0050AE08  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050AE0C 0050AE0C  38 79 00 08 */	addi r3, r25, 8
+/* 1050AE10 0050AE10  48 00 02 21 */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050AE14 0050AE14  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050AE18 0050AE18  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050AE1C 0050AE1C  7C 03 00 00 */	cmpw r3, r0
+/* 1050AE20 0050AE20  40 80 00 10 */	bge lbl_1050AE30
+/* 1050AE24 0050AE24  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050AE28 0050AE28  3B C0 00 01 */	li r30, 1
+/* 1050AE2C 0050AE2C  48 00 00 14 */	b lbl_1050AE40
+lbl_1050AE30:
+/* 1050AE30 0050AE30  7F BB EB 78 */	mr r27, r29
+/* 1050AE34 0050AE34  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050AE38 0050AE38  3B C0 00 00 */	li r30, 0
+/* 1050AE3C 0050AE3C  3B E0 00 00 */	li r31, 0
+lbl_1050AE40:
+/* 1050AE40 0050AE40  28 1D 00 00 */	cmplwi r29, 0
+/* 1050AE44 0050AE44  40 82 FF C4 */	bne lbl_1050AE08
+/* 1050AE48 0050AE48  28 1B 00 00 */	cmplwi r27, 0
+/* 1050AE4C 0050AE4C  41 82 00 1C */	beq lbl_1050AE68
+/* 1050AE50 0050AE50  38 79 00 08 */	addi r3, r25, 8
+/* 1050AE54 0050AE54  48 00 01 DD */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050AE58 0050AE58  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050AE5C 0050AE5C  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050AE60 0050AE60  7C 03 00 00 */	cmpw r3, r0
+/* 1050AE64 0050AE64  40 80 00 38 */	bge lbl_1050AE9C
+lbl_1050AE68:
+/* 1050AE68 0050AE68  80 9A 00 00 */	lwz r4, 0(r26)
+/* 1050AE6C 0050AE6C  38 00 00 00 */	li r0, 0
+/* 1050AE70 0050AE70  38 79 00 00 */	addi r3, r25, 0
+/* 1050AE74 0050AE74  38 E1 00 40 */	addi r7, r1, 0x40
+/* 1050AE78 0050AE78  90 81 00 40 */	stw r4, 0x40(r1)
+/* 1050AE7C 0050AE7C  7F 84 E3 78 */	mr r4, r28
+/* 1050AE80 0050AE80  90 01 00 44 */	stw r0, 0x44(r1)
+/* 1050AE84 0050AE84  38 BE 00 00 */	addi r5, r30, 0
+/* 1050AE88 0050AE88  38 DF 00 00 */	addi r6, r31, 0
+/* 1050AE8C 0050AE8C  98 01 00 48 */	stb r0, 0x48(r1)
+/* 1050AE90 0050AE90  48 00 4F 91 */	bl "insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050AE94 0050AE94  38 63 00 0C */	addi r3, r3, 0xc
+/* 1050AE98 0050AE98  48 00 00 08 */	b lbl_1050AEA0
+lbl_1050AE9C:
+/* 1050AE9C 0050AE9C  38 7B 00 0C */	addi r3, r27, 0xc
+lbl_1050AEA0:
+/* 1050AEA0 0050AEA0  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 1050AEA4 0050AEA4  38 21 00 70 */	addi r1, r1, 0x70
+/* 1050AEA8 0050AEA8  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050AEAC 0050AEAC  7C 08 03 A6 */	mtlr r0
+/* 1050AEB0 0050AEB0  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+"first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv":
+/* 1050B030 0050B030  4E 80 00 20 */	blr 
+
+.global "find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+"find<l>__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCl_Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
+/* 1050B220 0050B220  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 1050B224 0050B224  7C 08 02 A6 */	mflr r0
+/* 1050B228 0050B228  3B 84 00 00 */	addi r28, r4, 0
+/* 1050B22C 0050B22C  3B 63 00 00 */	addi r27, r3, 0
+/* 1050B230 0050B230  3B A5 00 00 */	addi r29, r5, 0
+/* 1050B234 0050B234  38 7C 00 00 */	addi r3, r28, 0
+/* 1050B238 0050B238  90 01 00 08 */	stw r0, 8(r1)
+/* 1050B23C 0050B23C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050B240 0050B240  4B FF CD 51 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050B244 0050B244  83 C3 00 00 */	lwz r30, 0(r3)
+/* 1050B248 0050B248  3B FC 00 04 */	addi r31, r28, 4
+/* 1050B24C 0050B24C  48 00 00 2C */	b lbl_1050B278
+lbl_1050B250:
+/* 1050B250 0050B250  38 7C 00 08 */	addi r3, r28, 8
+/* 1050B254 0050B254  4B FF FD DD */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050B258 0050B258  80 7E 00 0C */	lwz r3, 0xc(r30)
+/* 1050B25C 0050B25C  80 1D 00 00 */	lwz r0, 0(r29)
+/* 1050B260 0050B260  7C 03 00 00 */	cmpw r3, r0
+/* 1050B264 0050B264  41 80 00 10 */	blt lbl_1050B274
+/* 1050B268 0050B268  7F DF F3 78 */	mr r31, r30
+/* 1050B26C 0050B26C  83 DE 00 00 */	lwz r30, 0(r30)
+/* 1050B270 0050B270  48 00 00 08 */	b lbl_1050B278
+lbl_1050B274:
+/* 1050B274 0050B274  83 DE 00 04 */	lwz r30, 4(r30)
+lbl_1050B278:
+/* 1050B278 0050B278  28 1E 00 00 */	cmplwi r30, 0
+/* 1050B27C 0050B27C  40 82 FF D4 */	bne lbl_1050B250
+/* 1050B280 0050B280  38 1C 00 04 */	addi r0, r28, 4
+/* 1050B284 0050B284  7C 1F 00 40 */	cmplw r31, r0
+/* 1050B288 0050B288  41 82 00 1C */	beq lbl_1050B2A4
+/* 1050B28C 0050B28C  38 7C 00 08 */	addi r3, r28, 8
+/* 1050B290 0050B290  4B FF FD A1 */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050B294 0050B294  80 7D 00 00 */	lwz r3, 0(r29)
+/* 1050B298 0050B298  80 1F 00 0C */	lwz r0, 0xc(r31)
+/* 1050B29C 0050B29C  7C 03 00 00 */	cmpw r3, r0
+/* 1050B2A0 0050B2A0  40 80 00 1C */	bge lbl_1050B2BC
+lbl_1050B2A4:
+/* 1050B2A4 0050B2A4  7F 83 E3 78 */	mr r3, r28
+/* 1050B2A8 0050B2A8  4B FF CC E9 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050B2AC 0050B2AC  38 83 00 00 */	addi r4, r3, 0
+/* 1050B2B0 0050B2B0  38 7B 00 00 */	addi r3, r27, 0
+/* 1050B2B4 0050B2B4  4B FF C8 8D */	bl "__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+/* 1050B2B8 0050B2B8  48 00 00 08 */	b lbl_1050B2C0
+lbl_1050B2BC:
+/* 1050B2BC 0050B2BC  93 FB 00 00 */	stw r31, 0(r27)
+lbl_1050B2C0:
+/* 1050B2C0 0050B2C0  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050B2C4 0050B2C4  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050B2C8 0050B2C8  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 1050B2CC 0050B2CC  7C 08 03 A6 */	mtlr r0
+/* 1050B2D0 0050B2D0  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>"
+"__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRClRCQ23std19pair<P9cTSBuffer,b>":
+/* 1050B520 0050B520  80 04 00 00 */	lwz r0, 0(r4)
+/* 1050B524 0050B524  90 03 00 00 */	stw r0, 0(r3)
+/* 1050B528 0050B528  80 05 00 00 */	lwz r0, 0(r5)
+/* 1050B52C 0050B52C  90 03 00 04 */	stw r0, 4(r3)
+/* 1050B530 0050B530  88 05 00 04 */	lbz r0, 4(r5)
+/* 1050B534 0050B534  98 03 00 08 */	stb r0, 8(r3)
+/* 1050B538 0050B538  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+"destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node":
+/* 1050B5B0 0050B5B0  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050B5B4 0050B5B4  7C 08 02 A6 */	mflr r0
+/* 1050B5B8 0050B5B8  7C 9F 23 78 */	mr r31, r4
+/* 1050B5BC 0050B5BC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050B5C0 0050B5C0  3B C3 00 00 */	addi r30, r3, 0
+/* 1050B5C4 0050B5C4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050B5C8 0050B5C8  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 1050B5CC 0050B5CC  90 01 00 08 */	stw r0, 8(r1)
+/* 1050B5D0 0050B5D0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050B5D4 0050B5D4  83 84 00 00 */	lwz r28, 0(r4)
+/* 1050B5D8 0050B5D8  28 1C 00 00 */	cmplwi r28, 0
+/* 1050B5DC 0050B5DC  41 82 00 C8 */	beq lbl_1050B6A4
+/* 1050B5E0 0050B5E0  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050B5E4 0050B5E4  28 1D 00 00 */	cmplwi r29, 0
+/* 1050B5E8 0050B5E8  41 82 00 4C */	beq lbl_1050B634
+/* 1050B5EC 0050B5EC  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050B5F0 0050B5F0  28 04 00 00 */	cmplwi r4, 0
+/* 1050B5F4 0050B5F4  41 82 00 08 */	beq lbl_1050B5FC
+/* 1050B5F8 0050B5F8  4B FF FF B9 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B5FC:
+/* 1050B5FC 0050B5FC  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050B600 0050B600  28 04 00 00 */	cmplwi r4, 0
+/* 1050B604 0050B604  41 82 00 0C */	beq lbl_1050B610
+/* 1050B608 0050B608  7F C3 F3 78 */	mr r3, r30
+/* 1050B60C 0050B60C  4B FF FF A5 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B610:
+/* 1050B610 0050B610  7F C3 F3 78 */	mr r3, r30
+/* 1050B614 0050B614  48 00 07 9D */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B618 0050B618  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050B61C 0050B61C  48 00 07 35 */	bl "destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
+/* 1050B620 0050B620  7F C3 F3 78 */	mr r3, r30
+/* 1050B624 0050B624  48 00 06 5D */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B628 0050B628  38 9D 00 00 */	addi r4, r29, 0
+/* 1050B62C 0050B62C  38 A0 00 01 */	li r5, 1
+/* 1050B630 0050B630  48 00 04 A1 */	bl "deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
+lbl_1050B634:
+/* 1050B634 0050B634  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050B638 0050B638  28 1D 00 00 */	cmplwi r29, 0
+/* 1050B63C 0050B63C  41 82 00 50 */	beq lbl_1050B68C
+/* 1050B640 0050B640  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050B644 0050B644  28 04 00 00 */	cmplwi r4, 0
+/* 1050B648 0050B648  41 82 00 0C */	beq lbl_1050B654
+/* 1050B64C 0050B64C  7F C3 F3 78 */	mr r3, r30
+/* 1050B650 0050B650  4B FF FF 61 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B654:
+/* 1050B654 0050B654  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050B658 0050B658  28 04 00 00 */	cmplwi r4, 0
+/* 1050B65C 0050B65C  41 82 00 0C */	beq lbl_1050B668
+/* 1050B660 0050B660  7F C3 F3 78 */	mr r3, r30
+/* 1050B664 0050B664  4B FF FF 4D */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B668:
+/* 1050B668 0050B668  7F C3 F3 78 */	mr r3, r30
+/* 1050B66C 0050B66C  48 00 07 45 */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B670 0050B670  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050B674 0050B674  48 00 06 DD */	bl "destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
+/* 1050B678 0050B678  7F C3 F3 78 */	mr r3, r30
+/* 1050B67C 0050B67C  48 00 06 05 */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B680 0050B680  38 9D 00 00 */	addi r4, r29, 0
+/* 1050B684 0050B684  38 A0 00 01 */	li r5, 1
+/* 1050B688 0050B688  48 00 04 49 */	bl "deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
+lbl_1050B68C:
+/* 1050B68C 0050B68C  7F C3 F3 78 */	mr r3, r30
+/* 1050B690 0050B690  48 00 07 21 */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B694 0050B694  7F C3 F3 78 */	mr r3, r30
+/* 1050B698 0050B698  48 00 05 E9 */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B69C 0050B69C  7F 83 E3 78 */	mr r3, r28
+/* 1050B6A0 0050B6A0  48 07 CF F1 */	bl func_10588690
+lbl_1050B6A4:
+/* 1050B6A4 0050B6A4  83 9F 00 04 */	lwz r28, 4(r31)
+/* 1050B6A8 0050B6A8  28 1C 00 00 */	cmplwi r28, 0
+/* 1050B6AC 0050B6AC  41 82 00 CC */	beq lbl_1050B778
+/* 1050B6B0 0050B6B0  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050B6B4 0050B6B4  28 1D 00 00 */	cmplwi r29, 0
+/* 1050B6B8 0050B6B8  41 82 00 50 */	beq lbl_1050B708
+/* 1050B6BC 0050B6BC  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050B6C0 0050B6C0  28 04 00 00 */	cmplwi r4, 0
+/* 1050B6C4 0050B6C4  41 82 00 0C */	beq lbl_1050B6D0
+/* 1050B6C8 0050B6C8  7F C3 F3 78 */	mr r3, r30
+/* 1050B6CC 0050B6CC  4B FF FE E5 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B6D0:
+/* 1050B6D0 0050B6D0  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050B6D4 0050B6D4  28 04 00 00 */	cmplwi r4, 0
+/* 1050B6D8 0050B6D8  41 82 00 0C */	beq lbl_1050B6E4
+/* 1050B6DC 0050B6DC  7F C3 F3 78 */	mr r3, r30
+/* 1050B6E0 0050B6E0  4B FF FE D1 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B6E4:
+/* 1050B6E4 0050B6E4  7F C3 F3 78 */	mr r3, r30
+/* 1050B6E8 0050B6E8  48 00 06 C9 */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B6EC 0050B6EC  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050B6F0 0050B6F0  48 00 06 61 */	bl "destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
+/* 1050B6F4 0050B6F4  7F C3 F3 78 */	mr r3, r30
+/* 1050B6F8 0050B6F8  48 00 05 89 */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B6FC 0050B6FC  38 9D 00 00 */	addi r4, r29, 0
+/* 1050B700 0050B700  38 A0 00 01 */	li r5, 1
+/* 1050B704 0050B704  48 00 03 CD */	bl "deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
+lbl_1050B708:
+/* 1050B708 0050B708  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050B70C 0050B70C  28 1D 00 00 */	cmplwi r29, 0
+/* 1050B710 0050B710  41 82 00 50 */	beq lbl_1050B760
+/* 1050B714 0050B714  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050B718 0050B718  28 04 00 00 */	cmplwi r4, 0
+/* 1050B71C 0050B71C  41 82 00 0C */	beq lbl_1050B728
+/* 1050B720 0050B720  7F C3 F3 78 */	mr r3, r30
+/* 1050B724 0050B724  4B FF FE 8D */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B728:
+/* 1050B728 0050B728  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050B72C 0050B72C  28 04 00 00 */	cmplwi r4, 0
+/* 1050B730 0050B730  41 82 00 0C */	beq lbl_1050B73C
+/* 1050B734 0050B734  7F C3 F3 78 */	mr r3, r30
+/* 1050B738 0050B738  4B FF FE 79 */	bl "destroy__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+lbl_1050B73C:
+/* 1050B73C 0050B73C  7F C3 F3 78 */	mr r3, r30
+/* 1050B740 0050B740  48 00 06 71 */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B744 0050B744  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050B748 0050B748  48 00 06 09 */	bl "destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
+/* 1050B74C 0050B74C  7F C3 F3 78 */	mr r3, r30
+/* 1050B750 0050B750  48 00 05 31 */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B754 0050B754  38 9D 00 00 */	addi r4, r29, 0
+/* 1050B758 0050B758  38 A0 00 01 */	li r5, 1
+/* 1050B75C 0050B75C  48 00 03 75 */	bl "deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
+lbl_1050B760:
+/* 1050B760 0050B760  7F C3 F3 78 */	mr r3, r30
+/* 1050B764 0050B764  48 00 06 4D */	bl "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B768 0050B768  7F C3 F3 78 */	mr r3, r30
+/* 1050B76C 0050B76C  48 00 05 15 */	bl "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050B770 0050B770  7F 83 E3 78 */	mr r3, r28
+/* 1050B774 0050B774  48 07 CF 1D */	bl func_10588690
+lbl_1050B778:
+/* 1050B778 0050B778  7F C3 F3 78 */	mr r3, r30
+/* 1050B77C 0050B77C  48 00 02 D5 */	bl "first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
+/* 1050B780 0050B780  38 7E 00 04 */	addi r3, r30, 4
+/* 1050B784 0050B784  48 00 01 9D */	bl "first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050B788 0050B788  7F E3 FB 78 */	mr r3, r31
+/* 1050B78C 0050B78C  48 07 CF 05 */	bl func_10588690
+/* 1050B790 0050B790  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1050B794 0050B794  38 21 00 50 */	addi r1, r1, 0x50
+/* 1050B798 0050B798  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050B79C 0050B79C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050B7A0 0050B7A0  7C 08 03 A6 */	mtlr r0
+/* 1050B7A4 0050B7A4  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050B7A8 0050B7A8  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 1050B7AC 0050B7AC  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+"first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
+/* 1050B920 0050B920  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
+"first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv":
+/* 1050BA50 0050BA50  4E 80 00 20 */	blr 
+
+.global "deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl"
+"deallocate__Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodeUl":
+/* 1050BAD0 0050BAD0  7C 08 02 A6 */	mflr r0
+/* 1050BAD4 0050BAD4  7C 83 23 78 */	mr r3, r4
+/* 1050BAD8 0050BAD8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050BADC 0050BADC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050BAE0 0050BAE0  48 07 CB B1 */	bl func_10588690
+/* 1050BAE4 0050BAE4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050BAE8 0050BAE8  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050BAEC 0050BAEC  7C 08 03 A6 */	mtlr r0
+/* 1050BAF0 0050BAF0  4E 80 00 20 */	blr 
+
+.global "node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"node_alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 1050BC80 0050BC80  38 63 00 04 */	addi r3, r3, 4
+/* 1050BC84 0050BC84  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>"
+"destroy__Q23std30allocator<Q23std11pair<Cl,Ul>>FPQ23std11pair<Cl,Ul>":
+/* 1050BD50 0050BD50  4E 80 00 20 */	blr 
+
+.global "alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+"alloc__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv":
+/* 1050BDB0 0050BDB0  4E 80 00 20 */	blr 
+
+.global "erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>"
+"erase__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>21__generic_iterator<0>":
+/* 1050BE80 0050BE80  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050BE84 0050BE84  7C 08 02 A6 */	mflr r0
+/* 1050BE88 0050BE88  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050BE8C 0050BE8C  7C 9E 23 78 */	mr r30, r4
+/* 1050BE90 0050BE90  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050BE94 0050BE94  7C 7D 1B 78 */	mr r29, r3
+/* 1050BE98 0050BE98  90 01 00 08 */	stw r0, 8(r1)
+/* 1050BE9C 0050BE9C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050BEA0 0050BEA0  83 E4 00 00 */	lwz r31, 0(r4)
+/* 1050BEA4 0050BEA4  4B FF D2 2D */	bl "front__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050BEA8 0050BEA8  38 83 00 00 */	addi r4, r3, 0
+/* 1050BEAC 0050BEAC  38 61 00 40 */	addi r3, r1, 0x40
+/* 1050BEB0 0050BEB0  80 84 00 00 */	lwz r4, 0(r4)
+/* 1050BEB4 0050BEB4  4B FF D0 9D */	bl "__pointer2iterator__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node"
+/* 1050BEB8 0050BEB8  80 7E 00 00 */	lwz r3, 0(r30)
+/* 1050BEBC 0050BEBC  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 1050BEC0 0050BEC0  7C 03 00 40 */	cmplw r3, r0
+/* 1050BEC4 0050BEC4  40 82 00 14 */	bne lbl_1050BED8
+/* 1050BEC8 0050BEC8  7F C3 F3 78 */	mr r3, r30
+/* 1050BECC 0050BECC  4B B7 8D C5 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 1050BED0 0050BED0  80 1E 00 00 */	lwz r0, 0(r30)
+/* 1050BED4 0050BED4  90 1D 00 0C */	stw r0, 0xc(r29)
+lbl_1050BED8:
+/* 1050BED8 0050BED8  7F A3 EB 78 */	mr r3, r29
+/* 1050BEDC 0050BEDC  4B FF D3 65 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050BEE0 0050BEE0  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050BEE4 0050BEE4  7F E3 FB 78 */	mr r3, r31
+/* 1050BEE8 0050BEE8  4B BA A2 49 */	bl "balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050BEEC 0050BEEC  7F A3 EB 78 */	mr r3, r29
+/* 1050BEF0 0050BEF0  4B FF FB 61 */	bl "first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
+/* 1050BEF4 0050BEF4  38 7D 00 04 */	addi r3, r29, 4
+/* 1050BEF8 0050BEF8  4B FF FA 29 */	bl "first__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050BEFC 0050BEFC  7F E3 FB 78 */	mr r3, r31
+/* 1050BF00 0050BF00  48 07 C7 91 */	bl func_10588690
+/* 1050BF04 0050BF04  80 7D 00 00 */	lwz r3, 0(r29)
+/* 1050BF08 0050BF08  38 03 FF FF */	addi r0, r3, -1
+/* 1050BF0C 0050BF0C  90 1D 00 00 */	stw r0, 0(r29)
+/* 1050BF10 0050BF10  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050BF14 0050BF14  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050BF18 0050BF18  7C 08 03 A6 */	mtlr r0
+/* 1050BF1C 0050BF1C  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050BF20 0050BF20  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050BF24 0050BF24  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050BF28 0050BF28  4E 80 00 20 */	blr 
+
+.global "insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>"
+"insert_one__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ23std11pair<Cl,Ul>":
+/* 1050C0B0 0050C0B0  BF 01 FF E0 */	stmw r24, -0x20(r1)
+/* 1050C0B4 0050C0B4  7C 08 02 A6 */	mflr r0
+/* 1050C0B8 0050C0B8  3B 24 00 00 */	addi r25, r4, 0
+/* 1050C0BC 0050C0BC  3B 03 00 00 */	addi r24, r3, 0
+/* 1050C0C0 0050C0C0  3B 99 00 04 */	addi r28, r25, 4
+/* 1050C0C4 0050C0C4  3B 45 00 00 */	addi r26, r5, 0
+/* 1050C0C8 0050C0C8  38 79 00 00 */	addi r3, r25, 0
+/* 1050C0CC 0050C0CC  3B 60 00 00 */	li r27, 0
+/* 1050C0D0 0050C0D0  90 01 00 08 */	stw r0, 8(r1)
+/* 1050C0D4 0050C0D4  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050C0D8 0050C0D8  4B FF D1 69 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050C0DC 0050C0DC  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050C0E0 0050C0E0  3B C0 00 01 */	li r30, 1
+/* 1050C0E4 0050C0E4  3B E0 00 01 */	li r31, 1
+/* 1050C0E8 0050C0E8  48 00 00 40 */	b lbl_1050C128
+/* 1050C0EC 0050C0EC  60 00 00 00 */	nop 
+lbl_1050C0F0:
+/* 1050C0F0 0050C0F0  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050C0F4 0050C0F4  38 79 00 08 */	addi r3, r25, 8
+/* 1050C0F8 0050C0F8  4B FF E5 99 */	bl "first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
+/* 1050C0FC 0050C0FC  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050C100 0050C100  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050C104 0050C104  7C 03 00 00 */	cmpw r3, r0
+/* 1050C108 0050C108  40 80 00 10 */	bge lbl_1050C118
+/* 1050C10C 0050C10C  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050C110 0050C110  3B C0 00 01 */	li r30, 1
+/* 1050C114 0050C114  48 00 00 14 */	b lbl_1050C128
+lbl_1050C118:
+/* 1050C118 0050C118  7F BB EB 78 */	mr r27, r29
+/* 1050C11C 0050C11C  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050C120 0050C120  3B C0 00 00 */	li r30, 0
+/* 1050C124 0050C124  3B E0 00 00 */	li r31, 0
+lbl_1050C128:
+/* 1050C128 0050C128  28 1D 00 00 */	cmplwi r29, 0
+/* 1050C12C 0050C12C  40 82 FF C4 */	bne lbl_1050C0F0
+/* 1050C130 0050C130  28 1B 00 00 */	cmplwi r27, 0
+/* 1050C134 0050C134  41 82 00 1C */	beq lbl_1050C150
+/* 1050C138 0050C138  38 79 00 08 */	addi r3, r25, 8
+/* 1050C13C 0050C13C  4B FF E5 55 */	bl "first__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>Fv"
+/* 1050C140 0050C140  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050C144 0050C144  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050C148 0050C148  7C 03 00 00 */	cmpw r3, r0
+/* 1050C14C 0050C14C  40 80 00 2C */	bge lbl_1050C178
+lbl_1050C150:
+/* 1050C150 0050C150  38 79 00 00 */	addi r3, r25, 0
+/* 1050C154 0050C154  38 9C 00 00 */	addi r4, r28, 0
+/* 1050C158 0050C158  38 BE 00 00 */	addi r5, r30, 0
+/* 1050C15C 0050C15C  38 DF 00 00 */	addi r6, r31, 0
+/* 1050C160 0050C160  38 FA 00 00 */	addi r7, r26, 0
+/* 1050C164 0050C164  48 00 35 9D */	bl "insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
+/* 1050C168 0050C168  90 78 00 00 */	stw r3, 0(r24)
+/* 1050C16C 0050C16C  88 02 28 BC */	lbz r0, lbl_105C3D1C-_R2_BASE_(r2)
+/* 1050C170 0050C170  98 18 00 04 */	stb r0, 4(r24)
+/* 1050C174 0050C174  48 00 00 10 */	b lbl_1050C184
+lbl_1050C178:
+/* 1050C178 0050C178  93 78 00 00 */	stw r27, 0(r24)
+/* 1050C17C 0050C17C  88 02 28 BD */	lbz r0, lbl_105C3D1D-_R2_BASE_(r2)
+/* 1050C180 0050C180  98 18 00 04 */	stb r0, 4(r24)
+lbl_1050C184:
+/* 1050C184 0050C184  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050C188 0050C188  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050C18C 0050C18C  BB 01 FF E0 */	lmw r24, -0x20(r1)
+/* 1050C190 0050C190  7C 08 03 A6 */	mtlr r0
+/* 1050C194 0050C194  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>"
+"__ct__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compareRCQ23std30allocator<Q23std11pair<Cl,Ul>>":
+/* 1050C270 0050C270  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050C274 0050C274  3B E4 00 00 */	addi r31, r4, 0
+/* 1050C278 0050C278  38 85 00 00 */	addi r4, r5, 0
+/* 1050C27C 0050C27C  7C 08 02 A6 */	mflr r0
+/* 1050C280 0050C280  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050C284 0050C284  3B C3 00 00 */	addi r30, r3, 0
+/* 1050C288 0050C288  90 01 00 08 */	stw r0, 8(r1)
+/* 1050C28C 0050C28C  38 A0 00 00 */	li r5, 0
+/* 1050C290 0050C290  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050C294 0050C294  48 00 05 2D */	bl "__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul"
+/* 1050C298 0050C298  38 7E 00 04 */	addi r3, r30, 4
+/* 1050C29C 0050C29C  38 81 00 40 */	addi r4, r1, 0x40
+/* 1050C2A0 0050C2A0  48 00 03 21 */	bl "__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>"
+/* 1050C2A4 0050C2A4  38 9F 00 00 */	addi r4, r31, 0
+/* 1050C2A8 0050C2A8  38 7E 00 08 */	addi r3, r30, 8
+/* 1050C2AC 0050C2AC  48 00 01 65 */	bl "__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare"
+/* 1050C2B0 0050C2B0  38 1E 00 04 */	addi r0, r30, 4
+/* 1050C2B4 0050C2B4  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 1050C2B8 0050C2B8  7F C3 F3 78 */	mr r3, r30
+/* 1050C2BC 0050C2BC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050C2C0 0050C2C0  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050C2C4 0050C2C4  7C 08 03 A6 */	mtlr r0
+/* 1050C2C8 0050C2C8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050C2CC 0050C2CC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050C2D0 0050C2D0  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare"
+"__ct__Q310Metrowerks7details278compressed_pair_imp<Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,PQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node,0>FRCQ33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare":
+/* 1050C410 0050C410  88 04 00 00 */	lbz r0, 0(r4)
+/* 1050C414 0050C414  98 03 00 00 */	stb r0, 0(r3)
+/* 1050C418 0050C418  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>"
+"__ct__Q310Metrowerks7details245compressed_pair_imp<Q23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std178allocator<Q33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4node>":
+/* 1050C5C0 0050C5C0  38 00 00 00 */	li r0, 0
+/* 1050C5C4 0050C5C4  90 03 00 00 */	stw r0, 0(r3)
+/* 1050C5C8 0050C5C8  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul"
+"__ct__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>FRCQ23std30allocator<Q23std11pair<Cl,Ul>>Ul":
+/* 1050C7C0 0050C7C0  90 A3 00 00 */	stw r5, 0(r3)
+/* 1050C7C4 0050C7C4  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+"destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node":
+/* 1050C870 0050C870  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050C874 0050C874  7C 08 02 A6 */	mflr r0
+/* 1050C878 0050C878  7C 9F 23 78 */	mr r31, r4
+/* 1050C87C 0050C87C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050C880 0050C880  3B C3 00 00 */	addi r30, r3, 0
+/* 1050C884 0050C884  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050C888 0050C888  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 1050C88C 0050C88C  90 01 00 08 */	stw r0, 8(r1)
+/* 1050C890 0050C890  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050C894 0050C894  83 84 00 00 */	lwz r28, 0(r4)
+/* 1050C898 0050C898  28 1C 00 00 */	cmplwi r28, 0
+/* 1050C89C 0050C89C  41 82 00 C8 */	beq lbl_1050C964
+/* 1050C8A0 0050C8A0  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050C8A4 0050C8A4  28 1D 00 00 */	cmplwi r29, 0
+/* 1050C8A8 0050C8A8  41 82 00 4C */	beq lbl_1050C8F4
+/* 1050C8AC 0050C8AC  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050C8B0 0050C8B0  28 04 00 00 */	cmplwi r4, 0
+/* 1050C8B4 0050C8B4  41 82 00 08 */	beq lbl_1050C8BC
+/* 1050C8B8 0050C8B8  4B FF FF B9 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C8BC:
+/* 1050C8BC 0050C8BC  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050C8C0 0050C8C0  28 04 00 00 */	cmplwi r4, 0
+/* 1050C8C4 0050C8C4  41 82 00 0C */	beq lbl_1050C8D0
+/* 1050C8C8 0050C8C8  7F C3 F3 78 */	mr r3, r30
+/* 1050C8CC 0050C8CC  4B FF FF A5 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C8D0:
+/* 1050C8D0 0050C8D0  7F C3 F3 78 */	mr r3, r30
+/* 1050C8D4 0050C8D4  48 00 08 6D */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C8D8 0050C8D8  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050C8DC 0050C8DC  48 00 07 F5 */	bl "destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
+/* 1050C8E0 0050C8E0  7F C3 F3 78 */	mr r3, r30
+/* 1050C8E4 0050C8E4  48 00 06 FD */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C8E8 0050C8E8  38 9D 00 00 */	addi r4, r29, 0
+/* 1050C8EC 0050C8EC  38 A0 00 01 */	li r5, 1
+/* 1050C8F0 0050C8F0  48 00 05 01 */	bl "deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
+lbl_1050C8F4:
+/* 1050C8F4 0050C8F4  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050C8F8 0050C8F8  28 1D 00 00 */	cmplwi r29, 0
+/* 1050C8FC 0050C8FC  41 82 00 50 */	beq lbl_1050C94C
+/* 1050C900 0050C900  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050C904 0050C904  28 04 00 00 */	cmplwi r4, 0
+/* 1050C908 0050C908  41 82 00 0C */	beq lbl_1050C914
+/* 1050C90C 0050C90C  7F C3 F3 78 */	mr r3, r30
+/* 1050C910 0050C910  4B FF FF 61 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C914:
+/* 1050C914 0050C914  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050C918 0050C918  28 04 00 00 */	cmplwi r4, 0
+/* 1050C91C 0050C91C  41 82 00 0C */	beq lbl_1050C928
+/* 1050C920 0050C920  7F C3 F3 78 */	mr r3, r30
+/* 1050C924 0050C924  4B FF FF 4D */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C928:
+/* 1050C928 0050C928  7F C3 F3 78 */	mr r3, r30
+/* 1050C92C 0050C92C  48 00 08 15 */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C930 0050C930  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050C934 0050C934  48 00 07 9D */	bl "destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
+/* 1050C938 0050C938  7F C3 F3 78 */	mr r3, r30
+/* 1050C93C 0050C93C  48 00 06 A5 */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C940 0050C940  38 9D 00 00 */	addi r4, r29, 0
+/* 1050C944 0050C944  38 A0 00 01 */	li r5, 1
+/* 1050C948 0050C948  48 00 04 A9 */	bl "deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
+lbl_1050C94C:
+/* 1050C94C 0050C94C  7F C3 F3 78 */	mr r3, r30
+/* 1050C950 0050C950  48 00 07 F1 */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C954 0050C954  7F C3 F3 78 */	mr r3, r30
+/* 1050C958 0050C958  48 00 06 89 */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C95C 0050C95C  7F 83 E3 78 */	mr r3, r28
+/* 1050C960 0050C960  48 07 BD 31 */	bl func_10588690
+lbl_1050C964:
+/* 1050C964 0050C964  83 9F 00 04 */	lwz r28, 4(r31)
+/* 1050C968 0050C968  28 1C 00 00 */	cmplwi r28, 0
+/* 1050C96C 0050C96C  41 82 00 CC */	beq lbl_1050CA38
+/* 1050C970 0050C970  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050C974 0050C974  28 1D 00 00 */	cmplwi r29, 0
+/* 1050C978 0050C978  41 82 00 50 */	beq lbl_1050C9C8
+/* 1050C97C 0050C97C  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050C980 0050C980  28 04 00 00 */	cmplwi r4, 0
+/* 1050C984 0050C984  41 82 00 0C */	beq lbl_1050C990
+/* 1050C988 0050C988  7F C3 F3 78 */	mr r3, r30
+/* 1050C98C 0050C98C  4B FF FE E5 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C990:
+/* 1050C990 0050C990  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050C994 0050C994  28 04 00 00 */	cmplwi r4, 0
+/* 1050C998 0050C998  41 82 00 0C */	beq lbl_1050C9A4
+/* 1050C99C 0050C99C  7F C3 F3 78 */	mr r3, r30
+/* 1050C9A0 0050C9A0  4B FF FE D1 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C9A4:
+/* 1050C9A4 0050C9A4  7F C3 F3 78 */	mr r3, r30
+/* 1050C9A8 0050C9A8  48 00 07 99 */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C9AC 0050C9AC  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050C9B0 0050C9B0  48 00 07 21 */	bl "destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
+/* 1050C9B4 0050C9B4  7F C3 F3 78 */	mr r3, r30
+/* 1050C9B8 0050C9B8  48 00 06 29 */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050C9BC 0050C9BC  38 9D 00 00 */	addi r4, r29, 0
+/* 1050C9C0 0050C9C0  38 A0 00 01 */	li r5, 1
+/* 1050C9C4 0050C9C4  48 00 04 2D */	bl "deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
+lbl_1050C9C8:
+/* 1050C9C8 0050C9C8  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050C9CC 0050C9CC  28 1D 00 00 */	cmplwi r29, 0
+/* 1050C9D0 0050C9D0  41 82 00 50 */	beq lbl_1050CA20
+/* 1050C9D4 0050C9D4  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050C9D8 0050C9D8  28 04 00 00 */	cmplwi r4, 0
+/* 1050C9DC 0050C9DC  41 82 00 0C */	beq lbl_1050C9E8
+/* 1050C9E0 0050C9E0  7F C3 F3 78 */	mr r3, r30
+/* 1050C9E4 0050C9E4  4B FF FE 8D */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C9E8:
+/* 1050C9E8 0050C9E8  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050C9EC 0050C9EC  28 04 00 00 */	cmplwi r4, 0
+/* 1050C9F0 0050C9F0  41 82 00 0C */	beq lbl_1050C9FC
+/* 1050C9F4 0050C9F4  7F C3 F3 78 */	mr r3, r30
+/* 1050C9F8 0050C9F8  4B FF FE 79 */	bl "destroy__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+lbl_1050C9FC:
+/* 1050C9FC 0050C9FC  7F C3 F3 78 */	mr r3, r30
+/* 1050CA00 0050CA00  48 00 07 41 */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050CA04 0050CA04  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050CA08 0050CA08  48 00 06 C9 */	bl "destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
+/* 1050CA0C 0050CA0C  7F C3 F3 78 */	mr r3, r30
+/* 1050CA10 0050CA10  48 00 05 D1 */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050CA14 0050CA14  38 9D 00 00 */	addi r4, r29, 0
+/* 1050CA18 0050CA18  38 A0 00 01 */	li r5, 1
+/* 1050CA1C 0050CA1C  48 00 03 D5 */	bl "deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
+lbl_1050CA20:
+/* 1050CA20 0050CA20  7F C3 F3 78 */	mr r3, r30
+/* 1050CA24 0050CA24  48 00 07 1D */	bl "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050CA28 0050CA28  7F C3 F3 78 */	mr r3, r30
+/* 1050CA2C 0050CA2C  48 00 05 B5 */	bl "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050CA30 0050CA30  7F 83 E3 78 */	mr r3, r28
+/* 1050CA34 0050CA34  48 07 BC 5D */	bl func_10588690
+lbl_1050CA38:
+/* 1050CA38 0050CA38  7F C3 F3 78 */	mr r3, r30
+/* 1050CA3C 0050CA3C  48 00 03 35 */	bl "first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
+/* 1050CA40 0050CA40  38 7E 00 04 */	addi r3, r30, 4
+/* 1050CA44 0050CA44  48 00 01 DD */	bl "first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050CA48 0050CA48  7F E3 FB 78 */	mr r3, r31
+/* 1050CA4C 0050CA4C  48 07 BC 45 */	bl func_10588690
+/* 1050CA50 0050CA50  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1050CA54 0050CA54  38 21 00 50 */	addi r1, r1, 0x50
+/* 1050CA58 0050CA58  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050CA5C 0050CA5C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050CA60 0050CA60  7C 08 03 A6 */	mtlr r0
+/* 1050CA64 0050CA64  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050CA68 0050CA68  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 1050CA6C 0050CA6C  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+"first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
+/* 1050CC20 0050CC20  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
+"first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv":
+/* 1050CD70 0050CD70  4E 80 00 20 */	blr 
+
+.global "deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl"
+"deallocate__Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodeUl":
+/* 1050CDF0 0050CDF0  7C 08 02 A6 */	mflr r0
+/* 1050CDF4 0050CDF4  7C 83 23 78 */	mr r3, r4
+/* 1050CDF8 0050CDF8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050CDFC 0050CDFC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050CE00 0050CE00  48 07 B8 91 */	bl func_10588690
+/* 1050CE04 0050CE04  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050CE08 0050CE08  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050CE0C 0050CE0C  7C 08 03 A6 */	mtlr r0
+/* 1050CE10 0050CE10  4E 80 00 20 */	blr 
+
+.global "node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"node_alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 1050CFE0 0050CFE0  38 63 00 04 */	addi r3, r3, 4
+/* 1050CFE4 0050CFE4  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>"
+"destroy__Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>FPQ23std19pair<Cl,P8cITSFont>":
+/* 1050D0D0 0050D0D0  4E 80 00 20 */	blr 
+
+.global "alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+"alloc__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv":
+/* 1050D140 0050D140  4E 80 00 20 */	blr 
+
+.global "erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>"
+"erase__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>21__generic_iterator<0>":
+/* 1050D230 0050D230  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050D234 0050D234  7C 08 02 A6 */	mflr r0
+/* 1050D238 0050D238  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050D23C 0050D23C  7C 9E 23 78 */	mr r30, r4
+/* 1050D240 0050D240  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050D244 0050D244  7C 7D 1B 78 */	mr r29, r3
+/* 1050D248 0050D248  90 01 00 08 */	stw r0, 8(r1)
+/* 1050D24C 0050D24C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050D250 0050D250  83 E4 00 00 */	lwz r31, 0(r4)
+/* 1050D254 0050D254  4B FF B5 3D */	bl "front__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050D258 0050D258  38 83 00 00 */	addi r4, r3, 0
+/* 1050D25C 0050D25C  38 61 00 40 */	addi r3, r1, 0x40
+/* 1050D260 0050D260  80 84 00 00 */	lwz r4, 0(r4)
+/* 1050D264 0050D264  4B FF 8B AD */	bl "__pointer2iterator__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node"
+/* 1050D268 0050D268  80 7E 00 00 */	lwz r3, 0(r30)
+/* 1050D26C 0050D26C  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 1050D270 0050D270  7C 03 00 40 */	cmplw r3, r0
+/* 1050D274 0050D274  40 82 00 14 */	bne lbl_1050D288
+/* 1050D278 0050D278  7F C3 F3 78 */	mr r3, r30
+/* 1050D27C 0050D27C  4B B7 7A 15 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 1050D280 0050D280  80 1E 00 00 */	lwz r0, 0(r30)
+/* 1050D284 0050D284  90 1D 00 0C */	stw r0, 0xc(r29)
+lbl_1050D288:
+/* 1050D288 0050D288  7F A3 EB 78 */	mr r3, r29
+/* 1050D28C 0050D28C  4B FF 8D 45 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050D290 0050D290  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050D294 0050D294  7F E3 FB 78 */	mr r3, r31
+/* 1050D298 0050D298  4B BA 8E 99 */	bl "balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050D29C 0050D29C  7F A3 EB 78 */	mr r3, r29
+/* 1050D2A0 0050D2A0  4B FF FA D1 */	bl "first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
+/* 1050D2A4 0050D2A4  38 7D 00 04 */	addi r3, r29, 4
+/* 1050D2A8 0050D2A8  4B FF F9 79 */	bl "first__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050D2AC 0050D2AC  7F E3 FB 78 */	mr r3, r31
+/* 1050D2B0 0050D2B0  48 07 B3 E1 */	bl func_10588690
+/* 1050D2B4 0050D2B4  80 7D 00 00 */	lwz r3, 0(r29)
+/* 1050D2B8 0050D2B8  38 03 FF FF */	addi r0, r3, -1
+/* 1050D2BC 0050D2BC  90 1D 00 00 */	stw r0, 0(r29)
+/* 1050D2C0 0050D2C0  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050D2C4 0050D2C4  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050D2C8 0050D2C8  7C 08 03 A6 */	mtlr r0
+/* 1050D2CC 0050D2CC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050D2D0 0050D2D0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050D2D4 0050D2D4  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050D2D8 0050D2D8  4E 80 00 20 */	blr 
+
+.global "insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>"
+"insert_one__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ23std19pair<Cl,P8cITSFont>":
+/* 1050D4A0 0050D4A0  BF 01 FF E0 */	stmw r24, -0x20(r1)
+/* 1050D4A4 0050D4A4  7C 08 02 A6 */	mflr r0
+/* 1050D4A8 0050D4A8  3B 24 00 00 */	addi r25, r4, 0
+/* 1050D4AC 0050D4AC  3B 03 00 00 */	addi r24, r3, 0
+/* 1050D4B0 0050D4B0  3B 99 00 04 */	addi r28, r25, 4
+/* 1050D4B4 0050D4B4  3B 45 00 00 */	addi r26, r5, 0
+/* 1050D4B8 0050D4B8  38 79 00 00 */	addi r3, r25, 0
+/* 1050D4BC 0050D4BC  3B 60 00 00 */	li r27, 0
+/* 1050D4C0 0050D4C0  90 01 00 08 */	stw r0, 8(r1)
+/* 1050D4C4 0050D4C4  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050D4C8 0050D4C8  4B FF 8B 09 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050D4CC 0050D4CC  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050D4D0 0050D4D0  3B C0 00 01 */	li r30, 1
+/* 1050D4D4 0050D4D4  3B E0 00 01 */	li r31, 1
+/* 1050D4D8 0050D4D8  48 00 00 40 */	b lbl_1050D518
+/* 1050D4DC 0050D4DC  60 00 00 00 */	nop 
+lbl_1050D4E0:
+/* 1050D4E0 0050D4E0  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050D4E4 0050D4E4  38 79 00 08 */	addi r3, r25, 8
+/* 1050D4E8 0050D4E8  4B FF D4 F9 */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050D4EC 0050D4EC  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050D4F0 0050D4F0  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050D4F4 0050D4F4  7C 03 00 00 */	cmpw r3, r0
+/* 1050D4F8 0050D4F8  40 80 00 10 */	bge lbl_1050D508
+/* 1050D4FC 0050D4FC  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050D500 0050D500  3B C0 00 01 */	li r30, 1
+/* 1050D504 0050D504  48 00 00 14 */	b lbl_1050D518
+lbl_1050D508:
+/* 1050D508 0050D508  7F BB EB 78 */	mr r27, r29
+/* 1050D50C 0050D50C  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050D510 0050D510  3B C0 00 00 */	li r30, 0
+/* 1050D514 0050D514  3B E0 00 00 */	li r31, 0
+lbl_1050D518:
+/* 1050D518 0050D518  28 1D 00 00 */	cmplwi r29, 0
+/* 1050D51C 0050D51C  40 82 FF C4 */	bne lbl_1050D4E0
+/* 1050D520 0050D520  28 1B 00 00 */	cmplwi r27, 0
+/* 1050D524 0050D524  41 82 00 1C */	beq lbl_1050D540
+/* 1050D528 0050D528  38 79 00 08 */	addi r3, r25, 8
+/* 1050D52C 0050D52C  4B FF D4 B5 */	bl "first__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>Fv"
+/* 1050D530 0050D530  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050D534 0050D534  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050D538 0050D538  7C 03 00 00 */	cmpw r3, r0
+/* 1050D53C 0050D53C  40 80 00 2C */	bge lbl_1050D568
+lbl_1050D540:
+/* 1050D540 0050D540  38 79 00 00 */	addi r3, r25, 0
+/* 1050D544 0050D544  38 9C 00 00 */	addi r4, r28, 0
+/* 1050D548 0050D548  38 BE 00 00 */	addi r5, r30, 0
+/* 1050D54C 0050D54C  38 DF 00 00 */	addi r6, r31, 0
+/* 1050D550 0050D550  38 FA 00 00 */	addi r7, r26, 0
+/* 1050D554 0050D554  48 00 25 0D */	bl "insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
+/* 1050D558 0050D558  90 78 00 00 */	stw r3, 0(r24)
+/* 1050D55C 0050D55C  88 02 28 BA */	lbz r0, lbl_105C3D1A-_R2_BASE_(r2)
+/* 1050D560 0050D560  98 18 00 04 */	stb r0, 4(r24)
+/* 1050D564 0050D564  48 00 00 10 */	b lbl_1050D574
+lbl_1050D568:
+/* 1050D568 0050D568  93 78 00 00 */	stw r27, 0(r24)
+/* 1050D56C 0050D56C  88 02 28 BB */	lbz r0, lbl_105C3D1B-_R2_BASE_(r2)
+/* 1050D570 0050D570  98 18 00 04 */	stb r0, 4(r24)
+lbl_1050D574:
+/* 1050D574 0050D574  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050D578 0050D578  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050D57C 0050D57C  BB 01 FF E0 */	lmw r24, -0x20(r1)
+/* 1050D580 0050D580  7C 08 03 A6 */	mtlr r0
+/* 1050D584 0050D584  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>"
+"__ct__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compareRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>":
+/* 1050D690 0050D690  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050D694 0050D694  3B E4 00 00 */	addi r31, r4, 0
+/* 1050D698 0050D698  38 85 00 00 */	addi r4, r5, 0
+/* 1050D69C 0050D69C  7C 08 02 A6 */	mflr r0
+/* 1050D6A0 0050D6A0  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050D6A4 0050D6A4  3B C3 00 00 */	addi r30, r3, 0
+/* 1050D6A8 0050D6A8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050D6AC 0050D6AC  38 A0 00 00 */	li r5, 0
+/* 1050D6B0 0050D6B0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050D6B4 0050D6B4  48 00 05 ED */	bl "__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul"
+/* 1050D6B8 0050D6B8  38 7E 00 04 */	addi r3, r30, 4
+/* 1050D6BC 0050D6BC  38 81 00 40 */	addi r4, r1, 0x40
+/* 1050D6C0 0050D6C0  48 00 03 A1 */	bl "__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>"
+/* 1050D6C4 0050D6C4  38 9F 00 00 */	addi r4, r31, 0
+/* 1050D6C8 0050D6C8  38 7E 00 08 */	addi r3, r30, 8
+/* 1050D6CC 0050D6CC  48 00 01 A5 */	bl "__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare"
+/* 1050D6D0 0050D6D0  38 1E 00 04 */	addi r0, r30, 4
+/* 1050D6D4 0050D6D4  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 1050D6D8 0050D6D8  7F C3 F3 78 */	mr r3, r30
+/* 1050D6DC 0050D6DC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050D6E0 0050D6E0  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050D6E4 0050D6E4  7C 08 03 A6 */	mtlr r0
+/* 1050D6E8 0050D6E8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050D6EC 0050D6EC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050D6F0 0050D6F0  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare"
+"__ct__Q310Metrowerks7details326compressed_pair_imp<Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,PQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node,0>FRCQ33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare":
+/* 1050D870 0050D870  88 04 00 00 */	lbz r0, 0(r4)
+/* 1050D874 0050D874  98 03 00 00 */	stb r0, 0(r3)
+/* 1050D878 0050D878  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>"
+"__ct__Q310Metrowerks7details277compressed_pair_imp<Q23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std210allocator<Q33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4node>":
+/* 1050DA60 0050DA60  38 00 00 00 */	li r0, 0
+/* 1050DA64 0050DA64  90 03 00 00 */	stw r0, 0(r3)
+/* 1050DA68 0050DA68  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul"
+"__ct__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>FRCQ23std38allocator<Q23std19pair<Cl,P8cITSFont>>Ul":
+/* 1050DCA0 0050DCA0  90 A3 00 00 */	stw r5, 0(r3)
+/* 1050DCA4 0050DCA4  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+"destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node":
+/* 1050DD60 0050DD60  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050DD64 0050DD64  7C 08 02 A6 */	mflr r0
+/* 1050DD68 0050DD68  7C 9F 23 78 */	mr r31, r4
+/* 1050DD6C 0050DD6C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050DD70 0050DD70  3B C3 00 00 */	addi r30, r3, 0
+/* 1050DD74 0050DD74  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050DD78 0050DD78  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 1050DD7C 0050DD7C  90 01 00 08 */	stw r0, 8(r1)
+/* 1050DD80 0050DD80  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1050DD84 0050DD84  83 84 00 00 */	lwz r28, 0(r4)
+/* 1050DD88 0050DD88  28 1C 00 00 */	cmplwi r28, 0
+/* 1050DD8C 0050DD8C  41 82 00 C8 */	beq lbl_1050DE54
+/* 1050DD90 0050DD90  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050DD94 0050DD94  28 1D 00 00 */	cmplwi r29, 0
+/* 1050DD98 0050DD98  41 82 00 4C */	beq lbl_1050DDE4
+/* 1050DD9C 0050DD9C  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050DDA0 0050DDA0  28 04 00 00 */	cmplwi r4, 0
+/* 1050DDA4 0050DDA4  41 82 00 08 */	beq lbl_1050DDAC
+/* 1050DDA8 0050DDA8  4B FF FF B9 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DDAC:
+/* 1050DDAC 0050DDAC  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050DDB0 0050DDB0  28 04 00 00 */	cmplwi r4, 0
+/* 1050DDB4 0050DDB4  41 82 00 0C */	beq lbl_1050DDC0
+/* 1050DDB8 0050DDB8  7F C3 F3 78 */	mr r3, r30
+/* 1050DDBC 0050DDBC  4B FF FF A5 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DDC0:
+/* 1050DDC0 0050DDC0  7F C3 F3 78 */	mr r3, r30
+/* 1050DDC4 0050DDC4  48 00 0A 5D */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DDC8 0050DDC8  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050DDCC 0050DDCC  48 00 09 C5 */	bl "destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050DDD0 0050DDD0  7F C3 F3 78 */	mr r3, r30
+/* 1050DDD4 0050DDD4  48 00 08 8D */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DDD8 0050DDD8  38 9D 00 00 */	addi r4, r29, 0
+/* 1050DDDC 0050DDDC  38 A0 00 01 */	li r5, 1
+/* 1050DDE0 0050DDE0  48 00 06 01 */	bl "deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
+lbl_1050DDE4:
+/* 1050DDE4 0050DDE4  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050DDE8 0050DDE8  28 1D 00 00 */	cmplwi r29, 0
+/* 1050DDEC 0050DDEC  41 82 00 50 */	beq lbl_1050DE3C
+/* 1050DDF0 0050DDF0  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050DDF4 0050DDF4  28 04 00 00 */	cmplwi r4, 0
+/* 1050DDF8 0050DDF8  41 82 00 0C */	beq lbl_1050DE04
+/* 1050DDFC 0050DDFC  7F C3 F3 78 */	mr r3, r30
+/* 1050DE00 0050DE00  4B FF FF 61 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DE04:
+/* 1050DE04 0050DE04  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050DE08 0050DE08  28 04 00 00 */	cmplwi r4, 0
+/* 1050DE0C 0050DE0C  41 82 00 0C */	beq lbl_1050DE18
+/* 1050DE10 0050DE10  7F C3 F3 78 */	mr r3, r30
+/* 1050DE14 0050DE14  4B FF FF 4D */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DE18:
+/* 1050DE18 0050DE18  7F C3 F3 78 */	mr r3, r30
+/* 1050DE1C 0050DE1C  48 00 0A 05 */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DE20 0050DE20  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050DE24 0050DE24  48 00 09 6D */	bl "destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050DE28 0050DE28  7F C3 F3 78 */	mr r3, r30
+/* 1050DE2C 0050DE2C  48 00 08 35 */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DE30 0050DE30  38 9D 00 00 */	addi r4, r29, 0
+/* 1050DE34 0050DE34  38 A0 00 01 */	li r5, 1
+/* 1050DE38 0050DE38  48 00 05 A9 */	bl "deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
+lbl_1050DE3C:
+/* 1050DE3C 0050DE3C  7F C3 F3 78 */	mr r3, r30
+/* 1050DE40 0050DE40  48 00 09 E1 */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DE44 0050DE44  7F C3 F3 78 */	mr r3, r30
+/* 1050DE48 0050DE48  48 00 08 19 */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DE4C 0050DE4C  7F 83 E3 78 */	mr r3, r28
+/* 1050DE50 0050DE50  48 07 A8 41 */	bl func_10588690
+lbl_1050DE54:
+/* 1050DE54 0050DE54  83 9F 00 04 */	lwz r28, 4(r31)
+/* 1050DE58 0050DE58  28 1C 00 00 */	cmplwi r28, 0
+/* 1050DE5C 0050DE5C  41 82 00 CC */	beq lbl_1050DF28
+/* 1050DE60 0050DE60  83 BC 00 00 */	lwz r29, 0(r28)
+/* 1050DE64 0050DE64  28 1D 00 00 */	cmplwi r29, 0
+/* 1050DE68 0050DE68  41 82 00 50 */	beq lbl_1050DEB8
+/* 1050DE6C 0050DE6C  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050DE70 0050DE70  28 04 00 00 */	cmplwi r4, 0
+/* 1050DE74 0050DE74  41 82 00 0C */	beq lbl_1050DE80
+/* 1050DE78 0050DE78  7F C3 F3 78 */	mr r3, r30
+/* 1050DE7C 0050DE7C  4B FF FE E5 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DE80:
+/* 1050DE80 0050DE80  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050DE84 0050DE84  28 04 00 00 */	cmplwi r4, 0
+/* 1050DE88 0050DE88  41 82 00 0C */	beq lbl_1050DE94
+/* 1050DE8C 0050DE8C  7F C3 F3 78 */	mr r3, r30
+/* 1050DE90 0050DE90  4B FF FE D1 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DE94:
+/* 1050DE94 0050DE94  7F C3 F3 78 */	mr r3, r30
+/* 1050DE98 0050DE98  48 00 09 89 */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DE9C 0050DE9C  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050DEA0 0050DEA0  48 00 08 F1 */	bl "destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050DEA4 0050DEA4  7F C3 F3 78 */	mr r3, r30
+/* 1050DEA8 0050DEA8  48 00 07 B9 */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DEAC 0050DEAC  38 9D 00 00 */	addi r4, r29, 0
+/* 1050DEB0 0050DEB0  38 A0 00 01 */	li r5, 1
+/* 1050DEB4 0050DEB4  48 00 05 2D */	bl "deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
+lbl_1050DEB8:
+/* 1050DEB8 0050DEB8  83 BC 00 04 */	lwz r29, 4(r28)
+/* 1050DEBC 0050DEBC  28 1D 00 00 */	cmplwi r29, 0
+/* 1050DEC0 0050DEC0  41 82 00 50 */	beq lbl_1050DF10
+/* 1050DEC4 0050DEC4  80 9D 00 00 */	lwz r4, 0(r29)
+/* 1050DEC8 0050DEC8  28 04 00 00 */	cmplwi r4, 0
+/* 1050DECC 0050DECC  41 82 00 0C */	beq lbl_1050DED8
+/* 1050DED0 0050DED0  7F C3 F3 78 */	mr r3, r30
+/* 1050DED4 0050DED4  4B FF FE 8D */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DED8:
+/* 1050DED8 0050DED8  80 9D 00 04 */	lwz r4, 4(r29)
+/* 1050DEDC 0050DEDC  28 04 00 00 */	cmplwi r4, 0
+/* 1050DEE0 0050DEE0  41 82 00 0C */	beq lbl_1050DEEC
+/* 1050DEE4 0050DEE4  7F C3 F3 78 */	mr r3, r30
+/* 1050DEE8 0050DEE8  4B FF FE 79 */	bl "destroy__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+lbl_1050DEEC:
+/* 1050DEEC 0050DEEC  7F C3 F3 78 */	mr r3, r30
+/* 1050DEF0 0050DEF0  48 00 09 31 */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DEF4 0050DEF4  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1050DEF8 0050DEF8  48 00 08 99 */	bl "destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050DEFC 0050DEFC  7F C3 F3 78 */	mr r3, r30
+/* 1050DF00 0050DF00  48 00 07 61 */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DF04 0050DF04  38 9D 00 00 */	addi r4, r29, 0
+/* 1050DF08 0050DF08  38 A0 00 01 */	li r5, 1
+/* 1050DF0C 0050DF0C  48 00 04 D5 */	bl "deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
+lbl_1050DF10:
+/* 1050DF10 0050DF10  7F C3 F3 78 */	mr r3, r30
+/* 1050DF14 0050DF14  48 00 09 0D */	bl "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DF18 0050DF18  7F C3 F3 78 */	mr r3, r30
+/* 1050DF1C 0050DF1C  48 00 07 45 */	bl "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050DF20 0050DF20  7F 83 E3 78 */	mr r3, r28
+/* 1050DF24 0050DF24  48 07 A7 6D */	bl func_10588690
+lbl_1050DF28:
+/* 1050DF28 0050DF28  7F C3 F3 78 */	mr r3, r30
+/* 1050DF2C 0050DF2C  48 00 04 15 */	bl "first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
+/* 1050DF30 0050DF30  38 7E 00 04 */	addi r3, r30, 4
+/* 1050DF34 0050DF34  48 00 02 6D */	bl "first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050DF38 0050DF38  7F E3 FB 78 */	mr r3, r31
+/* 1050DF3C 0050DF3C  48 07 A7 55 */	bl func_10588690
+/* 1050DF40 0050DF40  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1050DF44 0050DF44  38 21 00 50 */	addi r1, r1, 0x50
+/* 1050DF48 0050DF48  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050DF4C 0050DF4C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050DF50 0050DF50  7C 08 03 A6 */	mtlr r0
+/* 1050DF54 0050DF54  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050DF58 0050DF58  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 1050DF5C 0050DF5C  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+"first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv":
+/* 1050E1A0 0050E1A0  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
+"first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv":
+/* 1050E340 0050E340  4E 80 00 20 */	blr 
+
+.global "deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl"
+"deallocate__Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodeUl":
+/* 1050E3E0 0050E3E0  7C 08 02 A6 */	mflr r0
+/* 1050E3E4 0050E3E4  7C 83 23 78 */	mr r3, r4
+/* 1050E3E8 0050E3E8  90 01 00 08 */	stw r0, 8(r1)
+/* 1050E3EC 0050E3EC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1050E3F0 0050E3F0  48 07 A2 A1 */	bl func_10588690
+/* 1050E3F4 0050E3F4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1050E3F8 0050E3F8  38 21 00 40 */	addi r1, r1, 0x40
+/* 1050E3FC 0050E3FC  7C 08 03 A6 */	mtlr r0
+/* 1050E400 0050E400  4E 80 00 20 */	blr 
+
+.global "node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"node_alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 1050E660 0050E660  38 63 00 04 */	addi r3, r3, 4
+/* 1050E664 0050E664  4E 80 00 20 */	blr 
+
+.global "destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"destroy__Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>FPQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 1050E790 0050E790  4E 80 00 20 */	blr 
+
+.global "alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+"alloc__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv":
+/* 1050E820 0050E820  4E 80 00 20 */	blr 
+
+.global "erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>"
+"erase__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>21__generic_iterator<0>":
+/* 1050E950 0050E950  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050E954 0050E954  7C 08 02 A6 */	mflr r0
+/* 1050E958 0050E958  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050E95C 0050E95C  7C 9E 23 78 */	mr r30, r4
+/* 1050E960 0050E960  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1050E964 0050E964  7C 7D 1B 78 */	mr r29, r3
+/* 1050E968 0050E968  90 01 00 08 */	stw r0, 8(r1)
+/* 1050E96C 0050E96C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050E970 0050E970  83 E4 00 00 */	lwz r31, 0(r4)
+/* 1050E974 0050E974  4B FF 94 1D */	bl "front__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050E978 0050E978  38 83 00 00 */	addi r4, r3, 0
+/* 1050E97C 0050E97C  38 61 00 40 */	addi r3, r1, 0x40
+/* 1050E980 0050E980  80 84 00 00 */	lwz r4, 0(r4)
+/* 1050E984 0050E984  4B FF 91 BD */	bl "__pointer2iterator__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node"
+/* 1050E988 0050E988  80 7E 00 00 */	lwz r3, 0(r30)
+/* 1050E98C 0050E98C  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 1050E990 0050E990  7C 03 00 40 */	cmplw r3, r0
+/* 1050E994 0050E994  40 82 00 14 */	bne lbl_1050E9A8
+/* 1050E998 0050E998  7F C3 F3 78 */	mr r3, r30
+/* 1050E99C 0050E99C  4B B7 62 F5 */	bl "increment__Q23std19__red_black_tree<1>FRPCQ33std19__red_black_tree<1>9node_base"
+/* 1050E9A0 0050E9A0  80 1E 00 00 */	lwz r0, 0(r30)
+/* 1050E9A4 0050E9A4  90 1D 00 0C */	stw r0, 0xc(r29)
+lbl_1050E9A8:
+/* 1050E9A8 0050E9A8  7F A3 EB 78 */	mr r3, r29
+/* 1050E9AC 0050E9AC  4B FF 95 E5 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050E9B0 0050E9B0  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050E9B4 0050E9B4  7F E3 FB 78 */	mr r3, r31
+/* 1050E9B8 0050E9B8  4B BA 77 79 */	bl "balance_erase__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050E9BC 0050E9BC  7F A3 EB 78 */	mr r3, r29
+/* 1050E9C0 0050E9C0  4B FF F9 81 */	bl "first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
+/* 1050E9C4 0050E9C4  38 7D 00 04 */	addi r3, r29, 4
+/* 1050E9C8 0050E9C8  4B FF F7 D9 */	bl "first__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>Fv"
+/* 1050E9CC 0050E9CC  7F E3 FB 78 */	mr r3, r31
+/* 1050E9D0 0050E9D0  48 07 9C C1 */	bl func_10588690
+/* 1050E9D4 0050E9D4  80 7D 00 00 */	lwz r3, 0(r29)
+/* 1050E9D8 0050E9D8  38 03 FF FF */	addi r0, r3, -1
+/* 1050E9DC 0050E9DC  90 1D 00 00 */	stw r0, 0(r29)
+/* 1050E9E0 0050E9E0  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050E9E4 0050E9E4  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050E9E8 0050E9E8  7C 08 03 A6 */	mtlr r0
+/* 1050E9EC 0050E9EC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050E9F0 0050E9F0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050E9F4 0050E9F4  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1050E9F8 0050E9F8  4E 80 00 20 */	blr 
+
+.global "insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"insert_one__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 1050EC40 0050EC40  BF 01 FF E0 */	stmw r24, -0x20(r1)
+/* 1050EC44 0050EC44  7C 08 02 A6 */	mflr r0
+/* 1050EC48 0050EC48  3B 24 00 00 */	addi r25, r4, 0
+/* 1050EC4C 0050EC4C  3B 03 00 00 */	addi r24, r3, 0
+/* 1050EC50 0050EC50  3B 99 00 04 */	addi r28, r25, 4
+/* 1050EC54 0050EC54  3B 45 00 00 */	addi r26, r5, 0
+/* 1050EC58 0050EC58  38 79 00 00 */	addi r3, r25, 0
+/* 1050EC5C 0050EC5C  3B 60 00 00 */	li r27, 0
+/* 1050EC60 0050EC60  90 01 00 08 */	stw r0, 8(r1)
+/* 1050EC64 0050EC64  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050EC68 0050EC68  4B FF 93 29 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050EC6C 0050EC6C  83 A3 00 00 */	lwz r29, 0(r3)
+/* 1050EC70 0050EC70  3B C0 00 01 */	li r30, 1
+/* 1050EC74 0050EC74  3B E0 00 01 */	li r31, 1
+/* 1050EC78 0050EC78  48 00 00 40 */	b lbl_1050ECB8
+/* 1050EC7C 0050EC7C  60 00 00 00 */	nop 
+lbl_1050EC80:
+/* 1050EC80 0050EC80  3B 9D 00 00 */	addi r28, r29, 0
+/* 1050EC84 0050EC84  38 79 00 08 */	addi r3, r25, 8
+/* 1050EC88 0050EC88  4B FF C3 A9 */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050EC8C 0050EC8C  80 7A 00 00 */	lwz r3, 0(r26)
+/* 1050EC90 0050EC90  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 1050EC94 0050EC94  7C 03 00 00 */	cmpw r3, r0
+/* 1050EC98 0050EC98  40 80 00 10 */	bge lbl_1050ECA8
+/* 1050EC9C 0050EC9C  83 BD 00 00 */	lwz r29, 0(r29)
+/* 1050ECA0 0050ECA0  3B C0 00 01 */	li r30, 1
+/* 1050ECA4 0050ECA4  48 00 00 14 */	b lbl_1050ECB8
+lbl_1050ECA8:
+/* 1050ECA8 0050ECA8  7F BB EB 78 */	mr r27, r29
+/* 1050ECAC 0050ECAC  83 BD 00 04 */	lwz r29, 4(r29)
+/* 1050ECB0 0050ECB0  3B C0 00 00 */	li r30, 0
+/* 1050ECB4 0050ECB4  3B E0 00 00 */	li r31, 0
+lbl_1050ECB8:
+/* 1050ECB8 0050ECB8  28 1D 00 00 */	cmplwi r29, 0
+/* 1050ECBC 0050ECBC  40 82 FF C4 */	bne lbl_1050EC80
+/* 1050ECC0 0050ECC0  28 1B 00 00 */	cmplwi r27, 0
+/* 1050ECC4 0050ECC4  41 82 00 1C */	beq lbl_1050ECE0
+/* 1050ECC8 0050ECC8  38 79 00 08 */	addi r3, r25, 8
+/* 1050ECCC 0050ECCC  4B FF C3 65 */	bl "first__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>Fv"
+/* 1050ECD0 0050ECD0  80 7B 00 0C */	lwz r3, 0xc(r27)
+/* 1050ECD4 0050ECD4  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050ECD8 0050ECD8  7C 03 00 00 */	cmpw r3, r0
+/* 1050ECDC 0050ECDC  40 80 00 2C */	bge lbl_1050ED08
+lbl_1050ECE0:
+/* 1050ECE0 0050ECE0  38 79 00 00 */	addi r3, r25, 0
+/* 1050ECE4 0050ECE4  38 9C 00 00 */	addi r4, r28, 0
+/* 1050ECE8 0050ECE8  38 BE 00 00 */	addi r5, r30, 0
+/* 1050ECEC 0050ECEC  38 DF 00 00 */	addi r6, r31, 0
+/* 1050ECF0 0050ECF0  38 FA 00 00 */	addi r7, r26, 0
+/* 1050ECF4 0050ECF4  48 00 11 2D */	bl "insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+/* 1050ECF8 0050ECF8  90 78 00 00 */	stw r3, 0(r24)
+/* 1050ECFC 0050ECFC  88 02 28 B8 */	lbz r0, lbl_105C3D18-_R2_BASE_(r2)
+/* 1050ED00 0050ED00  98 18 00 04 */	stb r0, 4(r24)
+/* 1050ED04 0050ED04  48 00 00 10 */	b lbl_1050ED14
+lbl_1050ED08:
+/* 1050ED08 0050ED08  93 78 00 00 */	stw r27, 0(r24)
+/* 1050ED0C 0050ED0C  88 02 28 B9 */	lbz r0, lbl_105C3D19-_R2_BASE_(r2)
+/* 1050ED10 0050ED10  98 18 00 04 */	stb r0, 4(r24)
+lbl_1050ED14:
+/* 1050ED14 0050ED14  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050ED18 0050ED18  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050ED1C 0050ED1C  BB 01 FF E0 */	lmw r24, -0x20(r1)
+/* 1050ED20 0050ED20  7C 08 03 A6 */	mtlr r0
+/* 1050ED24 0050ED24  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>"
+"__ct__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compareRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>":
+/* 1050EE80 0050EE80  93 E1 FF FC */	stw r31, -4(r1)
+/* 1050EE84 0050EE84  3B E4 00 00 */	addi r31, r4, 0
+/* 1050EE88 0050EE88  38 85 00 00 */	addi r4, r5, 0
+/* 1050EE8C 0050EE8C  7C 08 02 A6 */	mflr r0
+/* 1050EE90 0050EE90  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1050EE94 0050EE94  3B C3 00 00 */	addi r30, r3, 0
+/* 1050EE98 0050EE98  90 01 00 08 */	stw r0, 8(r1)
+/* 1050EE9C 0050EE9C  38 A0 00 00 */	li r5, 0
+/* 1050EEA0 0050EEA0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 1050EEA4 0050EEA4  48 00 07 7D */	bl "__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul"
+/* 1050EEA8 0050EEA8  38 7E 00 04 */	addi r3, r30, 4
+/* 1050EEAC 0050EEAC  38 81 00 40 */	addi r4, r1, 0x40
+/* 1050EEB0 0050EEB0  48 00 04 B1 */	bl "__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>"
+/* 1050EEB4 0050EEB4  38 9F 00 00 */	addi r4, r31, 0
+/* 1050EEB8 0050EEB8  38 7E 00 08 */	addi r3, r30, 8
+/* 1050EEBC 0050EEBC  48 00 02 25 */	bl "__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare"
+/* 1050EEC0 0050EEC0  38 1E 00 04 */	addi r0, r30, 4
+/* 1050EEC4 0050EEC4  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 1050EEC8 0050EEC8  7F C3 F3 78 */	mr r3, r30
+/* 1050EECC 0050EECC  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1050EED0 0050EED0  38 21 00 60 */	addi r1, r1, 0x60
+/* 1050EED4 0050EED4  7C 08 03 A6 */	mtlr r0
+/* 1050EED8 0050EED8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1050EEDC 0050EEDC  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1050EEE0 0050EEE0  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare"
+"__ct__Q310Metrowerks7details430compressed_pair_imp<Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,PQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node,0>FRCQ33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare":
+/* 1050F0E0 0050F0E0  88 04 00 00 */	lbz r0, 0(r4)
+/* 1050F0E4 0050F0E4  98 03 00 00 */	stb r0, 0(r3)
+/* 1050F0E8 0050F0E8  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>"
+"__ct__Q310Metrowerks7details346compressed_pair_imp<Q23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>,Q33std19__red_black_tree<1>6anchor,1>FRCQ23std279allocator<Q33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4node>":
+/* 1050F360 0050F360  38 00 00 00 */	li r0, 0
+/* 1050F364 0050F364  90 03 00 00 */	stw r0, 0(r3)
+/* 1050F368 0050F368  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul"
+"__ct__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>FRCQ23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>Ul":
+/* 1050F620 0050F620  90 A3 00 00 */	stw r5, 0(r3)
+/* 1050F624 0050F624  4E 80 00 20 */	blr 
+
+.global "insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>"
+"insert_node_at__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>FPQ33std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>4nodebbRCQ23std11pair<Cl,Ul>":
+/* 1050F700 0050F700  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050F704 0050F704  7C 08 02 A6 */	mflr r0
+/* 1050F708 0050F708  83 62 BC 2C */	lwz r27, lbl_105BD08C-_R2_BASE_(r2)
+/* 1050F70C 0050F70C  3B 83 00 00 */	addi r28, r3, 0
+/* 1050F710 0050F710  3B A4 00 00 */	addi r29, r4, 0
+/* 1050F714 0050F714  3B 25 00 00 */	addi r25, r5, 0
+/* 1050F718 0050F718  3B C6 00 00 */	addi r30, r6, 0
+/* 1050F71C 0050F71C  3B 47 00 00 */	addi r26, r7, 0
+/* 1050F720 0050F720  90 01 00 08 */	stw r0, 8(r1)
+/* 1050F724 0050F724  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 1050F728 0050F728  7C 3F 0B 78 */	mr r31, r1
+/* 1050F72C 0050F72C  48 00 02 75 */	bl "sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv"
+/* 1050F730 0050F730  80 63 00 00 */	lwz r3, 0(r3)
+/* 1050F734 0050F734  38 00 FF FE */	li r0, -2
+/* 1050F738 0050F738  7C 03 00 40 */	cmplw r3, r0
+/* 1050F73C 0050F73C  40 81 00 28 */	ble lbl_1050F764
+/* 1050F740 0050F740  38 9B 00 00 */	addi r4, r27, 0
+/* 1050F744 0050F744  38 7F 00 40 */	addi r3, r31, 0x40
+/* 1050F748 0050F748  4B B1 DB 59 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 1050F74C 0050F74C  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 1050F750 0050F750  38 7B 00 1A */	addi r3, r27, 0x1a
+/* 1050F754 0050F754  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 1050F758 0050F758  38 9F 00 40 */	addi r4, r31, 0x40
+/* 1050F75C 0050F75C  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 1050F760 0050F760  48 07 81 31 */	bl func_10587890
+lbl_1050F764:
+/* 1050F764 0050F764  38 60 00 14 */	li r3, 0x14
+/* 1050F768 0050F768  48 07 8E 49 */	bl func_105885B0
+/* 1050F76C 0050F76C  90 3F 00 64 */	stw r1, 0x64(r31)
+/* 1050F770 0050F770  3B 63 00 00 */	addi r27, r3, 0
+/* 1050F774 0050F774  38 7C 00 00 */	addi r3, r28, 0
+/* 1050F778 0050F778  4B FF C2 D9 */	bl "first__Q310Metrowerks7details64compressed_pair_imp<Q23std30allocator<Q23std11pair<Cl,Ul>>,Ul,1>Fv"
+/* 1050F77C 0050F77C  34 7B 00 0C */	addic. r3, r27, 0xc
+/* 1050F780 0050F780  41 82 00 18 */	beq lbl_1050F798
+/* 1050F784 0050F784  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050F788 0050F788  90 3F 00 7C */	stw r1, 0x7c(r31)
+/* 1050F78C 0050F78C  90 03 00 00 */	stw r0, 0(r3)
+/* 1050F790 0050F790  80 1A 00 04 */	lwz r0, 4(r26)
+/* 1050F794 0050F794  90 03 00 04 */	stw r0, 4(r3)
+lbl_1050F798:
+/* 1050F798 0050F798  38 60 00 00 */	li r3, 0
+/* 1050F79C 0050F79C  90 7B 00 04 */	stw r3, 4(r27)
+/* 1050F7A0 0050F7A0  57 20 06 3F */	clrlwi. r0, r25, 0x18
+/* 1050F7A4 0050F7A4  90 7B 00 00 */	stw r3, 0(r27)
+/* 1050F7A8 0050F7A8  80 1B 00 08 */	lwz r0, 8(r27)
+/* 1050F7AC 0050F7AC  54 00 07 FE */	clrlwi r0, r0, 0x1f
+/* 1050F7B0 0050F7B0  7F A0 03 78 */	or r0, r29, r0
+/* 1050F7B4 0050F7B4  90 1B 00 08 */	stw r0, 8(r27)
+/* 1050F7B8 0050F7B8  41 82 00 0C */	beq lbl_1050F7C4
+/* 1050F7BC 0050F7BC  93 7D 00 00 */	stw r27, 0(r29)
+/* 1050F7C0 0050F7C0  48 00 00 08 */	b lbl_1050F7C8
+lbl_1050F7C4:
+/* 1050F7C4 0050F7C4  93 7D 00 04 */	stw r27, 4(r29)
+lbl_1050F7C8:
+/* 1050F7C8 0050F7C8  80 9C 00 00 */	lwz r4, 0(r28)
+/* 1050F7CC 0050F7CC  38 7C 00 00 */	addi r3, r28, 0
+/* 1050F7D0 0050F7D0  38 04 00 01 */	addi r0, r4, 1
+/* 1050F7D4 0050F7D4  90 1C 00 00 */	stw r0, 0(r28)
+/* 1050F7D8 0050F7D8  4B FF 9A 69 */	bl "tail__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>Fv"
+/* 1050F7DC 0050F7DC  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050F7E0 0050F7E0  7F 63 DB 78 */	mr r3, r27
+/* 1050F7E4 0050F7E4  4B BA 7D ED */	bl "balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050F7E8 0050F7E8  57 C0 06 3F */	clrlwi. r0, r30, 0x18
+/* 1050F7EC 0050F7EC  41 82 00 08 */	beq lbl_1050F7F4
+/* 1050F7F0 0050F7F0  93 7C 00 0C */	stw r27, 0xc(r28)
+lbl_1050F7F4:
+/* 1050F7F4 0050F7F4  7F 63 DB 78 */	mr r3, r27
+/* 1050F7F8 0050F7F8  80 1F 00 A8 */	lwz r0, 0xa8(r31)
+/* 1050F7FC 0050F7FC  80 21 00 00 */	lwz r1, 0(r1)
+/* 1050F800 0050F800  7C 08 03 A6 */	mtlr r0
+/* 1050F804 0050F804  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050F808 0050F808  4E 80 00 20 */	blr 
+
+.global "sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv"
+"sz__Q23std153__tree<Q23std11pair<Cl,Ul>,Q33std63map<l,Ul,Q23std7less<l>,Q23std30allocator<Q23std11pair<Cl,Ul>>>13value_compare,Q23std30allocator<Q23std11pair<Cl,Ul>>>CFv":
+/* 1050F9A0 0050F9A0  4E 80 00 20 */	blr 
+
+.global "insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>"
+"insert_node_at__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>FPQ33std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>4nodebbRCQ23std19pair<Cl,P8cITSFont>":
+/* 1050FA60 0050FA60  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050FA64 0050FA64  7C 08 02 A6 */	mflr r0
+/* 1050FA68 0050FA68  83 62 BC 2C */	lwz r27, lbl_105BD08C-_R2_BASE_(r2)
+/* 1050FA6C 0050FA6C  3B 83 00 00 */	addi r28, r3, 0
+/* 1050FA70 0050FA70  3B A4 00 00 */	addi r29, r4, 0
+/* 1050FA74 0050FA74  3B 25 00 00 */	addi r25, r5, 0
+/* 1050FA78 0050FA78  3B C6 00 00 */	addi r30, r6, 0
+/* 1050FA7C 0050FA7C  3B 47 00 00 */	addi r26, r7, 0
+/* 1050FA80 0050FA80  90 01 00 08 */	stw r0, 8(r1)
+/* 1050FA84 0050FA84  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 1050FA88 0050FA88  7C 3F 0B 78 */	mr r31, r1
+/* 1050FA8C 0050FA8C  48 00 02 B5 */	bl "sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv"
+/* 1050FA90 0050FA90  80 63 00 00 */	lwz r3, 0(r3)
+/* 1050FA94 0050FA94  38 00 FF FE */	li r0, -2
+/* 1050FA98 0050FA98  7C 03 00 40 */	cmplw r3, r0
+/* 1050FA9C 0050FA9C  40 81 00 28 */	ble lbl_1050FAC4
+/* 1050FAA0 0050FAA0  38 9B 00 00 */	addi r4, r27, 0
+/* 1050FAA4 0050FAA4  38 7F 00 40 */	addi r3, r31, 0x40
+/* 1050FAA8 0050FAA8  4B B1 D7 F9 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 1050FAAC 0050FAAC  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 1050FAB0 0050FAB0  38 7B 00 1A */	addi r3, r27, 0x1a
+/* 1050FAB4 0050FAB4  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 1050FAB8 0050FAB8  38 9F 00 40 */	addi r4, r31, 0x40
+/* 1050FABC 0050FABC  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 1050FAC0 0050FAC0  48 07 7D D1 */	bl func_10587890
+lbl_1050FAC4:
+/* 1050FAC4 0050FAC4  38 60 00 14 */	li r3, 0x14
+/* 1050FAC8 0050FAC8  48 07 8A E9 */	bl func_105885B0
+/* 1050FACC 0050FACC  90 3F 00 64 */	stw r1, 0x64(r31)
+/* 1050FAD0 0050FAD0  3B 63 00 00 */	addi r27, r3, 0
+/* 1050FAD4 0050FAD4  38 7C 00 00 */	addi r3, r28, 0
+/* 1050FAD8 0050FAD8  4B FF D2 99 */	bl "first__Q310Metrowerks7details72compressed_pair_imp<Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>,Ul,1>Fv"
+/* 1050FADC 0050FADC  34 7B 00 0C */	addic. r3, r27, 0xc
+/* 1050FAE0 0050FAE0  41 82 00 18 */	beq lbl_1050FAF8
+/* 1050FAE4 0050FAE4  80 1A 00 00 */	lwz r0, 0(r26)
+/* 1050FAE8 0050FAE8  90 3F 00 7C */	stw r1, 0x7c(r31)
+/* 1050FAEC 0050FAEC  90 03 00 00 */	stw r0, 0(r3)
+/* 1050FAF0 0050FAF0  80 1A 00 04 */	lwz r0, 4(r26)
+/* 1050FAF4 0050FAF4  90 03 00 04 */	stw r0, 4(r3)
+lbl_1050FAF8:
+/* 1050FAF8 0050FAF8  38 60 00 00 */	li r3, 0
+/* 1050FAFC 0050FAFC  90 7B 00 04 */	stw r3, 4(r27)
+/* 1050FB00 0050FB00  57 20 06 3F */	clrlwi. r0, r25, 0x18
+/* 1050FB04 0050FB04  90 7B 00 00 */	stw r3, 0(r27)
+/* 1050FB08 0050FB08  80 1B 00 08 */	lwz r0, 8(r27)
+/* 1050FB0C 0050FB0C  54 00 07 FE */	clrlwi r0, r0, 0x1f
+/* 1050FB10 0050FB10  7F A0 03 78 */	or r0, r29, r0
+/* 1050FB14 0050FB14  90 1B 00 08 */	stw r0, 8(r27)
+/* 1050FB18 0050FB18  41 82 00 0C */	beq lbl_1050FB24
+/* 1050FB1C 0050FB1C  93 7D 00 00 */	stw r27, 0(r29)
+/* 1050FB20 0050FB20  48 00 00 08 */	b lbl_1050FB28
+lbl_1050FB24:
+/* 1050FB24 0050FB24  93 7D 00 04 */	stw r27, 4(r29)
+lbl_1050FB28:
+/* 1050FB28 0050FB28  80 9C 00 00 */	lwz r4, 0(r28)
+/* 1050FB2C 0050FB2C  38 7C 00 00 */	addi r3, r28, 0
+/* 1050FB30 0050FB30  38 04 00 01 */	addi r0, r4, 1
+/* 1050FB34 0050FB34  90 1C 00 00 */	stw r0, 0(r28)
+/* 1050FB38 0050FB38  4B FF 64 99 */	bl "tail__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>Fv"
+/* 1050FB3C 0050FB3C  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050FB40 0050FB40  7F 63 DB 78 */	mr r3, r27
+/* 1050FB44 0050FB44  4B BA 7A 8D */	bl "balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050FB48 0050FB48  57 C0 06 3F */	clrlwi. r0, r30, 0x18
+/* 1050FB4C 0050FB4C  41 82 00 08 */	beq lbl_1050FB54
+/* 1050FB50 0050FB50  93 7C 00 0C */	stw r27, 0xc(r28)
+lbl_1050FB54:
+/* 1050FB54 0050FB54  7F 63 DB 78 */	mr r3, r27
+/* 1050FB58 0050FB58  80 1F 00 A8 */	lwz r0, 0xa8(r31)
+/* 1050FB5C 0050FB5C  80 21 00 00 */	lwz r1, 0(r1)
+/* 1050FB60 0050FB60  7C 08 03 A6 */	mtlr r0
+/* 1050FB64 0050FB64  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050FB68 0050FB68  4E 80 00 20 */	blr 
+
+.global "sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv"
+"sz__Q23std185__tree<Q23std19pair<Cl,P8cITSFont>,Q33std79map<l,P8cITSFont,Q23std7less<l>,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>13value_compare,Q23std38allocator<Q23std19pair<Cl,P8cITSFont>>>CFv":
+/* 1050FD40 0050FD40  4E 80 00 20 */	blr 
+
+.global "insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"insert_node_at__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>FPQ33std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>4nodebbRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 1050FE20 0050FE20  BF 21 FF E4 */	stmw r25, -0x1c(r1)
+/* 1050FE24 0050FE24  7C 08 02 A6 */	mflr r0
+/* 1050FE28 0050FE28  83 62 BC 2C */	lwz r27, lbl_105BD08C-_R2_BASE_(r2)
+/* 1050FE2C 0050FE2C  3B 83 00 00 */	addi r28, r3, 0
+/* 1050FE30 0050FE30  3B A4 00 00 */	addi r29, r4, 0
+/* 1050FE34 0050FE34  3B 25 00 00 */	addi r25, r5, 0
+/* 1050FE38 0050FE38  3B C6 00 00 */	addi r30, r6, 0
+/* 1050FE3C 0050FE3C  3B 47 00 00 */	addi r26, r7, 0
+/* 1050FE40 0050FE40  90 01 00 08 */	stw r0, 8(r1)
+/* 1050FE44 0050FE44  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 1050FE48 0050FE48  7C 3F 0B 78 */	mr r31, r1
+/* 1050FE4C 0050FE4C  48 00 03 E5 */	bl "sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv"
+/* 1050FE50 0050FE50  80 63 00 00 */	lwz r3, 0(r3)
+/* 1050FE54 0050FE54  38 00 FF FE */	li r0, -2
+/* 1050FE58 0050FE58  7C 03 00 40 */	cmplw r3, r0
+/* 1050FE5C 0050FE5C  40 81 00 28 */	ble lbl_1050FE84
+/* 1050FE60 0050FE60  38 9B 00 00 */	addi r4, r27, 0
+/* 1050FE64 0050FE64  38 7F 00 40 */	addi r3, r31, 0x40
+/* 1050FE68 0050FE68  4B B1 D4 39 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 1050FE6C 0050FE6C  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 1050FE70 0050FE70  38 7B 00 1A */	addi r3, r27, 0x1a
+/* 1050FE74 0050FE74  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 1050FE78 0050FE78  38 9F 00 40 */	addi r4, r31, 0x40
+/* 1050FE7C 0050FE7C  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 1050FE80 0050FE80  48 07 7A 11 */	bl func_10587890
+lbl_1050FE84:
+/* 1050FE84 0050FE84  38 60 00 18 */	li r3, 0x18
+/* 1050FE88 0050FE88  48 07 87 29 */	bl func_105885B0
+/* 1050FE8C 0050FE8C  90 3F 00 64 */	stw r1, 0x64(r31)
+/* 1050FE90 0050FE90  3B 63 00 00 */	addi r27, r3, 0
+/* 1050FE94 0050FE94  38 7C 00 00 */	addi r3, r28, 0
+/* 1050FE98 0050FE98  4B FF E4 A9 */	bl "first__Q310Metrowerks7details89compressed_pair_imp<Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>,Ul,1>Fv"
+/* 1050FE9C 0050FE9C  38 9B 00 0C */	addi r4, r27, 0xc
+/* 1050FEA0 0050FEA0  38 60 00 0C */	li r3, 0xc
+/* 1050FEA4 0050FEA4  4B B2 52 4D */	bl "__nw__FUlPv"
+/* 1050FEA8 0050FEA8  28 03 00 00 */	cmplwi r3, 0
+/* 1050FEAC 0050FEAC  41 82 00 10 */	beq lbl_1050FEBC
+/* 1050FEB0 0050FEB0  90 3F 00 7C */	stw r1, 0x7c(r31)
+/* 1050FEB4 0050FEB4  7F 44 D3 78 */	mr r4, r26
+/* 1050FEB8 0050FEB8  48 00 02 E9 */	bl "__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+lbl_1050FEBC:
+/* 1050FEBC 0050FEBC  38 60 00 00 */	li r3, 0
+/* 1050FEC0 0050FEC0  90 7B 00 04 */	stw r3, 4(r27)
+/* 1050FEC4 0050FEC4  57 20 06 3F */	clrlwi. r0, r25, 0x18
+/* 1050FEC8 0050FEC8  90 7B 00 00 */	stw r3, 0(r27)
+/* 1050FECC 0050FECC  80 1B 00 08 */	lwz r0, 8(r27)
+/* 1050FED0 0050FED0  54 00 07 FE */	clrlwi r0, r0, 0x1f
+/* 1050FED4 0050FED4  7F A0 03 78 */	or r0, r29, r0
+/* 1050FED8 0050FED8  90 1B 00 08 */	stw r0, 8(r27)
+/* 1050FEDC 0050FEDC  41 82 00 0C */	beq lbl_1050FEE8
+/* 1050FEE0 0050FEE0  93 7D 00 00 */	stw r27, 0(r29)
+/* 1050FEE4 0050FEE4  48 00 00 08 */	b lbl_1050FEEC
+lbl_1050FEE8:
+/* 1050FEE8 0050FEE8  93 7D 00 04 */	stw r27, 4(r29)
+lbl_1050FEEC:
+/* 1050FEEC 0050FEEC  80 9C 00 00 */	lwz r4, 0(r28)
+/* 1050FEF0 0050FEF0  38 7C 00 00 */	addi r3, r28, 0
+/* 1050FEF4 0050FEF4  38 04 00 01 */	addi r0, r4, 1
+/* 1050FEF8 0050FEF8  90 1C 00 00 */	stw r0, 0(r28)
+/* 1050FEFC 0050FEFC  4B FF 80 95 */	bl "tail__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>Fv"
+/* 1050FF00 0050FF00  80 83 00 00 */	lwz r4, 0(r3)
+/* 1050FF04 0050FF04  7F 63 DB 78 */	mr r3, r27
+/* 1050FF08 0050FF08  4B BA 76 C9 */	bl "balance_insert__Q23std19__red_black_tree<1>FPQ33std19__red_black_tree<1>9node_basePQ33std19__red_black_tree<1>9node_base"
+/* 1050FF0C 0050FF0C  57 C0 06 3F */	clrlwi. r0, r30, 0x18
+/* 1050FF10 0050FF10  41 82 00 08 */	beq lbl_1050FF18
+/* 1050FF14 0050FF14  93 7C 00 0C */	stw r27, 0xc(r28)
+lbl_1050FF18:
+/* 1050FF18 0050FF18  7F 63 DB 78 */	mr r3, r27
+/* 1050FF1C 0050FF1C  80 1F 00 A8 */	lwz r0, 0xa8(r31)
+/* 1050FF20 0050FF20  80 21 00 00 */	lwz r1, 0(r1)
+/* 1050FF24 0050FF24  7C 08 03 A6 */	mtlr r0
+/* 1050FF28 0050FF28  BB 21 FF E4 */	lmw r25, -0x1c(r1)
+/* 1050FF2C 0050FF2C  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>"
+"__ct__Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>FRCQ23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>":
+/* 105101A0 005101A0  80 04 00 00 */	lwz r0, 0(r4)
+/* 105101A4 005101A4  90 03 00 00 */	stw r0, 0(r3)
+/* 105101A8 005101A8  80 04 00 04 */	lwz r0, 4(r4)
+/* 105101AC 005101AC  90 03 00 04 */	stw r0, 4(r3)
+/* 105101B0 005101B0  88 04 00 08 */	lbz r0, 8(r4)
+/* 105101B4 005101B4  98 03 00 08 */	stb r0, 8(r3)
+/* 105101B8 005101B8  4E 80 00 20 */	blr 
+
+.global "sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv"
+"sz__Q23std254__tree<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>,Q33std113map<l,Q23std19pair<P9cTSBuffer,b>,Q23std7less<l>,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>13value_compare,Q23std55allocator<Q23std36pair<Cl,Q23std19pair<P9cTSBuffer,b>>>>CFv":
+/* 10510230 00510230  4E 80 00 20 */	blr 
+
+.global "__sinit_:TSWinCtrlMgr_cpp"
+"__sinit_:TSWinCtrlMgr_cpp":
+/* 10510360 00510360  93 E1 FF FC */	stw r31, -4(r1)
+/* 10510364 00510364  7C 08 02 A6 */	mflr r0
+/* 10510368 00510368  80 82 88 58 */	lwz r4, lbl_105B9CB8-_R2_BASE_(r2)
+/* 1051036C 0051036C  90 01 00 08 */	stw r0, 8(r1)
+/* 10510370 00510370  80 62 88 60 */	lwz r3, lbl_105B9CC0-_R2_BASE_(r2)
+/* 10510374 00510374  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10510378 00510378  83 E2 BC 30 */	lwz r31, lbl_105BD090-_R2_BASE_(r2)
+/* 1051037C 0051037C  C8 44 00 00 */	lfd f2, 0(r4)
+/* 10510380 00510380  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 10510384 00510384  80 82 88 5C */	lwz r4, lbl_105B9CBC-_R2_BASE_(r2)
+/* 10510388 00510388  FC 20 10 50 */	fneg f1, f2
+/* 1051038C 0051038C  80 62 88 54 */	lwz r3, lbl_105B9CB4-_R2_BASE_(r2)
+/* 10510390 00510390  FC 80 28 50 */	fneg f4, f5
+/* 10510394 00510394  C0 64 00 00 */	lfs f3, 0(r4)
+/* 10510398 00510398  C8 03 00 00 */	lfd f0, 0(r3)
+/* 1051039C 0051039C  D0 82 28 C4 */	stfs f4, lbl_105C3D24-_R2_BASE_(r2)
+/* 105103A0 005103A0  7F E3 FB 78 */	mr r3, r31
+/* 105103A4 005103A4  D0 A2 28 C8 */	stfs f5, lbl_105C3D28-_R2_BASE_(r2)
+/* 105103A8 005103A8  D0 62 28 CC */	stfs f3, lbl_105C3D2C-_R2_BASE_(r2)
+/* 105103AC 005103AC  D0 A2 28 D0 */	stfs f5, lbl_105C3D30-_R2_BASE_(r2)
+/* 105103B0 005103B0  D8 22 28 D8 */	stfd f1, lbl_105C3D38-_R2_BASE_(r2)
+/* 105103B4 005103B4  D8 42 28 E0 */	stfd f2, lbl_105C3D40-_R2_BASE_(r2)
+/* 105103B8 005103B8  D8 02 28 E8 */	stfd f0, lbl_105C3D48-_R2_BASE_(r2)
+/* 105103BC 005103BC  D8 42 28 F0 */	stfd f2, lbl_105C3D50-_R2_BASE_(r2)
+/* 105103C0 005103C0  4B FF 95 01 */	bl "__ct__13cTSWinCtrlMgrFv"
+/* 105103C4 005103C4  80 82 9F 08 */	lwz r4, lbl_105BB368-_R2_BASE_(r2)
+/* 105103C8 005103C8  7F E3 FB 78 */	mr r3, r31
+/* 105103CC 005103CC  80 A2 BC 28 */	lwz r5, lbl_105BD088-_R2_BASE_(r2)
+/* 105103D0 005103D0  48 07 77 D1 */	bl func_10587BA0
+/* 105103D4 005103D4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 105103D8 005103D8  38 21 00 50 */	addi r1, r1, 0x50
+/* 105103DC 005103DC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 105103E0 005103E0  7C 08 03 A6 */	mtlr r0
+/* 105103E4 005103E4  4E 80 00 20 */	blr 

@@ -1,5 +1,6 @@
 __pycache__/
 baserom
+baserom.bin
 build/
 check/
 expected/
@@ -12,3 +13,6 @@ tmp/
 /asm/full/
 /src/OS/Mac/CIncludes/
 /src/OS/Mac/MacHeaders/
+src/m2ctx.py
+ctx.c
+/src/OS/Dolphin/

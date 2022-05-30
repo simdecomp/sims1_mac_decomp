@@ -1,40 +1,40 @@
 .include "macros.inc"
 
 
-.section .text0, "ax"  # 0x00000000 - 0x005B9458
+.section .text0, "ax"  # 0x10000000 - 0x105B9458
 
-.global ".GetLineNumber__11CharScannerFv"
-".GetLineNumber__11CharScannerFv":
-/* 00033960 0003C7F0  80 03 00 04 */	lwz r0, 4(r3)
-/* 00033964 0003C7F4  2C 00 00 03 */	cmpwi r0, 3
-/* 00033968 0003C7F8  40 82 00 18 */	bne lbl_00033980
-/* 0003396C 0003C7FC  80 63 00 08 */	lwz r3, 8(r3)
-/* 00033970 0003C800  54 60 0F FE */	srwi r0, r3, 0x1f
-/* 00033974 0003C804  7C 00 1A 14 */	add r0, r0, r3
-/* 00033978 0003C808  7C 03 0E 70 */	srawi r3, r0, 1
-/* 0003397C 0003C80C  4E 80 00 20 */	blr 
-lbl_00033980:
-/* 00033980 0003C810  80 63 00 08 */	lwz r3, 8(r3)
-/* 00033984 0003C814  4E 80 00 20 */	blr 
+.global "GetLineNumber__11CharScannerFv"
+"GetLineNumber__11CharScannerFv":
+/* 10033960 00033960  80 03 00 04 */	lwz r0, 4(r3)
+/* 10033964 00033964  2C 00 00 03 */	cmpwi r0, 3
+/* 10033968 00033968  40 82 00 18 */	bne lbl_10033980
+/* 1003396C 0003396C  80 63 00 08 */	lwz r3, 8(r3)
+/* 10033970 00033970  54 60 0F FE */	srwi r0, r3, 0x1f
+/* 10033974 00033974  7C 00 1A 14 */	add r0, r0, r3
+/* 10033978 00033978  7C 03 0E 70 */	srawi r3, r0, 1
+/* 1003397C 0003397C  4E 80 00 20 */	blr 
+lbl_10033980:
+/* 10033980 00033980  80 63 00 08 */	lwz r3, 8(r3)
+/* 10033984 00033984  4E 80 00 20 */	blr 
 
-.global ".__sinit_:AttribFile_cpp"
-".__sinit_:AttribFile_cpp":
-/* 000339C0 0003C850  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
-/* 000339C4 0003C854  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
-/* 000339C8 0003C858  C8 44 00 00 */	lfd f2, 0(r4)
-/* 000339CC 0003C85C  C0 A3 00 00 */	lfs f5, 0(r3)
-/* 000339D0 0003C860  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
-/* 000339D4 0003C864  FC 20 10 50 */	fneg f1, f2
-/* 000339D8 0003C868  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
-/* 000339DC 0003C86C  FC 80 28 50 */	fneg f4, f5
-/* 000339E0 0003C870  C0 64 00 00 */	lfs f3, 0(r4)
-/* 000339E4 0003C874  C8 03 00 00 */	lfd f0, 0(r3)
-/* 000339E8 0003C878  D0 82 C8 88 */	stfs f4, lbl_005BDCE8-_R2_BASE_(r2)
-/* 000339EC 0003C87C  D0 A2 C8 8C */	stfs f5, lbl_005BDCEC-_R2_BASE_(r2)
-/* 000339F0 0003C880  D0 62 C8 90 */	stfs f3, lbl_005BDCF0-_R2_BASE_(r2)
-/* 000339F4 0003C884  D0 A2 C8 94 */	stfs f5, lbl_005BDCF4-_R2_BASE_(r2)
-/* 000339F8 0003C888  D8 22 C8 98 */	stfd f1, lbl_005BDCF8-_R2_BASE_(r2)
-/* 000339FC 0003C88C  D8 42 C8 A0 */	stfd f2, lbl_005BDD00-_R2_BASE_(r2)
-/* 00033A00 0003C890  D8 02 C8 A8 */	stfd f0, lbl_005BDD08-_R2_BASE_(r2)
-/* 00033A04 0003C894  D8 42 C8 B0 */	stfd f2, lbl_005BDD10-_R2_BASE_(r2)
-/* 00033A08 0003C898  4E 80 00 20 */	blr 
+.global "__sinit_:AttribFile_cpp"
+"__sinit_:AttribFile_cpp":
+/* 100339C0 000339C0  80 82 88 58 */	lwz r4, lbl_105B9CB8-_R2_BASE_(r2)
+/* 100339C4 000339C4  80 62 88 60 */	lwz r3, lbl_105B9CC0-_R2_BASE_(r2)
+/* 100339C8 000339C8  C8 44 00 00 */	lfd f2, 0(r4)
+/* 100339CC 000339CC  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 100339D0 000339D0  80 82 88 5C */	lwz r4, lbl_105B9CBC-_R2_BASE_(r2)
+/* 100339D4 000339D4  FC 20 10 50 */	fneg f1, f2
+/* 100339D8 000339D8  80 62 88 54 */	lwz r3, lbl_105B9CB4-_R2_BASE_(r2)
+/* 100339DC 000339DC  FC 80 28 50 */	fneg f4, f5
+/* 100339E0 000339E0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 100339E4 000339E4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 100339E8 000339E8  D0 82 C8 88 */	stfs f4, lbl_105BDCE8-_R2_BASE_(r2)
+/* 100339EC 000339EC  D0 A2 C8 8C */	stfs f5, lbl_105BDCEC-_R2_BASE_(r2)
+/* 100339F0 000339F0  D0 62 C8 90 */	stfs f3, lbl_105BDCF0-_R2_BASE_(r2)
+/* 100339F4 000339F4  D0 A2 C8 94 */	stfs f5, lbl_105BDCF4-_R2_BASE_(r2)
+/* 100339F8 000339F8  D8 22 C8 98 */	stfd f1, lbl_105BDCF8-_R2_BASE_(r2)
+/* 100339FC 000339FC  D8 42 C8 A0 */	stfd f2, lbl_105BDD00-_R2_BASE_(r2)
+/* 10033A00 00033A00  D8 02 C8 A8 */	stfd f0, lbl_105BDD08-_R2_BASE_(r2)
+/* 10033A04 00033A04  D8 42 C8 B0 */	stfd f2, lbl_105BDD10-_R2_BASE_(r2)
+/* 10033A08 00033A08  4E 80 00 20 */	blr 

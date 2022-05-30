@@ -1,9 +1,9 @@
 /*
 Code sections:
-	.text0:	0x00008E90	0x00000000	0x005B9458
+	.text0:	0x00000000	0x10000000	0x105B9458
 Data sections:
-	.data0:	0x005C22F0	0x005B9458	0x00651DFC
-Entry Point: 0x005CD630
+	.data0:	0x005B9460	0x105B9460	0x106353E0
+Entry Point: 0x100041A0
 */
 # PowerPC Register Constants
 .set r0, 0
@@ -79,4 +79,4 @@ Entry Point: 0x005CD630
 .set qr6, 6
 .set qr7, 7
 # Assumed r2 value
-.set _R2_BASE_, 0x005C1460
+.set _R2_BASE_, 0x105C1460

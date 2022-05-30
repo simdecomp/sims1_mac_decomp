@@ -1,2431 +1,2439 @@
 .include "macros.inc"
 
 
-.section .text0, "ax"  # 0x00000000 - 0x005B9458
-
-.global ".__dt__10SlotLoaderFv"
-".__dt__10SlotLoaderFv":
-/* 00131D80 0013AC10  93 E1 FF FC */	stw r31, -4(r1)
-/* 00131D84 0013AC14  7C 08 02 A6 */	mflr r0
-/* 00131D88 0013AC18  3B E4 00 00 */	addi r31, r4, 0
-/* 00131D8C 0013AC1C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00131D90 0013AC20  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00131D94 0013AC24  90 01 00 08 */	stw r0, 8(r1)
-/* 00131D98 0013AC28  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00131D9C 0013AC2C  41 82 00 38 */	beq lbl_00131DD4
-/* 00131DA0 0013AC30  80 7E 00 04 */	lwz r3, 4(r30)
-/* 00131DA4 0013AC34  28 03 00 00 */	cmplwi r3, 0
-/* 00131DA8 0013AC38  41 82 00 1C */	beq lbl_00131DC4
-/* 00131DAC 0013AC3C  41 82 00 18 */	beq lbl_00131DC4
-/* 00131DB0 0013AC40  81 83 00 68 */	lwz r12, 0x68(r3)
-/* 00131DB4 0013AC44  38 80 00 01 */	li r4, 1
-/* 00131DB8 0013AC48  81 8C 00 08 */	lwz r12, 8(r12)
-/* 00131DBC 0013AC4C  48 46 7D 95 */	bl func_00599B50
-/* 00131DC0 0013AC50  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_00131DC4:
-/* 00131DC4 0013AC54  7F E0 07 35 */	extsh. r0, r31
-/* 00131DC8 0013AC58  40 81 00 0C */	ble lbl_00131DD4
-/* 00131DCC 0013AC5C  7F C3 F3 78 */	mr r3, r30
-/* 00131DD0 0013AC60  48 45 68 C1 */	bl func_00588690
-lbl_00131DD4:
-/* 00131DD4 0013AC64  7F C3 F3 78 */	mr r3, r30
-/* 00131DD8 0013AC68  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00131DDC 0013AC6C  38 21 00 50 */	addi r1, r1, 0x50
-/* 00131DE0 0013AC70  7C 08 03 A6 */	mtlr r0
-/* 00131DE4 0013AC74  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00131DE8 0013AC78  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00131DEC 0013AC7C  4E 80 00 20 */	blr 
-
-.global ".Load__10SlotLoaderFsPQ23std52vector<10ObjectSlot,Q23std23allocator<10ObjectSlot>>PQ23std54vector<11RoutingSlot,Q23std24allocator<11RoutingSlot>>PQ23std52vector<10SpriteSlot,Q23std23allocator<10SpriteSlot>>"
-".Load__10SlotLoaderFsPQ23std52vector<10ObjectSlot,Q23std23allocator<10ObjectSlot>>PQ23std54vector<11RoutingSlot,Q23std24allocator<11RoutingSlot>>PQ23std52vector<10SpriteSlot,Q23std23allocator<10SpriteSlot>>":
-/* 00131E20 0013ACB0  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 00131E24 0013ACB4  7C 08 02 A6 */	mflr r0
-/* 00131E28 0013ACB8  3B 63 00 00 */	addi r27, r3, 0
-/* 00131E2C 0013ACBC  3B E4 00 00 */	addi r31, r4, 0
-/* 00131E30 0013ACC0  3B 85 00 00 */	addi r28, r5, 0
-/* 00131E34 0013ACC4  3B A6 00 00 */	addi r29, r6, 0
-/* 00131E38 0013ACC8  3B C7 00 00 */	addi r30, r7, 0
-/* 00131E3C 0013ACCC  90 01 00 08 */	stw r0, 8(r1)
-/* 00131E40 0013ACD0  94 21 FE F0 */	stwu r1, -0x110(r1)
-/* 00131E44 0013ACD4  38 61 00 40 */	addi r3, r1, 0x40
-/* 00131E48 0013ACD8  48 00 06 99 */	bl ".__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-/* 00131E4C 0013ACDC  3C A0 53 4C */	lis r5, 0x534C4F54@ha
-/* 00131E50 0013ACE0  80 9B 00 00 */	lwz r4, 0(r27)
-/* 00131E54 0013ACE4  38 DF 00 00 */	addi r6, r31, 0
-/* 00131E58 0013ACE8  38 61 00 40 */	addi r3, r1, 0x40
-/* 00131E5C 0013ACEC  38 A5 4F 54 */	addi r5, r5, 0x534C4F54@l
-/* 00131E60 0013ACF0  38 E0 00 00 */	li r7, 0
-/* 00131E64 0013ACF4  48 00 13 CD */	bl ".ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s"
-/* 00131E68 0013ACF8  3B E0 00 00 */	li r31, 0
-/* 00131E6C 0013ACFC  48 00 01 84 */	b lbl_00131FF0
-/* 00131E70 0013AD00  60 00 00 00 */	nop 
-lbl_00131E74:
-/* 00131E74 0013AD04  38 9F 00 00 */	addi r4, r31, 0
-/* 00131E78 0013AD08  38 61 00 40 */	addi r3, r1, 0x40
-/* 00131E7C 0013AD0C  48 00 05 E5 */	bl ".__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl"
-/* 00131E80 0013AD10  7C 65 1B 78 */	mr r5, r3
-/* 00131E84 0013AD14  A8 63 00 00 */	lha r3, 0(r3)
-/* 00131E88 0013AD18  7C 60 07 35 */	extsh. r0, r3
-/* 00131E8C 0013AD1C  40 82 00 68 */	bne lbl_00131EF4
-/* 00131E90 0013AD20  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00131E94 0013AD24  38 80 FF FF */	li r4, -1
-/* 00131E98 0013AD28  38 00 00 00 */	li r0, 0
-/* 00131E9C 0013AD2C  38 61 00 4C */	addi r3, r1, 0x4c
-/* 00131EA0 0013AD30  D0 01 00 4C */	stfs f0, 0x4c(r1)
-/* 00131EA4 0013AD34  C0 05 00 08 */	lfs f0, 8(r5)
-/* 00131EA8 0013AD38  D0 01 00 50 */	stfs f0, 0x50(r1)
-/* 00131EAC 0013AD3C  C0 05 00 0C */	lfs f0, 0xc(r5)
-/* 00131EB0 0013AD40  D0 01 00 54 */	stfs f0, 0x54(r1)
-/* 00131EB4 0013AD44  90 81 00 58 */	stw r4, 0x58(r1)
-/* 00131EB8 0013AD48  B0 01 00 5C */	sth r0, 0x5c(r1)
-/* 00131EBC 0013AD4C  80 05 00 10 */	lwz r0, 0x10(r5)
-/* 00131EC0 0013AD50  90 01 00 64 */	stw r0, 0x64(r1)
-/* 00131EC4 0013AD54  80 05 00 14 */	lwz r0, 0x14(r5)
-/* 00131EC8 0013AD58  90 01 00 68 */	stw r0, 0x68(r1)
-/* 00131ECC 0013AD5C  80 85 00 18 */	lwz r4, 0x18(r5)
-/* 00131ED0 0013AD60  48 00 0E 91 */	bl ".SetHeight__10ObjectSlotF9StdHeight"
-/* 00131ED4 0013AD64  38 1F 00 01 */	addi r0, r31, 1
-/* 00131ED8 0013AD68  28 1C 00 00 */	cmplwi r28, 0
-/* 00131EDC 0013AD6C  90 01 00 58 */	stw r0, 0x58(r1)
-/* 00131EE0 0013AD70  41 82 01 0C */	beq lbl_00131FEC
-/* 00131EE4 0013AD74  38 7C 00 00 */	addi r3, r28, 0
-/* 00131EE8 0013AD78  38 81 00 4C */	addi r4, r1, 0x4c
-/* 00131EEC 0013AD7C  48 00 04 C5 */	bl ".push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot"
-/* 00131EF0 0013AD80  48 00 00 FC */	b lbl_00131FEC
-lbl_00131EF4:
-/* 00131EF4 0013AD84  2C 03 00 01 */	cmpwi r3, 1
-/* 00131EF8 0013AD88  40 82 00 58 */	bne lbl_00131F50
-/* 00131EFC 0013AD8C  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00131F00 0013AD90  28 1E 00 00 */	cmplwi r30, 0
-/* 00131F04 0013AD94  38 1F 00 01 */	addi r0, r31, 1
-/* 00131F08 0013AD98  D0 01 00 70 */	stfs f0, 0x70(r1)
-/* 00131F0C 0013AD9C  38 60 00 00 */	li r3, 0
-/* 00131F10 0013ADA0  C0 05 00 08 */	lfs f0, 8(r5)
-/* 00131F14 0013ADA4  D0 01 00 74 */	stfs f0, 0x74(r1)
-/* 00131F18 0013ADA8  C0 05 00 0C */	lfs f0, 0xc(r5)
-/* 00131F1C 0013ADAC  D0 01 00 78 */	stfs f0, 0x78(r1)
-/* 00131F20 0013ADB0  90 61 00 84 */	stw r3, 0x84(r1)
-/* 00131F24 0013ADB4  90 61 00 88 */	stw r3, 0x88(r1)
-/* 00131F28 0013ADB8  90 61 00 90 */	stw r3, 0x90(r1)
-/* 00131F2C 0013ADBC  90 61 00 80 */	stw r3, 0x80(r1)
-/* 00131F30 0013ADC0  90 61 00 A4 */	stw r3, 0xa4(r1)
-/* 00131F34 0013ADC4  98 61 00 A8 */	stb r3, 0xa8(r1)
-/* 00131F38 0013ADC8  90 01 00 7C */	stw r0, 0x7c(r1)
-/* 00131F3C 0013ADCC  41 82 00 B0 */	beq lbl_00131FEC
-/* 00131F40 0013ADD0  38 7E 00 00 */	addi r3, r30, 0
-/* 00131F44 0013ADD4  38 81 00 70 */	addi r4, r1, 0x70
-/* 00131F48 0013ADD8  48 00 03 B9 */	bl ".push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot"
-/* 00131F4C 0013ADDC  48 00 00 A0 */	b lbl_00131FEC
-lbl_00131F50:
-/* 00131F50 0013ADE0  2C 03 00 03 */	cmpwi r3, 3
-/* 00131F54 0013ADE4  40 82 00 98 */	bne lbl_00131FEC
-/* 00131F58 0013ADE8  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00131F5C 0013ADEC  38 60 FF FF */	li r3, -1
-/* 00131F60 0013ADF0  28 1D 00 00 */	cmplwi r29, 0
-/* 00131F64 0013ADF4  38 1F 00 01 */	addi r0, r31, 1
-/* 00131F68 0013ADF8  D0 01 00 AC */	stfs f0, 0xac(r1)
-/* 00131F6C 0013ADFC  C0 05 00 08 */	lfs f0, 8(r5)
-/* 00131F70 0013AE00  D0 01 00 B0 */	stfs f0, 0xb0(r1)
-/* 00131F74 0013AE04  C0 05 00 0C */	lfs f0, 0xc(r5)
-/* 00131F78 0013AE08  D0 01 00 B4 */	stfs f0, 0xb4(r1)
-/* 00131F7C 0013AE0C  90 61 00 B8 */	stw r3, 0xb8(r1)
-/* 00131F80 0013AE10  80 65 00 28 */	lwz r3, 0x28(r5)
-/* 00131F84 0013AE14  90 61 00 C8 */	stw r3, 0xc8(r1)
-/* 00131F88 0013AE18  80 65 00 1C */	lwz r3, 0x1c(r5)
-/* 00131F8C 0013AE1C  90 61 00 BC */	stw r3, 0xbc(r1)
-/* 00131F90 0013AE20  80 65 00 20 */	lwz r3, 0x20(r5)
-/* 00131F94 0013AE24  90 61 00 C0 */	stw r3, 0xc0(r1)
-/* 00131F98 0013AE28  80 65 00 24 */	lwz r3, 0x24(r5)
-/* 00131F9C 0013AE2C  90 61 00 C4 */	stw r3, 0xc4(r1)
-/* 00131FA0 0013AE30  80 65 00 2C */	lwz r3, 0x2c(r5)
-/* 00131FA4 0013AE34  90 61 00 CC */	stw r3, 0xcc(r1)
-/* 00131FA8 0013AE38  80 65 00 30 */	lwz r3, 0x30(r5)
-/* 00131FAC 0013AE3C  90 61 00 D0 */	stw r3, 0xd0(r1)
-/* 00131FB0 0013AE40  80 65 00 34 */	lwz r3, 0x34(r5)
-/* 00131FB4 0013AE44  90 61 00 D4 */	stw r3, 0xd4(r1)
-/* 00131FB8 0013AE48  80 65 00 38 */	lwz r3, 0x38(r5)
-/* 00131FBC 0013AE4C  90 61 00 D8 */	stw r3, 0xd8(r1)
-/* 00131FC0 0013AE50  C0 05 00 3C */	lfs f0, 0x3c(r5)
-/* 00131FC4 0013AE54  D0 01 00 DC */	stfs f0, 0xdc(r1)
-/* 00131FC8 0013AE58  80 65 00 40 */	lwz r3, 0x40(r5)
-/* 00131FCC 0013AE5C  90 61 00 E0 */	stw r3, 0xe0(r1)
-/* 00131FD0 0013AE60  80 65 00 44 */	lwz r3, 0x44(r5)
-/* 00131FD4 0013AE64  90 61 00 E4 */	stw r3, 0xe4(r1)
-/* 00131FD8 0013AE68  90 01 00 B8 */	stw r0, 0xb8(r1)
-/* 00131FDC 0013AE6C  41 82 00 10 */	beq lbl_00131FEC
-/* 00131FE0 0013AE70  38 7D 00 00 */	addi r3, r29, 0
-/* 00131FE4 0013AE74  38 81 00 AC */	addi r4, r1, 0xac
-/* 00131FE8 0013AE78  48 00 02 69 */	bl ".push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot"
-lbl_00131FEC:
-/* 00131FEC 0013AE7C  3B FF 00 01 */	addi r31, r31, 1
-lbl_00131FF0:
-/* 00131FF0 0013AE80  80 01 00 44 */	lwz r0, 0x44(r1)
-/* 00131FF4 0013AE84  7C 1F 00 40 */	cmplw r31, r0
-/* 00131FF8 0013AE88  41 80 FE 7C */	blt lbl_00131E74
-/* 00131FFC 0013AE8C  38 61 00 40 */	addi r3, r1, 0x40
-/* 00132000 0013AE90  38 80 00 00 */	li r4, 0
-/* 00132004 0013AE94  48 00 01 8D */	bl ".__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-/* 00132008 0013AE98  38 60 00 01 */	li r3, 1
-/* 0013200C 0013AE9C  80 01 01 18 */	lwz r0, 0x118(r1)
-/* 00132010 0013AEA0  38 21 01 10 */	addi r1, r1, 0x110
-/* 00132014 0013AEA4  7C 08 03 A6 */	mtlr r0
-/* 00132018 0013AEA8  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 0013201C 0013AEAC  4E 80 00 20 */	blr 
-
-.global ".__dt__18SlotDescriptorListFv"
-".__dt__18SlotDescriptorListFv":
-/* 00132100 0013AF90  93 E1 FF FC */	stw r31, -4(r1)
-/* 00132104 0013AF94  7C 08 02 A6 */	mflr r0
-/* 00132108 0013AF98  3B E4 00 00 */	addi r31, r4, 0
-/* 0013210C 0013AF9C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00132110 0013AFA0  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00132114 0013AFA4  90 01 00 08 */	stw r0, 8(r1)
-/* 00132118 0013AFA8  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0013211C 0013AFAC  41 82 00 24 */	beq lbl_00132140
-/* 00132120 0013AFB0  41 82 00 10 */	beq lbl_00132130
-/* 00132124 0013AFB4  41 82 00 0C */	beq lbl_00132130
-/* 00132128 0013AFB8  38 80 00 00 */	li r4, 0
-/* 0013212C 0013AFBC  48 00 1F 25 */	bl ".__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-lbl_00132130:
-/* 00132130 0013AFC0  7F E0 07 35 */	extsh. r0, r31
-/* 00132134 0013AFC4  40 81 00 0C */	ble lbl_00132140
-/* 00132138 0013AFC8  7F C3 F3 78 */	mr r3, r30
-/* 0013213C 0013AFCC  48 45 65 55 */	bl func_00588690
-lbl_00132140:
-/* 00132140 0013AFD0  7F C3 F3 78 */	mr r3, r30
-/* 00132144 0013AFD4  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00132148 0013AFD8  38 21 00 50 */	addi r1, r1, 0x50
-/* 0013214C 0013AFDC  7C 08 03 A6 */	mtlr r0
-/* 00132150 0013AFE0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00132154 0013AFE4  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00132158 0013AFE8  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-".__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
-/* 00132190 0013B020  93 E1 FF FC */	stw r31, -4(r1)
-/* 00132194 0013B024  7C 08 02 A6 */	mflr r0
-/* 00132198 0013B028  3B E4 00 00 */	addi r31, r4, 0
-/* 0013219C 0013B02C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001321A0 0013B030  7C 7E 1B 79 */	or. r30, r3, r3
-/* 001321A4 0013B034  90 01 00 08 */	stw r0, 8(r1)
-/* 001321A8 0013B038  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001321AC 0013B03C  41 82 00 20 */	beq lbl_001321CC
-/* 001321B0 0013B040  41 82 00 0C */	beq lbl_001321BC
-/* 001321B4 0013B044  38 80 00 00 */	li r4, 0
-/* 001321B8 0013B048  48 00 1E 99 */	bl ".__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-lbl_001321BC:
-/* 001321BC 0013B04C  7F E0 07 35 */	extsh. r0, r31
-/* 001321C0 0013B050  40 81 00 0C */	ble lbl_001321CC
-/* 001321C4 0013B054  7F C3 F3 78 */	mr r3, r30
-/* 001321C8 0013B058  48 45 64 C9 */	bl func_00588690
-lbl_001321CC:
-/* 001321CC 0013B05C  7F C3 F3 78 */	mr r3, r30
-/* 001321D0 0013B060  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001321D4 0013B064  38 21 00 50 */	addi r1, r1, 0x50
-/* 001321D8 0013B068  7C 08 03 A6 */	mtlr r0
-/* 001321DC 0013B06C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001321E0 0013B070  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001321E4 0013B074  4E 80 00 20 */	blr 
-
-.global ".push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot"
-".push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot":
-/* 00132250 0013B0E0  7C 08 02 A6 */	mflr r0
-/* 00132254 0013B0E4  38 C4 00 00 */	addi r6, r4, 0
-/* 00132258 0013B0E8  90 01 00 08 */	stw r0, 8(r1)
-/* 0013225C 0013B0EC  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00132260 0013B0F0  80 03 00 04 */	lwz r0, 4(r3)
-/* 00132264 0013B0F4  80 A3 00 08 */	lwz r5, 8(r3)
-/* 00132268 0013B0F8  1C 00 00 3C */	mulli r0, r0, 0x3c
-/* 0013226C 0013B0FC  7C 85 02 14 */	add r4, r5, r0
-/* 00132270 0013B100  38 A0 00 01 */	li r5, 1
-/* 00132274 0013B104  48 00 10 7D */	bl ".insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot"
-/* 00132278 0013B108  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0013227C 0013B10C  38 21 00 40 */	addi r1, r1, 0x40
-/* 00132280 0013B110  7C 08 03 A6 */	mtlr r0
-/* 00132284 0013B114  4E 80 00 20 */	blr 
-
-.global ".push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot"
-".push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot":
-/* 00132300 0013B190  7C 08 02 A6 */	mflr r0
-/* 00132304 0013B194  38 C4 00 00 */	addi r6, r4, 0
-/* 00132308 0013B198  90 01 00 08 */	stw r0, 8(r1)
-/* 0013230C 0013B19C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00132310 0013B1A0  80 03 00 04 */	lwz r0, 4(r3)
-/* 00132314 0013B1A4  80 A3 00 08 */	lwz r5, 8(r3)
-/* 00132318 0013B1A8  1C 00 00 3C */	mulli r0, r0, 0x3c
-/* 0013231C 0013B1AC  7C 85 02 14 */	add r4, r5, r0
-/* 00132320 0013B1B0  38 A0 00 01 */	li r5, 1
-/* 00132324 0013B1B4  4B FD 80 1D */	bl ".insert__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FP10SpriteSlotUlRC10SpriteSlot"
-/* 00132328 0013B1B8  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0013232C 0013B1BC  38 21 00 40 */	addi r1, r1, 0x40
-/* 00132330 0013B1C0  7C 08 03 A6 */	mtlr r0
-/* 00132334 0013B1C4  4E 80 00 20 */	blr 
-
-.global ".push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot"
-".push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot":
-/* 001323B0 0013B240  7C 08 02 A6 */	mflr r0
-/* 001323B4 0013B244  38 C4 00 00 */	addi r6, r4, 0
-/* 001323B8 0013B248  90 01 00 08 */	stw r0, 8(r1)
-/* 001323BC 0013B24C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 001323C0 0013B250  80 03 00 04 */	lwz r0, 4(r3)
-/* 001323C4 0013B254  80 A3 00 08 */	lwz r5, 8(r3)
-/* 001323C8 0013B258  1C 00 00 24 */	mulli r0, r0, 0x24
-/* 001323CC 0013B25C  7C 85 02 14 */	add r4, r5, r0
-/* 001323D0 0013B260  38 A0 00 01 */	li r5, 1
-/* 001323D4 0013B264  4B F8 FD 3D */	bl ".insert__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FP10ObjectSlotUlRC10ObjectSlot"
-/* 001323D8 0013B268  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 001323DC 0013B26C  38 21 00 40 */	addi r1, r1, 0x40
-/* 001323E0 0013B270  7C 08 03 A6 */	mtlr r0
-/* 001323E4 0013B274  4E 80 00 20 */	blr 
-
-.global ".__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl"
-".__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl":
-/* 00132460 0013B2F0  1C 04 00 48 */	mulli r0, r4, 0x48
-/* 00132464 0013B2F4  80 63 00 08 */	lwz r3, 8(r3)
-/* 00132468 0013B2F8  7C 63 02 14 */	add r3, r3, r0
-/* 0013246C 0013B2FC  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-".__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
-/* 001324E0 0013B370  93 E1 FF FC */	stw r31, -4(r1)
-/* 001324E4 0013B374  7C 08 02 A6 */	mflr r0
-/* 001324E8 0013B378  7C 7F 1B 78 */	mr r31, r3
-/* 001324EC 0013B37C  90 01 00 08 */	stw r0, 8(r1)
-/* 001324F0 0013B380  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001324F4 0013B384  48 00 00 7D */	bl ".__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-/* 001324F8 0013B388  7F E3 FB 78 */	mr r3, r31
-/* 001324FC 0013B38C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00132500 0013B390  38 21 00 50 */	addi r1, r1, 0x50
-/* 00132504 0013B394  7C 08 03 A6 */	mtlr r0
-/* 00132508 0013B398  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0013250C 0013B39C  4E 80 00 20 */	blr 
-
-.global ".__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-".__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
-/* 00132570 0013B400  93 E1 FF FC */	stw r31, -4(r1)
-/* 00132574 0013B404  7C 08 02 A6 */	mflr r0
-/* 00132578 0013B408  3B E3 00 00 */	addi r31, r3, 0
-/* 0013257C 0013B40C  90 01 00 08 */	stw r0, 8(r1)
-/* 00132580 0013B410  38 80 00 00 */	li r4, 0
-/* 00132584 0013B414  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00132588 0013B418  48 00 00 99 */	bl ".__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl"
-/* 0013258C 0013B41C  38 00 00 00 */	li r0, 0
-/* 00132590 0013B420  90 1F 00 04 */	stw r0, 4(r31)
-/* 00132594 0013B424  7F E3 FB 78 */	mr r3, r31
-/* 00132598 0013B428  90 1F 00 08 */	stw r0, 8(r31)
-/* 0013259C 0013B42C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001325A0 0013B430  38 21 00 50 */	addi r1, r1, 0x50
-/* 001325A4 0013B434  7C 08 03 A6 */	mtlr r0
-/* 001325A8 0013B438  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001325AC 0013B43C  4E 80 00 20 */	blr 
-
-.global ".__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl"
-".__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl":
-/* 00132620 0013B4B0  90 83 00 00 */	stw r4, 0(r3)
-/* 00132624 0013B4B4  4E 80 00 20 */	blr 
-
-.global ".__ct__10SlotLoaderFP8iResFiles"
-".__ct__10SlotLoaderFP8iResFiles":
-/* 001326A0 0013B530  90 83 00 00 */	stw r4, 0(r3)
-/* 001326A4 0013B534  38 00 00 00 */	li r0, 0
-/* 001326A8 0013B538  90 03 00 04 */	stw r0, 4(r3)
-/* 001326AC 0013B53C  B0 A3 00 08 */	sth r5, 8(r3)
-/* 001326B0 0013B540  4E 80 00 20 */	blr 
-
-.global ".DoStream__14SlotDescriptorFP11ReconBufferl"
-".DoStream__14SlotDescriptorFP11ReconBufferl":
-/* 001326F0 0013B580  93 E1 FF FC */	stw r31, -4(r1)
-/* 001326F4 0013B584  3B E5 00 00 */	addi r31, r5, 0
-/* 001326F8 0013B588  7C 08 02 A6 */	mflr r0
-/* 001326FC 0013B58C  2C 1F 00 02 */	cmpwi r31, 2
-/* 00132700 0013B590  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00132704 0013B594  3B C4 00 00 */	addi r30, r4, 0
-/* 00132708 0013B598  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 0013270C 0013B59C  3B A3 00 00 */	addi r29, r3, 0
-/* 00132710 0013B5A0  90 01 00 08 */	stw r0, 8(r1)
-/* 00132714 0013B5A4  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 00132718 0013B5A8  41 81 00 E0 */	bgt lbl_001327F8
-/* 0013271C 0013B5AC  38 7E 00 00 */	addi r3, r30, 0
-/* 00132720 0013B5B0  38 9D 00 04 */	addi r4, r29, 4
-/* 00132724 0013B5B4  38 A0 00 01 */	li r5, 1
-/* 00132728 0013B5B8  4B FE 30 99 */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 0013272C 0013B5BC  38 7E 00 00 */	addi r3, r30, 0
-/* 00132730 0013B5C0  38 9D 00 08 */	addi r4, r29, 8
-/* 00132734 0013B5C4  38 A0 00 01 */	li r5, 1
-/* 00132738 0013B5C8  4B FE 30 89 */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 0013273C 0013B5CC  2C 1F 00 01 */	cmpwi r31, 1
-/* 00132740 0013B5D0  41 80 00 18 */	blt lbl_00132758
-/* 00132744 0013B5D4  38 7E 00 00 */	addi r3, r30, 0
-/* 00132748 0013B5D8  38 9D 00 0C */	addi r4, r29, 0xc
-/* 0013274C 0013B5DC  38 A0 00 01 */	li r5, 1
-/* 00132750 0013B5E0  4B FE 30 71 */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 00132754 0013B5E4  48 00 00 50 */	b lbl_001327A4
-lbl_00132758:
-/* 00132758 0013B5E8  C0 1D 00 0C */	lfs f0, 0xc(r29)
-/* 0013275C 0013B5EC  38 7E 00 00 */	addi r3, r30, 0
-/* 00132760 0013B5F0  38 81 00 40 */	addi r4, r1, 0x40
-/* 00132764 0013B5F4  FC 00 00 1E */	fctiwz f0, f0
-/* 00132768 0013B5F8  38 A0 00 01 */	li r5, 1
-/* 0013276C 0013B5FC  D8 01 00 48 */	stfd f0, 0x48(r1)
-/* 00132770 0013B600  80 01 00 4C */	lwz r0, 0x4c(r1)
-/* 00132774 0013B604  B0 01 00 40 */	sth r0, 0x40(r1)
-/* 00132778 0013B608  4B FE 33 B9 */	bl ".Recon16__11ReconBufferFPsi"
-/* 0013277C 0013B60C  A8 61 00 40 */	lha r3, 0x40(r1)
-/* 00132780 0013B610  3C 00 43 30 */	lis r0, 0x4330
-/* 00132784 0013B614  80 82 A7 F0 */	lwz r4, lbl_005BBC50-_R2_BASE_(r2)
-/* 00132788 0013B618  6C 63 80 00 */	xoris r3, r3, 0x8000
-/* 0013278C 0013B61C  90 01 00 50 */	stw r0, 0x50(r1)
-/* 00132790 0013B620  C8 24 00 00 */	lfd f1, 0(r4)
-/* 00132794 0013B624  90 61 00 54 */	stw r3, 0x54(r1)
-/* 00132798 0013B628  C8 01 00 50 */	lfd f0, 0x50(r1)
-/* 0013279C 0013B62C  EC 00 08 28 */	fsubs f0, f0, f1
-/* 001327A0 0013B630  D0 1D 00 0C */	stfs f0, 0xc(r29)
-lbl_001327A4:
-/* 001327A4 0013B634  38 7E 00 00 */	addi r3, r30, 0
-/* 001327A8 0013B638  38 9D 00 00 */	addi r4, r29, 0
-/* 001327AC 0013B63C  38 A0 00 01 */	li r5, 1
-/* 001327B0 0013B640  4B FE 33 81 */	bl ".Recon16__11ReconBufferFPsi"
-/* 001327B4 0013B644  2C 1F 00 02 */	cmpwi r31, 2
-/* 001327B8 0013B648  41 80 00 1C */	blt lbl_001327D4
-/* 001327BC 0013B64C  38 00 00 00 */	li r0, 0
-/* 001327C0 0013B650  38 81 00 42 */	addi r4, r1, 0x42
-/* 001327C4 0013B654  B0 01 00 42 */	sth r0, 0x42(r1)
-/* 001327C8 0013B658  38 7E 00 00 */	addi r3, r30, 0
-/* 001327CC 0013B65C  38 A0 00 01 */	li r5, 1
-/* 001327D0 0013B660  4B FE 33 61 */	bl ".Recon16__11ReconBufferFPsi"
-lbl_001327D4:
-/* 001327D4 0013B664  80 1E 00 0C */	lwz r0, 0xc(r30)
-/* 001327D8 0013B668  2C 00 00 00 */	cmpwi r0, 0
-/* 001327DC 0013B66C  40 82 01 04 */	bne lbl_001328E0
-/* 001327E0 0013B670  38 00 00 00 */	li r0, 0
-/* 001327E4 0013B674  90 1D 00 1C */	stw r0, 0x1c(r29)
-/* 001327E8 0013B678  90 1D 00 20 */	stw r0, 0x20(r29)
-/* 001327EC 0013B67C  90 1D 00 24 */	stw r0, 0x24(r29)
-/* 001327F0 0013B680  90 1D 00 28 */	stw r0, 0x28(r29)
-/* 001327F4 0013B684  48 00 00 EC */	b lbl_001328E0
-lbl_001327F8:
-/* 001327F8 0013B688  38 7E 00 00 */	addi r3, r30, 0
-/* 001327FC 0013B68C  38 9D 00 00 */	addi r4, r29, 0
-/* 00132800 0013B690  38 A0 00 01 */	li r5, 1
-/* 00132804 0013B694  4B FE 33 2D */	bl ".Recon16__11ReconBufferFPsi"
-/* 00132808 0013B698  38 7E 00 00 */	addi r3, r30, 0
-/* 0013280C 0013B69C  38 9D 00 04 */	addi r4, r29, 4
-/* 00132810 0013B6A0  38 A0 00 01 */	li r5, 1
-/* 00132814 0013B6A4  4B FE 2F AD */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 00132818 0013B6A8  38 7E 00 00 */	addi r3, r30, 0
-/* 0013281C 0013B6AC  38 9D 00 08 */	addi r4, r29, 8
-/* 00132820 0013B6B0  38 A0 00 01 */	li r5, 1
-/* 00132824 0013B6B4  4B FE 2F 9D */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 00132828 0013B6B8  38 7E 00 00 */	addi r3, r30, 0
-/* 0013282C 0013B6BC  38 9D 00 0C */	addi r4, r29, 0xc
-/* 00132830 0013B6C0  38 A0 00 01 */	li r5, 1
-/* 00132834 0013B6C4  4B FE 2F 8D */	bl ".ReconFloat__11ReconBufferFPfi"
-/* 00132838 0013B6C8  38 7E 00 00 */	addi r3, r30, 0
-/* 0013283C 0013B6CC  38 9D 00 1C */	addi r4, r29, 0x1c
-/* 00132840 0013B6D0  38 A0 00 03 */	li r5, 3
-/* 00132844 0013B6D4  4B FE 31 0D */	bl ".Recon32__11ReconBufferFPli"
-/* 00132848 0013B6D8  38 7E 00 00 */	addi r3, r30, 0
-/* 0013284C 0013B6DC  38 9D 00 28 */	addi r4, r29, 0x28
-/* 00132850 0013B6E0  38 A0 00 01 */	li r5, 1
-/* 00132854 0013B6E4  4B FE 30 FD */	bl ".Recon32__11ReconBufferFPli"
-/* 00132858 0013B6E8  2C 1F 00 04 */	cmpwi r31, 4
-/* 0013285C 0013B6EC  41 80 00 14 */	blt lbl_00132870
-/* 00132860 0013B6F0  38 7E 00 00 */	addi r3, r30, 0
-/* 00132864 0013B6F4  38 9D 00 2C */	addi r4, r29, 0x2c
-/* 00132868 0013B6F8  38 A0 00 01 */	li r5, 1
-/* 0013286C 0013B6FC  4B FE 30 E5 */	bl ".Recon32__11ReconBufferFPli"
-lbl_00132870:
-/* 00132870 0013B700  2C 1F 00 05 */	cmpwi r31, 5
-/* 00132874 0013B704  41 80 00 54 */	blt lbl_001328C8
-/* 00132878 0013B708  38 7E 00 00 */	addi r3, r30, 0
-/* 0013287C 0013B70C  38 9D 00 30 */	addi r4, r29, 0x30
-/* 00132880 0013B710  38 A0 00 01 */	li r5, 1
-/* 00132884 0013B714  4B FE 30 CD */	bl ".Recon32__11ReconBufferFPli"
-/* 00132888 0013B718  38 7E 00 00 */	addi r3, r30, 0
-/* 0013288C 0013B71C  38 9D 00 34 */	addi r4, r29, 0x34
-/* 00132890 0013B720  38 A0 00 01 */	li r5, 1
-/* 00132894 0013B724  4B FE 30 BD */	bl ".Recon32__11ReconBufferFPli"
-/* 00132898 0013B728  38 7E 00 00 */	addi r3, r30, 0
-/* 0013289C 0013B72C  38 9D 00 38 */	addi r4, r29, 0x38
-/* 001328A0 0013B730  38 A0 00 01 */	li r5, 1
-/* 001328A4 0013B734  4B FE 30 AD */	bl ".Recon32__11ReconBufferFPli"
-/* 001328A8 0013B738  38 7E 00 00 */	addi r3, r30, 0
-/* 001328AC 0013B73C  38 9D 00 10 */	addi r4, r29, 0x10
-/* 001328B0 0013B740  38 A0 00 01 */	li r5, 1
-/* 001328B4 0013B744  4B FE 30 9D */	bl ".Recon32__11ReconBufferFPli"
-/* 001328B8 0013B748  38 7E 00 00 */	addi r3, r30, 0
-/* 001328BC 0013B74C  38 9D 00 14 */	addi r4, r29, 0x14
-/* 001328C0 0013B750  38 A0 00 01 */	li r5, 1
-/* 001328C4 0013B754  4B FE 30 8D */	bl ".Recon32__11ReconBufferFPli"
-lbl_001328C8:
-/* 001328C8 0013B758  2C 1F 00 07 */	cmpwi r31, 7
-/* 001328CC 0013B75C  41 80 00 14 */	blt lbl_001328E0
-/* 001328D0 0013B760  38 7E 00 00 */	addi r3, r30, 0
-/* 001328D4 0013B764  38 9D 00 3C */	addi r4, r29, 0x3c
-/* 001328D8 0013B768  38 A0 00 01 */	li r5, 1
-/* 001328DC 0013B76C  4B FE 2E E5 */	bl ".ReconFloat__11ReconBufferFPfi"
-lbl_001328E0:
-/* 001328E0 0013B770  2C 1F 00 08 */	cmpwi r31, 8
-/* 001328E4 0013B774  41 80 00 14 */	blt lbl_001328F8
-/* 001328E8 0013B778  38 7E 00 00 */	addi r3, r30, 0
-/* 001328EC 0013B77C  38 9D 00 18 */	addi r4, r29, 0x18
-/* 001328F0 0013B780  38 A0 00 01 */	li r5, 1
-/* 001328F4 0013B784  4B FE 30 5D */	bl ".Recon32__11ReconBufferFPli"
-lbl_001328F8:
-/* 001328F8 0013B788  2C 1F 00 09 */	cmpwi r31, 9
-/* 001328FC 0013B78C  41 80 00 18 */	blt lbl_00132914
-/* 00132900 0013B790  38 7E 00 00 */	addi r3, r30, 0
-/* 00132904 0013B794  38 9D 00 40 */	addi r4, r29, 0x40
-/* 00132908 0013B798  38 A0 00 01 */	li r5, 1
-/* 0013290C 0013B79C  4B FE 30 45 */	bl ".Recon32__11ReconBufferFPli"
-/* 00132910 0013B7A0  48 00 00 44 */	b lbl_00132954
-lbl_00132914:
-/* 00132914 0013B7A4  80 7D 00 28 */	lwz r3, 0x28(r29)
-/* 00132918 0013B7A8  54 60 05 AD */	rlwinm. r0, r3, 0, 0x16, 0x16
-/* 0013291C 0013B7AC  41 82 00 1C */	beq lbl_00132938
-/* 00132920 0013B7B0  38 00 FF FD */	li r0, -3
-/* 00132924 0013B7B4  90 1D 00 40 */	stw r0, 0x40(r29)
-/* 00132928 0013B7B8  80 1D 00 28 */	lwz r0, 0x28(r29)
-/* 0013292C 0013B7BC  54 00 05 EA */	rlwinm r0, r0, 0, 0x17, 0x15
-/* 00132930 0013B7C0  90 1D 00 28 */	stw r0, 0x28(r29)
-/* 00132934 0013B7C4  48 00 00 20 */	b lbl_00132954
-lbl_00132938:
-/* 00132938 0013B7C8  54 60 05 6B */	rlwinm. r0, r3, 0, 0x15, 0x15
-/* 0013293C 0013B7CC  41 82 00 18 */	beq lbl_00132954
-/* 00132940 0013B7D0  38 00 FF FF */	li r0, -1
-/* 00132944 0013B7D4  90 1D 00 40 */	stw r0, 0x40(r29)
-/* 00132948 0013B7D8  80 1D 00 28 */	lwz r0, 0x28(r29)
-/* 0013294C 0013B7DC  54 00 05 A8 */	rlwinm r0, r0, 0, 0x16, 0x14
-/* 00132950 0013B7E0  90 1D 00 28 */	stw r0, 0x28(r29)
-lbl_00132954:
-/* 00132954 0013B7E4  2C 1F 00 0A */	cmpwi r31, 0xa
-/* 00132958 0013B7E8  41 80 00 18 */	blt lbl_00132970
-/* 0013295C 0013B7EC  38 7E 00 00 */	addi r3, r30, 0
-/* 00132960 0013B7F0  38 9D 00 44 */	addi r4, r29, 0x44
-/* 00132964 0013B7F4  38 A0 00 01 */	li r5, 1
-/* 00132968 0013B7F8  4B FE 2F E9 */	bl ".Recon32__11ReconBufferFPli"
-/* 0013296C 0013B7FC  48 00 00 3C */	b lbl_001329A8
-lbl_00132970:
-/* 00132970 0013B800  80 1D 00 34 */	lwz r0, 0x34(r29)
-/* 00132974 0013B804  80 62 A7 F4 */	lwz r3, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132978 0013B808  54 00 20 36 */	slwi r0, r0, 4
-/* 0013297C 0013B80C  90 1D 00 34 */	stw r0, 0x34(r29)
-/* 00132980 0013B810  C0 03 00 00 */	lfs f0, 0(r3)
-/* 00132984 0013B814  80 1D 00 30 */	lwz r0, 0x30(r29)
-/* 00132988 0013B818  54 00 20 36 */	slwi r0, r0, 4
-/* 0013298C 0013B81C  90 1D 00 30 */	stw r0, 0x30(r29)
-/* 00132990 0013B820  80 1D 00 38 */	lwz r0, 0x38(r29)
-/* 00132994 0013B824  54 00 20 36 */	slwi r0, r0, 4
-/* 00132998 0013B828  90 1D 00 38 */	stw r0, 0x38(r29)
-/* 0013299C 0013B82C  C0 3D 00 3C */	lfs f1, 0x3c(r29)
-/* 001329A0 0013B830  EC 01 00 32 */	fmuls f0, f1, f0
-/* 001329A4 0013B834  D0 1D 00 3C */	stfs f0, 0x3c(r29)
-lbl_001329A8:
-/* 001329A8 0013B838  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 001329AC 0013B83C  38 21 00 70 */	addi r1, r1, 0x70
-/* 001329B0 0013B840  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001329B4 0013B844  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001329B8 0013B848  7C 08 03 A6 */	mtlr r0
-/* 001329BC 0013B84C  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001329C0 0013B850  4E 80 00 20 */	blr 
-
-.global ".__ct__14SlotDescriptorFv"
-".__ct__14SlotDescriptorFv":
-/* 00132A10 0013B8A0  80 E2 A7 F4 */	lwz r7, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132A14 0013B8A4  38 C0 FF FF */	li r6, -1
-/* 00132A18 0013B8A8  B0 C3 00 00 */	sth r6, 0(r3)
-/* 00132A1C 0013B8AC  38 A0 00 00 */	li r5, 0
-/* 00132A20 0013B8B0  C0 27 00 04 */	lfs f1, 4(r7)
-/* 00132A24 0013B8B4  38 80 00 10 */	li r4, 0x10
-/* 00132A28 0013B8B8  C0 07 00 08 */	lfs f0, 8(r7)
-/* 00132A2C 0013B8BC  D0 23 00 04 */	stfs f1, 4(r3)
-/* 00132A30 0013B8C0  38 00 FF FE */	li r0, -2
-/* 00132A34 0013B8C4  D0 23 00 08 */	stfs f1, 8(r3)
-/* 00132A38 0013B8C8  D0 23 00 0C */	stfs f1, 0xc(r3)
-/* 00132A3C 0013B8CC  90 A3 00 1C */	stw r5, 0x1c(r3)
-/* 00132A40 0013B8D0  90 A3 00 20 */	stw r5, 0x20(r3)
-/* 00132A44 0013B8D4  90 A3 00 24 */	stw r5, 0x24(r3)
-/* 00132A48 0013B8D8  90 A3 00 28 */	stw r5, 0x28(r3)
-/* 00132A4C 0013B8DC  90 C3 00 2C */	stw r6, 0x2c(r3)
-/* 00132A50 0013B8E0  90 83 00 30 */	stw r4, 0x30(r3)
-/* 00132A54 0013B8E4  90 83 00 34 */	stw r4, 0x34(r3)
-/* 00132A58 0013B8E8  90 83 00 38 */	stw r4, 0x38(r3)
-/* 00132A5C 0013B8EC  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 00132A60 0013B8F0  90 03 00 40 */	stw r0, 0x40(r3)
-/* 00132A64 0013B8F4  90 83 00 44 */	stw r4, 0x44(r3)
-/* 00132A68 0013B8F8  90 A3 00 10 */	stw r5, 0x10(r3)
-/* 00132A6C 0013B8FC  90 A3 00 14 */	stw r5, 0x14(r3)
-/* 00132A70 0013B900  90 A3 00 18 */	stw r5, 0x18(r3)
-/* 00132A74 0013B904  4E 80 00 20 */	blr 
-
-.global ".ActivateForLoops__10SpriteSlotFi"
-".ActivateForLoops__10SpriteSlotFi":
-/* 00132AB0 0013B940  80 A3 00 1C */	lwz r5, 0x1c(r3)
-/* 00132AB4 0013B944  38 00 00 00 */	li r0, 0
-/* 00132AB8 0013B948  1C A5 00 0C */	mulli r5, r5, 0xc
-/* 00132ABC 0013B94C  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00132AC0 0013B950  7C 04 29 D6 */	mullw r0, r4, r5
-/* 00132AC4 0013B954  90 03 00 10 */	stw r0, 0x10(r3)
-/* 00132AC8 0013B958  4E 80 00 20 */	blr 
-
-.global ".ActivateForTicks__10SpriteSlotFi"
-".ActivateForTicks__10SpriteSlotFi":
-/* 00132B00 0013B990  38 00 00 00 */	li r0, 0
-/* 00132B04 0013B994  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00132B08 0013B998  90 83 00 10 */	stw r4, 0x10(r3)
-/* 00132B0C 0013B99C  4E 80 00 20 */	blr 
-
-.global ".Tick__10SpriteSlotFv"
-".Tick__10SpriteSlotFv":
-/* 00132B50 0013B9E0  80 83 00 10 */	lwz r4, 0x10(r3)
-/* 00132B54 0013B9E4  2C 04 00 00 */	cmpwi r4, 0
-/* 00132B58 0013B9E8  40 81 00 0C */	ble lbl_00132B64
-/* 00132B5C 0013B9EC  38 04 FF FF */	addi r0, r4, -1
-/* 00132B60 0013B9F0  90 03 00 10 */	stw r0, 0x10(r3)
-lbl_00132B64:
-/* 00132B64 0013B9F4  80 03 00 10 */	lwz r0, 0x10(r3)
-/* 00132B68 0013B9F8  2C 00 00 00 */	cmpwi r0, 0
-/* 00132B6C 0013B9FC  40 82 00 0C */	bne lbl_00132B78
-/* 00132B70 0013BA00  38 60 00 00 */	li r3, 0
-/* 00132B74 0013BA04  4E 80 00 20 */	blr 
-lbl_00132B78:
-/* 00132B78 0013BA08  80 83 00 28 */	lwz r4, 0x28(r3)
-/* 00132B7C 0013BA0C  38 04 00 01 */	addi r0, r4, 1
-/* 00132B80 0013BA10  2C 00 00 0C */	cmpwi r0, 0xc
-/* 00132B84 0013BA14  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00132B88 0013BA18  40 82 00 58 */	bne lbl_00132BE0
-/* 00132B8C 0013BA1C  80 83 00 20 */	lwz r4, 0x20(r3)
-/* 00132B90 0013BA20  80 03 00 24 */	lwz r0, 0x24(r3)
-/* 00132B94 0013BA24  7C 04 02 14 */	add r0, r4, r0
-/* 00132B98 0013BA28  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00132B9C 0013BA2C  48 00 00 14 */	b lbl_00132BB0
-lbl_00132BA0:
-/* 00132BA0 0013BA30  80 83 00 20 */	lwz r4, 0x20(r3)
-/* 00132BA4 0013BA34  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 00132BA8 0013BA38  7C 04 02 14 */	add r0, r4, r0
-/* 00132BAC 0013BA3C  90 03 00 20 */	stw r0, 0x20(r3)
-lbl_00132BB0:
-/* 00132BB0 0013BA40  80 C3 00 20 */	lwz r6, 0x20(r3)
-/* 00132BB4 0013BA44  2C 06 00 00 */	cmpwi r6, 0
-/* 00132BB8 0013BA48  41 80 FF E8 */	blt lbl_00132BA0
-/* 00132BBC 0013BA4C  80 A3 00 1C */	lwz r5, 0x1c(r3)
-/* 00132BC0 0013BA50  38 00 00 00 */	li r0, 0
-/* 00132BC4 0013BA54  7C 86 2B D6 */	divw r4, r6, r5
-/* 00132BC8 0013BA58  7C 84 29 D6 */	mullw r4, r4, r5
-/* 00132BCC 0013BA5C  7C 84 30 50 */	subf r4, r4, r6
-/* 00132BD0 0013BA60  90 83 00 20 */	stw r4, 0x20(r3)
-/* 00132BD4 0013BA64  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00132BD8 0013BA68  38 60 00 01 */	li r3, 1
-/* 00132BDC 0013BA6C  4E 80 00 20 */	blr 
-lbl_00132BE0:
-/* 00132BE0 0013BA70  38 60 00 00 */	li r3, 0
-/* 00132BE4 0013BA74  4E 80 00 20 */	blr 
-
-.global ".SetSprite__10SpriteSlotFP11ObjSelector"
-".SetSprite__10SpriteSlotFP11ObjSelector":
-/* 00132C10 0013BAA0  38 00 FF FF */	li r0, -1
-/* 00132C14 0013BAA4  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00132C18 0013BAA8  38 A0 00 01 */	li r5, 1
-/* 00132C1C 0013BAAC  38 00 00 00 */	li r0, 0
-/* 00132C20 0013BAB0  90 83 00 18 */	stw r4, 0x18(r3)
-/* 00132C24 0013BAB4  90 A3 00 1C */	stw r5, 0x1c(r3)
-/* 00132C28 0013BAB8  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00132C2C 0013BABC  90 A3 00 24 */	stw r5, 0x24(r3)
-/* 00132C30 0013BAC0  4E 80 00 20 */	blr 
-
-.global ".SetSprite__10SpriteSlotFP9cRendereriib"
-".SetSprite__10SpriteSlotFP9cRendereriib":
-/* 00132C70 0013BB00  90 A3 00 14 */	stw r5, 0x14(r3)
-/* 00132C74 0013BB04  54 E0 06 3F */	clrlwi. r0, r7, 0x18
-/* 00132C78 0013BB08  90 83 00 18 */	stw r4, 0x18(r3)
-/* 00132C7C 0013BB0C  90 C3 00 1C */	stw r6, 0x1c(r3)
-/* 00132C80 0013BB10  41 82 00 1C */	beq lbl_00132C9C
-/* 00132C84 0013BB14  80 83 00 1C */	lwz r4, 0x1c(r3)
-/* 00132C88 0013BB18  38 00 FF FF */	li r0, -1
-/* 00132C8C 0013BB1C  38 84 FF FF */	addi r4, r4, -1
-/* 00132C90 0013BB20  90 83 00 20 */	stw r4, 0x20(r3)
-/* 00132C94 0013BB24  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00132C98 0013BB28  4E 80 00 20 */	blr 
-lbl_00132C9C:
-/* 00132C9C 0013BB2C  38 00 00 00 */	li r0, 0
-/* 00132CA0 0013BB30  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00132CA4 0013BB34  38 00 00 01 */	li r0, 1
-/* 00132CA8 0013BB38  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00132CAC 0013BB3C  4E 80 00 20 */	blr 
-
-.global ".__ct__10SpriteSlotFv"
-".__ct__10SpriteSlotFv":
-/* 00132CF0 0013BB80  80 A2 A7 F4 */	lwz r5, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132CF4 0013BB84  38 80 FF FF */	li r4, -1
-/* 00132CF8 0013BB88  38 00 00 00 */	li r0, 0
-/* 00132CFC 0013BB8C  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00132D00 0013BB90  D0 03 00 00 */	stfs f0, 0(r3)
-/* 00132D04 0013BB94  D0 03 00 04 */	stfs f0, 4(r3)
-/* 00132D08 0013BB98  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132D0C 0013BB9C  90 83 00 0C */	stw r4, 0xc(r3)
-/* 00132D10 0013BBA0  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00132D14 0013BBA4  90 03 00 18 */	stw r0, 0x18(r3)
-/* 00132D18 0013BBA8  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00132D1C 0013BBAC  90 03 00 10 */	stw r0, 0x10(r3)
-/* 00132D20 0013BBB0  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00132D24 0013BBB4  98 03 00 38 */	stb r0, 0x38(r3)
-/* 00132D28 0013BBB8  4E 80 00 20 */	blr 
-
-.global ".SetHeight__10ObjectSlotF9StdHeight"
-".SetHeight__10ObjectSlotF9StdHeight":
-/* 00132D60 0013BBF0  28 04 00 08 */	cmplwi r4, 8
-/* 00132D64 0013BBF4  90 83 00 14 */	stw r4, 0x14(r3)
-/* 00132D68 0013BBF8  80 C2 A7 F4 */	lwz r6, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132D6C 0013BBFC  4D 81 00 20 */	bgtlr 
-/* 00132D70 0013BC00  80 A2 A7 EC */	lwz r5, lbl_005BBC4C-_R2_BASE_(r2)
-/* 00132D74 0013BC04  54 80 10 3A */	slwi r0, r4, 2
-/* 00132D78 0013BC08  7C A5 00 2E */	lwzx r5, r5, r0
-/* 00132D7C 0013BC0C  7C A9 03 A6 */	mtctr r5
-/* 00132D80 0013BC10  4E 80 04 20 */	bctr 
-/* 00132D84 0013BC14  C0 26 00 04 */	lfs f1, 4(r6)
-/* 00132D88 0013BC18  C0 03 00 08 */	lfs f0, 8(r3)
-/* 00132D8C 0013BC1C  FC 01 00 00 */	fcmpu cr0, f1, f0
-/* 00132D90 0013BC20  40 82 00 10 */	bne lbl_00132DA0
-/* 00132D94 0013BC24  38 00 00 01 */	li r0, 1
-/* 00132D98 0013BC28  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00132D9C 0013BC2C  4E 80 00 20 */	blr 
-lbl_00132DA0:
-/* 00132DA0 0013BC30  38 00 00 05 */	li r0, 5
-/* 00132DA4 0013BC34  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00132DA8 0013BC38  4E 80 00 20 */	blr 
-/* 00132DAC 0013BC3C  C0 06 00 04 */	lfs f0, 4(r6)
-/* 00132DB0 0013BC40  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132DB4 0013BC44  4E 80 00 20 */	blr 
-/* 00132DB8 0013BC48  C0 06 00 0C */	lfs f0, 0xc(r6)
-/* 00132DBC 0013BC4C  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132DC0 0013BC50  4E 80 00 20 */	blr 
-/* 00132DC4 0013BC54  C0 06 00 10 */	lfs f0, 0x10(r6)
-/* 00132DC8 0013BC58  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132DCC 0013BC5C  4E 80 00 20 */	blr 
-/* 00132DD0 0013BC60  C0 06 00 14 */	lfs f0, 0x14(r6)
-/* 00132DD4 0013BC64  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132DD8 0013BC68  4E 80 00 20 */	blr 
-
-.global ".__ct__10ObjectSlotFv"
-".__ct__10ObjectSlotFv":
-/* 00132E20 0013BCB0  80 C2 A7 F4 */	lwz r6, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132E24 0013BCB4  38 A0 FF FF */	li r5, -1
-/* 00132E28 0013BCB8  38 80 00 00 */	li r4, 0
-/* 00132E2C 0013BCBC  C0 06 00 04 */	lfs f0, 4(r6)
-/* 00132E30 0013BCC0  38 00 00 32 */	li r0, 0x32
-/* 00132E34 0013BCC4  D0 03 00 00 */	stfs f0, 0(r3)
-/* 00132E38 0013BCC8  D0 03 00 04 */	stfs f0, 4(r3)
-/* 00132E3C 0013BCCC  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00132E40 0013BCD0  90 A3 00 0C */	stw r5, 0xc(r3)
-/* 00132E44 0013BCD4  B0 83 00 10 */	sth r4, 0x10(r3)
-/* 00132E48 0013BCD8  90 03 00 18 */	stw r0, 0x18(r3)
-/* 00132E4C 0013BCDC  90 83 00 1C */	stw r4, 0x1c(r3)
-/* 00132E50 0013BCE0  90 83 00 14 */	stw r4, 0x14(r3)
-/* 00132E54 0013BCE4  4E 80 00 20 */	blr 
-
-.global ".SetMultiplier__11RoutingSlotFQ211RoutingSlot16VerticalPositioni"
-".SetMultiplier__11RoutingSlotFQ211RoutingSlot16VerticalPositioni":
-/* 00132E80 0013BD10  54 80 10 3A */	slwi r0, r4, 2
-/* 00132E84 0013BD14  7C 63 02 14 */	add r3, r3, r0
-/* 00132E88 0013BD18  90 A3 00 10 */	stw r5, 0x10(r3)
-/* 00132E8C 0013BD1C  4E 80 00 20 */	blr 
-
-.global ".SetTileDistances__11RoutingSlotFfff"
-".SetTileDistances__11RoutingSlotFfff":
-/* 00132EF0 0013BD80  80 82 A7 F4 */	lwz r4, lbl_005BBC54-_R2_BASE_(r2)
-/* 00132EF4 0013BD84  C0 04 00 18 */	lfs f0, 0x18(r4)
-/* 00132EF8 0013BD88  EC 80 00 72 */	fmuls f4, f0, f1
-/* 00132EFC 0013BD8C  EC 20 00 B2 */	fmuls f1, f0, f2
-/* 00132F00 0013BD90  EC 00 00 F2 */	fmuls f0, f0, f3
-/* 00132F04 0013BD94  FC 40 20 1E */	fctiwz f2, f4
-/* 00132F08 0013BD98  FC 20 08 1E */	fctiwz f1, f1
-/* 00132F0C 0013BD9C  FC 00 00 1E */	fctiwz f0, f0
-/* 00132F10 0013BDA0  D8 41 FF E0 */	stfd f2, -0x20(r1)
-/* 00132F14 0013BDA4  D8 21 FF E8 */	stfd f1, -0x18(r1)
-/* 00132F18 0013BDA8  80 01 FF E4 */	lwz r0, -0x1c(r1)
-/* 00132F1C 0013BDAC  D8 01 FF F0 */	stfd f0, -0x10(r1)
-/* 00132F20 0013BDB0  80 81 FF EC */	lwz r4, -0x14(r1)
-/* 00132F24 0013BDB4  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00132F28 0013BDB8  80 01 FF F4 */	lwz r0, -0xc(r1)
-/* 00132F2C 0013BDBC  90 83 00 28 */	stw r4, 0x28(r3)
-/* 00132F30 0013BDC0  90 03 00 2C */	stw r0, 0x2c(r3)
-/* 00132F34 0013BDC4  4E 80 00 20 */	blr 
-
-.global ".SetDistances__11RoutingSlotFiii"
-".SetDistances__11RoutingSlotFiii":
-/* 00132F70 0013BE00  90 83 00 24 */	stw r4, 0x24(r3)
-/* 00132F74 0013BE04  90 A3 00 28 */	stw r5, 0x28(r3)
-/* 00132F78 0013BE08  90 C3 00 2C */	stw r6, 0x2c(r3)
-/* 00132F7C 0013BE0C  4E 80 00 20 */	blr 
-
-.global ".SetFacingDirection__11RoutingSlotFi"
-".SetFacingDirection__11RoutingSlotFi":
-/* 00132FC0 0013BE50  2C 04 00 00 */	cmpwi r4, 0
-/* 00132FC4 0013BE54  4D 80 00 20 */	bltlr 
-/* 00132FC8 0013BE58  2C 04 00 08 */	cmpwi r4, 8
-/* 00132FCC 0013BE5C  4C 80 00 20 */	bgelr 
-/* 00132FD0 0013BE60  90 83 00 34 */	stw r4, 0x34(r3)
-/* 00132FD4 0013BE64  4E 80 00 20 */	blr 
-
-.global ".FaceTowardsObject__11RoutingSlotFv"
-".FaceTowardsObject__11RoutingSlotFv":
-/* 00133010 0013BEA0  38 00 FF FE */	li r0, -2
-/* 00133014 0013BEA4  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00133018 0013BEA8  4E 80 00 20 */	blr 
-
-.global ".AllowAnyFacing__11RoutingSlotFv"
-".AllowAnyFacing__11RoutingSlotFv":
-/* 00133060 0013BEF0  38 00 FF FD */	li r0, -3
-/* 00133064 0013BEF4  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00133068 0013BEF8  4E 80 00 20 */	blr 
-
-.global ".AllowAnyRotation__11RoutingSlotFv"
-".AllowAnyRotation__11RoutingSlotFv":
-/* 001330A0 0013BF30  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 001330A4 0013BF34  60 00 01 00 */	ori r0, r0, 0x100
-/* 001330A8 0013BF38  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 001330AC 0013BF3C  4E 80 00 20 */	blr 
-
-.global ".AllowDirection__11RoutingSlotFi"
-".AllowDirection__11RoutingSlotFi":
-/* 001330F0 0013BF80  2C 04 00 00 */	cmpwi r4, 0
-/* 001330F4 0013BF84  4D 80 00 20 */	bltlr 
-/* 001330F8 0013BF88  2C 04 00 08 */	cmpwi r4, 8
-/* 001330FC 0013BF8C  4C 80 00 20 */	bgelr 
-/* 00133100 0013BF90  38 00 00 01 */	li r0, 1
-/* 00133104 0013BF94  80 A3 00 1C */	lwz r5, 0x1c(r3)
-/* 00133108 0013BF98  7C 00 20 30 */	slw r0, r0, r4
-/* 0013310C 0013BF9C  7C A0 03 78 */	or r0, r5, r0
-/* 00133110 0013BFA0  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 00133114 0013BFA4  4E 80 00 20 */	blr 
-
-.global ".SetIsOnTopOfObject__11RoutingSlotFv"
-".SetIsOnTopOfObject__11RoutingSlotFv":
-/* 00133150 0013BFE0  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 00133154 0013BFE4  54 00 00 2E */	rlwinm r0, r0, 0, 0, 0x17
-/* 00133158 0013BFE8  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 0013315C 0013BFEC  4E 80 00 20 */	blr 
-
-.global ".__ct__11RoutingSlotFv"
-".__ct__11RoutingSlotFv":
-/* 001331A0 0013C030  80 E2 A7 F4 */	lwz r7, lbl_005BBC54-_R2_BASE_(r2)
-/* 001331A4 0013C034  38 C0 FF FF */	li r6, -1
-/* 001331A8 0013C038  38 A0 00 00 */	li r5, 0
-/* 001331AC 0013C03C  C0 27 00 04 */	lfs f1, 4(r7)
-/* 001331B0 0013C040  38 80 00 10 */	li r4, 0x10
-/* 001331B4 0013C044  C0 07 00 08 */	lfs f0, 8(r7)
-/* 001331B8 0013C048  38 00 FF FE */	li r0, -2
-/* 001331BC 0013C04C  D0 23 00 00 */	stfs f1, 0(r3)
-/* 001331C0 0013C050  D0 23 00 04 */	stfs f1, 4(r3)
-/* 001331C4 0013C054  D0 23 00 08 */	stfs f1, 8(r3)
-/* 001331C8 0013C058  90 C3 00 0C */	stw r6, 0xc(r3)
-/* 001331CC 0013C05C  90 A3 00 1C */	stw r5, 0x1c(r3)
-/* 001331D0 0013C060  90 A3 00 10 */	stw r5, 0x10(r3)
-/* 001331D4 0013C064  90 A3 00 14 */	stw r5, 0x14(r3)
-/* 001331D8 0013C068  90 A3 00 18 */	stw r5, 0x18(r3)
-/* 001331DC 0013C06C  90 C3 00 20 */	stw r6, 0x20(r3)
-/* 001331E0 0013C070  90 83 00 24 */	stw r4, 0x24(r3)
-/* 001331E4 0013C074  90 83 00 28 */	stw r4, 0x28(r3)
-/* 001331E8 0013C078  90 83 00 2C */	stw r4, 0x2c(r3)
-/* 001331EC 0013C07C  D0 03 00 30 */	stfs f0, 0x30(r3)
-/* 001331F0 0013C080  90 03 00 34 */	stw r0, 0x34(r3)
-/* 001331F4 0013C084  90 83 00 38 */	stw r4, 0x38(r3)
-/* 001331F8 0013C088  4E 80 00 20 */	blr 
-
-.global ".ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s"
-".ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s":
-/* 00133230 0013C0C0  7C 08 02 A6 */	mflr r0
-/* 00133234 0013C0C4  90 01 00 08 */	stw r0, 8(r1)
-/* 00133238 0013C0C8  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0013323C 0013C0CC  90 61 00 40 */	stw r3, 0x40(r1)
-/* 00133240 0013C0D0  38 61 00 40 */	addi r3, r1, 0x40
-/* 00133244 0013C0D4  90 A1 00 44 */	stw r5, 0x44(r1)
-/* 00133248 0013C0D8  48 00 0F F9 */	bl ".ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s"
-/* 0013324C 0013C0DC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00133250 0013C0E0  38 21 00 50 */	addi r1, r1, 0x50
-/* 00133254 0013C0E4  7C 08 03 A6 */	mtlr r0
-/* 00133258 0013C0E8  4E 80 00 20 */	blr 
-
-.global ".insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot"
-".insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot":
-/* 001332F0 0013C180  BE A1 FF D4 */	stmw r21, -0x2c(r1)
-/* 001332F4 0013C184  7C 08 02 A6 */	mflr r0
-/* 001332F8 0013C188  7C BD 2B 79 */	or. r29, r5, r5
-/* 001332FC 0013C18C  83 22 A7 F8 */	lwz r25, lbl_005BBC58-_R2_BASE_(r2)
-/* 00133300 0013C190  3B 63 00 00 */	addi r27, r3, 0
-/* 00133304 0013C194  3B 84 00 00 */	addi r28, r4, 0
-/* 00133308 0013C198  3B C6 00 00 */	addi r30, r6, 0
-/* 0013330C 0013C19C  90 01 00 08 */	stw r0, 8(r1)
-/* 00133310 0013C1A0  94 21 FE E0 */	stwu r1, -0x120(r1)
-/* 00133314 0013C1A4  3B E1 00 00 */	addi r31, r1, 0
-/* 00133318 0013C1A8  41 82 03 58 */	beq lbl_00133670
-/* 0013331C 0013C1AC  48 00 0C C5 */	bl ".alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
-/* 00133320 0013C1B0  48 00 0C 71 */	bl ".max_size__Q23std24allocator<11RoutingSlot>CFv"
-/* 00133324 0013C1B4  3B 43 00 00 */	addi r26, r3, 0
-/* 00133328 0013C1B8  7C 1D D0 40 */	cmplw r29, r26
-/* 0013332C 0013C1BC  3B 1A 00 00 */	addi r24, r26, 0
-/* 00133330 0013C1C0  41 81 00 14 */	bgt lbl_00133344
-/* 00133334 0013C1C4  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00133338 0013C1C8  7C 1D D0 50 */	subf r0, r29, r26
-/* 0013333C 0013C1CC  7C 03 00 40 */	cmplw r3, r0
-/* 00133340 0013C1D0  40 81 00 28 */	ble lbl_00133368
-lbl_00133344:
-/* 00133344 0013C1D4  38 7F 00 40 */	addi r3, r31, 0x40
-/* 00133348 0013C1D8  38 99 00 01 */	addi r4, r25, 1
-/* 0013334C 0013C1DC  4B EF 9F 55 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 00133350 0013C1E0  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 00133354 0013C1E4  38 79 00 1D */	addi r3, r25, 0x1d
-/* 00133358 0013C1E8  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 0013335C 0013C1EC  38 9F 00 40 */	addi r4, r31, 0x40
-/* 00133360 0013C1F0  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 00133364 0013C1F4  48 45 45 2D */	bl func_00587890
-lbl_00133368:
-/* 00133368 0013C1F8  7F 63 DB 78 */	mr r3, r27
-/* 0013336C 0013C1FC  48 00 0B B5 */	bl ".cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
-/* 00133370 0013C200  80 9B 00 04 */	lwz r4, 4(r27)
-/* 00133374 0013C204  80 63 00 00 */	lwz r3, 0(r3)
-/* 00133378 0013C208  7C 04 EA 14 */	add r0, r4, r29
-/* 0013337C 0013C20C  7C 00 18 40 */	cmplw r0, r3
-/* 00133380 0013C210  41 81 01 70 */	bgt lbl_001334F0
-/* 00133384 0013C214  1C 04 00 3C */	mulli r0, r4, 0x3c
-/* 00133388 0013C218  80 7B 00 08 */	lwz r3, 8(r27)
-/* 0013338C 0013C21C  7F 43 02 14 */	add r26, r3, r0
-/* 00133390 0013C220  3C 60 88 89 */	lis r3, 0x88888889@ha
-/* 00133394 0013C224  7C 1C D0 50 */	subf r0, r28, r26
-/* 00133398 0013C228  38 63 88 89 */	addi r3, r3, 0x88888889@l
-/* 0013339C 0013C22C  7C 63 00 96 */	mulhw r3, r3, r0
-/* 001333A0 0013C230  7C 03 02 14 */	add r0, r3, r0
-/* 001333A4 0013C234  7C 00 2E 70 */	srawi r0, r0, 5
-/* 001333A8 0013C238  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 001333AC 0013C23C  7F 00 1A 14 */	add r24, r0, r3
-/* 001333B0 0013C240  7C 1D C0 40 */	cmplw r29, r24
-/* 001333B4 0013C244  3B 3E 00 00 */	addi r25, r30, 0
-/* 001333B8 0013C248  40 81 00 A0 */	ble lbl_00133458
-/* 001333BC 0013C24C  7F 56 D3 78 */	mr r22, r26
-/* 001333C0 0013C250  48 00 00 40 */	b lbl_00133400
-lbl_001333C4:
-/* 001333C4 0013C254  7F 63 DB 78 */	mr r3, r27
-/* 001333C8 0013C258  48 00 0A D9 */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 001333CC 0013C25C  38 96 00 00 */	addi r4, r22, 0
-/* 001333D0 0013C260  38 60 00 3C */	li r3, 0x3c
-/* 001333D4 0013C264  4B F0 1D 1D */	bl ".__nw__FUlPv"
-/* 001333D8 0013C268  28 03 00 00 */	cmplwi r3, 0
-/* 001333DC 0013C26C  41 82 00 10 */	beq lbl_001333EC
-/* 001333E0 0013C270  90 3F 00 6C */	stw r1, 0x6c(r31)
-/* 001333E4 0013C274  7F C4 F3 78 */	mr r4, r30
-/* 001333E8 0013C278  48 00 09 F9 */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_001333EC:
-/* 001333EC 0013C27C  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001333F0 0013C280  3A D6 00 3C */	addi r22, r22, 0x3c
-/* 001333F4 0013C284  3B BD FF FF */	addi r29, r29, -1
-/* 001333F8 0013C288  38 03 00 01 */	addi r0, r3, 1
-/* 001333FC 0013C28C  90 1B 00 04 */	stw r0, 4(r27)
-lbl_00133400:
-/* 00133400 0013C290  7C 1D C0 40 */	cmplw r29, r24
-/* 00133404 0013C294  41 81 FF C0 */	bgt lbl_001333C4
-/* 00133408 0013C298  7F 95 E3 78 */	mr r21, r28
-/* 0013340C 0013C29C  48 00 00 40 */	b lbl_0013344C
-lbl_00133410:
-/* 00133410 0013C2A0  7F 63 DB 78 */	mr r3, r27
-/* 00133414 0013C2A4  48 00 0A 8D */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 00133418 0013C2A8  38 96 00 00 */	addi r4, r22, 0
-/* 0013341C 0013C2AC  38 60 00 3C */	li r3, 0x3c
-/* 00133420 0013C2B0  4B F0 1C D1 */	bl ".__nw__FUlPv"
-/* 00133424 0013C2B4  28 03 00 00 */	cmplwi r3, 0
-/* 00133428 0013C2B8  41 82 00 10 */	beq lbl_00133438
-/* 0013342C 0013C2BC  90 3F 00 84 */	stw r1, 0x84(r31)
-/* 00133430 0013C2C0  7E A4 AB 78 */	mr r4, r21
-/* 00133434 0013C2C4  48 00 09 AD */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_00133438:
-/* 00133438 0013C2C8  80 7B 00 04 */	lwz r3, 4(r27)
-/* 0013343C 0013C2CC  3A B5 00 3C */	addi r21, r21, 0x3c
-/* 00133440 0013C2D0  3A D6 00 3C */	addi r22, r22, 0x3c
-/* 00133444 0013C2D4  38 03 00 01 */	addi r0, r3, 1
-/* 00133448 0013C2D8  90 1B 00 04 */	stw r0, 4(r27)
-lbl_0013344C:
-/* 0013344C 0013C2DC  7C 15 D0 40 */	cmplw r21, r26
-/* 00133450 0013C2E0  41 80 FF C0 */	blt lbl_00133410
-/* 00133454 0013C2E4  48 00 00 88 */	b lbl_001334DC
-lbl_00133458:
-/* 00133458 0013C2E8  1E FD 00 3C */	mulli r23, r29, 0x3c
-/* 0013345C 0013C2EC  3A DA 00 00 */	addi r22, r26, 0
-/* 00133460 0013C2F0  7E B7 D0 50 */	subf r21, r23, r26
-/* 00133464 0013C2F4  48 00 00 40 */	b lbl_001334A4
-lbl_00133468:
-/* 00133468 0013C2F8  7F 63 DB 78 */	mr r3, r27
-/* 0013346C 0013C2FC  48 00 0A 35 */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 00133470 0013C300  38 96 00 00 */	addi r4, r22, 0
-/* 00133474 0013C304  38 60 00 3C */	li r3, 0x3c
-/* 00133478 0013C308  4B F0 1C 79 */	bl ".__nw__FUlPv"
-/* 0013347C 0013C30C  28 03 00 00 */	cmplwi r3, 0
-/* 00133480 0013C310  41 82 00 10 */	beq lbl_00133490
-/* 00133484 0013C314  90 3F 00 9C */	stw r1, 0x9c(r31)
-/* 00133488 0013C318  7E A4 AB 78 */	mr r4, r21
-/* 0013348C 0013C31C  48 00 09 55 */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_00133490:
-/* 00133490 0013C320  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00133494 0013C324  3A B5 00 3C */	addi r21, r21, 0x3c
-/* 00133498 0013C328  3A D6 00 3C */	addi r22, r22, 0x3c
-/* 0013349C 0013C32C  38 03 00 01 */	addi r0, r3, 1
-/* 001334A0 0013C330  90 1B 00 04 */	stw r0, 4(r27)
-lbl_001334A4:
-/* 001334A4 0013C334  7C 15 D0 40 */	cmplw r21, r26
-/* 001334A8 0013C338  41 80 FF C0 */	blt lbl_00133468
-/* 001334AC 0013C33C  7C 1D C0 50 */	subf r0, r29, r24
-/* 001334B0 0013C340  1C 80 00 3C */	mulli r4, r0, 0x3c
-/* 001334B4 0013C344  7C 04 D0 50 */	subf r0, r4, r26
-/* 001334B8 0013C348  7C 00 F0 40 */	cmplw r0, r30
-/* 001334BC 0013C34C  41 81 00 10 */	bgt lbl_001334CC
-/* 001334C0 0013C350  7C 1E D0 40 */	cmplw r30, r26
-/* 001334C4 0013C354  40 80 00 08 */	bge lbl_001334CC
-/* 001334C8 0013C358  7F 39 BA 14 */	add r25, r25, r23
-lbl_001334CC:
-/* 001334CC 0013C35C  38 7C 00 00 */	addi r3, r28, 0
-/* 001334D0 0013C360  7C 9C 22 14 */	add r4, r28, r4
-/* 001334D4 0013C364  38 BA 00 00 */	addi r5, r26, 0
-/* 001334D8 0013C368  48 00 06 D9 */	bl ".copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot"
-lbl_001334DC:
-/* 001334DC 0013C36C  38 7C 00 00 */	addi r3, r28, 0
-/* 001334E0 0013C370  38 9D 00 00 */	addi r4, r29, 0
-/* 001334E4 0013C374  38 B9 00 00 */	addi r5, r25, 0
-/* 001334E8 0013C378  48 00 04 C9 */	bl ".fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot"
-/* 001334EC 0013C37C  48 00 01 84 */	b lbl_00133670
-lbl_001334F0:
-/* 001334F0 0013C380  7F 63 DB 78 */	mr r3, r27
-/* 001334F4 0013C384  48 00 09 AD */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 001334F8 0013C388  38 83 00 00 */	addi r4, r3, 0
-/* 001334FC 0013C38C  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00133500 0013C390  38 A0 00 00 */	li r5, 0
-/* 00133504 0013C394  48 00 04 1D */	bl ".__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul"
-/* 00133508 0013C398  38 60 00 00 */	li r3, 0
-/* 0013350C 0013C39C  90 7F 00 50 */	stw r3, 0x50(r31)
-/* 00133510 0013C3A0  38 00 00 01 */	li r0, 1
-/* 00133514 0013C3A4  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 00133518 0013C3A8  80 9B 00 00 */	lwz r4, 0(r27)
-/* 0013351C 0013C3AC  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00133520 0013C3B0  28 04 00 00 */	cmplwi r4, 0
-/* 00133524 0013C3B4  7C 63 EA 14 */	add r3, r3, r29
-/* 00133528 0013C3B8  41 82 00 08 */	beq lbl_00133530
-/* 0013352C 0013C3BC  7C 80 23 78 */	mr r0, r4
-lbl_00133530:
-/* 00133530 0013C3C0  7C 17 03 78 */	mr r23, r0
-/* 00133534 0013C3C4  57 40 F8 7E */	srwi r0, r26, 1
-/* 00133538 0013C3C8  48 00 00 18 */	b lbl_00133550
-lbl_0013353C:
-/* 0013353C 0013C3CC  7C 17 00 40 */	cmplw r23, r0
-/* 00133540 0013C3D0  40 80 00 0C */	bge lbl_0013354C
-/* 00133544 0013C3D4  56 F7 08 3C */	slwi r23, r23, 1
-/* 00133548 0013C3D8  48 00 00 08 */	b lbl_00133550
-lbl_0013354C:
-/* 0013354C 0013C3DC  7F 17 C3 78 */	mr r23, r24
-lbl_00133550:
-/* 00133550 0013C3E0  7C 03 B8 40 */	cmplw r3, r23
-/* 00133554 0013C3E4  41 81 FF E8 */	bgt lbl_0013353C
-/* 00133558 0013C3E8  1C 77 00 3C */	mulli r3, r23, 0x3c
-/* 0013355C 0013C3EC  48 45 50 55 */	bl func_005885B0
-/* 00133560 0013C3F0  92 FF 00 4C */	stw r23, 0x4c(r31)
-/* 00133564 0013C3F4  7C 79 1B 78 */	mr r25, r3
-/* 00133568 0013C3F8  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 0013356C 0013C3FC  80 1B 00 04 */	lwz r0, 4(r27)
-/* 00133570 0013C400  80 7B 00 08 */	lwz r3, 8(r27)
-/* 00133574 0013C404  1C 00 00 3C */	mulli r0, r0, 0x3c
-/* 00133578 0013C408  3B 43 00 00 */	addi r26, r3, 0
-/* 0013357C 0013C40C  7E E3 02 14 */	add r23, r3, r0
-/* 00133580 0013C410  48 00 00 40 */	b lbl_001335C0
-lbl_00133584:
-/* 00133584 0013C414  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00133588 0013C418  48 00 09 19 */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 0013358C 0013C41C  38 99 00 00 */	addi r4, r25, 0
-/* 00133590 0013C420  38 60 00 3C */	li r3, 0x3c
-/* 00133594 0013C424  4B F0 1B 5D */	bl ".__nw__FUlPv"
-/* 00133598 0013C428  28 03 00 00 */	cmplwi r3, 0
-/* 0013359C 0013C42C  41 82 00 10 */	beq lbl_001335AC
-/* 001335A0 0013C430  90 3F 00 B4 */	stw r1, 0xb4(r31)
-/* 001335A4 0013C434  7F 44 D3 78 */	mr r4, r26
-/* 001335A8 0013C438  48 00 08 39 */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_001335AC:
-/* 001335AC 0013C43C  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001335B0 0013C440  3B 5A 00 3C */	addi r26, r26, 0x3c
-/* 001335B4 0013C444  3B 39 00 3C */	addi r25, r25, 0x3c
-/* 001335B8 0013C448  38 03 00 01 */	addi r0, r3, 1
-/* 001335BC 0013C44C  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_001335C0:
-/* 001335C0 0013C450  7C 1A E0 40 */	cmplw r26, r28
-/* 001335C4 0013C454  41 80 FF C0 */	blt lbl_00133584
-/* 001335C8 0013C458  48 00 00 40 */	b lbl_00133608
-lbl_001335CC:
-/* 001335CC 0013C45C  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001335D0 0013C460  48 00 08 D1 */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 001335D4 0013C464  38 99 00 00 */	addi r4, r25, 0
-/* 001335D8 0013C468  38 60 00 3C */	li r3, 0x3c
-/* 001335DC 0013C46C  4B F0 1B 15 */	bl ".__nw__FUlPv"
-/* 001335E0 0013C470  28 03 00 00 */	cmplwi r3, 0
-/* 001335E4 0013C474  41 82 00 10 */	beq lbl_001335F4
-/* 001335E8 0013C478  90 3F 00 CC */	stw r1, 0xcc(r31)
-/* 001335EC 0013C47C  7F C4 F3 78 */	mr r4, r30
-/* 001335F0 0013C480  48 00 07 F1 */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_001335F4:
-/* 001335F4 0013C484  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001335F8 0013C488  3B 39 00 3C */	addi r25, r25, 0x3c
-/* 001335FC 0013C48C  3B BD FF FF */	addi r29, r29, -1
-/* 00133600 0013C490  38 03 00 01 */	addi r0, r3, 1
-/* 00133604 0013C494  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_00133608:
-/* 00133608 0013C498  28 1D 00 00 */	cmplwi r29, 0
-/* 0013360C 0013C49C  40 82 FF C0 */	bne lbl_001335CC
-/* 00133610 0013C4A0  48 00 00 40 */	b lbl_00133650
-lbl_00133614:
-/* 00133614 0013C4A4  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00133618 0013C4A8  48 00 08 89 */	bl ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-/* 0013361C 0013C4AC  38 99 00 00 */	addi r4, r25, 0
-/* 00133620 0013C4B0  38 60 00 3C */	li r3, 0x3c
-/* 00133624 0013C4B4  4B F0 1A CD */	bl ".__nw__FUlPv"
-/* 00133628 0013C4B8  28 03 00 00 */	cmplwi r3, 0
-/* 0013362C 0013C4BC  41 82 00 10 */	beq lbl_0013363C
-/* 00133630 0013C4C0  90 3F 00 E4 */	stw r1, 0xe4(r31)
-/* 00133634 0013C4C4  7F 44 D3 78 */	mr r4, r26
-/* 00133638 0013C4C8  48 00 07 A9 */	bl ".__ct__11RoutingSlotFRC11RoutingSlot"
-lbl_0013363C:
-/* 0013363C 0013C4CC  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 00133640 0013C4D0  3B 5A 00 3C */	addi r26, r26, 0x3c
-/* 00133644 0013C4D4  3B 39 00 3C */	addi r25, r25, 0x3c
-/* 00133648 0013C4D8  38 03 00 01 */	addi r0, r3, 1
-/* 0013364C 0013C4DC  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_00133650:
-/* 00133650 0013C4E0  7C 1A B8 40 */	cmplw r26, r23
-/* 00133654 0013C4E4  41 80 FF C0 */	blt lbl_00133614
-/* 00133658 0013C4E8  38 9B 00 00 */	addi r4, r27, 0
-/* 0013365C 0013C4EC  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00133660 0013C4F0  48 00 00 B1 */	bl ".swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v"
-/* 00133664 0013C4F4  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00133668 0013C4F8  38 80 FF FF */	li r4, -1
-/* 0013366C 0013C4FC  4B F8 F1 75 */	bl ".__dt__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>Fv"
-lbl_00133670:
-/* 00133670 0013C500  80 1F 01 28 */	lwz r0, 0x128(r31)
-/* 00133674 0013C504  80 21 00 00 */	lwz r1, 0(r1)
-/* 00133678 0013C508  7C 08 03 A6 */	mtlr r0
-/* 0013367C 0013C50C  BA A1 FF D4 */	lmw r21, -0x2c(r1)
-/* 00133680 0013C510  4E 80 00 20 */	blr 
-
-.global ".swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v"
-".swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v":
-/* 00133710 0013C5A0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00133714 0013C5A4  7C 08 02 A6 */	mflr r0
-/* 00133718 0013C5A8  3B E4 00 00 */	addi r31, r4, 0
-/* 0013371C 0013C5AC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00133720 0013C5B0  3B C3 00 00 */	addi r30, r3, 0
-/* 00133724 0013C5B4  7C 1E F8 40 */	cmplw r30, r31
-/* 00133728 0013C5B8  90 01 00 08 */	stw r0, 8(r1)
-/* 0013372C 0013C5BC  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00133730 0013C5C0  41 82 00 28 */	beq lbl_00133758
-/* 00133734 0013C5C4  48 00 01 2D */	bl ".swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>"
-/* 00133738 0013C5C8  80 7E 00 08 */	lwz r3, 8(r30)
-/* 0013373C 0013C5CC  80 1F 00 08 */	lwz r0, 8(r31)
-/* 00133740 0013C5D0  90 1E 00 08 */	stw r0, 8(r30)
-/* 00133744 0013C5D4  90 7F 00 08 */	stw r3, 8(r31)
-/* 00133748 0013C5D8  80 7E 00 04 */	lwz r3, 4(r30)
-/* 0013374C 0013C5DC  80 1F 00 04 */	lwz r0, 4(r31)
-/* 00133750 0013C5E0  90 1E 00 04 */	stw r0, 4(r30)
-/* 00133754 0013C5E4  90 7F 00 04 */	stw r3, 4(r31)
-lbl_00133758:
-/* 00133758 0013C5E8  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0013375C 0013C5EC  38 21 00 50 */	addi r1, r1, 0x50
-/* 00133760 0013C5F0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00133764 0013C5F4  7C 08 03 A6 */	mtlr r0
-/* 00133768 0013C5F8  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0013376C 0013C5FC  4E 80 00 20 */	blr 
-
-.global ".swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>"
-".swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>":
-/* 00133860 0013C6F0  80 A3 00 00 */	lwz r5, 0(r3)
-/* 00133864 0013C6F4  80 04 00 00 */	lwz r0, 0(r4)
-/* 00133868 0013C6F8  90 03 00 00 */	stw r0, 0(r3)
-/* 0013386C 0013C6FC  90 A4 00 00 */	stw r5, 0(r4)
-/* 00133870 0013C700  4E 80 00 20 */	blr 
-
-.global ".__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul"
-".__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul":
-/* 00133920 0013C7B0  90 A3 00 00 */	stw r5, 0(r3)
-/* 00133924 0013C7B4  4E 80 00 20 */	blr 
-
-.global ".fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot"
-".fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot":
-/* 001339B0 0013C840  28 04 00 00 */	cmplwi r4, 0
-/* 001339B4 0013C844  4D 82 00 20 */	beqlr 
-/* 001339B8 0013C848  54 80 F8 7F */	rlwinm. r0, r4, 0x1f, 1, 0x1f
-/* 001339BC 0013C84C  7C 09 03 A6 */	mtctr r0
-/* 001339C0 0013C850  41 82 01 04 */	beq lbl_00133AC4
-lbl_001339C4:
-/* 001339C4 0013C854  C0 05 00 00 */	lfs f0, 0(r5)
-/* 001339C8 0013C858  D0 03 00 00 */	stfs f0, 0(r3)
-/* 001339CC 0013C85C  C0 05 00 04 */	lfs f0, 4(r5)
-/* 001339D0 0013C860  D0 03 00 04 */	stfs f0, 4(r3)
-/* 001339D4 0013C864  C0 05 00 08 */	lfs f0, 8(r5)
-/* 001339D8 0013C868  D0 03 00 08 */	stfs f0, 8(r3)
-/* 001339DC 0013C86C  80 05 00 0C */	lwz r0, 0xc(r5)
-/* 001339E0 0013C870  90 03 00 0C */	stw r0, 0xc(r3)
-/* 001339E4 0013C874  80 C5 00 10 */	lwz r6, 0x10(r5)
-/* 001339E8 0013C878  80 05 00 14 */	lwz r0, 0x14(r5)
-/* 001339EC 0013C87C  90 C3 00 10 */	stw r6, 0x10(r3)
-/* 001339F0 0013C880  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001339F4 0013C884  80 05 00 18 */	lwz r0, 0x18(r5)
-/* 001339F8 0013C888  90 03 00 18 */	stw r0, 0x18(r3)
-/* 001339FC 0013C88C  80 05 00 1C */	lwz r0, 0x1c(r5)
-/* 00133A00 0013C890  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 00133A04 0013C894  80 05 00 20 */	lwz r0, 0x20(r5)
-/* 00133A08 0013C898  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00133A0C 0013C89C  80 05 00 24 */	lwz r0, 0x24(r5)
-/* 00133A10 0013C8A0  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00133A14 0013C8A4  80 05 00 28 */	lwz r0, 0x28(r5)
-/* 00133A18 0013C8A8  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00133A1C 0013C8AC  80 05 00 2C */	lwz r0, 0x2c(r5)
-/* 00133A20 0013C8B0  90 03 00 2C */	stw r0, 0x2c(r3)
-/* 00133A24 0013C8B4  C0 05 00 30 */	lfs f0, 0x30(r5)
-/* 00133A28 0013C8B8  D0 03 00 30 */	stfs f0, 0x30(r3)
-/* 00133A2C 0013C8BC  80 05 00 34 */	lwz r0, 0x34(r5)
-/* 00133A30 0013C8C0  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00133A34 0013C8C4  80 05 00 38 */	lwz r0, 0x38(r5)
-/* 00133A38 0013C8C8  90 03 00 38 */	stw r0, 0x38(r3)
-/* 00133A3C 0013C8CC  C0 05 00 00 */	lfs f0, 0(r5)
-/* 00133A40 0013C8D0  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 00133A44 0013C8D4  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00133A48 0013C8D8  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 00133A4C 0013C8DC  C0 05 00 08 */	lfs f0, 8(r5)
-/* 00133A50 0013C8E0  D0 03 00 44 */	stfs f0, 0x44(r3)
-/* 00133A54 0013C8E4  80 05 00 0C */	lwz r0, 0xc(r5)
-/* 00133A58 0013C8E8  90 03 00 48 */	stw r0, 0x48(r3)
-/* 00133A5C 0013C8EC  80 C5 00 10 */	lwz r6, 0x10(r5)
-/* 00133A60 0013C8F0  80 05 00 14 */	lwz r0, 0x14(r5)
-/* 00133A64 0013C8F4  90 C3 00 4C */	stw r6, 0x4c(r3)
-/* 00133A68 0013C8F8  90 03 00 50 */	stw r0, 0x50(r3)
-/* 00133A6C 0013C8FC  80 05 00 18 */	lwz r0, 0x18(r5)
-/* 00133A70 0013C900  90 03 00 54 */	stw r0, 0x54(r3)
-/* 00133A74 0013C904  80 05 00 1C */	lwz r0, 0x1c(r5)
-/* 00133A78 0013C908  90 03 00 58 */	stw r0, 0x58(r3)
-/* 00133A7C 0013C90C  80 05 00 20 */	lwz r0, 0x20(r5)
-/* 00133A80 0013C910  90 03 00 5C */	stw r0, 0x5c(r3)
-/* 00133A84 0013C914  80 05 00 24 */	lwz r0, 0x24(r5)
-/* 00133A88 0013C918  90 03 00 60 */	stw r0, 0x60(r3)
-/* 00133A8C 0013C91C  80 05 00 28 */	lwz r0, 0x28(r5)
-/* 00133A90 0013C920  90 03 00 64 */	stw r0, 0x64(r3)
-/* 00133A94 0013C924  80 05 00 2C */	lwz r0, 0x2c(r5)
-/* 00133A98 0013C928  90 03 00 68 */	stw r0, 0x68(r3)
-/* 00133A9C 0013C92C  C0 05 00 30 */	lfs f0, 0x30(r5)
-/* 00133AA0 0013C930  D0 03 00 6C */	stfs f0, 0x6c(r3)
-/* 00133AA4 0013C934  80 05 00 34 */	lwz r0, 0x34(r5)
-/* 00133AA8 0013C938  90 03 00 70 */	stw r0, 0x70(r3)
-/* 00133AAC 0013C93C  80 05 00 38 */	lwz r0, 0x38(r5)
-/* 00133AB0 0013C940  90 03 00 74 */	stw r0, 0x74(r3)
-/* 00133AB4 0013C944  38 63 00 78 */	addi r3, r3, 0x78
-/* 00133AB8 0013C948  42 00 FF 0C */	bdnz lbl_001339C4
-/* 00133ABC 0013C94C  70 84 00 01 */	andi. r4, r4, 1
-/* 00133AC0 0013C950  4D 82 00 20 */	beqlr 
-lbl_00133AC4:
-/* 00133AC4 0013C954  7C 89 03 A6 */	mtctr r4
-lbl_00133AC8:
-/* 00133AC8 0013C958  C0 05 00 00 */	lfs f0, 0(r5)
-/* 00133ACC 0013C95C  D0 03 00 00 */	stfs f0, 0(r3)
-/* 00133AD0 0013C960  C0 05 00 04 */	lfs f0, 4(r5)
-/* 00133AD4 0013C964  D0 03 00 04 */	stfs f0, 4(r3)
-/* 00133AD8 0013C968  C0 05 00 08 */	lfs f0, 8(r5)
-/* 00133ADC 0013C96C  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00133AE0 0013C970  80 05 00 0C */	lwz r0, 0xc(r5)
-/* 00133AE4 0013C974  90 03 00 0C */	stw r0, 0xc(r3)
-/* 00133AE8 0013C978  80 C5 00 10 */	lwz r6, 0x10(r5)
-/* 00133AEC 0013C97C  80 05 00 14 */	lwz r0, 0x14(r5)
-/* 00133AF0 0013C980  90 C3 00 10 */	stw r6, 0x10(r3)
-/* 00133AF4 0013C984  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00133AF8 0013C988  80 05 00 18 */	lwz r0, 0x18(r5)
-/* 00133AFC 0013C98C  90 03 00 18 */	stw r0, 0x18(r3)
-/* 00133B00 0013C990  80 05 00 1C */	lwz r0, 0x1c(r5)
-/* 00133B04 0013C994  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 00133B08 0013C998  80 05 00 20 */	lwz r0, 0x20(r5)
-/* 00133B0C 0013C99C  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00133B10 0013C9A0  80 05 00 24 */	lwz r0, 0x24(r5)
-/* 00133B14 0013C9A4  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00133B18 0013C9A8  80 05 00 28 */	lwz r0, 0x28(r5)
-/* 00133B1C 0013C9AC  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00133B20 0013C9B0  80 05 00 2C */	lwz r0, 0x2c(r5)
-/* 00133B24 0013C9B4  90 03 00 2C */	stw r0, 0x2c(r3)
-/* 00133B28 0013C9B8  C0 05 00 30 */	lfs f0, 0x30(r5)
-/* 00133B2C 0013C9BC  D0 03 00 30 */	stfs f0, 0x30(r3)
-/* 00133B30 0013C9C0  80 05 00 34 */	lwz r0, 0x34(r5)
-/* 00133B34 0013C9C4  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00133B38 0013C9C8  80 05 00 38 */	lwz r0, 0x38(r5)
-/* 00133B3C 0013C9CC  90 03 00 38 */	stw r0, 0x38(r3)
-/* 00133B40 0013C9D0  38 63 00 3C */	addi r3, r3, 0x3c
-/* 00133B44 0013C9D4  42 00 FF 84 */	bdnz lbl_00133AC8
-/* 00133B48 0013C9D8  4E 80 00 20 */	blr 
-
-.global ".copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot"
-".copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot":
-/* 00133BB0 0013CA40  38 C4 00 3B */	addi r6, r4, 0x3b
-/* 00133BB4 0013CA44  7C 04 18 40 */	cmplw r4, r3
-/* 00133BB8 0013CA48  7C C3 30 50 */	subf r6, r3, r6
-/* 00133BBC 0013CA4C  38 00 00 3C */	li r0, 0x3c
-/* 00133BC0 0013CA50  7C C6 03 96 */	divwu r6, r6, r0
-/* 00133BC4 0013CA54  40 81 01 9C */	ble lbl_00133D60
-/* 00133BC8 0013CA58  54 C0 F8 7F */	rlwinm. r0, r6, 0x1f, 1, 0x1f
-/* 00133BCC 0013CA5C  7C 09 03 A6 */	mtctr r0
-/* 00133BD0 0013CA60  41 82 01 08 */	beq lbl_00133CD8
-lbl_00133BD4:
-/* 00133BD4 0013CA64  C0 04 FF C4 */	lfs f0, -0x3c(r4)
-/* 00133BD8 0013CA68  D0 05 FF C4 */	stfs f0, -0x3c(r5)
-/* 00133BDC 0013CA6C  C0 04 FF C8 */	lfs f0, -0x38(r4)
-/* 00133BE0 0013CA70  D0 05 FF C8 */	stfs f0, -0x38(r5)
-/* 00133BE4 0013CA74  C0 04 FF CC */	lfs f0, -0x34(r4)
-/* 00133BE8 0013CA78  D0 05 FF CC */	stfs f0, -0x34(r5)
-/* 00133BEC 0013CA7C  80 04 FF D0 */	lwz r0, -0x30(r4)
-/* 00133BF0 0013CA80  90 05 FF D0 */	stw r0, -0x30(r5)
-/* 00133BF4 0013CA84  80 64 FF D4 */	lwz r3, -0x2c(r4)
-/* 00133BF8 0013CA88  80 04 FF D8 */	lwz r0, -0x28(r4)
-/* 00133BFC 0013CA8C  90 65 FF D4 */	stw r3, -0x2c(r5)
-/* 00133C00 0013CA90  90 05 FF D8 */	stw r0, -0x28(r5)
-/* 00133C04 0013CA94  80 04 FF DC */	lwz r0, -0x24(r4)
-/* 00133C08 0013CA98  90 05 FF DC */	stw r0, -0x24(r5)
-/* 00133C0C 0013CA9C  80 04 FF E0 */	lwz r0, -0x20(r4)
-/* 00133C10 0013CAA0  90 05 FF E0 */	stw r0, -0x20(r5)
-/* 00133C14 0013CAA4  80 04 FF E4 */	lwz r0, -0x1c(r4)
-/* 00133C18 0013CAA8  90 05 FF E4 */	stw r0, -0x1c(r5)
-/* 00133C1C 0013CAAC  80 04 FF E8 */	lwz r0, -0x18(r4)
-/* 00133C20 0013CAB0  90 05 FF E8 */	stw r0, -0x18(r5)
-/* 00133C24 0013CAB4  80 04 FF EC */	lwz r0, -0x14(r4)
-/* 00133C28 0013CAB8  90 05 FF EC */	stw r0, -0x14(r5)
-/* 00133C2C 0013CABC  80 04 FF F0 */	lwz r0, -0x10(r4)
-/* 00133C30 0013CAC0  90 05 FF F0 */	stw r0, -0x10(r5)
-/* 00133C34 0013CAC4  C0 04 FF F4 */	lfs f0, -0xc(r4)
-/* 00133C38 0013CAC8  D0 05 FF F4 */	stfs f0, -0xc(r5)
-/* 00133C3C 0013CACC  80 04 FF F8 */	lwz r0, -8(r4)
-/* 00133C40 0013CAD0  90 05 FF F8 */	stw r0, -8(r5)
-/* 00133C44 0013CAD4  80 04 FF FC */	lwz r0, -4(r4)
-/* 00133C48 0013CAD8  90 05 FF FC */	stw r0, -4(r5)
-/* 00133C4C 0013CADC  C0 04 FF 88 */	lfs f0, -0x78(r4)
-/* 00133C50 0013CAE0  D0 05 FF 88 */	stfs f0, -0x78(r5)
-/* 00133C54 0013CAE4  C0 04 FF 8C */	lfs f0, -0x74(r4)
-/* 00133C58 0013CAE8  38 84 FF 88 */	addi r4, r4, -120
-/* 00133C5C 0013CAEC  D0 05 FF 8C */	stfs f0, -0x74(r5)
-/* 00133C60 0013CAF0  38 A5 FF 88 */	addi r5, r5, -120
-/* 00133C64 0013CAF4  C0 04 00 08 */	lfs f0, 8(r4)
-/* 00133C68 0013CAF8  D0 05 00 08 */	stfs f0, 8(r5)
-/* 00133C6C 0013CAFC  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 00133C70 0013CB00  90 05 00 0C */	stw r0, 0xc(r5)
-/* 00133C74 0013CB04  80 64 00 10 */	lwz r3, 0x10(r4)
-/* 00133C78 0013CB08  80 04 00 14 */	lwz r0, 0x14(r4)
-/* 00133C7C 0013CB0C  90 65 00 10 */	stw r3, 0x10(r5)
-/* 00133C80 0013CB10  90 05 00 14 */	stw r0, 0x14(r5)
-/* 00133C84 0013CB14  80 04 00 18 */	lwz r0, 0x18(r4)
-/* 00133C88 0013CB18  90 05 00 18 */	stw r0, 0x18(r5)
-/* 00133C8C 0013CB1C  80 04 00 1C */	lwz r0, 0x1c(r4)
-/* 00133C90 0013CB20  90 05 00 1C */	stw r0, 0x1c(r5)
-/* 00133C94 0013CB24  80 04 00 20 */	lwz r0, 0x20(r4)
-/* 00133C98 0013CB28  90 05 00 20 */	stw r0, 0x20(r5)
-/* 00133C9C 0013CB2C  80 04 00 24 */	lwz r0, 0x24(r4)
-/* 00133CA0 0013CB30  90 05 00 24 */	stw r0, 0x24(r5)
-/* 00133CA4 0013CB34  80 04 00 28 */	lwz r0, 0x28(r4)
-/* 00133CA8 0013CB38  90 05 00 28 */	stw r0, 0x28(r5)
-/* 00133CAC 0013CB3C  80 04 00 2C */	lwz r0, 0x2c(r4)
-/* 00133CB0 0013CB40  90 05 00 2C */	stw r0, 0x2c(r5)
-/* 00133CB4 0013CB44  C0 04 00 30 */	lfs f0, 0x30(r4)
-/* 00133CB8 0013CB48  D0 05 00 30 */	stfs f0, 0x30(r5)
-/* 00133CBC 0013CB4C  80 04 00 34 */	lwz r0, 0x34(r4)
-/* 00133CC0 0013CB50  90 05 00 34 */	stw r0, 0x34(r5)
-/* 00133CC4 0013CB54  80 04 00 38 */	lwz r0, 0x38(r4)
-/* 00133CC8 0013CB58  90 05 00 38 */	stw r0, 0x38(r5)
-/* 00133CCC 0013CB5C  42 00 FF 08 */	bdnz lbl_00133BD4
-/* 00133CD0 0013CB60  70 C6 00 01 */	andi. r6, r6, 1
-/* 00133CD4 0013CB64  41 82 00 8C */	beq lbl_00133D60
-lbl_00133CD8:
-/* 00133CD8 0013CB68  7C C9 03 A6 */	mtctr r6
-lbl_00133CDC:
-/* 00133CDC 0013CB6C  C0 04 FF C4 */	lfs f0, -0x3c(r4)
-/* 00133CE0 0013CB70  D0 05 FF C4 */	stfs f0, -0x3c(r5)
-/* 00133CE4 0013CB74  C0 04 FF C8 */	lfs f0, -0x38(r4)
-/* 00133CE8 0013CB78  38 84 FF C4 */	addi r4, r4, -60
-/* 00133CEC 0013CB7C  D0 05 FF C8 */	stfs f0, -0x38(r5)
-/* 00133CF0 0013CB80  38 A5 FF C4 */	addi r5, r5, -60
-/* 00133CF4 0013CB84  C0 04 00 08 */	lfs f0, 8(r4)
-/* 00133CF8 0013CB88  D0 05 00 08 */	stfs f0, 8(r5)
-/* 00133CFC 0013CB8C  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 00133D00 0013CB90  90 05 00 0C */	stw r0, 0xc(r5)
-/* 00133D04 0013CB94  80 64 00 10 */	lwz r3, 0x10(r4)
-/* 00133D08 0013CB98  80 04 00 14 */	lwz r0, 0x14(r4)
-/* 00133D0C 0013CB9C  90 65 00 10 */	stw r3, 0x10(r5)
-/* 00133D10 0013CBA0  90 05 00 14 */	stw r0, 0x14(r5)
-/* 00133D14 0013CBA4  80 04 00 18 */	lwz r0, 0x18(r4)
-/* 00133D18 0013CBA8  90 05 00 18 */	stw r0, 0x18(r5)
-/* 00133D1C 0013CBAC  80 04 00 1C */	lwz r0, 0x1c(r4)
-/* 00133D20 0013CBB0  90 05 00 1C */	stw r0, 0x1c(r5)
-/* 00133D24 0013CBB4  80 04 00 20 */	lwz r0, 0x20(r4)
-/* 00133D28 0013CBB8  90 05 00 20 */	stw r0, 0x20(r5)
-/* 00133D2C 0013CBBC  80 04 00 24 */	lwz r0, 0x24(r4)
-/* 00133D30 0013CBC0  90 05 00 24 */	stw r0, 0x24(r5)
-/* 00133D34 0013CBC4  80 04 00 28 */	lwz r0, 0x28(r4)
-/* 00133D38 0013CBC8  90 05 00 28 */	stw r0, 0x28(r5)
-/* 00133D3C 0013CBCC  80 04 00 2C */	lwz r0, 0x2c(r4)
-/* 00133D40 0013CBD0  90 05 00 2C */	stw r0, 0x2c(r5)
-/* 00133D44 0013CBD4  C0 04 00 30 */	lfs f0, 0x30(r4)
-/* 00133D48 0013CBD8  D0 05 00 30 */	stfs f0, 0x30(r5)
-/* 00133D4C 0013CBDC  80 04 00 34 */	lwz r0, 0x34(r4)
-/* 00133D50 0013CBE0  90 05 00 34 */	stw r0, 0x34(r5)
-/* 00133D54 0013CBE4  80 04 00 38 */	lwz r0, 0x38(r4)
-/* 00133D58 0013CBE8  90 05 00 38 */	stw r0, 0x38(r5)
-/* 00133D5C 0013CBEC  42 00 FF 80 */	bdnz lbl_00133CDC
-lbl_00133D60:
-/* 00133D60 0013CBF0  7C A3 2B 78 */	mr r3, r5
-/* 00133D64 0013CBF4  4E 80 00 20 */	blr 
-
-.global ".__ct__11RoutingSlotFRC11RoutingSlot"
-".__ct__11RoutingSlotFRC11RoutingSlot":
-/* 00133DE0 0013CC70  C0 04 00 00 */	lfs f0, 0(r4)
-/* 00133DE4 0013CC74  D0 03 00 00 */	stfs f0, 0(r3)
-/* 00133DE8 0013CC78  C0 04 00 04 */	lfs f0, 4(r4)
-/* 00133DEC 0013CC7C  D0 03 00 04 */	stfs f0, 4(r3)
-/* 00133DF0 0013CC80  C0 04 00 08 */	lfs f0, 8(r4)
-/* 00133DF4 0013CC84  D0 03 00 08 */	stfs f0, 8(r3)
-/* 00133DF8 0013CC88  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 00133DFC 0013CC8C  90 03 00 0C */	stw r0, 0xc(r3)
-/* 00133E00 0013CC90  80 A4 00 10 */	lwz r5, 0x10(r4)
-/* 00133E04 0013CC94  80 04 00 14 */	lwz r0, 0x14(r4)
-/* 00133E08 0013CC98  90 A3 00 10 */	stw r5, 0x10(r3)
-/* 00133E0C 0013CC9C  90 03 00 14 */	stw r0, 0x14(r3)
-/* 00133E10 0013CCA0  80 04 00 18 */	lwz r0, 0x18(r4)
-/* 00133E14 0013CCA4  90 03 00 18 */	stw r0, 0x18(r3)
-/* 00133E18 0013CCA8  80 04 00 1C */	lwz r0, 0x1c(r4)
-/* 00133E1C 0013CCAC  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 00133E20 0013CCB0  80 04 00 20 */	lwz r0, 0x20(r4)
-/* 00133E24 0013CCB4  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00133E28 0013CCB8  80 04 00 24 */	lwz r0, 0x24(r4)
-/* 00133E2C 0013CCBC  90 03 00 24 */	stw r0, 0x24(r3)
-/* 00133E30 0013CCC0  80 04 00 28 */	lwz r0, 0x28(r4)
-/* 00133E34 0013CCC4  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00133E38 0013CCC8  80 04 00 2C */	lwz r0, 0x2c(r4)
-/* 00133E3C 0013CCCC  90 03 00 2C */	stw r0, 0x2c(r3)
-/* 00133E40 0013CCD0  C0 04 00 30 */	lfs f0, 0x30(r4)
-/* 00133E44 0013CCD4  D0 03 00 30 */	stfs f0, 0x30(r3)
-/* 00133E48 0013CCD8  80 04 00 34 */	lwz r0, 0x34(r4)
-/* 00133E4C 0013CCDC  90 03 00 34 */	stw r0, 0x34(r3)
-/* 00133E50 0013CCE0  80 04 00 38 */	lwz r0, 0x38(r4)
-/* 00133E54 0013CCE4  90 03 00 38 */	stw r0, 0x38(r3)
-/* 00133E58 0013CCE8  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
-".first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv":
-/* 00133EA0 0013CD30  4E 80 00 20 */	blr 
-
-.global ".cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
-".cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv":
-/* 00133F20 0013CDB0  4E 80 00 20 */	blr 
-
-.global ".max_size__Q23std24allocator<11RoutingSlot>CFv"
-".max_size__Q23std24allocator<11RoutingSlot>CFv":
-/* 00133F90 0013CE20  3C 60 04 44 */	lis r3, 0x04444444@ha
-/* 00133F94 0013CE24  38 63 44 44 */	addi r3, r3, 0x04444444@l
-/* 00133F98 0013CE28  4E 80 00 20 */	blr 
-
-.global ".alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
-".alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv":
-/* 00133FE0 0013CE70  4E 80 00 20 */	blr 
-
-.global ".__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-".__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
-/* 00134050 0013CEE0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00134054 0013CEE4  7C 08 02 A6 */	mflr r0
-/* 00134058 0013CEE8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 0013405C 0013CEEC  3B C4 00 00 */	addi r30, r4, 0
-/* 00134060 0013CEF0  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 00134064 0013CEF4  7C 7D 1B 79 */	or. r29, r3, r3
-/* 00134068 0013CEF8  90 01 00 08 */	stw r0, 8(r1)
-/* 0013406C 0013CEFC  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00134070 0013CF00  41 82 00 40 */	beq lbl_001340B0
-/* 00134074 0013CF04  48 00 03 6D */	bl ".clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-/* 00134078 0013CF08  80 1D 00 08 */	lwz r0, 8(r29)
-/* 0013407C 0013CF0C  28 00 00 00 */	cmplwi r0, 0
-/* 00134080 0013CF10  41 82 00 20 */	beq lbl_001340A0
-/* 00134084 0013CF14  7F A3 EB 78 */	mr r3, r29
-/* 00134088 0013CF18  48 00 01 39 */	bl ".second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 0013408C 0013CF1C  83 FD 00 08 */	lwz r31, 8(r29)
-/* 00134090 0013CF20  7F A3 EB 78 */	mr r3, r29
-/* 00134094 0013CF24  48 00 00 AD */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00134098 0013CF28  7F E3 FB 78 */	mr r3, r31
-/* 0013409C 0013CF2C  48 45 45 F5 */	bl func_00588690
-lbl_001340A0:
-/* 001340A0 0013CF30  7F C0 07 35 */	extsh. r0, r30
-/* 001340A4 0013CF34  40 81 00 0C */	ble lbl_001340B0
-/* 001340A8 0013CF38  7F A3 EB 78 */	mr r3, r29
-/* 001340AC 0013CF3C  48 45 45 E5 */	bl func_00588690
-lbl_001340B0:
-/* 001340B0 0013CF40  7F A3 EB 78 */	mr r3, r29
-/* 001340B4 0013CF44  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001340B8 0013CF48  38 21 00 50 */	addi r1, r1, 0x50
-/* 001340BC 0013CF4C  7C 08 03 A6 */	mtlr r0
-/* 001340C0 0013CF50  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001340C4 0013CF54  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001340C8 0013CF58  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001340CC 0013CF5C  4E 80 00 20 */	blr 
-
-.global ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv":
-/* 00134140 0013CFD0  4E 80 00 20 */	blr 
-
-.global ".second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-".second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv":
-/* 001341C0 0013D050  4E 80 00 20 */	blr 
-
-.global ".ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s"
-".ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s":
-/* 00134240 0013D0D0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00134244 0013D0D4  7C 08 02 A6 */	mflr r0
-/* 00134248 0013D0D8  83 E2 8F DC */	lwz r31, lbl_005BA43C-_R2_BASE_(r2)
-/* 0013424C 0013D0DC  90 01 00 08 */	stw r0, 8(r1)
-/* 00134250 0013D0E0  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00134254 0013D0E4  90 61 00 48 */	stw r3, 0x48(r1)
-/* 00134258 0013D0E8  38 61 00 40 */	addi r3, r1, 0x40
-/* 0013425C 0013D0EC  90 A1 00 4C */	stw r5, 0x4c(r1)
-/* 00134260 0013D0F0  38 A4 00 00 */	addi r5, r4, 0
-/* 00134264 0013D0F4  38 81 00 44 */	addi r4, r1, 0x44
-/* 00134268 0013D0F8  93 E1 00 44 */	stw r31, 0x44(r1)
-/* 0013426C 0013D0FC  4B FE 0C 95 */	bl ".Reconstitute__12ReconBuilderFP11ReconObjectP8iResFilesPl"
-/* 00134270 0013D100  93 E1 00 44 */	stw r31, 0x44(r1)
-/* 00134274 0013D104  3B E3 00 00 */	addi r31, r3, 0
-/* 00134278 0013D108  38 61 00 44 */	addi r3, r1, 0x44
-/* 0013427C 0013D10C  38 80 00 00 */	li r4, 0
-/* 00134280 0013D110  4B FE 0A 11 */	bl ".__dt__11ReconObjectFv"
-/* 00134284 0013D114  7F E3 FB 78 */	mr r3, r31
-/* 00134288 0013D118  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 0013428C 0013D11C  38 21 00 60 */	addi r1, r1, 0x60
-/* 00134290 0013D120  7C 08 03 A6 */	mtlr r0
-/* 00134294 0013D124  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00134298 0013D128  4E 80 00 20 */	blr 
-
-.global ".__dt__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv"
-".__dt__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv":
-/* 00134320 0013D1B0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00134324 0013D1B4  7C 08 02 A6 */	mflr r0
-/* 00134328 0013D1B8  3B E4 00 00 */	addi r31, r4, 0
-/* 0013432C 0013D1BC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00134330 0013D1C0  7C 7E 1B 79 */	or. r30, r3, r3
-/* 00134334 0013D1C4  90 01 00 08 */	stw r0, 8(r1)
-/* 00134338 0013D1C8  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 0013433C 0013D1CC  41 82 00 24 */	beq lbl_00134360
-/* 00134340 0013D1D0  80 02 8F DC */	lwz r0, lbl_005BA43C-_R2_BASE_(r2)
-/* 00134344 0013D1D4  38 80 00 00 */	li r4, 0
-/* 00134348 0013D1D8  90 1E 00 00 */	stw r0, 0(r30)
-/* 0013434C 0013D1DC  4B FE 09 45 */	bl ".__dt__11ReconObjectFv"
-/* 00134350 0013D1E0  7F E0 07 35 */	extsh. r0, r31
-/* 00134354 0013D1E4  40 81 00 0C */	ble lbl_00134360
-/* 00134358 0013D1E8  7F C3 F3 78 */	mr r3, r30
-/* 0013435C 0013D1EC  48 45 43 35 */	bl func_00588690
-lbl_00134360:
-/* 00134360 0013D1F0  7F C3 F3 78 */	mr r3, r30
-/* 00134364 0013D1F4  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00134368 0013D1F8  38 21 00 50 */	addi r1, r1, 0x50
-/* 0013436C 0013D1FC  7C 08 03 A6 */	mtlr r0
-/* 00134370 0013D200  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00134374 0013D204  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00134378 0013D208  4E 80 00 20 */	blr 
-
-.global ".clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-".clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
-/* 001343E0 0013D270  93 E1 FF FC */	stw r31, -4(r1)
-/* 001343E4 0013D274  7C 08 02 A6 */	mflr r0
-/* 001343E8 0013D278  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001343EC 0013D27C  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001343F0 0013D280  7C 7D 1B 78 */	mr r29, r3
-/* 001343F4 0013D284  90 01 00 08 */	stw r0, 8(r1)
-/* 001343F8 0013D288  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001343FC 0013D28C  80 03 00 04 */	lwz r0, 4(r3)
-/* 00134400 0013D290  83 C3 00 08 */	lwz r30, 8(r3)
-/* 00134404 0013D294  1C 00 00 48 */	mulli r0, r0, 0x48
-/* 00134408 0013D298  7F FE 02 14 */	add r31, r30, r0
-/* 0013440C 0013D29C  48 00 00 10 */	b lbl_0013441C
-lbl_00134410:
-/* 00134410 0013D2A0  38 7D 00 00 */	addi r3, r29, 0
-/* 00134414 0013D2A4  3B FF FF B8 */	addi r31, r31, -72
-/* 00134418 0013D2A8  4B FF FD 29 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-lbl_0013441C:
-/* 0013441C 0013D2AC  7C 1F F0 40 */	cmplw r31, r30
-/* 00134420 0013D2B0  41 81 FF F0 */	bgt lbl_00134410
-/* 00134424 0013D2B4  38 00 00 00 */	li r0, 0
-/* 00134428 0013D2B8  90 1D 00 04 */	stw r0, 4(r29)
-/* 0013442C 0013D2BC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 00134430 0013D2C0  38 21 00 50 */	addi r1, r1, 0x50
-/* 00134434 0013D2C4  7C 08 03 A6 */	mtlr r0
-/* 00134438 0013D2C8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 0013443C 0013D2CC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00134440 0013D2D0  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 00134444 0013D2D4  4E 80 00 20 */	blr 
-
-.global ".GetType__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv"
-".GetType__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv":
-/* 001344C0 0013D350  80 63 00 08 */	lwz r3, 8(r3)
-/* 001344C4 0013D354  4E 80 00 20 */	blr 
-
-.global ".DoStream__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>FP11ReconBufferl"
-".DoStream__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>FP11ReconBufferl":
-/* 00134520 0013D3B0  7C 08 02 A6 */	mflr r0
-/* 00134524 0013D3B4  90 01 00 08 */	stw r0, 8(r1)
-/* 00134528 0013D3B8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 0013452C 0013D3BC  80 63 00 04 */	lwz r3, 4(r3)
-/* 00134530 0013D3C0  80 63 00 00 */	lwz r3, 0(r3)
-/* 00134534 0013D3C4  48 00 00 7D */	bl ".DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v"
-/* 00134538 0013D3C8  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 0013453C 0013D3CC  38 21 00 40 */	addi r1, r1, 0x40
-/* 00134540 0013D3D0  7C 08 03 A6 */	mtlr r0
-/* 00134544 0013D3D4  4E 80 00 20 */	blr 
-
-.global ".DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v"
-".DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v":
-/* 001345B0 0013D440  93 E1 FF FC */	stw r31, -4(r1)
-/* 001345B4 0013D444  7C 08 02 A6 */	mflr r0
-/* 001345B8 0013D448  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001345BC 0013D44C  3B C5 00 00 */	addi r30, r5, 0
-/* 001345C0 0013D450  38 A0 00 01 */	li r5, 1
-/* 001345C4 0013D454  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001345C8 0013D458  3B A4 00 00 */	addi r29, r4, 0
-/* 001345CC 0013D45C  93 81 FF F0 */	stw r28, -0x10(r1)
-/* 001345D0 0013D460  7C 7C 1B 78 */	mr r28, r3
-/* 001345D4 0013D464  90 01 00 08 */	stw r0, 8(r1)
-/* 001345D8 0013D468  94 21 FF 40 */	stwu r1, -0xc0(r1)
-/* 001345DC 0013D46C  80 03 00 04 */	lwz r0, 4(r3)
-/* 001345E0 0013D470  38 81 00 40 */	addi r4, r1, 0x40
-/* 001345E4 0013D474  38 7D 00 00 */	addi r3, r29, 0
-/* 001345E8 0013D478  90 01 00 40 */	stw r0, 0x40(r1)
-/* 001345EC 0013D47C  4B FE 13 65 */	bl ".Recon32__11ReconBufferFPli"
-/* 001345F0 0013D480  80 61 00 40 */	lwz r3, 0x40(r1)
-/* 001345F4 0013D484  80 1C 00 04 */	lwz r0, 4(r28)
-/* 001345F8 0013D488  7F E3 00 51 */	subf. r31, r3, r0
-/* 001345FC 0013D48C  40 80 00 48 */	bge lbl_00134644
-/* 00134600 0013D490  38 61 00 60 */	addi r3, r1, 0x60
-/* 00134604 0013D494  4B FF E4 0D */	bl ".__ct__14SlotDescriptorFv"
-/* 00134608 0013D498  7F 83 E3 78 */	mr r3, r28
-/* 0013460C 0013D49C  48 00 03 E5 */	bl ".size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv"
-/* 00134610 0013D4A0  80 01 00 40 */	lwz r0, 0x40(r1)
-/* 00134614 0013D4A4  7F E3 00 50 */	subf r31, r3, r0
-/* 00134618 0013D4A8  38 7C 00 00 */	addi r3, r28, 0
-/* 0013461C 0013D4AC  48 00 03 55 */	bl ".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-/* 00134620 0013D4B0  90 61 00 4C */	stw r3, 0x4c(r1)
-/* 00134624 0013D4B4  38 61 00 4C */	addi r3, r1, 0x4c
-/* 00134628 0013D4B8  48 00 02 B9 */	bl ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 0013462C 0013D4BC  38 83 00 00 */	addi r4, r3, 0
-/* 00134630 0013D4C0  38 C1 00 60 */	addi r6, r1, 0x60
-/* 00134634 0013D4C4  38 7C 00 00 */	addi r3, r28, 0
-/* 00134638 0013D4C8  38 BF 00 00 */	addi r5, r31, 0
-/* 0013463C 0013D4CC  48 00 06 C5 */	bl ".insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor"
-/* 00134640 0013D4D0  48 00 00 68 */	b lbl_001346A8
-lbl_00134644:
-/* 00134644 0013D4D4  2C 1F 00 00 */	cmpwi r31, 0
-/* 00134648 0013D4D8  40 81 00 60 */	ble lbl_001346A8
-/* 0013464C 0013D4DC  7F 83 E3 78 */	mr r3, r28
-/* 00134650 0013D4E0  48 00 03 21 */	bl ".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-/* 00134654 0013D4E4  90 61 00 50 */	stw r3, 0x50(r1)
-/* 00134658 0013D4E8  38 61 00 50 */	addi r3, r1, 0x50
-/* 0013465C 0013D4EC  48 00 02 85 */	bl ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 00134660 0013D4F0  90 61 00 48 */	stw r3, 0x48(r1)
-/* 00134664 0013D4F4  7F 83 E3 78 */	mr r3, r28
-/* 00134668 0013D4F8  48 00 03 09 */	bl ".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-/* 0013466C 0013D4FC  90 61 00 54 */	stw r3, 0x54(r1)
-/* 00134670 0013D500  38 61 00 54 */	addi r3, r1, 0x54
-/* 00134674 0013D504  48 00 02 6D */	bl ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 00134678 0013D508  1C 1F 00 48 */	mulli r0, r31, 0x48
-/* 0013467C 0013D50C  7C 00 18 50 */	subf r0, r0, r3
-/* 00134680 0013D510  38 61 00 48 */	addi r3, r1, 0x48
-/* 00134684 0013D514  90 01 00 44 */	stw r0, 0x44(r1)
-/* 00134688 0013D518  48 00 01 C9 */	bl ".__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 0013468C 0013D51C  3B E3 00 00 */	addi r31, r3, 0
-/* 00134690 0013D520  38 61 00 44 */	addi r3, r1, 0x44
-/* 00134694 0013D524  48 00 01 BD */	bl ".__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 00134698 0013D528  38 83 00 00 */	addi r4, r3, 0
-/* 0013469C 0013D52C  38 7C 00 00 */	addi r3, r28, 0
-/* 001346A0 0013D530  38 BF 00 00 */	addi r5, r31, 0
-/* 001346A4 0013D534  48 00 03 BD */	bl ".erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor"
-lbl_001346A8:
-/* 001346A8 0013D538  7F 83 E3 78 */	mr r3, r28
-/* 001346AC 0013D53C  48 00 01 35 */	bl ".begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-/* 001346B0 0013D540  90 61 00 58 */	stw r3, 0x58(r1)
-/* 001346B4 0013D544  38 61 00 58 */	addi r3, r1, 0x58
-/* 001346B8 0013D548  48 00 02 29 */	bl ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 001346BC 0013D54C  7C 7F 1B 78 */	mr r31, r3
-/* 001346C0 0013D550  48 00 00 18 */	b lbl_001346D8
-lbl_001346C4:
-/* 001346C4 0013D554  38 7F 00 00 */	addi r3, r31, 0
-/* 001346C8 0013D558  38 9D 00 00 */	addi r4, r29, 0
-/* 001346CC 0013D55C  38 BE 00 00 */	addi r5, r30, 0
-/* 001346D0 0013D560  4B FF E0 21 */	bl ".DoStream__14SlotDescriptorFP11ReconBufferl"
-/* 001346D4 0013D564  3B FF 00 48 */	addi r31, r31, 0x48
-lbl_001346D8:
-/* 001346D8 0013D568  7F 83 E3 78 */	mr r3, r28
-/* 001346DC 0013D56C  48 00 02 95 */	bl ".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-/* 001346E0 0013D570  90 61 00 5C */	stw r3, 0x5c(r1)
-/* 001346E4 0013D574  38 61 00 5C */	addi r3, r1, 0x5c
-/* 001346E8 0013D578  48 00 01 F9 */	bl ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-/* 001346EC 0013D57C  7C 1F 18 40 */	cmplw r31, r3
-/* 001346F0 0013D580  40 82 FF D4 */	bne lbl_001346C4
-/* 001346F4 0013D584  80 01 00 C8 */	lwz r0, 0xc8(r1)
-/* 001346F8 0013D588  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 001346FC 0013D58C  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00134700 0013D590  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 00134704 0013D594  7C 08 03 A6 */	mtlr r0
-/* 00134708 0013D598  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 0013470C 0013D59C  83 81 FF F0 */	lwz r28, -0x10(r1)
-/* 00134710 0013D5A0  4E 80 00 20 */	blr 
-
-.global ".begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-".begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv":
-/* 001347E0 0013D670  80 63 00 08 */	lwz r3, 8(r3)
-/* 001347E4 0013D674  4E 80 00 20 */	blr 
-
-.global ".__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-".__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor":
-/* 00134850 0013D6E0  80 63 00 00 */	lwz r3, 0(r3)
-/* 00134854 0013D6E4  4E 80 00 20 */	blr 
-
-.global ".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
-".__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor":
-/* 001348E0 0013D770  80 63 00 00 */	lwz r3, 0(r3)
-/* 001348E4 0013D774  4E 80 00 20 */	blr 
-
-.global ".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
-".end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv":
-/* 00134970 0013D800  80 03 00 04 */	lwz r0, 4(r3)
-/* 00134974 0013D804  80 63 00 08 */	lwz r3, 8(r3)
-/* 00134978 0013D808  1C 00 00 48 */	mulli r0, r0, 0x48
-/* 0013497C 0013D80C  7C 63 02 14 */	add r3, r3, r0
-/* 00134980 0013D810  4E 80 00 20 */	blr 
-
-.global ".size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv"
-".size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv":
-/* 001349F0 0013D880  80 63 00 04 */	lwz r3, 4(r3)
-/* 001349F4 0013D884  4E 80 00 20 */	blr 
-
-.global ".erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor"
-".erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor":
-/* 00134A60 0013D8F0  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 00134A64 0013D8F4  7C 08 02 A6 */	mflr r0
-/* 00134A68 0013D8F8  3B E4 00 00 */	addi r31, r4, 0
-/* 00134A6C 0013D8FC  3B 65 00 00 */	addi r27, r5, 0
-/* 00134A70 0013D900  7C 1F D8 40 */	cmplw r31, r27
-/* 00134A74 0013D904  3B C3 00 00 */	addi r30, r3, 0
-/* 00134A78 0013D908  90 01 00 08 */	stw r0, 8(r1)
-/* 00134A7C 0013D90C  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 00134A80 0013D910  40 82 00 0C */	bne lbl_00134A8C
-/* 00134A84 0013D914  7F E3 FB 78 */	mr r3, r31
-/* 00134A88 0013D918  48 00 00 90 */	b lbl_00134B18
-lbl_00134A8C:
-/* 00134A8C 0013D91C  80 1E 00 04 */	lwz r0, 4(r30)
-/* 00134A90 0013D920  3C 60 38 E4 */	lis r3, 0x38E38E39@ha
-/* 00134A94 0013D924  80 9E 00 08 */	lwz r4, 8(r30)
-/* 00134A98 0013D928  38 63 8E 39 */	addi r3, r3, 0x38E38E39@l
-/* 00134A9C 0013D92C  1C 00 00 48 */	mulli r0, r0, 0x48
-/* 00134AA0 0013D930  7F A4 02 14 */	add r29, r4, r0
-/* 00134AA4 0013D934  7C 1B E8 50 */	subf r0, r27, r29
-/* 00134AA8 0013D938  7C 03 00 96 */	mulhw r0, r3, r0
-/* 00134AAC 0013D93C  7C 00 26 70 */	srawi r0, r0, 4
-/* 00134AB0 0013D940  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 00134AB4 0013D944  7F 80 1A 15 */	add. r28, r0, r3
-/* 00134AB8 0013D948  41 82 00 14 */	beq lbl_00134ACC
-/* 00134ABC 0013D94C  38 7B 00 00 */	addi r3, r27, 0
-/* 00134AC0 0013D950  38 9D 00 00 */	addi r4, r29, 0
-/* 00134AC4 0013D954  38 BF 00 00 */	addi r5, r31, 0
-/* 00134AC8 0013D958  48 00 00 F9 */	bl ".copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
-lbl_00134ACC:
-/* 00134ACC 0013D95C  1C 1C 00 48 */	mulli r0, r28, 0x48
-/* 00134AD0 0013D960  7F 9F 02 14 */	add r28, r31, r0
-/* 00134AD4 0013D964  48 00 00 10 */	b lbl_00134AE4
-lbl_00134AD8:
-/* 00134AD8 0013D968  7F C3 F3 78 */	mr r3, r30
-/* 00134ADC 0013D96C  4B FF F6 65 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00134AE0 0013D970  3B 9C 00 48 */	addi r28, r28, 0x48
-lbl_00134AE4:
-/* 00134AE4 0013D974  7C 1C E8 40 */	cmplw r28, r29
-/* 00134AE8 0013D978  41 80 FF F0 */	blt lbl_00134AD8
-/* 00134AEC 0013D97C  3C 60 38 E4 */	lis r3, 0x38E38E39@ha
-/* 00134AF0 0013D980  80 1E 00 04 */	lwz r0, 4(r30)
-/* 00134AF4 0013D984  7C 9F D8 50 */	subf r4, r31, r27
-/* 00134AF8 0013D988  38 63 8E 39 */	addi r3, r3, 0x38E38E39@l
-/* 00134AFC 0013D98C  7C 63 20 96 */	mulhw r3, r3, r4
-/* 00134B00 0013D990  7C 63 26 70 */	srawi r3, r3, 4
-/* 00134B04 0013D994  54 64 0F FE */	srwi r4, r3, 0x1f
-/* 00134B08 0013D998  7C 63 22 14 */	add r3, r3, r4
-/* 00134B0C 0013D99C  7C 03 00 50 */	subf r0, r3, r0
-/* 00134B10 0013D9A0  90 1E 00 04 */	stw r0, 4(r30)
-/* 00134B14 0013D9A4  7F E3 FB 78 */	mr r3, r31
-lbl_00134B18:
-/* 00134B18 0013D9A8  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 00134B1C 0013D9AC  38 21 00 60 */	addi r1, r1, 0x60
-/* 00134B20 0013D9B0  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 00134B24 0013D9B4  7C 08 03 A6 */	mtlr r0
-/* 00134B28 0013D9B8  4E 80 00 20 */	blr 
-
-.global ".copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
-".copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor":
-/* 00134BC0 0013DA50  38 C4 00 47 */	addi r6, r4, 0x47
-/* 00134BC4 0013DA54  7C 03 20 40 */	cmplw r3, r4
-/* 00134BC8 0013DA58  7C C3 30 50 */	subf r6, r3, r6
-/* 00134BCC 0013DA5C  38 00 00 48 */	li r0, 0x48
-/* 00134BD0 0013DA60  7C C6 03 96 */	divwu r6, r6, r0
-/* 00134BD4 0013DA64  7C C9 03 A6 */	mtctr r6
-/* 00134BD8 0013DA68  40 80 00 A0 */	bge lbl_00134C78
-lbl_00134BDC:
-/* 00134BDC 0013DA6C  A8 03 00 00 */	lha r0, 0(r3)
-/* 00134BE0 0013DA70  B0 05 00 00 */	sth r0, 0(r5)
-/* 00134BE4 0013DA74  C0 03 00 04 */	lfs f0, 4(r3)
-/* 00134BE8 0013DA78  D0 05 00 04 */	stfs f0, 4(r5)
-/* 00134BEC 0013DA7C  C0 03 00 08 */	lfs f0, 8(r3)
-/* 00134BF0 0013DA80  D0 05 00 08 */	stfs f0, 8(r5)
-/* 00134BF4 0013DA84  C0 03 00 0C */	lfs f0, 0xc(r3)
-/* 00134BF8 0013DA88  D0 05 00 0C */	stfs f0, 0xc(r5)
-/* 00134BFC 0013DA8C  80 03 00 10 */	lwz r0, 0x10(r3)
-/* 00134C00 0013DA90  90 05 00 10 */	stw r0, 0x10(r5)
-/* 00134C04 0013DA94  80 03 00 14 */	lwz r0, 0x14(r3)
-/* 00134C08 0013DA98  90 05 00 14 */	stw r0, 0x14(r5)
-/* 00134C0C 0013DA9C  80 03 00 18 */	lwz r0, 0x18(r3)
-/* 00134C10 0013DAA0  90 05 00 18 */	stw r0, 0x18(r5)
-/* 00134C14 0013DAA4  80 83 00 1C */	lwz r4, 0x1c(r3)
-/* 00134C18 0013DAA8  80 03 00 20 */	lwz r0, 0x20(r3)
-/* 00134C1C 0013DAAC  90 85 00 1C */	stw r4, 0x1c(r5)
-/* 00134C20 0013DAB0  90 05 00 20 */	stw r0, 0x20(r5)
-/* 00134C24 0013DAB4  80 03 00 24 */	lwz r0, 0x24(r3)
-/* 00134C28 0013DAB8  90 05 00 24 */	stw r0, 0x24(r5)
-/* 00134C2C 0013DABC  80 03 00 28 */	lwz r0, 0x28(r3)
-/* 00134C30 0013DAC0  90 05 00 28 */	stw r0, 0x28(r5)
-/* 00134C34 0013DAC4  80 03 00 2C */	lwz r0, 0x2c(r3)
-/* 00134C38 0013DAC8  90 05 00 2C */	stw r0, 0x2c(r5)
-/* 00134C3C 0013DACC  80 03 00 30 */	lwz r0, 0x30(r3)
-/* 00134C40 0013DAD0  90 05 00 30 */	stw r0, 0x30(r5)
-/* 00134C44 0013DAD4  80 03 00 34 */	lwz r0, 0x34(r3)
-/* 00134C48 0013DAD8  90 05 00 34 */	stw r0, 0x34(r5)
-/* 00134C4C 0013DADC  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 00134C50 0013DAE0  90 05 00 38 */	stw r0, 0x38(r5)
-/* 00134C54 0013DAE4  C0 03 00 3C */	lfs f0, 0x3c(r3)
-/* 00134C58 0013DAE8  D0 05 00 3C */	stfs f0, 0x3c(r5)
-/* 00134C5C 0013DAEC  80 03 00 40 */	lwz r0, 0x40(r3)
-/* 00134C60 0013DAF0  90 05 00 40 */	stw r0, 0x40(r5)
-/* 00134C64 0013DAF4  80 03 00 44 */	lwz r0, 0x44(r3)
-/* 00134C68 0013DAF8  38 63 00 48 */	addi r3, r3, 0x48
-/* 00134C6C 0013DAFC  90 05 00 44 */	stw r0, 0x44(r5)
-/* 00134C70 0013DB00  38 A5 00 48 */	addi r5, r5, 0x48
-/* 00134C74 0013DB04  42 00 FF 68 */	bdnz lbl_00134BDC
-lbl_00134C78:
-/* 00134C78 0013DB08  7C A3 2B 78 */	mr r3, r5
-/* 00134C7C 0013DB0C  4E 80 00 20 */	blr 
-
-.global ".insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor"
-".insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor":
-/* 00134D00 0013DB90  BE C1 FF D8 */	stmw r22, -0x28(r1)
-/* 00134D04 0013DB94  7C 08 02 A6 */	mflr r0
-/* 00134D08 0013DB98  7C BD 2B 79 */	or. r29, r5, r5
-/* 00134D0C 0013DB9C  82 E2 A7 F8 */	lwz r23, lbl_005BBC58-_R2_BASE_(r2)
-/* 00134D10 0013DBA0  3B 63 00 00 */	addi r27, r3, 0
-/* 00134D14 0013DBA4  3B 84 00 00 */	addi r28, r4, 0
-/* 00134D18 0013DBA8  3B C6 00 00 */	addi r30, r6, 0
-/* 00134D1C 0013DBAC  90 01 00 08 */	stw r0, 8(r1)
-/* 00134D20 0013DBB0  94 21 FE E0 */	stwu r1, -0x120(r1)
-/* 00134D24 0013DBB4  3B E1 00 00 */	addi r31, r1, 0
-/* 00134D28 0013DBB8  41 82 06 38 */	beq lbl_00135360
-/* 00134D2C 0013DBBC  48 00 0C B5 */	bl ".alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
-/* 00134D30 0013DBC0  48 00 0C 61 */	bl ".max_size__Q23std27allocator<14SlotDescriptor>CFv"
-/* 00134D34 0013DBC4  3B 23 00 00 */	addi r25, r3, 0
-/* 00134D38 0013DBC8  7C 1D C8 40 */	cmplw r29, r25
-/* 00134D3C 0013DBCC  3A D9 00 00 */	addi r22, r25, 0
-/* 00134D40 0013DBD0  41 81 00 14 */	bgt lbl_00134D54
-/* 00134D44 0013DBD4  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00134D48 0013DBD8  7C 1D C8 50 */	subf r0, r29, r25
-/* 00134D4C 0013DBDC  7C 03 00 40 */	cmplw r3, r0
-/* 00134D50 0013DBE0  40 81 00 28 */	ble lbl_00134D78
-lbl_00134D54:
-/* 00134D54 0013DBE4  38 7F 00 40 */	addi r3, r31, 0x40
-/* 00134D58 0013DBE8  38 97 00 01 */	addi r4, r23, 1
-/* 00134D5C 0013DBEC  4B EF 85 45 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 00134D60 0013DBF0  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 00134D64 0013DBF4  38 77 00 1D */	addi r3, r23, 0x1d
-/* 00134D68 0013DBF8  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 00134D6C 0013DBFC  38 9F 00 40 */	addi r4, r31, 0x40
-/* 00134D70 0013DC00  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 00134D74 0013DC04  48 45 2B 1D */	bl func_00587890
-lbl_00134D78:
-/* 00134D78 0013DC08  7F 63 DB 78 */	mr r3, r27
-/* 00134D7C 0013DC0C  48 00 0B A5 */	bl ".cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
-/* 00134D80 0013DC10  80 9B 00 04 */	lwz r4, 4(r27)
-/* 00134D84 0013DC14  80 63 00 00 */	lwz r3, 0(r3)
-/* 00134D88 0013DC18  7C 04 EA 14 */	add r0, r4, r29
-/* 00134D8C 0013DC1C  7C 00 18 40 */	cmplw r0, r3
-/* 00134D90 0013DC20  41 81 02 DC */	bgt lbl_0013506C
-/* 00134D94 0013DC24  1C 04 00 48 */	mulli r0, r4, 0x48
-/* 00134D98 0013DC28  80 7B 00 08 */	lwz r3, 8(r27)
-/* 00134D9C 0013DC2C  7F 23 02 14 */	add r25, r3, r0
-/* 00134DA0 0013DC30  3C 60 38 E4 */	lis r3, 0x38E38E39@ha
-/* 00134DA4 0013DC34  7C 1C C8 50 */	subf r0, r28, r25
-/* 00134DA8 0013DC38  38 63 8E 39 */	addi r3, r3, 0x38E38E39@l
-/* 00134DAC 0013DC3C  7C 03 00 96 */	mulhw r0, r3, r0
-/* 00134DB0 0013DC40  7C 00 26 70 */	srawi r0, r0, 4
-/* 00134DB4 0013DC44  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 00134DB8 0013DC48  7E C0 1A 14 */	add r22, r0, r3
-/* 00134DBC 0013DC4C  7C 1D B0 40 */	cmplw r29, r22
-/* 00134DC0 0013DC50  40 81 01 98 */	ble lbl_00134F58
-/* 00134DC4 0013DC54  7F 38 CB 78 */	mr r24, r25
-/* 00134DC8 0013DC58  48 00 00 BC */	b lbl_00134E84
-lbl_00134DCC:
-/* 00134DCC 0013DC5C  7F 63 DB 78 */	mr r3, r27
-/* 00134DD0 0013DC60  4B FF F3 71 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00134DD4 0013DC64  28 18 00 00 */	cmplwi r24, 0
-/* 00134DD8 0013DC68  41 82 00 98 */	beq lbl_00134E70
-/* 00134DDC 0013DC6C  A8 1E 00 00 */	lha r0, 0(r30)
-/* 00134DE0 0013DC70  90 3F 00 6C */	stw r1, 0x6c(r31)
-/* 00134DE4 0013DC74  B0 18 00 00 */	sth r0, 0(r24)
-/* 00134DE8 0013DC78  C0 1E 00 04 */	lfs f0, 4(r30)
-/* 00134DEC 0013DC7C  D0 18 00 04 */	stfs f0, 4(r24)
-/* 00134DF0 0013DC80  C0 1E 00 08 */	lfs f0, 8(r30)
-/* 00134DF4 0013DC84  D0 18 00 08 */	stfs f0, 8(r24)
-/* 00134DF8 0013DC88  C0 1E 00 0C */	lfs f0, 0xc(r30)
-/* 00134DFC 0013DC8C  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 00134E00 0013DC90  80 1E 00 10 */	lwz r0, 0x10(r30)
-/* 00134E04 0013DC94  90 18 00 10 */	stw r0, 0x10(r24)
-/* 00134E08 0013DC98  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 00134E0C 0013DC9C  90 18 00 14 */	stw r0, 0x14(r24)
-/* 00134E10 0013DCA0  80 1E 00 18 */	lwz r0, 0x18(r30)
-/* 00134E14 0013DCA4  90 18 00 18 */	stw r0, 0x18(r24)
-/* 00134E18 0013DCA8  80 7E 00 1C */	lwz r3, 0x1c(r30)
-/* 00134E1C 0013DCAC  80 1E 00 20 */	lwz r0, 0x20(r30)
-/* 00134E20 0013DCB0  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 00134E24 0013DCB4  90 18 00 20 */	stw r0, 0x20(r24)
-/* 00134E28 0013DCB8  80 1E 00 24 */	lwz r0, 0x24(r30)
-/* 00134E2C 0013DCBC  90 18 00 24 */	stw r0, 0x24(r24)
-/* 00134E30 0013DCC0  80 1E 00 28 */	lwz r0, 0x28(r30)
-/* 00134E34 0013DCC4  90 18 00 28 */	stw r0, 0x28(r24)
-/* 00134E38 0013DCC8  80 1E 00 2C */	lwz r0, 0x2c(r30)
-/* 00134E3C 0013DCCC  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 00134E40 0013DCD0  80 1E 00 30 */	lwz r0, 0x30(r30)
-/* 00134E44 0013DCD4  90 18 00 30 */	stw r0, 0x30(r24)
-/* 00134E48 0013DCD8  80 1E 00 34 */	lwz r0, 0x34(r30)
-/* 00134E4C 0013DCDC  90 18 00 34 */	stw r0, 0x34(r24)
-/* 00134E50 0013DCE0  80 1E 00 38 */	lwz r0, 0x38(r30)
-/* 00134E54 0013DCE4  90 18 00 38 */	stw r0, 0x38(r24)
-/* 00134E58 0013DCE8  C0 1E 00 3C */	lfs f0, 0x3c(r30)
-/* 00134E5C 0013DCEC  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 00134E60 0013DCF0  80 1E 00 40 */	lwz r0, 0x40(r30)
-/* 00134E64 0013DCF4  90 18 00 40 */	stw r0, 0x40(r24)
-/* 00134E68 0013DCF8  80 1E 00 44 */	lwz r0, 0x44(r30)
-/* 00134E6C 0013DCFC  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_00134E70:
-/* 00134E70 0013DD00  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00134E74 0013DD04  3B 18 00 48 */	addi r24, r24, 0x48
-/* 00134E78 0013DD08  3B BD FF FF */	addi r29, r29, -1
-/* 00134E7C 0013DD0C  38 03 00 01 */	addi r0, r3, 1
-/* 00134E80 0013DD10  90 1B 00 04 */	stw r0, 4(r27)
-lbl_00134E84:
-/* 00134E84 0013DD14  7C 1D B0 40 */	cmplw r29, r22
-/* 00134E88 0013DD18  41 81 FF 44 */	bgt lbl_00134DCC
-/* 00134E8C 0013DD1C  7F 97 E3 78 */	mr r23, r28
-/* 00134E90 0013DD20  48 00 00 BC */	b lbl_00134F4C
-lbl_00134E94:
-/* 00134E94 0013DD24  7F 63 DB 78 */	mr r3, r27
-/* 00134E98 0013DD28  4B FF F2 A9 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00134E9C 0013DD2C  28 18 00 00 */	cmplwi r24, 0
-/* 00134EA0 0013DD30  41 82 00 98 */	beq lbl_00134F38
-/* 00134EA4 0013DD34  A8 17 00 00 */	lha r0, 0(r23)
-/* 00134EA8 0013DD38  90 3F 00 84 */	stw r1, 0x84(r31)
-/* 00134EAC 0013DD3C  B0 18 00 00 */	sth r0, 0(r24)
-/* 00134EB0 0013DD40  C0 17 00 04 */	lfs f0, 4(r23)
-/* 00134EB4 0013DD44  D0 18 00 04 */	stfs f0, 4(r24)
-/* 00134EB8 0013DD48  C0 17 00 08 */	lfs f0, 8(r23)
-/* 00134EBC 0013DD4C  D0 18 00 08 */	stfs f0, 8(r24)
-/* 00134EC0 0013DD50  C0 17 00 0C */	lfs f0, 0xc(r23)
-/* 00134EC4 0013DD54  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 00134EC8 0013DD58  80 17 00 10 */	lwz r0, 0x10(r23)
-/* 00134ECC 0013DD5C  90 18 00 10 */	stw r0, 0x10(r24)
-/* 00134ED0 0013DD60  80 17 00 14 */	lwz r0, 0x14(r23)
-/* 00134ED4 0013DD64  90 18 00 14 */	stw r0, 0x14(r24)
-/* 00134ED8 0013DD68  80 17 00 18 */	lwz r0, 0x18(r23)
-/* 00134EDC 0013DD6C  90 18 00 18 */	stw r0, 0x18(r24)
-/* 00134EE0 0013DD70  80 77 00 1C */	lwz r3, 0x1c(r23)
-/* 00134EE4 0013DD74  80 17 00 20 */	lwz r0, 0x20(r23)
-/* 00134EE8 0013DD78  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 00134EEC 0013DD7C  90 18 00 20 */	stw r0, 0x20(r24)
-/* 00134EF0 0013DD80  80 17 00 24 */	lwz r0, 0x24(r23)
-/* 00134EF4 0013DD84  90 18 00 24 */	stw r0, 0x24(r24)
-/* 00134EF8 0013DD88  80 17 00 28 */	lwz r0, 0x28(r23)
-/* 00134EFC 0013DD8C  90 18 00 28 */	stw r0, 0x28(r24)
-/* 00134F00 0013DD90  80 17 00 2C */	lwz r0, 0x2c(r23)
-/* 00134F04 0013DD94  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 00134F08 0013DD98  80 17 00 30 */	lwz r0, 0x30(r23)
-/* 00134F0C 0013DD9C  90 18 00 30 */	stw r0, 0x30(r24)
-/* 00134F10 0013DDA0  80 17 00 34 */	lwz r0, 0x34(r23)
-/* 00134F14 0013DDA4  90 18 00 34 */	stw r0, 0x34(r24)
-/* 00134F18 0013DDA8  80 17 00 38 */	lwz r0, 0x38(r23)
-/* 00134F1C 0013DDAC  90 18 00 38 */	stw r0, 0x38(r24)
-/* 00134F20 0013DDB0  C0 17 00 3C */	lfs f0, 0x3c(r23)
-/* 00134F24 0013DDB4  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 00134F28 0013DDB8  80 17 00 40 */	lwz r0, 0x40(r23)
-/* 00134F2C 0013DDBC  90 18 00 40 */	stw r0, 0x40(r24)
-/* 00134F30 0013DDC0  80 17 00 44 */	lwz r0, 0x44(r23)
-/* 00134F34 0013DDC4  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_00134F38:
-/* 00134F38 0013DDC8  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00134F3C 0013DDCC  3A F7 00 48 */	addi r23, r23, 0x48
-/* 00134F40 0013DDD0  3B 18 00 48 */	addi r24, r24, 0x48
-/* 00134F44 0013DDD4  38 03 00 01 */	addi r0, r3, 1
-/* 00134F48 0013DDD8  90 1B 00 04 */	stw r0, 4(r27)
-lbl_00134F4C:
-/* 00134F4C 0013DDDC  7C 17 C8 40 */	cmplw r23, r25
-/* 00134F50 0013DDE0  41 80 FF 44 */	blt lbl_00134E94
-/* 00134F54 0013DDE4  48 00 01 04 */	b lbl_00135058
-lbl_00134F58:
-/* 00134F58 0013DDE8  1F 5D 00 48 */	mulli r26, r29, 0x48
-/* 00134F5C 0013DDEC  3B 19 00 00 */	addi r24, r25, 0
-/* 00134F60 0013DDF0  7E FA C8 50 */	subf r23, r26, r25
-/* 00134F64 0013DDF4  48 00 00 BC */	b lbl_00135020
-lbl_00134F68:
-/* 00134F68 0013DDF8  7F 63 DB 78 */	mr r3, r27
-/* 00134F6C 0013DDFC  4B FF F1 D5 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00134F70 0013DE00  28 18 00 00 */	cmplwi r24, 0
-/* 00134F74 0013DE04  41 82 00 98 */	beq lbl_0013500C
-/* 00134F78 0013DE08  A8 17 00 00 */	lha r0, 0(r23)
-/* 00134F7C 0013DE0C  90 3F 00 9C */	stw r1, 0x9c(r31)
-/* 00134F80 0013DE10  B0 18 00 00 */	sth r0, 0(r24)
-/* 00134F84 0013DE14  C0 17 00 04 */	lfs f0, 4(r23)
-/* 00134F88 0013DE18  D0 18 00 04 */	stfs f0, 4(r24)
-/* 00134F8C 0013DE1C  C0 17 00 08 */	lfs f0, 8(r23)
-/* 00134F90 0013DE20  D0 18 00 08 */	stfs f0, 8(r24)
-/* 00134F94 0013DE24  C0 17 00 0C */	lfs f0, 0xc(r23)
-/* 00134F98 0013DE28  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 00134F9C 0013DE2C  80 17 00 10 */	lwz r0, 0x10(r23)
-/* 00134FA0 0013DE30  90 18 00 10 */	stw r0, 0x10(r24)
-/* 00134FA4 0013DE34  80 17 00 14 */	lwz r0, 0x14(r23)
-/* 00134FA8 0013DE38  90 18 00 14 */	stw r0, 0x14(r24)
-/* 00134FAC 0013DE3C  80 17 00 18 */	lwz r0, 0x18(r23)
-/* 00134FB0 0013DE40  90 18 00 18 */	stw r0, 0x18(r24)
-/* 00134FB4 0013DE44  80 77 00 1C */	lwz r3, 0x1c(r23)
-/* 00134FB8 0013DE48  80 17 00 20 */	lwz r0, 0x20(r23)
-/* 00134FBC 0013DE4C  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 00134FC0 0013DE50  90 18 00 20 */	stw r0, 0x20(r24)
-/* 00134FC4 0013DE54  80 17 00 24 */	lwz r0, 0x24(r23)
-/* 00134FC8 0013DE58  90 18 00 24 */	stw r0, 0x24(r24)
-/* 00134FCC 0013DE5C  80 17 00 28 */	lwz r0, 0x28(r23)
-/* 00134FD0 0013DE60  90 18 00 28 */	stw r0, 0x28(r24)
-/* 00134FD4 0013DE64  80 17 00 2C */	lwz r0, 0x2c(r23)
-/* 00134FD8 0013DE68  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 00134FDC 0013DE6C  80 17 00 30 */	lwz r0, 0x30(r23)
-/* 00134FE0 0013DE70  90 18 00 30 */	stw r0, 0x30(r24)
-/* 00134FE4 0013DE74  80 17 00 34 */	lwz r0, 0x34(r23)
-/* 00134FE8 0013DE78  90 18 00 34 */	stw r0, 0x34(r24)
-/* 00134FEC 0013DE7C  80 17 00 38 */	lwz r0, 0x38(r23)
-/* 00134FF0 0013DE80  90 18 00 38 */	stw r0, 0x38(r24)
-/* 00134FF4 0013DE84  C0 17 00 3C */	lfs f0, 0x3c(r23)
-/* 00134FF8 0013DE88  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 00134FFC 0013DE8C  80 17 00 40 */	lwz r0, 0x40(r23)
-/* 00135000 0013DE90  90 18 00 40 */	stw r0, 0x40(r24)
-/* 00135004 0013DE94  80 17 00 44 */	lwz r0, 0x44(r23)
-/* 00135008 0013DE98  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_0013500C:
-/* 0013500C 0013DE9C  80 7B 00 04 */	lwz r3, 4(r27)
-/* 00135010 0013DEA0  3A F7 00 48 */	addi r23, r23, 0x48
-/* 00135014 0013DEA4  3B 18 00 48 */	addi r24, r24, 0x48
-/* 00135018 0013DEA8  38 03 00 01 */	addi r0, r3, 1
-/* 0013501C 0013DEAC  90 1B 00 04 */	stw r0, 4(r27)
-lbl_00135020:
-/* 00135020 0013DEB0  7C 17 C8 40 */	cmplw r23, r25
-/* 00135024 0013DEB4  41 80 FF 44 */	blt lbl_00134F68
-/* 00135028 0013DEB8  7C 1D B0 50 */	subf r0, r29, r22
-/* 0013502C 0013DEBC  1C 80 00 48 */	mulli r4, r0, 0x48
-/* 00135030 0013DEC0  7C 04 C8 50 */	subf r0, r4, r25
-/* 00135034 0013DEC4  7C 00 F0 40 */	cmplw r0, r30
-/* 00135038 0013DEC8  41 81 00 10 */	bgt lbl_00135048
-/* 0013503C 0013DECC  7C 1E C8 40 */	cmplw r30, r25
-/* 00135040 0013DED0  40 80 00 08 */	bge lbl_00135048
-/* 00135044 0013DED4  7F DE D2 14 */	add r30, r30, r26
-lbl_00135048:
-/* 00135048 0013DED8  38 7C 00 00 */	addi r3, r28, 0
-/* 0013504C 0013DEDC  7C 9C 22 14 */	add r4, r28, r4
-/* 00135050 0013DEE0  38 B9 00 00 */	addi r5, r25, 0
-/* 00135054 0013DEE4  48 00 07 7D */	bl ".copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
-lbl_00135058:
-/* 00135058 0013DEE8  38 7C 00 00 */	addi r3, r28, 0
-/* 0013505C 0013DEEC  38 9D 00 00 */	addi r4, r29, 0
-/* 00135060 0013DEF0  38 BE 00 00 */	addi r5, r30, 0
-/* 00135064 0013DEF4  48 00 06 5D */	bl ".fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor"
-/* 00135068 0013DEF8  48 00 02 F8 */	b lbl_00135360
-lbl_0013506C:
-/* 0013506C 0013DEFC  7F 63 DB 78 */	mr r3, r27
-/* 00135070 0013DF00  4B FF F0 D1 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00135074 0013DF04  38 83 00 00 */	addi r4, r3, 0
-/* 00135078 0013DF08  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 0013507C 0013DF0C  38 A0 00 00 */	li r5, 0
-/* 00135080 0013DF10  48 00 05 B1 */	bl ".__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul"
-/* 00135084 0013DF14  38 60 00 00 */	li r3, 0
-/* 00135088 0013DF18  90 7F 00 50 */	stw r3, 0x50(r31)
-/* 0013508C 0013DF1C  38 00 00 01 */	li r0, 1
-/* 00135090 0013DF20  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 00135094 0013DF24  80 9B 00 00 */	lwz r4, 0(r27)
-/* 00135098 0013DF28  80 7B 00 04 */	lwz r3, 4(r27)
-/* 0013509C 0013DF2C  28 04 00 00 */	cmplwi r4, 0
-/* 001350A0 0013DF30  7C 63 EA 14 */	add r3, r3, r29
-/* 001350A4 0013DF34  41 82 00 08 */	beq lbl_001350AC
-/* 001350A8 0013DF38  7C 80 23 78 */	mr r0, r4
-lbl_001350AC:
-/* 001350AC 0013DF3C  7C 17 03 78 */	mr r23, r0
-/* 001350B0 0013DF40  57 20 F8 7E */	srwi r0, r25, 1
-/* 001350B4 0013DF44  48 00 00 18 */	b lbl_001350CC
-lbl_001350B8:
-/* 001350B8 0013DF48  7C 17 00 40 */	cmplw r23, r0
-/* 001350BC 0013DF4C  40 80 00 0C */	bge lbl_001350C8
-/* 001350C0 0013DF50  56 F7 08 3C */	slwi r23, r23, 1
-/* 001350C4 0013DF54  48 00 00 08 */	b lbl_001350CC
-lbl_001350C8:
-/* 001350C8 0013DF58  7E D7 B3 78 */	mr r23, r22
-lbl_001350CC:
-/* 001350CC 0013DF5C  7C 03 B8 40 */	cmplw r3, r23
-/* 001350D0 0013DF60  41 81 FF E8 */	bgt lbl_001350B8
-/* 001350D4 0013DF64  1C 77 00 48 */	mulli r3, r23, 0x48
-/* 001350D8 0013DF68  48 45 34 D9 */	bl func_005885B0
-/* 001350DC 0013DF6C  92 FF 00 4C */	stw r23, 0x4c(r31)
-/* 001350E0 0013DF70  7C 78 1B 78 */	mr r24, r3
-/* 001350E4 0013DF74  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 001350E8 0013DF78  80 1B 00 04 */	lwz r0, 4(r27)
-/* 001350EC 0013DF7C  80 7B 00 08 */	lwz r3, 8(r27)
-/* 001350F0 0013DF80  1C 00 00 48 */	mulli r0, r0, 0x48
-/* 001350F4 0013DF84  3B 43 00 00 */	addi r26, r3, 0
-/* 001350F8 0013DF88  7F 23 02 14 */	add r25, r3, r0
-/* 001350FC 0013DF8C  48 00 00 BC */	b lbl_001351B8
-lbl_00135100:
-/* 00135100 0013DF90  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00135104 0013DF94  4B FF F0 3D */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00135108 0013DF98  28 18 00 00 */	cmplwi r24, 0
-/* 0013510C 0013DF9C  41 82 00 98 */	beq lbl_001351A4
-/* 00135110 0013DFA0  A8 1A 00 00 */	lha r0, 0(r26)
-/* 00135114 0013DFA4  90 3F 00 B4 */	stw r1, 0xb4(r31)
-/* 00135118 0013DFA8  B0 18 00 00 */	sth r0, 0(r24)
-/* 0013511C 0013DFAC  C0 1A 00 04 */	lfs f0, 4(r26)
-/* 00135120 0013DFB0  D0 18 00 04 */	stfs f0, 4(r24)
-/* 00135124 0013DFB4  C0 1A 00 08 */	lfs f0, 8(r26)
-/* 00135128 0013DFB8  D0 18 00 08 */	stfs f0, 8(r24)
-/* 0013512C 0013DFBC  C0 1A 00 0C */	lfs f0, 0xc(r26)
-/* 00135130 0013DFC0  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 00135134 0013DFC4  80 1A 00 10 */	lwz r0, 0x10(r26)
-/* 00135138 0013DFC8  90 18 00 10 */	stw r0, 0x10(r24)
-/* 0013513C 0013DFCC  80 1A 00 14 */	lwz r0, 0x14(r26)
-/* 00135140 0013DFD0  90 18 00 14 */	stw r0, 0x14(r24)
-/* 00135144 0013DFD4  80 1A 00 18 */	lwz r0, 0x18(r26)
-/* 00135148 0013DFD8  90 18 00 18 */	stw r0, 0x18(r24)
-/* 0013514C 0013DFDC  80 7A 00 1C */	lwz r3, 0x1c(r26)
-/* 00135150 0013DFE0  80 1A 00 20 */	lwz r0, 0x20(r26)
-/* 00135154 0013DFE4  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 00135158 0013DFE8  90 18 00 20 */	stw r0, 0x20(r24)
-/* 0013515C 0013DFEC  80 1A 00 24 */	lwz r0, 0x24(r26)
-/* 00135160 0013DFF0  90 18 00 24 */	stw r0, 0x24(r24)
-/* 00135164 0013DFF4  80 1A 00 28 */	lwz r0, 0x28(r26)
-/* 00135168 0013DFF8  90 18 00 28 */	stw r0, 0x28(r24)
-/* 0013516C 0013DFFC  80 1A 00 2C */	lwz r0, 0x2c(r26)
-/* 00135170 0013E000  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 00135174 0013E004  80 1A 00 30 */	lwz r0, 0x30(r26)
-/* 00135178 0013E008  90 18 00 30 */	stw r0, 0x30(r24)
-/* 0013517C 0013E00C  80 1A 00 34 */	lwz r0, 0x34(r26)
-/* 00135180 0013E010  90 18 00 34 */	stw r0, 0x34(r24)
-/* 00135184 0013E014  80 1A 00 38 */	lwz r0, 0x38(r26)
-/* 00135188 0013E018  90 18 00 38 */	stw r0, 0x38(r24)
-/* 0013518C 0013E01C  C0 1A 00 3C */	lfs f0, 0x3c(r26)
-/* 00135190 0013E020  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 00135194 0013E024  80 1A 00 40 */	lwz r0, 0x40(r26)
-/* 00135198 0013E028  90 18 00 40 */	stw r0, 0x40(r24)
-/* 0013519C 0013E02C  80 1A 00 44 */	lwz r0, 0x44(r26)
-/* 001351A0 0013E030  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_001351A4:
-/* 001351A4 0013E034  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001351A8 0013E038  3B 5A 00 48 */	addi r26, r26, 0x48
-/* 001351AC 0013E03C  3B 18 00 48 */	addi r24, r24, 0x48
-/* 001351B0 0013E040  38 03 00 01 */	addi r0, r3, 1
-/* 001351B4 0013E044  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_001351B8:
-/* 001351B8 0013E048  7C 1A E0 40 */	cmplw r26, r28
-/* 001351BC 0013E04C  41 80 FF 44 */	blt lbl_00135100
-/* 001351C0 0013E050  48 00 00 BC */	b lbl_0013527C
-lbl_001351C4:
-/* 001351C4 0013E054  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001351C8 0013E058  4B FF EF 79 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 001351CC 0013E05C  28 18 00 00 */	cmplwi r24, 0
-/* 001351D0 0013E060  41 82 00 98 */	beq lbl_00135268
-/* 001351D4 0013E064  A8 1E 00 00 */	lha r0, 0(r30)
-/* 001351D8 0013E068  90 3F 00 CC */	stw r1, 0xcc(r31)
-/* 001351DC 0013E06C  B0 18 00 00 */	sth r0, 0(r24)
-/* 001351E0 0013E070  C0 1E 00 04 */	lfs f0, 4(r30)
-/* 001351E4 0013E074  D0 18 00 04 */	stfs f0, 4(r24)
-/* 001351E8 0013E078  C0 1E 00 08 */	lfs f0, 8(r30)
-/* 001351EC 0013E07C  D0 18 00 08 */	stfs f0, 8(r24)
-/* 001351F0 0013E080  C0 1E 00 0C */	lfs f0, 0xc(r30)
-/* 001351F4 0013E084  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 001351F8 0013E088  80 1E 00 10 */	lwz r0, 0x10(r30)
-/* 001351FC 0013E08C  90 18 00 10 */	stw r0, 0x10(r24)
-/* 00135200 0013E090  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 00135204 0013E094  90 18 00 14 */	stw r0, 0x14(r24)
-/* 00135208 0013E098  80 1E 00 18 */	lwz r0, 0x18(r30)
-/* 0013520C 0013E09C  90 18 00 18 */	stw r0, 0x18(r24)
-/* 00135210 0013E0A0  80 7E 00 1C */	lwz r3, 0x1c(r30)
-/* 00135214 0013E0A4  80 1E 00 20 */	lwz r0, 0x20(r30)
-/* 00135218 0013E0A8  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 0013521C 0013E0AC  90 18 00 20 */	stw r0, 0x20(r24)
-/* 00135220 0013E0B0  80 1E 00 24 */	lwz r0, 0x24(r30)
-/* 00135224 0013E0B4  90 18 00 24 */	stw r0, 0x24(r24)
-/* 00135228 0013E0B8  80 1E 00 28 */	lwz r0, 0x28(r30)
-/* 0013522C 0013E0BC  90 18 00 28 */	stw r0, 0x28(r24)
-/* 00135230 0013E0C0  80 1E 00 2C */	lwz r0, 0x2c(r30)
-/* 00135234 0013E0C4  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 00135238 0013E0C8  80 1E 00 30 */	lwz r0, 0x30(r30)
-/* 0013523C 0013E0CC  90 18 00 30 */	stw r0, 0x30(r24)
-/* 00135240 0013E0D0  80 1E 00 34 */	lwz r0, 0x34(r30)
-/* 00135244 0013E0D4  90 18 00 34 */	stw r0, 0x34(r24)
-/* 00135248 0013E0D8  80 1E 00 38 */	lwz r0, 0x38(r30)
-/* 0013524C 0013E0DC  90 18 00 38 */	stw r0, 0x38(r24)
-/* 00135250 0013E0E0  C0 1E 00 3C */	lfs f0, 0x3c(r30)
-/* 00135254 0013E0E4  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 00135258 0013E0E8  80 1E 00 40 */	lwz r0, 0x40(r30)
-/* 0013525C 0013E0EC  90 18 00 40 */	stw r0, 0x40(r24)
-/* 00135260 0013E0F0  80 1E 00 44 */	lwz r0, 0x44(r30)
-/* 00135264 0013E0F4  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_00135268:
-/* 00135268 0013E0F8  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 0013526C 0013E0FC  3B 18 00 48 */	addi r24, r24, 0x48
-/* 00135270 0013E100  3B BD FF FF */	addi r29, r29, -1
-/* 00135274 0013E104  38 03 00 01 */	addi r0, r3, 1
-/* 00135278 0013E108  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_0013527C:
-/* 0013527C 0013E10C  28 1D 00 00 */	cmplwi r29, 0
-/* 00135280 0013E110  40 82 FF 44 */	bne lbl_001351C4
-/* 00135284 0013E114  48 00 00 BC */	b lbl_00135340
-lbl_00135288:
-/* 00135288 0013E118  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 0013528C 0013E11C  4B FF EE B5 */	bl ".first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
-/* 00135290 0013E120  28 18 00 00 */	cmplwi r24, 0
-/* 00135294 0013E124  41 82 00 98 */	beq lbl_0013532C
-/* 00135298 0013E128  A8 1A 00 00 */	lha r0, 0(r26)
-/* 0013529C 0013E12C  90 3F 00 E4 */	stw r1, 0xe4(r31)
-/* 001352A0 0013E130  B0 18 00 00 */	sth r0, 0(r24)
-/* 001352A4 0013E134  C0 1A 00 04 */	lfs f0, 4(r26)
-/* 001352A8 0013E138  D0 18 00 04 */	stfs f0, 4(r24)
-/* 001352AC 0013E13C  C0 1A 00 08 */	lfs f0, 8(r26)
-/* 001352B0 0013E140  D0 18 00 08 */	stfs f0, 8(r24)
-/* 001352B4 0013E144  C0 1A 00 0C */	lfs f0, 0xc(r26)
-/* 001352B8 0013E148  D0 18 00 0C */	stfs f0, 0xc(r24)
-/* 001352BC 0013E14C  80 1A 00 10 */	lwz r0, 0x10(r26)
-/* 001352C0 0013E150  90 18 00 10 */	stw r0, 0x10(r24)
-/* 001352C4 0013E154  80 1A 00 14 */	lwz r0, 0x14(r26)
-/* 001352C8 0013E158  90 18 00 14 */	stw r0, 0x14(r24)
-/* 001352CC 0013E15C  80 1A 00 18 */	lwz r0, 0x18(r26)
-/* 001352D0 0013E160  90 18 00 18 */	stw r0, 0x18(r24)
-/* 001352D4 0013E164  80 7A 00 1C */	lwz r3, 0x1c(r26)
-/* 001352D8 0013E168  80 1A 00 20 */	lwz r0, 0x20(r26)
-/* 001352DC 0013E16C  90 78 00 1C */	stw r3, 0x1c(r24)
-/* 001352E0 0013E170  90 18 00 20 */	stw r0, 0x20(r24)
-/* 001352E4 0013E174  80 1A 00 24 */	lwz r0, 0x24(r26)
-/* 001352E8 0013E178  90 18 00 24 */	stw r0, 0x24(r24)
-/* 001352EC 0013E17C  80 1A 00 28 */	lwz r0, 0x28(r26)
-/* 001352F0 0013E180  90 18 00 28 */	stw r0, 0x28(r24)
-/* 001352F4 0013E184  80 1A 00 2C */	lwz r0, 0x2c(r26)
-/* 001352F8 0013E188  90 18 00 2C */	stw r0, 0x2c(r24)
-/* 001352FC 0013E18C  80 1A 00 30 */	lwz r0, 0x30(r26)
-/* 00135300 0013E190  90 18 00 30 */	stw r0, 0x30(r24)
-/* 00135304 0013E194  80 1A 00 34 */	lwz r0, 0x34(r26)
-/* 00135308 0013E198  90 18 00 34 */	stw r0, 0x34(r24)
-/* 0013530C 0013E19C  80 1A 00 38 */	lwz r0, 0x38(r26)
-/* 00135310 0013E1A0  90 18 00 38 */	stw r0, 0x38(r24)
-/* 00135314 0013E1A4  C0 1A 00 3C */	lfs f0, 0x3c(r26)
-/* 00135318 0013E1A8  D0 18 00 3C */	stfs f0, 0x3c(r24)
-/* 0013531C 0013E1AC  80 1A 00 40 */	lwz r0, 0x40(r26)
-/* 00135320 0013E1B0  90 18 00 40 */	stw r0, 0x40(r24)
-/* 00135324 0013E1B4  80 1A 00 44 */	lwz r0, 0x44(r26)
-/* 00135328 0013E1B8  90 18 00 44 */	stw r0, 0x44(r24)
-lbl_0013532C:
-/* 0013532C 0013E1BC  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 00135330 0013E1C0  3B 5A 00 48 */	addi r26, r26, 0x48
-/* 00135334 0013E1C4  3B 18 00 48 */	addi r24, r24, 0x48
-/* 00135338 0013E1C8  38 03 00 01 */	addi r0, r3, 1
-/* 0013533C 0013E1CC  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_00135340:
-/* 00135340 0013E1D0  7C 1A C8 40 */	cmplw r26, r25
-/* 00135344 0013E1D4  41 80 FF 44 */	blt lbl_00135288
-/* 00135348 0013E1D8  38 9B 00 00 */	addi r4, r27, 0
-/* 0013534C 0013E1DC  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00135350 0013E1E0  48 00 00 C1 */	bl ".swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v"
-/* 00135354 0013E1E4  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 00135358 0013E1E8  38 80 FF FF */	li r4, -1
-/* 0013535C 0013E1EC  4B FF EC F5 */	bl ".__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
-lbl_00135360:
-/* 00135360 0013E1F0  80 1F 01 28 */	lwz r0, 0x128(r31)
-/* 00135364 0013E1F4  80 21 00 00 */	lwz r1, 0(r1)
-/* 00135368 0013E1F8  7C 08 03 A6 */	mtlr r0
-/* 0013536C 0013E1FC  BA C1 FF D8 */	lmw r22, -0x28(r1)
-/* 00135370 0013E200  4E 80 00 20 */	blr 
-
-.global ".swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v"
-".swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v":
-/* 00135410 0013E2A0  93 E1 FF FC */	stw r31, -4(r1)
-/* 00135414 0013E2A4  7C 08 02 A6 */	mflr r0
-/* 00135418 0013E2A8  3B E4 00 00 */	addi r31, r4, 0
-/* 0013541C 0013E2AC  93 C1 FF F8 */	stw r30, -8(r1)
-/* 00135420 0013E2B0  3B C3 00 00 */	addi r30, r3, 0
-/* 00135424 0013E2B4  7C 1E F8 40 */	cmplw r30, r31
-/* 00135428 0013E2B8  90 01 00 08 */	stw r0, 8(r1)
-/* 0013542C 0013E2BC  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 00135430 0013E2C0  41 82 00 28 */	beq lbl_00135458
-/* 00135434 0013E2C4  48 00 01 3D */	bl ".swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>"
-/* 00135438 0013E2C8  80 7E 00 08 */	lwz r3, 8(r30)
-/* 0013543C 0013E2CC  80 1F 00 08 */	lwz r0, 8(r31)
-/* 00135440 0013E2D0  90 1E 00 08 */	stw r0, 8(r30)
-/* 00135444 0013E2D4  90 7F 00 08 */	stw r3, 8(r31)
-/* 00135448 0013E2D8  80 7E 00 04 */	lwz r3, 4(r30)
-/* 0013544C 0013E2DC  80 1F 00 04 */	lwz r0, 4(r31)
-/* 00135450 0013E2E0  90 1E 00 04 */	stw r0, 4(r30)
-/* 00135454 0013E2E4  90 7F 00 04 */	stw r3, 4(r31)
-lbl_00135458:
-/* 00135458 0013E2E8  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 0013545C 0013E2EC  38 21 00 50 */	addi r1, r1, 0x50
-/* 00135460 0013E2F0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 00135464 0013E2F4  7C 08 03 A6 */	mtlr r0
-/* 00135468 0013E2F8  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 0013546C 0013E2FC  4E 80 00 20 */	blr 
-
-.global ".swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>"
-".swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>":
-/* 00135570 0013E400  80 A3 00 00 */	lwz r5, 0(r3)
-/* 00135574 0013E404  80 04 00 00 */	lwz r0, 0(r4)
-/* 00135578 0013E408  90 03 00 00 */	stw r0, 0(r3)
-/* 0013557C 0013E40C  90 A4 00 00 */	stw r5, 0(r4)
-/* 00135580 0013E410  4E 80 00 20 */	blr 
-
-.global ".__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul"
-".__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul":
-/* 00135630 0013E4C0  90 A3 00 00 */	stw r5, 0(r3)
-/* 00135634 0013E4C4  4E 80 00 20 */	blr 
-
-.global ".fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor"
-".fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor":
-/* 001356C0 0013E550  28 04 00 00 */	cmplwi r4, 0
-/* 001356C4 0013E554  7C 89 03 A6 */	mtctr r4
-/* 001356C8 0013E558  4D 82 00 20 */	beqlr 
-lbl_001356CC:
-/* 001356CC 0013E55C  A8 05 00 00 */	lha r0, 0(r5)
-/* 001356D0 0013E560  B0 03 00 00 */	sth r0, 0(r3)
-/* 001356D4 0013E564  C0 05 00 04 */	lfs f0, 4(r5)
-/* 001356D8 0013E568  D0 03 00 04 */	stfs f0, 4(r3)
-/* 001356DC 0013E56C  C0 05 00 08 */	lfs f0, 8(r5)
-/* 001356E0 0013E570  D0 03 00 08 */	stfs f0, 8(r3)
-/* 001356E4 0013E574  C0 05 00 0C */	lfs f0, 0xc(r5)
-/* 001356E8 0013E578  D0 03 00 0C */	stfs f0, 0xc(r3)
-/* 001356EC 0013E57C  80 05 00 10 */	lwz r0, 0x10(r5)
-/* 001356F0 0013E580  90 03 00 10 */	stw r0, 0x10(r3)
-/* 001356F4 0013E584  80 05 00 14 */	lwz r0, 0x14(r5)
-/* 001356F8 0013E588  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001356FC 0013E58C  80 05 00 18 */	lwz r0, 0x18(r5)
-/* 00135700 0013E590  90 03 00 18 */	stw r0, 0x18(r3)
-/* 00135704 0013E594  80 85 00 1C */	lwz r4, 0x1c(r5)
-/* 00135708 0013E598  80 05 00 20 */	lwz r0, 0x20(r5)
-/* 0013570C 0013E59C  90 83 00 1C */	stw r4, 0x1c(r3)
-/* 00135710 0013E5A0  90 03 00 20 */	stw r0, 0x20(r3)
-/* 00135714 0013E5A4  80 05 00 24 */	lwz r0, 0x24(r5)
-/* 00135718 0013E5A8  90 03 00 24 */	stw r0, 0x24(r3)
-/* 0013571C 0013E5AC  80 05 00 28 */	lwz r0, 0x28(r5)
-/* 00135720 0013E5B0  90 03 00 28 */	stw r0, 0x28(r3)
-/* 00135724 0013E5B4  80 05 00 2C */	lwz r0, 0x2c(r5)
-/* 00135728 0013E5B8  90 03 00 2C */	stw r0, 0x2c(r3)
-/* 0013572C 0013E5BC  80 05 00 30 */	lwz r0, 0x30(r5)
-/* 00135730 0013E5C0  90 03 00 30 */	stw r0, 0x30(r3)
-/* 00135734 0013E5C4  80 05 00 34 */	lwz r0, 0x34(r5)
-/* 00135738 0013E5C8  90 03 00 34 */	stw r0, 0x34(r3)
-/* 0013573C 0013E5CC  80 05 00 38 */	lwz r0, 0x38(r5)
-/* 00135740 0013E5D0  90 03 00 38 */	stw r0, 0x38(r3)
-/* 00135744 0013E5D4  C0 05 00 3C */	lfs f0, 0x3c(r5)
-/* 00135748 0013E5D8  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 0013574C 0013E5DC  80 05 00 40 */	lwz r0, 0x40(r5)
-/* 00135750 0013E5E0  90 03 00 40 */	stw r0, 0x40(r3)
-/* 00135754 0013E5E4  80 05 00 44 */	lwz r0, 0x44(r5)
-/* 00135758 0013E5E8  90 03 00 44 */	stw r0, 0x44(r3)
-/* 0013575C 0013E5EC  38 63 00 48 */	addi r3, r3, 0x48
-/* 00135760 0013E5F0  42 00 FF 6C */	bdnz lbl_001356CC
-/* 00135764 0013E5F4  4E 80 00 20 */	blr 
-
-.global ".copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
-".copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor":
-/* 001357D0 0013E660  38 C4 00 47 */	addi r6, r4, 0x47
-/* 001357D4 0013E664  7C 04 18 40 */	cmplw r4, r3
-/* 001357D8 0013E668  7C C3 30 50 */	subf r6, r3, r6
-/* 001357DC 0013E66C  38 00 00 48 */	li r0, 0x48
-/* 001357E0 0013E670  7C C6 03 96 */	divwu r6, r6, r0
-/* 001357E4 0013E674  7C C9 03 A6 */	mtctr r6
-/* 001357E8 0013E678  40 81 00 A0 */	ble lbl_00135888
-lbl_001357EC:
-/* 001357EC 0013E67C  A8 04 FF B8 */	lha r0, -0x48(r4)
-/* 001357F0 0013E680  B0 05 FF B8 */	sth r0, -0x48(r5)
-/* 001357F4 0013E684  C0 04 FF BC */	lfs f0, -0x44(r4)
-/* 001357F8 0013E688  D0 05 FF BC */	stfs f0, -0x44(r5)
-/* 001357FC 0013E68C  C0 04 FF C0 */	lfs f0, -0x40(r4)
-/* 00135800 0013E690  38 84 FF B8 */	addi r4, r4, -72
-/* 00135804 0013E694  D0 05 FF C0 */	stfs f0, -0x40(r5)
-/* 00135808 0013E698  38 A5 FF B8 */	addi r5, r5, -72
-/* 0013580C 0013E69C  C0 04 00 0C */	lfs f0, 0xc(r4)
-/* 00135810 0013E6A0  D0 05 00 0C */	stfs f0, 0xc(r5)
-/* 00135814 0013E6A4  80 04 00 10 */	lwz r0, 0x10(r4)
-/* 00135818 0013E6A8  90 05 00 10 */	stw r0, 0x10(r5)
-/* 0013581C 0013E6AC  80 04 00 14 */	lwz r0, 0x14(r4)
-/* 00135820 0013E6B0  90 05 00 14 */	stw r0, 0x14(r5)
-/* 00135824 0013E6B4  80 04 00 18 */	lwz r0, 0x18(r4)
-/* 00135828 0013E6B8  90 05 00 18 */	stw r0, 0x18(r5)
-/* 0013582C 0013E6BC  80 64 00 1C */	lwz r3, 0x1c(r4)
-/* 00135830 0013E6C0  80 04 00 20 */	lwz r0, 0x20(r4)
-/* 00135834 0013E6C4  90 65 00 1C */	stw r3, 0x1c(r5)
-/* 00135838 0013E6C8  90 05 00 20 */	stw r0, 0x20(r5)
-/* 0013583C 0013E6CC  80 04 00 24 */	lwz r0, 0x24(r4)
-/* 00135840 0013E6D0  90 05 00 24 */	stw r0, 0x24(r5)
-/* 00135844 0013E6D4  80 04 00 28 */	lwz r0, 0x28(r4)
-/* 00135848 0013E6D8  90 05 00 28 */	stw r0, 0x28(r5)
-/* 0013584C 0013E6DC  80 04 00 2C */	lwz r0, 0x2c(r4)
-/* 00135850 0013E6E0  90 05 00 2C */	stw r0, 0x2c(r5)
-/* 00135854 0013E6E4  80 04 00 30 */	lwz r0, 0x30(r4)
-/* 00135858 0013E6E8  90 05 00 30 */	stw r0, 0x30(r5)
-/* 0013585C 0013E6EC  80 04 00 34 */	lwz r0, 0x34(r4)
-/* 00135860 0013E6F0  90 05 00 34 */	stw r0, 0x34(r5)
-/* 00135864 0013E6F4  80 04 00 38 */	lwz r0, 0x38(r4)
-/* 00135868 0013E6F8  90 05 00 38 */	stw r0, 0x38(r5)
-/* 0013586C 0013E6FC  C0 04 00 3C */	lfs f0, 0x3c(r4)
-/* 00135870 0013E700  D0 05 00 3C */	stfs f0, 0x3c(r5)
-/* 00135874 0013E704  80 04 00 40 */	lwz r0, 0x40(r4)
-/* 00135878 0013E708  90 05 00 40 */	stw r0, 0x40(r5)
-/* 0013587C 0013E70C  80 04 00 44 */	lwz r0, 0x44(r4)
-/* 00135880 0013E710  90 05 00 44 */	stw r0, 0x44(r5)
-/* 00135884 0013E714  42 00 FF 68 */	bdnz lbl_001357EC
-lbl_00135888:
-/* 00135888 0013E718  7C A3 2B 78 */	mr r3, r5
-/* 0013588C 0013E71C  4E 80 00 20 */	blr 
-
-.global ".cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
-".cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv":
-/* 00135920 0013E7B0  4E 80 00 20 */	blr 
-
-.global ".max_size__Q23std27allocator<14SlotDescriptor>CFv"
-".max_size__Q23std27allocator<14SlotDescriptor>CFv":
-/* 00135990 0013E820  3C 60 03 8E */	lis r3, 0x038E38E3@ha
-/* 00135994 0013E824  38 63 38 E3 */	addi r3, r3, 0x038E38E3@l
-/* 00135998 0013E828  4E 80 00 20 */	blr 
-
-.global ".alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
-".alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv":
-/* 001359E0 0013E870  4E 80 00 20 */	blr 
-
-.global ".__sinit_:Slots_cpp"
-".__sinit_:Slots_cpp":
-/* 00135A50 0013E8E0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
-/* 00135A54 0013E8E4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
-/* 00135A58 0013E8E8  C8 44 00 00 */	lfd f2, 0(r4)
-/* 00135A5C 0013E8EC  C0 A3 00 00 */	lfs f5, 0(r3)
-/* 00135A60 0013E8F0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
-/* 00135A64 0013E8F4  FC 20 10 50 */	fneg f1, f2
-/* 00135A68 0013E8F8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
-/* 00135A6C 0013E8FC  FC 80 28 50 */	fneg f4, f5
-/* 00135A70 0013E900  C0 64 00 00 */	lfs f3, 0(r4)
-/* 00135A74 0013E904  C8 03 00 00 */	lfd f0, 0(r3)
-/* 00135A78 0013E908  D0 82 D6 D0 */	stfs f4, lbl_005BEB30-_R2_BASE_(r2)
-/* 00135A7C 0013E90C  D0 A2 D6 D4 */	stfs f5, lbl_005BEB34-_R2_BASE_(r2)
-/* 00135A80 0013E910  D0 62 D6 D8 */	stfs f3, lbl_005BEB38-_R2_BASE_(r2)
-/* 00135A84 0013E914  D0 A2 D6 DC */	stfs f5, lbl_005BEB3C-_R2_BASE_(r2)
-/* 00135A88 0013E918  D8 22 D6 E0 */	stfd f1, lbl_005BEB40-_R2_BASE_(r2)
-/* 00135A8C 0013E91C  D8 42 D6 E8 */	stfd f2, lbl_005BEB48-_R2_BASE_(r2)
-/* 00135A90 0013E920  D8 02 D6 F0 */	stfd f0, lbl_005BEB50-_R2_BASE_(r2)
-/* 00135A94 0013E924  D8 42 D6 F8 */	stfd f2, lbl_005BEB58-_R2_BASE_(r2)
-/* 00135A98 0013E928  4E 80 00 20 */	blr 
+.section .text0, "ax"  # 0x10000000 - 0x105B9458
+
+.global "__dt__10SlotLoaderFv"
+"__dt__10SlotLoaderFv":
+/* 10131D80 00131D80  93 E1 FF FC */	stw r31, -4(r1)
+/* 10131D84 00131D84  7C 08 02 A6 */	mflr r0
+/* 10131D88 00131D88  3B E4 00 00 */	addi r31, r4, 0
+/* 10131D8C 00131D8C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10131D90 00131D90  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10131D94 00131D94  90 01 00 08 */	stw r0, 8(r1)
+/* 10131D98 00131D98  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10131D9C 00131D9C  41 82 00 38 */	beq lbl_10131DD4
+/* 10131DA0 00131DA0  80 7E 00 04 */	lwz r3, 4(r30)
+/* 10131DA4 00131DA4  28 03 00 00 */	cmplwi r3, 0
+/* 10131DA8 00131DA8  41 82 00 1C */	beq lbl_10131DC4
+/* 10131DAC 00131DAC  41 82 00 18 */	beq lbl_10131DC4
+/* 10131DB0 00131DB0  81 83 00 68 */	lwz r12, 0x68(r3)
+/* 10131DB4 00131DB4  38 80 00 01 */	li r4, 1
+/* 10131DB8 00131DB8  81 8C 00 08 */	lwz r12, 8(r12)
+/* 10131DBC 00131DBC  48 46 7D 95 */	bl func_10599B50
+/* 10131DC0 00131DC0  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_10131DC4:
+/* 10131DC4 00131DC4  7F E0 07 35 */	extsh. r0, r31
+/* 10131DC8 00131DC8  40 81 00 0C */	ble lbl_10131DD4
+/* 10131DCC 00131DCC  7F C3 F3 78 */	mr r3, r30
+/* 10131DD0 00131DD0  48 45 68 C1 */	bl func_10588690
+lbl_10131DD4:
+/* 10131DD4 00131DD4  7F C3 F3 78 */	mr r3, r30
+/* 10131DD8 00131DD8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10131DDC 00131DDC  38 21 00 50 */	addi r1, r1, 0x50
+/* 10131DE0 00131DE0  7C 08 03 A6 */	mtlr r0
+/* 10131DE4 00131DE4  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10131DE8 00131DE8  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10131DEC 00131DEC  4E 80 00 20 */	blr 
+
+.global "Load__10SlotLoaderFsPQ23std52vector<10ObjectSlot,Q23std23allocator<10ObjectSlot>>PQ23std54vector<11RoutingSlot,Q23std24allocator<11RoutingSlot>>PQ23std52vector<10SpriteSlot,Q23std23allocator<10SpriteSlot>>"
+"Load__10SlotLoaderFsPQ23std52vector<10ObjectSlot,Q23std23allocator<10ObjectSlot>>PQ23std54vector<11RoutingSlot,Q23std24allocator<11RoutingSlot>>PQ23std52vector<10SpriteSlot,Q23std23allocator<10SpriteSlot>>":
+/* 10131E20 00131E20  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 10131E24 00131E24  7C 08 02 A6 */	mflr r0
+/* 10131E28 00131E28  3B 63 00 00 */	addi r27, r3, 0
+/* 10131E2C 00131E2C  3B E4 00 00 */	addi r31, r4, 0
+/* 10131E30 00131E30  3B 85 00 00 */	addi r28, r5, 0
+/* 10131E34 00131E34  3B A6 00 00 */	addi r29, r6, 0
+/* 10131E38 00131E38  3B C7 00 00 */	addi r30, r7, 0
+/* 10131E3C 00131E3C  90 01 00 08 */	stw r0, 8(r1)
+/* 10131E40 00131E40  94 21 FE F0 */	stwu r1, -0x110(r1)
+/* 10131E44 00131E44  38 61 00 40 */	addi r3, r1, 0x40
+/* 10131E48 00131E48  48 00 06 99 */	bl "__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+/* 10131E4C 00131E4C  3C A0 53 4C */	lis r5, 0x534c
+/* 10131E50 00131E50  80 9B 00 00 */	lwz r4, 0(r27)
+/* 10131E54 00131E54  38 DF 00 00 */	addi r6, r31, 0
+/* 10131E58 00131E58  38 61 00 40 */	addi r3, r1, 0x40
+/* 10131E5C 00131E5C  38 A5 4F 54 */	addi r5, r5, 0x4f54
+/* 10131E60 00131E60  38 E0 00 00 */	li r7, 0
+/* 10131E64 00131E64  48 00 13 CD */	bl "ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s"
+/* 10131E68 00131E68  3B E0 00 00 */	li r31, 0
+/* 10131E6C 00131E6C  48 00 01 84 */	b lbl_10131FF0
+/* 10131E70 00131E70  60 00 00 00 */	nop 
+lbl_10131E74:
+/* 10131E74 00131E74  38 9F 00 00 */	addi r4, r31, 0
+/* 10131E78 00131E78  38 61 00 40 */	addi r3, r1, 0x40
+/* 10131E7C 00131E7C  48 00 05 E5 */	bl "__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl"
+/* 10131E80 00131E80  7C 65 1B 78 */	mr r5, r3
+/* 10131E84 00131E84  A8 63 00 00 */	lha r3, 0(r3)
+/* 10131E88 00131E88  7C 60 07 35 */	extsh. r0, r3
+/* 10131E8C 00131E8C  40 82 00 68 */	bne lbl_10131EF4
+/* 10131E90 00131E90  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10131E94 00131E94  38 80 FF FF */	li r4, -1
+/* 10131E98 00131E98  38 00 00 00 */	li r0, 0
+/* 10131E9C 00131E9C  38 61 00 4C */	addi r3, r1, 0x4c
+/* 10131EA0 00131EA0  D0 01 00 4C */	stfs f0, 0x4c(r1)
+/* 10131EA4 00131EA4  C0 05 00 08 */	lfs f0, 8(r5)
+/* 10131EA8 00131EA8  D0 01 00 50 */	stfs f0, 0x50(r1)
+/* 10131EAC 00131EAC  C0 05 00 0C */	lfs f0, 0xc(r5)
+/* 10131EB0 00131EB0  D0 01 00 54 */	stfs f0, 0x54(r1)
+/* 10131EB4 00131EB4  90 81 00 58 */	stw r4, 0x58(r1)
+/* 10131EB8 00131EB8  B0 01 00 5C */	sth r0, 0x5c(r1)
+/* 10131EBC 00131EBC  80 05 00 10 */	lwz r0, 0x10(r5)
+/* 10131EC0 00131EC0  90 01 00 64 */	stw r0, 0x64(r1)
+/* 10131EC4 00131EC4  80 05 00 14 */	lwz r0, 0x14(r5)
+/* 10131EC8 00131EC8  90 01 00 68 */	stw r0, 0x68(r1)
+/* 10131ECC 00131ECC  80 85 00 18 */	lwz r4, 0x18(r5)
+/* 10131ED0 00131ED0  48 00 0E 91 */	bl "SetHeight__10ObjectSlotF9StdHeight"
+/* 10131ED4 00131ED4  38 1F 00 01 */	addi r0, r31, 1
+/* 10131ED8 00131ED8  28 1C 00 00 */	cmplwi r28, 0
+/* 10131EDC 00131EDC  90 01 00 58 */	stw r0, 0x58(r1)
+/* 10131EE0 00131EE0  41 82 01 0C */	beq lbl_10131FEC
+/* 10131EE4 00131EE4  38 7C 00 00 */	addi r3, r28, 0
+/* 10131EE8 00131EE8  38 81 00 4C */	addi r4, r1, 0x4c
+/* 10131EEC 00131EEC  48 00 04 C5 */	bl "push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot"
+/* 10131EF0 00131EF0  48 00 00 FC */	b lbl_10131FEC
+lbl_10131EF4:
+/* 10131EF4 00131EF4  2C 03 00 01 */	cmpwi r3, 1
+/* 10131EF8 00131EF8  40 82 00 58 */	bne lbl_10131F50
+/* 10131EFC 00131EFC  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10131F00 00131F00  28 1E 00 00 */	cmplwi r30, 0
+/* 10131F04 00131F04  38 1F 00 01 */	addi r0, r31, 1
+/* 10131F08 00131F08  D0 01 00 70 */	stfs f0, 0x70(r1)
+/* 10131F0C 00131F0C  38 60 00 00 */	li r3, 0
+/* 10131F10 00131F10  C0 05 00 08 */	lfs f0, 8(r5)
+/* 10131F14 00131F14  D0 01 00 74 */	stfs f0, 0x74(r1)
+/* 10131F18 00131F18  C0 05 00 0C */	lfs f0, 0xc(r5)
+/* 10131F1C 00131F1C  D0 01 00 78 */	stfs f0, 0x78(r1)
+/* 10131F20 00131F20  90 61 00 84 */	stw r3, 0x84(r1)
+/* 10131F24 00131F24  90 61 00 88 */	stw r3, 0x88(r1)
+/* 10131F28 00131F28  90 61 00 90 */	stw r3, 0x90(r1)
+/* 10131F2C 00131F2C  90 61 00 80 */	stw r3, 0x80(r1)
+/* 10131F30 00131F30  90 61 00 A4 */	stw r3, 0xa4(r1)
+/* 10131F34 00131F34  98 61 00 A8 */	stb r3, 0xa8(r1)
+/* 10131F38 00131F38  90 01 00 7C */	stw r0, 0x7c(r1)
+/* 10131F3C 00131F3C  41 82 00 B0 */	beq lbl_10131FEC
+/* 10131F40 00131F40  38 7E 00 00 */	addi r3, r30, 0
+/* 10131F44 00131F44  38 81 00 70 */	addi r4, r1, 0x70
+/* 10131F48 00131F48  48 00 03 B9 */	bl "push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot"
+/* 10131F4C 00131F4C  48 00 00 A0 */	b lbl_10131FEC
+lbl_10131F50:
+/* 10131F50 00131F50  2C 03 00 03 */	cmpwi r3, 3
+/* 10131F54 00131F54  40 82 00 98 */	bne lbl_10131FEC
+/* 10131F58 00131F58  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10131F5C 00131F5C  38 60 FF FF */	li r3, -1
+/* 10131F60 00131F60  28 1D 00 00 */	cmplwi r29, 0
+/* 10131F64 00131F64  38 1F 00 01 */	addi r0, r31, 1
+/* 10131F68 00131F68  D0 01 00 AC */	stfs f0, 0xac(r1)
+/* 10131F6C 00131F6C  C0 05 00 08 */	lfs f0, 8(r5)
+/* 10131F70 00131F70  D0 01 00 B0 */	stfs f0, 0xb0(r1)
+/* 10131F74 00131F74  C0 05 00 0C */	lfs f0, 0xc(r5)
+/* 10131F78 00131F78  D0 01 00 B4 */	stfs f0, 0xb4(r1)
+/* 10131F7C 00131F7C  90 61 00 B8 */	stw r3, 0xb8(r1)
+/* 10131F80 00131F80  80 65 00 28 */	lwz r3, 0x28(r5)
+/* 10131F84 00131F84  90 61 00 C8 */	stw r3, 0xc8(r1)
+/* 10131F88 00131F88  80 65 00 1C */	lwz r3, 0x1c(r5)
+/* 10131F8C 00131F8C  90 61 00 BC */	stw r3, 0xbc(r1)
+/* 10131F90 00131F90  80 65 00 20 */	lwz r3, 0x20(r5)
+/* 10131F94 00131F94  90 61 00 C0 */	stw r3, 0xc0(r1)
+/* 10131F98 00131F98  80 65 00 24 */	lwz r3, 0x24(r5)
+/* 10131F9C 00131F9C  90 61 00 C4 */	stw r3, 0xc4(r1)
+/* 10131FA0 00131FA0  80 65 00 2C */	lwz r3, 0x2c(r5)
+/* 10131FA4 00131FA4  90 61 00 CC */	stw r3, 0xcc(r1)
+/* 10131FA8 00131FA8  80 65 00 30 */	lwz r3, 0x30(r5)
+/* 10131FAC 00131FAC  90 61 00 D0 */	stw r3, 0xd0(r1)
+/* 10131FB0 00131FB0  80 65 00 34 */	lwz r3, 0x34(r5)
+/* 10131FB4 00131FB4  90 61 00 D4 */	stw r3, 0xd4(r1)
+/* 10131FB8 00131FB8  80 65 00 38 */	lwz r3, 0x38(r5)
+/* 10131FBC 00131FBC  90 61 00 D8 */	stw r3, 0xd8(r1)
+/* 10131FC0 00131FC0  C0 05 00 3C */	lfs f0, 0x3c(r5)
+/* 10131FC4 00131FC4  D0 01 00 DC */	stfs f0, 0xdc(r1)
+/* 10131FC8 00131FC8  80 65 00 40 */	lwz r3, 0x40(r5)
+/* 10131FCC 00131FCC  90 61 00 E0 */	stw r3, 0xe0(r1)
+/* 10131FD0 00131FD0  80 65 00 44 */	lwz r3, 0x44(r5)
+/* 10131FD4 00131FD4  90 61 00 E4 */	stw r3, 0xe4(r1)
+/* 10131FD8 00131FD8  90 01 00 B8 */	stw r0, 0xb8(r1)
+/* 10131FDC 00131FDC  41 82 00 10 */	beq lbl_10131FEC
+/* 10131FE0 00131FE0  38 7D 00 00 */	addi r3, r29, 0
+/* 10131FE4 00131FE4  38 81 00 AC */	addi r4, r1, 0xac
+/* 10131FE8 00131FE8  48 00 02 69 */	bl "push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot"
+lbl_10131FEC:
+/* 10131FEC 00131FEC  3B FF 00 01 */	addi r31, r31, 1
+lbl_10131FF0:
+/* 10131FF0 00131FF0  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 10131FF4 00131FF4  7C 1F 00 40 */	cmplw r31, r0
+/* 10131FF8 00131FF8  41 80 FE 7C */	blt lbl_10131E74
+/* 10131FFC 00131FFC  38 61 00 40 */	addi r3, r1, 0x40
+/* 10132000 00132000  38 80 00 00 */	li r4, 0
+/* 10132004 00132004  48 00 01 8D */	bl "__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+/* 10132008 00132008  38 60 00 01 */	li r3, 1
+/* 1013200C 0013200C  80 01 01 18 */	lwz r0, 0x118(r1)
+/* 10132010 00132010  38 21 01 10 */	addi r1, r1, 0x110
+/* 10132014 00132014  7C 08 03 A6 */	mtlr r0
+/* 10132018 00132018  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 1013201C 0013201C  4E 80 00 20 */	blr 
+
+.global "__dt__18SlotDescriptorListFv"
+"__dt__18SlotDescriptorListFv":
+/* 10132100 00132100  93 E1 FF FC */	stw r31, -4(r1)
+/* 10132104 00132104  7C 08 02 A6 */	mflr r0
+/* 10132108 00132108  3B E4 00 00 */	addi r31, r4, 0
+/* 1013210C 0013210C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10132110 00132110  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10132114 00132114  90 01 00 08 */	stw r0, 8(r1)
+/* 10132118 00132118  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1013211C 0013211C  41 82 00 24 */	beq lbl_10132140
+/* 10132120 00132120  41 82 00 10 */	beq lbl_10132130
+/* 10132124 00132124  41 82 00 0C */	beq lbl_10132130
+/* 10132128 00132128  38 80 00 00 */	li r4, 0
+/* 1013212C 0013212C  48 00 1F 25 */	bl "__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+lbl_10132130:
+/* 10132130 00132130  7F E0 07 35 */	extsh. r0, r31
+/* 10132134 00132134  40 81 00 0C */	ble lbl_10132140
+/* 10132138 00132138  7F C3 F3 78 */	mr r3, r30
+/* 1013213C 0013213C  48 45 65 55 */	bl func_10588690
+lbl_10132140:
+/* 10132140 00132140  7F C3 F3 78 */	mr r3, r30
+/* 10132144 00132144  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10132148 00132148  38 21 00 50 */	addi r1, r1, 0x50
+/* 1013214C 0013214C  7C 08 03 A6 */	mtlr r0
+/* 10132150 00132150  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10132154 00132154  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10132158 00132158  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+"__dt__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
+/* 10132190 00132190  93 E1 FF FC */	stw r31, -4(r1)
+/* 10132194 00132194  7C 08 02 A6 */	mflr r0
+/* 10132198 00132198  3B E4 00 00 */	addi r31, r4, 0
+/* 1013219C 0013219C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101321A0 001321A0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 101321A4 001321A4  90 01 00 08 */	stw r0, 8(r1)
+/* 101321A8 001321A8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101321AC 001321AC  41 82 00 20 */	beq lbl_101321CC
+/* 101321B0 001321B0  41 82 00 0C */	beq lbl_101321BC
+/* 101321B4 001321B4  38 80 00 00 */	li r4, 0
+/* 101321B8 001321B8  48 00 1E 99 */	bl "__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+lbl_101321BC:
+/* 101321BC 001321BC  7F E0 07 35 */	extsh. r0, r31
+/* 101321C0 001321C0  40 81 00 0C */	ble lbl_101321CC
+/* 101321C4 001321C4  7F C3 F3 78 */	mr r3, r30
+/* 101321C8 001321C8  48 45 64 C9 */	bl func_10588690
+lbl_101321CC:
+/* 101321CC 001321CC  7F C3 F3 78 */	mr r3, r30
+/* 101321D0 001321D0  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101321D4 001321D4  38 21 00 50 */	addi r1, r1, 0x50
+/* 101321D8 001321D8  7C 08 03 A6 */	mtlr r0
+/* 101321DC 001321DC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101321E0 001321E0  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101321E4 001321E4  4E 80 00 20 */	blr 
+
+.global "push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot"
+"push_back__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FRC11RoutingSlot":
+/* 10132250 00132250  7C 08 02 A6 */	mflr r0
+/* 10132254 00132254  38 C4 00 00 */	addi r6, r4, 0
+/* 10132258 00132258  90 01 00 08 */	stw r0, 8(r1)
+/* 1013225C 0013225C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10132260 00132260  80 03 00 04 */	lwz r0, 4(r3)
+/* 10132264 00132264  80 A3 00 08 */	lwz r5, 8(r3)
+/* 10132268 00132268  1C 00 00 3C */	mulli r0, r0, 0x3c
+/* 1013226C 0013226C  7C 85 02 14 */	add r4, r5, r0
+/* 10132270 00132270  38 A0 00 01 */	li r5, 1
+/* 10132274 00132274  48 00 10 7D */	bl "insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot"
+/* 10132278 00132278  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1013227C 0013227C  38 21 00 40 */	addi r1, r1, 0x40
+/* 10132280 00132280  7C 08 03 A6 */	mtlr r0
+/* 10132284 00132284  4E 80 00 20 */	blr 
+
+.global "push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot"
+"push_back__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FRC10SpriteSlot":
+/* 10132300 00132300  7C 08 02 A6 */	mflr r0
+/* 10132304 00132304  38 C4 00 00 */	addi r6, r4, 0
+/* 10132308 00132308  90 01 00 08 */	stw r0, 8(r1)
+/* 1013230C 0013230C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10132310 00132310  80 03 00 04 */	lwz r0, 4(r3)
+/* 10132314 00132314  80 A3 00 08 */	lwz r5, 8(r3)
+/* 10132318 00132318  1C 00 00 3C */	mulli r0, r0, 0x3c
+/* 1013231C 0013231C  7C 85 02 14 */	add r4, r5, r0
+/* 10132320 00132320  38 A0 00 01 */	li r5, 1
+/* 10132324 00132324  4B FD 80 1D */	bl "insert__Q23std60__vector_imp<10SpriteSlot,Q23std23allocator<10SpriteSlot>,0>FP10SpriteSlotUlRC10SpriteSlot"
+/* 10132328 00132328  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1013232C 0013232C  38 21 00 40 */	addi r1, r1, 0x40
+/* 10132330 00132330  7C 08 03 A6 */	mtlr r0
+/* 10132334 00132334  4E 80 00 20 */	blr 
+
+.global "push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot"
+"push_back__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FRC10ObjectSlot":
+/* 101323B0 001323B0  7C 08 02 A6 */	mflr r0
+/* 101323B4 001323B4  38 C4 00 00 */	addi r6, r4, 0
+/* 101323B8 001323B8  90 01 00 08 */	stw r0, 8(r1)
+/* 101323BC 001323BC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 101323C0 001323C0  80 03 00 04 */	lwz r0, 4(r3)
+/* 101323C4 001323C4  80 A3 00 08 */	lwz r5, 8(r3)
+/* 101323C8 001323C8  1C 00 00 24 */	mulli r0, r0, 0x24
+/* 101323CC 001323CC  7C 85 02 14 */	add r4, r5, r0
+/* 101323D0 001323D0  38 A0 00 01 */	li r5, 1
+/* 101323D4 001323D4  4B F8 FD 3D */	bl "insert__Q23std60__vector_imp<10ObjectSlot,Q23std23allocator<10ObjectSlot>,0>FP10ObjectSlotUlRC10ObjectSlot"
+/* 101323D8 001323D8  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 101323DC 001323DC  38 21 00 40 */	addi r1, r1, 0x40
+/* 101323E0 001323E0  7C 08 03 A6 */	mtlr r0
+/* 101323E4 001323E4  4E 80 00 20 */	blr 
+
+.global "__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl"
+"__vc__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FUl":
+/* 10132460 00132460  1C 04 00 48 */	mulli r0, r4, 0x48
+/* 10132464 00132464  80 63 00 08 */	lwz r3, 8(r3)
+/* 10132468 00132468  7C 63 02 14 */	add r3, r3, r0
+/* 1013246C 0013246C  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+"__ct__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
+/* 101324E0 001324E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101324E4 001324E4  7C 08 02 A6 */	mflr r0
+/* 101324E8 001324E8  7C 7F 1B 78 */	mr r31, r3
+/* 101324EC 001324EC  90 01 00 08 */	stw r0, 8(r1)
+/* 101324F0 001324F0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101324F4 001324F4  48 00 00 7D */	bl "__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+/* 101324F8 001324F8  7F E3 FB 78 */	mr r3, r31
+/* 101324FC 001324FC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10132500 00132500  38 21 00 50 */	addi r1, r1, 0x50
+/* 10132504 00132504  7C 08 03 A6 */	mtlr r0
+/* 10132508 00132508  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1013250C 0013250C  4E 80 00 20 */	blr 
+
+.global "__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+"__ct__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
+/* 10132570 00132570  93 E1 FF FC */	stw r31, -4(r1)
+/* 10132574 00132574  7C 08 02 A6 */	mflr r0
+/* 10132578 00132578  3B E3 00 00 */	addi r31, r3, 0
+/* 1013257C 0013257C  90 01 00 08 */	stw r0, 8(r1)
+/* 10132580 00132580  38 80 00 00 */	li r4, 0
+/* 10132584 00132584  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10132588 00132588  48 00 00 99 */	bl "__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl"
+/* 1013258C 0013258C  38 00 00 00 */	li r0, 0
+/* 10132590 00132590  90 1F 00 04 */	stw r0, 4(r31)
+/* 10132594 00132594  7F E3 FB 78 */	mr r3, r31
+/* 10132598 00132598  90 1F 00 08 */	stw r0, 8(r31)
+/* 1013259C 0013259C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101325A0 001325A0  38 21 00 50 */	addi r1, r1, 0x50
+/* 101325A4 001325A4  7C 08 03 A6 */	mtlr r0
+/* 101325A8 001325A8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101325AC 001325AC  4E 80 00 20 */	blr 
+
+.global "__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl"
+"__ct__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>FUl":
+/* 10132620 00132620  90 83 00 00 */	stw r4, 0(r3)
+/* 10132624 00132624  4E 80 00 20 */	blr 
+
+.global "__ct__10SlotLoaderFP8iResFiles"
+"__ct__10SlotLoaderFP8iResFiles":
+/* 101326A0 001326A0  90 83 00 00 */	stw r4, 0(r3)
+/* 101326A4 001326A4  38 00 00 00 */	li r0, 0
+/* 101326A8 001326A8  90 03 00 04 */	stw r0, 4(r3)
+/* 101326AC 001326AC  B0 A3 00 08 */	sth r5, 8(r3)
+/* 101326B0 001326B0  4E 80 00 20 */	blr 
+
+.global "DoStream__14SlotDescriptorFP11ReconBufferl"
+"DoStream__14SlotDescriptorFP11ReconBufferl":
+/* 101326F0 001326F0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101326F4 001326F4  3B E5 00 00 */	addi r31, r5, 0
+/* 101326F8 001326F8  7C 08 02 A6 */	mflr r0
+/* 101326FC 001326FC  2C 1F 00 02 */	cmpwi r31, 2
+/* 10132700 00132700  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10132704 00132704  3B C4 00 00 */	addi r30, r4, 0
+/* 10132708 00132708  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 1013270C 0013270C  3B A3 00 00 */	addi r29, r3, 0
+/* 10132710 00132710  90 01 00 08 */	stw r0, 8(r1)
+/* 10132714 00132714  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 10132718 00132718  41 81 00 E0 */	bgt lbl_101327F8
+/* 1013271C 0013271C  38 7E 00 00 */	addi r3, r30, 0
+/* 10132720 00132720  38 9D 00 04 */	addi r4, r29, 4
+/* 10132724 00132724  38 A0 00 01 */	li r5, 1
+/* 10132728 00132728  4B FE 30 99 */	bl "ReconFloat__11ReconBufferFPfi"
+/* 1013272C 0013272C  38 7E 00 00 */	addi r3, r30, 0
+/* 10132730 00132730  38 9D 00 08 */	addi r4, r29, 8
+/* 10132734 00132734  38 A0 00 01 */	li r5, 1
+/* 10132738 00132738  4B FE 30 89 */	bl "ReconFloat__11ReconBufferFPfi"
+/* 1013273C 0013273C  2C 1F 00 01 */	cmpwi r31, 1
+/* 10132740 00132740  41 80 00 18 */	blt lbl_10132758
+/* 10132744 00132744  38 7E 00 00 */	addi r3, r30, 0
+/* 10132748 00132748  38 9D 00 0C */	addi r4, r29, 0xc
+/* 1013274C 0013274C  38 A0 00 01 */	li r5, 1
+/* 10132750 00132750  4B FE 30 71 */	bl "ReconFloat__11ReconBufferFPfi"
+/* 10132754 00132754  48 00 00 50 */	b lbl_101327A4
+lbl_10132758:
+/* 10132758 00132758  C0 1D 00 0C */	lfs f0, 0xc(r29)
+/* 1013275C 0013275C  38 7E 00 00 */	addi r3, r30, 0
+/* 10132760 00132760  38 81 00 40 */	addi r4, r1, 0x40
+/* 10132764 00132764  FC 00 00 1E */	fctiwz f0, f0
+/* 10132768 00132768  38 A0 00 01 */	li r5, 1
+/* 1013276C 0013276C  D8 01 00 48 */	stfd f0, 0x48(r1)
+/* 10132770 00132770  80 01 00 4C */	lwz r0, 0x4c(r1)
+/* 10132774 00132774  B0 01 00 40 */	sth r0, 0x40(r1)
+/* 10132778 00132778  4B FE 33 B9 */	bl "Recon16__11ReconBufferFPsi"
+/* 1013277C 0013277C  A8 61 00 40 */	lha r3, 0x40(r1)
+/* 10132780 00132780  3C 00 43 30 */	lis r0, 0x4330
+/* 10132784 00132784  80 82 A7 F0 */	lwz r4, lbl_105BBC50-_R2_BASE_(r2)
+/* 10132788 00132788  6C 63 80 00 */	xoris r3, r3, 0x8000
+/* 1013278C 0013278C  90 01 00 50 */	stw r0, 0x50(r1)
+/* 10132790 00132790  C8 24 00 00 */	lfd f1, 0(r4)
+/* 10132794 00132794  90 61 00 54 */	stw r3, 0x54(r1)
+/* 10132798 00132798  C8 01 00 50 */	lfd f0, 0x50(r1)
+/* 1013279C 0013279C  EC 00 08 28 */	fsubs f0, f0, f1
+/* 101327A0 001327A0  D0 1D 00 0C */	stfs f0, 0xc(r29)
+lbl_101327A4:
+/* 101327A4 001327A4  38 7E 00 00 */	addi r3, r30, 0
+/* 101327A8 001327A8  38 9D 00 00 */	addi r4, r29, 0
+/* 101327AC 001327AC  38 A0 00 01 */	li r5, 1
+/* 101327B0 001327B0  4B FE 33 81 */	bl "Recon16__11ReconBufferFPsi"
+/* 101327B4 001327B4  2C 1F 00 02 */	cmpwi r31, 2
+/* 101327B8 001327B8  41 80 00 1C */	blt lbl_101327D4
+/* 101327BC 001327BC  38 00 00 00 */	li r0, 0
+/* 101327C0 001327C0  38 81 00 42 */	addi r4, r1, 0x42
+/* 101327C4 001327C4  B0 01 00 42 */	sth r0, 0x42(r1)
+/* 101327C8 001327C8  38 7E 00 00 */	addi r3, r30, 0
+/* 101327CC 001327CC  38 A0 00 01 */	li r5, 1
+/* 101327D0 001327D0  4B FE 33 61 */	bl "Recon16__11ReconBufferFPsi"
+lbl_101327D4:
+/* 101327D4 001327D4  80 1E 00 0C */	lwz r0, 0xc(r30)
+/* 101327D8 001327D8  2C 00 00 00 */	cmpwi r0, 0
+/* 101327DC 001327DC  40 82 01 04 */	bne lbl_101328E0
+/* 101327E0 001327E0  38 00 00 00 */	li r0, 0
+/* 101327E4 001327E4  90 1D 00 1C */	stw r0, 0x1c(r29)
+/* 101327E8 001327E8  90 1D 00 20 */	stw r0, 0x20(r29)
+/* 101327EC 001327EC  90 1D 00 24 */	stw r0, 0x24(r29)
+/* 101327F0 001327F0  90 1D 00 28 */	stw r0, 0x28(r29)
+/* 101327F4 001327F4  48 00 00 EC */	b lbl_101328E0
+lbl_101327F8:
+/* 101327F8 001327F8  38 7E 00 00 */	addi r3, r30, 0
+/* 101327FC 001327FC  38 9D 00 00 */	addi r4, r29, 0
+/* 10132800 00132800  38 A0 00 01 */	li r5, 1
+/* 10132804 00132804  4B FE 33 2D */	bl "Recon16__11ReconBufferFPsi"
+/* 10132808 00132808  38 7E 00 00 */	addi r3, r30, 0
+/* 1013280C 0013280C  38 9D 00 04 */	addi r4, r29, 4
+/* 10132810 00132810  38 A0 00 01 */	li r5, 1
+/* 10132814 00132814  4B FE 2F AD */	bl "ReconFloat__11ReconBufferFPfi"
+/* 10132818 00132818  38 7E 00 00 */	addi r3, r30, 0
+/* 1013281C 0013281C  38 9D 00 08 */	addi r4, r29, 8
+/* 10132820 00132820  38 A0 00 01 */	li r5, 1
+/* 10132824 00132824  4B FE 2F 9D */	bl "ReconFloat__11ReconBufferFPfi"
+/* 10132828 00132828  38 7E 00 00 */	addi r3, r30, 0
+/* 1013282C 0013282C  38 9D 00 0C */	addi r4, r29, 0xc
+/* 10132830 00132830  38 A0 00 01 */	li r5, 1
+/* 10132834 00132834  4B FE 2F 8D */	bl "ReconFloat__11ReconBufferFPfi"
+/* 10132838 00132838  38 7E 00 00 */	addi r3, r30, 0
+/* 1013283C 0013283C  38 9D 00 1C */	addi r4, r29, 0x1c
+/* 10132840 00132840  38 A0 00 03 */	li r5, 3
+/* 10132844 00132844  4B FE 31 0D */	bl "Recon32__11ReconBufferFPli"
+/* 10132848 00132848  38 7E 00 00 */	addi r3, r30, 0
+/* 1013284C 0013284C  38 9D 00 28 */	addi r4, r29, 0x28
+/* 10132850 00132850  38 A0 00 01 */	li r5, 1
+/* 10132854 00132854  4B FE 30 FD */	bl "Recon32__11ReconBufferFPli"
+/* 10132858 00132858  2C 1F 00 04 */	cmpwi r31, 4
+/* 1013285C 0013285C  41 80 00 14 */	blt lbl_10132870
+/* 10132860 00132860  38 7E 00 00 */	addi r3, r30, 0
+/* 10132864 00132864  38 9D 00 2C */	addi r4, r29, 0x2c
+/* 10132868 00132868  38 A0 00 01 */	li r5, 1
+/* 1013286C 0013286C  4B FE 30 E5 */	bl "Recon32__11ReconBufferFPli"
+lbl_10132870:
+/* 10132870 00132870  2C 1F 00 05 */	cmpwi r31, 5
+/* 10132874 00132874  41 80 00 54 */	blt lbl_101328C8
+/* 10132878 00132878  38 7E 00 00 */	addi r3, r30, 0
+/* 1013287C 0013287C  38 9D 00 30 */	addi r4, r29, 0x30
+/* 10132880 00132880  38 A0 00 01 */	li r5, 1
+/* 10132884 00132884  4B FE 30 CD */	bl "Recon32__11ReconBufferFPli"
+/* 10132888 00132888  38 7E 00 00 */	addi r3, r30, 0
+/* 1013288C 0013288C  38 9D 00 34 */	addi r4, r29, 0x34
+/* 10132890 00132890  38 A0 00 01 */	li r5, 1
+/* 10132894 00132894  4B FE 30 BD */	bl "Recon32__11ReconBufferFPli"
+/* 10132898 00132898  38 7E 00 00 */	addi r3, r30, 0
+/* 1013289C 0013289C  38 9D 00 38 */	addi r4, r29, 0x38
+/* 101328A0 001328A0  38 A0 00 01 */	li r5, 1
+/* 101328A4 001328A4  4B FE 30 AD */	bl "Recon32__11ReconBufferFPli"
+/* 101328A8 001328A8  38 7E 00 00 */	addi r3, r30, 0
+/* 101328AC 001328AC  38 9D 00 10 */	addi r4, r29, 0x10
+/* 101328B0 001328B0  38 A0 00 01 */	li r5, 1
+/* 101328B4 001328B4  4B FE 30 9D */	bl "Recon32__11ReconBufferFPli"
+/* 101328B8 001328B8  38 7E 00 00 */	addi r3, r30, 0
+/* 101328BC 001328BC  38 9D 00 14 */	addi r4, r29, 0x14
+/* 101328C0 001328C0  38 A0 00 01 */	li r5, 1
+/* 101328C4 001328C4  4B FE 30 8D */	bl "Recon32__11ReconBufferFPli"
+lbl_101328C8:
+/* 101328C8 001328C8  2C 1F 00 07 */	cmpwi r31, 7
+/* 101328CC 001328CC  41 80 00 14 */	blt lbl_101328E0
+/* 101328D0 001328D0  38 7E 00 00 */	addi r3, r30, 0
+/* 101328D4 001328D4  38 9D 00 3C */	addi r4, r29, 0x3c
+/* 101328D8 001328D8  38 A0 00 01 */	li r5, 1
+/* 101328DC 001328DC  4B FE 2E E5 */	bl "ReconFloat__11ReconBufferFPfi"
+lbl_101328E0:
+/* 101328E0 001328E0  2C 1F 00 08 */	cmpwi r31, 8
+/* 101328E4 001328E4  41 80 00 14 */	blt lbl_101328F8
+/* 101328E8 001328E8  38 7E 00 00 */	addi r3, r30, 0
+/* 101328EC 001328EC  38 9D 00 18 */	addi r4, r29, 0x18
+/* 101328F0 001328F0  38 A0 00 01 */	li r5, 1
+/* 101328F4 001328F4  4B FE 30 5D */	bl "Recon32__11ReconBufferFPli"
+lbl_101328F8:
+/* 101328F8 001328F8  2C 1F 00 09 */	cmpwi r31, 9
+/* 101328FC 001328FC  41 80 00 18 */	blt lbl_10132914
+/* 10132900 00132900  38 7E 00 00 */	addi r3, r30, 0
+/* 10132904 00132904  38 9D 00 40 */	addi r4, r29, 0x40
+/* 10132908 00132908  38 A0 00 01 */	li r5, 1
+/* 1013290C 0013290C  4B FE 30 45 */	bl "Recon32__11ReconBufferFPli"
+/* 10132910 00132910  48 00 00 44 */	b lbl_10132954
+lbl_10132914:
+/* 10132914 00132914  80 7D 00 28 */	lwz r3, 0x28(r29)
+/* 10132918 00132918  54 60 05 AD */	rlwinm. r0, r3, 0, 0x16, 0x16
+/* 1013291C 0013291C  41 82 00 1C */	beq lbl_10132938
+/* 10132920 00132920  38 00 FF FD */	li r0, -3
+/* 10132924 00132924  90 1D 00 40 */	stw r0, 0x40(r29)
+/* 10132928 00132928  80 1D 00 28 */	lwz r0, 0x28(r29)
+/* 1013292C 0013292C  54 00 05 EA */	rlwinm r0, r0, 0, 0x17, 0x15
+/* 10132930 00132930  90 1D 00 28 */	stw r0, 0x28(r29)
+/* 10132934 00132934  48 00 00 20 */	b lbl_10132954
+lbl_10132938:
+/* 10132938 00132938  54 60 05 6B */	rlwinm. r0, r3, 0, 0x15, 0x15
+/* 1013293C 0013293C  41 82 00 18 */	beq lbl_10132954
+/* 10132940 00132940  38 00 FF FF */	li r0, -1
+/* 10132944 00132944  90 1D 00 40 */	stw r0, 0x40(r29)
+/* 10132948 00132948  80 1D 00 28 */	lwz r0, 0x28(r29)
+/* 1013294C 0013294C  54 00 05 A8 */	rlwinm r0, r0, 0, 0x16, 0x14
+/* 10132950 00132950  90 1D 00 28 */	stw r0, 0x28(r29)
+lbl_10132954:
+/* 10132954 00132954  2C 1F 00 0A */	cmpwi r31, 0xa
+/* 10132958 00132958  41 80 00 18 */	blt lbl_10132970
+/* 1013295C 0013295C  38 7E 00 00 */	addi r3, r30, 0
+/* 10132960 00132960  38 9D 00 44 */	addi r4, r29, 0x44
+/* 10132964 00132964  38 A0 00 01 */	li r5, 1
+/* 10132968 00132968  4B FE 2F E9 */	bl "Recon32__11ReconBufferFPli"
+/* 1013296C 0013296C  48 00 00 3C */	b lbl_101329A8
+lbl_10132970:
+/* 10132970 00132970  80 1D 00 34 */	lwz r0, 0x34(r29)
+/* 10132974 00132974  80 62 A7 F4 */	lwz r3, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132978 00132978  54 00 20 36 */	slwi r0, r0, 4
+/* 1013297C 0013297C  90 1D 00 34 */	stw r0, 0x34(r29)
+/* 10132980 00132980  C0 03 00 00 */	lfs f0, 0(r3)
+/* 10132984 00132984  80 1D 00 30 */	lwz r0, 0x30(r29)
+/* 10132988 00132988  54 00 20 36 */	slwi r0, r0, 4
+/* 1013298C 0013298C  90 1D 00 30 */	stw r0, 0x30(r29)
+/* 10132990 00132990  80 1D 00 38 */	lwz r0, 0x38(r29)
+/* 10132994 00132994  54 00 20 36 */	slwi r0, r0, 4
+/* 10132998 00132998  90 1D 00 38 */	stw r0, 0x38(r29)
+/* 1013299C 0013299C  C0 3D 00 3C */	lfs f1, 0x3c(r29)
+/* 101329A0 001329A0  EC 01 00 32 */	fmuls f0, f1, f0
+/* 101329A4 001329A4  D0 1D 00 3C */	stfs f0, 0x3c(r29)
+lbl_101329A8:
+/* 101329A8 001329A8  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 101329AC 001329AC  38 21 00 70 */	addi r1, r1, 0x70
+/* 101329B0 001329B0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101329B4 001329B4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101329B8 001329B8  7C 08 03 A6 */	mtlr r0
+/* 101329BC 001329BC  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101329C0 001329C0  4E 80 00 20 */	blr 
+
+.global "__ct__14SlotDescriptorFv"
+"__ct__14SlotDescriptorFv":
+/* 10132A10 00132A10  80 E2 A7 F4 */	lwz r7, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132A14 00132A14  38 C0 FF FF */	li r6, -1
+/* 10132A18 00132A18  B0 C3 00 00 */	sth r6, 0(r3)
+/* 10132A1C 00132A1C  38 A0 00 00 */	li r5, 0
+/* 10132A20 00132A20  C0 27 00 04 */	lfs f1, 4(r7)
+/* 10132A24 00132A24  38 80 00 10 */	li r4, 0x10
+/* 10132A28 00132A28  C0 07 00 08 */	lfs f0, 8(r7)
+/* 10132A2C 00132A2C  D0 23 00 04 */	stfs f1, 4(r3)
+/* 10132A30 00132A30  38 00 FF FE */	li r0, -2
+/* 10132A34 00132A34  D0 23 00 08 */	stfs f1, 8(r3)
+/* 10132A38 00132A38  D0 23 00 0C */	stfs f1, 0xc(r3)
+/* 10132A3C 00132A3C  90 A3 00 1C */	stw r5, 0x1c(r3)
+/* 10132A40 00132A40  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 10132A44 00132A44  90 A3 00 24 */	stw r5, 0x24(r3)
+/* 10132A48 00132A48  90 A3 00 28 */	stw r5, 0x28(r3)
+/* 10132A4C 00132A4C  90 C3 00 2C */	stw r6, 0x2c(r3)
+/* 10132A50 00132A50  90 83 00 30 */	stw r4, 0x30(r3)
+/* 10132A54 00132A54  90 83 00 34 */	stw r4, 0x34(r3)
+/* 10132A58 00132A58  90 83 00 38 */	stw r4, 0x38(r3)
+/* 10132A5C 00132A5C  D0 03 00 3C */	stfs f0, 0x3c(r3)
+/* 10132A60 00132A60  90 03 00 40 */	stw r0, 0x40(r3)
+/* 10132A64 00132A64  90 83 00 44 */	stw r4, 0x44(r3)
+/* 10132A68 00132A68  90 A3 00 10 */	stw r5, 0x10(r3)
+/* 10132A6C 00132A6C  90 A3 00 14 */	stw r5, 0x14(r3)
+/* 10132A70 00132A70  90 A3 00 18 */	stw r5, 0x18(r3)
+/* 10132A74 00132A74  4E 80 00 20 */	blr 
+
+.global "ActivateForLoops__10SpriteSlotFi"
+"ActivateForLoops__10SpriteSlotFi":
+/* 10132AB0 00132AB0  80 A3 00 1C */	lwz r5, 0x1c(r3)
+/* 10132AB4 00132AB4  38 00 00 00 */	li r0, 0
+/* 10132AB8 00132AB8  1C A5 00 0C */	mulli r5, r5, 0xc
+/* 10132ABC 00132ABC  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10132AC0 00132AC0  7C 04 29 D6 */	mullw r0, r4, r5
+/* 10132AC4 00132AC4  90 03 00 10 */	stw r0, 0x10(r3)
+/* 10132AC8 00132AC8  4E 80 00 20 */	blr 
+
+.global "ActivateForTicks__10SpriteSlotFi"
+"ActivateForTicks__10SpriteSlotFi":
+/* 10132B00 00132B00  38 00 00 00 */	li r0, 0
+/* 10132B04 00132B04  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10132B08 00132B08  90 83 00 10 */	stw r4, 0x10(r3)
+/* 10132B0C 00132B0C  4E 80 00 20 */	blr 
+
+.global "Tick__10SpriteSlotFv"
+"Tick__10SpriteSlotFv":
+/* 10132B50 00132B50  80 83 00 10 */	lwz r4, 0x10(r3)
+/* 10132B54 00132B54  2C 04 00 00 */	cmpwi r4, 0
+/* 10132B58 00132B58  40 81 00 0C */	ble lbl_10132B64
+/* 10132B5C 00132B5C  38 04 FF FF */	addi r0, r4, -1
+/* 10132B60 00132B60  90 03 00 10 */	stw r0, 0x10(r3)
+lbl_10132B64:
+/* 10132B64 00132B64  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 10132B68 00132B68  2C 00 00 00 */	cmpwi r0, 0
+/* 10132B6C 00132B6C  40 82 00 0C */	bne lbl_10132B78
+/* 10132B70 00132B70  38 60 00 00 */	li r3, 0
+/* 10132B74 00132B74  4E 80 00 20 */	blr 
+lbl_10132B78:
+/* 10132B78 00132B78  80 83 00 28 */	lwz r4, 0x28(r3)
+/* 10132B7C 00132B7C  38 04 00 01 */	addi r0, r4, 1
+/* 10132B80 00132B80  2C 00 00 0C */	cmpwi r0, 0xc
+/* 10132B84 00132B84  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10132B88 00132B88  40 82 00 58 */	bne lbl_10132BE0
+/* 10132B8C 00132B8C  80 83 00 20 */	lwz r4, 0x20(r3)
+/* 10132B90 00132B90  80 03 00 24 */	lwz r0, 0x24(r3)
+/* 10132B94 00132B94  7C 04 02 14 */	add r0, r4, r0
+/* 10132B98 00132B98  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10132B9C 00132B9C  48 00 00 14 */	b lbl_10132BB0
+lbl_10132BA0:
+/* 10132BA0 00132BA0  80 83 00 20 */	lwz r4, 0x20(r3)
+/* 10132BA4 00132BA4  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 10132BA8 00132BA8  7C 04 02 14 */	add r0, r4, r0
+/* 10132BAC 00132BAC  90 03 00 20 */	stw r0, 0x20(r3)
+lbl_10132BB0:
+/* 10132BB0 00132BB0  80 C3 00 20 */	lwz r6, 0x20(r3)
+/* 10132BB4 00132BB4  2C 06 00 00 */	cmpwi r6, 0
+/* 10132BB8 00132BB8  41 80 FF E8 */	blt lbl_10132BA0
+/* 10132BBC 00132BBC  80 A3 00 1C */	lwz r5, 0x1c(r3)
+/* 10132BC0 00132BC0  38 00 00 00 */	li r0, 0
+/* 10132BC4 00132BC4  7C 86 2B D6 */	divw r4, r6, r5
+/* 10132BC8 00132BC8  7C 84 29 D6 */	mullw r4, r4, r5
+/* 10132BCC 00132BCC  7C 84 30 50 */	subf r4, r4, r6
+/* 10132BD0 00132BD0  90 83 00 20 */	stw r4, 0x20(r3)
+/* 10132BD4 00132BD4  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10132BD8 00132BD8  38 60 00 01 */	li r3, 1
+/* 10132BDC 00132BDC  4E 80 00 20 */	blr 
+lbl_10132BE0:
+/* 10132BE0 00132BE0  38 60 00 00 */	li r3, 0
+/* 10132BE4 00132BE4  4E 80 00 20 */	blr 
+
+.global "SetSprite__10SpriteSlotFP11ObjSelector"
+"SetSprite__10SpriteSlotFP11ObjSelector":
+/* 10132C10 00132C10  38 00 FF FF */	li r0, -1
+/* 10132C14 00132C14  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10132C18 00132C18  38 A0 00 01 */	li r5, 1
+/* 10132C1C 00132C1C  38 00 00 00 */	li r0, 0
+/* 10132C20 00132C20  90 83 00 18 */	stw r4, 0x18(r3)
+/* 10132C24 00132C24  90 A3 00 1C */	stw r5, 0x1c(r3)
+/* 10132C28 00132C28  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10132C2C 00132C2C  90 A3 00 24 */	stw r5, 0x24(r3)
+/* 10132C30 00132C30  4E 80 00 20 */	blr 
+
+.global "SetSprite__10SpriteSlotFP9cRendereriib"
+"SetSprite__10SpriteSlotFP9cRendereriib":
+/* 10132C70 00132C70  90 A3 00 14 */	stw r5, 0x14(r3)
+/* 10132C74 00132C74  54 E0 06 3F */	clrlwi. r0, r7, 0x18
+/* 10132C78 00132C78  90 83 00 18 */	stw r4, 0x18(r3)
+/* 10132C7C 00132C7C  90 C3 00 1C */	stw r6, 0x1c(r3)
+/* 10132C80 00132C80  41 82 00 1C */	beq lbl_10132C9C
+/* 10132C84 00132C84  80 83 00 1C */	lwz r4, 0x1c(r3)
+/* 10132C88 00132C88  38 00 FF FF */	li r0, -1
+/* 10132C8C 00132C8C  38 84 FF FF */	addi r4, r4, -1
+/* 10132C90 00132C90  90 83 00 20 */	stw r4, 0x20(r3)
+/* 10132C94 00132C94  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10132C98 00132C98  4E 80 00 20 */	blr 
+lbl_10132C9C:
+/* 10132C9C 00132C9C  38 00 00 00 */	li r0, 0
+/* 10132CA0 00132CA0  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10132CA4 00132CA4  38 00 00 01 */	li r0, 1
+/* 10132CA8 00132CA8  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10132CAC 00132CAC  4E 80 00 20 */	blr 
+
+.global "__ct__10SpriteSlotFv"
+"__ct__10SpriteSlotFv":
+/* 10132CF0 00132CF0  80 A2 A7 F4 */	lwz r5, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132CF4 00132CF4  38 80 FF FF */	li r4, -1
+/* 10132CF8 00132CF8  38 00 00 00 */	li r0, 0
+/* 10132CFC 00132CFC  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10132D00 00132D00  D0 03 00 00 */	stfs f0, 0(r3)
+/* 10132D04 00132D04  D0 03 00 04 */	stfs f0, 4(r3)
+/* 10132D08 00132D08  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10132D0C 00132D0C  90 83 00 0C */	stw r4, 0xc(r3)
+/* 10132D10 00132D10  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10132D14 00132D14  90 03 00 18 */	stw r0, 0x18(r3)
+/* 10132D18 00132D18  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10132D1C 00132D1C  90 03 00 10 */	stw r0, 0x10(r3)
+/* 10132D20 00132D20  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10132D24 00132D24  98 03 00 38 */	stb r0, 0x38(r3)
+/* 10132D28 00132D28  4E 80 00 20 */	blr 
+
+.global "SetHeight__10ObjectSlotF9StdHeight"
+"SetHeight__10ObjectSlotF9StdHeight":
+/* 10132D60 00132D60  28 04 00 08 */	cmplwi r4, 8
+/* 10132D64 00132D64  90 83 00 14 */	stw r4, 0x14(r3)
+/* 10132D68 00132D68  80 C2 A7 F4 */	lwz r6, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132D6C 00132D6C  4D 81 00 20 */	bgtlr 
+/* 10132D70 00132D70  80 A2 A7 EC */	lwz r5, lbl_105BBC4C-_R2_BASE_(r2)
+/* 10132D74 00132D74  54 80 10 3A */	slwi r0, r4, 2
+/* 10132D78 00132D78  7C A5 00 2E */	lwzx r5, r5, r0
+/* 10132D7C 00132D7C  7C A9 03 A6 */	mtctr r5
+/* 10132D80 00132D80  4E 80 04 20 */	bctr 
+
+.global sub_10132D84
+sub_10132D84:
+/* 10132D84 00132D84  C0 26 00 04 */	lfs f1, 4(r6)
+/* 10132D88 00132D88  C0 03 00 08 */	lfs f0, 8(r3)
+/* 10132D8C 00132D8C  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 10132D90 00132D90  40 82 00 10 */	bne lbl_10132DA0
+/* 10132D94 00132D94  38 00 00 01 */	li r0, 1
+/* 10132D98 00132D98  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10132D9C 00132D9C  4E 80 00 20 */	blr 
+lbl_10132DA0:
+/* 10132DA0 00132DA0  38 00 00 05 */	li r0, 5
+/* 10132DA4 00132DA4  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10132DA8 00132DA8  4E 80 00 20 */	blr 
+lbl_10132DAC:
+/* 10132DAC 00132DAC  C0 06 00 04 */	lfs f0, 4(r6)
+/* 10132DB0 00132DB0  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10132DB4 00132DB4  4E 80 00 20 */	blr 
+lbl_10132DB8:
+/* 10132DB8 00132DB8  C0 06 00 0C */	lfs f0, 0xc(r6)
+/* 10132DBC 00132DBC  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10132DC0 00132DC0  4E 80 00 20 */	blr 
+lbl_10132DC4:
+/* 10132DC4 00132DC4  C0 06 00 10 */	lfs f0, 0x10(r6)
+/* 10132DC8 00132DC8  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10132DCC 00132DCC  4E 80 00 20 */	blr 
+lbl_10132DD0:
+/* 10132DD0 00132DD0  C0 06 00 14 */	lfs f0, 0x14(r6)
+/* 10132DD4 00132DD4  D0 03 00 08 */	stfs f0, 8(r3)
+lbl_10132DD8:
+/* 10132DD8 00132DD8  4E 80 00 20 */	blr 
+
+.global "__ct__10ObjectSlotFv"
+"__ct__10ObjectSlotFv":
+/* 10132E20 00132E20  80 C2 A7 F4 */	lwz r6, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132E24 00132E24  38 A0 FF FF */	li r5, -1
+/* 10132E28 00132E28  38 80 00 00 */	li r4, 0
+/* 10132E2C 00132E2C  C0 06 00 04 */	lfs f0, 4(r6)
+/* 10132E30 00132E30  38 00 00 32 */	li r0, 0x32
+/* 10132E34 00132E34  D0 03 00 00 */	stfs f0, 0(r3)
+/* 10132E38 00132E38  D0 03 00 04 */	stfs f0, 4(r3)
+/* 10132E3C 00132E3C  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10132E40 00132E40  90 A3 00 0C */	stw r5, 0xc(r3)
+/* 10132E44 00132E44  B0 83 00 10 */	sth r4, 0x10(r3)
+/* 10132E48 00132E48  90 03 00 18 */	stw r0, 0x18(r3)
+/* 10132E4C 00132E4C  90 83 00 1C */	stw r4, 0x1c(r3)
+/* 10132E50 00132E50  90 83 00 14 */	stw r4, 0x14(r3)
+/* 10132E54 00132E54  4E 80 00 20 */	blr 
+
+.global "SetMultiplier__11RoutingSlotFQ211RoutingSlot16VerticalPositioni"
+"SetMultiplier__11RoutingSlotFQ211RoutingSlot16VerticalPositioni":
+/* 10132E80 00132E80  54 80 10 3A */	slwi r0, r4, 2
+/* 10132E84 00132E84  7C 63 02 14 */	add r3, r3, r0
+/* 10132E88 00132E88  90 A3 00 10 */	stw r5, 0x10(r3)
+/* 10132E8C 00132E8C  4E 80 00 20 */	blr 
+
+.global "SetTileDistances__11RoutingSlotFfff"
+"SetTileDistances__11RoutingSlotFfff":
+/* 10132EF0 00132EF0  80 82 A7 F4 */	lwz r4, lbl_105BBC54-_R2_BASE_(r2)
+/* 10132EF4 00132EF4  C0 04 00 18 */	lfs f0, 0x18(r4)
+/* 10132EF8 00132EF8  EC 80 00 72 */	fmuls f4, f0, f1
+/* 10132EFC 00132EFC  EC 20 00 B2 */	fmuls f1, f0, f2
+/* 10132F00 00132F00  EC 00 00 F2 */	fmuls f0, f0, f3
+/* 10132F04 00132F04  FC 40 20 1E */	fctiwz f2, f4
+/* 10132F08 00132F08  FC 20 08 1E */	fctiwz f1, f1
+/* 10132F0C 00132F0C  FC 00 00 1E */	fctiwz f0, f0
+/* 10132F10 00132F10  D8 41 FF E0 */	stfd f2, -0x20(r1)
+/* 10132F14 00132F14  D8 21 FF E8 */	stfd f1, -0x18(r1)
+/* 10132F18 00132F18  80 01 FF E4 */	lwz r0, -0x1c(r1)
+/* 10132F1C 00132F1C  D8 01 FF F0 */	stfd f0, -0x10(r1)
+/* 10132F20 00132F20  80 81 FF EC */	lwz r4, -0x14(r1)
+/* 10132F24 00132F24  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10132F28 00132F28  80 01 FF F4 */	lwz r0, -0xc(r1)
+/* 10132F2C 00132F2C  90 83 00 28 */	stw r4, 0x28(r3)
+/* 10132F30 00132F30  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 10132F34 00132F34  4E 80 00 20 */	blr 
+
+.global "SetDistances__11RoutingSlotFiii"
+"SetDistances__11RoutingSlotFiii":
+/* 10132F70 00132F70  90 83 00 24 */	stw r4, 0x24(r3)
+/* 10132F74 00132F74  90 A3 00 28 */	stw r5, 0x28(r3)
+/* 10132F78 00132F78  90 C3 00 2C */	stw r6, 0x2c(r3)
+/* 10132F7C 00132F7C  4E 80 00 20 */	blr 
+
+.global "SetFacingDirection__11RoutingSlotFi"
+"SetFacingDirection__11RoutingSlotFi":
+/* 10132FC0 00132FC0  2C 04 00 00 */	cmpwi r4, 0
+/* 10132FC4 00132FC4  4D 80 00 20 */	bltlr 
+/* 10132FC8 00132FC8  2C 04 00 08 */	cmpwi r4, 8
+/* 10132FCC 00132FCC  4C 80 00 20 */	bgelr 
+/* 10132FD0 00132FD0  90 83 00 34 */	stw r4, 0x34(r3)
+/* 10132FD4 00132FD4  4E 80 00 20 */	blr 
+
+.global "FaceTowardsObject__11RoutingSlotFv"
+"FaceTowardsObject__11RoutingSlotFv":
+/* 10133010 00133010  38 00 FF FE */	li r0, -2
+/* 10133014 00133014  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10133018 00133018  4E 80 00 20 */	blr 
+
+.global "AllowAnyFacing__11RoutingSlotFv"
+"AllowAnyFacing__11RoutingSlotFv":
+/* 10133060 00133060  38 00 FF FD */	li r0, -3
+/* 10133064 00133064  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10133068 00133068  4E 80 00 20 */	blr 
+
+.global "AllowAnyRotation__11RoutingSlotFv"
+"AllowAnyRotation__11RoutingSlotFv":
+/* 101330A0 001330A0  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 101330A4 001330A4  60 00 01 00 */	ori r0, r0, 0x100
+/* 101330A8 001330A8  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 101330AC 001330AC  4E 80 00 20 */	blr 
+
+.global "AllowDirection__11RoutingSlotFi"
+"AllowDirection__11RoutingSlotFi":
+/* 101330F0 001330F0  2C 04 00 00 */	cmpwi r4, 0
+/* 101330F4 001330F4  4D 80 00 20 */	bltlr 
+/* 101330F8 001330F8  2C 04 00 08 */	cmpwi r4, 8
+/* 101330FC 001330FC  4C 80 00 20 */	bgelr 
+/* 10133100 00133100  38 00 00 01 */	li r0, 1
+/* 10133104 00133104  80 A3 00 1C */	lwz r5, 0x1c(r3)
+/* 10133108 00133108  7C 00 20 30 */	slw r0, r0, r4
+/* 1013310C 0013310C  7C A0 03 78 */	or r0, r5, r0
+/* 10133110 00133110  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 10133114 00133114  4E 80 00 20 */	blr 
+
+.global "SetIsOnTopOfObject__11RoutingSlotFv"
+"SetIsOnTopOfObject__11RoutingSlotFv":
+/* 10133150 00133150  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 10133154 00133154  54 00 00 2E */	rlwinm r0, r0, 0, 0, 0x17
+/* 10133158 00133158  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 1013315C 0013315C  4E 80 00 20 */	blr 
+
+.global "__ct__11RoutingSlotFv"
+"__ct__11RoutingSlotFv":
+/* 101331A0 001331A0  80 E2 A7 F4 */	lwz r7, lbl_105BBC54-_R2_BASE_(r2)
+/* 101331A4 001331A4  38 C0 FF FF */	li r6, -1
+/* 101331A8 001331A8  38 A0 00 00 */	li r5, 0
+/* 101331AC 001331AC  C0 27 00 04 */	lfs f1, 4(r7)
+/* 101331B0 001331B0  38 80 00 10 */	li r4, 0x10
+/* 101331B4 001331B4  C0 07 00 08 */	lfs f0, 8(r7)
+/* 101331B8 001331B8  38 00 FF FE */	li r0, -2
+/* 101331BC 001331BC  D0 23 00 00 */	stfs f1, 0(r3)
+/* 101331C0 001331C0  D0 23 00 04 */	stfs f1, 4(r3)
+/* 101331C4 001331C4  D0 23 00 08 */	stfs f1, 8(r3)
+/* 101331C8 001331C8  90 C3 00 0C */	stw r6, 0xc(r3)
+/* 101331CC 001331CC  90 A3 00 1C */	stw r5, 0x1c(r3)
+/* 101331D0 001331D0  90 A3 00 10 */	stw r5, 0x10(r3)
+/* 101331D4 001331D4  90 A3 00 14 */	stw r5, 0x14(r3)
+/* 101331D8 001331D8  90 A3 00 18 */	stw r5, 0x18(r3)
+/* 101331DC 001331DC  90 C3 00 20 */	stw r6, 0x20(r3)
+/* 101331E0 001331E0  90 83 00 24 */	stw r4, 0x24(r3)
+/* 101331E4 001331E4  90 83 00 28 */	stw r4, 0x28(r3)
+/* 101331E8 001331E8  90 83 00 2C */	stw r4, 0x2c(r3)
+/* 101331EC 001331EC  D0 03 00 30 */	stfs f0, 0x30(r3)
+/* 101331F0 001331F0  90 03 00 34 */	stw r0, 0x34(r3)
+/* 101331F4 001331F4  90 83 00 38 */	stw r4, 0x38(r3)
+/* 101331F8 001331F8  4E 80 00 20 */	blr 
+
+.global "ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s"
+"ReconLoadVector<14SlotDescriptor>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P8iResFilelsPl_s":
+/* 10133230 00133230  7C 08 02 A6 */	mflr r0
+/* 10133234 00133234  90 01 00 08 */	stw r0, 8(r1)
+/* 10133238 00133238  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1013323C 0013323C  90 61 00 40 */	stw r3, 0x40(r1)
+/* 10133240 00133240  38 61 00 40 */	addi r3, r1, 0x40
+/* 10133244 00133244  90 A1 00 44 */	stw r5, 0x44(r1)
+/* 10133248 00133248  48 00 0F F9 */	bl "ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s"
+/* 1013324C 0013324C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10133250 00133250  38 21 00 50 */	addi r1, r1, 0x50
+/* 10133254 00133254  7C 08 03 A6 */	mtlr r0
+/* 10133258 00133258  4E 80 00 20 */	blr 
+
+.global "insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot"
+"insert__Q23std62__vector_imp<11RoutingSlot,Q23std24allocator<11RoutingSlot>,0>FP11RoutingSlotUlRC11RoutingSlot":
+/* 101332F0 001332F0  BE A1 FF D4 */	stmw r21, -0x2c(r1)
+/* 101332F4 001332F4  7C 08 02 A6 */	mflr r0
+/* 101332F8 001332F8  7C BD 2B 79 */	or. r29, r5, r5
+/* 101332FC 001332FC  83 22 A7 F8 */	lwz r25, lbl_105BBC58-_R2_BASE_(r2)
+/* 10133300 00133300  3B 63 00 00 */	addi r27, r3, 0
+/* 10133304 00133304  3B 84 00 00 */	addi r28, r4, 0
+/* 10133308 00133308  3B C6 00 00 */	addi r30, r6, 0
+/* 1013330C 0013330C  90 01 00 08 */	stw r0, 8(r1)
+/* 10133310 00133310  94 21 FE E0 */	stwu r1, -0x120(r1)
+/* 10133314 00133314  3B E1 00 00 */	addi r31, r1, 0
+/* 10133318 00133318  41 82 03 58 */	beq lbl_10133670
+/* 1013331C 0013331C  48 00 0C C5 */	bl "alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
+/* 10133320 00133320  48 00 0C 71 */	bl "max_size__Q23std24allocator<11RoutingSlot>CFv"
+/* 10133324 00133324  3B 43 00 00 */	addi r26, r3, 0
+/* 10133328 00133328  7C 1D D0 40 */	cmplw r29, r26
+/* 1013332C 0013332C  3B 1A 00 00 */	addi r24, r26, 0
+/* 10133330 00133330  41 81 00 14 */	bgt lbl_10133344
+/* 10133334 00133334  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10133338 00133338  7C 1D D0 50 */	subf r0, r29, r26
+/* 1013333C 0013333C  7C 03 00 40 */	cmplw r3, r0
+/* 10133340 00133340  40 81 00 28 */	ble lbl_10133368
+lbl_10133344:
+/* 10133344 00133344  38 7F 00 40 */	addi r3, r31, 0x40
+/* 10133348 00133348  38 99 00 01 */	addi r4, r25, 1
+/* 1013334C 0013334C  4B EF 9F 55 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 10133350 00133350  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 10133354 00133354  38 79 00 1D */	addi r3, r25, 0x1d
+/* 10133358 00133358  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 1013335C 0013335C  38 9F 00 40 */	addi r4, r31, 0x40
+/* 10133360 00133360  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 10133364 00133364  48 45 45 2D */	bl func_10587890
+lbl_10133368:
+/* 10133368 00133368  7F 63 DB 78 */	mr r3, r27
+/* 1013336C 0013336C  48 00 0B B5 */	bl "cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
+/* 10133370 00133370  80 9B 00 04 */	lwz r4, 4(r27)
+/* 10133374 00133374  80 63 00 00 */	lwz r3, 0(r3)
+/* 10133378 00133378  7C 04 EA 14 */	add r0, r4, r29
+/* 1013337C 0013337C  7C 00 18 40 */	cmplw r0, r3
+/* 10133380 00133380  41 81 01 70 */	bgt lbl_101334F0
+/* 10133384 00133384  1C 04 00 3C */	mulli r0, r4, 0x3c
+/* 10133388 00133388  80 7B 00 08 */	lwz r3, 8(r27)
+/* 1013338C 0013338C  7F 43 02 14 */	add r26, r3, r0
+/* 10133390 00133390  3C 60 88 89 */	lis r3, 0x8889
+/* 10133394 00133394  7C 1C D0 50 */	subf r0, r28, r26
+/* 10133398 00133398  38 63 88 89 */	addi r3, r3, -30583
+/* 1013339C 0013339C  7C 63 00 96 */	mulhw r3, r3, r0
+/* 101333A0 001333A0  7C 03 02 14 */	add r0, r3, r0
+/* 101333A4 001333A4  7C 00 2E 70 */	srawi r0, r0, 5
+/* 101333A8 001333A8  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 101333AC 001333AC  7F 00 1A 14 */	add r24, r0, r3
+/* 101333B0 001333B0  7C 1D C0 40 */	cmplw r29, r24
+/* 101333B4 001333B4  3B 3E 00 00 */	addi r25, r30, 0
+/* 101333B8 001333B8  40 81 00 A0 */	ble lbl_10133458
+/* 101333BC 001333BC  7F 56 D3 78 */	mr r22, r26
+/* 101333C0 001333C0  48 00 00 40 */	b lbl_10133400
+lbl_101333C4:
+/* 101333C4 001333C4  7F 63 DB 78 */	mr r3, r27
+/* 101333C8 001333C8  48 00 0A D9 */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 101333CC 001333CC  38 96 00 00 */	addi r4, r22, 0
+/* 101333D0 001333D0  38 60 00 3C */	li r3, 0x3c
+/* 101333D4 001333D4  4B F0 1D 1D */	bl "__nw__FUlPv"
+/* 101333D8 001333D8  28 03 00 00 */	cmplwi r3, 0
+/* 101333DC 001333DC  41 82 00 10 */	beq lbl_101333EC
+/* 101333E0 001333E0  90 3F 00 6C */	stw r1, 0x6c(r31)
+/* 101333E4 001333E4  7F C4 F3 78 */	mr r4, r30
+/* 101333E8 001333E8  48 00 09 F9 */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_101333EC:
+/* 101333EC 001333EC  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101333F0 001333F0  3A D6 00 3C */	addi r22, r22, 0x3c
+/* 101333F4 001333F4  3B BD FF FF */	addi r29, r29, -1
+/* 101333F8 001333F8  38 03 00 01 */	addi r0, r3, 1
+/* 101333FC 001333FC  90 1B 00 04 */	stw r0, 4(r27)
+lbl_10133400:
+/* 10133400 00133400  7C 1D C0 40 */	cmplw r29, r24
+/* 10133404 00133404  41 81 FF C0 */	bgt lbl_101333C4
+/* 10133408 00133408  7F 95 E3 78 */	mr r21, r28
+/* 1013340C 0013340C  48 00 00 40 */	b lbl_1013344C
+lbl_10133410:
+/* 10133410 00133410  7F 63 DB 78 */	mr r3, r27
+/* 10133414 00133414  48 00 0A 8D */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 10133418 00133418  38 96 00 00 */	addi r4, r22, 0
+/* 1013341C 0013341C  38 60 00 3C */	li r3, 0x3c
+/* 10133420 00133420  4B F0 1C D1 */	bl "__nw__FUlPv"
+/* 10133424 00133424  28 03 00 00 */	cmplwi r3, 0
+/* 10133428 00133428  41 82 00 10 */	beq lbl_10133438
+/* 1013342C 0013342C  90 3F 00 84 */	stw r1, 0x84(r31)
+/* 10133430 00133430  7E A4 AB 78 */	mr r4, r21
+/* 10133434 00133434  48 00 09 AD */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_10133438:
+/* 10133438 00133438  80 7B 00 04 */	lwz r3, 4(r27)
+/* 1013343C 0013343C  3A B5 00 3C */	addi r21, r21, 0x3c
+/* 10133440 00133440  3A D6 00 3C */	addi r22, r22, 0x3c
+/* 10133444 00133444  38 03 00 01 */	addi r0, r3, 1
+/* 10133448 00133448  90 1B 00 04 */	stw r0, 4(r27)
+lbl_1013344C:
+/* 1013344C 0013344C  7C 15 D0 40 */	cmplw r21, r26
+/* 10133450 00133450  41 80 FF C0 */	blt lbl_10133410
+/* 10133454 00133454  48 00 00 88 */	b lbl_101334DC
+lbl_10133458:
+/* 10133458 00133458  1E FD 00 3C */	mulli r23, r29, 0x3c
+/* 1013345C 0013345C  3A DA 00 00 */	addi r22, r26, 0
+/* 10133460 00133460  7E B7 D0 50 */	subf r21, r23, r26
+/* 10133464 00133464  48 00 00 40 */	b lbl_101334A4
+lbl_10133468:
+/* 10133468 00133468  7F 63 DB 78 */	mr r3, r27
+/* 1013346C 0013346C  48 00 0A 35 */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 10133470 00133470  38 96 00 00 */	addi r4, r22, 0
+/* 10133474 00133474  38 60 00 3C */	li r3, 0x3c
+/* 10133478 00133478  4B F0 1C 79 */	bl "__nw__FUlPv"
+/* 1013347C 0013347C  28 03 00 00 */	cmplwi r3, 0
+/* 10133480 00133480  41 82 00 10 */	beq lbl_10133490
+/* 10133484 00133484  90 3F 00 9C */	stw r1, 0x9c(r31)
+/* 10133488 00133488  7E A4 AB 78 */	mr r4, r21
+/* 1013348C 0013348C  48 00 09 55 */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_10133490:
+/* 10133490 00133490  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10133494 00133494  3A B5 00 3C */	addi r21, r21, 0x3c
+/* 10133498 00133498  3A D6 00 3C */	addi r22, r22, 0x3c
+/* 1013349C 0013349C  38 03 00 01 */	addi r0, r3, 1
+/* 101334A0 001334A0  90 1B 00 04 */	stw r0, 4(r27)
+lbl_101334A4:
+/* 101334A4 001334A4  7C 15 D0 40 */	cmplw r21, r26
+/* 101334A8 001334A8  41 80 FF C0 */	blt lbl_10133468
+/* 101334AC 001334AC  7C 1D C0 50 */	subf r0, r29, r24
+/* 101334B0 001334B0  1C 80 00 3C */	mulli r4, r0, 0x3c
+/* 101334B4 001334B4  7C 04 D0 50 */	subf r0, r4, r26
+/* 101334B8 001334B8  7C 00 F0 40 */	cmplw r0, r30
+/* 101334BC 001334BC  41 81 00 10 */	bgt lbl_101334CC
+/* 101334C0 001334C0  7C 1E D0 40 */	cmplw r30, r26
+/* 101334C4 001334C4  40 80 00 08 */	bge lbl_101334CC
+/* 101334C8 001334C8  7F 39 BA 14 */	add r25, r25, r23
+lbl_101334CC:
+/* 101334CC 001334CC  38 7C 00 00 */	addi r3, r28, 0
+/* 101334D0 001334D0  7C 9C 22 14 */	add r4, r28, r4
+/* 101334D4 001334D4  38 BA 00 00 */	addi r5, r26, 0
+/* 101334D8 001334D8  48 00 06 D9 */	bl "copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot"
+lbl_101334DC:
+/* 101334DC 001334DC  38 7C 00 00 */	addi r3, r28, 0
+/* 101334E0 001334E0  38 9D 00 00 */	addi r4, r29, 0
+/* 101334E4 001334E4  38 B9 00 00 */	addi r5, r25, 0
+/* 101334E8 001334E8  48 00 04 C9 */	bl "fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot"
+/* 101334EC 001334EC  48 00 01 84 */	b lbl_10133670
+lbl_101334F0:
+/* 101334F0 001334F0  7F 63 DB 78 */	mr r3, r27
+/* 101334F4 001334F4  48 00 09 AD */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 101334F8 001334F8  38 83 00 00 */	addi r4, r3, 0
+/* 101334FC 001334FC  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10133500 00133500  38 A0 00 00 */	li r5, 0
+/* 10133504 00133504  48 00 04 1D */	bl "__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul"
+/* 10133508 00133508  38 60 00 00 */	li r3, 0
+/* 1013350C 0013350C  90 7F 00 50 */	stw r3, 0x50(r31)
+/* 10133510 00133510  38 00 00 01 */	li r0, 1
+/* 10133514 00133514  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 10133518 00133518  80 9B 00 00 */	lwz r4, 0(r27)
+/* 1013351C 0013351C  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10133520 00133520  28 04 00 00 */	cmplwi r4, 0
+/* 10133524 00133524  7C 63 EA 14 */	add r3, r3, r29
+/* 10133528 00133528  41 82 00 08 */	beq lbl_10133530
+/* 1013352C 0013352C  7C 80 23 78 */	mr r0, r4
+lbl_10133530:
+/* 10133530 00133530  7C 17 03 78 */	mr r23, r0
+/* 10133534 00133534  57 40 F8 7E */	srwi r0, r26, 1
+/* 10133538 00133538  48 00 00 18 */	b lbl_10133550
+lbl_1013353C:
+/* 1013353C 0013353C  7C 17 00 40 */	cmplw r23, r0
+/* 10133540 00133540  40 80 00 0C */	bge lbl_1013354C
+/* 10133544 00133544  56 F7 08 3C */	slwi r23, r23, 1
+/* 10133548 00133548  48 00 00 08 */	b lbl_10133550
+lbl_1013354C:
+/* 1013354C 0013354C  7F 17 C3 78 */	mr r23, r24
+lbl_10133550:
+/* 10133550 00133550  7C 03 B8 40 */	cmplw r3, r23
+/* 10133554 00133554  41 81 FF E8 */	bgt lbl_1013353C
+/* 10133558 00133558  1C 77 00 3C */	mulli r3, r23, 0x3c
+/* 1013355C 0013355C  48 45 50 55 */	bl func_105885B0
+/* 10133560 00133560  92 FF 00 4C */	stw r23, 0x4c(r31)
+/* 10133564 00133564  7C 79 1B 78 */	mr r25, r3
+/* 10133568 00133568  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 1013356C 0013356C  80 1B 00 04 */	lwz r0, 4(r27)
+/* 10133570 00133570  80 7B 00 08 */	lwz r3, 8(r27)
+/* 10133574 00133574  1C 00 00 3C */	mulli r0, r0, 0x3c
+/* 10133578 00133578  3B 43 00 00 */	addi r26, r3, 0
+/* 1013357C 0013357C  7E E3 02 14 */	add r23, r3, r0
+/* 10133580 00133580  48 00 00 40 */	b lbl_101335C0
+lbl_10133584:
+/* 10133584 00133584  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10133588 00133588  48 00 09 19 */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 1013358C 0013358C  38 99 00 00 */	addi r4, r25, 0
+/* 10133590 00133590  38 60 00 3C */	li r3, 0x3c
+/* 10133594 00133594  4B F0 1B 5D */	bl "__nw__FUlPv"
+/* 10133598 00133598  28 03 00 00 */	cmplwi r3, 0
+/* 1013359C 0013359C  41 82 00 10 */	beq lbl_101335AC
+/* 101335A0 001335A0  90 3F 00 B4 */	stw r1, 0xb4(r31)
+/* 101335A4 001335A4  7F 44 D3 78 */	mr r4, r26
+/* 101335A8 001335A8  48 00 08 39 */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_101335AC:
+/* 101335AC 001335AC  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101335B0 001335B0  3B 5A 00 3C */	addi r26, r26, 0x3c
+/* 101335B4 001335B4  3B 39 00 3C */	addi r25, r25, 0x3c
+/* 101335B8 001335B8  38 03 00 01 */	addi r0, r3, 1
+/* 101335BC 001335BC  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_101335C0:
+/* 101335C0 001335C0  7C 1A E0 40 */	cmplw r26, r28
+/* 101335C4 001335C4  41 80 FF C0 */	blt lbl_10133584
+/* 101335C8 001335C8  48 00 00 40 */	b lbl_10133608
+lbl_101335CC:
+/* 101335CC 001335CC  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101335D0 001335D0  48 00 08 D1 */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 101335D4 001335D4  38 99 00 00 */	addi r4, r25, 0
+/* 101335D8 001335D8  38 60 00 3C */	li r3, 0x3c
+/* 101335DC 001335DC  4B F0 1B 15 */	bl "__nw__FUlPv"
+/* 101335E0 001335E0  28 03 00 00 */	cmplwi r3, 0
+/* 101335E4 001335E4  41 82 00 10 */	beq lbl_101335F4
+/* 101335E8 001335E8  90 3F 00 CC */	stw r1, 0xcc(r31)
+/* 101335EC 001335EC  7F C4 F3 78 */	mr r4, r30
+/* 101335F0 001335F0  48 00 07 F1 */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_101335F4:
+/* 101335F4 001335F4  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101335F8 001335F8  3B 39 00 3C */	addi r25, r25, 0x3c
+/* 101335FC 001335FC  3B BD FF FF */	addi r29, r29, -1
+/* 10133600 00133600  38 03 00 01 */	addi r0, r3, 1
+/* 10133604 00133604  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_10133608:
+/* 10133608 00133608  28 1D 00 00 */	cmplwi r29, 0
+/* 1013360C 0013360C  40 82 FF C0 */	bne lbl_101335CC
+/* 10133610 00133610  48 00 00 40 */	b lbl_10133650
+lbl_10133614:
+/* 10133614 00133614  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10133618 00133618  48 00 08 89 */	bl "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+/* 1013361C 0013361C  38 99 00 00 */	addi r4, r25, 0
+/* 10133620 00133620  38 60 00 3C */	li r3, 0x3c
+/* 10133624 00133624  4B F0 1A CD */	bl "__nw__FUlPv"
+/* 10133628 00133628  28 03 00 00 */	cmplwi r3, 0
+/* 1013362C 0013362C  41 82 00 10 */	beq lbl_1013363C
+/* 10133630 00133630  90 3F 00 E4 */	stw r1, 0xe4(r31)
+/* 10133634 00133634  7F 44 D3 78 */	mr r4, r26
+/* 10133638 00133638  48 00 07 A9 */	bl "__ct__11RoutingSlotFRC11RoutingSlot"
+lbl_1013363C:
+/* 1013363C 0013363C  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 10133640 00133640  3B 5A 00 3C */	addi r26, r26, 0x3c
+/* 10133644 00133644  3B 39 00 3C */	addi r25, r25, 0x3c
+/* 10133648 00133648  38 03 00 01 */	addi r0, r3, 1
+/* 1013364C 0013364C  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_10133650:
+/* 10133650 00133650  7C 1A B8 40 */	cmplw r26, r23
+/* 10133654 00133654  41 80 FF C0 */	blt lbl_10133614
+/* 10133658 00133658  38 9B 00 00 */	addi r4, r27, 0
+/* 1013365C 0013365C  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10133660 00133660  48 00 00 B1 */	bl "swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v"
+/* 10133664 00133664  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10133668 00133668  38 80 FF FF */	li r4, -1
+/* 1013366C 0013366C  4B F8 F1 75 */	bl "__dt__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>Fv"
+lbl_10133670:
+/* 10133670 00133670  80 1F 01 28 */	lwz r0, 0x128(r31)
+/* 10133674 00133674  80 21 00 00 */	lwz r1, 0(r1)
+/* 10133678 00133678  7C 08 03 A6 */	mtlr r0
+/* 1013367C 0013367C  BA A1 FF D4 */	lmw r21, -0x2c(r1)
+/* 10133680 00133680  4E 80 00 20 */	blr 
+
+.global "swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v"
+"swap<11RoutingSlot,Q23std24allocator<11RoutingSlot>>__3stdFRQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>RQ23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>_v":
+/* 10133710 00133710  93 E1 FF FC */	stw r31, -4(r1)
+/* 10133714 00133714  7C 08 02 A6 */	mflr r0
+/* 10133718 00133718  3B E4 00 00 */	addi r31, r4, 0
+/* 1013371C 0013371C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10133720 00133720  3B C3 00 00 */	addi r30, r3, 0
+/* 10133724 00133724  7C 1E F8 40 */	cmplw r30, r31
+/* 10133728 00133728  90 01 00 08 */	stw r0, 8(r1)
+/* 1013372C 0013372C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10133730 00133730  41 82 00 28 */	beq lbl_10133758
+/* 10133734 00133734  48 00 01 2D */	bl "swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>"
+/* 10133738 00133738  80 7E 00 08 */	lwz r3, 8(r30)
+/* 1013373C 0013373C  80 1F 00 08 */	lwz r0, 8(r31)
+/* 10133740 00133740  90 1E 00 08 */	stw r0, 8(r30)
+/* 10133744 00133744  90 7F 00 08 */	stw r3, 8(r31)
+/* 10133748 00133748  80 7E 00 04 */	lwz r3, 4(r30)
+/* 1013374C 0013374C  80 1F 00 04 */	lwz r0, 4(r31)
+/* 10133750 00133750  90 1E 00 04 */	stw r0, 4(r30)
+/* 10133754 00133754  90 7F 00 04 */	stw r3, 4(r31)
+lbl_10133758:
+/* 10133758 00133758  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1013375C 0013375C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10133760 00133760  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10133764 00133764  7C 08 03 A6 */	mtlr r0
+/* 10133768 00133768  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1013376C 0013376C  4E 80 00 20 */	blr 
+
+.global "swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>"
+"swap__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRQ210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>":
+/* 10133860 00133860  80 A3 00 00 */	lwz r5, 0(r3)
+/* 10133864 00133864  80 04 00 00 */	lwz r0, 0(r4)
+/* 10133868 00133868  90 03 00 00 */	stw r0, 0(r3)
+/* 1013386C 0013386C  90 A4 00 00 */	stw r5, 0(r4)
+/* 10133870 00133870  4E 80 00 20 */	blr 
+
+.global "__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul"
+"__ct__Q210Metrowerks52compressed_pair<Q23std24allocator<11RoutingSlot>,Ul>FRCQ23std24allocator<11RoutingSlot>Ul":
+/* 10133920 00133920  90 A3 00 00 */	stw r5, 0(r3)
+/* 10133924 00133924  4E 80 00 20 */	blr 
+
+.global "fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot"
+"fill_n__Q23std28__fill_n<11RoutingSlot,Ul,0>FP11RoutingSlotUlRC11RoutingSlot":
+/* 101339B0 001339B0  28 04 00 00 */	cmplwi r4, 0
+/* 101339B4 001339B4  4D 82 00 20 */	beqlr 
+/* 101339B8 001339B8  54 80 F8 7F */	rlwinm. r0, r4, 0x1f, 1, 0x1f
+/* 101339BC 001339BC  7C 09 03 A6 */	mtctr r0
+/* 101339C0 001339C0  41 82 01 04 */	beq lbl_10133AC4
+lbl_101339C4:
+/* 101339C4 001339C4  C0 05 00 00 */	lfs f0, 0(r5)
+/* 101339C8 001339C8  D0 03 00 00 */	stfs f0, 0(r3)
+/* 101339CC 001339CC  C0 05 00 04 */	lfs f0, 4(r5)
+/* 101339D0 001339D0  D0 03 00 04 */	stfs f0, 4(r3)
+/* 101339D4 001339D4  C0 05 00 08 */	lfs f0, 8(r5)
+/* 101339D8 001339D8  D0 03 00 08 */	stfs f0, 8(r3)
+/* 101339DC 001339DC  80 05 00 0C */	lwz r0, 0xc(r5)
+/* 101339E0 001339E0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 101339E4 001339E4  80 C5 00 10 */	lwz r6, 0x10(r5)
+/* 101339E8 001339E8  80 05 00 14 */	lwz r0, 0x14(r5)
+/* 101339EC 001339EC  90 C3 00 10 */	stw r6, 0x10(r3)
+/* 101339F0 001339F0  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101339F4 001339F4  80 05 00 18 */	lwz r0, 0x18(r5)
+/* 101339F8 001339F8  90 03 00 18 */	stw r0, 0x18(r3)
+/* 101339FC 001339FC  80 05 00 1C */	lwz r0, 0x1c(r5)
+/* 10133A00 00133A00  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 10133A04 00133A04  80 05 00 20 */	lwz r0, 0x20(r5)
+/* 10133A08 00133A08  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10133A0C 00133A0C  80 05 00 24 */	lwz r0, 0x24(r5)
+/* 10133A10 00133A10  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10133A14 00133A14  80 05 00 28 */	lwz r0, 0x28(r5)
+/* 10133A18 00133A18  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10133A1C 00133A1C  80 05 00 2C */	lwz r0, 0x2c(r5)
+/* 10133A20 00133A20  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 10133A24 00133A24  C0 05 00 30 */	lfs f0, 0x30(r5)
+/* 10133A28 00133A28  D0 03 00 30 */	stfs f0, 0x30(r3)
+/* 10133A2C 00133A2C  80 05 00 34 */	lwz r0, 0x34(r5)
+/* 10133A30 00133A30  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10133A34 00133A34  80 05 00 38 */	lwz r0, 0x38(r5)
+/* 10133A38 00133A38  90 03 00 38 */	stw r0, 0x38(r3)
+/* 10133A3C 00133A3C  C0 05 00 00 */	lfs f0, 0(r5)
+/* 10133A40 00133A40  D0 03 00 3C */	stfs f0, 0x3c(r3)
+/* 10133A44 00133A44  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10133A48 00133A48  D0 03 00 40 */	stfs f0, 0x40(r3)
+/* 10133A4C 00133A4C  C0 05 00 08 */	lfs f0, 8(r5)
+/* 10133A50 00133A50  D0 03 00 44 */	stfs f0, 0x44(r3)
+/* 10133A54 00133A54  80 05 00 0C */	lwz r0, 0xc(r5)
+/* 10133A58 00133A58  90 03 00 48 */	stw r0, 0x48(r3)
+/* 10133A5C 00133A5C  80 C5 00 10 */	lwz r6, 0x10(r5)
+/* 10133A60 00133A60  80 05 00 14 */	lwz r0, 0x14(r5)
+/* 10133A64 00133A64  90 C3 00 4C */	stw r6, 0x4c(r3)
+/* 10133A68 00133A68  90 03 00 50 */	stw r0, 0x50(r3)
+/* 10133A6C 00133A6C  80 05 00 18 */	lwz r0, 0x18(r5)
+/* 10133A70 00133A70  90 03 00 54 */	stw r0, 0x54(r3)
+/* 10133A74 00133A74  80 05 00 1C */	lwz r0, 0x1c(r5)
+/* 10133A78 00133A78  90 03 00 58 */	stw r0, 0x58(r3)
+/* 10133A7C 00133A7C  80 05 00 20 */	lwz r0, 0x20(r5)
+/* 10133A80 00133A80  90 03 00 5C */	stw r0, 0x5c(r3)
+/* 10133A84 00133A84  80 05 00 24 */	lwz r0, 0x24(r5)
+/* 10133A88 00133A88  90 03 00 60 */	stw r0, 0x60(r3)
+/* 10133A8C 00133A8C  80 05 00 28 */	lwz r0, 0x28(r5)
+/* 10133A90 00133A90  90 03 00 64 */	stw r0, 0x64(r3)
+/* 10133A94 00133A94  80 05 00 2C */	lwz r0, 0x2c(r5)
+/* 10133A98 00133A98  90 03 00 68 */	stw r0, 0x68(r3)
+/* 10133A9C 00133A9C  C0 05 00 30 */	lfs f0, 0x30(r5)
+/* 10133AA0 00133AA0  D0 03 00 6C */	stfs f0, 0x6c(r3)
+/* 10133AA4 00133AA4  80 05 00 34 */	lwz r0, 0x34(r5)
+/* 10133AA8 00133AA8  90 03 00 70 */	stw r0, 0x70(r3)
+/* 10133AAC 00133AAC  80 05 00 38 */	lwz r0, 0x38(r5)
+/* 10133AB0 00133AB0  90 03 00 74 */	stw r0, 0x74(r3)
+/* 10133AB4 00133AB4  38 63 00 78 */	addi r3, r3, 0x78
+/* 10133AB8 00133AB8  42 00 FF 0C */	bdnz lbl_101339C4
+/* 10133ABC 00133ABC  70 84 00 01 */	andi. r4, r4, 1
+/* 10133AC0 00133AC0  4D 82 00 20 */	beqlr 
+lbl_10133AC4:
+/* 10133AC4 00133AC4  7C 89 03 A6 */	mtctr r4
+lbl_10133AC8:
+/* 10133AC8 00133AC8  C0 05 00 00 */	lfs f0, 0(r5)
+/* 10133ACC 00133ACC  D0 03 00 00 */	stfs f0, 0(r3)
+/* 10133AD0 00133AD0  C0 05 00 04 */	lfs f0, 4(r5)
+/* 10133AD4 00133AD4  D0 03 00 04 */	stfs f0, 4(r3)
+/* 10133AD8 00133AD8  C0 05 00 08 */	lfs f0, 8(r5)
+/* 10133ADC 00133ADC  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10133AE0 00133AE0  80 05 00 0C */	lwz r0, 0xc(r5)
+/* 10133AE4 00133AE4  90 03 00 0C */	stw r0, 0xc(r3)
+/* 10133AE8 00133AE8  80 C5 00 10 */	lwz r6, 0x10(r5)
+/* 10133AEC 00133AEC  80 05 00 14 */	lwz r0, 0x14(r5)
+/* 10133AF0 00133AF0  90 C3 00 10 */	stw r6, 0x10(r3)
+/* 10133AF4 00133AF4  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10133AF8 00133AF8  80 05 00 18 */	lwz r0, 0x18(r5)
+/* 10133AFC 00133AFC  90 03 00 18 */	stw r0, 0x18(r3)
+/* 10133B00 00133B00  80 05 00 1C */	lwz r0, 0x1c(r5)
+/* 10133B04 00133B04  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 10133B08 00133B08  80 05 00 20 */	lwz r0, 0x20(r5)
+/* 10133B0C 00133B0C  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10133B10 00133B10  80 05 00 24 */	lwz r0, 0x24(r5)
+/* 10133B14 00133B14  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10133B18 00133B18  80 05 00 28 */	lwz r0, 0x28(r5)
+/* 10133B1C 00133B1C  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10133B20 00133B20  80 05 00 2C */	lwz r0, 0x2c(r5)
+/* 10133B24 00133B24  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 10133B28 00133B28  C0 05 00 30 */	lfs f0, 0x30(r5)
+/* 10133B2C 00133B2C  D0 03 00 30 */	stfs f0, 0x30(r3)
+/* 10133B30 00133B30  80 05 00 34 */	lwz r0, 0x34(r5)
+/* 10133B34 00133B34  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10133B38 00133B38  80 05 00 38 */	lwz r0, 0x38(r5)
+/* 10133B3C 00133B3C  90 03 00 38 */	stw r0, 0x38(r3)
+/* 10133B40 00133B40  38 63 00 3C */	addi r3, r3, 0x3c
+/* 10133B44 00133B44  42 00 FF 84 */	bdnz lbl_10133AC8
+/* 10133B48 00133B48  4E 80 00 20 */	blr 
+
+.global "copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot"
+"copy_backward__Q23std34__copy_backward<11RoutingSlot,0,0>FP11RoutingSlotP11RoutingSlotP11RoutingSlot":
+/* 10133BB0 00133BB0  38 C4 00 3B */	addi r6, r4, 0x3b
+/* 10133BB4 00133BB4  7C 04 18 40 */	cmplw r4, r3
+/* 10133BB8 00133BB8  7C C3 30 50 */	subf r6, r3, r6
+/* 10133BBC 00133BBC  38 00 00 3C */	li r0, 0x3c
+/* 10133BC0 00133BC0  7C C6 03 96 */	divwu r6, r6, r0
+/* 10133BC4 00133BC4  40 81 01 9C */	ble lbl_10133D60
+/* 10133BC8 00133BC8  54 C0 F8 7F */	rlwinm. r0, r6, 0x1f, 1, 0x1f
+/* 10133BCC 00133BCC  7C 09 03 A6 */	mtctr r0
+/* 10133BD0 00133BD0  41 82 01 08 */	beq lbl_10133CD8
+lbl_10133BD4:
+/* 10133BD4 00133BD4  C0 04 FF C4 */	lfs f0, -0x3c(r4)
+/* 10133BD8 00133BD8  D0 05 FF C4 */	stfs f0, -0x3c(r5)
+/* 10133BDC 00133BDC  C0 04 FF C8 */	lfs f0, -0x38(r4)
+/* 10133BE0 00133BE0  D0 05 FF C8 */	stfs f0, -0x38(r5)
+/* 10133BE4 00133BE4  C0 04 FF CC */	lfs f0, -0x34(r4)
+/* 10133BE8 00133BE8  D0 05 FF CC */	stfs f0, -0x34(r5)
+/* 10133BEC 00133BEC  80 04 FF D0 */	lwz r0, -0x30(r4)
+/* 10133BF0 00133BF0  90 05 FF D0 */	stw r0, -0x30(r5)
+/* 10133BF4 00133BF4  80 64 FF D4 */	lwz r3, -0x2c(r4)
+/* 10133BF8 00133BF8  80 04 FF D8 */	lwz r0, -0x28(r4)
+/* 10133BFC 00133BFC  90 65 FF D4 */	stw r3, -0x2c(r5)
+/* 10133C00 00133C00  90 05 FF D8 */	stw r0, -0x28(r5)
+/* 10133C04 00133C04  80 04 FF DC */	lwz r0, -0x24(r4)
+/* 10133C08 00133C08  90 05 FF DC */	stw r0, -0x24(r5)
+/* 10133C0C 00133C0C  80 04 FF E0 */	lwz r0, -0x20(r4)
+/* 10133C10 00133C10  90 05 FF E0 */	stw r0, -0x20(r5)
+/* 10133C14 00133C14  80 04 FF E4 */	lwz r0, -0x1c(r4)
+/* 10133C18 00133C18  90 05 FF E4 */	stw r0, -0x1c(r5)
+/* 10133C1C 00133C1C  80 04 FF E8 */	lwz r0, -0x18(r4)
+/* 10133C20 00133C20  90 05 FF E8 */	stw r0, -0x18(r5)
+/* 10133C24 00133C24  80 04 FF EC */	lwz r0, -0x14(r4)
+/* 10133C28 00133C28  90 05 FF EC */	stw r0, -0x14(r5)
+/* 10133C2C 00133C2C  80 04 FF F0 */	lwz r0, -0x10(r4)
+/* 10133C30 00133C30  90 05 FF F0 */	stw r0, -0x10(r5)
+/* 10133C34 00133C34  C0 04 FF F4 */	lfs f0, -0xc(r4)
+/* 10133C38 00133C38  D0 05 FF F4 */	stfs f0, -0xc(r5)
+/* 10133C3C 00133C3C  80 04 FF F8 */	lwz r0, -8(r4)
+/* 10133C40 00133C40  90 05 FF F8 */	stw r0, -8(r5)
+/* 10133C44 00133C44  80 04 FF FC */	lwz r0, -4(r4)
+/* 10133C48 00133C48  90 05 FF FC */	stw r0, -4(r5)
+/* 10133C4C 00133C4C  C0 04 FF 88 */	lfs f0, -0x78(r4)
+/* 10133C50 00133C50  D0 05 FF 88 */	stfs f0, -0x78(r5)
+/* 10133C54 00133C54  C0 04 FF 8C */	lfs f0, -0x74(r4)
+/* 10133C58 00133C58  38 84 FF 88 */	addi r4, r4, -120
+/* 10133C5C 00133C5C  D0 05 FF 8C */	stfs f0, -0x74(r5)
+/* 10133C60 00133C60  38 A5 FF 88 */	addi r5, r5, -120
+/* 10133C64 00133C64  C0 04 00 08 */	lfs f0, 8(r4)
+/* 10133C68 00133C68  D0 05 00 08 */	stfs f0, 8(r5)
+/* 10133C6C 00133C6C  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 10133C70 00133C70  90 05 00 0C */	stw r0, 0xc(r5)
+/* 10133C74 00133C74  80 64 00 10 */	lwz r3, 0x10(r4)
+/* 10133C78 00133C78  80 04 00 14 */	lwz r0, 0x14(r4)
+/* 10133C7C 00133C7C  90 65 00 10 */	stw r3, 0x10(r5)
+/* 10133C80 00133C80  90 05 00 14 */	stw r0, 0x14(r5)
+/* 10133C84 00133C84  80 04 00 18 */	lwz r0, 0x18(r4)
+/* 10133C88 00133C88  90 05 00 18 */	stw r0, 0x18(r5)
+/* 10133C8C 00133C8C  80 04 00 1C */	lwz r0, 0x1c(r4)
+/* 10133C90 00133C90  90 05 00 1C */	stw r0, 0x1c(r5)
+/* 10133C94 00133C94  80 04 00 20 */	lwz r0, 0x20(r4)
+/* 10133C98 00133C98  90 05 00 20 */	stw r0, 0x20(r5)
+/* 10133C9C 00133C9C  80 04 00 24 */	lwz r0, 0x24(r4)
+/* 10133CA0 00133CA0  90 05 00 24 */	stw r0, 0x24(r5)
+/* 10133CA4 00133CA4  80 04 00 28 */	lwz r0, 0x28(r4)
+/* 10133CA8 00133CA8  90 05 00 28 */	stw r0, 0x28(r5)
+/* 10133CAC 00133CAC  80 04 00 2C */	lwz r0, 0x2c(r4)
+/* 10133CB0 00133CB0  90 05 00 2C */	stw r0, 0x2c(r5)
+/* 10133CB4 00133CB4  C0 04 00 30 */	lfs f0, 0x30(r4)
+/* 10133CB8 00133CB8  D0 05 00 30 */	stfs f0, 0x30(r5)
+/* 10133CBC 00133CBC  80 04 00 34 */	lwz r0, 0x34(r4)
+/* 10133CC0 00133CC0  90 05 00 34 */	stw r0, 0x34(r5)
+/* 10133CC4 00133CC4  80 04 00 38 */	lwz r0, 0x38(r4)
+/* 10133CC8 00133CC8  90 05 00 38 */	stw r0, 0x38(r5)
+/* 10133CCC 00133CCC  42 00 FF 08 */	bdnz lbl_10133BD4
+/* 10133CD0 00133CD0  70 C6 00 01 */	andi. r6, r6, 1
+/* 10133CD4 00133CD4  41 82 00 8C */	beq lbl_10133D60
+lbl_10133CD8:
+/* 10133CD8 00133CD8  7C C9 03 A6 */	mtctr r6
+lbl_10133CDC:
+/* 10133CDC 00133CDC  C0 04 FF C4 */	lfs f0, -0x3c(r4)
+/* 10133CE0 00133CE0  D0 05 FF C4 */	stfs f0, -0x3c(r5)
+/* 10133CE4 00133CE4  C0 04 FF C8 */	lfs f0, -0x38(r4)
+/* 10133CE8 00133CE8  38 84 FF C4 */	addi r4, r4, -60
+/* 10133CEC 00133CEC  D0 05 FF C8 */	stfs f0, -0x38(r5)
+/* 10133CF0 00133CF0  38 A5 FF C4 */	addi r5, r5, -60
+/* 10133CF4 00133CF4  C0 04 00 08 */	lfs f0, 8(r4)
+/* 10133CF8 00133CF8  D0 05 00 08 */	stfs f0, 8(r5)
+/* 10133CFC 00133CFC  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 10133D00 00133D00  90 05 00 0C */	stw r0, 0xc(r5)
+/* 10133D04 00133D04  80 64 00 10 */	lwz r3, 0x10(r4)
+/* 10133D08 00133D08  80 04 00 14 */	lwz r0, 0x14(r4)
+/* 10133D0C 00133D0C  90 65 00 10 */	stw r3, 0x10(r5)
+/* 10133D10 00133D10  90 05 00 14 */	stw r0, 0x14(r5)
+/* 10133D14 00133D14  80 04 00 18 */	lwz r0, 0x18(r4)
+/* 10133D18 00133D18  90 05 00 18 */	stw r0, 0x18(r5)
+/* 10133D1C 00133D1C  80 04 00 1C */	lwz r0, 0x1c(r4)
+/* 10133D20 00133D20  90 05 00 1C */	stw r0, 0x1c(r5)
+/* 10133D24 00133D24  80 04 00 20 */	lwz r0, 0x20(r4)
+/* 10133D28 00133D28  90 05 00 20 */	stw r0, 0x20(r5)
+/* 10133D2C 00133D2C  80 04 00 24 */	lwz r0, 0x24(r4)
+/* 10133D30 00133D30  90 05 00 24 */	stw r0, 0x24(r5)
+/* 10133D34 00133D34  80 04 00 28 */	lwz r0, 0x28(r4)
+/* 10133D38 00133D38  90 05 00 28 */	stw r0, 0x28(r5)
+/* 10133D3C 00133D3C  80 04 00 2C */	lwz r0, 0x2c(r4)
+/* 10133D40 00133D40  90 05 00 2C */	stw r0, 0x2c(r5)
+/* 10133D44 00133D44  C0 04 00 30 */	lfs f0, 0x30(r4)
+/* 10133D48 00133D48  D0 05 00 30 */	stfs f0, 0x30(r5)
+/* 10133D4C 00133D4C  80 04 00 34 */	lwz r0, 0x34(r4)
+/* 10133D50 00133D50  90 05 00 34 */	stw r0, 0x34(r5)
+/* 10133D54 00133D54  80 04 00 38 */	lwz r0, 0x38(r4)
+/* 10133D58 00133D58  90 05 00 38 */	stw r0, 0x38(r5)
+/* 10133D5C 00133D5C  42 00 FF 80 */	bdnz lbl_10133CDC
+lbl_10133D60:
+/* 10133D60 00133D60  7C A3 2B 78 */	mr r3, r5
+/* 10133D64 00133D64  4E 80 00 20 */	blr 
+
+.global "__ct__11RoutingSlotFRC11RoutingSlot"
+"__ct__11RoutingSlotFRC11RoutingSlot":
+/* 10133DE0 00133DE0  C0 04 00 00 */	lfs f0, 0(r4)
+/* 10133DE4 00133DE4  D0 03 00 00 */	stfs f0, 0(r3)
+/* 10133DE8 00133DE8  C0 04 00 04 */	lfs f0, 4(r4)
+/* 10133DEC 00133DEC  D0 03 00 04 */	stfs f0, 4(r3)
+/* 10133DF0 00133DF0  C0 04 00 08 */	lfs f0, 8(r4)
+/* 10133DF4 00133DF4  D0 03 00 08 */	stfs f0, 8(r3)
+/* 10133DF8 00133DF8  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 10133DFC 00133DFC  90 03 00 0C */	stw r0, 0xc(r3)
+/* 10133E00 00133E00  80 A4 00 10 */	lwz r5, 0x10(r4)
+/* 10133E04 00133E04  80 04 00 14 */	lwz r0, 0x14(r4)
+/* 10133E08 00133E08  90 A3 00 10 */	stw r5, 0x10(r3)
+/* 10133E0C 00133E0C  90 03 00 14 */	stw r0, 0x14(r3)
+/* 10133E10 00133E10  80 04 00 18 */	lwz r0, 0x18(r4)
+/* 10133E14 00133E14  90 03 00 18 */	stw r0, 0x18(r3)
+/* 10133E18 00133E18  80 04 00 1C */	lwz r0, 0x1c(r4)
+/* 10133E1C 00133E1C  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 10133E20 00133E20  80 04 00 20 */	lwz r0, 0x20(r4)
+/* 10133E24 00133E24  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10133E28 00133E28  80 04 00 24 */	lwz r0, 0x24(r4)
+/* 10133E2C 00133E2C  90 03 00 24 */	stw r0, 0x24(r3)
+/* 10133E30 00133E30  80 04 00 28 */	lwz r0, 0x28(r4)
+/* 10133E34 00133E34  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10133E38 00133E38  80 04 00 2C */	lwz r0, 0x2c(r4)
+/* 10133E3C 00133E3C  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 10133E40 00133E40  C0 04 00 30 */	lfs f0, 0x30(r4)
+/* 10133E44 00133E44  D0 03 00 30 */	stfs f0, 0x30(r3)
+/* 10133E48 00133E48  80 04 00 34 */	lwz r0, 0x34(r4)
+/* 10133E4C 00133E4C  90 03 00 34 */	stw r0, 0x34(r3)
+/* 10133E50 00133E50  80 04 00 38 */	lwz r0, 0x38(r4)
+/* 10133E54 00133E54  90 03 00 38 */	stw r0, 0x38(r3)
+/* 10133E58 00133E58  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv"
+"first__Q310Metrowerks7details58compressed_pair_imp<Q23std24allocator<11RoutingSlot>,Ul,1>Fv":
+/* 10133EA0 00133EA0  4E 80 00 20 */	blr 
+
+.global "cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
+"cap__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv":
+/* 10133F20 00133F20  4E 80 00 20 */	blr 
+
+.global "max_size__Q23std24allocator<11RoutingSlot>CFv"
+"max_size__Q23std24allocator<11RoutingSlot>CFv":
+/* 10133F90 00133F90  3C 60 04 44 */	lis r3, 0x444
+/* 10133F94 00133F94  38 63 44 44 */	addi r3, r3, 0x4444
+/* 10133F98 00133F98  4E 80 00 20 */	blr 
+
+.global "alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv"
+"alloc__Q23std64__vector_deleter<11RoutingSlot,Q23std24allocator<11RoutingSlot>>CFv":
+/* 10133FE0 00133FE0  4E 80 00 20 */	blr 
+
+.global "__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+"__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
+/* 10134050 00134050  93 E1 FF FC */	stw r31, -4(r1)
+/* 10134054 00134054  7C 08 02 A6 */	mflr r0
+/* 10134058 00134058  93 C1 FF F8 */	stw r30, -8(r1)
+/* 1013405C 0013405C  3B C4 00 00 */	addi r30, r4, 0
+/* 10134060 00134060  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 10134064 00134064  7C 7D 1B 79 */	or. r29, r3, r3
+/* 10134068 00134068  90 01 00 08 */	stw r0, 8(r1)
+/* 1013406C 0013406C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10134070 00134070  41 82 00 40 */	beq lbl_101340B0
+/* 10134074 00134074  48 00 03 6D */	bl "clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+/* 10134078 00134078  80 1D 00 08 */	lwz r0, 8(r29)
+/* 1013407C 0013407C  28 00 00 00 */	cmplwi r0, 0
+/* 10134080 00134080  41 82 00 20 */	beq lbl_101340A0
+/* 10134084 00134084  7F A3 EB 78 */	mr r3, r29
+/* 10134088 00134088  48 00 01 39 */	bl "second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 1013408C 0013408C  83 FD 00 08 */	lwz r31, 8(r29)
+/* 10134090 00134090  7F A3 EB 78 */	mr r3, r29
+/* 10134094 00134094  48 00 00 AD */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10134098 00134098  7F E3 FB 78 */	mr r3, r31
+/* 1013409C 0013409C  48 45 45 F5 */	bl func_10588690
+lbl_101340A0:
+/* 101340A0 001340A0  7F C0 07 35 */	extsh. r0, r30
+/* 101340A4 001340A4  40 81 00 0C */	ble lbl_101340B0
+/* 101340A8 001340A8  7F A3 EB 78 */	mr r3, r29
+/* 101340AC 001340AC  48 45 45 E5 */	bl func_10588690
+lbl_101340B0:
+/* 101340B0 001340B0  7F A3 EB 78 */	mr r3, r29
+/* 101340B4 001340B4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101340B8 001340B8  38 21 00 50 */	addi r1, r1, 0x50
+/* 101340BC 001340BC  7C 08 03 A6 */	mtlr r0
+/* 101340C0 001340C0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101340C4 001340C4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101340C8 001340C8  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101340CC 001340CC  4E 80 00 20 */	blr 
+
+.global "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+"first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv":
+/* 10134140 00134140  4E 80 00 20 */	blr 
+
+.global "second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+"second__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv":
+/* 101341C0 001341C0  4E 80 00 20 */	blr 
+
+.global "ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s"
+"ReconLoadObject<35ReconStreamVector<14SlotDescriptor>>__FP35ReconStreamVector<14SlotDescriptor>P8iResFilelsPl_s":
+/* 10134240 00134240  93 E1 FF FC */	stw r31, -4(r1)
+/* 10134244 00134244  7C 08 02 A6 */	mflr r0
+/* 10134248 00134248  83 E2 8F DC */	lwz r31, lbl_105BA43C-_R2_BASE_(r2)
+/* 1013424C 0013424C  90 01 00 08 */	stw r0, 8(r1)
+/* 10134250 00134250  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10134254 00134254  90 61 00 48 */	stw r3, 0x48(r1)
+/* 10134258 00134258  38 61 00 40 */	addi r3, r1, 0x40
+/* 1013425C 0013425C  90 A1 00 4C */	stw r5, 0x4c(r1)
+/* 10134260 00134260  38 A4 00 00 */	addi r5, r4, 0
+/* 10134264 00134264  38 81 00 44 */	addi r4, r1, 0x44
+/* 10134268 00134268  93 E1 00 44 */	stw r31, 0x44(r1)
+/* 1013426C 0013426C  4B FE 0C 95 */	bl "Reconstitute__12ReconBuilderFP11ReconObjectP8iResFilesPl"
+/* 10134270 00134270  93 E1 00 44 */	stw r31, 0x44(r1)
+/* 10134274 00134274  3B E3 00 00 */	addi r31, r3, 0
+/* 10134278 00134278  38 61 00 44 */	addi r3, r1, 0x44
+/* 1013427C 0013427C  38 80 00 00 */	li r4, 0
+/* 10134280 00134280  4B FE 0A 11 */	bl "__dt__11ReconObjectFv"
+/* 10134284 00134284  7F E3 FB 78 */	mr r3, r31
+/* 10134288 00134288  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 1013428C 0013428C  38 21 00 60 */	addi r1, r1, 0x60
+/* 10134290 00134290  7C 08 03 A6 */	mtlr r0
+/* 10134294 00134294  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10134298 00134298  4E 80 00 20 */	blr 
+
+.global "__dt__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv"
+"__dt__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv":
+/* 10134320 00134320  93 E1 FF FC */	stw r31, -4(r1)
+/* 10134324 00134324  7C 08 02 A6 */	mflr r0
+/* 10134328 00134328  3B E4 00 00 */	addi r31, r4, 0
+/* 1013432C 0013432C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10134330 00134330  7C 7E 1B 79 */	or. r30, r3, r3
+/* 10134334 00134334  90 01 00 08 */	stw r0, 8(r1)
+/* 10134338 00134338  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 1013433C 0013433C  41 82 00 24 */	beq lbl_10134360
+/* 10134340 00134340  80 02 8F DC */	lwz r0, lbl_105BA43C-_R2_BASE_(r2)
+/* 10134344 00134344  38 80 00 00 */	li r4, 0
+/* 10134348 00134348  90 1E 00 00 */	stw r0, 0(r30)
+/* 1013434C 0013434C  4B FE 09 45 */	bl "__dt__11ReconObjectFv"
+/* 10134350 00134350  7F E0 07 35 */	extsh. r0, r31
+/* 10134354 00134354  40 81 00 0C */	ble lbl_10134360
+/* 10134358 00134358  7F C3 F3 78 */	mr r3, r30
+/* 1013435C 0013435C  48 45 43 35 */	bl func_10588690
+lbl_10134360:
+/* 10134360 00134360  7F C3 F3 78 */	mr r3, r30
+/* 10134364 00134364  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10134368 00134368  38 21 00 50 */	addi r1, r1, 0x50
+/* 1013436C 0013436C  7C 08 03 A6 */	mtlr r0
+/* 10134370 00134370  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10134374 00134374  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10134378 00134378  4E 80 00 20 */	blr 
+
+.global "clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+"clear__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv":
+/* 101343E0 001343E0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101343E4 001343E4  7C 08 02 A6 */	mflr r0
+/* 101343E8 001343E8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101343EC 001343EC  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101343F0 001343F0  7C 7D 1B 78 */	mr r29, r3
+/* 101343F4 001343F4  90 01 00 08 */	stw r0, 8(r1)
+/* 101343F8 001343F8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101343FC 001343FC  80 03 00 04 */	lwz r0, 4(r3)
+/* 10134400 00134400  83 C3 00 08 */	lwz r30, 8(r3)
+/* 10134404 00134404  1C 00 00 48 */	mulli r0, r0, 0x48
+/* 10134408 00134408  7F FE 02 14 */	add r31, r30, r0
+/* 1013440C 0013440C  48 00 00 10 */	b lbl_1013441C
+lbl_10134410:
+/* 10134410 00134410  38 7D 00 00 */	addi r3, r29, 0
+/* 10134414 00134414  3B FF FF B8 */	addi r31, r31, -72
+/* 10134418 00134418  4B FF FD 29 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+lbl_1013441C:
+/* 1013441C 0013441C  7C 1F F0 40 */	cmplw r31, r30
+/* 10134420 00134420  41 81 FF F0 */	bgt lbl_10134410
+/* 10134424 00134424  38 00 00 00 */	li r0, 0
+/* 10134428 00134428  90 1D 00 04 */	stw r0, 4(r29)
+/* 1013442C 0013442C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 10134430 00134430  38 21 00 50 */	addi r1, r1, 0x50
+/* 10134434 00134434  7C 08 03 A6 */	mtlr r0
+/* 10134438 00134438  83 E1 FF FC */	lwz r31, -4(r1)
+/* 1013443C 0013443C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10134440 00134440  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 10134444 00134444  4E 80 00 20 */	blr 
+
+.global "GetType__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv"
+"GetType__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>Fv":
+/* 101344C0 001344C0  80 63 00 08 */	lwz r3, 8(r3)
+/* 101344C4 001344C4  4E 80 00 20 */	blr 
+
+.global "DoStream__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>FP11ReconBufferl"
+"DoStream__56SimpleReconObject<35ReconStreamVector<14SlotDescriptor>>FP11ReconBufferl":
+/* 10134520 00134520  7C 08 02 A6 */	mflr r0
+/* 10134524 00134524  90 01 00 08 */	stw r0, 8(r1)
+/* 10134528 00134528  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 1013452C 0013452C  80 63 00 04 */	lwz r3, 4(r3)
+/* 10134530 00134530  80 63 00 00 */	lwz r3, 0(r3)
+/* 10134534 00134534  48 00 00 7D */	bl "DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v"
+/* 10134538 00134538  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 1013453C 0013453C  38 21 00 40 */	addi r1, r1, 0x40
+/* 10134540 00134540  7C 08 03 A6 */	mtlr r0
+/* 10134544 00134544  4E 80 00 20 */	blr 
+
+.global "DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v"
+"DoContainerStream<Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>>__FRQ23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>P11ReconBufferl_v":
+/* 101345B0 001345B0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101345B4 001345B4  7C 08 02 A6 */	mflr r0
+/* 101345B8 001345B8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101345BC 001345BC  3B C5 00 00 */	addi r30, r5, 0
+/* 101345C0 001345C0  38 A0 00 01 */	li r5, 1
+/* 101345C4 001345C4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101345C8 001345C8  3B A4 00 00 */	addi r29, r4, 0
+/* 101345CC 001345CC  93 81 FF F0 */	stw r28, -0x10(r1)
+/* 101345D0 001345D0  7C 7C 1B 78 */	mr r28, r3
+/* 101345D4 001345D4  90 01 00 08 */	stw r0, 8(r1)
+/* 101345D8 001345D8  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 101345DC 001345DC  80 03 00 04 */	lwz r0, 4(r3)
+/* 101345E0 001345E0  38 81 00 40 */	addi r4, r1, 0x40
+/* 101345E4 001345E4  38 7D 00 00 */	addi r3, r29, 0
+/* 101345E8 001345E8  90 01 00 40 */	stw r0, 0x40(r1)
+/* 101345EC 001345EC  4B FE 13 65 */	bl "Recon32__11ReconBufferFPli"
+/* 101345F0 001345F0  80 61 00 40 */	lwz r3, 0x40(r1)
+/* 101345F4 001345F4  80 1C 00 04 */	lwz r0, 4(r28)
+/* 101345F8 001345F8  7F E3 00 51 */	subf. r31, r3, r0
+/* 101345FC 001345FC  40 80 00 48 */	bge lbl_10134644
+/* 10134600 00134600  38 61 00 60 */	addi r3, r1, 0x60
+/* 10134604 00134604  4B FF E4 0D */	bl "__ct__14SlotDescriptorFv"
+/* 10134608 00134608  7F 83 E3 78 */	mr r3, r28
+/* 1013460C 0013460C  48 00 03 E5 */	bl "size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv"
+/* 10134610 00134610  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 10134614 00134614  7F E3 00 50 */	subf r31, r3, r0
+/* 10134618 00134618  38 7C 00 00 */	addi r3, r28, 0
+/* 1013461C 0013461C  48 00 03 55 */	bl "end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+/* 10134620 00134620  90 61 00 4C */	stw r3, 0x4c(r1)
+/* 10134624 00134624  38 61 00 4C */	addi r3, r1, 0x4c
+/* 10134628 00134628  48 00 02 B9 */	bl "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 1013462C 0013462C  38 83 00 00 */	addi r4, r3, 0
+/* 10134630 00134630  38 C1 00 60 */	addi r6, r1, 0x60
+/* 10134634 00134634  38 7C 00 00 */	addi r3, r28, 0
+/* 10134638 00134638  38 BF 00 00 */	addi r5, r31, 0
+/* 1013463C 0013463C  48 00 06 C5 */	bl "insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor"
+/* 10134640 00134640  48 00 00 68 */	b lbl_101346A8
+lbl_10134644:
+/* 10134644 00134644  2C 1F 00 00 */	cmpwi r31, 0
+/* 10134648 00134648  40 81 00 60 */	ble lbl_101346A8
+/* 1013464C 0013464C  7F 83 E3 78 */	mr r3, r28
+/* 10134650 00134650  48 00 03 21 */	bl "end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+/* 10134654 00134654  90 61 00 50 */	stw r3, 0x50(r1)
+/* 10134658 00134658  38 61 00 50 */	addi r3, r1, 0x50
+/* 1013465C 0013465C  48 00 02 85 */	bl "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 10134660 00134660  90 61 00 48 */	stw r3, 0x48(r1)
+/* 10134664 00134664  7F 83 E3 78 */	mr r3, r28
+/* 10134668 00134668  48 00 03 09 */	bl "end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+/* 1013466C 0013466C  90 61 00 54 */	stw r3, 0x54(r1)
+/* 10134670 00134670  38 61 00 54 */	addi r3, r1, 0x54
+/* 10134674 00134674  48 00 02 6D */	bl "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 10134678 00134678  1C 1F 00 48 */	mulli r0, r31, 0x48
+/* 1013467C 0013467C  7C 00 18 50 */	subf r0, r0, r3
+/* 10134680 00134680  38 61 00 48 */	addi r3, r1, 0x48
+/* 10134684 00134684  90 01 00 44 */	stw r0, 0x44(r1)
+/* 10134688 00134688  48 00 01 C9 */	bl "__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 1013468C 0013468C  3B E3 00 00 */	addi r31, r3, 0
+/* 10134690 00134690  38 61 00 44 */	addi r3, r1, 0x44
+/* 10134694 00134694  48 00 01 BD */	bl "__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 10134698 00134698  38 83 00 00 */	addi r4, r3, 0
+/* 1013469C 0013469C  38 7C 00 00 */	addi r3, r28, 0
+/* 101346A0 001346A0  38 BF 00 00 */	addi r5, r31, 0
+/* 101346A4 001346A4  48 00 03 BD */	bl "erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor"
+lbl_101346A8:
+/* 101346A8 001346A8  7F 83 E3 78 */	mr r3, r28
+/* 101346AC 001346AC  48 00 01 35 */	bl "begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+/* 101346B0 001346B0  90 61 00 58 */	stw r3, 0x58(r1)
+/* 101346B4 001346B4  38 61 00 58 */	addi r3, r1, 0x58
+/* 101346B8 001346B8  48 00 02 29 */	bl "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 101346BC 001346BC  7C 7F 1B 78 */	mr r31, r3
+/* 101346C0 001346C0  48 00 00 18 */	b lbl_101346D8
+lbl_101346C4:
+/* 101346C4 001346C4  38 7F 00 00 */	addi r3, r31, 0
+/* 101346C8 001346C8  38 9D 00 00 */	addi r4, r29, 0
+/* 101346CC 001346CC  38 BE 00 00 */	addi r5, r30, 0
+/* 101346D0 001346D0  4B FF E0 21 */	bl "DoStream__14SlotDescriptorFP11ReconBufferl"
+/* 101346D4 001346D4  3B FF 00 48 */	addi r31, r31, 0x48
+lbl_101346D8:
+/* 101346D8 001346D8  7F 83 E3 78 */	mr r3, r28
+/* 101346DC 001346DC  48 00 02 95 */	bl "end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+/* 101346E0 001346E0  90 61 00 5C */	stw r3, 0x5c(r1)
+/* 101346E4 001346E4  38 61 00 5C */	addi r3, r1, 0x5c
+/* 101346E8 001346E8  48 00 01 F9 */	bl "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+/* 101346EC 001346EC  7C 1F 18 40 */	cmplw r31, r3
+/* 101346F0 001346F0  40 82 FF D4 */	bne lbl_101346C4
+/* 101346F4 001346F4  80 01 00 C8 */	lwz r0, 0xc8(r1)
+/* 101346F8 001346F8  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 101346FC 001346FC  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10134700 00134700  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 10134704 00134704  7C 08 03 A6 */	mtlr r0
+/* 10134708 00134708  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 1013470C 0013470C  83 81 FF F0 */	lwz r28, -0x10(r1)
+/* 10134710 00134710  4E 80 00 20 */	blr 
+
+.global "begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+"begin__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv":
+/* 101347E0 001347E0  80 63 00 08 */	lwz r3, 8(r3)
+/* 101347E4 001347E4  4E 80 00 20 */	blr 
+
+.global "__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+"__iterator2pointer__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor":
+/* 10134850 00134850  80 63 00 00 */	lwz r3, 0(r3)
+/* 10134854 00134854  4E 80 00 20 */	blr 
+
+.global "__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor"
+"__pointer2iterator__Q23std60vector<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>FRCP14SlotDescriptor":
+/* 101348E0 001348E0  80 63 00 00 */	lwz r3, 0(r3)
+/* 101348E4 001348E4  4E 80 00 20 */	blr 
+
+.global "end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv"
+"end__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>Fv":
+/* 10134970 00134970  80 03 00 04 */	lwz r0, 4(r3)
+/* 10134974 00134974  80 63 00 08 */	lwz r3, 8(r3)
+/* 10134978 00134978  1C 00 00 48 */	mulli r0, r0, 0x48
+/* 1013497C 0013497C  7C 63 02 14 */	add r3, r3, r0
+/* 10134980 00134980  4E 80 00 20 */	blr 
+
+.global "size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv"
+"size__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>CFv":
+/* 101349F0 001349F0  80 63 00 04 */	lwz r3, 4(r3)
+/* 101349F4 001349F4  4E 80 00 20 */	blr 
+
+.global "erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor"
+"erase__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorP14SlotDescriptor":
+/* 10134A60 00134A60  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 10134A64 00134A64  7C 08 02 A6 */	mflr r0
+/* 10134A68 00134A68  3B E4 00 00 */	addi r31, r4, 0
+/* 10134A6C 00134A6C  3B 65 00 00 */	addi r27, r5, 0
+/* 10134A70 00134A70  7C 1F D8 40 */	cmplw r31, r27
+/* 10134A74 00134A74  3B C3 00 00 */	addi r30, r3, 0
+/* 10134A78 00134A78  90 01 00 08 */	stw r0, 8(r1)
+/* 10134A7C 00134A7C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 10134A80 00134A80  40 82 00 0C */	bne lbl_10134A8C
+/* 10134A84 00134A84  7F E3 FB 78 */	mr r3, r31
+/* 10134A88 00134A88  48 00 00 90 */	b lbl_10134B18
+lbl_10134A8C:
+/* 10134A8C 00134A8C  80 1E 00 04 */	lwz r0, 4(r30)
+/* 10134A90 00134A90  3C 60 38 E4 */	lis r3, 0x38e4
+/* 10134A94 00134A94  80 9E 00 08 */	lwz r4, 8(r30)
+/* 10134A98 00134A98  38 63 8E 39 */	addi r3, r3, -29127
+/* 10134A9C 00134A9C  1C 00 00 48 */	mulli r0, r0, 0x48
+/* 10134AA0 00134AA0  7F A4 02 14 */	add r29, r4, r0
+/* 10134AA4 00134AA4  7C 1B E8 50 */	subf r0, r27, r29
+/* 10134AA8 00134AA8  7C 03 00 96 */	mulhw r0, r3, r0
+/* 10134AAC 00134AAC  7C 00 26 70 */	srawi r0, r0, 4
+/* 10134AB0 00134AB0  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 10134AB4 00134AB4  7F 80 1A 15 */	add. r28, r0, r3
+/* 10134AB8 00134AB8  41 82 00 14 */	beq lbl_10134ACC
+/* 10134ABC 00134ABC  38 7B 00 00 */	addi r3, r27, 0
+/* 10134AC0 00134AC0  38 9D 00 00 */	addi r4, r29, 0
+/* 10134AC4 00134AC4  38 BF 00 00 */	addi r5, r31, 0
+/* 10134AC8 00134AC8  48 00 00 F9 */	bl "copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
+lbl_10134ACC:
+/* 10134ACC 00134ACC  1C 1C 00 48 */	mulli r0, r28, 0x48
+/* 10134AD0 00134AD0  7F 9F 02 14 */	add r28, r31, r0
+/* 10134AD4 00134AD4  48 00 00 10 */	b lbl_10134AE4
+lbl_10134AD8:
+/* 10134AD8 00134AD8  7F C3 F3 78 */	mr r3, r30
+/* 10134ADC 00134ADC  4B FF F6 65 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10134AE0 00134AE0  3B 9C 00 48 */	addi r28, r28, 0x48
+lbl_10134AE4:
+/* 10134AE4 00134AE4  7C 1C E8 40 */	cmplw r28, r29
+/* 10134AE8 00134AE8  41 80 FF F0 */	blt lbl_10134AD8
+/* 10134AEC 00134AEC  3C 60 38 E4 */	lis r3, 0x38e4
+/* 10134AF0 00134AF0  80 1E 00 04 */	lwz r0, 4(r30)
+/* 10134AF4 00134AF4  7C 9F D8 50 */	subf r4, r31, r27
+/* 10134AF8 00134AF8  38 63 8E 39 */	addi r3, r3, -29127
+/* 10134AFC 00134AFC  7C 63 20 96 */	mulhw r3, r3, r4
+/* 10134B00 00134B00  7C 63 26 70 */	srawi r3, r3, 4
+/* 10134B04 00134B04  54 64 0F FE */	srwi r4, r3, 0x1f
+/* 10134B08 00134B08  7C 63 22 14 */	add r3, r3, r4
+/* 10134B0C 00134B0C  7C 03 00 50 */	subf r0, r3, r0
+/* 10134B10 00134B10  90 1E 00 04 */	stw r0, 4(r30)
+/* 10134B14 00134B14  7F E3 FB 78 */	mr r3, r31
+lbl_10134B18:
+/* 10134B18 00134B18  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 10134B1C 00134B1C  38 21 00 60 */	addi r1, r1, 0x60
+/* 10134B20 00134B20  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 10134B24 00134B24  7C 08 03 A6 */	mtlr r0
+/* 10134B28 00134B28  4E 80 00 20 */	blr 
+
+.global "copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
+"copy__Q23std32__msl_copy<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor":
+/* 10134BC0 00134BC0  38 C4 00 47 */	addi r6, r4, 0x47
+/* 10134BC4 00134BC4  7C 03 20 40 */	cmplw r3, r4
+/* 10134BC8 00134BC8  7C C3 30 50 */	subf r6, r3, r6
+/* 10134BCC 00134BCC  38 00 00 48 */	li r0, 0x48
+/* 10134BD0 00134BD0  7C C6 03 96 */	divwu r6, r6, r0
+/* 10134BD4 00134BD4  7C C9 03 A6 */	mtctr r6
+/* 10134BD8 00134BD8  40 80 00 A0 */	bge lbl_10134C78
+lbl_10134BDC:
+/* 10134BDC 00134BDC  A8 03 00 00 */	lha r0, 0(r3)
+/* 10134BE0 00134BE0  B0 05 00 00 */	sth r0, 0(r5)
+/* 10134BE4 00134BE4  C0 03 00 04 */	lfs f0, 4(r3)
+/* 10134BE8 00134BE8  D0 05 00 04 */	stfs f0, 4(r5)
+/* 10134BEC 00134BEC  C0 03 00 08 */	lfs f0, 8(r3)
+/* 10134BF0 00134BF0  D0 05 00 08 */	stfs f0, 8(r5)
+/* 10134BF4 00134BF4  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 10134BF8 00134BF8  D0 05 00 0C */	stfs f0, 0xc(r5)
+/* 10134BFC 00134BFC  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 10134C00 00134C00  90 05 00 10 */	stw r0, 0x10(r5)
+/* 10134C04 00134C04  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 10134C08 00134C08  90 05 00 14 */	stw r0, 0x14(r5)
+/* 10134C0C 00134C0C  80 03 00 18 */	lwz r0, 0x18(r3)
+/* 10134C10 00134C10  90 05 00 18 */	stw r0, 0x18(r5)
+/* 10134C14 00134C14  80 83 00 1C */	lwz r4, 0x1c(r3)
+/* 10134C18 00134C18  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 10134C1C 00134C1C  90 85 00 1C */	stw r4, 0x1c(r5)
+/* 10134C20 00134C20  90 05 00 20 */	stw r0, 0x20(r5)
+/* 10134C24 00134C24  80 03 00 24 */	lwz r0, 0x24(r3)
+/* 10134C28 00134C28  90 05 00 24 */	stw r0, 0x24(r5)
+/* 10134C2C 00134C2C  80 03 00 28 */	lwz r0, 0x28(r3)
+/* 10134C30 00134C30  90 05 00 28 */	stw r0, 0x28(r5)
+/* 10134C34 00134C34  80 03 00 2C */	lwz r0, 0x2c(r3)
+/* 10134C38 00134C38  90 05 00 2C */	stw r0, 0x2c(r5)
+/* 10134C3C 00134C3C  80 03 00 30 */	lwz r0, 0x30(r3)
+/* 10134C40 00134C40  90 05 00 30 */	stw r0, 0x30(r5)
+/* 10134C44 00134C44  80 03 00 34 */	lwz r0, 0x34(r3)
+/* 10134C48 00134C48  90 05 00 34 */	stw r0, 0x34(r5)
+/* 10134C4C 00134C4C  80 03 00 38 */	lwz r0, 0x38(r3)
+/* 10134C50 00134C50  90 05 00 38 */	stw r0, 0x38(r5)
+/* 10134C54 00134C54  C0 03 00 3C */	lfs f0, 0x3c(r3)
+/* 10134C58 00134C58  D0 05 00 3C */	stfs f0, 0x3c(r5)
+/* 10134C5C 00134C5C  80 03 00 40 */	lwz r0, 0x40(r3)
+/* 10134C60 00134C60  90 05 00 40 */	stw r0, 0x40(r5)
+/* 10134C64 00134C64  80 03 00 44 */	lwz r0, 0x44(r3)
+/* 10134C68 00134C68  38 63 00 48 */	addi r3, r3, 0x48
+/* 10134C6C 00134C6C  90 05 00 44 */	stw r0, 0x44(r5)
+/* 10134C70 00134C70  38 A5 00 48 */	addi r5, r5, 0x48
+/* 10134C74 00134C74  42 00 FF 68 */	bdnz lbl_10134BDC
+lbl_10134C78:
+/* 10134C78 00134C78  7C A3 2B 78 */	mr r3, r5
+/* 10134C7C 00134C7C  4E 80 00 20 */	blr 
+
+.global "insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor"
+"insert__Q23std68__vector_imp<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>,0>FP14SlotDescriptorUlRC14SlotDescriptor":
+/* 10134D00 00134D00  BE C1 FF D8 */	stmw r22, -0x28(r1)
+/* 10134D04 00134D04  7C 08 02 A6 */	mflr r0
+/* 10134D08 00134D08  7C BD 2B 79 */	or. r29, r5, r5
+/* 10134D0C 00134D0C  82 E2 A7 F8 */	lwz r23, lbl_105BBC58-_R2_BASE_(r2)
+/* 10134D10 00134D10  3B 63 00 00 */	addi r27, r3, 0
+/* 10134D14 00134D14  3B 84 00 00 */	addi r28, r4, 0
+/* 10134D18 00134D18  3B C6 00 00 */	addi r30, r6, 0
+/* 10134D1C 00134D1C  90 01 00 08 */	stw r0, 8(r1)
+/* 10134D20 00134D20  94 21 FE E0 */	stwu r1, -0x120(r1)
+/* 10134D24 00134D24  3B E1 00 00 */	addi r31, r1, 0
+/* 10134D28 00134D28  41 82 06 38 */	beq lbl_10135360
+/* 10134D2C 00134D2C  48 00 0C B5 */	bl "alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
+/* 10134D30 00134D30  48 00 0C 61 */	bl "max_size__Q23std27allocator<14SlotDescriptor>CFv"
+/* 10134D34 00134D34  3B 23 00 00 */	addi r25, r3, 0
+/* 10134D38 00134D38  7C 1D C8 40 */	cmplw r29, r25
+/* 10134D3C 00134D3C  3A D9 00 00 */	addi r22, r25, 0
+/* 10134D40 00134D40  41 81 00 14 */	bgt lbl_10134D54
+/* 10134D44 00134D44  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10134D48 00134D48  7C 1D C8 50 */	subf r0, r29, r25
+/* 10134D4C 00134D4C  7C 03 00 40 */	cmplw r3, r0
+/* 10134D50 00134D50  40 81 00 28 */	ble lbl_10134D78
+lbl_10134D54:
+/* 10134D54 00134D54  38 7F 00 40 */	addi r3, r31, 0x40
+/* 10134D58 00134D58  38 97 00 01 */	addi r4, r23, 1
+/* 10134D5C 00134D5C  4B EF 85 45 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 10134D60 00134D60  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 10134D64 00134D64  38 77 00 1D */	addi r3, r23, 0x1d
+/* 10134D68 00134D68  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 10134D6C 00134D6C  38 9F 00 40 */	addi r4, r31, 0x40
+/* 10134D70 00134D70  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 10134D74 00134D74  48 45 2B 1D */	bl func_10587890
+lbl_10134D78:
+/* 10134D78 00134D78  7F 63 DB 78 */	mr r3, r27
+/* 10134D7C 00134D7C  48 00 0B A5 */	bl "cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
+/* 10134D80 00134D80  80 9B 00 04 */	lwz r4, 4(r27)
+/* 10134D84 00134D84  80 63 00 00 */	lwz r3, 0(r3)
+/* 10134D88 00134D88  7C 04 EA 14 */	add r0, r4, r29
+/* 10134D8C 00134D8C  7C 00 18 40 */	cmplw r0, r3
+/* 10134D90 00134D90  41 81 02 DC */	bgt lbl_1013506C
+/* 10134D94 00134D94  1C 04 00 48 */	mulli r0, r4, 0x48
+/* 10134D98 00134D98  80 7B 00 08 */	lwz r3, 8(r27)
+/* 10134D9C 00134D9C  7F 23 02 14 */	add r25, r3, r0
+/* 10134DA0 00134DA0  3C 60 38 E4 */	lis r3, 0x38e4
+/* 10134DA4 00134DA4  7C 1C C8 50 */	subf r0, r28, r25
+/* 10134DA8 00134DA8  38 63 8E 39 */	addi r3, r3, -29127
+/* 10134DAC 00134DAC  7C 03 00 96 */	mulhw r0, r3, r0
+/* 10134DB0 00134DB0  7C 00 26 70 */	srawi r0, r0, 4
+/* 10134DB4 00134DB4  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 10134DB8 00134DB8  7E C0 1A 14 */	add r22, r0, r3
+/* 10134DBC 00134DBC  7C 1D B0 40 */	cmplw r29, r22
+/* 10134DC0 00134DC0  40 81 01 98 */	ble lbl_10134F58
+/* 10134DC4 00134DC4  7F 38 CB 78 */	mr r24, r25
+/* 10134DC8 00134DC8  48 00 00 BC */	b lbl_10134E84
+lbl_10134DCC:
+/* 10134DCC 00134DCC  7F 63 DB 78 */	mr r3, r27
+/* 10134DD0 00134DD0  4B FF F3 71 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10134DD4 00134DD4  28 18 00 00 */	cmplwi r24, 0
+/* 10134DD8 00134DD8  41 82 00 98 */	beq lbl_10134E70
+/* 10134DDC 00134DDC  A8 1E 00 00 */	lha r0, 0(r30)
+/* 10134DE0 00134DE0  90 3F 00 6C */	stw r1, 0x6c(r31)
+/* 10134DE4 00134DE4  B0 18 00 00 */	sth r0, 0(r24)
+/* 10134DE8 00134DE8  C0 1E 00 04 */	lfs f0, 4(r30)
+/* 10134DEC 00134DEC  D0 18 00 04 */	stfs f0, 4(r24)
+/* 10134DF0 00134DF0  C0 1E 00 08 */	lfs f0, 8(r30)
+/* 10134DF4 00134DF4  D0 18 00 08 */	stfs f0, 8(r24)
+/* 10134DF8 00134DF8  C0 1E 00 0C */	lfs f0, 0xc(r30)
+/* 10134DFC 00134DFC  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 10134E00 00134E00  80 1E 00 10 */	lwz r0, 0x10(r30)
+/* 10134E04 00134E04  90 18 00 10 */	stw r0, 0x10(r24)
+/* 10134E08 00134E08  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 10134E0C 00134E0C  90 18 00 14 */	stw r0, 0x14(r24)
+/* 10134E10 00134E10  80 1E 00 18 */	lwz r0, 0x18(r30)
+/* 10134E14 00134E14  90 18 00 18 */	stw r0, 0x18(r24)
+/* 10134E18 00134E18  80 7E 00 1C */	lwz r3, 0x1c(r30)
+/* 10134E1C 00134E1C  80 1E 00 20 */	lwz r0, 0x20(r30)
+/* 10134E20 00134E20  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 10134E24 00134E24  90 18 00 20 */	stw r0, 0x20(r24)
+/* 10134E28 00134E28  80 1E 00 24 */	lwz r0, 0x24(r30)
+/* 10134E2C 00134E2C  90 18 00 24 */	stw r0, 0x24(r24)
+/* 10134E30 00134E30  80 1E 00 28 */	lwz r0, 0x28(r30)
+/* 10134E34 00134E34  90 18 00 28 */	stw r0, 0x28(r24)
+/* 10134E38 00134E38  80 1E 00 2C */	lwz r0, 0x2c(r30)
+/* 10134E3C 00134E3C  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 10134E40 00134E40  80 1E 00 30 */	lwz r0, 0x30(r30)
+/* 10134E44 00134E44  90 18 00 30 */	stw r0, 0x30(r24)
+/* 10134E48 00134E48  80 1E 00 34 */	lwz r0, 0x34(r30)
+/* 10134E4C 00134E4C  90 18 00 34 */	stw r0, 0x34(r24)
+/* 10134E50 00134E50  80 1E 00 38 */	lwz r0, 0x38(r30)
+/* 10134E54 00134E54  90 18 00 38 */	stw r0, 0x38(r24)
+/* 10134E58 00134E58  C0 1E 00 3C */	lfs f0, 0x3c(r30)
+/* 10134E5C 00134E5C  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 10134E60 00134E60  80 1E 00 40 */	lwz r0, 0x40(r30)
+/* 10134E64 00134E64  90 18 00 40 */	stw r0, 0x40(r24)
+/* 10134E68 00134E68  80 1E 00 44 */	lwz r0, 0x44(r30)
+/* 10134E6C 00134E6C  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_10134E70:
+/* 10134E70 00134E70  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10134E74 00134E74  3B 18 00 48 */	addi r24, r24, 0x48
+/* 10134E78 00134E78  3B BD FF FF */	addi r29, r29, -1
+/* 10134E7C 00134E7C  38 03 00 01 */	addi r0, r3, 1
+/* 10134E80 00134E80  90 1B 00 04 */	stw r0, 4(r27)
+lbl_10134E84:
+/* 10134E84 00134E84  7C 1D B0 40 */	cmplw r29, r22
+/* 10134E88 00134E88  41 81 FF 44 */	bgt lbl_10134DCC
+/* 10134E8C 00134E8C  7F 97 E3 78 */	mr r23, r28
+/* 10134E90 00134E90  48 00 00 BC */	b lbl_10134F4C
+lbl_10134E94:
+/* 10134E94 00134E94  7F 63 DB 78 */	mr r3, r27
+/* 10134E98 00134E98  4B FF F2 A9 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10134E9C 00134E9C  28 18 00 00 */	cmplwi r24, 0
+/* 10134EA0 00134EA0  41 82 00 98 */	beq lbl_10134F38
+/* 10134EA4 00134EA4  A8 17 00 00 */	lha r0, 0(r23)
+/* 10134EA8 00134EA8  90 3F 00 84 */	stw r1, 0x84(r31)
+/* 10134EAC 00134EAC  B0 18 00 00 */	sth r0, 0(r24)
+/* 10134EB0 00134EB0  C0 17 00 04 */	lfs f0, 4(r23)
+/* 10134EB4 00134EB4  D0 18 00 04 */	stfs f0, 4(r24)
+/* 10134EB8 00134EB8  C0 17 00 08 */	lfs f0, 8(r23)
+/* 10134EBC 00134EBC  D0 18 00 08 */	stfs f0, 8(r24)
+/* 10134EC0 00134EC0  C0 17 00 0C */	lfs f0, 0xc(r23)
+/* 10134EC4 00134EC4  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 10134EC8 00134EC8  80 17 00 10 */	lwz r0, 0x10(r23)
+/* 10134ECC 00134ECC  90 18 00 10 */	stw r0, 0x10(r24)
+/* 10134ED0 00134ED0  80 17 00 14 */	lwz r0, 0x14(r23)
+/* 10134ED4 00134ED4  90 18 00 14 */	stw r0, 0x14(r24)
+/* 10134ED8 00134ED8  80 17 00 18 */	lwz r0, 0x18(r23)
+/* 10134EDC 00134EDC  90 18 00 18 */	stw r0, 0x18(r24)
+/* 10134EE0 00134EE0  80 77 00 1C */	lwz r3, 0x1c(r23)
+/* 10134EE4 00134EE4  80 17 00 20 */	lwz r0, 0x20(r23)
+/* 10134EE8 00134EE8  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 10134EEC 00134EEC  90 18 00 20 */	stw r0, 0x20(r24)
+/* 10134EF0 00134EF0  80 17 00 24 */	lwz r0, 0x24(r23)
+/* 10134EF4 00134EF4  90 18 00 24 */	stw r0, 0x24(r24)
+/* 10134EF8 00134EF8  80 17 00 28 */	lwz r0, 0x28(r23)
+/* 10134EFC 00134EFC  90 18 00 28 */	stw r0, 0x28(r24)
+/* 10134F00 00134F00  80 17 00 2C */	lwz r0, 0x2c(r23)
+/* 10134F04 00134F04  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 10134F08 00134F08  80 17 00 30 */	lwz r0, 0x30(r23)
+/* 10134F0C 00134F0C  90 18 00 30 */	stw r0, 0x30(r24)
+/* 10134F10 00134F10  80 17 00 34 */	lwz r0, 0x34(r23)
+/* 10134F14 00134F14  90 18 00 34 */	stw r0, 0x34(r24)
+/* 10134F18 00134F18  80 17 00 38 */	lwz r0, 0x38(r23)
+/* 10134F1C 00134F1C  90 18 00 38 */	stw r0, 0x38(r24)
+/* 10134F20 00134F20  C0 17 00 3C */	lfs f0, 0x3c(r23)
+/* 10134F24 00134F24  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 10134F28 00134F28  80 17 00 40 */	lwz r0, 0x40(r23)
+/* 10134F2C 00134F2C  90 18 00 40 */	stw r0, 0x40(r24)
+/* 10134F30 00134F30  80 17 00 44 */	lwz r0, 0x44(r23)
+/* 10134F34 00134F34  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_10134F38:
+/* 10134F38 00134F38  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10134F3C 00134F3C  3A F7 00 48 */	addi r23, r23, 0x48
+/* 10134F40 00134F40  3B 18 00 48 */	addi r24, r24, 0x48
+/* 10134F44 00134F44  38 03 00 01 */	addi r0, r3, 1
+/* 10134F48 00134F48  90 1B 00 04 */	stw r0, 4(r27)
+lbl_10134F4C:
+/* 10134F4C 00134F4C  7C 17 C8 40 */	cmplw r23, r25
+/* 10134F50 00134F50  41 80 FF 44 */	blt lbl_10134E94
+/* 10134F54 00134F54  48 00 01 04 */	b lbl_10135058
+lbl_10134F58:
+/* 10134F58 00134F58  1F 5D 00 48 */	mulli r26, r29, 0x48
+/* 10134F5C 00134F5C  3B 19 00 00 */	addi r24, r25, 0
+/* 10134F60 00134F60  7E FA C8 50 */	subf r23, r26, r25
+/* 10134F64 00134F64  48 00 00 BC */	b lbl_10135020
+lbl_10134F68:
+/* 10134F68 00134F68  7F 63 DB 78 */	mr r3, r27
+/* 10134F6C 00134F6C  4B FF F1 D5 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10134F70 00134F70  28 18 00 00 */	cmplwi r24, 0
+/* 10134F74 00134F74  41 82 00 98 */	beq lbl_1013500C
+/* 10134F78 00134F78  A8 17 00 00 */	lha r0, 0(r23)
+/* 10134F7C 00134F7C  90 3F 00 9C */	stw r1, 0x9c(r31)
+/* 10134F80 00134F80  B0 18 00 00 */	sth r0, 0(r24)
+/* 10134F84 00134F84  C0 17 00 04 */	lfs f0, 4(r23)
+/* 10134F88 00134F88  D0 18 00 04 */	stfs f0, 4(r24)
+/* 10134F8C 00134F8C  C0 17 00 08 */	lfs f0, 8(r23)
+/* 10134F90 00134F90  D0 18 00 08 */	stfs f0, 8(r24)
+/* 10134F94 00134F94  C0 17 00 0C */	lfs f0, 0xc(r23)
+/* 10134F98 00134F98  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 10134F9C 00134F9C  80 17 00 10 */	lwz r0, 0x10(r23)
+/* 10134FA0 00134FA0  90 18 00 10 */	stw r0, 0x10(r24)
+/* 10134FA4 00134FA4  80 17 00 14 */	lwz r0, 0x14(r23)
+/* 10134FA8 00134FA8  90 18 00 14 */	stw r0, 0x14(r24)
+/* 10134FAC 00134FAC  80 17 00 18 */	lwz r0, 0x18(r23)
+/* 10134FB0 00134FB0  90 18 00 18 */	stw r0, 0x18(r24)
+/* 10134FB4 00134FB4  80 77 00 1C */	lwz r3, 0x1c(r23)
+/* 10134FB8 00134FB8  80 17 00 20 */	lwz r0, 0x20(r23)
+/* 10134FBC 00134FBC  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 10134FC0 00134FC0  90 18 00 20 */	stw r0, 0x20(r24)
+/* 10134FC4 00134FC4  80 17 00 24 */	lwz r0, 0x24(r23)
+/* 10134FC8 00134FC8  90 18 00 24 */	stw r0, 0x24(r24)
+/* 10134FCC 00134FCC  80 17 00 28 */	lwz r0, 0x28(r23)
+/* 10134FD0 00134FD0  90 18 00 28 */	stw r0, 0x28(r24)
+/* 10134FD4 00134FD4  80 17 00 2C */	lwz r0, 0x2c(r23)
+/* 10134FD8 00134FD8  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 10134FDC 00134FDC  80 17 00 30 */	lwz r0, 0x30(r23)
+/* 10134FE0 00134FE0  90 18 00 30 */	stw r0, 0x30(r24)
+/* 10134FE4 00134FE4  80 17 00 34 */	lwz r0, 0x34(r23)
+/* 10134FE8 00134FE8  90 18 00 34 */	stw r0, 0x34(r24)
+/* 10134FEC 00134FEC  80 17 00 38 */	lwz r0, 0x38(r23)
+/* 10134FF0 00134FF0  90 18 00 38 */	stw r0, 0x38(r24)
+/* 10134FF4 00134FF4  C0 17 00 3C */	lfs f0, 0x3c(r23)
+/* 10134FF8 00134FF8  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 10134FFC 00134FFC  80 17 00 40 */	lwz r0, 0x40(r23)
+/* 10135000 00135000  90 18 00 40 */	stw r0, 0x40(r24)
+/* 10135004 00135004  80 17 00 44 */	lwz r0, 0x44(r23)
+/* 10135008 00135008  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_1013500C:
+/* 1013500C 0013500C  80 7B 00 04 */	lwz r3, 4(r27)
+/* 10135010 00135010  3A F7 00 48 */	addi r23, r23, 0x48
+/* 10135014 00135014  3B 18 00 48 */	addi r24, r24, 0x48
+/* 10135018 00135018  38 03 00 01 */	addi r0, r3, 1
+/* 1013501C 0013501C  90 1B 00 04 */	stw r0, 4(r27)
+lbl_10135020:
+/* 10135020 00135020  7C 17 C8 40 */	cmplw r23, r25
+/* 10135024 00135024  41 80 FF 44 */	blt lbl_10134F68
+/* 10135028 00135028  7C 1D B0 50 */	subf r0, r29, r22
+/* 1013502C 0013502C  1C 80 00 48 */	mulli r4, r0, 0x48
+/* 10135030 00135030  7C 04 C8 50 */	subf r0, r4, r25
+/* 10135034 00135034  7C 00 F0 40 */	cmplw r0, r30
+/* 10135038 00135038  41 81 00 10 */	bgt lbl_10135048
+/* 1013503C 0013503C  7C 1E C8 40 */	cmplw r30, r25
+/* 10135040 00135040  40 80 00 08 */	bge lbl_10135048
+/* 10135044 00135044  7F DE D2 14 */	add r30, r30, r26
+lbl_10135048:
+/* 10135048 00135048  38 7C 00 00 */	addi r3, r28, 0
+/* 1013504C 0013504C  7C 9C 22 14 */	add r4, r28, r4
+/* 10135050 00135050  38 B9 00 00 */	addi r5, r25, 0
+/* 10135054 00135054  48 00 07 7D */	bl "copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
+lbl_10135058:
+/* 10135058 00135058  38 7C 00 00 */	addi r3, r28, 0
+/* 1013505C 0013505C  38 9D 00 00 */	addi r4, r29, 0
+/* 10135060 00135060  38 BE 00 00 */	addi r5, r30, 0
+/* 10135064 00135064  48 00 06 5D */	bl "fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor"
+/* 10135068 00135068  48 00 02 F8 */	b lbl_10135360
+lbl_1013506C:
+/* 1013506C 0013506C  7F 63 DB 78 */	mr r3, r27
+/* 10135070 00135070  4B FF F0 D1 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10135074 00135074  38 83 00 00 */	addi r4, r3, 0
+/* 10135078 00135078  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 1013507C 0013507C  38 A0 00 00 */	li r5, 0
+/* 10135080 00135080  48 00 05 B1 */	bl "__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul"
+/* 10135084 00135084  38 60 00 00 */	li r3, 0
+/* 10135088 00135088  90 7F 00 50 */	stw r3, 0x50(r31)
+/* 1013508C 0013508C  38 00 00 01 */	li r0, 1
+/* 10135090 00135090  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 10135094 00135094  80 9B 00 00 */	lwz r4, 0(r27)
+/* 10135098 00135098  80 7B 00 04 */	lwz r3, 4(r27)
+/* 1013509C 0013509C  28 04 00 00 */	cmplwi r4, 0
+/* 101350A0 001350A0  7C 63 EA 14 */	add r3, r3, r29
+/* 101350A4 001350A4  41 82 00 08 */	beq lbl_101350AC
+/* 101350A8 001350A8  7C 80 23 78 */	mr r0, r4
+lbl_101350AC:
+/* 101350AC 001350AC  7C 17 03 78 */	mr r23, r0
+/* 101350B0 001350B0  57 20 F8 7E */	srwi r0, r25, 1
+/* 101350B4 001350B4  48 00 00 18 */	b lbl_101350CC
+lbl_101350B8:
+/* 101350B8 001350B8  7C 17 00 40 */	cmplw r23, r0
+/* 101350BC 001350BC  40 80 00 0C */	bge lbl_101350C8
+/* 101350C0 001350C0  56 F7 08 3C */	slwi r23, r23, 1
+/* 101350C4 001350C4  48 00 00 08 */	b lbl_101350CC
+lbl_101350C8:
+/* 101350C8 001350C8  7E D7 B3 78 */	mr r23, r22
+lbl_101350CC:
+/* 101350CC 001350CC  7C 03 B8 40 */	cmplw r3, r23
+/* 101350D0 001350D0  41 81 FF E8 */	bgt lbl_101350B8
+/* 101350D4 001350D4  1C 77 00 48 */	mulli r3, r23, 0x48
+/* 101350D8 001350D8  48 45 34 D9 */	bl func_105885B0
+/* 101350DC 001350DC  92 FF 00 4C */	stw r23, 0x4c(r31)
+/* 101350E0 001350E0  7C 78 1B 78 */	mr r24, r3
+/* 101350E4 001350E4  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 101350E8 001350E8  80 1B 00 04 */	lwz r0, 4(r27)
+/* 101350EC 001350EC  80 7B 00 08 */	lwz r3, 8(r27)
+/* 101350F0 001350F0  1C 00 00 48 */	mulli r0, r0, 0x48
+/* 101350F4 001350F4  3B 43 00 00 */	addi r26, r3, 0
+/* 101350F8 001350F8  7F 23 02 14 */	add r25, r3, r0
+/* 101350FC 001350FC  48 00 00 BC */	b lbl_101351B8
+lbl_10135100:
+/* 10135100 00135100  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10135104 00135104  4B FF F0 3D */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10135108 00135108  28 18 00 00 */	cmplwi r24, 0
+/* 1013510C 0013510C  41 82 00 98 */	beq lbl_101351A4
+/* 10135110 00135110  A8 1A 00 00 */	lha r0, 0(r26)
+/* 10135114 00135114  90 3F 00 B4 */	stw r1, 0xb4(r31)
+/* 10135118 00135118  B0 18 00 00 */	sth r0, 0(r24)
+/* 1013511C 0013511C  C0 1A 00 04 */	lfs f0, 4(r26)
+/* 10135120 00135120  D0 18 00 04 */	stfs f0, 4(r24)
+/* 10135124 00135124  C0 1A 00 08 */	lfs f0, 8(r26)
+/* 10135128 00135128  D0 18 00 08 */	stfs f0, 8(r24)
+/* 1013512C 0013512C  C0 1A 00 0C */	lfs f0, 0xc(r26)
+/* 10135130 00135130  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 10135134 00135134  80 1A 00 10 */	lwz r0, 0x10(r26)
+/* 10135138 00135138  90 18 00 10 */	stw r0, 0x10(r24)
+/* 1013513C 0013513C  80 1A 00 14 */	lwz r0, 0x14(r26)
+/* 10135140 00135140  90 18 00 14 */	stw r0, 0x14(r24)
+/* 10135144 00135144  80 1A 00 18 */	lwz r0, 0x18(r26)
+/* 10135148 00135148  90 18 00 18 */	stw r0, 0x18(r24)
+/* 1013514C 0013514C  80 7A 00 1C */	lwz r3, 0x1c(r26)
+/* 10135150 00135150  80 1A 00 20 */	lwz r0, 0x20(r26)
+/* 10135154 00135154  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 10135158 00135158  90 18 00 20 */	stw r0, 0x20(r24)
+/* 1013515C 0013515C  80 1A 00 24 */	lwz r0, 0x24(r26)
+/* 10135160 00135160  90 18 00 24 */	stw r0, 0x24(r24)
+/* 10135164 00135164  80 1A 00 28 */	lwz r0, 0x28(r26)
+/* 10135168 00135168  90 18 00 28 */	stw r0, 0x28(r24)
+/* 1013516C 0013516C  80 1A 00 2C */	lwz r0, 0x2c(r26)
+/* 10135170 00135170  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 10135174 00135174  80 1A 00 30 */	lwz r0, 0x30(r26)
+/* 10135178 00135178  90 18 00 30 */	stw r0, 0x30(r24)
+/* 1013517C 0013517C  80 1A 00 34 */	lwz r0, 0x34(r26)
+/* 10135180 00135180  90 18 00 34 */	stw r0, 0x34(r24)
+/* 10135184 00135184  80 1A 00 38 */	lwz r0, 0x38(r26)
+/* 10135188 00135188  90 18 00 38 */	stw r0, 0x38(r24)
+/* 1013518C 0013518C  C0 1A 00 3C */	lfs f0, 0x3c(r26)
+/* 10135190 00135190  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 10135194 00135194  80 1A 00 40 */	lwz r0, 0x40(r26)
+/* 10135198 00135198  90 18 00 40 */	stw r0, 0x40(r24)
+/* 1013519C 0013519C  80 1A 00 44 */	lwz r0, 0x44(r26)
+/* 101351A0 001351A0  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_101351A4:
+/* 101351A4 001351A4  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101351A8 001351A8  3B 5A 00 48 */	addi r26, r26, 0x48
+/* 101351AC 001351AC  3B 18 00 48 */	addi r24, r24, 0x48
+/* 101351B0 001351B0  38 03 00 01 */	addi r0, r3, 1
+/* 101351B4 001351B4  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_101351B8:
+/* 101351B8 001351B8  7C 1A E0 40 */	cmplw r26, r28
+/* 101351BC 001351BC  41 80 FF 44 */	blt lbl_10135100
+/* 101351C0 001351C0  48 00 00 BC */	b lbl_1013527C
+lbl_101351C4:
+/* 101351C4 001351C4  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101351C8 001351C8  4B FF EF 79 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 101351CC 001351CC  28 18 00 00 */	cmplwi r24, 0
+/* 101351D0 001351D0  41 82 00 98 */	beq lbl_10135268
+/* 101351D4 001351D4  A8 1E 00 00 */	lha r0, 0(r30)
+/* 101351D8 001351D8  90 3F 00 CC */	stw r1, 0xcc(r31)
+/* 101351DC 001351DC  B0 18 00 00 */	sth r0, 0(r24)
+/* 101351E0 001351E0  C0 1E 00 04 */	lfs f0, 4(r30)
+/* 101351E4 001351E4  D0 18 00 04 */	stfs f0, 4(r24)
+/* 101351E8 001351E8  C0 1E 00 08 */	lfs f0, 8(r30)
+/* 101351EC 001351EC  D0 18 00 08 */	stfs f0, 8(r24)
+/* 101351F0 001351F0  C0 1E 00 0C */	lfs f0, 0xc(r30)
+/* 101351F4 001351F4  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 101351F8 001351F8  80 1E 00 10 */	lwz r0, 0x10(r30)
+/* 101351FC 001351FC  90 18 00 10 */	stw r0, 0x10(r24)
+/* 10135200 00135200  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 10135204 00135204  90 18 00 14 */	stw r0, 0x14(r24)
+/* 10135208 00135208  80 1E 00 18 */	lwz r0, 0x18(r30)
+/* 1013520C 0013520C  90 18 00 18 */	stw r0, 0x18(r24)
+/* 10135210 00135210  80 7E 00 1C */	lwz r3, 0x1c(r30)
+/* 10135214 00135214  80 1E 00 20 */	lwz r0, 0x20(r30)
+/* 10135218 00135218  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 1013521C 0013521C  90 18 00 20 */	stw r0, 0x20(r24)
+/* 10135220 00135220  80 1E 00 24 */	lwz r0, 0x24(r30)
+/* 10135224 00135224  90 18 00 24 */	stw r0, 0x24(r24)
+/* 10135228 00135228  80 1E 00 28 */	lwz r0, 0x28(r30)
+/* 1013522C 0013522C  90 18 00 28 */	stw r0, 0x28(r24)
+/* 10135230 00135230  80 1E 00 2C */	lwz r0, 0x2c(r30)
+/* 10135234 00135234  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 10135238 00135238  80 1E 00 30 */	lwz r0, 0x30(r30)
+/* 1013523C 0013523C  90 18 00 30 */	stw r0, 0x30(r24)
+/* 10135240 00135240  80 1E 00 34 */	lwz r0, 0x34(r30)
+/* 10135244 00135244  90 18 00 34 */	stw r0, 0x34(r24)
+/* 10135248 00135248  80 1E 00 38 */	lwz r0, 0x38(r30)
+/* 1013524C 0013524C  90 18 00 38 */	stw r0, 0x38(r24)
+/* 10135250 00135250  C0 1E 00 3C */	lfs f0, 0x3c(r30)
+/* 10135254 00135254  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 10135258 00135258  80 1E 00 40 */	lwz r0, 0x40(r30)
+/* 1013525C 0013525C  90 18 00 40 */	stw r0, 0x40(r24)
+/* 10135260 00135260  80 1E 00 44 */	lwz r0, 0x44(r30)
+/* 10135264 00135264  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_10135268:
+/* 10135268 00135268  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 1013526C 0013526C  3B 18 00 48 */	addi r24, r24, 0x48
+/* 10135270 00135270  3B BD FF FF */	addi r29, r29, -1
+/* 10135274 00135274  38 03 00 01 */	addi r0, r3, 1
+/* 10135278 00135278  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_1013527C:
+/* 1013527C 0013527C  28 1D 00 00 */	cmplwi r29, 0
+/* 10135280 00135280  40 82 FF 44 */	bne lbl_101351C4
+/* 10135284 00135284  48 00 00 BC */	b lbl_10135340
+lbl_10135288:
+/* 10135288 00135288  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 1013528C 0013528C  4B FF EE B5 */	bl "first__Q310Metrowerks7details61compressed_pair_imp<Q23std27allocator<14SlotDescriptor>,Ul,1>Fv"
+/* 10135290 00135290  28 18 00 00 */	cmplwi r24, 0
+/* 10135294 00135294  41 82 00 98 */	beq lbl_1013532C
+/* 10135298 00135298  A8 1A 00 00 */	lha r0, 0(r26)
+/* 1013529C 0013529C  90 3F 00 E4 */	stw r1, 0xe4(r31)
+/* 101352A0 001352A0  B0 18 00 00 */	sth r0, 0(r24)
+/* 101352A4 001352A4  C0 1A 00 04 */	lfs f0, 4(r26)
+/* 101352A8 001352A8  D0 18 00 04 */	stfs f0, 4(r24)
+/* 101352AC 001352AC  C0 1A 00 08 */	lfs f0, 8(r26)
+/* 101352B0 001352B0  D0 18 00 08 */	stfs f0, 8(r24)
+/* 101352B4 001352B4  C0 1A 00 0C */	lfs f0, 0xc(r26)
+/* 101352B8 001352B8  D0 18 00 0C */	stfs f0, 0xc(r24)
+/* 101352BC 001352BC  80 1A 00 10 */	lwz r0, 0x10(r26)
+/* 101352C0 001352C0  90 18 00 10 */	stw r0, 0x10(r24)
+/* 101352C4 001352C4  80 1A 00 14 */	lwz r0, 0x14(r26)
+/* 101352C8 001352C8  90 18 00 14 */	stw r0, 0x14(r24)
+/* 101352CC 001352CC  80 1A 00 18 */	lwz r0, 0x18(r26)
+/* 101352D0 001352D0  90 18 00 18 */	stw r0, 0x18(r24)
+/* 101352D4 001352D4  80 7A 00 1C */	lwz r3, 0x1c(r26)
+/* 101352D8 001352D8  80 1A 00 20 */	lwz r0, 0x20(r26)
+/* 101352DC 001352DC  90 78 00 1C */	stw r3, 0x1c(r24)
+/* 101352E0 001352E0  90 18 00 20 */	stw r0, 0x20(r24)
+/* 101352E4 001352E4  80 1A 00 24 */	lwz r0, 0x24(r26)
+/* 101352E8 001352E8  90 18 00 24 */	stw r0, 0x24(r24)
+/* 101352EC 001352EC  80 1A 00 28 */	lwz r0, 0x28(r26)
+/* 101352F0 001352F0  90 18 00 28 */	stw r0, 0x28(r24)
+/* 101352F4 001352F4  80 1A 00 2C */	lwz r0, 0x2c(r26)
+/* 101352F8 001352F8  90 18 00 2C */	stw r0, 0x2c(r24)
+/* 101352FC 001352FC  80 1A 00 30 */	lwz r0, 0x30(r26)
+/* 10135300 00135300  90 18 00 30 */	stw r0, 0x30(r24)
+/* 10135304 00135304  80 1A 00 34 */	lwz r0, 0x34(r26)
+/* 10135308 00135308  90 18 00 34 */	stw r0, 0x34(r24)
+/* 1013530C 0013530C  80 1A 00 38 */	lwz r0, 0x38(r26)
+/* 10135310 00135310  90 18 00 38 */	stw r0, 0x38(r24)
+/* 10135314 00135314  C0 1A 00 3C */	lfs f0, 0x3c(r26)
+/* 10135318 00135318  D0 18 00 3C */	stfs f0, 0x3c(r24)
+/* 1013531C 0013531C  80 1A 00 40 */	lwz r0, 0x40(r26)
+/* 10135320 00135320  90 18 00 40 */	stw r0, 0x40(r24)
+/* 10135324 00135324  80 1A 00 44 */	lwz r0, 0x44(r26)
+/* 10135328 00135328  90 18 00 44 */	stw r0, 0x44(r24)
+lbl_1013532C:
+/* 1013532C 0013532C  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 10135330 00135330  3B 5A 00 48 */	addi r26, r26, 0x48
+/* 10135334 00135334  3B 18 00 48 */	addi r24, r24, 0x48
+/* 10135338 00135338  38 03 00 01 */	addi r0, r3, 1
+/* 1013533C 0013533C  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_10135340:
+/* 10135340 00135340  7C 1A C8 40 */	cmplw r26, r25
+/* 10135344 00135344  41 80 FF 44 */	blt lbl_10135288
+/* 10135348 00135348  38 9B 00 00 */	addi r4, r27, 0
+/* 1013534C 0013534C  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10135350 00135350  48 00 00 C1 */	bl "swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v"
+/* 10135354 00135354  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 10135358 00135358  38 80 FF FF */	li r4, -1
+/* 1013535C 0013535C  4B FF EC F5 */	bl "__dt__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>Fv"
+lbl_10135360:
+/* 10135360 00135360  80 1F 01 28 */	lwz r0, 0x128(r31)
+/* 10135364 00135364  80 21 00 00 */	lwz r1, 0(r1)
+/* 10135368 00135368  7C 08 03 A6 */	mtlr r0
+/* 1013536C 0013536C  BA C1 FF D8 */	lmw r22, -0x28(r1)
+/* 10135370 00135370  4E 80 00 20 */	blr 
+
+.global "swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v"
+"swap<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>__3stdFRQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>RQ23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>_v":
+/* 10135410 00135410  93 E1 FF FC */	stw r31, -4(r1)
+/* 10135414 00135414  7C 08 02 A6 */	mflr r0
+/* 10135418 00135418  3B E4 00 00 */	addi r31, r4, 0
+/* 1013541C 0013541C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 10135420 00135420  3B C3 00 00 */	addi r30, r3, 0
+/* 10135424 00135424  7C 1E F8 40 */	cmplw r30, r31
+/* 10135428 00135428  90 01 00 08 */	stw r0, 8(r1)
+/* 1013542C 0013542C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 10135430 00135430  41 82 00 28 */	beq lbl_10135458
+/* 10135434 00135434  48 00 01 3D */	bl "swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>"
+/* 10135438 00135438  80 7E 00 08 */	lwz r3, 8(r30)
+/* 1013543C 0013543C  80 1F 00 08 */	lwz r0, 8(r31)
+/* 10135440 00135440  90 1E 00 08 */	stw r0, 8(r30)
+/* 10135444 00135444  90 7F 00 08 */	stw r3, 8(r31)
+/* 10135448 00135448  80 7E 00 04 */	lwz r3, 4(r30)
+/* 1013544C 0013544C  80 1F 00 04 */	lwz r0, 4(r31)
+/* 10135450 00135450  90 1E 00 04 */	stw r0, 4(r30)
+/* 10135454 00135454  90 7F 00 04 */	stw r3, 4(r31)
+lbl_10135458:
+/* 10135458 00135458  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 1013545C 0013545C  38 21 00 50 */	addi r1, r1, 0x50
+/* 10135460 00135460  83 E1 FF FC */	lwz r31, -4(r1)
+/* 10135464 00135464  7C 08 03 A6 */	mtlr r0
+/* 10135468 00135468  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 1013546C 0013546C  4E 80 00 20 */	blr 
+
+.global "swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>"
+"swap__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRQ210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>":
+/* 10135570 00135570  80 A3 00 00 */	lwz r5, 0(r3)
+/* 10135574 00135574  80 04 00 00 */	lwz r0, 0(r4)
+/* 10135578 00135578  90 03 00 00 */	stw r0, 0(r3)
+/* 1013557C 0013557C  90 A4 00 00 */	stw r5, 0(r4)
+/* 10135580 00135580  4E 80 00 20 */	blr 
+
+.global "__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul"
+"__ct__Q210Metrowerks55compressed_pair<Q23std27allocator<14SlotDescriptor>,Ul>FRCQ23std27allocator<14SlotDescriptor>Ul":
+/* 10135630 00135630  90 A3 00 00 */	stw r5, 0(r3)
+/* 10135634 00135634  4E 80 00 20 */	blr 
+
+.global "fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor"
+"fill_n__Q23std31__fill_n<14SlotDescriptor,Ul,0>FP14SlotDescriptorUlRC14SlotDescriptor":
+/* 101356C0 001356C0  28 04 00 00 */	cmplwi r4, 0
+/* 101356C4 001356C4  7C 89 03 A6 */	mtctr r4
+/* 101356C8 001356C8  4D 82 00 20 */	beqlr 
+lbl_101356CC:
+/* 101356CC 001356CC  A8 05 00 00 */	lha r0, 0(r5)
+/* 101356D0 001356D0  B0 03 00 00 */	sth r0, 0(r3)
+/* 101356D4 001356D4  C0 05 00 04 */	lfs f0, 4(r5)
+/* 101356D8 001356D8  D0 03 00 04 */	stfs f0, 4(r3)
+/* 101356DC 001356DC  C0 05 00 08 */	lfs f0, 8(r5)
+/* 101356E0 001356E0  D0 03 00 08 */	stfs f0, 8(r3)
+/* 101356E4 001356E4  C0 05 00 0C */	lfs f0, 0xc(r5)
+/* 101356E8 001356E8  D0 03 00 0C */	stfs f0, 0xc(r3)
+/* 101356EC 001356EC  80 05 00 10 */	lwz r0, 0x10(r5)
+/* 101356F0 001356F0  90 03 00 10 */	stw r0, 0x10(r3)
+/* 101356F4 001356F4  80 05 00 14 */	lwz r0, 0x14(r5)
+/* 101356F8 001356F8  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101356FC 001356FC  80 05 00 18 */	lwz r0, 0x18(r5)
+/* 10135700 00135700  90 03 00 18 */	stw r0, 0x18(r3)
+/* 10135704 00135704  80 85 00 1C */	lwz r4, 0x1c(r5)
+/* 10135708 00135708  80 05 00 20 */	lwz r0, 0x20(r5)
+/* 1013570C 0013570C  90 83 00 1C */	stw r4, 0x1c(r3)
+/* 10135710 00135710  90 03 00 20 */	stw r0, 0x20(r3)
+/* 10135714 00135714  80 05 00 24 */	lwz r0, 0x24(r5)
+/* 10135718 00135718  90 03 00 24 */	stw r0, 0x24(r3)
+/* 1013571C 0013571C  80 05 00 28 */	lwz r0, 0x28(r5)
+/* 10135720 00135720  90 03 00 28 */	stw r0, 0x28(r3)
+/* 10135724 00135724  80 05 00 2C */	lwz r0, 0x2c(r5)
+/* 10135728 00135728  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 1013572C 0013572C  80 05 00 30 */	lwz r0, 0x30(r5)
+/* 10135730 00135730  90 03 00 30 */	stw r0, 0x30(r3)
+/* 10135734 00135734  80 05 00 34 */	lwz r0, 0x34(r5)
+/* 10135738 00135738  90 03 00 34 */	stw r0, 0x34(r3)
+/* 1013573C 0013573C  80 05 00 38 */	lwz r0, 0x38(r5)
+/* 10135740 00135740  90 03 00 38 */	stw r0, 0x38(r3)
+/* 10135744 00135744  C0 05 00 3C */	lfs f0, 0x3c(r5)
+/* 10135748 00135748  D0 03 00 3C */	stfs f0, 0x3c(r3)
+/* 1013574C 0013574C  80 05 00 40 */	lwz r0, 0x40(r5)
+/* 10135750 00135750  90 03 00 40 */	stw r0, 0x40(r3)
+/* 10135754 00135754  80 05 00 44 */	lwz r0, 0x44(r5)
+/* 10135758 00135758  90 03 00 44 */	stw r0, 0x44(r3)
+/* 1013575C 0013575C  38 63 00 48 */	addi r3, r3, 0x48
+/* 10135760 00135760  42 00 FF 6C */	bdnz lbl_101356CC
+/* 10135764 00135764  4E 80 00 20 */	blr 
+
+.global "copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor"
+"copy_backward__Q23std37__copy_backward<14SlotDescriptor,0,0>FP14SlotDescriptorP14SlotDescriptorP14SlotDescriptor":
+/* 101357D0 001357D0  38 C4 00 47 */	addi r6, r4, 0x47
+/* 101357D4 001357D4  7C 04 18 40 */	cmplw r4, r3
+/* 101357D8 001357D8  7C C3 30 50 */	subf r6, r3, r6
+/* 101357DC 001357DC  38 00 00 48 */	li r0, 0x48
+/* 101357E0 001357E0  7C C6 03 96 */	divwu r6, r6, r0
+/* 101357E4 001357E4  7C C9 03 A6 */	mtctr r6
+/* 101357E8 001357E8  40 81 00 A0 */	ble lbl_10135888
+lbl_101357EC:
+/* 101357EC 001357EC  A8 04 FF B8 */	lha r0, -0x48(r4)
+/* 101357F0 001357F0  B0 05 FF B8 */	sth r0, -0x48(r5)
+/* 101357F4 001357F4  C0 04 FF BC */	lfs f0, -0x44(r4)
+/* 101357F8 001357F8  D0 05 FF BC */	stfs f0, -0x44(r5)
+/* 101357FC 001357FC  C0 04 FF C0 */	lfs f0, -0x40(r4)
+/* 10135800 00135800  38 84 FF B8 */	addi r4, r4, -72
+/* 10135804 00135804  D0 05 FF C0 */	stfs f0, -0x40(r5)
+/* 10135808 00135808  38 A5 FF B8 */	addi r5, r5, -72
+/* 1013580C 0013580C  C0 04 00 0C */	lfs f0, 0xc(r4)
+/* 10135810 00135810  D0 05 00 0C */	stfs f0, 0xc(r5)
+/* 10135814 00135814  80 04 00 10 */	lwz r0, 0x10(r4)
+/* 10135818 00135818  90 05 00 10 */	stw r0, 0x10(r5)
+/* 1013581C 0013581C  80 04 00 14 */	lwz r0, 0x14(r4)
+/* 10135820 00135820  90 05 00 14 */	stw r0, 0x14(r5)
+/* 10135824 00135824  80 04 00 18 */	lwz r0, 0x18(r4)
+/* 10135828 00135828  90 05 00 18 */	stw r0, 0x18(r5)
+/* 1013582C 0013582C  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 10135830 00135830  80 04 00 20 */	lwz r0, 0x20(r4)
+/* 10135834 00135834  90 65 00 1C */	stw r3, 0x1c(r5)
+/* 10135838 00135838  90 05 00 20 */	stw r0, 0x20(r5)
+/* 1013583C 0013583C  80 04 00 24 */	lwz r0, 0x24(r4)
+/* 10135840 00135840  90 05 00 24 */	stw r0, 0x24(r5)
+/* 10135844 00135844  80 04 00 28 */	lwz r0, 0x28(r4)
+/* 10135848 00135848  90 05 00 28 */	stw r0, 0x28(r5)
+/* 1013584C 0013584C  80 04 00 2C */	lwz r0, 0x2c(r4)
+/* 10135850 00135850  90 05 00 2C */	stw r0, 0x2c(r5)
+/* 10135854 00135854  80 04 00 30 */	lwz r0, 0x30(r4)
+/* 10135858 00135858  90 05 00 30 */	stw r0, 0x30(r5)
+/* 1013585C 0013585C  80 04 00 34 */	lwz r0, 0x34(r4)
+/* 10135860 00135860  90 05 00 34 */	stw r0, 0x34(r5)
+/* 10135864 00135864  80 04 00 38 */	lwz r0, 0x38(r4)
+/* 10135868 00135868  90 05 00 38 */	stw r0, 0x38(r5)
+/* 1013586C 0013586C  C0 04 00 3C */	lfs f0, 0x3c(r4)
+/* 10135870 00135870  D0 05 00 3C */	stfs f0, 0x3c(r5)
+/* 10135874 00135874  80 04 00 40 */	lwz r0, 0x40(r4)
+/* 10135878 00135878  90 05 00 40 */	stw r0, 0x40(r5)
+/* 1013587C 0013587C  80 04 00 44 */	lwz r0, 0x44(r4)
+/* 10135880 00135880  90 05 00 44 */	stw r0, 0x44(r5)
+/* 10135884 00135884  42 00 FF 68 */	bdnz lbl_101357EC
+lbl_10135888:
+/* 10135888 00135888  7C A3 2B 78 */	mr r3, r5
+/* 1013588C 0013588C  4E 80 00 20 */	blr 
+
+.global "cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
+"cap__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv":
+/* 10135920 00135920  4E 80 00 20 */	blr 
+
+.global "max_size__Q23std27allocator<14SlotDescriptor>CFv"
+"max_size__Q23std27allocator<14SlotDescriptor>CFv":
+/* 10135990 00135990  3C 60 03 8E */	lis r3, 0x38e
+/* 10135994 00135994  38 63 38 E3 */	addi r3, r3, 0x38e3
+/* 10135998 00135998  4E 80 00 20 */	blr 
+
+.global "alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv"
+"alloc__Q23std70__vector_deleter<14SlotDescriptor,Q23std27allocator<14SlotDescriptor>>CFv":
+/* 101359E0 001359E0  4E 80 00 20 */	blr 
+
+.global "__sinit_:Slots_cpp"
+"__sinit_:Slots_cpp":
+/* 10135A50 00135A50  80 82 88 58 */	lwz r4, lbl_105B9CB8-_R2_BASE_(r2)
+/* 10135A54 00135A54  80 62 88 60 */	lwz r3, lbl_105B9CC0-_R2_BASE_(r2)
+/* 10135A58 00135A58  C8 44 00 00 */	lfd f2, 0(r4)
+/* 10135A5C 00135A5C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 10135A60 00135A60  80 82 88 5C */	lwz r4, lbl_105B9CBC-_R2_BASE_(r2)
+/* 10135A64 00135A64  FC 20 10 50 */	fneg f1, f2
+/* 10135A68 00135A68  80 62 88 54 */	lwz r3, lbl_105B9CB4-_R2_BASE_(r2)
+/* 10135A6C 00135A6C  FC 80 28 50 */	fneg f4, f5
+/* 10135A70 00135A70  C0 64 00 00 */	lfs f3, 0(r4)
+/* 10135A74 00135A74  C8 03 00 00 */	lfd f0, 0(r3)
+/* 10135A78 00135A78  D0 82 D6 D0 */	stfs f4, lbl_105BEB30-_R2_BASE_(r2)
+/* 10135A7C 00135A7C  D0 A2 D6 D4 */	stfs f5, lbl_105BEB34-_R2_BASE_(r2)
+/* 10135A80 00135A80  D0 62 D6 D8 */	stfs f3, lbl_105BEB38-_R2_BASE_(r2)
+/* 10135A84 00135A84  D0 A2 D6 DC */	stfs f5, lbl_105BEB3C-_R2_BASE_(r2)
+/* 10135A88 00135A88  D8 22 D6 E0 */	stfd f1, lbl_105BEB40-_R2_BASE_(r2)
+/* 10135A8C 00135A8C  D8 42 D6 E8 */	stfd f2, lbl_105BEB48-_R2_BASE_(r2)
+/* 10135A90 00135A90  D8 02 D6 F0 */	stfd f0, lbl_105BEB50-_R2_BASE_(r2)
+/* 10135A94 00135A94  D8 42 D6 F8 */	stfd f2, lbl_105BEB58-_R2_BASE_(r2)
+/* 10135A98 00135A98  4E 80 00 20 */	blr 

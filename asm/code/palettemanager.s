@@ -1,949 +1,949 @@
 .include "macros.inc"
 
 
-.section .text0, "ax"  # 0x00000000 - 0x005B9458
+.section .text0, "ax"  # 0x10000000 - 0x105B9458
 
-.global ".GetPaletteCount__14PaletteManagerCFv"
-".GetPaletteCount__14PaletteManagerCFv":
-/* 001DB8E0 001E4770  80 63 00 04 */	lwz r3, 4(r3)
-/* 001DB8E4 001E4774  4E 80 00 20 */	blr 
+.global "GetPaletteCount__14PaletteManagerCFv"
+"GetPaletteCount__14PaletteManagerCFv":
+/* 101DB8E0 001DB8E0  80 63 00 04 */	lwz r3, 4(r3)
+/* 101DB8E4 001DB8E4  4E 80 00 20 */	blr 
 
-.global ".GetPalette__14PaletteManagerFi"
-".GetPalette__14PaletteManagerFi":
-/* 001DB920 001E47B0  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DB924 001E47B4  38 A0 00 00 */	li r5, 0
-/* 001DB928 001E47B8  7C 08 02 A6 */	mflr r0
-/* 001DB92C 001E47BC  28 05 00 00 */	cmplwi r5, 0
-/* 001DB930 001E47C0  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DB934 001E47C4  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DB938 001E47C8  7C 7D 1B 78 */	mr r29, r3
-/* 001DB93C 001E47CC  90 01 00 08 */	stw r0, 8(r1)
-/* 001DB940 001E47D0  94 21 FF 90 */	stwu r1, -0x70(r1)
-/* 001DB944 001E47D4  90 81 00 50 */	stw r4, 0x50(r1)
-/* 001DB948 001E47D8  90 A1 00 54 */	stw r5, 0x54(r1)
-/* 001DB94C 001E47DC  48 00 00 08 */	b lbl_001DB954
-/* 001DB950 001E47E0  90 05 00 14 */	stw r0, 0x14(r5)
-lbl_001DB954:
-/* 001DB954 001E47E4  7F A3 EB 78 */	mr r3, r29
-/* 001DB958 001E47E8  48 00 02 19 */	bl ".end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DB95C 001E47EC  90 61 00 40 */	stw r3, 0x40(r1)
-/* 001DB960 001E47F0  38 61 00 40 */	addi r3, r1, 0x40
-/* 001DB964 001E47F4  48 00 01 7D */	bl ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DB968 001E47F8  3B E3 00 00 */	addi r31, r3, 0
-/* 001DB96C 001E47FC  38 7D 00 00 */	addi r3, r29, 0
-/* 001DB970 001E4800  48 00 01 01 */	bl ".begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DB974 001E4804  90 61 00 44 */	stw r3, 0x44(r1)
-/* 001DB978 001E4808  38 61 00 44 */	addi r3, r1, 0x44
-/* 001DB97C 001E480C  48 00 01 65 */	bl ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DB980 001E4810  80 81 00 50 */	lwz r4, 0x50(r1)
-/* 001DB984 001E4814  7C 7E 1B 78 */	mr r30, r3
-/* 001DB988 001E4818  48 00 00 0C */	b lbl_001DB994
-/* 001DB98C 001E481C  60 00 00 00 */	nop 
-lbl_001DB990:
-/* 001DB990 001E4820  3B DE 00 08 */	addi r30, r30, 8
-lbl_001DB994:
-/* 001DB994 001E4824  7C 1E F8 40 */	cmplw r30, r31
-/* 001DB998 001E4828  41 82 00 10 */	beq lbl_001DB9A8
-/* 001DB99C 001E482C  80 1E 00 00 */	lwz r0, 0(r30)
-/* 001DB9A0 001E4830  7C 00 20 00 */	cmpw r0, r4
-/* 001DB9A4 001E4834  40 82 FF EC */	bne lbl_001DB990
-lbl_001DB9A8:
-/* 001DB9A8 001E4838  80 61 00 54 */	lwz r3, 0x54(r1)
-/* 001DB9AC 001E483C  28 03 00 00 */	cmplwi r3, 0
-/* 001DB9B0 001E4840  41 82 00 30 */	beq lbl_001DB9E0
-/* 001DB9B4 001E4844  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DB9B8 001E4848  34 04 FF FF */	addic. r0, r4, -1
-/* 001DB9BC 001E484C  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DB9C0 001E4850  40 82 00 20 */	bne lbl_001DB9E0
-/* 001DB9C4 001E4854  28 03 00 00 */	cmplwi r3, 0
-/* 001DB9C8 001E4858  41 82 00 18 */	beq lbl_001DB9E0
-/* 001DB9CC 001E485C  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DB9D0 001E4860  38 80 00 01 */	li r4, 1
-/* 001DB9D4 001E4864  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DB9D8 001E4868  48 3B E1 79 */	bl func_00599B50
-/* 001DB9DC 001E486C  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DB9E0:
-/* 001DB9E0 001E4870  7F A3 EB 78 */	mr r3, r29
-/* 001DB9E4 001E4874  48 00 01 8D */	bl ".end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DB9E8 001E4878  90 61 00 48 */	stw r3, 0x48(r1)
-/* 001DB9EC 001E487C  38 61 00 48 */	addi r3, r1, 0x48
-/* 001DB9F0 001E4880  48 00 00 F1 */	bl ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DB9F4 001E4884  7C 1E 18 40 */	cmplw r30, r3
-/* 001DB9F8 001E4888  40 82 00 0C */	bne lbl_001DBA04
-/* 001DB9FC 001E488C  38 60 00 00 */	li r3, 0
-/* 001DBA00 001E4890  48 00 00 18 */	b lbl_001DBA18
-lbl_001DBA04:
-/* 001DBA04 001E4894  80 9E 00 04 */	lwz r4, 4(r30)
-/* 001DBA08 001E4898  80 64 00 14 */	lwz r3, 0x14(r4)
-/* 001DBA0C 001E489C  38 03 00 01 */	addi r0, r3, 1
-/* 001DBA10 001E48A0  90 04 00 14 */	stw r0, 0x14(r4)
-/* 001DBA14 001E48A4  80 7E 00 04 */	lwz r3, 4(r30)
-lbl_001DBA18:
-/* 001DBA18 001E48A8  80 01 00 78 */	lwz r0, 0x78(r1)
-/* 001DBA1C 001E48AC  38 21 00 70 */	addi r1, r1, 0x70
-/* 001DBA20 001E48B0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DBA24 001E48B4  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DBA28 001E48B8  7C 08 03 A6 */	mtlr r0
-/* 001DBA2C 001E48BC  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DBA30 001E48C0  4E 80 00 20 */	blr 
+.global "GetPalette__14PaletteManagerFi"
+"GetPalette__14PaletteManagerFi":
+/* 101DB920 001DB920  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DB924 001DB924  38 A0 00 00 */	li r5, 0
+/* 101DB928 001DB928  7C 08 02 A6 */	mflr r0
+/* 101DB92C 001DB92C  28 05 00 00 */	cmplwi r5, 0
+/* 101DB930 001DB930  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DB934 001DB934  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DB938 001DB938  7C 7D 1B 78 */	mr r29, r3
+/* 101DB93C 001DB93C  90 01 00 08 */	stw r0, 8(r1)
+/* 101DB940 001DB940  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 101DB944 001DB944  90 81 00 50 */	stw r4, 0x50(r1)
+/* 101DB948 001DB948  90 A1 00 54 */	stw r5, 0x54(r1)
+/* 101DB94C 001DB94C  48 00 00 08 */	b lbl_101DB954
+/* 101DB950 001DB950  90 05 00 14 */	stw r0, 0x14(r5)
+lbl_101DB954:
+/* 101DB954 001DB954  7F A3 EB 78 */	mr r3, r29
+/* 101DB958 001DB958  48 00 02 19 */	bl "end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DB95C 001DB95C  90 61 00 40 */	stw r3, 0x40(r1)
+/* 101DB960 001DB960  38 61 00 40 */	addi r3, r1, 0x40
+/* 101DB964 001DB964  48 00 01 7D */	bl "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DB968 001DB968  3B E3 00 00 */	addi r31, r3, 0
+/* 101DB96C 001DB96C  38 7D 00 00 */	addi r3, r29, 0
+/* 101DB970 001DB970  48 00 01 01 */	bl "begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DB974 001DB974  90 61 00 44 */	stw r3, 0x44(r1)
+/* 101DB978 001DB978  38 61 00 44 */	addi r3, r1, 0x44
+/* 101DB97C 001DB97C  48 00 01 65 */	bl "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DB980 001DB980  80 81 00 50 */	lwz r4, 0x50(r1)
+/* 101DB984 001DB984  7C 7E 1B 78 */	mr r30, r3
+/* 101DB988 001DB988  48 00 00 0C */	b lbl_101DB994
+/* 101DB98C 001DB98C  60 00 00 00 */	nop 
+lbl_101DB990:
+/* 101DB990 001DB990  3B DE 00 08 */	addi r30, r30, 8
+lbl_101DB994:
+/* 101DB994 001DB994  7C 1E F8 40 */	cmplw r30, r31
+/* 101DB998 001DB998  41 82 00 10 */	beq lbl_101DB9A8
+/* 101DB99C 001DB99C  80 1E 00 00 */	lwz r0, 0(r30)
+/* 101DB9A0 001DB9A0  7C 00 20 00 */	cmpw r0, r4
+/* 101DB9A4 001DB9A4  40 82 FF EC */	bne lbl_101DB990
+lbl_101DB9A8:
+/* 101DB9A8 001DB9A8  80 61 00 54 */	lwz r3, 0x54(r1)
+/* 101DB9AC 001DB9AC  28 03 00 00 */	cmplwi r3, 0
+/* 101DB9B0 001DB9B0  41 82 00 30 */	beq lbl_101DB9E0
+/* 101DB9B4 001DB9B4  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DB9B8 001DB9B8  34 04 FF FF */	addic. r0, r4, -1
+/* 101DB9BC 001DB9BC  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DB9C0 001DB9C0  40 82 00 20 */	bne lbl_101DB9E0
+/* 101DB9C4 001DB9C4  28 03 00 00 */	cmplwi r3, 0
+/* 101DB9C8 001DB9C8  41 82 00 18 */	beq lbl_101DB9E0
+/* 101DB9CC 001DB9CC  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DB9D0 001DB9D0  38 80 00 01 */	li r4, 1
+/* 101DB9D4 001DB9D4  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DB9D8 001DB9D8  48 3B E1 79 */	bl func_10599B50
+/* 101DB9DC 001DB9DC  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DB9E0:
+/* 101DB9E0 001DB9E0  7F A3 EB 78 */	mr r3, r29
+/* 101DB9E4 001DB9E4  48 00 01 8D */	bl "end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DB9E8 001DB9E8  90 61 00 48 */	stw r3, 0x48(r1)
+/* 101DB9EC 001DB9EC  38 61 00 48 */	addi r3, r1, 0x48
+/* 101DB9F0 001DB9F0  48 00 00 F1 */	bl "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DB9F4 001DB9F4  7C 1E 18 40 */	cmplw r30, r3
+/* 101DB9F8 001DB9F8  40 82 00 0C */	bne lbl_101DBA04
+/* 101DB9FC 001DB9FC  38 60 00 00 */	li r3, 0
+/* 101DBA00 001DBA00  48 00 00 18 */	b lbl_101DBA18
+lbl_101DBA04:
+/* 101DBA04 001DBA04  80 9E 00 04 */	lwz r4, 4(r30)
+/* 101DBA08 001DBA08  80 64 00 14 */	lwz r3, 0x14(r4)
+/* 101DBA0C 001DBA0C  38 03 00 01 */	addi r0, r3, 1
+/* 101DBA10 001DBA10  90 04 00 14 */	stw r0, 0x14(r4)
+/* 101DBA14 001DBA14  80 7E 00 04 */	lwz r3, 4(r30)
+lbl_101DBA18:
+/* 101DBA18 001DBA18  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 101DBA1C 001DBA1C  38 21 00 70 */	addi r1, r1, 0x70
+/* 101DBA20 001DBA20  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DBA24 001DBA24  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DBA28 001DBA28  7C 08 03 A6 */	mtlr r0
+/* 101DBA2C 001DBA2C  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DBA30 001DBA30  4E 80 00 20 */	blr 
 
-.global ".begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-".begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
-/* 001DBA70 001E4900  80 63 00 08 */	lwz r3, 8(r3)
-/* 001DBA74 001E4904  4E 80 00 20 */	blr 
+.global "begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+"begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
+/* 101DBA70 001DBA70  80 63 00 08 */	lwz r3, 8(r3)
+/* 101DBA74 001DBA74  4E 80 00 20 */	blr 
 
-.global ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket":
-/* 001DBAE0 001E4970  80 63 00 00 */	lwz r3, 0(r3)
-/* 001DBAE4 001E4974  4E 80 00 20 */	blr 
+.global "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+"__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket":
+/* 101DBAE0 001DBAE0  80 63 00 00 */	lwz r3, 0(r3)
+/* 101DBAE4 001DBAE4  4E 80 00 20 */	blr 
 
-.global ".end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-".end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
-/* 001DBB70 001E4A00  80 03 00 04 */	lwz r0, 4(r3)
-/* 001DBB74 001E4A04  80 63 00 08 */	lwz r3, 8(r3)
-/* 001DBB78 001E4A08  54 00 18 38 */	slwi r0, r0, 3
-/* 001DBB7C 001E4A0C  7C 63 02 14 */	add r3, r3, r0
-/* 001DBB80 001E4A10  4E 80 00 20 */	blr 
+.global "end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+"end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
+/* 101DBB70 001DBB70  80 03 00 04 */	lwz r0, 4(r3)
+/* 101DBB74 001DBB74  80 63 00 08 */	lwz r3, 8(r3)
+/* 101DBB78 001DBB78  54 00 18 38 */	slwi r0, r0, 3
+/* 101DBB7C 001DBB7C  7C 63 02 14 */	add r3, r3, r0
+/* 101DBB80 001DBB80  4E 80 00 20 */	blr 
 
-.global ".AddPalette__14PaletteManagerFP7PalWrapi"
-".AddPalette__14PaletteManagerFP7PalWrapi":
-/* 001DBBF0 001E4A80  7C 08 02 A6 */	mflr r0
-/* 001DBBF4 001E4A84  28 04 00 00 */	cmplwi r4, 0
-/* 001DBBF8 001E4A88  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBBFC 001E4A8C  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DBC00 001E4A90  41 82 00 5C */	beq lbl_001DBC5C
-/* 001DBC04 001E4A94  90 A1 00 40 */	stw r5, 0x40(r1)
-/* 001DBC08 001E4A98  90 81 00 44 */	stw r4, 0x44(r1)
-/* 001DBC0C 001E4A9C  41 82 00 10 */	beq lbl_001DBC1C
-/* 001DBC10 001E4AA0  80 A4 00 14 */	lwz r5, 0x14(r4)
-/* 001DBC14 001E4AA4  38 05 00 01 */	addi r0, r5, 1
-/* 001DBC18 001E4AA8  90 04 00 14 */	stw r0, 0x14(r4)
-lbl_001DBC1C:
-/* 001DBC1C 001E4AAC  38 81 00 40 */	addi r4, r1, 0x40
-/* 001DBC20 001E4AB0  48 00 00 91 */	bl ".push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket"
-/* 001DBC24 001E4AB4  80 61 00 44 */	lwz r3, 0x44(r1)
-/* 001DBC28 001E4AB8  28 03 00 00 */	cmplwi r3, 0
-/* 001DBC2C 001E4ABC  41 82 00 30 */	beq lbl_001DBC5C
-/* 001DBC30 001E4AC0  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DBC34 001E4AC4  34 04 FF FF */	addic. r0, r4, -1
-/* 001DBC38 001E4AC8  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DBC3C 001E4ACC  40 82 00 20 */	bne lbl_001DBC5C
-/* 001DBC40 001E4AD0  28 03 00 00 */	cmplwi r3, 0
-/* 001DBC44 001E4AD4  41 82 00 18 */	beq lbl_001DBC5C
-/* 001DBC48 001E4AD8  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DBC4C 001E4ADC  38 80 00 01 */	li r4, 1
-/* 001DBC50 001E4AE0  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DBC54 001E4AE4  48 3B DE FD */	bl func_00599B50
-/* 001DBC58 001E4AE8  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DBC5C:
-/* 001DBC5C 001E4AEC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DBC60 001E4AF0  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DBC64 001E4AF4  7C 08 03 A6 */	mtlr r0
-/* 001DBC68 001E4AF8  4E 80 00 20 */	blr 
+.global "AddPalette__14PaletteManagerFP7PalWrapi"
+"AddPalette__14PaletteManagerFP7PalWrapi":
+/* 101DBBF0 001DBBF0  7C 08 02 A6 */	mflr r0
+/* 101DBBF4 001DBBF4  28 04 00 00 */	cmplwi r4, 0
+/* 101DBBF8 001DBBF8  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBBFC 001DBBFC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DBC00 001DBC00  41 82 00 5C */	beq lbl_101DBC5C
+/* 101DBC04 001DBC04  90 A1 00 40 */	stw r5, 0x40(r1)
+/* 101DBC08 001DBC08  90 81 00 44 */	stw r4, 0x44(r1)
+/* 101DBC0C 001DBC0C  41 82 00 10 */	beq lbl_101DBC1C
+/* 101DBC10 001DBC10  80 A4 00 14 */	lwz r5, 0x14(r4)
+/* 101DBC14 001DBC14  38 05 00 01 */	addi r0, r5, 1
+/* 101DBC18 001DBC18  90 04 00 14 */	stw r0, 0x14(r4)
+lbl_101DBC1C:
+/* 101DBC1C 001DBC1C  38 81 00 40 */	addi r4, r1, 0x40
+/* 101DBC20 001DBC20  48 00 00 91 */	bl "push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket"
+/* 101DBC24 001DBC24  80 61 00 44 */	lwz r3, 0x44(r1)
+/* 101DBC28 001DBC28  28 03 00 00 */	cmplwi r3, 0
+/* 101DBC2C 001DBC2C  41 82 00 30 */	beq lbl_101DBC5C
+/* 101DBC30 001DBC30  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DBC34 001DBC34  34 04 FF FF */	addic. r0, r4, -1
+/* 101DBC38 001DBC38  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DBC3C 001DBC3C  40 82 00 20 */	bne lbl_101DBC5C
+/* 101DBC40 001DBC40  28 03 00 00 */	cmplwi r3, 0
+/* 101DBC44 001DBC44  41 82 00 18 */	beq lbl_101DBC5C
+/* 101DBC48 001DBC48  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DBC4C 001DBC4C  38 80 00 01 */	li r4, 1
+/* 101DBC50 001DBC50  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DBC54 001DBC54  48 3B DE FD */	bl func_10599B50
+/* 101DBC58 001DBC58  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DBC5C:
+/* 101DBC5C 001DBC5C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DBC60 001DBC60  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DBC64 001DBC64  7C 08 03 A6 */	mtlr r0
+/* 101DBC68 001DBC68  4E 80 00 20 */	blr 
 
-.global ".push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket"
-".push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket":
-/* 001DBCB0 001E4B40  7C 08 02 A6 */	mflr r0
-/* 001DBCB4 001E4B44  38 C4 00 00 */	addi r6, r4, 0
-/* 001DBCB8 001E4B48  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBCBC 001E4B4C  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 001DBCC0 001E4B50  80 03 00 04 */	lwz r0, 4(r3)
-/* 001DBCC4 001E4B54  80 A3 00 08 */	lwz r5, 8(r3)
-/* 001DBCC8 001E4B58  54 00 18 38 */	slwi r0, r0, 3
-/* 001DBCCC 001E4B5C  7C 85 02 14 */	add r4, r5, r0
-/* 001DBCD0 001E4B60  38 A0 00 01 */	li r5, 1
-/* 001DBCD4 001E4B64  48 00 08 0D */	bl ".insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket"
-/* 001DBCD8 001E4B68  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 001DBCDC 001E4B6C  38 21 00 40 */	addi r1, r1, 0x40
-/* 001DBCE0 001E4B70  7C 08 03 A6 */	mtlr r0
-/* 001DBCE4 001E4B74  4E 80 00 20 */	blr 
+.global "push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket"
+"push_back__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FRC13PalettePacket":
+/* 101DBCB0 001DBCB0  7C 08 02 A6 */	mflr r0
+/* 101DBCB4 001DBCB4  38 C4 00 00 */	addi r6, r4, 0
+/* 101DBCB8 001DBCB8  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBCBC 001DBCBC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 101DBCC0 001DBCC0  80 03 00 04 */	lwz r0, 4(r3)
+/* 101DBCC4 001DBCC4  80 A3 00 08 */	lwz r5, 8(r3)
+/* 101DBCC8 001DBCC8  54 00 18 38 */	slwi r0, r0, 3
+/* 101DBCCC 001DBCCC  7C 85 02 14 */	add r4, r5, r0
+/* 101DBCD0 001DBCD0  38 A0 00 01 */	li r5, 1
+/* 101DBCD4 001DBCD4  48 00 08 0D */	bl "insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket"
+/* 101DBCD8 001DBCD8  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 101DBCDC 001DBCDC  38 21 00 40 */	addi r1, r1, 0x40
+/* 101DBCE0 001DBCE0  7C 08 03 A6 */	mtlr r0
+/* 101DBCE4 001DBCE4  4E 80 00 20 */	blr 
 
-.global ".Unload__14PaletteManagerFv"
-".Unload__14PaletteManagerFv":
-/* 001DBD70 001E4C00  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DBD74 001E4C04  7C 08 02 A6 */	mflr r0
-/* 001DBD78 001E4C08  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DBD7C 001E4C0C  7C 7E 1B 78 */	mr r30, r3
-/* 001DBD80 001E4C10  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBD84 001E4C14  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 001DBD88 001E4C18  4B FF FD E9 */	bl ".end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DBD8C 001E4C1C  90 61 00 48 */	stw r3, 0x48(r1)
-/* 001DBD90 001E4C20  38 61 00 48 */	addi r3, r1, 0x48
-/* 001DBD94 001E4C24  4B FF FD 4D */	bl ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DBD98 001E4C28  90 61 00 44 */	stw r3, 0x44(r1)
-/* 001DBD9C 001E4C2C  7F C3 F3 78 */	mr r3, r30
-/* 001DBDA0 001E4C30  4B FF FC D1 */	bl ".begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DBDA4 001E4C34  90 61 00 4C */	stw r3, 0x4c(r1)
-/* 001DBDA8 001E4C38  38 61 00 4C */	addi r3, r1, 0x4c
-/* 001DBDAC 001E4C3C  4B FF FD 35 */	bl ".__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DBDB0 001E4C40  90 61 00 40 */	stw r3, 0x40(r1)
-/* 001DBDB4 001E4C44  38 61 00 44 */	addi r3, r1, 0x44
-/* 001DBDB8 001E4C48  48 00 00 69 */	bl ".__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DBDBC 001E4C4C  3B E3 00 00 */	addi r31, r3, 0
-/* 001DBDC0 001E4C50  38 61 00 40 */	addi r3, r1, 0x40
-/* 001DBDC4 001E4C54  48 00 00 5D */	bl ".__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-/* 001DBDC8 001E4C58  38 83 00 00 */	addi r4, r3, 0
-/* 001DBDCC 001E4C5C  38 7E 00 00 */	addi r3, r30, 0
-/* 001DBDD0 001E4C60  38 BF 00 00 */	addi r5, r31, 0
-/* 001DBDD4 001E4C64  48 00 04 0D */	bl ".erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket"
-/* 001DBDD8 001E4C68  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 001DBDDC 001E4C6C  38 21 00 60 */	addi r1, r1, 0x60
-/* 001DBDE0 001E4C70  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DBDE4 001E4C74  7C 08 03 A6 */	mtlr r0
-/* 001DBDE8 001E4C78  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DBDEC 001E4C7C  4E 80 00 20 */	blr 
+.global "Unload__14PaletteManagerFv"
+"Unload__14PaletteManagerFv":
+/* 101DBD70 001DBD70  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DBD74 001DBD74  7C 08 02 A6 */	mflr r0
+/* 101DBD78 001DBD78  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DBD7C 001DBD7C  7C 7E 1B 78 */	mr r30, r3
+/* 101DBD80 001DBD80  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBD84 001DBD84  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 101DBD88 001DBD88  4B FF FD E9 */	bl "end__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DBD8C 001DBD8C  90 61 00 48 */	stw r3, 0x48(r1)
+/* 101DBD90 001DBD90  38 61 00 48 */	addi r3, r1, 0x48
+/* 101DBD94 001DBD94  4B FF FD 4D */	bl "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DBD98 001DBD98  90 61 00 44 */	stw r3, 0x44(r1)
+/* 101DBD9C 001DBD9C  7F C3 F3 78 */	mr r3, r30
+/* 101DBDA0 001DBDA0  4B FF FC D1 */	bl "begin__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DBDA4 001DBDA4  90 61 00 4C */	stw r3, 0x4c(r1)
+/* 101DBDA8 001DBDA8  38 61 00 4C */	addi r3, r1, 0x4c
+/* 101DBDAC 001DBDAC  4B FF FD 35 */	bl "__pointer2iterator__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DBDB0 001DBDB0  90 61 00 40 */	stw r3, 0x40(r1)
+/* 101DBDB4 001DBDB4  38 61 00 44 */	addi r3, r1, 0x44
+/* 101DBDB8 001DBDB8  48 00 00 69 */	bl "__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DBDBC 001DBDBC  3B E3 00 00 */	addi r31, r3, 0
+/* 101DBDC0 001DBDC0  38 61 00 40 */	addi r3, r1, 0x40
+/* 101DBDC4 001DBDC4  48 00 00 5D */	bl "__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+/* 101DBDC8 001DBDC8  38 83 00 00 */	addi r4, r3, 0
+/* 101DBDCC 001DBDCC  38 7E 00 00 */	addi r3, r30, 0
+/* 101DBDD0 001DBDD0  38 BF 00 00 */	addi r5, r31, 0
+/* 101DBDD4 001DBDD4  48 00 04 0D */	bl "erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket"
+/* 101DBDD8 001DBDD8  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 101DBDDC 001DBDDC  38 21 00 60 */	addi r1, r1, 0x60
+/* 101DBDE0 001DBDE0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DBDE4 001DBDE4  7C 08 03 A6 */	mtlr r0
+/* 101DBDE8 001DBDE8  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DBDEC 001DBDEC  4E 80 00 20 */	blr 
 
-.global ".__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
-".__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket":
-/* 001DBE20 001E4CB0  80 63 00 00 */	lwz r3, 0(r3)
-/* 001DBE24 001E4CB4  4E 80 00 20 */	blr 
+.global "__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket"
+"__iterator2pointer__Q23std58vector<13PalettePacket,Q23std26allocator<13PalettePacket>>FRCP13PalettePacket":
+/* 101DBE20 001DBE20  80 63 00 00 */	lwz r3, 0(r3)
+/* 101DBE24 001DBE24  4E 80 00 20 */	blr 
 
-.global ".__dt__14PaletteManagerFv"
-".__dt__14PaletteManagerFv":
-/* 001DBEB0 001E4D40  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DBEB4 001E4D44  7C 08 02 A6 */	mflr r0
-/* 001DBEB8 001E4D48  3B E4 00 00 */	addi r31, r4, 0
-/* 001DBEBC 001E4D4C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DBEC0 001E4D50  7C 7E 1B 79 */	or. r30, r3, r3
-/* 001DBEC4 001E4D54  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBEC8 001E4D58  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DBECC 001E4D5C  41 82 00 24 */	beq lbl_001DBEF0
-/* 001DBED0 001E4D60  41 82 00 10 */	beq lbl_001DBEE0
-/* 001DBED4 001E4D64  41 82 00 0C */	beq lbl_001DBEE0
-/* 001DBED8 001E4D68  38 80 00 00 */	li r4, 0
-/* 001DBEDC 001E4D6C  48 00 10 55 */	bl ".__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
-lbl_001DBEE0:
-/* 001DBEE0 001E4D70  7F E0 07 35 */	extsh. r0, r31
-/* 001DBEE4 001E4D74  40 81 00 0C */	ble lbl_001DBEF0
-/* 001DBEE8 001E4D78  7F C3 F3 78 */	mr r3, r30
-/* 001DBEEC 001E4D7C  48 3A C7 A5 */	bl func_00588690
-lbl_001DBEF0:
-/* 001DBEF0 001E4D80  7F C3 F3 78 */	mr r3, r30
-/* 001DBEF4 001E4D84  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DBEF8 001E4D88  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DBEFC 001E4D8C  7C 08 03 A6 */	mtlr r0
-/* 001DBF00 001E4D90  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DBF04 001E4D94  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DBF08 001E4D98  4E 80 00 20 */	blr 
+.global "__dt__14PaletteManagerFv"
+"__dt__14PaletteManagerFv":
+/* 101DBEB0 001DBEB0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DBEB4 001DBEB4  7C 08 02 A6 */	mflr r0
+/* 101DBEB8 001DBEB8  3B E4 00 00 */	addi r31, r4, 0
+/* 101DBEBC 001DBEBC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DBEC0 001DBEC0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 101DBEC4 001DBEC4  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBEC8 001DBEC8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DBECC 001DBECC  41 82 00 24 */	beq lbl_101DBEF0
+/* 101DBED0 001DBED0  41 82 00 10 */	beq lbl_101DBEE0
+/* 101DBED4 001DBED4  41 82 00 0C */	beq lbl_101DBEE0
+/* 101DBED8 001DBED8  38 80 00 00 */	li r4, 0
+/* 101DBEDC 001DBEDC  48 00 10 55 */	bl "__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
+lbl_101DBEE0:
+/* 101DBEE0 001DBEE0  7F E0 07 35 */	extsh. r0, r31
+/* 101DBEE4 001DBEE4  40 81 00 0C */	ble lbl_101DBEF0
+/* 101DBEE8 001DBEE8  7F C3 F3 78 */	mr r3, r30
+/* 101DBEEC 001DBEEC  48 3A C7 A5 */	bl func_10588690
+lbl_101DBEF0:
+/* 101DBEF0 001DBEF0  7F C3 F3 78 */	mr r3, r30
+/* 101DBEF4 001DBEF4  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DBEF8 001DBEF8  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DBEFC 001DBEFC  7C 08 03 A6 */	mtlr r0
+/* 101DBF00 001DBF00  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DBF04 001DBF04  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DBF08 001DBF08  4E 80 00 20 */	blr 
 
-.global ".__ct__14PaletteManagerFv"
-".__ct__14PaletteManagerFv":
-/* 001DBF40 001E4DD0  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DBF44 001E4DD4  7C 08 02 A6 */	mflr r0
-/* 001DBF48 001E4DD8  7C 7F 1B 78 */	mr r31, r3
-/* 001DBF4C 001E4DDC  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBF50 001E4DE0  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DBF54 001E4DE4  48 00 00 4D */	bl ".__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-/* 001DBF58 001E4DE8  7F E3 FB 78 */	mr r3, r31
-/* 001DBF5C 001E4DEC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DBF60 001E4DF0  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DBF64 001E4DF4  7C 08 03 A6 */	mtlr r0
-/* 001DBF68 001E4DF8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DBF6C 001E4DFC  4E 80 00 20 */	blr 
+.global "__ct__14PaletteManagerFv"
+"__ct__14PaletteManagerFv":
+/* 101DBF40 001DBF40  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DBF44 001DBF44  7C 08 02 A6 */	mflr r0
+/* 101DBF48 001DBF48  7C 7F 1B 78 */	mr r31, r3
+/* 101DBF4C 001DBF4C  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBF50 001DBF50  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DBF54 001DBF54  48 00 00 4D */	bl "__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+/* 101DBF58 001DBF58  7F E3 FB 78 */	mr r3, r31
+/* 101DBF5C 001DBF5C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DBF60 001DBF60  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DBF64 001DBF64  7C 08 03 A6 */	mtlr r0
+/* 101DBF68 001DBF68  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DBF6C 001DBF6C  4E 80 00 20 */	blr 
 
-.global ".__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
-".__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
-/* 001DBFA0 001E4E30  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DBFA4 001E4E34  7C 08 02 A6 */	mflr r0
-/* 001DBFA8 001E4E38  3B E3 00 00 */	addi r31, r3, 0
-/* 001DBFAC 001E4E3C  90 01 00 08 */	stw r0, 8(r1)
-/* 001DBFB0 001E4E40  38 80 00 00 */	li r4, 0
-/* 001DBFB4 001E4E44  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DBFB8 001E4E48  48 00 00 99 */	bl ".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl"
-/* 001DBFBC 001E4E4C  38 00 00 00 */	li r0, 0
-/* 001DBFC0 001E4E50  90 1F 00 04 */	stw r0, 4(r31)
-/* 001DBFC4 001E4E54  7F E3 FB 78 */	mr r3, r31
-/* 001DBFC8 001E4E58  90 1F 00 08 */	stw r0, 8(r31)
-/* 001DBFCC 001E4E5C  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DBFD0 001E4E60  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DBFD4 001E4E64  7C 08 03 A6 */	mtlr r0
-/* 001DBFD8 001E4E68  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DBFDC 001E4E6C  4E 80 00 20 */	blr 
+.global "__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv"
+"__ct__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>Fv":
+/* 101DBFA0 001DBFA0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DBFA4 001DBFA4  7C 08 02 A6 */	mflr r0
+/* 101DBFA8 001DBFA8  3B E3 00 00 */	addi r31, r3, 0
+/* 101DBFAC 001DBFAC  90 01 00 08 */	stw r0, 8(r1)
+/* 101DBFB0 001DBFB0  38 80 00 00 */	li r4, 0
+/* 101DBFB4 001DBFB4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DBFB8 001DBFB8  48 00 00 99 */	bl "__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl"
+/* 101DBFBC 001DBFBC  38 00 00 00 */	li r0, 0
+/* 101DBFC0 001DBFC0  90 1F 00 04 */	stw r0, 4(r31)
+/* 101DBFC4 001DBFC4  7F E3 FB 78 */	mr r3, r31
+/* 101DBFC8 001DBFC8  90 1F 00 08 */	stw r0, 8(r31)
+/* 101DBFCC 001DBFCC  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DBFD0 001DBFD0  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DBFD4 001DBFD4  7C 08 03 A6 */	mtlr r0
+/* 101DBFD8 001DBFD8  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DBFDC 001DBFDC  4E 80 00 20 */	blr 
 
-.global ".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl"
-".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl":
-/* 001DC050 001E4EE0  90 83 00 00 */	stw r4, 0(r3)
-/* 001DC054 001E4EE4  4E 80 00 20 */	blr 
+.global "__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl"
+"__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FUl":
+/* 101DC050 001DC050  90 83 00 00 */	stw r4, 0(r3)
+/* 101DC054 001DC054  4E 80 00 20 */	blr 
 
-.global ".__dt__13PalettePacketFv"
-".__dt__13PalettePacketFv":
-/* 001DC0C0 001E4F50  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DC0C4 001E4F54  7C 08 02 A6 */	mflr r0
-/* 001DC0C8 001E4F58  3B E4 00 00 */	addi r31, r4, 0
-/* 001DC0CC 001E4F5C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DC0D0 001E4F60  7C 7E 1B 79 */	or. r30, r3, r3
-/* 001DC0D4 001E4F64  90 01 00 08 */	stw r0, 8(r1)
-/* 001DC0D8 001E4F68  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DC0DC 001E4F6C  41 82 00 4C */	beq lbl_001DC128
-/* 001DC0E0 001E4F70  80 7E 00 04 */	lwz r3, 4(r30)
-/* 001DC0E4 001E4F74  28 03 00 00 */	cmplwi r3, 0
-/* 001DC0E8 001E4F78  41 82 00 30 */	beq lbl_001DC118
-/* 001DC0EC 001E4F7C  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DC0F0 001E4F80  34 04 FF FF */	addic. r0, r4, -1
-/* 001DC0F4 001E4F84  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DC0F8 001E4F88  40 82 00 20 */	bne lbl_001DC118
-/* 001DC0FC 001E4F8C  28 03 00 00 */	cmplwi r3, 0
-/* 001DC100 001E4F90  41 82 00 18 */	beq lbl_001DC118
-/* 001DC104 001E4F94  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DC108 001E4F98  38 80 00 01 */	li r4, 1
-/* 001DC10C 001E4F9C  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DC110 001E4FA0  48 3B DA 41 */	bl func_00599B50
-/* 001DC114 001E4FA4  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DC118:
-/* 001DC118 001E4FA8  7F E0 07 35 */	extsh. r0, r31
-/* 001DC11C 001E4FAC  40 81 00 0C */	ble lbl_001DC128
-/* 001DC120 001E4FB0  7F C3 F3 78 */	mr r3, r30
-/* 001DC124 001E4FB4  48 3A C5 6D */	bl func_00588690
-lbl_001DC128:
-/* 001DC128 001E4FB8  7F C3 F3 78 */	mr r3, r30
-/* 001DC12C 001E4FBC  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DC130 001E4FC0  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DC134 001E4FC4  7C 08 03 A6 */	mtlr r0
-/* 001DC138 001E4FC8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DC13C 001E4FCC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DC140 001E4FD0  4E 80 00 20 */	blr 
+.global "__dt__13PalettePacketFv"
+"__dt__13PalettePacketFv":
+/* 101DC0C0 001DC0C0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DC0C4 001DC0C4  7C 08 02 A6 */	mflr r0
+/* 101DC0C8 001DC0C8  3B E4 00 00 */	addi r31, r4, 0
+/* 101DC0CC 001DC0CC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DC0D0 001DC0D0  7C 7E 1B 79 */	or. r30, r3, r3
+/* 101DC0D4 001DC0D4  90 01 00 08 */	stw r0, 8(r1)
+/* 101DC0D8 001DC0D8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DC0DC 001DC0DC  41 82 00 4C */	beq lbl_101DC128
+/* 101DC0E0 001DC0E0  80 7E 00 04 */	lwz r3, 4(r30)
+/* 101DC0E4 001DC0E4  28 03 00 00 */	cmplwi r3, 0
+/* 101DC0E8 001DC0E8  41 82 00 30 */	beq lbl_101DC118
+/* 101DC0EC 001DC0EC  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DC0F0 001DC0F0  34 04 FF FF */	addic. r0, r4, -1
+/* 101DC0F4 001DC0F4  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DC0F8 001DC0F8  40 82 00 20 */	bne lbl_101DC118
+/* 101DC0FC 001DC0FC  28 03 00 00 */	cmplwi r3, 0
+/* 101DC100 001DC100  41 82 00 18 */	beq lbl_101DC118
+/* 101DC104 001DC104  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DC108 001DC108  38 80 00 01 */	li r4, 1
+/* 101DC10C 001DC10C  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DC110 001DC110  48 3B DA 41 */	bl func_10599B50
+/* 101DC114 001DC114  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DC118:
+/* 101DC118 001DC118  7F E0 07 35 */	extsh. r0, r31
+/* 101DC11C 001DC11C  40 81 00 0C */	ble lbl_101DC128
+/* 101DC120 001DC120  7F C3 F3 78 */	mr r3, r30
+/* 101DC124 001DC124  48 3A C5 6D */	bl func_10588690
+lbl_101DC128:
+/* 101DC128 001DC128  7F C3 F3 78 */	mr r3, r30
+/* 101DC12C 001DC12C  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DC130 001DC130  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DC134 001DC134  7C 08 03 A6 */	mtlr r0
+/* 101DC138 001DC138  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DC13C 001DC13C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DC140 001DC140  4E 80 00 20 */	blr 
 
-.global ".__ct__13PalettePacketFRC13PalettePacket"
-".__ct__13PalettePacketFRC13PalettePacket":
-/* 001DC170 001E5000  80 04 00 00 */	lwz r0, 0(r4)
-/* 001DC174 001E5004  90 03 00 00 */	stw r0, 0(r3)
-/* 001DC178 001E5008  80 A4 00 04 */	lwz r5, 4(r4)
-/* 001DC17C 001E500C  28 05 00 00 */	cmplwi r5, 0
-/* 001DC180 001E5010  90 A3 00 04 */	stw r5, 4(r3)
-/* 001DC184 001E5014  4D 82 00 20 */	beqlr 
-/* 001DC188 001E5018  80 85 00 14 */	lwz r4, 0x14(r5)
-/* 001DC18C 001E501C  38 04 00 01 */	addi r0, r4, 1
-/* 001DC190 001E5020  90 05 00 14 */	stw r0, 0x14(r5)
-/* 001DC194 001E5024  4E 80 00 20 */	blr 
+.global "__ct__13PalettePacketFRC13PalettePacket"
+"__ct__13PalettePacketFRC13PalettePacket":
+/* 101DC170 001DC170  80 04 00 00 */	lwz r0, 0(r4)
+/* 101DC174 001DC174  90 03 00 00 */	stw r0, 0(r3)
+/* 101DC178 001DC178  80 A4 00 04 */	lwz r5, 4(r4)
+/* 101DC17C 001DC17C  28 05 00 00 */	cmplwi r5, 0
+/* 101DC180 001DC180  90 A3 00 04 */	stw r5, 4(r3)
+/* 101DC184 001DC184  4D 82 00 20 */	beqlr 
+/* 101DC188 001DC188  80 85 00 14 */	lwz r4, 0x14(r5)
+/* 101DC18C 001DC18C  38 04 00 01 */	addi r0, r4, 1
+/* 101DC190 001DC190  90 05 00 14 */	stw r0, 0x14(r5)
+/* 101DC194 001DC194  4E 80 00 20 */	blr 
 
-.global ".erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket"
-".erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket":
-/* 001DC1E0 001E5070  BF 61 FF EC */	stmw r27, -0x14(r1)
-/* 001DC1E4 001E5074  7C 08 02 A6 */	mflr r0
-/* 001DC1E8 001E5078  3B 84 00 00 */	addi r28, r4, 0
-/* 001DC1EC 001E507C  3B A5 00 00 */	addi r29, r5, 0
-/* 001DC1F0 001E5080  7C 1C E8 40 */	cmplw r28, r29
-/* 001DC1F4 001E5084  3B 63 00 00 */	addi r27, r3, 0
-/* 001DC1F8 001E5088  90 01 00 08 */	stw r0, 8(r1)
-/* 001DC1FC 001E508C  94 21 FF A0 */	stwu r1, -0x60(r1)
-/* 001DC200 001E5090  40 82 00 0C */	bne lbl_001DC20C
-/* 001DC204 001E5094  7F 83 E3 78 */	mr r3, r28
-/* 001DC208 001E5098  48 00 00 7C */	b lbl_001DC284
-lbl_001DC20C:
-/* 001DC20C 001E509C  80 1B 00 04 */	lwz r0, 4(r27)
-/* 001DC210 001E50A0  80 7B 00 08 */	lwz r3, 8(r27)
-/* 001DC214 001E50A4  54 00 18 38 */	slwi r0, r0, 3
-/* 001DC218 001E50A8  7F E3 02 14 */	add r31, r3, r0
-/* 001DC21C 001E50AC  7C 1D F8 50 */	subf r0, r29, r31
-/* 001DC220 001E50B0  7C 00 1E 70 */	srawi r0, r0, 3
-/* 001DC224 001E50B4  7F C0 01 95 */	addze. r30, r0
-/* 001DC228 001E50B8  41 82 00 14 */	beq lbl_001DC23C
-/* 001DC22C 001E50BC  38 7D 00 00 */	addi r3, r29, 0
-/* 001DC230 001E50C0  38 9F 00 00 */	addi r4, r31, 0
-/* 001DC234 001E50C4  38 BC 00 00 */	addi r5, r28, 0
-/* 001DC238 001E50C8  48 00 01 69 */	bl ".copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
-lbl_001DC23C:
-/* 001DC23C 001E50CC  57 C0 18 38 */	slwi r0, r30, 3
-/* 001DC240 001E50D0  7F DC 02 14 */	add r30, r28, r0
-/* 001DC244 001E50D4  48 00 00 1C */	b lbl_001DC260
-lbl_001DC248:
-/* 001DC248 001E50D8  7F 63 DB 78 */	mr r3, r27
-/* 001DC24C 001E50DC  48 00 00 D5 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC250 001E50E0  38 7E 00 00 */	addi r3, r30, 0
-/* 001DC254 001E50E4  38 80 FF FF */	li r4, -1
-/* 001DC258 001E50E8  4B FF FE 69 */	bl ".__dt__13PalettePacketFv"
-/* 001DC25C 001E50EC  3B DE 00 08 */	addi r30, r30, 8
-lbl_001DC260:
-/* 001DC260 001E50F0  7C 1E F8 40 */	cmplw r30, r31
-/* 001DC264 001E50F4  41 80 FF E4 */	blt lbl_001DC248
-/* 001DC268 001E50F8  7C 7C E8 50 */	subf r3, r28, r29
-/* 001DC26C 001E50FC  80 1B 00 04 */	lwz r0, 4(r27)
-/* 001DC270 001E5100  7C 63 1E 70 */	srawi r3, r3, 3
-/* 001DC274 001E5104  7C 63 01 94 */	addze r3, r3
-/* 001DC278 001E5108  7C 03 00 50 */	subf r0, r3, r0
-/* 001DC27C 001E510C  90 1B 00 04 */	stw r0, 4(r27)
-/* 001DC280 001E5110  7F 83 E3 78 */	mr r3, r28
-lbl_001DC284:
-/* 001DC284 001E5114  80 01 00 68 */	lwz r0, 0x68(r1)
-/* 001DC288 001E5118  38 21 00 60 */	addi r1, r1, 0x60
-/* 001DC28C 001E511C  BB 61 FF EC */	lmw r27, -0x14(r1)
-/* 001DC290 001E5120  7C 08 03 A6 */	mtlr r0
-/* 001DC294 001E5124  4E 80 00 20 */	blr 
+.global "erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket"
+"erase__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketP13PalettePacket":
+/* 101DC1E0 001DC1E0  BF 61 FF EC */	stmw r27, -0x14(r1)
+/* 101DC1E4 001DC1E4  7C 08 02 A6 */	mflr r0
+/* 101DC1E8 001DC1E8  3B 84 00 00 */	addi r28, r4, 0
+/* 101DC1EC 001DC1EC  3B A5 00 00 */	addi r29, r5, 0
+/* 101DC1F0 001DC1F0  7C 1C E8 40 */	cmplw r28, r29
+/* 101DC1F4 001DC1F4  3B 63 00 00 */	addi r27, r3, 0
+/* 101DC1F8 001DC1F8  90 01 00 08 */	stw r0, 8(r1)
+/* 101DC1FC 001DC1FC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 101DC200 001DC200  40 82 00 0C */	bne lbl_101DC20C
+/* 101DC204 001DC204  7F 83 E3 78 */	mr r3, r28
+/* 101DC208 001DC208  48 00 00 7C */	b lbl_101DC284
+lbl_101DC20C:
+/* 101DC20C 001DC20C  80 1B 00 04 */	lwz r0, 4(r27)
+/* 101DC210 001DC210  80 7B 00 08 */	lwz r3, 8(r27)
+/* 101DC214 001DC214  54 00 18 38 */	slwi r0, r0, 3
+/* 101DC218 001DC218  7F E3 02 14 */	add r31, r3, r0
+/* 101DC21C 001DC21C  7C 1D F8 50 */	subf r0, r29, r31
+/* 101DC220 001DC220  7C 00 1E 70 */	srawi r0, r0, 3
+/* 101DC224 001DC224  7F C0 01 95 */	addze. r30, r0
+/* 101DC228 001DC228  41 82 00 14 */	beq lbl_101DC23C
+/* 101DC22C 001DC22C  38 7D 00 00 */	addi r3, r29, 0
+/* 101DC230 001DC230  38 9F 00 00 */	addi r4, r31, 0
+/* 101DC234 001DC234  38 BC 00 00 */	addi r5, r28, 0
+/* 101DC238 001DC238  48 00 01 69 */	bl "copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
+lbl_101DC23C:
+/* 101DC23C 001DC23C  57 C0 18 38 */	slwi r0, r30, 3
+/* 101DC240 001DC240  7F DC 02 14 */	add r30, r28, r0
+/* 101DC244 001DC244  48 00 00 1C */	b lbl_101DC260
+lbl_101DC248:
+/* 101DC248 001DC248  7F 63 DB 78 */	mr r3, r27
+/* 101DC24C 001DC24C  48 00 00 D5 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC250 001DC250  38 7E 00 00 */	addi r3, r30, 0
+/* 101DC254 001DC254  38 80 FF FF */	li r4, -1
+/* 101DC258 001DC258  4B FF FE 69 */	bl "__dt__13PalettePacketFv"
+/* 101DC25C 001DC25C  3B DE 00 08 */	addi r30, r30, 8
+lbl_101DC260:
+/* 101DC260 001DC260  7C 1E F8 40 */	cmplw r30, r31
+/* 101DC264 001DC264  41 80 FF E4 */	blt lbl_101DC248
+/* 101DC268 001DC268  7C 7C E8 50 */	subf r3, r28, r29
+/* 101DC26C 001DC26C  80 1B 00 04 */	lwz r0, 4(r27)
+/* 101DC270 001DC270  7C 63 1E 70 */	srawi r3, r3, 3
+/* 101DC274 001DC274  7C 63 01 94 */	addze r3, r3
+/* 101DC278 001DC278  7C 03 00 50 */	subf r0, r3, r0
+/* 101DC27C 001DC27C  90 1B 00 04 */	stw r0, 4(r27)
+/* 101DC280 001DC280  7F 83 E3 78 */	mr r3, r28
+lbl_101DC284:
+/* 101DC284 001DC284  80 01 00 68 */	lwz r0, 0x68(r1)
+/* 101DC288 001DC288  38 21 00 60 */	addi r1, r1, 0x60
+/* 101DC28C 001DC28C  BB 61 FF EC */	lmw r27, -0x14(r1)
+/* 101DC290 001DC290  7C 08 03 A6 */	mtlr r0
+/* 101DC294 001DC294  4E 80 00 20 */	blr 
 
-.global ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv":
-/* 001DC320 001E51B0  4E 80 00 20 */	blr 
+.global "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+"first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv":
+/* 101DC320 001DC320  4E 80 00 20 */	blr 
 
-.global ".copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
-".copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket":
-/* 001DC3A0 001E5230  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DC3A4 001E5234  7C 08 02 A6 */	mflr r0
-/* 001DC3A8 001E5238  3B E5 00 00 */	addi r31, r5, 0
-/* 001DC3AC 001E523C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DC3B0 001E5240  3B C4 00 00 */	addi r30, r4, 0
-/* 001DC3B4 001E5244  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DC3B8 001E5248  3B A3 00 00 */	addi r29, r3, 0
-/* 001DC3BC 001E524C  90 01 00 08 */	stw r0, 8(r1)
-/* 001DC3C0 001E5250  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DC3C4 001E5254  48 00 00 74 */	b lbl_001DC438
-lbl_001DC3C8:
-/* 001DC3C8 001E5258  7C 1F E8 40 */	cmplw r31, r29
-/* 001DC3CC 001E525C  41 82 00 64 */	beq lbl_001DC430
-/* 001DC3D0 001E5260  80 1D 00 00 */	lwz r0, 0(r29)
-/* 001DC3D4 001E5264  90 1F 00 00 */	stw r0, 0(r31)
-/* 001DC3D8 001E5268  80 9D 00 04 */	lwz r4, 4(r29)
-/* 001DC3DC 001E526C  28 04 00 00 */	cmplwi r4, 0
-/* 001DC3E0 001E5270  41 82 00 10 */	beq lbl_001DC3F0
-/* 001DC3E4 001E5274  80 64 00 14 */	lwz r3, 0x14(r4)
-/* 001DC3E8 001E5278  38 03 00 01 */	addi r0, r3, 1
-/* 001DC3EC 001E527C  90 04 00 14 */	stw r0, 0x14(r4)
-lbl_001DC3F0:
-/* 001DC3F0 001E5280  80 7F 00 04 */	lwz r3, 4(r31)
-/* 001DC3F4 001E5284  28 03 00 00 */	cmplwi r3, 0
-/* 001DC3F8 001E5288  41 82 00 30 */	beq lbl_001DC428
-/* 001DC3FC 001E528C  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DC400 001E5290  34 04 FF FF */	addic. r0, r4, -1
-/* 001DC404 001E5294  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DC408 001E5298  40 82 00 20 */	bne lbl_001DC428
-/* 001DC40C 001E529C  28 03 00 00 */	cmplwi r3, 0
-/* 001DC410 001E52A0  41 82 00 18 */	beq lbl_001DC428
-/* 001DC414 001E52A4  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DC418 001E52A8  38 80 00 01 */	li r4, 1
-/* 001DC41C 001E52AC  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DC420 001E52B0  48 3B D7 31 */	bl func_00599B50
-/* 001DC424 001E52B4  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DC428:
-/* 001DC428 001E52B8  80 1D 00 04 */	lwz r0, 4(r29)
-/* 001DC42C 001E52BC  90 1F 00 04 */	stw r0, 4(r31)
-lbl_001DC430:
-/* 001DC430 001E52C0  3B BD 00 08 */	addi r29, r29, 8
-/* 001DC434 001E52C4  3B FF 00 08 */	addi r31, r31, 8
-lbl_001DC438:
-/* 001DC438 001E52C8  7C 1D F0 40 */	cmplw r29, r30
-/* 001DC43C 001E52CC  41 80 FF 8C */	blt lbl_001DC3C8
-/* 001DC440 001E52D0  7F E3 FB 78 */	mr r3, r31
-/* 001DC444 001E52D4  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DC448 001E52D8  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DC44C 001E52DC  7C 08 03 A6 */	mtlr r0
-/* 001DC450 001E52E0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DC454 001E52E4  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DC458 001E52E8  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DC45C 001E52EC  4E 80 00 20 */	blr 
+.global "copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
+"copy__Q23std31__msl_copy<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket":
+/* 101DC3A0 001DC3A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DC3A4 001DC3A4  7C 08 02 A6 */	mflr r0
+/* 101DC3A8 001DC3A8  3B E5 00 00 */	addi r31, r5, 0
+/* 101DC3AC 001DC3AC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DC3B0 001DC3B0  3B C4 00 00 */	addi r30, r4, 0
+/* 101DC3B4 001DC3B4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DC3B8 001DC3B8  3B A3 00 00 */	addi r29, r3, 0
+/* 101DC3BC 001DC3BC  90 01 00 08 */	stw r0, 8(r1)
+/* 101DC3C0 001DC3C0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DC3C4 001DC3C4  48 00 00 74 */	b lbl_101DC438
+lbl_101DC3C8:
+/* 101DC3C8 001DC3C8  7C 1F E8 40 */	cmplw r31, r29
+/* 101DC3CC 001DC3CC  41 82 00 64 */	beq lbl_101DC430
+/* 101DC3D0 001DC3D0  80 1D 00 00 */	lwz r0, 0(r29)
+/* 101DC3D4 001DC3D4  90 1F 00 00 */	stw r0, 0(r31)
+/* 101DC3D8 001DC3D8  80 9D 00 04 */	lwz r4, 4(r29)
+/* 101DC3DC 001DC3DC  28 04 00 00 */	cmplwi r4, 0
+/* 101DC3E0 001DC3E0  41 82 00 10 */	beq lbl_101DC3F0
+/* 101DC3E4 001DC3E4  80 64 00 14 */	lwz r3, 0x14(r4)
+/* 101DC3E8 001DC3E8  38 03 00 01 */	addi r0, r3, 1
+/* 101DC3EC 001DC3EC  90 04 00 14 */	stw r0, 0x14(r4)
+lbl_101DC3F0:
+/* 101DC3F0 001DC3F0  80 7F 00 04 */	lwz r3, 4(r31)
+/* 101DC3F4 001DC3F4  28 03 00 00 */	cmplwi r3, 0
+/* 101DC3F8 001DC3F8  41 82 00 30 */	beq lbl_101DC428
+/* 101DC3FC 001DC3FC  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DC400 001DC400  34 04 FF FF */	addic. r0, r4, -1
+/* 101DC404 001DC404  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DC408 001DC408  40 82 00 20 */	bne lbl_101DC428
+/* 101DC40C 001DC40C  28 03 00 00 */	cmplwi r3, 0
+/* 101DC410 001DC410  41 82 00 18 */	beq lbl_101DC428
+/* 101DC414 001DC414  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DC418 001DC418  38 80 00 01 */	li r4, 1
+/* 101DC41C 001DC41C  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DC420 001DC420  48 3B D7 31 */	bl func_10599B50
+/* 101DC424 001DC424  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DC428:
+/* 101DC428 001DC428  80 1D 00 04 */	lwz r0, 4(r29)
+/* 101DC42C 001DC42C  90 1F 00 04 */	stw r0, 4(r31)
+lbl_101DC430:
+/* 101DC430 001DC430  3B BD 00 08 */	addi r29, r29, 8
+/* 101DC434 001DC434  3B FF 00 08 */	addi r31, r31, 8
+lbl_101DC438:
+/* 101DC438 001DC438  7C 1D F0 40 */	cmplw r29, r30
+/* 101DC43C 001DC43C  41 80 FF 8C */	blt lbl_101DC3C8
+/* 101DC440 001DC440  7F E3 FB 78 */	mr r3, r31
+/* 101DC444 001DC444  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DC448 001DC448  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DC44C 001DC44C  7C 08 03 A6 */	mtlr r0
+/* 101DC450 001DC450  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DC454 001DC454  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DC458 001DC458  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DC45C 001DC45C  4E 80 00 20 */	blr 
 
-.global ".insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket"
-".insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket":
-/* 001DC4E0 001E5370  BE A1 FF D4 */	stmw r21, -0x2c(r1)
-/* 001DC4E4 001E5374  7C 08 02 A6 */	mflr r0
-/* 001DC4E8 001E5378  7C BD 2B 79 */	or. r29, r5, r5
-/* 001DC4EC 001E537C  83 22 AB 5C */	lwz r25, lbl_005BBFBC-_R2_BASE_(r2)
-/* 001DC4F0 001E5380  3B 63 00 00 */	addi r27, r3, 0
-/* 001DC4F4 001E5384  3B 84 00 00 */	addi r28, r4, 0
-/* 001DC4F8 001E5388  3B C6 00 00 */	addi r30, r6, 0
-/* 001DC4FC 001E538C  90 01 00 08 */	stw r0, 8(r1)
-/* 001DC500 001E5390  94 21 FE E0 */	stwu r1, -0x120(r1)
-/* 001DC504 001E5394  3B E1 00 00 */	addi r31, r1, 0
-/* 001DC508 001E5398  41 82 03 44 */	beq lbl_001DC84C
-/* 001DC50C 001E539C  48 00 09 B5 */	bl ".alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
-/* 001DC510 001E53A0  48 00 09 61 */	bl ".max_size__Q23std26allocator<13PalettePacket>CFv"
-/* 001DC514 001E53A4  3B 43 00 00 */	addi r26, r3, 0
-/* 001DC518 001E53A8  7C 1D D0 40 */	cmplw r29, r26
-/* 001DC51C 001E53AC  3B 1A 00 00 */	addi r24, r26, 0
-/* 001DC520 001E53B0  41 81 00 14 */	bgt lbl_001DC534
-/* 001DC524 001E53B4  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001DC528 001E53B8  7C 1D D0 50 */	subf r0, r29, r26
-/* 001DC52C 001E53BC  7C 03 00 40 */	cmplw r3, r0
-/* 001DC530 001E53C0  40 81 00 28 */	ble lbl_001DC558
-lbl_001DC534:
-/* 001DC534 001E53C4  38 99 00 00 */	addi r4, r25, 0
-/* 001DC538 001E53C8  38 7F 00 40 */	addi r3, r31, 0x40
-/* 001DC53C 001E53CC  4B E5 0D 65 */	bl ".__ct__Q23std11logic_errorFPCc"
-/* 001DC540 001E53D0  80 02 8A 84 */	lwz r0, lbl_005B9EE4-_R2_BASE_(r2)
-/* 001DC544 001E53D4  38 79 00 1C */	addi r3, r25, 0x1c
-/* 001DC548 001E53D8  80 A2 8A 80 */	lwz r5, lbl_005B9EE0-_R2_BASE_(r2)
-/* 001DC54C 001E53DC  38 9F 00 40 */	addi r4, r31, 0x40
-/* 001DC550 001E53E0  90 1F 00 40 */	stw r0, 0x40(r31)
-/* 001DC554 001E53E4  48 3A B3 3D */	bl func_00587890
-lbl_001DC558:
-/* 001DC558 001E53E8  7F 63 DB 78 */	mr r3, r27
-/* 001DC55C 001E53EC  48 00 08 A5 */	bl ".cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
-/* 001DC560 001E53F0  80 9B 00 04 */	lwz r4, 4(r27)
-/* 001DC564 001E53F4  80 63 00 00 */	lwz r3, 0(r3)
-/* 001DC568 001E53F8  7C 04 EA 14 */	add r0, r4, r29
-/* 001DC56C 001E53FC  7C 00 18 40 */	cmplw r0, r3
-/* 001DC570 001E5400  41 81 01 5C */	bgt lbl_001DC6CC
-/* 001DC574 001E5404  80 7B 00 08 */	lwz r3, 8(r27)
-/* 001DC578 001E5408  54 80 18 38 */	slwi r0, r4, 3
-/* 001DC57C 001E540C  3B 3E 00 00 */	addi r25, r30, 0
-/* 001DC580 001E5410  7F 43 02 14 */	add r26, r3, r0
-/* 001DC584 001E5414  7C 1C D0 50 */	subf r0, r28, r26
-/* 001DC588 001E5418  7C 00 1E 70 */	srawi r0, r0, 3
-/* 001DC58C 001E541C  7F 00 01 94 */	addze r24, r0
-/* 001DC590 001E5420  7C 1D C0 40 */	cmplw r29, r24
-/* 001DC594 001E5424  40 81 00 A0 */	ble lbl_001DC634
-/* 001DC598 001E5428  7F 56 D3 78 */	mr r22, r26
-/* 001DC59C 001E542C  48 00 00 40 */	b lbl_001DC5DC
-lbl_001DC5A0:
-/* 001DC5A0 001E5430  7F 63 DB 78 */	mr r3, r27
-/* 001DC5A4 001E5434  4B FF FD 7D */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC5A8 001E5438  38 96 00 00 */	addi r4, r22, 0
-/* 001DC5AC 001E543C  38 60 00 08 */	li r3, 8
-/* 001DC5B0 001E5440  4B E5 8B 41 */	bl ".__nw__FUlPv"
-/* 001DC5B4 001E5444  28 03 00 00 */	cmplwi r3, 0
-/* 001DC5B8 001E5448  41 82 00 10 */	beq lbl_001DC5C8
-/* 001DC5BC 001E544C  90 3F 00 6C */	stw r1, 0x6c(r31)
-/* 001DC5C0 001E5450  7F C4 F3 78 */	mr r4, r30
-/* 001DC5C4 001E5454  4B FF FB AD */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC5C8:
-/* 001DC5C8 001E5458  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001DC5CC 001E545C  3A D6 00 08 */	addi r22, r22, 8
-/* 001DC5D0 001E5460  3B BD FF FF */	addi r29, r29, -1
-/* 001DC5D4 001E5464  38 03 00 01 */	addi r0, r3, 1
-/* 001DC5D8 001E5468  90 1B 00 04 */	stw r0, 4(r27)
-lbl_001DC5DC:
-/* 001DC5DC 001E546C  7C 1D C0 40 */	cmplw r29, r24
-/* 001DC5E0 001E5470  41 81 FF C0 */	bgt lbl_001DC5A0
-/* 001DC5E4 001E5474  7F 95 E3 78 */	mr r21, r28
-/* 001DC5E8 001E5478  48 00 00 40 */	b lbl_001DC628
-lbl_001DC5EC:
-/* 001DC5EC 001E547C  7F 63 DB 78 */	mr r3, r27
-/* 001DC5F0 001E5480  4B FF FD 31 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC5F4 001E5484  38 96 00 00 */	addi r4, r22, 0
-/* 001DC5F8 001E5488  38 60 00 08 */	li r3, 8
-/* 001DC5FC 001E548C  4B E5 8A F5 */	bl ".__nw__FUlPv"
-/* 001DC600 001E5490  28 03 00 00 */	cmplwi r3, 0
-/* 001DC604 001E5494  41 82 00 10 */	beq lbl_001DC614
-/* 001DC608 001E5498  90 3F 00 84 */	stw r1, 0x84(r31)
-/* 001DC60C 001E549C  7E A4 AB 78 */	mr r4, r21
-/* 001DC610 001E54A0  4B FF FB 61 */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC614:
-/* 001DC614 001E54A4  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001DC618 001E54A8  3A B5 00 08 */	addi r21, r21, 8
-/* 001DC61C 001E54AC  3A D6 00 08 */	addi r22, r22, 8
-/* 001DC620 001E54B0  38 03 00 01 */	addi r0, r3, 1
-/* 001DC624 001E54B4  90 1B 00 04 */	stw r0, 4(r27)
-lbl_001DC628:
-/* 001DC628 001E54B8  7C 15 D0 40 */	cmplw r21, r26
-/* 001DC62C 001E54BC  41 80 FF C0 */	blt lbl_001DC5EC
-/* 001DC630 001E54C0  48 00 00 88 */	b lbl_001DC6B8
-lbl_001DC634:
-/* 001DC634 001E54C4  57 B7 18 38 */	slwi r23, r29, 3
-/* 001DC638 001E54C8  3A DA 00 00 */	addi r22, r26, 0
-/* 001DC63C 001E54CC  7E B7 D0 50 */	subf r21, r23, r26
-/* 001DC640 001E54D0  48 00 00 40 */	b lbl_001DC680
-lbl_001DC644:
-/* 001DC644 001E54D4  7F 63 DB 78 */	mr r3, r27
-/* 001DC648 001E54D8  4B FF FC D9 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC64C 001E54DC  38 96 00 00 */	addi r4, r22, 0
-/* 001DC650 001E54E0  38 60 00 08 */	li r3, 8
-/* 001DC654 001E54E4  4B E5 8A 9D */	bl ".__nw__FUlPv"
-/* 001DC658 001E54E8  28 03 00 00 */	cmplwi r3, 0
-/* 001DC65C 001E54EC  41 82 00 10 */	beq lbl_001DC66C
-/* 001DC660 001E54F0  90 3F 00 9C */	stw r1, 0x9c(r31)
-/* 001DC664 001E54F4  7E A4 AB 78 */	mr r4, r21
-/* 001DC668 001E54F8  4B FF FB 09 */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC66C:
-/* 001DC66C 001E54FC  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001DC670 001E5500  3A B5 00 08 */	addi r21, r21, 8
-/* 001DC674 001E5504  3A D6 00 08 */	addi r22, r22, 8
-/* 001DC678 001E5508  38 03 00 01 */	addi r0, r3, 1
-/* 001DC67C 001E550C  90 1B 00 04 */	stw r0, 4(r27)
-lbl_001DC680:
-/* 001DC680 001E5510  7C 15 D0 40 */	cmplw r21, r26
-/* 001DC684 001E5514  41 80 FF C0 */	blt lbl_001DC644
-/* 001DC688 001E5518  7C 1D C0 50 */	subf r0, r29, r24
-/* 001DC68C 001E551C  54 04 18 38 */	slwi r4, r0, 3
-/* 001DC690 001E5520  7C 04 D0 50 */	subf r0, r4, r26
-/* 001DC694 001E5524  7C 00 F0 40 */	cmplw r0, r30
-/* 001DC698 001E5528  41 81 00 10 */	bgt lbl_001DC6A8
-/* 001DC69C 001E552C  7C 1E D0 40 */	cmplw r30, r26
-/* 001DC6A0 001E5530  40 80 00 08 */	bge lbl_001DC6A8
-/* 001DC6A4 001E5534  7F 39 BA 14 */	add r25, r25, r23
-lbl_001DC6A8:
-/* 001DC6A8 001E5538  38 7C 00 00 */	addi r3, r28, 0
-/* 001DC6AC 001E553C  7C 9C 22 14 */	add r4, r28, r4
-/* 001DC6B0 001E5540  38 BA 00 00 */	addi r5, r26, 0
-/* 001DC6B4 001E5544  48 00 06 0D */	bl ".copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
-lbl_001DC6B8:
-/* 001DC6B8 001E5548  38 7C 00 00 */	addi r3, r28, 0
-/* 001DC6BC 001E554C  38 9D 00 00 */	addi r4, r29, 0
-/* 001DC6C0 001E5550  38 B9 00 00 */	addi r5, r25, 0
-/* 001DC6C4 001E5554  48 00 04 CD */	bl ".fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket"
-/* 001DC6C8 001E5558  48 00 01 84 */	b lbl_001DC84C
-lbl_001DC6CC:
-/* 001DC6CC 001E555C  7F 63 DB 78 */	mr r3, r27
-/* 001DC6D0 001E5560  4B FF FC 51 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC6D4 001E5564  38 83 00 00 */	addi r4, r3, 0
-/* 001DC6D8 001E5568  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC6DC 001E556C  38 A0 00 00 */	li r5, 0
-/* 001DC6E0 001E5570  48 00 04 21 */	bl ".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul"
-/* 001DC6E4 001E5574  38 60 00 00 */	li r3, 0
-/* 001DC6E8 001E5578  90 7F 00 50 */	stw r3, 0x50(r31)
-/* 001DC6EC 001E557C  38 00 00 01 */	li r0, 1
-/* 001DC6F0 001E5580  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 001DC6F4 001E5584  80 9B 00 00 */	lwz r4, 0(r27)
-/* 001DC6F8 001E5588  80 7B 00 04 */	lwz r3, 4(r27)
-/* 001DC6FC 001E558C  28 04 00 00 */	cmplwi r4, 0
-/* 001DC700 001E5590  7C 63 EA 14 */	add r3, r3, r29
-/* 001DC704 001E5594  41 82 00 08 */	beq lbl_001DC70C
-/* 001DC708 001E5598  7C 80 23 78 */	mr r0, r4
-lbl_001DC70C:
-/* 001DC70C 001E559C  7C 17 03 78 */	mr r23, r0
-/* 001DC710 001E55A0  57 40 F8 7E */	srwi r0, r26, 1
-/* 001DC714 001E55A4  48 00 00 18 */	b lbl_001DC72C
-lbl_001DC718:
-/* 001DC718 001E55A8  7C 17 00 40 */	cmplw r23, r0
-/* 001DC71C 001E55AC  40 80 00 0C */	bge lbl_001DC728
-/* 001DC720 001E55B0  56 F7 08 3C */	slwi r23, r23, 1
-/* 001DC724 001E55B4  48 00 00 08 */	b lbl_001DC72C
-lbl_001DC728:
-/* 001DC728 001E55B8  7F 17 C3 78 */	mr r23, r24
-lbl_001DC72C:
-/* 001DC72C 001E55BC  7C 03 B8 40 */	cmplw r3, r23
-/* 001DC730 001E55C0  41 81 FF E8 */	bgt lbl_001DC718
-/* 001DC734 001E55C4  56 E3 18 38 */	slwi r3, r23, 3
-/* 001DC738 001E55C8  48 3A BE 79 */	bl func_005885B0
-/* 001DC73C 001E55CC  92 FF 00 4C */	stw r23, 0x4c(r31)
-/* 001DC740 001E55D0  7C 79 1B 78 */	mr r25, r3
-/* 001DC744 001E55D4  90 7F 00 54 */	stw r3, 0x54(r31)
-/* 001DC748 001E55D8  80 1B 00 04 */	lwz r0, 4(r27)
-/* 001DC74C 001E55DC  80 7B 00 08 */	lwz r3, 8(r27)
-/* 001DC750 001E55E0  54 00 18 38 */	slwi r0, r0, 3
-/* 001DC754 001E55E4  3B 43 00 00 */	addi r26, r3, 0
-/* 001DC758 001E55E8  7E E3 02 14 */	add r23, r3, r0
-/* 001DC75C 001E55EC  48 00 00 40 */	b lbl_001DC79C
-lbl_001DC760:
-/* 001DC760 001E55F0  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC764 001E55F4  4B FF FB BD */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC768 001E55F8  38 99 00 00 */	addi r4, r25, 0
-/* 001DC76C 001E55FC  38 60 00 08 */	li r3, 8
-/* 001DC770 001E5600  4B E5 89 81 */	bl ".__nw__FUlPv"
-/* 001DC774 001E5604  28 03 00 00 */	cmplwi r3, 0
-/* 001DC778 001E5608  41 82 00 10 */	beq lbl_001DC788
-/* 001DC77C 001E560C  90 3F 00 B4 */	stw r1, 0xb4(r31)
-/* 001DC780 001E5610  7F 44 D3 78 */	mr r4, r26
-/* 001DC784 001E5614  4B FF F9 ED */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC788:
-/* 001DC788 001E5618  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001DC78C 001E561C  3B 5A 00 08 */	addi r26, r26, 8
-/* 001DC790 001E5620  3B 39 00 08 */	addi r25, r25, 8
-/* 001DC794 001E5624  38 03 00 01 */	addi r0, r3, 1
-/* 001DC798 001E5628  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_001DC79C:
-/* 001DC79C 001E562C  7C 1A E0 40 */	cmplw r26, r28
-/* 001DC7A0 001E5630  41 80 FF C0 */	blt lbl_001DC760
-/* 001DC7A4 001E5634  48 00 00 40 */	b lbl_001DC7E4
-lbl_001DC7A8:
-/* 001DC7A8 001E5638  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC7AC 001E563C  4B FF FB 75 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC7B0 001E5640  38 99 00 00 */	addi r4, r25, 0
-/* 001DC7B4 001E5644  38 60 00 08 */	li r3, 8
-/* 001DC7B8 001E5648  4B E5 89 39 */	bl ".__nw__FUlPv"
-/* 001DC7BC 001E564C  28 03 00 00 */	cmplwi r3, 0
-/* 001DC7C0 001E5650  41 82 00 10 */	beq lbl_001DC7D0
-/* 001DC7C4 001E5654  90 3F 00 CC */	stw r1, 0xcc(r31)
-/* 001DC7C8 001E5658  7F C4 F3 78 */	mr r4, r30
-/* 001DC7CC 001E565C  4B FF F9 A5 */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC7D0:
-/* 001DC7D0 001E5660  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001DC7D4 001E5664  3B 39 00 08 */	addi r25, r25, 8
-/* 001DC7D8 001E5668  3B BD FF FF */	addi r29, r29, -1
-/* 001DC7DC 001E566C  38 03 00 01 */	addi r0, r3, 1
-/* 001DC7E0 001E5670  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_001DC7E4:
-/* 001DC7E4 001E5674  28 1D 00 00 */	cmplwi r29, 0
-/* 001DC7E8 001E5678  40 82 FF C0 */	bne lbl_001DC7A8
-/* 001DC7EC 001E567C  48 00 00 40 */	b lbl_001DC82C
-lbl_001DC7F0:
-/* 001DC7F0 001E5680  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC7F4 001E5684  4B FF FB 2D */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DC7F8 001E5688  38 99 00 00 */	addi r4, r25, 0
-/* 001DC7FC 001E568C  38 60 00 08 */	li r3, 8
-/* 001DC800 001E5690  4B E5 88 F1 */	bl ".__nw__FUlPv"
-/* 001DC804 001E5694  28 03 00 00 */	cmplwi r3, 0
-/* 001DC808 001E5698  41 82 00 10 */	beq lbl_001DC818
-/* 001DC80C 001E569C  90 3F 00 E4 */	stw r1, 0xe4(r31)
-/* 001DC810 001E56A0  7F 44 D3 78 */	mr r4, r26
-/* 001DC814 001E56A4  4B FF F9 5D */	bl ".__ct__13PalettePacketFRC13PalettePacket"
-lbl_001DC818:
-/* 001DC818 001E56A8  80 7F 00 50 */	lwz r3, 0x50(r31)
-/* 001DC81C 001E56AC  3B 5A 00 08 */	addi r26, r26, 8
-/* 001DC820 001E56B0  3B 39 00 08 */	addi r25, r25, 8
-/* 001DC824 001E56B4  38 03 00 01 */	addi r0, r3, 1
-/* 001DC828 001E56B8  90 1F 00 50 */	stw r0, 0x50(r31)
-lbl_001DC82C:
-/* 001DC82C 001E56BC  7C 1A B8 40 */	cmplw r26, r23
-/* 001DC830 001E56C0  41 80 FF C0 */	blt lbl_001DC7F0
-/* 001DC834 001E56C4  38 9B 00 00 */	addi r4, r27, 0
-/* 001DC838 001E56C8  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC83C 001E56CC  48 00 00 B5 */	bl ".swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v"
-/* 001DC840 001E56D0  38 7F 00 4C */	addi r3, r31, 0x4c
-/* 001DC844 001E56D4  38 80 FF FF */	li r4, -1
-/* 001DC848 001E56D8  48 00 06 E9 */	bl ".__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
-lbl_001DC84C:
-/* 001DC84C 001E56DC  80 1F 01 28 */	lwz r0, 0x128(r31)
-/* 001DC850 001E56E0  80 21 00 00 */	lwz r1, 0(r1)
-/* 001DC854 001E56E4  7C 08 03 A6 */	mtlr r0
-/* 001DC858 001E56E8  BA A1 FF D4 */	lmw r21, -0x2c(r1)
-/* 001DC85C 001E56EC  4E 80 00 20 */	blr 
+.global "insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket"
+"insert__Q23std66__vector_imp<13PalettePacket,Q23std26allocator<13PalettePacket>,0>FP13PalettePacketUlRC13PalettePacket":
+/* 101DC4E0 001DC4E0  BE A1 FF D4 */	stmw r21, -0x2c(r1)
+/* 101DC4E4 001DC4E4  7C 08 02 A6 */	mflr r0
+/* 101DC4E8 001DC4E8  7C BD 2B 79 */	or. r29, r5, r5
+/* 101DC4EC 001DC4EC  83 22 AB 5C */	lwz r25, lbl_105BBFBC-_R2_BASE_(r2)
+/* 101DC4F0 001DC4F0  3B 63 00 00 */	addi r27, r3, 0
+/* 101DC4F4 001DC4F4  3B 84 00 00 */	addi r28, r4, 0
+/* 101DC4F8 001DC4F8  3B C6 00 00 */	addi r30, r6, 0
+/* 101DC4FC 001DC4FC  90 01 00 08 */	stw r0, 8(r1)
+/* 101DC500 001DC500  94 21 FE E0 */	stwu r1, -0x120(r1)
+/* 101DC504 001DC504  3B E1 00 00 */	addi r31, r1, 0
+/* 101DC508 001DC508  41 82 03 44 */	beq lbl_101DC84C
+/* 101DC50C 001DC50C  48 00 09 B5 */	bl "alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
+/* 101DC510 001DC510  48 00 09 61 */	bl "max_size__Q23std26allocator<13PalettePacket>CFv"
+/* 101DC514 001DC514  3B 43 00 00 */	addi r26, r3, 0
+/* 101DC518 001DC518  7C 1D D0 40 */	cmplw r29, r26
+/* 101DC51C 001DC51C  3B 1A 00 00 */	addi r24, r26, 0
+/* 101DC520 001DC520  41 81 00 14 */	bgt lbl_101DC534
+/* 101DC524 001DC524  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101DC528 001DC528  7C 1D D0 50 */	subf r0, r29, r26
+/* 101DC52C 001DC52C  7C 03 00 40 */	cmplw r3, r0
+/* 101DC530 001DC530  40 81 00 28 */	ble lbl_101DC558
+lbl_101DC534:
+/* 101DC534 001DC534  38 99 00 00 */	addi r4, r25, 0
+/* 101DC538 001DC538  38 7F 00 40 */	addi r3, r31, 0x40
+/* 101DC53C 001DC53C  4B E5 0D 65 */	bl "__ct__Q23std11logic_errorFPCc"
+/* 101DC540 001DC540  80 02 8A 84 */	lwz r0, lbl_105B9EE4-_R2_BASE_(r2)
+/* 101DC544 001DC544  38 79 00 1C */	addi r3, r25, 0x1c
+/* 101DC548 001DC548  80 A2 8A 80 */	lwz r5, lbl_105B9EE0-_R2_BASE_(r2)
+/* 101DC54C 001DC54C  38 9F 00 40 */	addi r4, r31, 0x40
+/* 101DC550 001DC550  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 101DC554 001DC554  48 3A B3 3D */	bl func_10587890
+lbl_101DC558:
+/* 101DC558 001DC558  7F 63 DB 78 */	mr r3, r27
+/* 101DC55C 001DC55C  48 00 08 A5 */	bl "cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
+/* 101DC560 001DC560  80 9B 00 04 */	lwz r4, 4(r27)
+/* 101DC564 001DC564  80 63 00 00 */	lwz r3, 0(r3)
+/* 101DC568 001DC568  7C 04 EA 14 */	add r0, r4, r29
+/* 101DC56C 001DC56C  7C 00 18 40 */	cmplw r0, r3
+/* 101DC570 001DC570  41 81 01 5C */	bgt lbl_101DC6CC
+/* 101DC574 001DC574  80 7B 00 08 */	lwz r3, 8(r27)
+/* 101DC578 001DC578  54 80 18 38 */	slwi r0, r4, 3
+/* 101DC57C 001DC57C  3B 3E 00 00 */	addi r25, r30, 0
+/* 101DC580 001DC580  7F 43 02 14 */	add r26, r3, r0
+/* 101DC584 001DC584  7C 1C D0 50 */	subf r0, r28, r26
+/* 101DC588 001DC588  7C 00 1E 70 */	srawi r0, r0, 3
+/* 101DC58C 001DC58C  7F 00 01 94 */	addze r24, r0
+/* 101DC590 001DC590  7C 1D C0 40 */	cmplw r29, r24
+/* 101DC594 001DC594  40 81 00 A0 */	ble lbl_101DC634
+/* 101DC598 001DC598  7F 56 D3 78 */	mr r22, r26
+/* 101DC59C 001DC59C  48 00 00 40 */	b lbl_101DC5DC
+lbl_101DC5A0:
+/* 101DC5A0 001DC5A0  7F 63 DB 78 */	mr r3, r27
+/* 101DC5A4 001DC5A4  4B FF FD 7D */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC5A8 001DC5A8  38 96 00 00 */	addi r4, r22, 0
+/* 101DC5AC 001DC5AC  38 60 00 08 */	li r3, 8
+/* 101DC5B0 001DC5B0  4B E5 8B 41 */	bl "__nw__FUlPv"
+/* 101DC5B4 001DC5B4  28 03 00 00 */	cmplwi r3, 0
+/* 101DC5B8 001DC5B8  41 82 00 10 */	beq lbl_101DC5C8
+/* 101DC5BC 001DC5BC  90 3F 00 6C */	stw r1, 0x6c(r31)
+/* 101DC5C0 001DC5C0  7F C4 F3 78 */	mr r4, r30
+/* 101DC5C4 001DC5C4  4B FF FB AD */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC5C8:
+/* 101DC5C8 001DC5C8  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101DC5CC 001DC5CC  3A D6 00 08 */	addi r22, r22, 8
+/* 101DC5D0 001DC5D0  3B BD FF FF */	addi r29, r29, -1
+/* 101DC5D4 001DC5D4  38 03 00 01 */	addi r0, r3, 1
+/* 101DC5D8 001DC5D8  90 1B 00 04 */	stw r0, 4(r27)
+lbl_101DC5DC:
+/* 101DC5DC 001DC5DC  7C 1D C0 40 */	cmplw r29, r24
+/* 101DC5E0 001DC5E0  41 81 FF C0 */	bgt lbl_101DC5A0
+/* 101DC5E4 001DC5E4  7F 95 E3 78 */	mr r21, r28
+/* 101DC5E8 001DC5E8  48 00 00 40 */	b lbl_101DC628
+lbl_101DC5EC:
+/* 101DC5EC 001DC5EC  7F 63 DB 78 */	mr r3, r27
+/* 101DC5F0 001DC5F0  4B FF FD 31 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC5F4 001DC5F4  38 96 00 00 */	addi r4, r22, 0
+/* 101DC5F8 001DC5F8  38 60 00 08 */	li r3, 8
+/* 101DC5FC 001DC5FC  4B E5 8A F5 */	bl "__nw__FUlPv"
+/* 101DC600 001DC600  28 03 00 00 */	cmplwi r3, 0
+/* 101DC604 001DC604  41 82 00 10 */	beq lbl_101DC614
+/* 101DC608 001DC608  90 3F 00 84 */	stw r1, 0x84(r31)
+/* 101DC60C 001DC60C  7E A4 AB 78 */	mr r4, r21
+/* 101DC610 001DC610  4B FF FB 61 */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC614:
+/* 101DC614 001DC614  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101DC618 001DC618  3A B5 00 08 */	addi r21, r21, 8
+/* 101DC61C 001DC61C  3A D6 00 08 */	addi r22, r22, 8
+/* 101DC620 001DC620  38 03 00 01 */	addi r0, r3, 1
+/* 101DC624 001DC624  90 1B 00 04 */	stw r0, 4(r27)
+lbl_101DC628:
+/* 101DC628 001DC628  7C 15 D0 40 */	cmplw r21, r26
+/* 101DC62C 001DC62C  41 80 FF C0 */	blt lbl_101DC5EC
+/* 101DC630 001DC630  48 00 00 88 */	b lbl_101DC6B8
+lbl_101DC634:
+/* 101DC634 001DC634  57 B7 18 38 */	slwi r23, r29, 3
+/* 101DC638 001DC638  3A DA 00 00 */	addi r22, r26, 0
+/* 101DC63C 001DC63C  7E B7 D0 50 */	subf r21, r23, r26
+/* 101DC640 001DC640  48 00 00 40 */	b lbl_101DC680
+lbl_101DC644:
+/* 101DC644 001DC644  7F 63 DB 78 */	mr r3, r27
+/* 101DC648 001DC648  4B FF FC D9 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC64C 001DC64C  38 96 00 00 */	addi r4, r22, 0
+/* 101DC650 001DC650  38 60 00 08 */	li r3, 8
+/* 101DC654 001DC654  4B E5 8A 9D */	bl "__nw__FUlPv"
+/* 101DC658 001DC658  28 03 00 00 */	cmplwi r3, 0
+/* 101DC65C 001DC65C  41 82 00 10 */	beq lbl_101DC66C
+/* 101DC660 001DC660  90 3F 00 9C */	stw r1, 0x9c(r31)
+/* 101DC664 001DC664  7E A4 AB 78 */	mr r4, r21
+/* 101DC668 001DC668  4B FF FB 09 */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC66C:
+/* 101DC66C 001DC66C  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101DC670 001DC670  3A B5 00 08 */	addi r21, r21, 8
+/* 101DC674 001DC674  3A D6 00 08 */	addi r22, r22, 8
+/* 101DC678 001DC678  38 03 00 01 */	addi r0, r3, 1
+/* 101DC67C 001DC67C  90 1B 00 04 */	stw r0, 4(r27)
+lbl_101DC680:
+/* 101DC680 001DC680  7C 15 D0 40 */	cmplw r21, r26
+/* 101DC684 001DC684  41 80 FF C0 */	blt lbl_101DC644
+/* 101DC688 001DC688  7C 1D C0 50 */	subf r0, r29, r24
+/* 101DC68C 001DC68C  54 04 18 38 */	slwi r4, r0, 3
+/* 101DC690 001DC690  7C 04 D0 50 */	subf r0, r4, r26
+/* 101DC694 001DC694  7C 00 F0 40 */	cmplw r0, r30
+/* 101DC698 001DC698  41 81 00 10 */	bgt lbl_101DC6A8
+/* 101DC69C 001DC69C  7C 1E D0 40 */	cmplw r30, r26
+/* 101DC6A0 001DC6A0  40 80 00 08 */	bge lbl_101DC6A8
+/* 101DC6A4 001DC6A4  7F 39 BA 14 */	add r25, r25, r23
+lbl_101DC6A8:
+/* 101DC6A8 001DC6A8  38 7C 00 00 */	addi r3, r28, 0
+/* 101DC6AC 001DC6AC  7C 9C 22 14 */	add r4, r28, r4
+/* 101DC6B0 001DC6B0  38 BA 00 00 */	addi r5, r26, 0
+/* 101DC6B4 001DC6B4  48 00 06 0D */	bl "copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
+lbl_101DC6B8:
+/* 101DC6B8 001DC6B8  38 7C 00 00 */	addi r3, r28, 0
+/* 101DC6BC 001DC6BC  38 9D 00 00 */	addi r4, r29, 0
+/* 101DC6C0 001DC6C0  38 B9 00 00 */	addi r5, r25, 0
+/* 101DC6C4 001DC6C4  48 00 04 CD */	bl "fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket"
+/* 101DC6C8 001DC6C8  48 00 01 84 */	b lbl_101DC84C
+lbl_101DC6CC:
+/* 101DC6CC 001DC6CC  7F 63 DB 78 */	mr r3, r27
+/* 101DC6D0 001DC6D0  4B FF FC 51 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC6D4 001DC6D4  38 83 00 00 */	addi r4, r3, 0
+/* 101DC6D8 001DC6D8  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC6DC 001DC6DC  38 A0 00 00 */	li r5, 0
+/* 101DC6E0 001DC6E0  48 00 04 21 */	bl "__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul"
+/* 101DC6E4 001DC6E4  38 60 00 00 */	li r3, 0
+/* 101DC6E8 001DC6E8  90 7F 00 50 */	stw r3, 0x50(r31)
+/* 101DC6EC 001DC6EC  38 00 00 01 */	li r0, 1
+/* 101DC6F0 001DC6F0  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 101DC6F4 001DC6F4  80 9B 00 00 */	lwz r4, 0(r27)
+/* 101DC6F8 001DC6F8  80 7B 00 04 */	lwz r3, 4(r27)
+/* 101DC6FC 001DC6FC  28 04 00 00 */	cmplwi r4, 0
+/* 101DC700 001DC700  7C 63 EA 14 */	add r3, r3, r29
+/* 101DC704 001DC704  41 82 00 08 */	beq lbl_101DC70C
+/* 101DC708 001DC708  7C 80 23 78 */	mr r0, r4
+lbl_101DC70C:
+/* 101DC70C 001DC70C  7C 17 03 78 */	mr r23, r0
+/* 101DC710 001DC710  57 40 F8 7E */	srwi r0, r26, 1
+/* 101DC714 001DC714  48 00 00 18 */	b lbl_101DC72C
+lbl_101DC718:
+/* 101DC718 001DC718  7C 17 00 40 */	cmplw r23, r0
+/* 101DC71C 001DC71C  40 80 00 0C */	bge lbl_101DC728
+/* 101DC720 001DC720  56 F7 08 3C */	slwi r23, r23, 1
+/* 101DC724 001DC724  48 00 00 08 */	b lbl_101DC72C
+lbl_101DC728:
+/* 101DC728 001DC728  7F 17 C3 78 */	mr r23, r24
+lbl_101DC72C:
+/* 101DC72C 001DC72C  7C 03 B8 40 */	cmplw r3, r23
+/* 101DC730 001DC730  41 81 FF E8 */	bgt lbl_101DC718
+/* 101DC734 001DC734  56 E3 18 38 */	slwi r3, r23, 3
+/* 101DC738 001DC738  48 3A BE 79 */	bl func_105885B0
+/* 101DC73C 001DC73C  92 FF 00 4C */	stw r23, 0x4c(r31)
+/* 101DC740 001DC740  7C 79 1B 78 */	mr r25, r3
+/* 101DC744 001DC744  90 7F 00 54 */	stw r3, 0x54(r31)
+/* 101DC748 001DC748  80 1B 00 04 */	lwz r0, 4(r27)
+/* 101DC74C 001DC74C  80 7B 00 08 */	lwz r3, 8(r27)
+/* 101DC750 001DC750  54 00 18 38 */	slwi r0, r0, 3
+/* 101DC754 001DC754  3B 43 00 00 */	addi r26, r3, 0
+/* 101DC758 001DC758  7E E3 02 14 */	add r23, r3, r0
+/* 101DC75C 001DC75C  48 00 00 40 */	b lbl_101DC79C
+lbl_101DC760:
+/* 101DC760 001DC760  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC764 001DC764  4B FF FB BD */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC768 001DC768  38 99 00 00 */	addi r4, r25, 0
+/* 101DC76C 001DC76C  38 60 00 08 */	li r3, 8
+/* 101DC770 001DC770  4B E5 89 81 */	bl "__nw__FUlPv"
+/* 101DC774 001DC774  28 03 00 00 */	cmplwi r3, 0
+/* 101DC778 001DC778  41 82 00 10 */	beq lbl_101DC788
+/* 101DC77C 001DC77C  90 3F 00 B4 */	stw r1, 0xb4(r31)
+/* 101DC780 001DC780  7F 44 D3 78 */	mr r4, r26
+/* 101DC784 001DC784  4B FF F9 ED */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC788:
+/* 101DC788 001DC788  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101DC78C 001DC78C  3B 5A 00 08 */	addi r26, r26, 8
+/* 101DC790 001DC790  3B 39 00 08 */	addi r25, r25, 8
+/* 101DC794 001DC794  38 03 00 01 */	addi r0, r3, 1
+/* 101DC798 001DC798  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_101DC79C:
+/* 101DC79C 001DC79C  7C 1A E0 40 */	cmplw r26, r28
+/* 101DC7A0 001DC7A0  41 80 FF C0 */	blt lbl_101DC760
+/* 101DC7A4 001DC7A4  48 00 00 40 */	b lbl_101DC7E4
+lbl_101DC7A8:
+/* 101DC7A8 001DC7A8  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC7AC 001DC7AC  4B FF FB 75 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC7B0 001DC7B0  38 99 00 00 */	addi r4, r25, 0
+/* 101DC7B4 001DC7B4  38 60 00 08 */	li r3, 8
+/* 101DC7B8 001DC7B8  4B E5 89 39 */	bl "__nw__FUlPv"
+/* 101DC7BC 001DC7BC  28 03 00 00 */	cmplwi r3, 0
+/* 101DC7C0 001DC7C0  41 82 00 10 */	beq lbl_101DC7D0
+/* 101DC7C4 001DC7C4  90 3F 00 CC */	stw r1, 0xcc(r31)
+/* 101DC7C8 001DC7C8  7F C4 F3 78 */	mr r4, r30
+/* 101DC7CC 001DC7CC  4B FF F9 A5 */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC7D0:
+/* 101DC7D0 001DC7D0  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101DC7D4 001DC7D4  3B 39 00 08 */	addi r25, r25, 8
+/* 101DC7D8 001DC7D8  3B BD FF FF */	addi r29, r29, -1
+/* 101DC7DC 001DC7DC  38 03 00 01 */	addi r0, r3, 1
+/* 101DC7E0 001DC7E0  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_101DC7E4:
+/* 101DC7E4 001DC7E4  28 1D 00 00 */	cmplwi r29, 0
+/* 101DC7E8 001DC7E8  40 82 FF C0 */	bne lbl_101DC7A8
+/* 101DC7EC 001DC7EC  48 00 00 40 */	b lbl_101DC82C
+lbl_101DC7F0:
+/* 101DC7F0 001DC7F0  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC7F4 001DC7F4  4B FF FB 2D */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DC7F8 001DC7F8  38 99 00 00 */	addi r4, r25, 0
+/* 101DC7FC 001DC7FC  38 60 00 08 */	li r3, 8
+/* 101DC800 001DC800  4B E5 88 F1 */	bl "__nw__FUlPv"
+/* 101DC804 001DC804  28 03 00 00 */	cmplwi r3, 0
+/* 101DC808 001DC808  41 82 00 10 */	beq lbl_101DC818
+/* 101DC80C 001DC80C  90 3F 00 E4 */	stw r1, 0xe4(r31)
+/* 101DC810 001DC810  7F 44 D3 78 */	mr r4, r26
+/* 101DC814 001DC814  4B FF F9 5D */	bl "__ct__13PalettePacketFRC13PalettePacket"
+lbl_101DC818:
+/* 101DC818 001DC818  80 7F 00 50 */	lwz r3, 0x50(r31)
+/* 101DC81C 001DC81C  3B 5A 00 08 */	addi r26, r26, 8
+/* 101DC820 001DC820  3B 39 00 08 */	addi r25, r25, 8
+/* 101DC824 001DC824  38 03 00 01 */	addi r0, r3, 1
+/* 101DC828 001DC828  90 1F 00 50 */	stw r0, 0x50(r31)
+lbl_101DC82C:
+/* 101DC82C 001DC82C  7C 1A B8 40 */	cmplw r26, r23
+/* 101DC830 001DC830  41 80 FF C0 */	blt lbl_101DC7F0
+/* 101DC834 001DC834  38 9B 00 00 */	addi r4, r27, 0
+/* 101DC838 001DC838  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC83C 001DC83C  48 00 00 B5 */	bl "swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v"
+/* 101DC840 001DC840  38 7F 00 4C */	addi r3, r31, 0x4c
+/* 101DC844 001DC844  38 80 FF FF */	li r4, -1
+/* 101DC848 001DC848  48 00 06 E9 */	bl "__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
+lbl_101DC84C:
+/* 101DC84C 001DC84C  80 1F 01 28 */	lwz r0, 0x128(r31)
+/* 101DC850 001DC850  80 21 00 00 */	lwz r1, 0(r1)
+/* 101DC854 001DC854  7C 08 03 A6 */	mtlr r0
+/* 101DC858 001DC858  BA A1 FF D4 */	lmw r21, -0x2c(r1)
+/* 101DC85C 001DC85C  4E 80 00 20 */	blr 
 
-.global ".swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v"
-".swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v":
-/* 001DC8F0 001E5780  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DC8F4 001E5784  7C 08 02 A6 */	mflr r0
-/* 001DC8F8 001E5788  3B E4 00 00 */	addi r31, r4, 0
-/* 001DC8FC 001E578C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DC900 001E5790  3B C3 00 00 */	addi r30, r3, 0
-/* 001DC904 001E5794  7C 1E F8 40 */	cmplw r30, r31
-/* 001DC908 001E5798  90 01 00 08 */	stw r0, 8(r1)
-/* 001DC90C 001E579C  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DC910 001E57A0  41 82 00 28 */	beq lbl_001DC938
-/* 001DC914 001E57A4  48 00 01 2D */	bl ".swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>"
-/* 001DC918 001E57A8  80 7E 00 08 */	lwz r3, 8(r30)
-/* 001DC91C 001E57AC  80 1F 00 08 */	lwz r0, 8(r31)
-/* 001DC920 001E57B0  90 1E 00 08 */	stw r0, 8(r30)
-/* 001DC924 001E57B4  90 7F 00 08 */	stw r3, 8(r31)
-/* 001DC928 001E57B8  80 7E 00 04 */	lwz r3, 4(r30)
-/* 001DC92C 001E57BC  80 1F 00 04 */	lwz r0, 4(r31)
-/* 001DC930 001E57C0  90 1E 00 04 */	stw r0, 4(r30)
-/* 001DC934 001E57C4  90 7F 00 04 */	stw r3, 4(r31)
-lbl_001DC938:
-/* 001DC938 001E57C8  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DC93C 001E57CC  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DC940 001E57D0  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DC944 001E57D4  7C 08 03 A6 */	mtlr r0
-/* 001DC948 001E57D8  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DC94C 001E57DC  4E 80 00 20 */	blr 
+.global "swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v"
+"swap<13PalettePacket,Q23std26allocator<13PalettePacket>>__3stdFRQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>RQ23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>_v":
+/* 101DC8F0 001DC8F0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DC8F4 001DC8F4  7C 08 02 A6 */	mflr r0
+/* 101DC8F8 001DC8F8  3B E4 00 00 */	addi r31, r4, 0
+/* 101DC8FC 001DC8FC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DC900 001DC900  3B C3 00 00 */	addi r30, r3, 0
+/* 101DC904 001DC904  7C 1E F8 40 */	cmplw r30, r31
+/* 101DC908 001DC908  90 01 00 08 */	stw r0, 8(r1)
+/* 101DC90C 001DC90C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DC910 001DC910  41 82 00 28 */	beq lbl_101DC938
+/* 101DC914 001DC914  48 00 01 2D */	bl "swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>"
+/* 101DC918 001DC918  80 7E 00 08 */	lwz r3, 8(r30)
+/* 101DC91C 001DC91C  80 1F 00 08 */	lwz r0, 8(r31)
+/* 101DC920 001DC920  90 1E 00 08 */	stw r0, 8(r30)
+/* 101DC924 001DC924  90 7F 00 08 */	stw r3, 8(r31)
+/* 101DC928 001DC928  80 7E 00 04 */	lwz r3, 4(r30)
+/* 101DC92C 001DC92C  80 1F 00 04 */	lwz r0, 4(r31)
+/* 101DC930 001DC930  90 1E 00 04 */	stw r0, 4(r30)
+/* 101DC934 001DC934  90 7F 00 04 */	stw r3, 4(r31)
+lbl_101DC938:
+/* 101DC938 001DC938  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DC93C 001DC93C  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DC940 001DC940  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DC944 001DC944  7C 08 03 A6 */	mtlr r0
+/* 101DC948 001DC948  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DC94C 001DC94C  4E 80 00 20 */	blr 
 
-.global ".swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>"
-".swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>":
-/* 001DCA40 001E58D0  80 A3 00 00 */	lwz r5, 0(r3)
-/* 001DCA44 001E58D4  80 04 00 00 */	lwz r0, 0(r4)
-/* 001DCA48 001E58D8  90 03 00 00 */	stw r0, 0(r3)
-/* 001DCA4C 001E58DC  90 A4 00 00 */	stw r5, 0(r4)
-/* 001DCA50 001E58E0  4E 80 00 20 */	blr 
+.global "swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>"
+"swap__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRQ210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>":
+/* 101DCA40 001DCA40  80 A3 00 00 */	lwz r5, 0(r3)
+/* 101DCA44 001DCA44  80 04 00 00 */	lwz r0, 0(r4)
+/* 101DCA48 001DCA48  90 03 00 00 */	stw r0, 0(r3)
+/* 101DCA4C 001DCA4C  90 A4 00 00 */	stw r5, 0(r4)
+/* 101DCA50 001DCA50  4E 80 00 20 */	blr 
 
-.global ".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul"
-".__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul":
-/* 001DCB00 001E5990  90 A3 00 00 */	stw r5, 0(r3)
-/* 001DCB04 001E5994  4E 80 00 20 */	blr 
+.global "__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul"
+"__ct__Q210Metrowerks54compressed_pair<Q23std26allocator<13PalettePacket>,Ul>FRCQ23std26allocator<13PalettePacket>Ul":
+/* 101DCB00 001DCB00  90 A3 00 00 */	stw r5, 0(r3)
+/* 101DCB04 001DCB04  4E 80 00 20 */	blr 
 
-.global ".fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket"
-".fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket":
-/* 001DCB90 001E5A20  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DCB94 001E5A24  7C 08 02 A6 */	mflr r0
-/* 001DCB98 001E5A28  3B E5 00 00 */	addi r31, r5, 0
-/* 001DCB9C 001E5A2C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DCBA0 001E5A30  3B C4 00 00 */	addi r30, r4, 0
-/* 001DCBA4 001E5A34  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DCBA8 001E5A38  3B A3 00 00 */	addi r29, r3, 0
-/* 001DCBAC 001E5A3C  90 01 00 08 */	stw r0, 8(r1)
-/* 001DCBB0 001E5A40  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DCBB4 001E5A44  48 00 00 74 */	b lbl_001DCC28
-lbl_001DCBB8:
-/* 001DCBB8 001E5A48  7C 1D F8 40 */	cmplw r29, r31
-/* 001DCBBC 001E5A4C  41 82 00 64 */	beq lbl_001DCC20
-/* 001DCBC0 001E5A50  80 1F 00 00 */	lwz r0, 0(r31)
-/* 001DCBC4 001E5A54  90 1D 00 00 */	stw r0, 0(r29)
-/* 001DCBC8 001E5A58  80 9F 00 04 */	lwz r4, 4(r31)
-/* 001DCBCC 001E5A5C  28 04 00 00 */	cmplwi r4, 0
-/* 001DCBD0 001E5A60  41 82 00 10 */	beq lbl_001DCBE0
-/* 001DCBD4 001E5A64  80 64 00 14 */	lwz r3, 0x14(r4)
-/* 001DCBD8 001E5A68  38 03 00 01 */	addi r0, r3, 1
-/* 001DCBDC 001E5A6C  90 04 00 14 */	stw r0, 0x14(r4)
-lbl_001DCBE0:
-/* 001DCBE0 001E5A70  80 7D 00 04 */	lwz r3, 4(r29)
-/* 001DCBE4 001E5A74  28 03 00 00 */	cmplwi r3, 0
-/* 001DCBE8 001E5A78  41 82 00 30 */	beq lbl_001DCC18
-/* 001DCBEC 001E5A7C  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DCBF0 001E5A80  34 04 FF FF */	addic. r0, r4, -1
-/* 001DCBF4 001E5A84  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DCBF8 001E5A88  40 82 00 20 */	bne lbl_001DCC18
-/* 001DCBFC 001E5A8C  28 03 00 00 */	cmplwi r3, 0
-/* 001DCC00 001E5A90  41 82 00 18 */	beq lbl_001DCC18
-/* 001DCC04 001E5A94  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DCC08 001E5A98  38 80 00 01 */	li r4, 1
-/* 001DCC0C 001E5A9C  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DCC10 001E5AA0  48 3B CF 41 */	bl func_00599B50
-/* 001DCC14 001E5AA4  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DCC18:
-/* 001DCC18 001E5AA8  80 1F 00 04 */	lwz r0, 4(r31)
-/* 001DCC1C 001E5AAC  90 1D 00 04 */	stw r0, 4(r29)
-lbl_001DCC20:
-/* 001DCC20 001E5AB0  3B BD 00 08 */	addi r29, r29, 8
-/* 001DCC24 001E5AB4  3B DE FF FF */	addi r30, r30, -1
-lbl_001DCC28:
-/* 001DCC28 001E5AB8  28 1E 00 00 */	cmplwi r30, 0
-/* 001DCC2C 001E5ABC  40 82 FF 8C */	bne lbl_001DCBB8
-/* 001DCC30 001E5AC0  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DCC34 001E5AC4  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DCC38 001E5AC8  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DCC3C 001E5ACC  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DCC40 001E5AD0  7C 08 03 A6 */	mtlr r0
-/* 001DCC44 001E5AD4  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DCC48 001E5AD8  4E 80 00 20 */	blr 
+.global "fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket"
+"fill_n__Q23std30__fill_n<13PalettePacket,Ul,0>FP13PalettePacketUlRC13PalettePacket":
+/* 101DCB90 001DCB90  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DCB94 001DCB94  7C 08 02 A6 */	mflr r0
+/* 101DCB98 001DCB98  3B E5 00 00 */	addi r31, r5, 0
+/* 101DCB9C 001DCB9C  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DCBA0 001DCBA0  3B C4 00 00 */	addi r30, r4, 0
+/* 101DCBA4 001DCBA4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DCBA8 001DCBA8  3B A3 00 00 */	addi r29, r3, 0
+/* 101DCBAC 001DCBAC  90 01 00 08 */	stw r0, 8(r1)
+/* 101DCBB0 001DCBB0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DCBB4 001DCBB4  48 00 00 74 */	b lbl_101DCC28
+lbl_101DCBB8:
+/* 101DCBB8 001DCBB8  7C 1D F8 40 */	cmplw r29, r31
+/* 101DCBBC 001DCBBC  41 82 00 64 */	beq lbl_101DCC20
+/* 101DCBC0 001DCBC0  80 1F 00 00 */	lwz r0, 0(r31)
+/* 101DCBC4 001DCBC4  90 1D 00 00 */	stw r0, 0(r29)
+/* 101DCBC8 001DCBC8  80 9F 00 04 */	lwz r4, 4(r31)
+/* 101DCBCC 001DCBCC  28 04 00 00 */	cmplwi r4, 0
+/* 101DCBD0 001DCBD0  41 82 00 10 */	beq lbl_101DCBE0
+/* 101DCBD4 001DCBD4  80 64 00 14 */	lwz r3, 0x14(r4)
+/* 101DCBD8 001DCBD8  38 03 00 01 */	addi r0, r3, 1
+/* 101DCBDC 001DCBDC  90 04 00 14 */	stw r0, 0x14(r4)
+lbl_101DCBE0:
+/* 101DCBE0 001DCBE0  80 7D 00 04 */	lwz r3, 4(r29)
+/* 101DCBE4 001DCBE4  28 03 00 00 */	cmplwi r3, 0
+/* 101DCBE8 001DCBE8  41 82 00 30 */	beq lbl_101DCC18
+/* 101DCBEC 001DCBEC  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DCBF0 001DCBF0  34 04 FF FF */	addic. r0, r4, -1
+/* 101DCBF4 001DCBF4  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DCBF8 001DCBF8  40 82 00 20 */	bne lbl_101DCC18
+/* 101DCBFC 001DCBFC  28 03 00 00 */	cmplwi r3, 0
+/* 101DCC00 001DCC00  41 82 00 18 */	beq lbl_101DCC18
+/* 101DCC04 001DCC04  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DCC08 001DCC08  38 80 00 01 */	li r4, 1
+/* 101DCC0C 001DCC0C  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DCC10 001DCC10  48 3B CF 41 */	bl func_10599B50
+/* 101DCC14 001DCC14  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DCC18:
+/* 101DCC18 001DCC18  80 1F 00 04 */	lwz r0, 4(r31)
+/* 101DCC1C 001DCC1C  90 1D 00 04 */	stw r0, 4(r29)
+lbl_101DCC20:
+/* 101DCC20 001DCC20  3B BD 00 08 */	addi r29, r29, 8
+/* 101DCC24 001DCC24  3B DE FF FF */	addi r30, r30, -1
+lbl_101DCC28:
+/* 101DCC28 001DCC28  28 1E 00 00 */	cmplwi r30, 0
+/* 101DCC2C 001DCC2C  40 82 FF 8C */	bne lbl_101DCBB8
+/* 101DCC30 001DCC30  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DCC34 001DCC34  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DCC38 001DCC38  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DCC3C 001DCC3C  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DCC40 001DCC40  7C 08 03 A6 */	mtlr r0
+/* 101DCC44 001DCC44  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DCC48 001DCC48  4E 80 00 20 */	blr 
 
-.global ".copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
-".copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket":
-/* 001DCCC0 001E5B50  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DCCC4 001E5B54  7C 08 02 A6 */	mflr r0
-/* 001DCCC8 001E5B58  3B E5 00 00 */	addi r31, r5, 0
-/* 001DCCCC 001E5B5C  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DCCD0 001E5B60  3B C4 00 00 */	addi r30, r4, 0
-/* 001DCCD4 001E5B64  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DCCD8 001E5B68  3B A3 00 00 */	addi r29, r3, 0
-/* 001DCCDC 001E5B6C  90 01 00 08 */	stw r0, 8(r1)
-/* 001DCCE0 001E5B70  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DCCE4 001E5B74  48 00 00 74 */	b lbl_001DCD58
-lbl_001DCCE8:
-/* 001DCCE8 001E5B78  3B DE FF F8 */	addi r30, r30, -8
-/* 001DCCEC 001E5B7C  3B FF FF F8 */	addi r31, r31, -8
-/* 001DCCF0 001E5B80  7C 1F F0 40 */	cmplw r31, r30
-/* 001DCCF4 001E5B84  41 82 00 64 */	beq lbl_001DCD58
-/* 001DCCF8 001E5B88  80 1E 00 00 */	lwz r0, 0(r30)
-/* 001DCCFC 001E5B8C  90 1F 00 00 */	stw r0, 0(r31)
-/* 001DCD00 001E5B90  80 9E 00 04 */	lwz r4, 4(r30)
-/* 001DCD04 001E5B94  28 04 00 00 */	cmplwi r4, 0
-/* 001DCD08 001E5B98  41 82 00 10 */	beq lbl_001DCD18
-/* 001DCD0C 001E5B9C  80 64 00 14 */	lwz r3, 0x14(r4)
-/* 001DCD10 001E5BA0  38 03 00 01 */	addi r0, r3, 1
-/* 001DCD14 001E5BA4  90 04 00 14 */	stw r0, 0x14(r4)
-lbl_001DCD18:
-/* 001DCD18 001E5BA8  80 7F 00 04 */	lwz r3, 4(r31)
-/* 001DCD1C 001E5BAC  28 03 00 00 */	cmplwi r3, 0
-/* 001DCD20 001E5BB0  41 82 00 30 */	beq lbl_001DCD50
-/* 001DCD24 001E5BB4  80 83 00 14 */	lwz r4, 0x14(r3)
-/* 001DCD28 001E5BB8  34 04 FF FF */	addic. r0, r4, -1
-/* 001DCD2C 001E5BBC  90 03 00 14 */	stw r0, 0x14(r3)
-/* 001DCD30 001E5BC0  40 82 00 20 */	bne lbl_001DCD50
-/* 001DCD34 001E5BC4  28 03 00 00 */	cmplwi r3, 0
-/* 001DCD38 001E5BC8  41 82 00 18 */	beq lbl_001DCD50
-/* 001DCD3C 001E5BCC  81 83 00 00 */	lwz r12, 0(r3)
-/* 001DCD40 001E5BD0  38 80 00 01 */	li r4, 1
-/* 001DCD44 001E5BD4  81 8C 00 08 */	lwz r12, 8(r12)
-/* 001DCD48 001E5BD8  48 3B CE 09 */	bl func_00599B50
-/* 001DCD4C 001E5BDC  80 41 00 14 */	lwz r2, 0x14(r1)
-lbl_001DCD50:
-/* 001DCD50 001E5BE0  80 1E 00 04 */	lwz r0, 4(r30)
-/* 001DCD54 001E5BE4  90 1F 00 04 */	stw r0, 4(r31)
-lbl_001DCD58:
-/* 001DCD58 001E5BE8  7C 1E E8 40 */	cmplw r30, r29
-/* 001DCD5C 001E5BEC  41 81 FF 8C */	bgt lbl_001DCCE8
-/* 001DCD60 001E5BF0  7F E3 FB 78 */	mr r3, r31
-/* 001DCD64 001E5BF4  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DCD68 001E5BF8  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DCD6C 001E5BFC  7C 08 03 A6 */	mtlr r0
-/* 001DCD70 001E5C00  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DCD74 001E5C04  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DCD78 001E5C08  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DCD7C 001E5C0C  4E 80 00 20 */	blr 
+.global "copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket"
+"copy_backward__Q23std36__copy_backward<13PalettePacket,0,0>FP13PalettePacketP13PalettePacketP13PalettePacket":
+/* 101DCCC0 001DCCC0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DCCC4 001DCCC4  7C 08 02 A6 */	mflr r0
+/* 101DCCC8 001DCCC8  3B E5 00 00 */	addi r31, r5, 0
+/* 101DCCCC 001DCCCC  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DCCD0 001DCCD0  3B C4 00 00 */	addi r30, r4, 0
+/* 101DCCD4 001DCCD4  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DCCD8 001DCCD8  3B A3 00 00 */	addi r29, r3, 0
+/* 101DCCDC 001DCCDC  90 01 00 08 */	stw r0, 8(r1)
+/* 101DCCE0 001DCCE0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DCCE4 001DCCE4  48 00 00 74 */	b lbl_101DCD58
+lbl_101DCCE8:
+/* 101DCCE8 001DCCE8  3B DE FF F8 */	addi r30, r30, -8
+/* 101DCCEC 001DCCEC  3B FF FF F8 */	addi r31, r31, -8
+/* 101DCCF0 001DCCF0  7C 1F F0 40 */	cmplw r31, r30
+/* 101DCCF4 001DCCF4  41 82 00 64 */	beq lbl_101DCD58
+/* 101DCCF8 001DCCF8  80 1E 00 00 */	lwz r0, 0(r30)
+/* 101DCCFC 001DCCFC  90 1F 00 00 */	stw r0, 0(r31)
+/* 101DCD00 001DCD00  80 9E 00 04 */	lwz r4, 4(r30)
+/* 101DCD04 001DCD04  28 04 00 00 */	cmplwi r4, 0
+/* 101DCD08 001DCD08  41 82 00 10 */	beq lbl_101DCD18
+/* 101DCD0C 001DCD0C  80 64 00 14 */	lwz r3, 0x14(r4)
+/* 101DCD10 001DCD10  38 03 00 01 */	addi r0, r3, 1
+/* 101DCD14 001DCD14  90 04 00 14 */	stw r0, 0x14(r4)
+lbl_101DCD18:
+/* 101DCD18 001DCD18  80 7F 00 04 */	lwz r3, 4(r31)
+/* 101DCD1C 001DCD1C  28 03 00 00 */	cmplwi r3, 0
+/* 101DCD20 001DCD20  41 82 00 30 */	beq lbl_101DCD50
+/* 101DCD24 001DCD24  80 83 00 14 */	lwz r4, 0x14(r3)
+/* 101DCD28 001DCD28  34 04 FF FF */	addic. r0, r4, -1
+/* 101DCD2C 001DCD2C  90 03 00 14 */	stw r0, 0x14(r3)
+/* 101DCD30 001DCD30  40 82 00 20 */	bne lbl_101DCD50
+/* 101DCD34 001DCD34  28 03 00 00 */	cmplwi r3, 0
+/* 101DCD38 001DCD38  41 82 00 18 */	beq lbl_101DCD50
+/* 101DCD3C 001DCD3C  81 83 00 00 */	lwz r12, 0(r3)
+/* 101DCD40 001DCD40  38 80 00 01 */	li r4, 1
+/* 101DCD44 001DCD44  81 8C 00 08 */	lwz r12, 8(r12)
+/* 101DCD48 001DCD48  48 3B CE 09 */	bl func_10599B50
+/* 101DCD4C 001DCD4C  80 41 00 14 */	lwz r2, 0x14(r1)
+lbl_101DCD50:
+/* 101DCD50 001DCD50  80 1E 00 04 */	lwz r0, 4(r30)
+/* 101DCD54 001DCD54  90 1F 00 04 */	stw r0, 4(r31)
+lbl_101DCD58:
+/* 101DCD58 001DCD58  7C 1E E8 40 */	cmplw r30, r29
+/* 101DCD5C 001DCD5C  41 81 FF 8C */	bgt lbl_101DCCE8
+/* 101DCD60 001DCD60  7F E3 FB 78 */	mr r3, r31
+/* 101DCD64 001DCD64  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DCD68 001DCD68  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DCD6C 001DCD6C  7C 08 03 A6 */	mtlr r0
+/* 101DCD70 001DCD70  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DCD74 001DCD74  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DCD78 001DCD78  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DCD7C 001DCD7C  4E 80 00 20 */	blr 
 
-.global ".cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
-".cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv":
-/* 001DCE00 001E5C90  4E 80 00 20 */	blr 
+.global "cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
+"cap__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv":
+/* 101DCE00 001DCE00  4E 80 00 20 */	blr 
 
-.global ".max_size__Q23std26allocator<13PalettePacket>CFv"
-".max_size__Q23std26allocator<13PalettePacket>CFv":
-/* 001DCE70 001E5D00  3C 60 20 00 */	lis r3, 0x1FFFFFFF@ha
-/* 001DCE74 001E5D04  38 63 FF FF */	addi r3, r3, 0x1FFFFFFF@l
-/* 001DCE78 001E5D08  4E 80 00 20 */	blr 
+.global "max_size__Q23std26allocator<13PalettePacket>CFv"
+"max_size__Q23std26allocator<13PalettePacket>CFv":
+/* 101DCE70 001DCE70  3C 60 20 00 */	lis r3, 0x2000
+/* 101DCE74 001DCE74  38 63 FF FF */	addi r3, r3, -1
+/* 101DCE78 001DCE78  4E 80 00 20 */	blr 
 
-.global ".alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
-".alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv":
-/* 001DCEC0 001E5D50  4E 80 00 20 */	blr 
+.global "alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv"
+"alloc__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>CFv":
+/* 101DCEC0 001DCEC0  4E 80 00 20 */	blr 
 
-.global ".__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
-".__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv":
-/* 001DCF30 001E5DC0  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DCF34 001E5DC4  7C 08 02 A6 */	mflr r0
-/* 001DCF38 001E5DC8  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DCF3C 001E5DCC  3B C4 00 00 */	addi r30, r4, 0
-/* 001DCF40 001E5DD0  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DCF44 001E5DD4  7C 7D 1B 79 */	or. r29, r3, r3
-/* 001DCF48 001E5DD8  90 01 00 08 */	stw r0, 8(r1)
-/* 001DCF4C 001E5DDC  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DCF50 001E5DE0  41 82 00 40 */	beq lbl_001DCF90
-/* 001DCF54 001E5DE4  48 00 01 4D */	bl ".clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
-/* 001DCF58 001E5DE8  80 1D 00 08 */	lwz r0, 8(r29)
-/* 001DCF5C 001E5DEC  28 00 00 00 */	cmplwi r0, 0
-/* 001DCF60 001E5DF0  41 82 00 20 */	beq lbl_001DCF80
-/* 001DCF64 001E5DF4  7F A3 EB 78 */	mr r3, r29
-/* 001DCF68 001E5DF8  48 00 00 B9 */	bl ".second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DCF6C 001E5DFC  83 FD 00 08 */	lwz r31, 8(r29)
-/* 001DCF70 001E5E00  7F A3 EB 78 */	mr r3, r29
-/* 001DCF74 001E5E04  4B FF F3 AD */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DCF78 001E5E08  7F E3 FB 78 */	mr r3, r31
-/* 001DCF7C 001E5E0C  48 3A B7 15 */	bl func_00588690
-lbl_001DCF80:
-/* 001DCF80 001E5E10  7F C0 07 35 */	extsh. r0, r30
-/* 001DCF84 001E5E14  40 81 00 0C */	ble lbl_001DCF90
-/* 001DCF88 001E5E18  7F A3 EB 78 */	mr r3, r29
-/* 001DCF8C 001E5E1C  48 3A B7 05 */	bl func_00588690
-lbl_001DCF90:
-/* 001DCF90 001E5E20  7F A3 EB 78 */	mr r3, r29
-/* 001DCF94 001E5E24  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DCF98 001E5E28  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DCF9C 001E5E2C  7C 08 03 A6 */	mtlr r0
-/* 001DCFA0 001E5E30  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DCFA4 001E5E34  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DCFA8 001E5E38  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DCFAC 001E5E3C  4E 80 00 20 */	blr 
+.global "__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
+"__dt__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv":
+/* 101DCF30 001DCF30  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DCF34 001DCF34  7C 08 02 A6 */	mflr r0
+/* 101DCF38 001DCF38  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DCF3C 001DCF3C  3B C4 00 00 */	addi r30, r4, 0
+/* 101DCF40 001DCF40  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DCF44 001DCF44  7C 7D 1B 79 */	or. r29, r3, r3
+/* 101DCF48 001DCF48  90 01 00 08 */	stw r0, 8(r1)
+/* 101DCF4C 001DCF4C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DCF50 001DCF50  41 82 00 40 */	beq lbl_101DCF90
+/* 101DCF54 001DCF54  48 00 01 4D */	bl "clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
+/* 101DCF58 001DCF58  80 1D 00 08 */	lwz r0, 8(r29)
+/* 101DCF5C 001DCF5C  28 00 00 00 */	cmplwi r0, 0
+/* 101DCF60 001DCF60  41 82 00 20 */	beq lbl_101DCF80
+/* 101DCF64 001DCF64  7F A3 EB 78 */	mr r3, r29
+/* 101DCF68 001DCF68  48 00 00 B9 */	bl "second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DCF6C 001DCF6C  83 FD 00 08 */	lwz r31, 8(r29)
+/* 101DCF70 001DCF70  7F A3 EB 78 */	mr r3, r29
+/* 101DCF74 001DCF74  4B FF F3 AD */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DCF78 001DCF78  7F E3 FB 78 */	mr r3, r31
+/* 101DCF7C 001DCF7C  48 3A B7 15 */	bl func_10588690
+lbl_101DCF80:
+/* 101DCF80 001DCF80  7F C0 07 35 */	extsh. r0, r30
+/* 101DCF84 001DCF84  40 81 00 0C */	ble lbl_101DCF90
+/* 101DCF88 001DCF88  7F A3 EB 78 */	mr r3, r29
+/* 101DCF8C 001DCF8C  48 3A B7 05 */	bl func_10588690
+lbl_101DCF90:
+/* 101DCF90 001DCF90  7F A3 EB 78 */	mr r3, r29
+/* 101DCF94 001DCF94  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DCF98 001DCF98  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DCF9C 001DCF9C  7C 08 03 A6 */	mtlr r0
+/* 101DCFA0 001DCFA0  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DCFA4 001DCFA4  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DCFA8 001DCFA8  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DCFAC 001DCFAC  4E 80 00 20 */	blr 
 
-.global ".second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-".second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv":
-/* 001DD020 001E5EB0  4E 80 00 20 */	blr 
+.global "second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+"second__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv":
+/* 101DD020 001DD020  4E 80 00 20 */	blr 
 
-.global ".clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
-".clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv":
-/* 001DD0A0 001E5F30  93 E1 FF FC */	stw r31, -4(r1)
-/* 001DD0A4 001E5F34  7C 08 02 A6 */	mflr r0
-/* 001DD0A8 001E5F38  93 C1 FF F8 */	stw r30, -8(r1)
-/* 001DD0AC 001E5F3C  93 A1 FF F4 */	stw r29, -0xc(r1)
-/* 001DD0B0 001E5F40  7C 7D 1B 78 */	mr r29, r3
-/* 001DD0B4 001E5F44  90 01 00 08 */	stw r0, 8(r1)
-/* 001DD0B8 001E5F48  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 001DD0BC 001E5F4C  80 03 00 04 */	lwz r0, 4(r3)
-/* 001DD0C0 001E5F50  83 C3 00 08 */	lwz r30, 8(r3)
-/* 001DD0C4 001E5F54  54 00 18 38 */	slwi r0, r0, 3
-/* 001DD0C8 001E5F58  7F FE 02 14 */	add r31, r30, r0
-/* 001DD0CC 001E5F5C  48 00 00 1C */	b lbl_001DD0E8
-lbl_001DD0D0:
-/* 001DD0D0 001E5F60  38 7D 00 00 */	addi r3, r29, 0
-/* 001DD0D4 001E5F64  3B FF FF F8 */	addi r31, r31, -8
-/* 001DD0D8 001E5F68  4B FF F2 49 */	bl ".first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
-/* 001DD0DC 001E5F6C  38 7F 00 00 */	addi r3, r31, 0
-/* 001DD0E0 001E5F70  38 80 FF FF */	li r4, -1
-/* 001DD0E4 001E5F74  4B FF EF DD */	bl ".__dt__13PalettePacketFv"
-lbl_001DD0E8:
-/* 001DD0E8 001E5F78  7C 1F F0 40 */	cmplw r31, r30
-/* 001DD0EC 001E5F7C  41 81 FF E4 */	bgt lbl_001DD0D0
-/* 001DD0F0 001E5F80  38 00 00 00 */	li r0, 0
-/* 001DD0F4 001E5F84  90 1D 00 04 */	stw r0, 4(r29)
-/* 001DD0F8 001E5F88  80 01 00 58 */	lwz r0, 0x58(r1)
-/* 001DD0FC 001E5F8C  38 21 00 50 */	addi r1, r1, 0x50
-/* 001DD100 001E5F90  7C 08 03 A6 */	mtlr r0
-/* 001DD104 001E5F94  83 E1 FF FC */	lwz r31, -4(r1)
-/* 001DD108 001E5F98  83 C1 FF F8 */	lwz r30, -8(r1)
-/* 001DD10C 001E5F9C  83 A1 FF F4 */	lwz r29, -0xc(r1)
-/* 001DD110 001E5FA0  4E 80 00 20 */	blr 
+.global "clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv"
+"clear__Q23std68__vector_deleter<13PalettePacket,Q23std26allocator<13PalettePacket>>Fv":
+/* 101DD0A0 001DD0A0  93 E1 FF FC */	stw r31, -4(r1)
+/* 101DD0A4 001DD0A4  7C 08 02 A6 */	mflr r0
+/* 101DD0A8 001DD0A8  93 C1 FF F8 */	stw r30, -8(r1)
+/* 101DD0AC 001DD0AC  93 A1 FF F4 */	stw r29, -0xc(r1)
+/* 101DD0B0 001DD0B0  7C 7D 1B 78 */	mr r29, r3
+/* 101DD0B4 001DD0B4  90 01 00 08 */	stw r0, 8(r1)
+/* 101DD0B8 001DD0B8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 101DD0BC 001DD0BC  80 03 00 04 */	lwz r0, 4(r3)
+/* 101DD0C0 001DD0C0  83 C3 00 08 */	lwz r30, 8(r3)
+/* 101DD0C4 001DD0C4  54 00 18 38 */	slwi r0, r0, 3
+/* 101DD0C8 001DD0C8  7F FE 02 14 */	add r31, r30, r0
+/* 101DD0CC 001DD0CC  48 00 00 1C */	b lbl_101DD0E8
+lbl_101DD0D0:
+/* 101DD0D0 001DD0D0  38 7D 00 00 */	addi r3, r29, 0
+/* 101DD0D4 001DD0D4  3B FF FF F8 */	addi r31, r31, -8
+/* 101DD0D8 001DD0D8  4B FF F2 49 */	bl "first__Q310Metrowerks7details60compressed_pair_imp<Q23std26allocator<13PalettePacket>,Ul,1>Fv"
+/* 101DD0DC 001DD0DC  38 7F 00 00 */	addi r3, r31, 0
+/* 101DD0E0 001DD0E0  38 80 FF FF */	li r4, -1
+/* 101DD0E4 001DD0E4  4B FF EF DD */	bl "__dt__13PalettePacketFv"
+lbl_101DD0E8:
+/* 101DD0E8 001DD0E8  7C 1F F0 40 */	cmplw r31, r30
+/* 101DD0EC 001DD0EC  41 81 FF E4 */	bgt lbl_101DD0D0
+/* 101DD0F0 001DD0F0  38 00 00 00 */	li r0, 0
+/* 101DD0F4 001DD0F4  90 1D 00 04 */	stw r0, 4(r29)
+/* 101DD0F8 001DD0F8  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 101DD0FC 001DD0FC  38 21 00 50 */	addi r1, r1, 0x50
+/* 101DD100 001DD100  7C 08 03 A6 */	mtlr r0
+/* 101DD104 001DD104  83 E1 FF FC */	lwz r31, -4(r1)
+/* 101DD108 001DD108  83 C1 FF F8 */	lwz r30, -8(r1)
+/* 101DD10C 001DD10C  83 A1 FF F4 */	lwz r29, -0xc(r1)
+/* 101DD110 001DD110  4E 80 00 20 */	blr 
 
-.global ".__sinit_:palettemanager_cpp"
-".__sinit_:palettemanager_cpp":
-/* 001DD180 001E6010  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
-/* 001DD184 001E6014  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
-/* 001DD188 001E6018  C8 44 00 00 */	lfd f2, 0(r4)
-/* 001DD18C 001E601C  C0 A3 00 00 */	lfs f5, 0(r3)
-/* 001DD190 001E6020  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
-/* 001DD194 001E6024  FC 20 10 50 */	fneg f1, f2
-/* 001DD198 001E6028  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
-/* 001DD19C 001E602C  FC 80 28 50 */	fneg f4, f5
-/* 001DD1A0 001E6030  C0 64 00 00 */	lfs f3, 0(r4)
-/* 001DD1A4 001E6034  C8 03 00 00 */	lfd f0, 0(r3)
-/* 001DD1A8 001E6038  D0 82 E8 A0 */	stfs f4, lbl_005BFD00-_R2_BASE_(r2)
-/* 001DD1AC 001E603C  D0 A2 E8 A4 */	stfs f5, lbl_005BFD04-_R2_BASE_(r2)
-/* 001DD1B0 001E6040  D0 62 E8 A8 */	stfs f3, lbl_005BFD08-_R2_BASE_(r2)
-/* 001DD1B4 001E6044  D0 A2 E8 AC */	stfs f5, lbl_005BFD0C-_R2_BASE_(r2)
-/* 001DD1B8 001E6048  D8 22 E8 B0 */	stfd f1, lbl_005BFD10-_R2_BASE_(r2)
-/* 001DD1BC 001E604C  D8 42 E8 B8 */	stfd f2, lbl_005BFD18-_R2_BASE_(r2)
-/* 001DD1C0 001E6050  D8 02 E8 C0 */	stfd f0, lbl_005BFD20-_R2_BASE_(r2)
-/* 001DD1C4 001E6054  D8 42 E8 C8 */	stfd f2, lbl_005BFD28-_R2_BASE_(r2)
-/* 001DD1C8 001E6058  4E 80 00 20 */	blr 
+.global "__sinit_:palettemanager_cpp"
+"__sinit_:palettemanager_cpp":
+/* 101DD180 001DD180  80 82 88 58 */	lwz r4, lbl_105B9CB8-_R2_BASE_(r2)
+/* 101DD184 001DD184  80 62 88 60 */	lwz r3, lbl_105B9CC0-_R2_BASE_(r2)
+/* 101DD188 001DD188  C8 44 00 00 */	lfd f2, 0(r4)
+/* 101DD18C 001DD18C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 101DD190 001DD190  80 82 88 5C */	lwz r4, lbl_105B9CBC-_R2_BASE_(r2)
+/* 101DD194 001DD194  FC 20 10 50 */	fneg f1, f2
+/* 101DD198 001DD198  80 62 88 54 */	lwz r3, lbl_105B9CB4-_R2_BASE_(r2)
+/* 101DD19C 001DD19C  FC 80 28 50 */	fneg f4, f5
+/* 101DD1A0 001DD1A0  C0 64 00 00 */	lfs f3, 0(r4)
+/* 101DD1A4 001DD1A4  C8 03 00 00 */	lfd f0, 0(r3)
+/* 101DD1A8 001DD1A8  D0 82 E8 A0 */	stfs f4, lbl_105BFD00-_R2_BASE_(r2)
+/* 101DD1AC 001DD1AC  D0 A2 E8 A4 */	stfs f5, lbl_105BFD04-_R2_BASE_(r2)
+/* 101DD1B0 001DD1B0  D0 62 E8 A8 */	stfs f3, lbl_105BFD08-_R2_BASE_(r2)
+/* 101DD1B4 001DD1B4  D0 A2 E8 AC */	stfs f5, lbl_105BFD0C-_R2_BASE_(r2)
+/* 101DD1B8 001DD1B8  D8 22 E8 B0 */	stfd f1, lbl_105BFD10-_R2_BASE_(r2)
+/* 101DD1BC 001DD1BC  D8 42 E8 B8 */	stfd f2, lbl_105BFD18-_R2_BASE_(r2)
+/* 101DD1C0 001DD1C0  D8 02 E8 C0 */	stfd f0, lbl_105BFD20-_R2_BASE_(r2)
+/* 101DD1C4 001DD1C4  D8 42 E8 C8 */	stfd f2, lbl_105BFD28-_R2_BASE_(r2)
+/* 101DD1C8 001DD1C8  4E 80 00 20 */	blr 

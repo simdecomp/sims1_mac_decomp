@@ -1,137 +1,137 @@
 .include "macros.inc"
 
 
-.section .text0, "ax"  # 0x00000000 - 0x005B9458
+.section .text0, "ax"  # 0x10000000 - 0x105B9458
 
-.global ".gtell"
-".gtell":
-/* 00347CD0 00350B60  7C 08 02 A6 */	mflr r0
-/* 00347CD4 00350B64  90 01 00 08 */	stw r0, 8(r1)
-/* 00347CD8 00350B68  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347CDC 00350B6C  4B FF F9 95 */	bl ".Sims_gtell__FP7GSTREAM"
-/* 00347CE0 00350B70  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347CE4 00350B74  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347CE8 00350B78  7C 08 03 A6 */	mtlr r0
-/* 00347CEC 00350B7C  4E 80 00 20 */	blr 
+.global "gtell"
+"gtell":
+/* 10347CD0 00347CD0  7C 08 02 A6 */	mflr r0
+/* 10347CD4 00347CD4  90 01 00 08 */	stw r0, 8(r1)
+/* 10347CD8 00347CD8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347CDC 00347CDC  4B FF F9 95 */	bl "Sims_gtell__FP7GSTREAM"
+/* 10347CE0 00347CE0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347CE4 00347CE4  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347CE8 00347CE8  7C 08 03 A6 */	mtlr r0
+/* 10347CEC 00347CEC  4E 80 00 20 */	blr 
 
-.global ".glen"
-".glen":
-/* 00347D10 00350BA0  7C 08 02 A6 */	mflr r0
-/* 00347D14 00350BA4  90 01 00 08 */	stw r0, 8(r1)
-/* 00347D18 00350BA8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347D1C 00350BAC  4B FF F9 95 */	bl ".Sims_glen__FP7GSTREAM"
-/* 00347D20 00350BB0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347D24 00350BB4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347D28 00350BB8  7C 08 03 A6 */	mtlr r0
-/* 00347D2C 00350BBC  4E 80 00 20 */	blr 
+.global "glen"
+"glen":
+/* 10347D10 00347D10  7C 08 02 A6 */	mflr r0
+/* 10347D14 00347D14  90 01 00 08 */	stw r0, 8(r1)
+/* 10347D18 00347D18  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347D1C 00347D1C  4B FF F9 95 */	bl "Sims_glen__FP7GSTREAM"
+/* 10347D20 00347D20  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347D24 00347D24  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347D28 00347D28  7C 08 03 A6 */	mtlr r0
+/* 10347D2C 00347D2C  4E 80 00 20 */	blr 
 
-.global ".gseek"
-".gseek":
-/* 00347D50 00350BE0  7C 08 02 A6 */	mflr r0
-/* 00347D54 00350BE4  90 01 00 08 */	stw r0, 8(r1)
-/* 00347D58 00350BE8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347D5C 00350BEC  4B FF F9 85 */	bl ".Sims_gseek__FP7GSTREAMl"
-/* 00347D60 00350BF0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347D64 00350BF4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347D68 00350BF8  7C 08 03 A6 */	mtlr r0
-/* 00347D6C 00350BFC  4E 80 00 20 */	blr 
+.global "gseek"
+"gseek":
+/* 10347D50 00347D50  7C 08 02 A6 */	mflr r0
+/* 10347D54 00347D54  90 01 00 08 */	stw r0, 8(r1)
+/* 10347D58 00347D58  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347D5C 00347D5C  4B FF F9 85 */	bl "Sims_gseek__FP7GSTREAMl"
+/* 10347D60 00347D60  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347D64 00347D64  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347D68 00347D68  7C 08 03 A6 */	mtlr r0
+/* 10347D6C 00347D6C  4E 80 00 20 */	blr 
 
-.global ".gwrite"
-".gwrite":
-/* 00347D90 00350C20  7C 08 02 A6 */	mflr r0
-/* 00347D94 00350C24  90 01 00 08 */	stw r0, 8(r1)
-/* 00347D98 00350C28  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347D9C 00350C2C  4B FF FA A5 */	bl ".Sims_gwrite__FP7GSTREAMPvl"
-/* 00347DA0 00350C30  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347DA4 00350C34  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347DA8 00350C38  7C 08 03 A6 */	mtlr r0
-/* 00347DAC 00350C3C  4E 80 00 20 */	blr 
+.global "gwrite"
+"gwrite":
+/* 10347D90 00347D90  7C 08 02 A6 */	mflr r0
+/* 10347D94 00347D94  90 01 00 08 */	stw r0, 8(r1)
+/* 10347D98 00347D98  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347D9C 00347D9C  4B FF FA A5 */	bl "Sims_gwrite__FP7GSTREAMPvl"
+/* 10347DA0 00347DA0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347DA4 00347DA4  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347DA8 00347DA8  7C 08 03 A6 */	mtlr r0
+/* 10347DAC 00347DAC  4E 80 00 20 */	blr 
 
-.global ".gread"
-".gread":
-/* 00347DD0 00350C60  7C 08 02 A6 */	mflr r0
-/* 00347DD4 00350C64  90 01 00 08 */	stw r0, 8(r1)
-/* 00347DD8 00350C68  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347DDC 00350C6C  4B FF FA E5 */	bl ".Sims_gread__FP7GSTREAMPvl"
-/* 00347DE0 00350C70  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347DE4 00350C74  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347DE8 00350C78  7C 08 03 A6 */	mtlr r0
-/* 00347DEC 00350C7C  4E 80 00 20 */	blr 
+.global "gread"
+"gread":
+/* 10347DD0 00347DD0  7C 08 02 A6 */	mflr r0
+/* 10347DD4 00347DD4  90 01 00 08 */	stw r0, 8(r1)
+/* 10347DD8 00347DD8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347DDC 00347DDC  4B FF FA E5 */	bl "Sims_gread__FP7GSTREAMPvl"
+/* 10347DE0 00347DE0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347DE4 00347DE4  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347DE8 00347DE8  7C 08 03 A6 */	mtlr r0
+/* 10347DEC 00347DEC  4E 80 00 20 */	blr 
 
-.global ".gclose"
-".gclose":
-/* 00347E10 00350CA0  7C 08 02 A6 */	mflr r0
-/* 00347E14 00350CA4  90 01 00 08 */	stw r0, 8(r1)
-/* 00347E18 00350CA8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347E1C 00350CAC  4B FF FB E5 */	bl ".Sims_gclose__FP7GSTREAM"
-/* 00347E20 00350CB0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347E24 00350CB4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347E28 00350CB8  7C 08 03 A6 */	mtlr r0
-/* 00347E2C 00350CBC  4E 80 00 20 */	blr 
+.global "gclose"
+"gclose":
+/* 10347E10 00347E10  7C 08 02 A6 */	mflr r0
+/* 10347E14 00347E14  90 01 00 08 */	stw r0, 8(r1)
+/* 10347E18 00347E18  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347E1C 00347E1C  4B FF FB E5 */	bl "Sims_gclose__FP7GSTREAM"
+/* 10347E20 00347E20  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347E24 00347E24  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347E28 00347E28  7C 08 03 A6 */	mtlr r0
+/* 10347E2C 00347E2C  4E 80 00 20 */	blr 
 
-.global ".gwopen"
-".gwopen":
-/* 00347E50 00350CE0  7C 08 02 A6 */	mflr r0
-/* 00347E54 00350CE4  90 01 00 08 */	stw r0, 8(r1)
-/* 00347E58 00350CE8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347E5C 00350CEC  4B FF FC 35 */	bl ".Sims_gwopen__FPCc"
-/* 00347E60 00350CF0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347E64 00350CF4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347E68 00350CF8  7C 08 03 A6 */	mtlr r0
-/* 00347E6C 00350CFC  4E 80 00 20 */	blr 
+.global "gwopen"
+"gwopen":
+/* 10347E50 00347E50  7C 08 02 A6 */	mflr r0
+/* 10347E54 00347E54  90 01 00 08 */	stw r0, 8(r1)
+/* 10347E58 00347E58  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347E5C 00347E5C  4B FF FC 35 */	bl "Sims_gwopen__FPCc"
+/* 10347E60 00347E60  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347E64 00347E64  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347E68 00347E68  7C 08 03 A6 */	mtlr r0
+/* 10347E6C 00347E6C  4E 80 00 20 */	blr 
 
-.global ".gopen"
-".gopen":
-/* 00347E90 00350D20  7C 08 02 A6 */	mflr r0
-/* 00347E94 00350D24  90 01 00 08 */	stw r0, 8(r1)
-/* 00347E98 00350D28  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347E9C 00350D2C  4B FF FC D5 */	bl ".Sims_gopen__FPCc"
-/* 00347EA0 00350D30  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347EA4 00350D34  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347EA8 00350D38  7C 08 03 A6 */	mtlr r0
-/* 00347EAC 00350D3C  4E 80 00 20 */	blr 
+.global "gopen"
+"gopen":
+/* 10347E90 00347E90  7C 08 02 A6 */	mflr r0
+/* 10347E94 00347E94  90 01 00 08 */	stw r0, 8(r1)
+/* 10347E98 00347E98  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347E9C 00347E9C  4B FF FC D5 */	bl "Sims_gopen__FPCc"
+/* 10347EA0 00347EA0  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347EA4 00347EA4  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347EA8 00347EA8  7C 08 03 A6 */	mtlr r0
+/* 10347EAC 00347EAC  4E 80 00 20 */	blr 
 
-.global ".gfree"
-".gfree":
-/* 00347ED0 00350D60  7C 08 02 A6 */	mflr r0
-/* 00347ED4 00350D64  90 01 00 08 */	stw r0, 8(r1)
-/* 00347ED8 00350D68  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347EDC 00350D6C  48 24 08 45 */	bl func_00588720
-/* 00347EE0 00350D70  38 60 00 00 */	li r3, 0
-/* 00347EE4 00350D74  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347EE8 00350D78  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347EEC 00350D7C  7C 08 03 A6 */	mtlr r0
-/* 00347EF0 00350D80  4E 80 00 20 */	blr 
+.global "gfree"
+"gfree":
+/* 10347ED0 00347ED0  7C 08 02 A6 */	mflr r0
+/* 10347ED4 00347ED4  90 01 00 08 */	stw r0, 8(r1)
+/* 10347ED8 00347ED8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347EDC 00347EDC  48 24 08 45 */	bl func_10588720
+/* 10347EE0 00347EE0  38 60 00 00 */	li r3, 0
+/* 10347EE4 00347EE4  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347EE8 00347EE8  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347EEC 00347EEC  7C 08 03 A6 */	mtlr r0
+/* 10347EF0 00347EF0  4E 80 00 20 */	blr 
 
-.global ".galloc"
-".galloc":
-/* 00347F10 00350DA0  7C 08 02 A6 */	mflr r0
-/* 00347F14 00350DA4  90 01 00 08 */	stw r0, 8(r1)
-/* 00347F18 00350DA8  94 21 FF C0 */	stwu r1, -0x40(r1)
-/* 00347F1C 00350DAC  48 24 07 C5 */	bl func_005886E0
-/* 00347F20 00350DB0  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 00347F24 00350DB4  38 21 00 40 */	addi r1, r1, 0x40
-/* 00347F28 00350DB8  7C 08 03 A6 */	mtlr r0
-/* 00347F2C 00350DBC  4E 80 00 20 */	blr 
+.global "galloc"
+"galloc":
+/* 10347F10 00347F10  7C 08 02 A6 */	mflr r0
+/* 10347F14 00347F14  90 01 00 08 */	stw r0, 8(r1)
+/* 10347F18 00347F18  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 10347F1C 00347F1C  48 24 07 C5 */	bl func_105886E0
+/* 10347F20 00347F20  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 10347F24 00347F24  38 21 00 40 */	addi r1, r1, 0x40
+/* 10347F28 00347F28  7C 08 03 A6 */	mtlr r0
+/* 10347F2C 00347F2C  4E 80 00 20 */	blr 
 
-.global ".__sinit_:stdgimex_c"
-".__sinit_:stdgimex_c":
-/* 00347F50 00350DE0  80 82 88 58 */	lwz r4, lbl_005B9CB8-_R2_BASE_(r2)
-/* 00347F54 00350DE4  80 62 88 60 */	lwz r3, lbl_005B9CC0-_R2_BASE_(r2)
-/* 00347F58 00350DE8  C8 44 00 00 */	lfd f2, 0(r4)
-/* 00347F5C 00350DEC  C0 A3 00 00 */	lfs f5, 0(r3)
-/* 00347F60 00350DF0  80 82 88 5C */	lwz r4, lbl_005B9CBC-_R2_BASE_(r2)
-/* 00347F64 00350DF4  FC 20 10 50 */	fneg f1, f2
-/* 00347F68 00350DF8  80 62 88 54 */	lwz r3, lbl_005B9CB4-_R2_BASE_(r2)
-/* 00347F6C 00350DFC  FC 80 28 50 */	fneg f4, f5
-/* 00347F70 00350E00  C0 64 00 00 */	lfs f3, 0(r4)
-/* 00347F74 00350E04  C8 03 00 00 */	lfd f0, 0(r3)
-/* 00347F78 00350E08  D0 82 0A B8 */	stfs f4, lbl_005C1F18-_R2_BASE_(r2)
-/* 00347F7C 00350E0C  D0 A2 0A BC */	stfs f5, lbl_005C1F1C-_R2_BASE_(r2)
-/* 00347F80 00350E10  D0 62 0A C0 */	stfs f3, lbl_005C1F20-_R2_BASE_(r2)
-/* 00347F84 00350E14  D0 A2 0A C4 */	stfs f5, lbl_005C1F24-_R2_BASE_(r2)
-/* 00347F88 00350E18  D8 22 0A C8 */	stfd f1, lbl_005C1F28-_R2_BASE_(r2)
-/* 00347F8C 00350E1C  D8 42 0A D0 */	stfd f2, lbl_005C1F30-_R2_BASE_(r2)
-/* 00347F90 00350E20  D8 02 0A D8 */	stfd f0, lbl_005C1F38-_R2_BASE_(r2)
-/* 00347F94 00350E24  D8 42 0A E0 */	stfd f2, lbl_005C1F40-_R2_BASE_(r2)
-/* 00347F98 00350E28  4E 80 00 20 */	blr 
+.global "__sinit_:stdgimex_c"
+"__sinit_:stdgimex_c":
+/* 10347F50 00347F50  80 82 88 58 */	lwz r4, lbl_105B9CB8-_R2_BASE_(r2)
+/* 10347F54 00347F54  80 62 88 60 */	lwz r3, lbl_105B9CC0-_R2_BASE_(r2)
+/* 10347F58 00347F58  C8 44 00 00 */	lfd f2, 0(r4)
+/* 10347F5C 00347F5C  C0 A3 00 00 */	lfs f5, 0(r3)
+/* 10347F60 00347F60  80 82 88 5C */	lwz r4, lbl_105B9CBC-_R2_BASE_(r2)
+/* 10347F64 00347F64  FC 20 10 50 */	fneg f1, f2
+/* 10347F68 00347F68  80 62 88 54 */	lwz r3, lbl_105B9CB4-_R2_BASE_(r2)
+/* 10347F6C 00347F6C  FC 80 28 50 */	fneg f4, f5
+/* 10347F70 00347F70  C0 64 00 00 */	lfs f3, 0(r4)
+/* 10347F74 00347F74  C8 03 00 00 */	lfd f0, 0(r3)
+/* 10347F78 00347F78  D0 82 0A B8 */	stfs f4, lbl_105C1F18-_R2_BASE_(r2)
+/* 10347F7C 00347F7C  D0 A2 0A BC */	stfs f5, lbl_105C1F1C-_R2_BASE_(r2)
+/* 10347F80 00347F80  D0 62 0A C0 */	stfs f3, lbl_105C1F20-_R2_BASE_(r2)
+/* 10347F84 00347F84  D0 A2 0A C4 */	stfs f5, lbl_105C1F24-_R2_BASE_(r2)
+/* 10347F88 00347F88  D8 22 0A C8 */	stfd f1, lbl_105C1F28-_R2_BASE_(r2)
+/* 10347F8C 00347F8C  D8 42 0A D0 */	stfd f2, lbl_105C1F30-_R2_BASE_(r2)
+/* 10347F90 00347F90  D8 02 0A D8 */	stfd f0, lbl_105C1F38-_R2_BASE_(r2)
+/* 10347F94 00347F94  D8 42 0A E0 */	stfd f2, lbl_105C1F40-_R2_BASE_(r2)
+/* 10347F98 00347F98  4E 80 00 20 */	blr 

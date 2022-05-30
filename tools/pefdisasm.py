@@ -36,6 +36,12 @@ def sign_extend_12(value):
         value -= 0x1000
     return value
 
+
+def align_length(address, orig_length, alignment):
+    while (address + orig_length) % alignment != 0:
+        orig_length += 1
+    return orig_length
+
 textOffsets = []
 textAddresses = []
 textSizes = []
@@ -75,13 +81,13 @@ for i in range(pef_info.container_header.sectionCount):
         textOffsets.append(sections[i].containerOffset)
         textAddresses.append(default_address)
         textSizes.append(sections[i].totalSize)
-        default_address += sections[i].totalSize
+        default_address += align_length(default_address, sections[i].totalSize, 16)
         textCount += 1
     if (sections[i].sectionKind == 3 or sections[i].sectionKind == 1 or sections[i].sectionKind == 2):
         dataOffsets.append(sections[i].containerOffset)
         dataAddresses.append(default_address)
         dataSizes.append(sections[i].totalSize)
-        default_address += sections[i].totalSize
+        default_address += align_length(default_address, sections[i].totalSize, 16)
         dataCount += 1
     pass
 
@@ -174,6 +180,7 @@ blacklistedInsns = {
     PPC_INS_VADDUHM, PPC_INS_XXPERMDI, PPC_INS_XVMADDASP, PPC_INS_XVMADDMSP,
     PPC_INS_XVCMPGTSP, PPC_INS_XXMRGHD, PPC_INS_XSMSUBMDP, PPC_INS_XSTDIVDP,
     PPC_INS_XVADDSP, PPC_INS_XVCMPEQSP, PPC_INS_XVMSUBASP, PPC_INS_XVCMPGESP,
+    PPC_INS_LVX, PPC_INS_STVX, PPC_INS_LVEWX, PPC_INS_MTVSCR,
 
     # Instructions that Capstone gets wrong
     PPC_INS_MFESR, PPC_INS_MFDEAR, PPC_INS_MTESR, PPC_INS_MTDEAR, PPC_INS_MFICCR, PPC_INS_MFASR
@@ -295,33 +302,33 @@ def get_label_callback(address, offset, insn, bytes):
                     #labelNames[op.imm] = 'func_%08X' % op.imm
                     add_label(op.imm, 'func_%08X' % op.imm)
 
-    # Detect split load (high part)
-    # this is 'lis rX, hipart'
-    if insn.id == PPC_INS_LIS:
-        # Record instruction that loads into register with 'lis'
-        lisInsns[insn.operands[0].reg] = insn
-    # Detect split load (low part)
-    # this is either 'addi/ori rY, rX, lopart' or 'load/store rY, lopart(rX)'
-    elif (insn.id in {PPC_INS_ADDI, PPC_INS_ORI} and insn.operands[1].reg in lisInsns) \
-     or  (is_load_store_reg_offset(insn, None) and insn.operands[1].mem.base in lisInsns):
-        hiLoadInsn = lisInsns[insn.operands[1].reg]
-        # Compute combined value
-        value = combine_split_load_value(hiLoadInsn, insn)
-        if is_label_candidate(value):
-            labels.add(value)
-        # Record linked instruction
-        linkedInsns[hiLoadInsn.address] = insn
-        splitDataLoads[hiLoadInsn.address] = value
-        splitDataLoads[insn.address] = value
-        lisInsns.pop(insn.operands[1].reg, None)
-        # detect r2/r13 initialization
-        if insn.id == PPC_INS_ORI and insn.operands[0].reg == insn.operands[1].reg:
-            if r2_addr == None and insn.operands[0].reg == PPC_REG_R2:
-                r2_addr = value
-                #print('# DEBUG: set r2 to 0x%08X' % value)
-            elif r13_addr == None and insn.operands[0].reg == PPC_REG_R13:
-                r13_addr = value
-                #print('# DEBUG: set r13 to 0x%08X' % value)
+    # # Detect split load (high part)
+    # # this is 'lis rX, hipart'
+    # if insn.id == PPC_INS_LIS:
+    #     # Record instruction that loads into register with 'lis'
+    #     lisInsns[insn.operands[0].reg] = insn
+    # # Detect split load (low part)
+    # # this is either 'addi/ori rY, rX, lopart' or 'load/store rY, lopart(rX)'
+    # elif (insn.id in {PPC_INS_ADDI, PPC_INS_ORI} and insn.operands[1].reg in lisInsns) \
+    #  or  (is_load_store_reg_offset(insn, None) and insn.operands[1].mem.base in lisInsns):
+    #     hiLoadInsn = lisInsns[insn.operands[1].reg]
+    #     # Compute combined value
+    #     value = combine_split_load_value(hiLoadInsn, insn)
+    #     if is_label_candidate(value):
+    #         labels.add(value)
+    #     # Record linked instruction
+    #     linkedInsns[hiLoadInsn.address] = insn
+    #     splitDataLoads[hiLoadInsn.address] = value
+    #     splitDataLoads[insn.address] = value
+    #     lisInsns.pop(insn.operands[1].reg, None)
+    #     # detect r2/r13 initialization
+    #     if insn.id == PPC_INS_ORI and insn.operands[0].reg == insn.operands[1].reg:
+    #         if r2_addr == None and insn.operands[0].reg == PPC_REG_R2:
+    #             r2_addr = value
+    #             #print('# DEBUG: set r2 to 0x%08X' % value)
+    #         elif r13_addr == None and insn.operands[0].reg == PPC_REG_R13:
+    #             r13_addr = value
+    #             #print('# DEBUG: set r13 to 0x%08X' % value)
     # Remove record if register is overwritten
     elif (not is_store_insn(insn)) and len(insn.operands) >= 1 and insn.operands[0].type == PPC_OP_REG:
         lisInsns.pop(insn.operands[0].reg, None)
@@ -351,11 +358,6 @@ def get_label_callback(address, offset, insn, bytes):
             if is_label_candidate(value):
                 labels.add(value)
                 #labelNames[value] = 'r2_%08X' % value
-
-def align_length(address, orig_length, alignment):
-    while (address + orig_length) % alignment != 0:
-        orig_length += 1
-    return orig_length
 
 for i in range(0, textCount):
     if textSizes[i] != 0:
@@ -688,20 +690,41 @@ for i in range(0, dataCount):
     sectionLabels.sort()
     # Split incbins by labels
     j = 0
-    while address < end:
+    while address < 0x006353E0:
         if j < len(sectionLabels):
             incbinSize = sectionLabels[j] - address
             if incbinSize != 0:
-                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
+                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X # 0x%08X\n" % (offset, incbinSize, address))
             l = addr_to_label(sectionLabels[j])
             currentFile.write(".global %s\n%s:\n" % (l, l))
             j += 1
         else:
             incbinSize = end - address
             if incbinSize != 0:
-                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X\n" % (offset, incbinSize))
+                currentFile.write("\t.incbin \"baserom\", 0x%X, 0x%X # 0x%08X\n" % (offset, incbinSize, address))
         offset += incbinSize
         address += incbinSize
+    if address == 0x006353E0: #bss
+        sectionLabels = []
+        for l in labels:
+            if l >= start and l < end:
+                sectionLabels.append(l)
+        sectionLabels.sort()
+        # Split incbins by labels
+        j = 0
+        while address < end:
+            if j < len(sectionLabels):
+                gapSize = sectionLabels[j] - address
+                if gapSize != 0:
+                    print("\t.skip 0x%X # 0x%08X" % (gapSize, address))
+                l = addr_to_label(sectionLabels[j])
+                print(".global %s\n%s:" % (l, l))
+                j += 1
+            else:
+                gapSize = end - address
+                if gapSize != 0:
+                    print("\t.skip 0x%X # 0x%08X" % (gapSize, address))
+            address += gapSize
     # Remove labels to avoid duplicates in case of overlap with other sections
     for l in sectionLabels:
         labels.remove(l)
